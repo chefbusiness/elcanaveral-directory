@@ -169,11 +169,33 @@ export function generateZonaCategoriaPaths() {
   return paths;
 }
 
-// Schema.org LocalBusiness
+// Schema.org — tipo especifico por categoria
+const SCHEMA_TYPE_MAP: Record<string, string> = {
+  "supermercados": "GroceryStore",
+  "fruterias": "GroceryStore",
+  "panaderias": "Bakery",
+  "cafeterias": "CafeOrCoffeeShop",
+  "restaurantes": "Restaurant",
+  "tiendas-alimentacion": "ConvenienceStore",
+  "salud": "MedicalBusiness",
+  "belleza": "BeautySalon",
+  "deporte": "SportsActivityLocation",
+  "educacion": "EducationalOrganization",
+  "mascotas": "VeterinaryCare",
+  "hogar": "HardwareStore",
+  "moda": "ClothingStore",
+  "automocion": "AutoRepair",
+  "servicios-profesionales": "ProfessionalService",
+  "ocio": "EntertainmentBusiness",
+};
+
 export function generateLocalBusinessSchema(negocio: Negocio) {
+  const schemaType = SCHEMA_TYPE_MAP[negocio.category] || "LocalBusiness";
+  const servicios = (negocio.servicios as string[] | undefined) || [];
+
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": schemaType,
     name: negocio.name,
     description: negocio.description,
     ...(negocio.address && {
@@ -193,8 +215,25 @@ export function generateLocalBusinessSchema(negocio: Negocio) {
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: negocio.rating,
+        bestRating: 5,
         reviewCount: negocio.numReviews || 0,
       },
     }),
+    ...(negocio.horario && { openingHours: negocio.horario }),
+    ...(negocio.precioRango && { priceRange: negocio.precioRango }),
+    ...(servicios.length > 0 && {
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Servicios",
+        itemListElement: servicios.map((s, i) => ({
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: s },
+        })),
+      },
+    }),
+    areaServed: {
+      "@type": "City",
+      name: "Madrid",
+    },
   };
 }

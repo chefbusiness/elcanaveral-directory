@@ -1864,7 +1864,7 @@
   {
     "slug": "beefcious-el-canaveral",
     "name": "Beefcious El Canaveral",
-    "description": "Hamburgueseria gourmet con carnes premium a la brasa. Hamburguesas smash, costillas BBQ y opciones veganas.",
+    "description": "Hamburguesería gourmet en El Cañaveral que ofrece una experiencia culinaria única con carnes premium a la brasa. Además de sus jugosas hamburguesas smash, podrás disfrutar de costillas BBQ y opciones veganas, ideal para todos los gustos.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -1874,12 +1874,33 @@
       "gourmet",
       "brasa"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Hamburguesas gourmet",
+      "Costillas BBQ",
+      "Opciones veganas",
+      "Patatas fritas caseras",
+      "Postres artesanales",
+      "Bebidas variadas"
+    ],
+    "destacados": [
+      "Carne de primera calidad a la brasa",
+      "Variedad de opciones para todos los paladares",
+      "Ambiente moderno y acogedor",
+      "Ideal para cenas informales"
+    ],
+    "horario": "M-D 13:00-16:00, 20:00-23:00",
+    "tiposCocina": [
+      "Americana",
+      "Gourmet"
+    ],
+    "delivery": true,
+    "precioRango": "€€"
   },
   {
     "slug": "cerveceria-la-galerna",
     "name": "Cerveceria La Galerna",
-    "description": "Cerveceria de barrio con amplia carta de cervezas artesanales, tapas y raciones. Terraza en Avenida Miguel Delibes.",
+    "description": "Una auténtica cervecería de barrio ubicada en la Avenida Miguel Delibes, perfecta para disfrutar de una amplia selección de cervezas artesanales. Ofrecen deliciosas tapas y raciones en un ambiente relajado, con una agradable terraza para los días soleados.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -1891,12 +1912,32 @@
       "terraza"
     ],
     "terraza": true,
-    "featured": true
+    "featured": true,
+    "servicios": [
+      "Amplia carta de cervezas artesanales",
+      "Tapas variadas",
+      "Raciones para compartir",
+      "Vinos y refrescos",
+      "Desayunos y meriendas",
+      "Eventos deportivos en pantalla"
+    ],
+    "destacados": [
+      "Gran selección de cervezas",
+      "Terraza soleada en avenida principal",
+      "Ambiente animado y familiar",
+      "Ideal para el aperitivo o afterwork"
+    ],
+    "horario": "L-D 9:00-00:00",
+    "tiposCocina": [
+      "Española",
+      "Tapas"
+    ],
+    "precioRango": "€"
   },
   {
     "slug": "churreria-bernis",
     "name": "Churreria Bernis",
-    "description": "Churreria tradicional con churros y porras artesanales. Chocolate caliente casero. Institucion del barrio de Vicalvaro.",
+    "description": "La Churrería Bernis es una institución en el barrio de Vicálvaro, famosa por sus churros y porras artesanales, elaborados con la receta tradicional. Es el lugar perfecto para disfrutar de un desayuno o merienda auténticos, acompañados de su delicioso chocolate caliente casero.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
@@ -1906,12 +1947,32 @@
       "tradicional",
       "chocolate"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Churros y porras recién hechos",
+      "Chocolate caliente casero",
+      "Café y otras bebidas",
+      "Desayunos completos",
+      "Servicio para llevar",
+      "Bollería"
+    ],
+    "destacados": [
+      "Receta tradicional y artesanal",
+      "Chocolate casero inigualable",
+      "Ambiente familiar y de barrio",
+      "Ideal para desayunos y meriendas"
+    ],
+    "horario": "L-D 7:00-13:00, V-D 17:00-20:00",
+    "tiposCocina": [
+      "Dulces",
+      "Desayunos"
+    ],
+    "precioRango": "€"
   },
   {
     "slug": "casa-botija",
     "name": "Casa Botija",
-    "description": "Restaurante de cocina tradicional madrilena en el casco historico de Vicalvaro. Raciones generosas y ambiente familiar.",
+    "description": "Ubicado en el encantador casco histórico de Vicálvaro, Casa Botija es un restaurante que rinde homenaje a la cocina tradicional madrileña. Ofrece raciones generosas y un ambiente familiar, ideal para disfrutar de los sabores de siempre en un entorno acogedor.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
@@ -1921,12 +1982,33 @@
       "madrileno",
       "raciones"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Cocina tradicional madrileña",
+      "Raciones y tapas",
+      "Menú del día",
+      "Vinos de la región",
+      "Postres caseros",
+      "Cenas de grupo"
+    ],
+    "destacados": [
+      "Auténtica cocina madrileña",
+      "Raciones abundantes y sabrosas",
+      "Ambiente familiar y tradicional",
+      "Excelente relación calidad-precio"
+    ],
+    "horario": "L-S 13:00-16:00, 20:00-23:00, D 13:00-16:00",
+    "tiposCocina": [
+      "Española",
+      "Madrileña"
+    ],
+    "menuDelDia": true,
+    "precioRango": "€€"
   },
   {
     "slug": "el-rincon-de-carla",
     "name": "El Rincon de Carla",
-    "description": "Bar-restaurante con cocina casera y menu del dia. Ambiente acogedor en el corazon de Vicalvaro.",
+    "description": "En el corazón de Vicálvaro, El Rincón de Carla es un bar-restaurante que destaca por su cocina casera y su popular menú del día. Su ambiente acogedor lo convierte en el lugar perfecto para disfrutar de una comida rica y asequible en un entorno cercano y familiar.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
@@ -1936,12 +2018,33 @@
       "menu-del-dia"
     ],
     "menuDelDia": true,
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Menú del día casero",
+      "Platos combinados",
+      "Tapas y raciones",
+      "Desayunos y almuerzos",
+      "Cafetería",
+      "Comida para llevar"
+    ],
+    "destacados": [
+      "Menú del día variado y económico",
+      "Cocina casera de calidad",
+      "Ambiente acogedor y de barrio",
+      "Ideal para comer a diario"
+    ],
+    "horario": "L-V 7:00-17:00, S 8:00-14:00",
+    "tiposCocina": [
+      "Casera",
+      "Mediterránea"
+    ],
+    "terraza": true,
+    "precioRango": "€"
   },
   {
     "slug": "rechupete-vicalvaro",
     "name": "Rechupete",
-    "description": "Restaurante con platos elaborados y buen ambiente. Cocina de autor con productos de temporada en Vicalvaro.",
+    "description": "Rechupete es un restaurante en Vicálvaro que ofrece una experiencia culinaria de autor con platos elaborados y un ambiente distinguido. Su cocina se basa en productos de temporada, garantizando frescura y sabor en cada propuesta, ideal para ocasiones especiales.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
@@ -1950,12 +2053,32 @@
       "cocina-autor",
       "temporada"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Cocina de autor",
+      "Platos con productos de temporada",
+      "Carta de vinos seleccionada",
+      "Menús degustación",
+      "Cenas románticas",
+      "Eventos privados"
+    ],
+    "destacados": [
+      "Platos creativos y de alta calidad",
+      "Uso de productos frescos de temporada",
+      "Ambiente elegante y moderno",
+      "Ideal para celebraciones y ocasiones especiales"
+    ],
+    "horario": "M-S 13:30-16:00, 20:30-23:30",
+    "tiposCocina": [
+      "De Autor",
+      "Mediterránea Moderna"
+    ],
+    "precioRango": "€€€"
   },
   {
     "slug": "clinica-fisioterapia-prolive",
     "name": "Clinica de Fisioterapia Prolive",
-    "description": "Centro de fisioterapia especializado en rehabilitacion deportiva y dolor cronico. Tratamientos personalizados con tecnologia avanzada.",
+    "description": "Ubicada en la Calle Victoria Kent, Local 8, en El Cañaveral, Prolive es un centro de fisioterapia de vanguardia. Se especializan en rehabilitación deportiva y tratamiento del dolor crónico, ofreciendo tratamientos personalizados con la última tecnología para una recuperación efectiva.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -1966,12 +2089,34 @@
       "rehabilitacion",
       "deportiva"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Fisioterapia deportiva",
+      "Tratamiento del dolor crónico",
+      "Rehabilitación post-quirúrgica",
+      "Punción seca",
+      "Terapia manual",
+      "Electroterapia",
+      "Readaptación al ejercicio"
+    ],
+    "destacados": [
+      "Especialistas en deporte y dolor crónico",
+      "Tecnología avanzada para tratamientos",
+      "Atención personalizada y seguimiento",
+      "Ubicación céntrica en El Cañaveral"
+    ],
+    "horario": "L-V 9:00-21:00",
+    "especialidades": [
+      "Fisioterapia deportiva",
+      "Fisioterapia traumatológica",
+      "Fisioterapia reumatológica",
+      "Fisioterapia neurológica"
+    ]
   },
   {
     "slug": "clinica-muv-canaveral",
     "name": "Clinica MUV Fisioterapia y Pilates",
-    "description": "Centro de fisioterapia y pilates terapeutico. Especialistas en suelo pelvico, rehabilitacion postparto y dolor de espalda.",
+    "description": "Clínica MUV en El Cañaveral es un centro integral de fisioterapia y pilates terapéutico. Son expertos en suelo pélvico, rehabilitación postparto y alivio del dolor de espalda, ofreciendo un enfoque holístico para la salud y el bienestar de sus pacientes.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -1982,12 +2127,34 @@
       "pilates",
       "suelo-pelvico"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Fisioterapia general",
+      "Pilates terapéutico",
+      "Fisioterapia de suelo pélvico",
+      "Rehabilitación postparto",
+      "Tratamiento del dolor de espalda",
+      "Fisioterapia para embarazadas",
+      "Drenaje linfático"
+    ],
+    "destacados": [
+      "Especialistas en suelo pélvico y postparto",
+      "Clases de pilates terapéutico",
+      "Enfoque integral y personalizado",
+      "Profesionales altamente cualificados"
+    ],
+    "horario": "L-V 9:00-20:00",
+    "especialidades": [
+      "Fisioterapia de suelo pélvico",
+      "Fisioterapia obstétrica",
+      "Fisioterapia traumatológica",
+      "Pilates terapéutico"
+    ]
   },
   {
     "slug": "focus-clinic-canaveral",
     "name": "Focus Clinic Fisioterapia",
-    "description": "Clinica de fisioterapia avanzada especializada en fisioterapia deportiva, ATM y disfunciones orofaciales. Ecografia de alta gama disponible.",
+    "description": "Focus Clinic en El Cañaveral es una clínica de fisioterapia avanzada, destacando por su especialización en fisioterapia deportiva, ATM y disfunciones orofaciales. Cuentan con ecografía de alta gama para un diagnóstico preciso y tratamientos más efectivos.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -1998,12 +2165,34 @@
       "deportiva",
       "ecografia"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Fisioterapia deportiva",
+      "Tratamiento de ATM y disfunciones orofaciales",
+      "Ecografía musculoesquelética",
+      "Punción seca ecoguiada",
+      "Electrólisis percutánea (EPI/EPTE)",
+      "Readaptación deportiva",
+      "Terapia manual avanzada"
+    ],
+    "destacados": [
+      "Diagnóstico preciso con ecografía",
+      "Especialistas en fisioterapia deportiva y ATM",
+      "Tratamientos innovadores y efectivos",
+      "Equipo profesional y experimentado"
+    ],
+    "horario": "L-V 10:00-14:00, 16:00-21:00",
+    "especialidades": [
+      "Fisioterapia deportiva",
+      "Fisioterapia de ATM",
+      "Ecografía musculoesquelética",
+      "Fisioterapia traumatológica"
+    ]
   },
   {
     "slug": "fisioterapia-escalante",
     "name": "Fisioterapia Escalante El Canaveral",
-    "description": "Centro de fisioterapia con atencion personalizada. Tratamientos manuales, puncion seca y ejercicio terapeutico.",
+    "description": "Fisioterapia Escalante en la Calle Aloe Vera, El Cañaveral, ofrece un enfoque de atención personalizada para cada paciente. Sus tratamientos incluyen técnicas manuales, punción seca y ejercicio terapéutico, buscando la recuperación y el bienestar integral.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -2014,12 +2203,34 @@
       "puncion-seca",
       "manual"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Terapia manual ortopédica",
+      "Punción seca",
+      "Ejercicio terapéutico",
+      "Fisioterapia traumatológica",
+      "Fisioterapia deportiva",
+      "Rehabilitación",
+      "Vendaje neuromuscular"
+    ],
+    "destacados": [
+      "Atención individualizada y cercana",
+      "Amplia gama de técnicas de tratamiento",
+      "Enfoque en la recuperación activa",
+      "Profesionales con experiencia"
+    ],
+    "horario": "L-V 9:00-14:00, 16:00-20:00",
+    "especialidades": [
+      "Fisioterapia traumatológica",
+      "Fisioterapia deportiva",
+      "Fisioterapia general",
+      "Punción seca"
+    ]
   },
   {
     "slug": "centro-sanitario-cano",
     "name": "Centro Sanitario Cano",
-    "description": "Centro multidisciplinar con podologia, fisioterapia, psicologia y logopedia. Atencion integral para toda la familia en Valdebernardo.",
+    "description": "Ubicado en Bulevar Indalecio Prieto, Valdebernardo, el Centro Sanitario Cano es un espacio multidisciplinar que ofrece atención integral para toda la familia. Cuentan con servicios de podología, fisioterapia, psicología y logopedia, cubriendo diversas necesidades de salud.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "vicalvaro",
@@ -2032,12 +2243,34 @@
       "logopedia",
       "multidisciplinar"
     ],
-    "featured": true
+    "featured": true,
+    "servicios": [
+      "Podología general y deportiva",
+      "Fisioterapia y rehabilitación",
+      "Psicología clínica y educativa",
+      "Logopedia para niños y adultos",
+      "Estudios de la pisada",
+      "Plantillas personalizadas",
+      "Terapia ocupacional"
+    ],
+    "destacados": [
+      "Atención multidisciplinar en un solo centro",
+      "Profesionales especializados en cada área",
+      "Enfoque integral para la salud familiar",
+      "Fácil acceso en Valdebernardo"
+    ],
+    "horario": "L-V 9:00-20:00, S 9:00-14:00",
+    "especialidades": [
+      "Podología",
+      "Fisioterapia",
+      "Psicología",
+      "Logopedia"
+    ]
   },
   {
     "slug": "soul-fisioterapia",
     "name": "Soul Fisioterapia",
-    "description": "Clinica de fisioterapia en El Canaveral con enfoque holístico. Tratamientos de fisioterapia, osteopatia y bienestar integral.",
+    "description": "Soul Fisioterapia en El Cañaveral es una clínica con un enfoque holístico hacia el bienestar. Ofrecen tratamientos de fisioterapia y osteopatía, buscando no solo aliviar el dolor sino también promover un equilibrio integral en la salud de sus pacientes.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -2048,12 +2281,34 @@
       "osteopatia",
       "holístico"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Fisioterapia general",
+      "Osteopatía estructural y visceral",
+      "Fisioterapia deportiva",
+      "Tratamiento de cefaleas y migrañas",
+      "Reeducación postural",
+      "Masaje terapéutico",
+      "Pilates individual"
+    ],
+    "destacados": [
+      "Enfoque holístico para el bienestar",
+      "Combinación de fisioterapia y osteopatía",
+      "Tratamientos personalizados y preventivos",
+      "Ambiente relajante y profesional"
+    ],
+    "horario": "L-V 9:30-14:00, 16:00-20:30",
+    "especialidades": [
+      "Fisioterapia",
+      "Osteopatía",
+      "Fisioterapia deportiva",
+      "Fisioterapia traumatológica"
+    ]
   },
   {
     "slug": "english-connection-canaveral",
     "name": "English Connection El Canaveral",
-    "description": "Academia de ingles con metodo comunicativo. Clases para ninos, jovenes y adultos. Enfoque practico y conversacional.",
+    "description": "Ubicada en la Calle de la Igualdad, English Connection El Cañaveral es una academia de inglés que utiliza un método comunicativo y práctico. Ofrecen clases para niños, jóvenes y adultos, enfocándose en la conversación para un aprendizaje efectivo y dinámico.",
     "category": "educacion",
     "categoryName": "Educacion e Infantil",
     "zona": "el-canaveral",
@@ -2064,12 +2319,31 @@
       "academia",
       "idiomas"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Clases de inglés para niños",
+      "Clases de inglés para jóvenes",
+      "Clases de inglés para adultos",
+      "Preparación exámenes Cambridge",
+      "Clases de conversación",
+      "Cursos intensivos de verano",
+      "Clases particulares"
+    ],
+    "destacados": [
+      "Método comunicativo y práctico",
+      "Grupos reducidos por niveles",
+      "Profesores nativos y bilingües",
+      "Flexibilidad de horarios"
+    ],
+    "horario": "L-V 10:00-14:00, 16:00-21:00",
+    "edades": "Desde 3 años hasta adultos",
+    "plazas": 150,
+    "tipoGestion": "privada"
   },
   {
     "slug": "sadeco-coslada",
     "name": "Talleres Sadeco Coslada",
-    "description": "Taller mecanico multimarca con servicio de Pre-ITV, mecanica rapida, neumaticos y mantenimiento preventivo. Dos sedes en Coslada.",
+    "description": "Talleres Sadeco Coslada, en Av. San Pablo, es un taller mecánico multimarca de confianza. Ofrecen un servicio completo que incluye Pre-ITV, mecánica rápida, cambio de neumáticos y mantenimiento preventivo, garantizando la seguridad y el buen funcionamiento de tu vehículo.",
     "category": "automocion",
     "categoryName": "Automocion",
     "zona": "coslada",
@@ -2081,12 +2355,28 @@
       "pre-itv",
       "neumaticos"
     ],
-    "featured": true
+    "featured": true,
+    "servicios": [
+      "Revisión Pre-ITV",
+      "Mecánica general y rápida",
+      "Cambio y reparación de neumáticos",
+      "Mantenimiento preventivo",
+      "Cambio de aceite y filtros",
+      "Frenos y amortiguadores",
+      "Diagnosis electrónica"
+    ],
+    "destacados": [
+      "Servicio multimarca de calidad",
+      "Profesionales experimentados",
+      "Precios competitivos",
+      "Atención rápida y eficiente"
+    ],
+    "horario": "L-V 9:00-14:00, 16:00-20:00"
   },
   {
     "slug": "masruedas-coslada",
     "name": "Masruedas First Stop Coslada",
-    "description": "Centro de neumaticos y mecanica rapida. Revision Pre-ITV, cambio de aceite, frenos y amortiguadores.",
+    "description": "Masruedas First Stop Coslada es tu centro de confianza para neumáticos y mecánica rápida. Realizan revisiones Pre-ITV, cambios de aceite, frenos y amortiguadores, asegurando que tu coche esté siempre en óptimas condiciones para la carretera.",
     "category": "automocion",
     "categoryName": "Automocion",
     "zona": "coslada",
@@ -2097,7 +2387,23 @@
       "mecanica-rapida",
       "first-stop"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Venta y montaje de neumáticos",
+      "Reparación de pinchazos",
+      "Revisión Pre-ITV",
+      "Cambio de aceite y filtros",
+      "Revisión y cambio de frenos",
+      "Sustitución de amortiguadores",
+      "Alineación y equilibrado"
+    ],
+    "destacados": [
+      "Especialistas en neumáticos",
+      "Servicio de mecánica rápida",
+      "Parte de la red First Stop",
+      "Profesionales cualificados"
+    ],
+    "horario": "L-V 8:30-19:00, S 9:00-13:00"
   },
   {
     "slug": "electroi-san-fernando",
@@ -2283,5 +2589,495 @@
       "Ideal para renovar el armario con lo más actual"
     ],
     "horario": "L-S 10:30-14:00 y 17:30-20:30"
+  },
+  {
+    "slug": "telelavo-canaveral",
+    "name": "Telelavo El Canaveral",
+    "description": "Telelavo El Cañaveral es tu solución integral para el cuidado de la ropa en el barrio. Ofrecen servicios de lavandería y tintorería con la comodidad de recogida y entrega a domicilio, además de una zona de autoservicio para quienes prefieren hacerlo ellos mismos. Es ideal para familias y profesionales con poco tiempo, ubicado estratégicamente en la C. Anna Frank, 8.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "C. Anna Frank, 8, Local 2, Vicalvaro, 28052 Madrid",
+    "horario": "L-V 10:00-14:00, 17:00-20:00, S 10:00-14:00",
+    "tags": [
+      "lavanderia",
+      "tintoreria",
+      "domicilio"
+    ],
+    "featured": false,
+    "servicios": [
+      "Lavado y secado de ropa",
+      "Planchado profesional",
+      "Limpieza en seco de prendas delicadas",
+      "Limpieza de alfombras y cortinas",
+      "Servicio a domicilio de recogida y entrega",
+      "Lavandería autoservicio"
+    ],
+    "destacados": [
+      "Comodidad del servicio a domicilio",
+      "Amplia gama de servicios para todo tipo de prendas",
+      "Ubicación céntrica en El Cañaveral",
+      "Horario flexible para adaptarse a tus necesidades"
+    ]
+  },
+  {
+    "slug": "lavanderia-vicalvaro",
+    "name": "Lavanderia Vicalvaro",
+    "description": "Lavandería Vicálvaro es una lavandería de autoservicio moderna y eficiente, perfecta para lavar grandes volúmenes de ropa o prendas voluminosas como edredones y mantas. Sus máquinas industriales de última generación garantizan un lavado y secado óptimos, con detergente y suavizante incluidos, y está abierta 7 días a la semana para tu conveniencia.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "website": "https://www.lavanderiavicalvaro.com/",
+    "tags": [
+      "lavanderia",
+      "autoservicio",
+      "24h"
+    ],
+    "featured": false,
+    "servicios": [
+      "Lavado de ropa autoservicio",
+      "Secado de ropa autoservicio",
+      "Máquinas de gran capacidad (hasta 18kg)",
+      "Detergente y suavizante incluidos",
+      "Lavado de edredones y mantas",
+      "Lavado de ropa de trabajo"
+    ],
+    "destacados": [
+      "Abierto 7 días a la semana con amplio horario",
+      "Máquinas de última generación y gran capacidad",
+      "Detergente y suavizante ecológicos incluidos",
+      "Ideal para coladas grandes y prendas voluminosas"
+    ],
+    "horario": "L-D 7:00-23:00"
+  },
+  {
+    "slug": "mediesven-canaveral",
+    "name": "Mediesven Centro Medico",
+    "description": "Mediesven Centro Médico es un referente en salud y bienestar en El Cañaveral, ofreciendo una amplia gama de especialidades médicas y tratamientos de medicina estética. Con un equipo de profesionales cualificados, se preocupan por la salud integral de toda la familia, desde pediatría hasta ginecología y dermatología, en un ambiente cercano y de confianza.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Calle de Mario Moreno Cantinflas, 72, 28052 Madrid",
+    "website": "https://mediesven.com/",
+    "rating": 4.7,
+    "numReviews": 97,
+    "tags": [
+      "centro-medico",
+      "pediatria",
+      "ginecologia",
+      "estetica"
+    ],
+    "featured": true,
+    "servicios": [
+      "Consultas de Pediatría",
+      "Consultas de Medicina de Familia",
+      "Consultas de Ginecología y Obstetricia",
+      "Dermatología",
+      "Medicina Estética (Botox, rellenos)",
+      "Nutrición y Dietética",
+      "Ecografías",
+      "Análisis clínicos"
+    ],
+    "destacados": [
+      "Amplia variedad de especialidades médicas",
+      "Equipo médico experimentado y cercano",
+      "Valoración excelente por parte de los pacientes",
+      "Servicios de medicina estética complementarios"
+    ],
+    "horario": "L-V 9:00-14:00, 16:00-20:00"
+  },
+  {
+    "slug": "mr-kebab-canaveral",
+    "name": "Mr Kebab El Canaveral",
+    "description": "Mr Kebab El Cañaveral es el lugar ideal para disfrutar de auténtica comida turca con raciones generosas y precios muy competitivos. Desde los clásicos kebabs y durum hasta falafel crujiente y platos combinados, tienen opciones para todos los gustos. Además, ofrecen un cómodo servicio a domicilio para que disfrutes en casa.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "C. Canada de Vicalvaro a San Fernando, Vicalvaro, 28052 Madrid",
+    "phone": "911 66 01 15",
+    "tags": [
+      "kebab",
+      "turco",
+      "falafel",
+      "domicilio"
+    ],
+    "delivery": true,
+    "featured": false,
+    "servicios": [
+      "Kebab en pan y plato",
+      "Durum de pollo y ternera",
+      "Falafel",
+      "Platos combinados",
+      "Hamburguesas",
+      "Patatas fritas",
+      "Bebidas",
+      "Servicio a domicilio"
+    ],
+    "destacados": [
+      "Raciones abundantes y precios económicos",
+      "Variedad de opciones turcas y fast-food",
+      "Servicio de entrega a domicilio rápido",
+      "Ideal para una comida rápida y sabrosa"
+    ],
+    "horario": "L-D 12:00-00:00"
+  },
+  {
+    "slug": "telepizza-canaveral",
+    "name": "Telepizza Canaveral",
+    "description": "Telepizza Cañaveral es tu opción de confianza para disfrutar de pizzas recién hechas con la comodidad de la entrega a domicilio o la recogida en tienda. Con una amplia variedad de pizzas, entrantes, postres y ofertas diarias, es perfecto para cenas familiares, reuniones con amigos o simplemente para darte un capricho. Ubicado estratégicamente para servir a toda la zona de Vicálvaro.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "tags": [
+      "pizza",
+      "domicilio",
+      "cadena"
+    ],
+    "delivery": true,
+    "featured": false,
+    "servicios": [
+      "Pizzas a la carta",
+      "Pizzas personalizadas",
+      "Entrantes (alitas, patatas)",
+      "Postres (brownie, helados)",
+      "Bebidas",
+      "Ofertas y promociones diarias",
+      "Servicio a domicilio",
+      "Recogida en tienda"
+    ],
+    "destacados": [
+      "Amplia variedad de pizzas y complementos",
+      "Rapidez en el servicio a domicilio",
+      "Ofertas y promociones constantes",
+      "Ideal para compartir en familia o con amigos"
+    ],
+    "horario": "L-D 13:00-23:30"
+  },
+  {
+    "slug": "kebabish-vicalvaro",
+    "name": "Kebabish Vicalvaro",
+    "description": "Kebabish Vicálvaro te invita a un viaje culinario por la gastronomía turca, ofreciendo una extensa carta de kebabs, durum y platos elaborados con pollo y cordero. Con un ambiente familiar y precios accesibles, es una excelente opción para disfrutar de una comida auténtica y sabrosa en el corazón de Vicálvaro. No olvides visitar su web para ver el menú completo.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "website": "https://kebabishvicalvaro.es/",
+    "tags": [
+      "kebab",
+      "turco",
+      "cordero"
+    ],
+    "featured": false,
+    "servicios": [
+      "Kebab de pollo y ternera",
+      "Durum de pollo y ternera",
+      "Platos de cordero",
+      "Platos de pollo",
+      "Ensaladas",
+      "Postres turcos",
+      "Bebidas",
+      "Comida para llevar"
+    ],
+    "destacados": [
+      "Auténtica cocina turca con gran variedad",
+      "Ambiente familiar y acogedor",
+      "Precios muy asequibles",
+      "Ideal para probar diferentes especialidades"
+    ],
+    "horario": "L-D 12:00-00:00"
+  },
+  {
+    "slug": "lidl-canaveral",
+    "name": "Lidl El Canaveral",
+    "description": "Lidl El Cañaveral es tu supermercado de referencia para una compra inteligente, ofreciendo productos de marca propia de alta calidad a precios muy competitivos. Destaca por su panadería fresca en tienda, una amplia sección de frutas y verduras, y sus populares ofertas semanales en productos de alimentación y bazar. Es una opción excelente para la compra diaria en el barrio.",
+    "category": "supermercados",
+    "categoryName": "Supermercados",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "cadena",
+      "discount",
+      "panaderia"
+    ],
+    "featured": false,
+    "servicios": [
+      "Panadería y bollería fresca",
+      "Frutas y verduras frescas",
+      "Carnicería y pescadería envasada",
+      "Productos de marca propia (alimentación, limpieza)",
+      "Sección de bazar y ofertas semanales",
+      "Productos ecológicos",
+      "Parking gratuito"
+    ],
+    "destacados": [
+      "Excelente relación calidad-precio",
+      "Panadería fresca horneada a diario",
+      "Amplia variedad de productos frescos",
+      "Ofertas semanales muy atractivas"
+    ],
+    "horario": "L-S 9:00-21:30, D 10:00-15:00"
+  },
+  {
+    "slug": "mercadona-san-fernando",
+    "name": "Mercadona San Fernando",
+    "description": "Mercadona San Fernando es el supermercado de referencia para muchos vecinos, conocido por su amplio surtido de productos de alimentación, droguería, perfumería y hogar, con especial énfasis en sus marcas propias como Hacendado, Deliplus y Bosque Verde. Ofrece una experiencia de compra completa y eficiente, con productos frescos de calidad y un servicio al cliente enfocado en la satisfacción.",
+    "category": "supermercados",
+    "categoryName": "Supermercados",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "tags": [
+      "cadena",
+      "hacendado"
+    ],
+    "featured": false,
+    "servicios": [
+      "Sección de frescos (fruta, verdura, carne, pescado)",
+      "Panadería y bollería",
+      "Productos de marca propia (Hacendado, Deliplus)",
+      "Droguería y perfumería",
+      "Comida preparada para llevar",
+      "Parking gratuito",
+      "Servicio a domicilio (online)"
+    ],
+    "destacados": [
+      "Amplia variedad de productos de marca propia",
+      "Excelente relación calidad-precio",
+      "Sección de frescos de calidad",
+      "Comida preparada lista para consumir"
+    ],
+    "horario": "L-S 9:00-21:30"
+  },
+  {
+    "slug": "aldi-coslada",
+    "name": "Aldi Coslada",
+    "description": "Aldi Coslada es una excelente opción para los vecinos de El Cañaveral que buscan calidad a buen precio, con un enfoque en productos frescos, ecológicos y un surtido internacional. Este supermercado discount se distingue por sus ofertas semanales en alimentación y bazar, y por ofrecer una experiencia de compra sencilla y eficiente. Es ideal para una compra completa y consciente.",
+    "category": "supermercados",
+    "categoryName": "Supermercados",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "tags": [
+      "cadena",
+      "eco",
+      "internacional"
+    ],
+    "featured": false,
+    "servicios": [
+      "Frutas y verduras frescas",
+      "Productos ecológicos y bio",
+      "Panadería y bollería recién horneada",
+      "Surtido internacional de productos",
+      "Ofertas semanales en alimentación y bazar",
+      "Carnicería y pescadería envasada",
+      "Parking gratuito"
+    ],
+    "destacados": [
+      "Productos ecológicos a precios asequibles",
+      "Ofertas semanales muy atractivas",
+      "Variedad de productos internacionales",
+      "Calidad en productos frescos"
+    ],
+    "horario": "L-S 9:00-21:30, D 10:00-15:00"
+  },
+  {
+    "slug": "laura-vivar-estilistas",
+    "name": "Laura Vivar Estilistas",
+    "description": "Laura Vivar Estilistas es tu peluquería de confianza en la zona de Ambroz, Vicálvaro, donde la atención personalizada y las últimas tendencias se unen para realzar tu belleza. Especialistas en cortes modernos, coloraciones vibrantes, mechas y tratamientos capilares, te asesorarán para encontrar el estilo que mejor se adapte a ti y a tu cabello.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerias",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "tags": [
+      "peluqueria",
+      "tintes",
+      "mechas"
+    ],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo (mujer, hombre, niño)",
+      "Coloración y tintes",
+      "Mechas (balayage, babylights, californianas)",
+      "Tratamientos capilares (hidratación, keratina)",
+      "Peinados y recogidos",
+      "Extensiones de cabello",
+      "Asesoramiento de imagen"
+    ],
+    "destacados": [
+      "Atención personalizada y profesional",
+      "Especialistas en color y mechas",
+      "Productos de alta calidad",
+      "Ambiente acogedor y relajante"
+    ],
+    "horario": "M-V 10:00-19:00, S 9:00-14:00"
+  },
+  {
+    "slug": "obramat-canaveral",
+    "name": "Obramat El Canaveral",
+    "description": "Obramat El Cañaveral es el almacén profesional de referencia para todos tus proyectos de bricolaje, construcción y reformas. Con una vasta selección de herramientas, materiales de construcción, pintura, fontanería, electricidad, jardinería y decoración, encontrarás todo lo que necesitas, ya seas profesional o particular. Su amplio stock y precios competitivos lo hacen indispensable en la zona.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "bricolaje",
+      "construccion",
+      "jardineria"
+    ],
+    "featured": true,
+    "servicios": [
+      "Venta de materiales de construcción",
+      "Herramientas eléctricas y manuales",
+      "Pintura y droguería",
+      "Fontanería y calefacción",
+      "Electricidad e iluminación",
+      "Jardinería y exterior",
+      "Decoración y revestimientos",
+      "Corte de madera y tableros"
+    ],
+    "destacados": [
+      "Amplio stock y variedad de productos",
+      "Precios competitivos para profesionales y particulares",
+      "Asesoramiento especializado",
+      "Horario amplio, incluyendo fines de semana"
+    ],
+    "horario": "L-S 7:00-21:00, D 9:00-15:00"
+  },
+  {
+    "slug": "mcdonalds-canaveral",
+    "name": "McDonald's El Canaveral",
+    "description": "McDonald's El Cañaveral es el lugar perfecto para disfrutar de tus hamburguesas favoritas, desayunos, ensaladas y postres en un ambiente familiar y moderno. Cuenta con servicio de auto-mac para mayor comodidad, una amplia sala interior y una agradable terraza. Además, integra un McCafé para los amantes del buen café y la repostería, siendo un punto de encuentro ideal en el barrio.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "cadena",
+      "fast-food",
+      "auto-mac"
+    ],
+    "delivery": true,
+    "terraza": true,
+    "aparcamiento": true,
+    "featured": false,
+    "servicios": [
+      "Hamburguesas y menús",
+      "Desayunos y McCafé",
+      "Ensaladas y opciones más saludables",
+      "Postres y helados",
+      "Servicio Auto-Mac",
+      "Zona de juegos infantil",
+      "Wi-Fi gratuito",
+      "Servicio a domicilio"
+    ],
+    "destacados": [
+      "Amplio horario, Auto-Mac 24h",
+      "Terraza exterior y zona de juegos",
+      "Variedad de opciones para todos los gustos",
+      "Ideal para familias y comidas rápidas"
+    ],
+    "horario": "L-D 8:00-00:00 (Auto-Mac 24h)"
+  },
+  {
+    "slug": "dreamfit-valdebernardo",
+    "name": "Dreamfit Valdebernardo",
+    "description": "Dreamfit Valdebernardo es un gimnasio moderno y completo, abierto 24 horas para adaptarse a cualquier horario. Ofrece una extensa zona de musculación y cardio con equipamiento de última generación, una gran variedad de clases dirigidas, piscina y una relajante zona de spa. Es la opción perfecta para quienes buscan un gimnasio con todo incluido y sin permanencia en Vicálvaro.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "tags": [
+      "gimnasio",
+      "24h",
+      "piscina",
+      "spa"
+    ],
+    "featured": false,
+    "servicios": [
+      "Zona de musculación y peso libre",
+      "Zona de cardio con máquinas de última generación",
+      "Clases dirigidas (Zumba, Body Pump, Yoga, Spinning)",
+      "Piscina climatizada",
+      "Zona de spa (sauna, baño turco)",
+      "Entrenamiento personal",
+      "Vestuarios y taquillas",
+      "Parking gratuito"
+    ],
+    "destacados": [
+      "Abierto 24 horas, 7 días a la semana",
+      "Instalaciones completas con piscina y spa",
+      "Amplia oferta de clases dirigidas",
+      "Tarifas competitivas sin permanencia"
+    ],
+    "horario": "L-D 24h (acceso con huella)"
+  },
+  {
+    "slug": "vicalvaro-crossfit",
+    "name": "Vicalvaro CrossFit",
+    "description": "Vicálvaro CrossFit es el box ideal para los amantes del CrossFit, ofreciendo una programación WOD diaria diseñada para desafiar y mejorar tu condición física. Con entrenadores certificados y una comunidad activa y motivadora, es el lugar perfecto para alcanzar tus objetivos de fuerza, resistencia y agilidad, independientemente de tu nivel de experiencia. Ubicado en la Calle de Prat, 32.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "address": "Calle de Prat, 32, 28032 Madrid",
+    "website": "http://www.crossfitvicalvaro.es/",
+    "tags": [
+      "crossfit",
+      "wod",
+      "comunidad"
+    ],
+    "featured": false,
+    "servicios": [
+      "Clases de CrossFit (WOD diario)",
+      "Clases de iniciación al CrossFit",
+      "Entrenamiento de fuerza y halterofilia",
+      "Gimnasia y movilidad",
+      "Entrenamiento personal",
+      "Programación específica para atletas",
+      "Eventos y competiciones internas",
+      "Vestuarios y duchas"
+    ],
+    "destacados": [
+      "Entrenadores certificados y experimentados",
+      "Comunidad fuerte y motivadora",
+      "Programación de entrenamientos variada",
+      "Ideal para todos los niveles, desde principiantes a avanzados"
+    ],
+    "horario": "L-V 7:00-22:00, S 9:00-14:00"
+  },
+  {
+    "slug": "lorange-bleue-vicalvaro",
+    "name": "L'Orange Bleue Vicalvaro",
+    "description": "L'Orange Bleue Vicálvaro es un gimnasio que te ofrece un ambiente motivador y un plan de entrenamiento personalizado para ayudarte a alcanzar tus metas de fitness. Con una amplia sala de musculación y cardio, y una gran variedad de clases dirigidas como Body Pump, Spinning, Yoga y funcional, es el lugar perfecto para mantenerte activo y en forma en Vicálvaro.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "tags": [
+      "gimnasio",
+      "clases",
+      "spinning"
+    ],
+    "featured": false,
+    "servicios": [
+      "Sala de musculación y peso libre",
+      "Zona de cardio",
+      "Clases de Body Pump",
+      "Clases de Spinning/Ciclo Indoor",
+      "Clases de Yoga y Pilates",
+      "Clases de entrenamiento funcional",
+      "Plan de entrenamiento personalizado",
+      "Asesoramiento nutricional"
+    ],
+    "destacados": [
+      "Ambiente motivador y cercano",
+      "Amplia variedad de clases dirigidas",
+      "Entrenadores cualificados",
+      "Planes de entrenamiento adaptados a cada persona"
+    ],
+    "horario": "L-V 7:00-22:00, S 9:00-14:00"
   }
 ]
