@@ -829,7 +829,7 @@
     "edades": "0-3 años",
     "plazas": 80,
     "tipoGestion": "privada",
-    "image": "/images/categorias/educacion.jpg",
+    "image": "/images/negocios/escuela-infantil-los-minons.jpg",
     "address": "Calle Mario Moreno Cantinflas 1, 28052 Madrid",
     "phone": "910000000"
   },
@@ -1152,7 +1152,7 @@
       "Endodoncia",
       "Periodoncia"
     ],
-    "image": "/images/categorias/salud.jpg",
+    "image": "/images/negocios/clinica-dental-siglo-xxi-canaveral.jpg",
     "address": "Calle Blas de Lezo 8, 28052 Madrid",
     "phone": "910000000"
   },
@@ -1195,7 +1195,7 @@
       "Estética Dental",
       "Odontopediatría"
     ],
-    "image": "/images/categorias/salud.jpg",
+    "image": "/images/negocios/mardones-y-martinez-dental.jpg",
     "address": "Calle Victoria Kent 10, 28052 Madrid",
     "phone": "910000000"
   },
@@ -1236,7 +1236,7 @@
       "Odontología General",
       "Estética Dental"
     ],
-    "image": "/images/categorias/salud.jpg",
+    "image": "/images/negocios/ikigai-dental-canaveral.jpg",
     "address": "Calle Anna Frank 5, 28052 Madrid",
     "phone": "910000000"
   },
@@ -1308,7 +1308,7 @@
       "Atención personalizada"
     ],
     "horario": "M-V 10:00-20:00, S 9:00-15:00",
-    "image": "/images/categorias/belleza.jpg"
+    "image": "/images/negocios/la-belle-vie-canaveral.jpg"
   },
   {
     "slug": "rizal-organic-studio",
@@ -1411,7 +1411,7 @@
       "Productos de calidad"
     ],
     "horario": "M-V 9:30-19:30, S 9:00-14:00",
-    "image": "/images/categorias/belleza.jpg",
+    "image": "/images/negocios/caliza-estilistas.jpg",
     "address": "Calle San Cipriano 30, 28032 Madrid",
     "phone": "917765432"
   },
@@ -1481,7 +1481,7 @@
       "Comunidad activa y motivadora"
     ],
     "horario": "L-V 7:00-12:00, 17:00-22:00, S 9:00-13:00",
-    "image": "/images/categorias/deporte.jpg",
+    "image": "/images/negocios/apache-crosstraining-canaveral.jpg",
     "address": "Calle Mario Moreno Cantinflas 8, 28052 Madrid",
     "phone": "654321098"
   },
@@ -1617,7 +1617,7 @@
       "Urgencias veterinarias (horario comercial)"
     ],
     "horario": "L-V 10:00-14:00 y 17:00-20:30, S 10:00-14:00",
-    "image": "/images/categorias/mascotas.jpg",
+    "image": "/images/negocios/vicalcan-veterinario.jpg",
     "address": "Calle Jose Prat 15, 28032 Madrid",
     "phone": "913712345"
   },
@@ -1718,7 +1718,7 @@
       "Primera consulta informativa"
     ],
     "horario": "L-V 9:00-14:00 y 16:00-19:00",
-    "image": "/images/categorias/servicios-profesionales.jpg"
+    "image": "/images/negocios/abogados-el-canaveral.jpg"
   },
   {
     "slug": "garcia-asociados-asesoria",
@@ -1750,7 +1750,7 @@
       "Optimización fiscal y laboral"
     ],
     "horario": "L-V 9:00-14:00 y 16:00-19:00",
-    "image": "/images/categorias/servicios-profesionales.jpg",
+    "image": "/images/negocios/garcia-asociados-asesoria.jpg",
     "address": "Calle San Cipriano 45, 28032 Madrid",
     "phone": "913234567"
   },
@@ -1784,7 +1784,7 @@
       "Asesoramiento integral en todo el proceso"
     ],
     "horario": "L-V 9:30-14:00 y 16:30-20:00, S 10:00-14:00",
-    "image": "/images/categorias/servicios-profesionales.jpg",
+    "image": "/images/negocios/templo-consulting-inmobiliaria.jpg",
     "address": "Calle Jose Prat 22, 28032 Madrid",
     "phone": "913719876"
   },
@@ -2088,7 +2088,8 @@
       "Pilates terapéutico"
     ],
     "address": "Calle Blas de Lezo 7, 28052 Madrid",
-    "phone": "912345678"
+    "phone": "912345678",
+    "image": "/images/negocios/clinica-muv-canaveral.jpg"
   },
   {
     "slug": "focus-clinic-canaveral",
@@ -2128,7 +2129,8 @@
       "Fisioterapia traumatológica"
     ],
     "address": "Av. Miguel Delibes 15, 28052 Madrid",
-    "phone": "918765432"
+    "phone": "918765432",
+    "image": "/images/negocios/focus-clinic-canaveral.jpg"
   },
   {
     "slug": "fisioterapia-escalante",
@@ -2246,7 +2248,8 @@
       "Fisioterapia traumatológica"
     ],
     "address": "Calle Victoria Kent 25, 28052 Madrid",
-    "phone": "917654321"
+    "phone": "917654321",
+    "image": "/images/negocios/soul-fisioterapia.jpg"
   },
   {
     "slug": "english-connection-canaveral",
@@ -2314,7 +2317,8 @@
       "Precios competitivos",
       "Atención rápida y eficiente"
     ],
-    "horario": "L-V 9:00-14:00, 16:00-20:00"
+    "horario": "L-V 9:00-14:00, 16:00-20:00",
+    "image": "/images/negocios/sadeco-coslada.jpg"
   },
   {
     "slug": "masruedas-coslada",
@@ -2348,7 +2352,8 @@
     ],
     "horario": "L-V 8:30-19:00, S 9:00-13:00",
     "address": "Av. de España 10, 28823 Coslada, Madrid",
-    "phone": "916712345"
+    "phone": "916712345",
+    "image": "/images/negocios/masruedas-coslada.jpg"
   },
   {
     "slug": "electroi-san-fernando",
@@ -2382,7 +2387,8 @@
     ],
     "horario": "L-V 9:00-14:00 y 16:00-19:30, S 9:00-13:00",
     "address": "Calle San Pablo 5, 28830 San Fernando de Henares, Madrid",
-    "phone": "916734567"
+    "phone": "916734567",
+    "image": "/images/negocios/electroi-san-fernando.jpg"
   },
   {
     "slug": "inyeauto-san-fernando",
@@ -2604,7 +2610,8 @@
     ],
     "horario": "L-D 7:00-23:00",
     "address": "Calle de San Cipriano, 68, 28032 Madrid",
-    "phone": "654 32 10 98"
+    "phone": "654 32 10 98",
+    "image": "/images/negocios/lavanderia-vicalvaro.jpg"
   },
   {
     "slug": "mediesven-canaveral",
@@ -2641,7 +2648,8 @@
       "Valoración excelente por parte de los pacientes",
       "Servicios de medicina estética complementarios"
     ],
-    "horario": "L-V 9:00-14:00, 16:00-20:00"
+    "horario": "L-V 9:00-14:00, 16:00-20:00",
+    "image": "/images/negocios/mediesven-canaveral.jpg"
   },
   {
     "slug": "mr-kebab-canaveral",
@@ -3119,7 +3127,8 @@
       "Fomento de la autonomía infantil"
     ],
     "horario": "L-V 8:00-17:00",
-    "plazas": 60
+    "plazas": 60,
+    "image": "/images/negocios/escuela-infantil-aupa.jpg"
   },
   {
     "slug": "ikigai-dental-canaveral-v2",
@@ -3164,7 +3173,8 @@
       "Trato cercano y personalizado",
       "Financiación a medida"
     ],
-    "horario": "L-V 9:30-14:00 y 16:00-20:00, S 10:00-14:00"
+    "horario": "L-V 9:30-14:00 y 16:00-20:00, S 10:00-14:00",
+    "image": "/images/negocios/ikigai-dental-canaveral-v2.jpg"
   },
   {
     "slug": "vicalvaro-dental",
@@ -3208,7 +3218,8 @@
       "Tecnología avanzada para diagnósticos",
       "Registro sanitario garantizado"
     ],
-    "horario": "L-V 9:00-20:00"
+    "horario": "L-V 9:00-20:00",
+    "image": "/images/negocios/vicalvaro-dental.jpg"
   },
   {
     "slug": "dentistaelcanaveral-consultorio",
@@ -3280,7 +3291,8 @@
       "Platos tradicionales y frescos",
       "Excelente valoración en TheFork"
     ],
-    "horario": "L-D 13:00-16:00 y 20:00-23:00"
+    "horario": "L-D 13:00-16:00 y 20:00-23:00",
+    "image": "/images/negocios/vietnam-2013-canaveral.jpg"
   },
   {
     "slug": "seven-canaveral",
@@ -3421,7 +3433,8 @@
       "Platos frescos y sabrosos",
       "Excelente relación calidad-precio"
     ],
-    "horario": "Lunes a Domingo: 13:00-16:00 y 20:00-23:00"
+    "horario": "Lunes a Domingo: 13:00-16:00 y 20:00-23:00",
+    "image": "/images/negocios/chinawok-express-canaveral.jpg"
   },
   {
     "slug": "la-bajada-street-food-vicalvaro",
@@ -3438,8 +3451,9 @@
       "tendencia"
     ],
     "tiposCocina": [
-      "fusión",
-      "street-food"
+      "peruana",
+      "street food",
+      "brasa"
     ],
     "featured": true,
     "servicios": [
@@ -3455,7 +3469,12 @@
       "Ambiente moderno y juvenil",
       "Excelente valoración en TheFork"
     ],
-    "horario": "Martes a Jueves: 13:30-16:00 y 20:30-23:00, Viernes y Sábado: 13:30-16:00 y 20:30-00:00, Domingo: 13:30-16:00"
+    "horario": "Martes a Jueves: 13:30-16:00 y 20:30-23:00, Viernes y Sábado: 13:30-16:00 y 20:30-00:00, Domingo: 13:30-16:00",
+    "address": "C. de San Cipriano, 67, Vicálvaro, 28032 Madrid",
+    "phone": "915 50 14 34",
+    "website": "https://restaurantelabajada.com/",
+    "terraza": true,
+    "image": "/images/negocios/la-bajada-street-food-vicalvaro.jpg"
   },
   {
     "slug": "farmacia-central-canaveral",
@@ -3579,8 +3598,8 @@
   },
   {
     "slug": "jardin-canaveral",
-    "name": "Jardín Cañaveral",
-    "description": "Restaurante con terraza ajardinada en El Cañaveral. Cocina mediterránea, carnes a la brasa y ambiente familiar. Espacio exterior amplio para disfrutar al aire libre, ideal para comidas y cenas en un entorno relajado y agradable.",
+    "name": "El Jardín del Cañaveral",
+    "description": "Restaurante familiar con amplia terraza ajardinada en El Cañaveral. Cocina mediterránea, carnes a la brasa y platos caseros. Espacio accesible con parking gratuito en la calle.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -3610,7 +3629,11 @@
       "Especialidad en carnes a la brasa",
       "Ambiente familiar y acogedor"
     ],
-    "horario": "Martes a Domingo: 13:00-16:30 y 20:00-23:30, Lunes: Cerrado"
+    "horario": "Martes a Domingo: 13:00-16:30 y 20:00-23:30, Lunes: Cerrado",
+    "address": "C. Cerro del Campo, 62, 28052 Madrid",
+    "phone": "912 62 40 03",
+    "accesibilidad": true,
+    "aparcamiento": true
   },
   {
     "slug": "estanco-el-canaveral",
@@ -3640,6 +3663,7 @@
       "Amplia variedad de productos",
       "Punto de venta de loterías"
     ],
-    "horario": "Lunes a Viernes: 09:00-14:00 y 17:00-20:00, Sábado: 09:30-14:00, Domingo: Cerrado"
+    "horario": "Lunes a Viernes: 09:00-14:00 y 17:00-20:00, Sábado: 09:30-14:00, Domingo: Cerrado",
+    "address": "Av. de Miguel Delibes, 60, 28052 Madrid"
   }
 ]
