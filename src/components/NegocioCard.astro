@@ -1,0 +1,58 @@
+---
+import type { Negocio } from "@/lib/directory";
+
+interface Props {
+  negocio: Negocio;
+}
+
+const { negocio } = Astro.props;
+---
+
+<a
+  href={`/${negocio.category}/${negocio.slug}`}
+  class="block bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-md transition-shadow group"
+>
+  {negocio.image && (
+    <img
+      src={negocio.image}
+      alt={negocio.name}
+      class="w-full h-40 object-cover"
+      loading="lazy"
+    />
+  )}
+  <div class="p-5">
+    <div class="flex items-start justify-between gap-2 mb-2">
+      <h3 class="font-semibold text-lg group-hover:text-brand-600 transition-colors">
+        {negocio.name}
+      </h3>
+      {negocio.featured && (
+        <span class="shrink-0 text-xs font-medium bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">
+          Destacado
+        </span>
+      )}
+    </div>
+    <p class="text-gray-600 text-sm mb-3 line-clamp-2">{negocio.description}</p>
+    <div class="flex items-center gap-4 text-xs text-gray-400">
+      <span>{negocio.zonaName}</span>
+      <span class="capitalize">{negocio.categoryName}</span>
+    </div>
+    {negocio.rating && (
+      <div class="flex items-center gap-1 mt-2 text-sm">
+        <span class="text-yellow-500">&#9733;</span>
+        <span class="font-medium text-gray-700">{negocio.rating}</span>
+        {negocio.numReviews && (
+          <span class="text-gray-400">({negocio.numReviews})</span>
+        )}
+      </div>
+    )}
+    {negocio.tags && negocio.tags.length > 0 && (
+      <div class="flex flex-wrap gap-1.5 mt-3">
+        {negocio.tags.map((tag) => (
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">
+            {tag}
+          </span>
+        ))}
+      </div>
+    )}
+  </div>
+</a>

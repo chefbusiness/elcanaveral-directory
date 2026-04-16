@@ -1,0 +1,67 @@
+---
+// Busqueda client-side con Fuse.js
+---
+
+<div class="relative max-w-xl mx-auto" id="search-container">
+  <input
+    type="text"
+    id="search-input"
+    placeholder="Buscar negocios en El Canaveral..."
+    class="w-full border border-gray-300 rounded-xl px-5 py-3.5 text-lg focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent"
+  />
+  <div
+    id="search-results"
+    class="absolute top-full left-0 right-0 bg-white border border-gray-200 rounded-xl mt-2 shadow-lg hidden z-50 max-h-80 overflow-y-auto"
+  >
+  </div>
+</div>
+
+<script>
+  import Fuse from "fuse.js";
+
+  const input = document.getElementById("search-input") as HTMLInputElement;
+  const resultsDiv = document.getElementById("search-results")!;
+
+  let fuse: Fuse<any> | null = null;
+
+  input.addEventListener("focus", async () => {
+    if (fuse) return;
+    const res = await fetch("/data/negocios.json");
+    const negocios = await res.json();
+    fuse = new Fuse(negocios, {
+      keys: ["name", "description", "categoryName", "zonaName", "tags"],
+      threshold: 0.3,
+    });
+  });
+
+  input.addEventListener("input", () => {
+    const query = input.value.trim();
+    if (!query || !fuse) {
+      resultsDiv.classList.add("hidden");
+      return;
+    }
+
+    const results = fuse.search(query, { limit: 8 });
+    if (results.length === 0) {
+      resultsDiv.innerHTML = '<p class="p-4 text-gray-500 text-sm">Sin resultados</p>';
+    } else {
+      resultsDiv.innerHTML = results
+        .map(
+          (r: any) => `
+          <a href="/${r.item.category}/${r.item.slug}" class="block px-4 py-3 hover:bg-gray-50 border-b last:border-0">
+            <p class="font-medium">${r.item.name}</p>
+            <p class="text-sm text-gray-500">${r.item.zonaName} · ${r.item.categoryName}</p>
+          </a>
+        `
+        )
+        .join("");
+    }
+    resultsDiv.classList.remove("hidden");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!(e.target as HTMLElement).closest("#search-container")) {
+      resultsDiv.classList.add("hidden");
+    }
+  });
+</script>

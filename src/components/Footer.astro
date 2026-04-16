@@ -1,0 +1,40 @@
+---
+const siteName = import.meta.env.PUBLIC_SITE_NAME || "El Canaveral Info";
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-gray-100 py-12 px-4 mt-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid sm:grid-cols-3 gap-8 mb-8">
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-3">{siteName}</h3>
+        <p class="text-sm text-gray-500">
+          El directorio de negocios locales de El Canaveral, Vicalvaro, Coslada y San Fernando de Henares.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-3">Directorio</h3>
+        <nav class="flex flex-col gap-2 text-sm text-gray-500">
+          <a href="/directorio" class="hover:text-gray-700">Todos los negocios</a>
+          <a href="/zonas" class="hover:text-gray-700">Por zonas</a>
+          <a href="/alta" class="hover:text-gray-700">Registra tu negocio</a>
+        </nav>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-3">Servicios SEO Local</h3>
+        <nav class="flex flex-col gap-2 text-sm text-gray-500">
+          <a href="https://gastroseo.com" target="_blank" rel="noopener" class="hover:text-gray-700">GastroSEO</a>
+          <a href="https://gastrolocal.pro" target="_blank" rel="noopener" class="hover:text-gray-700">GastroLocal</a>
+          <a href="https://localseoads.com" target="_blank" rel="noopener" class="hover:text-gray-700">LocalSEOAds</a>
+        </nav>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-400 border-t border-gray-200 pt-6">
+      <p>&copy; {year} {siteName} &mdash; Gestionado por <a href="https://localseoads.com" target="_blank" rel="noopener" class="hover:text-gray-600">LocalSEOAds.com</a></p>
+      <div class="flex gap-6">
+        <a href="/privacidad" class="hover:text-gray-600">Privacidad</a>
+        <a href="/cookies" class="hover:text-gray-600">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>

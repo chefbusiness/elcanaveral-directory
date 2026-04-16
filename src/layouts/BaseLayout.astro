@@ -1,0 +1,41 @@
+---
+import "@/styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  noindex?: boolean;
+}
+
+const { title, description, image = "/images/og-default.jpg", noindex = false } = Astro.props;
+const siteName = import.meta.env.PUBLIC_SITE_NAME || "El Canaveral Info";
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const fullTitle = title === "Directorio de Negocios Locales" ? `${title} | ${siteName}` : `${title} | ${siteName}`;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content={siteName} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

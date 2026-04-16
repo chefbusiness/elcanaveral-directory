@@ -1,0 +1,38 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { loadZonas } from "@/lib/directory";
+
+const zonas = loadZonas();
+---
+
+<BaseLayout
+  title="Zonas del directorio"
+  description="Explora los negocios por zona: El Canaveral, Vicalvaro, Coslada y San Fernando de Henares."
+>
+  <Header />
+
+  <section class="pt-24 pb-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-3xl font-bold mb-8">Zonas</h1>
+      <div class="grid sm:grid-cols-2 gap-6">
+        {zonas.map((zona) => (
+          <a
+            href={`/zona/${zona.slug}`}
+            class="p-6 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <h2 class="text-xl font-bold mb-2">{zona.name}</h2>
+            <p class="text-gray-600 text-sm mb-3">{zona.description}</p>
+            <div class="flex items-center gap-4 text-sm text-gray-400">
+              {zona.municipality && <span>{zona.municipality}</span>}
+              <span class="font-medium text-brand-600">{zona.count} negocios</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

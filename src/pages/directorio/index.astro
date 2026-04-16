@@ -1,0 +1,72 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import NegocioCard from "@/components/NegocioCard.astro";
+import SearchBar from "@/components/SearchBar.astro";
+import { loadNegocios, loadCategorias, loadZonas } from "@/lib/directory";
+
+const negocios = loadNegocios();
+const categorias = loadCategorias();
+const zonas = loadZonas();
+---
+
+<BaseLayout
+  title="Directorio completo de negocios"
+  description="Todos los negocios, comercios y servicios en El Canaveral, Vicalvaro, Coslada y San Fernando de Henares. Directorio local completo."
+>
+  <Header />
+
+  <section class="pt-24 pb-8 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Directorio de negocios</h1>
+      <SearchBar />
+    </div>
+  </section>
+
+  <!-- Filtros -->
+  <section class="px-4 pb-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-3">
+        <span class="text-xs font-medium text-gray-400 uppercase tracking-wider">Categorias</span>
+      </div>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <a href="/directorio" class="text-sm font-medium bg-brand-600 text-white px-3 py-1.5 rounded-full">
+          Todos ({negocios.length})
+        </a>
+        {categorias.filter(c => (c.count ?? 0) > 0).map((cat) => (
+          <a
+            href={`/${cat.slug}`}
+            class="text-sm font-medium bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full hover:bg-gray-200 transition-colors"
+          >
+            {cat.icon} {cat.name} ({cat.count})
+          </a>
+        ))}
+      </div>
+      <div class="mb-3">
+        <span class="text-xs font-medium text-gray-400 uppercase tracking-wider">Zonas</span>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        {zonas.map((zona) => (
+          <a
+            href={`/zona/${zona.slug}`}
+            class="text-sm font-medium bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full hover:bg-gray-200 transition-colors"
+          >
+            {zona.name} ({zona.count})
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Grid -->
+  <section class="px-4 pb-16">
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {negocios.map((negocio) => (
+        <NegocioCard negocio={negocio} />
+      ))}
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "supermercados",
+    "name": "Supermercados",
+    "description": "Supermercados y grandes superficies de alimentacion en El Canaveral y alrededores",
+    "icon": "🛒"
+  },
+  {
+    "slug": "fruterias",
+    "name": "Fruterias",
+    "description": "Fruterias y verdulerías con producto fresco de temporada",
+    "icon": "🍎"
+  },
+  {
+    "slug": "panaderias",
+    "name": "Panaderias y Obradores",
+    "description": "Panaderias, obradores y pastelerias artesanales",
+    "icon": "🥖"
+  },
+  {
+    "slug": "cafeterias",
+    "name": "Cafeterias",
+    "description": "Cafeterias, coffee shops y salones de te",
+    "icon": "☕"
+  },
+  {
+    "slug": "restaurantes",
+    "name": "Restaurantes",
+    "description": "Restaurantes, pizzerias y establecimientos de comida para llevar",
+    "icon": "🍽️"
+  },
+  {
+    "slug": "tiendas-alimentacion",
+    "name": "Tiendas de Alimentacion",
+    "description": "Tiendas de alimentacion, bazares y mini markets",
+    "icon": "🏪"
+  },
+  {
+    "slug": "salud",
+    "name": "Salud y Bienestar",
+    "description": "Clinicas, dentistas, farmacias, fisioterapeutas y centros de salud",
+    "icon": "🏥"
+  },
+  {
+    "slug": "belleza",
+    "name": "Belleza y Peluquerias",
+    "description": "Peluquerias, barberías, centros de estetica y bienestar",
+    "icon": "💇"
+  },
+  {
+    "slug": "deporte",
+    "name": "Deporte y Fitness",
+    "description": "Gimnasios, padel, instalaciones deportivas y actividades al aire libre",
+    "icon": "🏋️"
+  },
+  {
+    "slug": "educacion",
+    "name": "Educacion e Infantil",
+    "description": "Guarderias, colegios, academias y centros de formacion",
+    "icon": "📚"
+  },
+  {
+    "slug": "hogar",
+    "name": "Hogar y Reformas",
+    "description": "Ferreterias, fontaneros, electricistas, reformas y mantenimiento del hogar",
+    "icon": "🔧"
+  },
+  {
+    "slug": "mascotas",
+    "name": "Mascotas",
+    "description": "Veterinarios, tiendas de mascotas y peluquerias caninas",
+    "icon": "🐾"
+  },
+  {
+    "slug": "moda",
+    "name": "Moda y Complementos",
+    "description": "Tiendas de ropa, zapaterias y accesorios",
+    "icon": "👗"
+  },
+  {
+    "slug": "automocion",
+    "name": "Automocion",
+    "description": "Talleres mecanicos, lavaderos, ITV y concesionarios",
+    "icon": "🚗"
+  },
+  {
+    "slug": "servicios-profesionales",
+    "name": "Servicios Profesionales",
+    "description": "Gestorías, abogados, seguros, inmobiliarias y asesores fiscales",
+    "icon": "💼"
+  },
+  {
+    "slug": "ocio",
+    "name": "Ocio y Entretenimiento",
+    "description": "Cines, ludotecas, bares, terrazas y espacios de ocio",
+    "icon": "🎭"
+  }
+]

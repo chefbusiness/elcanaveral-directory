@@ -1,0 +1,108 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import SearchBar from "@/components/SearchBar.astro";
+import NegocioCard from "@/components/NegocioCard.astro";
+import { loadCategorias, loadZonas, getFeaturedNegocios } from "@/lib/directory";
+
+const categorias = loadCategorias();
+const zonas = loadZonas();
+const featured = getFeaturedNegocios(6);
+---
+
+<BaseLayout
+  title="Directorio de Negocios Locales"
+  description="El directorio mas completo de negocios, comercios y servicios en El Canaveral, Vicalvaro, Coslada y San Fernando de Henares. Encuentra lo que necesitas cerca de casa."
+>
+  <Header />
+
+  <!-- Hero -->
+  <section class="pt-28 pb-16 px-4 bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+        Negocios locales en <span class="text-brand-600">El Canaveral</span>
+      </h1>
+      <p class="text-lg text-gray-600 mb-10">
+        Encuentra comercios, restaurantes y servicios en tu barrio y alrededores.
+        El directorio hiperlocal de El Canaveral, Vicalvaro, Coslada y San Fernando.
+      </p>
+      <SearchBar />
+    </div>
+  </section>
+
+  <!-- Zonas -->
+  <section class="py-12 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">Zonas</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {zonas.map((zona) => (
+          <a
+            href={`/zona/${zona.slug}`}
+            class="p-5 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <h3 class="font-semibold text-lg">{zona.name}</h3>
+            <p class="text-sm text-gray-500 mt-1 line-clamp-2">{zona.description}</p>
+            <span class="text-sm font-medium text-brand-600 mt-2 inline-block">
+              {zona.count} negocios
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorias -->
+  <section class="py-12 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">Categorias</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {categorias.map((cat) => (
+          <a
+            href={`/${cat.slug}`}
+            class="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            {cat.icon && <span class="text-2xl">{cat.icon}</span>}
+            <div>
+              <h3 class="font-semibold">{cat.name}</h3>
+              <span class="text-sm text-gray-400">{cat.count} negocios</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Destacados -->
+  {featured.length > 0 && (
+    <section class="py-16 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-2xl font-bold mb-8">Negocios destacados</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {featured.map((negocio) => (
+            <NegocioCard negocio={negocio} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- CTA Registro -->
+  <section class="py-16 px-4 bg-brand-600 text-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Tienes un negocio en El Canaveral?</h2>
+      <p class="text-brand-100 mb-8">
+        Registra tu negocio gratis y aparece en el directorio local mas completo de la zona.
+        Destaca entre tus vecinos y atrae nuevos clientes.
+      </p>
+      <a
+        href="/alta"
+        class="inline-block bg-white text-brand-700 font-semibold px-6 py-3 rounded-lg hover:bg-brand-50 transition-colors"
+      >
+        Registrar mi negocio
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

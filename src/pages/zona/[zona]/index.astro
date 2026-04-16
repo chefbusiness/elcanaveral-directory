@@ -1,0 +1,75 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import NegocioCard from "@/components/NegocioCard.astro";
+import { generateZonaPaths, loadCategorias, getNegociosByCategoriaYZona } from "@/lib/directory";
+import type { Negocio, Zona } from "@/lib/directory";
+
+export function getStaticPaths() {
+  return generateZonaPaths();
+}
+
+interface Props extends Zona {
+  negocios: Negocio[];
+}
+
+const { name, description, slug, negocios, count } = Astro.props;
+const categorias = loadCategorias();
+const categoriasEnZona = categorias
+  .map((cat) => ({
+    ...cat,
+    count: getNegociosByCategoriaYZona(cat.slug, slug!).length,
+  }))
+  .filter((cat) => cat.count > 0);
+---
+
+<BaseLayout
+  title={`Negocios en ${name}`}
+  description={`Directorio de negocios, comercios y servicios en ${name}. ${description}`}
+>
+  <Header />
+
+  <section class="pt-24 pb-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-gray-700">Inicio</a>
+        <span class="mx-2">/</span>
+        <a href="/zonas" class="hover:text-gray-700">Zonas</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-900">{name}</span>
+      </nav>
+
+      <div class="mb-8">
+        <h1 class="text-3xl font-bold">Negocios en {name}</h1>
+        <p class="text-gray-600 mt-2">{description}</p>
+        <p class="text-sm text-gray-400 mt-1">{count} negocios registrados</p>
+      </div>
+
+      {categoriasEnZona.length > 0 && (
+        <div class="flex flex-wrap gap-2 mb-8">
+          {categoriasEnZona.map((cat) => (
+            <a
+              href={`/zona/${slug}/${cat.slug}`}
+              class="text-sm bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full hover:bg-gray-200 transition-colors"
+            >
+              {cat.icon} {cat.name} ({cat.count})
+            </a>
+          ))}
+        </div>
+      )}
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {negocios.map((negocio) => (
+          <NegocioCard negocio={negocio} />
+        ))}
+      </div>
+
+      {negocios.length === 0 && (
+        <p class="text-gray-500 text-center py-12">Aun no hay negocios registrados en esta zona.</p>
+      )}
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
