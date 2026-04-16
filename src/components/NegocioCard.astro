@@ -6,52 +6,81 @@ interface Props {
 }
 
 const { negocio } = Astro.props;
+const servicios = (negocio.servicios as string[] | undefined) || [];
 ---
 
 <a
   href={`/${negocio.category}/${negocio.slug}`}
-  class="block bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-md transition-shadow group"
+  class="block bg-white rounded-xl border border-warm-200 overflow-hidden hover:shadow-lg hover:border-brand-200 transition-all duration-200 group"
 >
-  {negocio.image && (
-    <img
-      src={negocio.image}
-      alt={negocio.name}
-      class="w-full h-40 object-cover"
-      loading="lazy"
-    />
-  )}
-  <div class="p-5">
-    <div class="flex items-start justify-between gap-2 mb-2">
-      <h3 class="font-semibold text-lg group-hover:text-brand-600 transition-colors">
-        {negocio.name}
-      </h3>
+  {negocio.image ? (
+    <div class="relative">
+      <img
+        src={negocio.image}
+        alt={negocio.name}
+        class="w-full h-44 object-cover"
+        loading="lazy"
+      />
       {negocio.featured && (
-        <span class="shrink-0 text-xs font-medium bg-brand-50 text-brand-700 px-2 py-0.5 rounded-full">
+        <span class="absolute top-3 left-3 text-xs font-semibold bg-accent-500 text-white px-2.5 py-1 rounded-md shadow-sm">
+          Destacado
+        </span>
+      )}
+      {negocio.precioRango && (
+        <span class="absolute top-3 right-3 text-xs font-medium bg-white/90 backdrop-blur-sm text-gray-700 px-2 py-0.5 rounded-md">
+          {negocio.precioRango}
+        </span>
+      )}
+    </div>
+  ) : (
+    <div class="relative w-full h-44 bg-gradient-to-br from-brand-50 to-brand-100 flex items-center justify-center">
+      <span class="text-4xl opacity-60">{negocio.categoryName === "Restaurantes" ? "🍽️" : negocio.categoryName === "Salud y Bienestar" ? "🏥" : negocio.categoryName === "Educacion e Infantil" ? "📚" : negocio.categoryName === "Belleza y Peluquerias" ? "💇" : negocio.categoryName === "Deporte y Fitness" ? "🏋️" : negocio.categoryName === "Mascotas" ? "🐾" : negocio.categoryName === "Hogar y Reformas" ? "🔧" : negocio.categoryName === "Servicios Profesionales" ? "💼" : "🏪"}</span>
+      {negocio.featured && (
+        <span class="absolute top-3 left-3 text-xs font-semibold bg-accent-500 text-white px-2.5 py-1 rounded-md shadow-sm">
           Destacado
         </span>
       )}
     </div>
-    <p class="text-gray-600 text-sm mb-3 line-clamp-2">{negocio.description}</p>
-    <div class="flex items-center gap-4 text-xs text-gray-400">
-      <span>{negocio.zonaName}</span>
-      <span class="capitalize">{negocio.categoryName}</span>
+  )}
+  <div class="p-4">
+    <div class="flex items-start justify-between gap-2 mb-1.5">
+      <h3 class="font-semibold text-base group-hover:text-brand-600 transition-colors line-clamp-1">
+        {negocio.name}
+      </h3>
     </div>
+
     {negocio.rating && (
-      <div class="flex items-center gap-1 mt-2 text-sm">
-        <span class="text-yellow-500">&#9733;</span>
-        <span class="font-medium text-gray-700">{negocio.rating}</span>
+      <div class="flex items-center gap-1.5 mb-2">
+        <div class="flex items-center gap-0.5">
+          {[1,2,3,4,5].map((star) => (
+            <span class={`text-xs ${star <= Math.round(negocio.rating!) ? 'text-yellow-400' : 'text-gray-200'}`}>&#9733;</span>
+          ))}
+        </div>
+        <span class="text-xs font-medium text-gray-700">{negocio.rating}</span>
         {negocio.numReviews && (
-          <span class="text-gray-400">({negocio.numReviews})</span>
+          <span class="text-xs text-gray-400">({negocio.numReviews})</span>
         )}
       </div>
     )}
-    {negocio.tags && negocio.tags.length > 0 && (
-      <div class="flex flex-wrap gap-1.5 mt-3">
-        {negocio.tags.map((tag) => (
-          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">
-            {tag}
-          </span>
+
+    <p class="text-gray-500 text-sm mb-3 line-clamp-2">{negocio.description}</p>
+
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-3 text-xs text-gray-400">
+        <span>{negocio.zonaName}</span>
+        <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+        <span>{negocio.categoryName}</span>
+      </div>
+    </div>
+
+    {servicios.length > 0 && (
+      <div class="flex flex-wrap gap-1 mt-2.5">
+        {servicios.slice(0, 3).map((s) => (
+          <span class="text-[11px] bg-warm-100 text-gray-600 px-2 py-0.5 rounded">{s}</span>
         ))}
+        {servicios.length > 3 && (
+          <span class="text-[11px] text-gray-400">+{servicios.length - 3}</span>
+        )}
       </div>
     )}
   </div>

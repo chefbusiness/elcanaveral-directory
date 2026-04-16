@@ -2,17 +2,20 @@
 const siteName = import.meta.env.PUBLIC_SITE_NAME || "El Canaveral Info";
 ---
 
-<header class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
+<header class="fixed top-0 w-full bg-white/90 backdrop-blur-lg border-b border-warm-200 z-50">
   <div class="max-w-6xl mx-auto flex items-center justify-between h-16 px-4">
-    <a href="/" class="font-bold text-xl text-gray-900">{siteName}</a>
-    <nav class="hidden sm:flex items-center gap-6 text-sm text-gray-600">
-      <a href="/directorio" class="hover:text-gray-900">Directorio</a>
-      <a href="/zonas" class="hover:text-gray-900">Zonas</a>
-      <a href="/blog" class="hover:text-gray-900">Blog</a>
+    <a href="/" class="flex items-center gap-2">
+      <span class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">EC</span>
+      <span class="font-bold text-lg text-brand-900 hidden sm:inline">{siteName}</span>
+    </a>
+    <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-gray-600">
+      <a href="/directorio" class="hover:text-brand-600 transition-colors">Directorio</a>
+      <a href="/zonas" class="hover:text-brand-600 transition-colors">Zonas</a>
+      <a href="/blog" class="hover:text-brand-600 transition-colors">Blog</a>
     </nav>
     <a
       href="/alta"
-      class="text-sm font-medium bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors"
+      class="text-sm font-semibold bg-accent-500 text-white px-4 py-2 rounded-lg hover:bg-accent-600 transition-colors shadow-sm"
     >
       Registra tu negocio
     </a>

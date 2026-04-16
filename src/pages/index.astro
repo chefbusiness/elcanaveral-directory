@@ -4,11 +4,12 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import SearchBar from "@/components/SearchBar.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
-import { loadCategorias, loadZonas, getFeaturedNegocios } from "@/lib/directory";
+import { loadCategorias, loadZonas, getFeaturedNegocios, loadNegocios } from "@/lib/directory";
 
 const categorias = loadCategorias();
 const zonas = loadZonas();
 const featured = getFeaturedNegocios(6);
+const totalNegocios = loadNegocios().length;
 ---
 
 <BaseLayout
@@ -18,54 +19,59 @@ const featured = getFeaturedNegocios(6);
   <Header />
 
   <!-- Hero -->
-  <section class="pt-28 pb-16 px-4 bg-gradient-to-b from-brand-50 to-white">
-    <div class="max-w-4xl mx-auto text-center">
-      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-4">
-        Negocios locales en <span class="text-brand-600">El Canaveral</span>
+  <section class="pt-24 pb-20 px-4 bg-gradient-to-b from-brand-50 via-white to-warm-50 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,<svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;><g fill=&quot;%23000&quot;><path d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/></g></g></svg>');"></div>
+    <div class="max-w-4xl mx-auto text-center relative">
+      <div class="inline-flex items-center gap-2 bg-brand-100 text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
+        <span class="w-2 h-2 bg-brand-500 rounded-full animate-pulse"></span>
+        {totalNegocios} negocios registrados
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-brand-900 mb-5 leading-[1.1]">
+        Tu barrio, tus negocios.<br/>
+        <span class="text-brand-600">Todo en un solo lugar.</span>
       </h1>
-      <p class="text-lg text-gray-600 mb-10">
-        Encuentra comercios, restaurantes y servicios en tu barrio y alrededores.
-        El directorio hiperlocal de El Canaveral, Vicalvaro, Coslada y San Fernando.
+      <p class="text-lg text-gray-500 mb-10 max-w-2xl mx-auto">
+        Encuentra comercios, restaurantes y servicios en El Canaveral, Vicalvaro, Coslada y San Fernando de Henares.
       </p>
       <SearchBar />
     </div>
   </section>
 
-  <!-- Zonas -->
-  <section class="py-12 px-4">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-2xl font-bold mb-6">Zonas</h2>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {zonas.map((zona) => (
-          <a
-            href={`/zona/${zona.slug}`}
-            class="p-5 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow"
-          >
-            <h3 class="font-semibold text-lg">{zona.name}</h3>
-            <p class="text-sm text-gray-500 mt-1 line-clamp-2">{zona.description}</p>
-            <span class="text-sm font-medium text-brand-600 mt-2 inline-block">
-              {zona.count} negocios
-            </span>
-          </a>
-        ))}
-      </div>
+  <!-- Stats rapidos -->
+  <section class="px-4 -mt-8 relative z-10">
+    <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-3">
+      {zonas.map((zona) => (
+        <a
+          href={`/zona/${zona.slug}`}
+          class="bg-white rounded-xl border border-warm-200 p-4 text-center hover:shadow-md hover:border-brand-200 transition-all"
+        >
+          <p class="text-2xl font-bold text-brand-600">{zona.count}</p>
+          <p class="text-sm text-gray-500 mt-0.5">{zona.name}</p>
+        </a>
+      ))}
     </div>
   </section>
 
   <!-- Categorias -->
-  <section class="py-12 px-4 bg-gray-50">
+  <section class="py-16 px-4">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-2xl font-bold mb-6">Categorias</h2>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <h2 class="text-2xl font-bold text-brand-900">Explora por categoria</h2>
+          <p class="text-gray-500 mt-1">Encuentra exactamente lo que necesitas</p>
+        </div>
+        <a href="/directorio" class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver todo &rarr;</a>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
         {categorias.map((cat) => (
           <a
             href={`/${cat.slug}`}
-            class="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow"
+            class={`flex items-center gap-3 p-4 rounded-xl border transition-all ${(cat.count ?? 0) > 0 ? 'bg-white border-warm-200 hover:shadow-md hover:border-brand-200' : 'bg-warm-50 border-warm-100 opacity-50'}`}
           >
             {cat.icon && <span class="text-2xl">{cat.icon}</span>}
             <div>
-              <h3 class="font-semibold">{cat.name}</h3>
-              <span class="text-sm text-gray-400">{cat.count} negocios</span>
+              <h3 class="font-semibold text-sm">{cat.name}</h3>
+              <span class="text-xs text-gray-400">{cat.count} negocios</span>
             </div>
           </a>
         ))}
@@ -75,10 +81,15 @@ const featured = getFeaturedNegocios(6);
 
   <!-- Destacados -->
   {featured.length > 0 && (
-    <section class="py-16 px-4">
+    <section class="py-16 px-4 bg-white">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-2xl font-bold mb-8">Negocios destacados</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="flex items-end justify-between mb-8">
+          <div>
+            <h2 class="text-2xl font-bold text-brand-900">Negocios destacados</h2>
+            <p class="text-gray-500 mt-1">Los mejor valorados por los vecinos</p>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {featured.map((negocio) => (
             <NegocioCard negocio={negocio} />
           ))}
@@ -88,19 +99,34 @@ const featured = getFeaturedNegocios(6);
   )}
 
   <!-- CTA Registro -->
-  <section class="py-16 px-4 bg-brand-600 text-white">
+  <section class="py-20 px-4">
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Tienes un negocio en El Canaveral?</h2>
-      <p class="text-brand-100 mb-8">
-        Registra tu negocio gratis y aparece en el directorio local mas completo de la zona.
-        Destaca entre tus vecinos y atrae nuevos clientes.
-      </p>
-      <a
-        href="/alta"
-        class="inline-block bg-white text-brand-700 font-semibold px-6 py-3 rounded-lg hover:bg-brand-50 transition-colors"
-      >
-        Registrar mi negocio
-      </a>
+      <div class="bg-brand-900 rounded-2xl p-10 sm:p-14 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,<svg width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 20 20&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><circle cx=&quot;1&quot; cy=&quot;1&quot; r=&quot;1&quot; fill=&quot;white&quot;/></svg>');"></div>
+        <div class="relative">
+          <h2 class="text-3xl font-bold text-white mb-4">Tienes un negocio en El Canaveral?</h2>
+          <p class="text-brand-200 mb-8 max-w-xl mx-auto">
+            Aparece en el directorio local mas completo de la zona.
+            Miles de vecinos ya lo usan para encontrar negocios como el tuyo.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="/alta"
+              class="inline-block bg-accent-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent-600 transition-colors shadow-lg"
+            >
+              Registrar mi negocio gratis
+            </a>
+            <a
+              href="https://localseoads.com"
+              target="_blank"
+              rel="noopener"
+              class="inline-block bg-white/10 text-white font-medium px-6 py-3 rounded-lg hover:bg-white/20 transition-colors border border-white/20"
+            >
+              Posicionar mi negocio
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

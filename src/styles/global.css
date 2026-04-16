@@ -2,20 +2,39 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --color-brand-50: #f0fdf4;
-  --color-brand-100: #dcfce7;
-  --color-brand-500: #22c55e;
-  --color-brand-600: #16a34a;
-  --color-brand-700: #15803d;
-  --color-brand-900: #14532d;
-  --color-accent-50: #eff6ff;
-  --color-accent-600: #2563eb;
-  --color-accent-700: #1d4ed8;
-  --radius: 0.5rem;
+  --font-display: "DM Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Paleta directorio local — azul confianza + naranja energia */
+  --color-brand-50: #f0f5ff;
+  --color-brand-100: #e0ebff;
+  --color-brand-200: #c7d9fd;
+  --color-brand-500: #3366cc;
+  --color-brand-600: #2952a3;
+  --color-brand-700: #1f3d7a;
+  --color-brand-900: #0f1f3d;
+
+  --color-accent-50: #fff7ed;
+  --color-accent-100: #ffedd5;
+  --color-accent-500: #f97316;
+  --color-accent-600: #ea580c;
+  --color-accent-700: #c2410c;
+
+  --color-warm-50: #faf9f7;
+  --color-warm-100: #f3f1ed;
+  --color-warm-200: #e8e4dd;
+
+  --radius: 0.75rem;
+  --radius-sm: 0.5rem;
 }
 
 @layer base {
   body {
-    @apply bg-white text-gray-900 antialiased;
+    @apply bg-warm-50 text-gray-900 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 }
