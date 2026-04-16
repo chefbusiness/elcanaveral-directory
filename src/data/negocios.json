@@ -2,7 +2,7 @@
   {
     "slug": "mercadona-coslada",
     "name": "Mercadona",
-    "description": "Supermercado de referencia en Coslada con un amplio surtido de productos frescos, la popular marca propia Hacendado y una innovadora sección de platos preparados listos para llevar, ideal para las comidas del día a día. Se encuentra convenientemente ubicado en la Avenida de España.",
+    "description": "Supermercado de referencia en Coslada con un amplio surtido de productos frescos, la popular marca propia Hacendado y una innovadora sección de platos.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "coslada",
@@ -37,7 +37,7 @@
   {
     "slug": "hiper-canaveral",
     "name": "Hiper Cañaveral",
-    "description": "Este hipermercado local es un pilar en el barrio de El Cañaveral, ofreciendo una gran variedad de productos de alimentación, limpieza y hogar. Es conocido por sus precios competitivos y su compromiso con la comunidad local.",
+    "description": "Este hipermercado local es un pilar en el barrio de El Cañaveral, ofreciendo una gran variedad de productos de alimentación, limpieza y hogar. Es.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
@@ -69,7 +69,7 @@
   {
     "slug": "supermercado-el-canaveral",
     "name": "Supermercado El Cañaveral",
-    "description": "Un supermercado de proximidad situado en el corazón del barrio de El Cañaveral, ideal para las compras diarias. Ofrece productos de primera necesidad y marcas de confianza, garantizando frescura y calidad en cada compra.",
+    "description": "Un supermercado de proximidad situado en el corazón del barrio de El Cañaveral, ideal para las compras diarias. Ofrece productos de primera necesidad y.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
@@ -102,7 +102,7 @@
   {
     "slug": "coviran-plus",
     "name": "Coviran Plus",
-    "description": "Coviran Plus es una franquicia de supermercados que ofrece una amplia gama de alimentación general, con especial énfasis en productos frescos y un servicio de proximidad. Es una opción cómoda y fiable para los vecinos de El Cañaveral.",
+    "description": "Coviran Plus es una franquicia de supermercados que ofrece una amplia gama de alimentación general, con especial énfasis en productos frescos y un.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
@@ -134,7 +134,7 @@
   {
     "slug": "ahorramas",
     "name": "Ahorramas",
-    "description": "Ahorramas es una cadena de supermercados madrileña muy valorada por su excelente relación calidad-precio. Destaca por sus secciones de frescos como carnicería, pescadería y frutería, además de ofrecer una gran variedad de productos locales y de temporada en El Cañaveral.",
+    "description": "Ahorramas es una cadena de supermercados madrileña muy valorada por su excelente relación calidad-precio. Destaca por sus secciones de frescos como.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
@@ -168,7 +168,7 @@
   {
     "slug": "mi-alcampo",
     "name": "Mi Alcampo",
-    "description": "Mi Alcampo es el formato compacto de la conocida cadena Alcampo, ideal para las compras rápidas y diarias en El Cañaveral. Ofrece productos básicos de alimentación y hogar con precios ajustados y una amplia selección de marcas propias.",
+    "description": "Mi Alcampo es el formato compacto de la conocida cadena Alcampo, ideal para las compras rápidas y diarias en El Cañaveral. Ofrece productos básicos de.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
@@ -200,7 +200,7 @@
   {
     "slug": "family-mini-market",
     "name": "Family Mini Market",
-    "description": "Family Mini Market es un minimercado familiar en El Cañaveral que destaca por su horario extendido, ideal para cualquier necesidad de última hora. Ofrece una selección esencial de productos de alimentación, bebidas y artículos de primera necesidad.",
+    "description": "Family Mini Market es un minimercado familiar en El Cañaveral que destaca por su horario extendido, ideal para cualquier necesidad de última hora.",
     "category": "tiendas-alimentacion",
     "categoryName": "Tiendas de Alimentación",
     "zona": "el-canaveral",
@@ -233,7 +233,7 @@
   {
     "slug": "alimentacion-y-bazar",
     "name": "Alimentación y Bazar",
-    "description": "Esta tienda en El Cañaveral combina una completa sección de alimentación con un práctico bazar, ofreciendo una solución integral para las necesidades diarias del hogar. Aquí encontrarás desde productos frescos hasta artículos variados para tu casa.",
+    "description": "Esta tienda en El Cañaveral combina una completa sección de alimentación con un práctico bazar, ofreciendo una solución integral para las necesidades.",
     "category": "tiendas-alimentacion",
     "categoryName": "Tiendas de Alimentación",
     "zona": "el-canaveral",
@@ -265,7 +265,7 @@
   {
     "slug": "alimentacion-canaveral",
     "name": "Alimentación Cañaveral",
-    "description": "Alimentación Cañaveral es una tienda de barrio que ofrece productos básicos, embutidos y conservas de calidad. Es el lugar perfecto para las compras diarias y para encontrar esos productos esenciales que necesitas en tu despensa en El Cañaveral.",
+    "description": "Alimentación Cañaveral es una tienda de barrio que ofrece productos básicos, embutidos y conservas de calidad. Es el lugar perfecto para las compras.",
     "category": "tiendas-alimentacion",
     "categoryName": "Tiendas de Alimentación",
     "zona": "el-canaveral",
@@ -297,7 +297,7 @@
   {
     "slug": "casa-elias",
     "name": "Supermercado Casa Elías",
-    "description": "Casa Elías es un minimercado en El Cañaveral que se distingue por la calidad de sus productos, la limpieza de sus instalaciones y un servicio amable y cercano. Ofrece una frutería muy surtida, panadería con pan recién hecho a diario y una carnicería de confianza.",
+    "description": "Casa Elías es un minimercado en El Cañaveral que se distingue por la calidad de sus productos, la limpieza de sus instalaciones y un servicio amable y.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
@@ -330,7 +330,7 @@
   {
     "slug": "la-fruteria-de-mama",
     "name": "La Frutería de Mamá",
-    "description": "La Frutería de Mamá es una encantadora frutería familiar en El Cañaveral, conocida por su producto de temporada cuidadosamente seleccionado. Cada día, ofrece frutas, verduras y hortalizas frescas, garantizando la máxima calidad para tu mesa. Se encuentra en la C. Anna Frank.",
+    "description": "La Frutería de Mamá es una encantadora frutería familiar en El Cañaveral, conocida por su producto de temporada cuidadosamente seleccionado. Cada día,.",
     "category": "fruterias",
     "categoryName": "Fruterías",
     "zona": "el-canaveral",
@@ -365,7 +365,7 @@
   {
     "slug": "megafruta-canaveral",
     "name": "Megafruta",
-    "description": "Megafruta en El Cañaveral es una frutería con un amplio surtido de frutas y verduras a precios muy competitivos. Su compromiso es ofrecer producto fresco diario, asegurando que siempre encuentres lo mejor para tu alimentación.",
+    "description": "Megafruta en El Cañaveral es una frutería con un amplio surtido de frutas y verduras a precios muy competitivos. Su compromiso es ofrecer producto.",
     "category": "fruterias",
     "categoryName": "Fruterías",
     "zona": "el-canaveral",
@@ -397,7 +397,7 @@
   {
     "slug": "megafruta-2",
     "name": "Megafruta 2",
-    "description": "Megafruta 2 es la segunda ubicación de la popular frutería en El Cañaveral, manteniendo la misma calidad de producto fresco y la atención cercana que caracteriza a la marca. Es una opción conveniente para los vecinos de otra zona del barrio.",
+    "description": "Megafruta 2 es la segunda ubicación de la popular frutería en El Cañaveral, manteniendo la misma calidad de producto fresco y la atención cercana que.",
     "category": "fruterias",
     "categoryName": "Fruterías",
     "zona": "el-canaveral",
@@ -427,7 +427,7 @@
   {
     "slug": "frutas-y-verduras-vida-sana",
     "name": "Frutas y Verduras Vida Sana",
-    "description": "Frutas y Verduras Vida Sana es una frutería en El Cañaveral especializada en producto ecológico y de proximidad. Ofrece una selección cuidada de frutas de temporada, ideal para quienes buscan una alimentación más saludable y sostenible.",
+    "description": "Frutas y Verduras Vida Sana es una frutería en El Cañaveral especializada en producto ecológico y de proximidad. Ofrece una selección cuidada de frutas.",
     "category": "fruterias",
     "categoryName": "Fruterías",
     "zona": "el-canaveral",
@@ -460,7 +460,7 @@
   {
     "slug": "fruteria-charcuteria-el-canaveral",
     "name": "Frutería Charcutería El Cañaveral",
-    "description": "Esta frutería en El Cañaveral ofrece una combinación perfecta de productos frescos y delicatessen. Además de frutas y verduras de calidad, cuenta con una excelente sección de charcutería, donde encontrarás embutidos ibéricos y quesos artesanales para los paladares más exigentes.",
+    "description": "Esta frutería en El Cañaveral ofrece una combinación perfecta de productos frescos y delicatessen. Además de frutas y verduras de calidad, cuenta con.",
     "category": "fruterias",
     "categoryName": "Fruterías",
     "zona": "el-canaveral",
@@ -494,7 +494,7 @@
   {
     "slug": "levaduramadre",
     "name": "Levadura Madre",
-    "description": "Panadería artesanal en la Avenida de Blas de Lezo, conocida por su pan de masa madre de larga fermentación. Ofrecen una amplia variedad de panes, bollería casera y repostería elaborada diariamente con ingredientes de primera calidad, ideal para el desayuno o la merienda.",
+    "description": "Panadería artesanal en la Avenida de Blas de Lezo, conocida por su pan de masa madre de larga fermentación. Ofrecen una amplia variedad de panes,.",
     "category": "panaderias",
     "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
@@ -527,7 +527,7 @@
   {
     "slug": "el-horno-de-izan-iii",
     "name": "El Horno de Izan III",
-    "description": "Panadería y pastelería con obrador propio, ubicada en la intersección de Mario Moreno Cantinflas y Francisco Grande Covián. Aquí encontrarás panes artesanales recién horneados, bollería variada para el día a día y la posibilidad de encargar tartas personalizadas para cualquier celebración.",
+    "description": "Panadería y pastelería con obrador propio, ubicada en la intersección de Mario Moreno Cantinflas y Francisco Grande Covián. Aquí encontrarás panes.",
     "category": "panaderias",
     "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
@@ -560,7 +560,7 @@
   {
     "slug": "caprichos-coffee-bakery",
     "name": "Caprichos Coffee & Bakery",
-    "description": "Una encantadora cafetería-panadería en la Avenida de Miguel Delibes, perfecta para disfrutar de un buen café de especialidad y bollería artesanal. Su ambiente acogedor lo convierte en el lugar ideal para desayunar, merendar o simplemente relajarse con una bebida caliente.",
+    "description": "Una encantadora cafetería-panadería en la Avenida de Miguel Delibes, perfecta para disfrutar de un buen café de especialidad y bollería artesanal. Su.",
     "category": "panaderias",
     "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
@@ -594,7 +594,7 @@
   {
     "slug": "obrador-de-goya",
     "name": "Obrador de Goya",
-    "description": "Obrador tradicional situado en la Avenida de Miguel Delibes, que se distingue por su pan de leña y sus recetas clásicas. Aquí encontrarás una gran variedad de bollería, empanadas caseras y productos de pastelería elaborados con el sabor de siempre, perfectos para cualquier momento del día.",
+    "description": "Obrador tradicional situado en la Avenida de Miguel Delibes, que se distingue por su pan de leña y sus recetas clásicas. Aquí encontrarás una gran.",
     "category": "panaderias",
     "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
@@ -628,7 +628,7 @@
   {
     "slug": "panaderia-bulevar",
     "name": "Panadería Bulevar",
-    "description": "La panadería de barrio por excelencia en el Bulevar de Indalecio Prieto, ofreciendo un surtido diario de panes, bollería y empanadas. Destaca por su servicio rápido y la frescura de sus productos, ideales para las compras del día a día de los vecinos.",
+    "description": "La panadería de barrio por excelencia en el Bulevar de Indalecio Prieto, ofreciendo un surtido diario de panes, bollería y empanadas. Destaca por su.",
     "category": "panaderias",
     "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
@@ -661,7 +661,7 @@
   {
     "slug": "fabricacion-y-distribucion-panaderia",
     "name": "Fabricación y Distribución de Panadería",
-    "description": "Este obrador mayorista, ubicado en la Calle de Rivas, se especializa en la fabricación y distribución de pan y bollería a diversos comercios de la zona. Además, ofrece venta directa al público, permitiendo a los vecinos adquirir productos frescos a precios de mayorista.",
+    "description": "Este obrador mayorista, ubicado en la Calle de Rivas, se especializa en la fabricación y distribución de pan y bollería a diversos comercios de la.",
     "category": "panaderias",
     "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
@@ -693,7 +693,7 @@
   {
     "slug": "mimarutxa",
     "name": "Mimarutxa",
-    "description": "Mimarutxa es una cafetería con encanto en la Avenida Miguel Delibes, conocida por su repostería creativa y sus deliciosos brunches. Es un espacio ideal para familias, ya que cuenta con una zona infantil dedicada, permitiendo a los padres disfrutar mientras los pequeños se divierten.",
+    "description": "Mimarutxa es una cafetería con encanto en la Avenida Miguel Delibes, conocida por su repostería creativa y sus deliciosos brunches. Es un espacio ideal.",
     "category": "cafeterias",
     "categoryName": "Cafeterías",
     "zona": "el-canaveral",
@@ -731,7 +731,7 @@
   {
     "slug": "le-petit-cafe-de-cryss",
     "name": "Le Petit Café de Cryss",
-    "description": "Una cafetería acogedora en la Avenida de Blas de Lezo, que se distingue por su café de calidad, sus tostas variadas y sus meriendas caseras. Ofrecen una atención personalizada en un ambiente tranquilo, ideal para un momento de relax o una pequeña reunión.",
+    "description": "Una cafetería acogedora en la Avenida de Blas de Lezo, que se distingue por su café de calidad, sus tostas variadas y sus meriendas caseras. Ofrecen.",
     "category": "cafeterias",
     "categoryName": "Cafeterías",
     "zona": "el-canaveral",
@@ -765,7 +765,7 @@
   {
     "slug": "padel-el-canaveral",
     "name": "Pádel El Cañaveral",
-    "description": "Club de pádel completo con pistas cubiertas y al aire libre, ubicado estratégicamente para los amantes de este deporte en El Cañaveral. Ofrecen clases para todos los niveles, desde principiantes hasta avanzados, y la posibilidad de alquilar pistas por horas para partidos con amigos o familiares.",
+    "description": "Club de pádel completo con pistas cubiertas y al aire libre, ubicado estratégicamente para los amantes de este deporte en El Cañaveral. Ofrecen clases.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "el-canaveral",
@@ -799,7 +799,7 @@
   {
     "slug": "escuela-infantil-los-minons",
     "name": "Escuela Infantil Los Minons",
-    "description": "Escuela infantil privada en El Cañaveral, dedicada al cuidado y educación de niños de 4 meses a 3 años. Destaca por su flexibilidad y por aceptar cheques guardería (Edenred, Sodexo) y becas de la Comunidad de Madrid, facilitando el acceso a las familias del barrio.",
+    "description": "Escuela infantil privada en El Cañaveral, dedicada al cuidado y educación de niños de 4 meses a 3 años. Destaca por su flexibilidad y por aceptar.",
     "category": "educacion",
     "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
@@ -836,7 +836,7 @@
   {
     "slug": "escuela-infantil-municipal-muneco-de-nieve",
     "name": "Escuela Infantil Municipal Muñeco de Nieve",
-    "description": "Esta escuela infantil municipal, gestionada por el Ayuntamiento de Madrid, es un centro de referencia en El Cañaveral. Ofrece 156 plazas para niños de 0 a 3 años, brindando una educación pública de calidad y un entorno seguro y estimulante para los más pequeños del barrio.",
+    "description": "Esta escuela infantil municipal, gestionada por el Ayuntamiento de Madrid, es un centro de referencia en El Cañaveral. Ofrece 156 plazas para niños de.",
     "category": "educacion",
     "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
@@ -873,7 +873,7 @@
   {
     "slug": "escuela-infantil-conde-nino",
     "name": "Escuela Infantil Autonómica Conde Niño",
-    "description": "Inaugurada en 2024, esta escuela infantil de la Comunidad de Madrid en la Calle Victoria Kent es un nuevo referente para las familias de El Cañaveral. Con 186 plazas distribuidas en 12 aulas, ofrece una educación pública de calidad para los niños de 0 a 3 años, con un proyecto educativo moderno y completo.",
+    "description": "Inaugurada en 2024, esta escuela infantil de la Comunidad de Madrid en la Calle Victoria Kent es un nuevo referente para las familias de El Cañaveral.",
     "category": "educacion",
     "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
@@ -910,7 +910,7 @@
   {
     "slug": "arturos-el-canaveral",
     "name": "Arturos El Cañaveral",
-    "description": "Arturos El Cañaveral es el lugar perfecto para los amantes de la cocina asturiana, ubicado en la Avenida de Miguel Delibes. Este restaurante se especializa en auténticos cachopos y un delicioso arroz con bogavante, trayendo los sabores del norte a nuestro barrio en un ambiente acogedor.",
+    "description": "Arturos El Cañaveral es el lugar perfecto para los amantes de la cocina asturiana, ubicado en la Avenida de Miguel Delibes. Este restaurante se.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -948,7 +948,7 @@
   {
     "slug": "los-fogones-canaveral",
     "name": "Los Fogones",
-    "description": "Los Fogones es un restaurante con un amplio horario, ideal para cualquier momento del día, desde el desayuno hasta la merienda. Ofrecen cocina casera y platos del día, convirtiéndose en una opción práctica y sabrosa para los vecinos de El Cañaveral que buscan comida tradicional y de calidad.",
+    "description": "Los Fogones es un restaurante con un amplio horario, ideal para cualquier momento del día, desde el desayuno hasta la merienda. Ofrecen cocina casera y.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -986,7 +986,7 @@
   {
     "slug": "con-sazon-el-canaveral",
     "name": "Con Sazón El Cañaveral",
-    "description": "Con Sazón El Cañaveral te trae el auténtico sabor de la cocina latina casera, con platos elaborados siguiendo recetas tradicionales que te transportarán a Latinoamérica. Es el lugar perfecto para disfrutar de una comida reconfortante y llena de sabor en el barrio.",
+    "description": "Con Sazón El Cañaveral te trae el auténtico sabor de la cocina latina casera, con platos elaborados siguiendo recetas tradicionales que te.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -1028,7 +1028,7 @@
   {
     "slug": "clinica-dental-canaveral",
     "name": "Clínica Dental Cañaveral",
-    "description": "Clínica Dental Cañaveral ofrece una atención odontológica integral para toda la familia, desde limpiezas rutinarias hasta tratamientos complejos. Ubicada en la Av. de Miguel Delibes, 59, es tu centro de confianza para mantener una sonrisa sana y bonita en el barrio.",
+    "description": "Clínica Dental Cañaveral ofrece una atención odontológica integral para toda la familia, desde limpiezas rutinarias hasta tratamientos complejos.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -1072,7 +1072,7 @@
   {
     "slug": "sanitas-dental-el-canaveral",
     "name": "Sanitas Dental Milenium El Cañaveral",
-    "description": "Sanitas Dental Milenium El Cañaveral es un centro dental de referencia que combina la tecnología más avanzada con la comodidad de la financiación y la cobertura de seguros. Ofrecen todas las especialidades dentales para garantizar la salud bucodental de toda la familia.",
+    "description": "Sanitas Dental Milenium El Cañaveral es un centro dental de referencia que combina la tecnología más avanzada con la comodidad de la financiación y la.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -1115,7 +1115,7 @@
   {
     "slug": "clinica-dental-siglo-xxi-canaveral",
     "name": "Clínica Dental Siglo XXI El Cañaveral",
-    "description": "Clínica Dental Siglo XXI en El Cañaveral se distingue por el uso de tecnologías de última generación para ofrecer tratamientos dentales de alta calidad. Son especialistas en ortodoncia, estética dental e implantología, garantizando resultados óptimos y duraderos para tu sonrisa.",
+    "description": "Clínica Dental Siglo XXI en El Cañaveral se distingue por el uso de tecnologías de última generación para ofrecer tratamientos dentales de alta.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -1159,7 +1159,7 @@
   {
     "slug": "mardones-y-martinez-dental",
     "name": "Mardones y Martínez Clínica Dental",
-    "description": "Mardones y Martínez Clínica Dental ofrece una atención profesional y cercana en El Cañaveral, con un servicio de urgencias dentales para cualquier imprevisto. Su compromiso es cuidar la salud bucodental de toda la familia con un trato humano y de confianza.",
+    "description": "Mardones y Martínez Clínica Dental ofrece una atención profesional y cercana en El Cañaveral, con un servicio de urgencias dentales para cualquier.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -1202,7 +1202,7 @@
   {
     "slug": "ikigai-dental-canaveral",
     "name": "Clínica Dental Ikigai",
-    "description": "Clínica Dental Ikigai en El Cañaveral se especializa en ortodoncia avanzada para pacientes de todas las edades, utilizando tecnología digital para tratamientos precisos y personalizados. Su enfoque se centra en encontrar el equilibrio perfecto para tu sonrisa y bienestar.",
+    "description": "Clínica Dental Ikigai en El Cañaveral se especializa en ortodoncia avanzada para pacientes de todas las edades, utilizando tecnología digital para.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -1243,7 +1243,7 @@
   {
     "slug": "antonella-peluqueria-y-belleza",
     "name": "Antonella Peluquería y Belleza",
-    "description": "Antonella Peluquería y Belleza es tu salón de confianza en El Cañaveral para un cambio de look o un tratamiento de belleza. Ofrecen una amplia gama de servicios, desde cortes y color hasta tratamientos capilares y estética facial y corporal, para que te sientas radiante.",
+    "description": "Antonella Peluquería y Belleza es tu salón de confianza en El Cañaveral para un cambio de look o un tratamiento de belleza. Ofrecen una amplia gama de.",
     "category": "belleza",
     "categoryName": "Belleza y Peluquerías",
     "zona": "el-canaveral",
@@ -1278,7 +1278,7 @@
   {
     "slug": "la-belle-vie-canaveral",
     "name": "La Belle Vie",
-    "description": "La Belle Vie es un salón de peluquería y estética en El Cañaveral que te ofrece una experiencia de belleza integral. Desde un nuevo corte de pelo hasta tratamientos faciales y corporales, aquí encontrarás todo lo necesario para cuidar tu imagen y bienestar en un ambiente exclusivo y relajante. Nuestro equipo de profesionales está dedicado a proporcionarte un servicio excepcional y personalizado.",
+    "description": "La Belle Vie es un salón de peluquería y estética en El Cañaveral que te ofrece una experiencia de belleza integral. Desde un nuevo corte de pelo hasta.",
     "category": "belleza",
     "categoryName": "Belleza y Peluquerías",
     "zona": "el-canaveral",
@@ -1313,7 +1313,7 @@
   {
     "slug": "rizal-organic-studio",
     "name": "Rizal Organic Studio",
-    "description": "Rizal Organic Studio es una peluquería y centro de estética comprometido con la belleza natural, utilizando exclusivamente productos orgánicos y respetuosos con el medio ambiente. Son especialistas en cortes, tratamientos capilares y alisados con ácido hialurónico, ofreciendo resultados saludables y espectaculares en la Calle Francisco Grande Covián. Su filosofía se centra en el bienestar del cliente y el cuidado del planeta.",
+    "description": "Rizal Organic Studio es una peluquería y centro de estética comprometido con la belleza natural, utilizando exclusivamente productos orgánicos y.",
     "category": "belleza",
     "categoryName": "Belleza y Peluquerías",
     "zona": "el-canaveral",
@@ -1347,7 +1347,7 @@
   {
     "slug": "mai-de-diego-estetica-estilistas",
     "name": "Mai de Diego Estética y Estilistas",
-    "description": "Mai de Diego Estética y Estilistas es un salón unisex que se enorgullece de ser 100% orgánico y vegano, ofreciendo una experiencia de belleza consciente y respetuosa. Son especialistas en coloración natural y tratamientos sostenibles, garantizando resultados espectaculares sin comprometer tu salud ni el medio ambiente. Su compromiso con la ética y la calidad los convierte en una opción ideal para quienes buscan un cuidado capilar y estético responsable.",
+    "description": "Mai de Diego Estética y Estilistas es un salón unisex que se enorgullece de ser 100% orgánico y vegano, ofreciendo una experiencia de belleza.",
     "category": "belleza",
     "categoryName": "Belleza y Peluquerías",
     "zona": "el-canaveral",
@@ -1382,7 +1382,7 @@
   {
     "slug": "caliza-estilistas",
     "name": "Caliza Estilistas",
-    "description": "Caliza Estilistas es una peluquería unisex en Vicálvaro, reconocida por su especialización en tratamientos de color y barbería. Ofrecen desde cortes y peinados modernos hasta las últimas tendencias en balayage y mechas, garantizando un look actual y personalizado para cada cliente. Su equipo de estilistas profesionales está siempre al tanto de las últimas novedades para ofrecerte el mejor servicio.",
+    "description": "Caliza Estilistas es una peluquería unisex en Vicálvaro, reconocida por su especialización en tratamientos de color y barbería. Ofrecen desde cortes y.",
     "category": "belleza",
     "categoryName": "Belleza y Peluquerías",
     "zona": "vicalvaro",
@@ -1418,7 +1418,7 @@
   {
     "slug": "energie-fitness-canaveral",
     "name": "Energie Fitness El Cañaveral",
-    "description": "Energie Fitness El Cañaveral es un gimnasio moderno y completo, ideal para quienes buscan mejorar su forma física en el barrio. Dispone de amplias salas de musculación, cardio, entrenamiento funcional y una variada oferta de clases dirigidas, todo con equipamiento de última generación. Es el lugar perfecto para alcanzar tus objetivos de salud y bienestar en un ambiente dinámico y motivador.",
+    "description": "Energie Fitness El Cañaveral es un gimnasio moderno y completo, ideal para quienes buscan mejorar su forma física en el barrio. Dispone de amplias.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "el-canaveral",
@@ -1452,7 +1452,7 @@
   {
     "slug": "apache-crosstraining-canaveral",
     "name": "Apache CrossTraining El Cañaveral",
-    "description": "Apache CrossTraining El Cañaveral es el centro de referencia para el entrenamiento funcional y CrossTraining en la zona. Ofrecen sesiones en grupo reducido con entrenadores certificados, garantizando una atención personalizada y resultados efectivos para mejorar tu fuerza, resistencia y agilidad. Su metodología de entrenamiento está diseñada para desafiarte y ayudarte a superar tus límites.",
+    "description": "Apache CrossTraining El Cañaveral es el centro de referencia para el entrenamiento funcional y CrossTraining en la zona. Ofrecen sesiones en grupo.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "el-canaveral",
@@ -1488,7 +1488,7 @@
   {
     "slug": "winfit-canaveral",
     "name": "Winfit Gimnasio Cañaveral",
-    "description": "Winfit Cañaveral es un centro de entrenamiento moderno y cercano, ideal para quienes buscan resultados a través de sesiones personalizadas o en grupos reducidos. Ubicado estratégicamente en El Cañaveral, ofrece un ambiente motivador para mejorar tu forma física. Su enfoque individualizado garantiza que cada cliente reciba la atención necesaria para alcanzar sus metas de salud y bienestar.",
+    "description": "Winfit Cañaveral es un centro de entrenamiento moderno y cercano, ideal para quienes buscan resultados a través de sesiones personalizadas o en grupos.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "el-canaveral",
@@ -1521,7 +1521,7 @@
   {
     "slug": "brooklyn-fitboxing-canaveral",
     "name": "Brooklyn Fitboxing Cañaveral",
-    "description": "Brooklyn Fitboxing Cañaveral ofrece una experiencia de entrenamiento única y de alta intensidad, combinando boxeo sin contacto con ejercicios funcionales. Es perfecto para liberar estrés y quemar calorías en sesiones dinámicas de 47 minutos, con la última tecnología interactiva. Disfruta de un entrenamiento divertido y efectivo que te ayudará a mejorar tu condición física y mental.",
+    "description": "Brooklyn Fitboxing Cañaveral ofrece una experiencia de entrenamiento única y de alta intensidad, combinando boxeo sin contacto con ejercicios.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "el-canaveral",
@@ -1554,7 +1554,7 @@
   {
     "slug": "peludos-del-canaveral",
     "name": "Peludos del Cañaveral",
-    "description": "Peludos del Cañaveral es la clínica veterinaria y peluquería canina de referencia en el barrio, ofreciendo un cuidado integral para tus mascotas. Ubicada en la Calle Victoria Kent, es el lugar ideal para la salud y el bienestar de perros y gatos, con un equipo profesional y cercano. Se preocupan por cada detalle para que tus compañeros peludos reciban la mejor atención posible.",
+    "description": "Peludos del Cañaveral es la clínica veterinaria y peluquería canina de referencia en el barrio, ofreciendo un cuidado integral para tus mascotas.",
     "category": "mascotas",
     "categoryName": "Mascotas",
     "zona": "el-canaveral",
@@ -1590,7 +1590,7 @@
   {
     "slug": "vicalcan-veterinario",
     "name": "Vicalcan Clínica Veterinaria",
-    "description": "Vicalcan es una clínica veterinaria de confianza en Vicálvaro, con un equipo cualificado y dedicado al cuidado de tus animales. Ofrecen una amplia gama de servicios, desde medicina general hasta cirugías complejas, garantizando la salud y el bienestar de tus mascotas. Su compromiso es proporcionar una atención médica de excelencia, utilizando las técnicas más avanzadas y un trato humano y compasivo.",
+    "description": "Vicalcan es una clínica veterinaria de confianza en Vicálvaro, con un equipo cualificado y dedicado al cuidado de tus animales. Ofrecen una amplia gama.",
     "category": "mascotas",
     "categoryName": "Mascotas",
     "zona": "vicalvaro",
@@ -1624,7 +1624,7 @@
   {
     "slug": "ferrokey-vicalvaro",
     "name": "Ferrokey Vicálvaro",
-    "description": "Ferrokey Vicálvaro es tu ferretería de proximidad, ideal para encontrar todo lo que necesitas para el hogar, reparaciones o proyectos de bricolaje. Ubicada en la Calle San Cipriano, cuenta con un amplio surtido y personal experto para asesorarte. Su objetivo es ofrecer soluciones prácticas y productos de calidad para todas tus necesidades.",
+    "description": "Ferrokey Vicálvaro es tu ferretería de proximidad, ideal para encontrar todo lo que necesitas para el hogar, reparaciones o proyectos de bricolaje.",
     "category": "hogar",
     "categoryName": "Hogar y Reformas",
     "zona": "vicalvaro",
@@ -1656,7 +1656,7 @@
   {
     "slug": "ferreteria-directa-vicalvaro",
     "name": "Ferretería Directa",
-    "description": "Ferretería Directa en Vicálvaro es un proveedor integral de suministros industriales y ferretería, ideal para profesionales y particulares con proyectos más exigentes. Ofrecen una gran variedad de herramientas, material eléctrico y ropa de trabajo, con la comodidad de su tienda online. Su compromiso es brindar productos de alta calidad y un servicio eficiente para satisfacer las demandas de sus clientes.",
+    "description": "Ferretería Directa en Vicálvaro es un proveedor integral de suministros industriales y ferretería, ideal para profesionales y particulares con.",
     "category": "hogar",
     "categoryName": "Hogar y Reformas",
     "zona": "vicalvaro",
@@ -1690,7 +1690,7 @@
   {
     "slug": "abogados-el-canaveral",
     "name": "Abogados El Cañaveral",
-    "description": "Abogados El Cañaveral es un despacho multidisciplinar que ofrece asesoramiento legal integral a vecinos y empresas del barrio. Ubicados en la Av. de Miguel Delibes, son especialistas en derecho inmobiliario, laboral y de familia, garantizando un servicio cercano y eficaz.",
+    "description": "Abogados El Cañaveral es un despacho multidisciplinar que ofrece asesoramiento legal integral a vecinos y empresas del barrio. Ubicados en la Av. de.",
     "category": "servicios-profesionales",
     "categoryName": "Servicios Profesionales",
     "zona": "el-canaveral",
@@ -1723,7 +1723,7 @@
   {
     "slug": "garcia-asociados-asesoria",
     "name": "García y Asociados Asesoría",
-    "description": "García y Asociados es una asesoría integral en Vicálvaro, perfecta para autónomos y pequeñas empresas que buscan una gestión eficiente. Ofrecen servicios fiscales, laborales y contables, liberándote de las preocupaciones administrativas para que te centres en tu negocio.",
+    "description": "García y Asociados es una asesoría integral en Vicálvaro, perfecta para autónomos y pequeñas empresas que buscan una gestión eficiente. Ofrecen.",
     "category": "servicios-profesionales",
     "categoryName": "Servicios Profesionales",
     "zona": "vicalvaro",
@@ -1757,7 +1757,7 @@
   {
     "slug": "templo-consulting-inmobiliaria",
     "name": "Templo Consulting Inmobiliaria",
-    "description": "Templo Consulting es una inmobiliaria innovadora que opera en Vicálvaro y El Cañaveral, destacando por su modelo sin comisiones para el vendedor. Si buscas comprar, vender o alquilar, te ofrecen una valoración gratuita y un servicio transparente y profesional.",
+    "description": "Templo Consulting es una inmobiliaria innovadora que opera en Vicálvaro y El Cañaveral, destacando por su modelo sin comisiones para el vendedor. Si.",
     "category": "servicios-profesionales",
     "categoryName": "Servicios Profesionales",
     "zona": "vicalvaro",
@@ -1791,7 +1791,7 @@
   {
     "slug": "beefcious-el-canaveral",
     "name": "Beefcious El Cañaveral",
-    "description": "Hamburguesería gourmet en El Cañaveral que ofrece una experiencia culinaria única con carnes prémium a la brasa. Además de sus jugosas hamburguesas smash, podrás disfrutar de costillas BBQ y opciones veganas, ideal para todos los gustos.",
+    "description": "Hamburguesería gourmet en El Cañaveral que ofrece una experiencia culinaria única con carnes prémium a la brasa. Además de sus jugosas hamburguesas.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -1829,7 +1829,7 @@
   {
     "slug": "cerveceria-la-galerna",
     "name": "Cervecería La Galerna",
-    "description": "Una auténtica cervecería de barrio ubicada en la Avenida Miguel Delibes, perfecta para disfrutar de una amplia selección de cervezas artesanales. Ofrecen deliciosas tapas y raciones en un ambiente relajado, con una agradable terraza para los días soleados.",
+    "description": "Una auténtica cervecería de barrio ubicada en la Avenida Miguel Delibes, perfecta para disfrutar de una amplia selección de cervezas artesanales.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -1866,7 +1866,7 @@
   {
     "slug": "churreria-bernis",
     "name": "Churrería Bernis",
-    "description": "La Churrería Bernis es una institución en el barrio de Vicálvaro, famosa por sus churros y porras artesanales, elaborados con la receta tradicional. Es el lugar perfecto para disfrutar de un desayuno o merienda auténticos, acompañados de su delicioso chocolate caliente casero.",
+    "description": "La Churrería Bernis es una institución en el barrio de Vicálvaro, famosa por sus churros y porras artesanales, elaborados con la receta tradicional. Es.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
@@ -1903,7 +1903,7 @@
   {
     "slug": "casa-botija",
     "name": "Casa Botija",
-    "description": "Ubicado en el encantador casco histórico de Vicálvaro, Casa Botija es un restaurante que rinde homenaje a la cocina tradicional madrileña. Ofrece raciones generosas y un ambiente familiar, ideal para disfrutar de los sabores de siempre en un entorno acogedor.",
+    "description": "Ubicado en el encantador casco histórico de Vicálvaro, Casa Botija es un restaurante que rinde homenaje a la cocina tradicional madrileña. Ofrece.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
@@ -1941,7 +1941,7 @@
   {
     "slug": "el-rincon-de-carla",
     "name": "El Rincón de Carla",
-    "description": "En el corazón de Vicálvaro, El Rincón de Carla es un bar-restaurante que destaca por su cocina casera y su popular menú del día. Su ambiente acogedor lo convierte en el lugar perfecto para disfrutar de una comida rica y asequible en un entorno cercano y familiar.",
+    "description": "En el corazón de Vicálvaro, El Rincón de Carla es un bar-restaurante que destaca por su cocina casera y su popular menú del día. Su ambiente acogedor.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
@@ -1979,7 +1979,7 @@
   {
     "slug": "rechupete-vicalvaro",
     "name": "Rechupete",
-    "description": "Rechupete es un restaurante en Vicálvaro que ofrece una experiencia culinaria de autor con platos elaborados y un ambiente distinguido. Su cocina se basa en productos de temporada, garantizando frescura y sabor en cada propuesta, ideal para ocasiones especiales.",
+    "description": "Rechupete es un restaurante en Vicálvaro que ofrece una experiencia culinaria de autor con platos elaborados y un ambiente distinguido. Su cocina se.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
@@ -2015,7 +2015,7 @@
   {
     "slug": "clinica-fisioterapia-prolive",
     "name": "Clínica de Fisioterapia Prolive",
-    "description": "Ubicada en la Calle Victoria Kent, Local 8, en El Cañaveral, Prolive es un centro de fisioterapia de vanguardia. Se especializan en rehabilitación deportiva y tratamiento del dolor crónico, ofreciendo tratamientos personalizados con la última tecnología para una recuperación efectiva.",
+    "description": "Ubicada en la Calle Victoria Kent, Local 8, en El Cañaveral, Prolive es un centro de fisioterapia de vanguardia. Se especializan en rehabilitación.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -2053,7 +2053,7 @@
   {
     "slug": "clinica-muv-canaveral",
     "name": "Clínica MUV Fisioterapia y Pilates",
-    "description": "Clínica MUV en El Cañaveral es un centro integral de fisioterapia y pilates terapéutico. Son expertos en suelo pélvico, rehabilitación posparto y alivio del dolor de espalda, ofreciendo un enfoque holístico para la salud y el bienestar de sus pacientes.",
+    "description": "Clínica MUV en El Cañaveral es un centro integral de fisioterapia y pilates terapéutico. Son expertos en suelo pélvico, rehabilitación posparto y.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -2094,7 +2094,7 @@
   {
     "slug": "focus-clinic-canaveral",
     "name": "Focus Clinic Fisioterapia",
-    "description": "Focus Clinic en El Cañaveral es una clínica de fisioterapia avanzada, destacando por su especialización en fisioterapia deportiva, ATM y disfunciones orofaciales. Cuentan con ecografía de alta gama para un diagnóstico preciso y tratamientos más efectivos.",
+    "description": "Focus Clinic en El Cañaveral es una clínica de fisioterapia avanzada, destacando por su especialización en fisioterapia deportiva, ATM y disfunciones.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -2135,7 +2135,7 @@
   {
     "slug": "fisioterapia-escalante",
     "name": "Fisioterapia Escalante El Cañaveral",
-    "description": "Fisioterapia Escalante en la Calle Aloe Vera, El Cañaveral, ofrece un enfoque de atención personalizada para cada paciente. Sus tratamientos incluyen técnicas manuales, punción seca y ejercicio terapéutico, buscando la recuperación y el bienestar integral.",
+    "description": "Fisioterapia Escalante en la Calle Aloe Vera, El Cañaveral, ofrece un enfoque de atención personalizada para cada paciente. Sus tratamientos incluyen.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -2173,7 +2173,7 @@
   {
     "slug": "centro-sanitario-cano",
     "name": "Centro Sanitario Cano",
-    "description": "Ubicado en Bulevar Indalecio Prieto, Valdebernardo, el Centro Sanitario Cano es un espacio multidisciplinar que ofrece atención integral para toda la familia. Cuentan con servicios de podología, fisioterapia, psicología y logopedia, cubriendo diversas necesidades de salud.",
+    "description": "Ubicado en Bulevar Indalecio Prieto, Valdebernardo, el Centro Sanitario Cano es un espacio multidisciplinar que ofrece atención integral para toda la.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "vicalvaro",
@@ -2213,7 +2213,7 @@
   {
     "slug": "soul-fisioterapia",
     "name": "Soul Fisioterapia",
-    "description": "Soul Fisioterapia en El Cañaveral es una clínica con un enfoque holístico hacia el bienestar. Ofrecen tratamientos de fisioterapia y osteopatía, buscando no solo aliviar el dolor sino también promover un equilibrio integral en la salud de sus pacientes.",
+    "description": "Soul Fisioterapia en El Cañaveral es una clínica con un enfoque holístico hacia el bienestar. Ofrecen tratamientos de fisioterapia y osteopatía,.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -2254,7 +2254,7 @@
   {
     "slug": "english-connection-canaveral",
     "name": "English Connection El Cañaveral",
-    "description": "Ubicada en la Calle de la Igualdad, English Connection El Cañaveral es una academia de inglés que utiliza un método comunicativo y práctico. Ofrecen clases para niños, jóvenes y adultos, enfocándose en la conversación para un aprendizaje efectivo y dinámico.",
+    "description": "Ubicada en la Calle de la Igualdad, English Connection El Cañaveral es una academia de inglés que utiliza un método comunicativo y práctico. Ofrecen.",
     "category": "educacion",
     "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
@@ -2289,7 +2289,7 @@
   {
     "slug": "sadeco-coslada",
     "name": "Talleres Sadeco Coslada",
-    "description": "Talleres Sadeco Coslada, en Av. San Pablo, es un taller mecánico multimarca de confianza. Ofrecen un servicio completo que incluye Pre-ITV, mecánica rápida, cambio de neumáticos y mantenimiento preventivo, garantizando la seguridad y el buen funcionamiento de tu vehículo.",
+    "description": "Talleres Sadeco Coslada, en Av. San Pablo, es un taller mecánico multimarca de confianza. Ofrecen un servicio completo que incluye Pre-ITV, mecánica.",
     "category": "automocion",
     "categoryName": "Automoción",
     "zona": "coslada",
@@ -2323,7 +2323,7 @@
   {
     "slug": "masruedas-coslada",
     "name": "Masruedas First Stop Coslada",
-    "description": "Masruedas First Stop Coslada es tu centro de confianza para neumáticos y mecánica rápida. Realizan revisiones Pre-ITV, cambios de aceite, frenos y amortiguadores, asegurando que tu coche esté siempre en óptimas condiciones para la carretera.",
+    "description": "Masruedas First Stop Coslada es tu centro de confianza para neumáticos y mecánica rápida. Realizan revisiones Pre-ITV, cambios de aceite, frenos y.",
     "category": "automocion",
     "categoryName": "Automoción",
     "zona": "coslada",
@@ -2358,7 +2358,7 @@
   {
     "slug": "electroi-san-fernando",
     "name": "Electroi Talleres",
-    "description": "Electroi Talleres es tu centro de confianza en San Fernando de Henares para el mantenimiento y reparación de tu vehículo. Especializados en mecánica general, electricidad del automóvil y diagnóstico electrónico avanzado, te aseguran un servicio completo y de calidad para que tu coche esté siempre a punto. Ubicados estratégicamente para tu comodidad.",
+    "description": "Electroi Talleres es tu centro de confianza en San Fernando de Henares para el mantenimiento y reparación de tu vehículo. Especializados en mecánica.",
     "category": "automocion",
     "categoryName": "Automoción",
     "zona": "san-fernando-de-henares",
@@ -2393,7 +2393,7 @@
   {
     "slug": "inyeauto-san-fernando",
     "name": "Inyeauto Taller Mecánico",
-    "description": "Inyeauto es un taller mecánico de referencia en San Fernando de Henares, con una sólida experiencia en la reparación de motores, sistemas de inyección y electrónica del automóvil. Si tu coche presenta problemas complejos o simplemente necesitas un mantenimiento de confianza, aquí encontrarás profesionales cualificados para dejarlo como nuevo. Su especialización garantiza soluciones efectivas.",
+    "description": "Inyeauto es un taller mecánico de referencia en San Fernando de Henares, con una sólida experiencia en la reparación de motores, sistemas de inyección.",
     "category": "automocion",
     "categoryName": "Automoción",
     "zona": "san-fernando-de-henares",
@@ -2427,7 +2427,7 @@
   {
     "slug": "aticomoda-vicalvaro",
     "name": "Aticomoda",
-    "description": "Aticomoda es tu boutique de moda femenina en Vicálvaro, donde Carmen te ofrece un asesoramiento personalizado para encontrar prendas únicas que realcen tu estilo. Aquí descubrirás una selección cuidada de ropa y complementos, pensada para la mujer moderna que busca calidad y originalidad. Ubicada en Blvr. de Jose Prat, 29, B, es el lugar perfecto para renovar tu armario con un toque especial.",
+    "description": "Aticomoda es tu boutique de moda femenina en Vicálvaro, donde Carmen te ofrece un asesoramiento personalizado para encontrar prendas únicas que realcen.",
     "category": "moda",
     "categoryName": "Moda y Complementos",
     "zona": "vicalvaro",
@@ -2458,7 +2458,7 @@
   {
     "slug": "almacenes-jimar",
     "name": "Almacenes Jimar",
-    "description": "Almacenes Jimar es una tienda de ropa y complementos en Vicálvaro que ofrece una amplia variedad de productos de calidad a precios muy competitivos. Es el lugar ideal para vestir a toda la familia, desde los más pequeños hasta los adultos, con opciones para cada estilo y ocasión. Aquí encontrarás moda práctica y funcional sin renunciar a la buena calidad.",
+    "description": "Almacenes Jimar es una tienda de ropa y complementos en Vicálvaro que ofrece una amplia variedad de productos de calidad a precios muy competitivos. Es.",
     "category": "moda",
     "categoryName": "Moda y Complementos",
     "zona": "vicalvaro",
@@ -2489,7 +2489,7 @@
   {
     "slug": "almacenes-s-lara",
     "name": "Almacenes S. Lara",
-    "description": "Almacenes S. Lara es una tienda de ropa en Vicálvaro que se distingue por su cuidadosa selección de prendas y un asesoramiento experto y honesto. Aquí te ayudarán a encontrar lo que mejor te sienta, ofreciéndote recomendaciones personalizadas con total transparencia. Es el lugar perfecto para quienes buscan calidad y un trato cercano al elegir su vestuario.",
+    "description": "Almacenes S. Lara es una tienda de ropa en Vicálvaro que se distingue por su cuidadosa selección de prendas y un asesoramiento experto y honesto. Aquí.",
     "category": "moda",
     "categoryName": "Moda y Complementos",
     "zona": "vicalvaro",
@@ -2520,7 +2520,7 @@
   {
     "slug": "akiomoda-vicalvaro",
     "name": "Akiomoda",
-    "description": "Akiomoda es una tienda de moda ubicada en el corazón del casco histórico de Vicálvaro, donde podrás descubrir las últimas tendencias con un estilo propio y distintivo. Ofrecen una cuidada selección de prendas de temporada que te permitirán crear looks modernos y originales. Es el lugar ideal para quienes buscan estar a la última sin perder su esencia personal.",
+    "description": "Akiomoda es una tienda de moda ubicada en el corazón del casco histórico de Vicálvaro, donde podrás descubrir las últimas tendencias con un estilo.",
     "category": "moda",
     "categoryName": "Moda y Complementos",
     "zona": "vicalvaro",
@@ -2551,7 +2551,7 @@
   {
     "slug": "telelavo-canaveral",
     "name": "Telelavo El Cañaveral",
-    "description": "Telelavo El Cañaveral es tu solución integral para el cuidado de la ropa en el barrio. Ofrecen servicios de lavandería y tintorería con la comodidad de recogida y entrega a domicilio, además de una zona de autoservicio para quienes prefieren hacerlo ellos mismos. Es ideal para familias y profesionales con poco tiempo, ubicado estratégicamente en la C. Anna Frank, 8.",
+    "description": "Telelavo El Cañaveral es tu solución integral para el cuidado de la ropa en el barrio. Ofrecen servicios de lavandería y tintorería con la comodidad de.",
     "category": "hogar",
     "categoryName": "Hogar y Reformas",
     "zona": "el-canaveral",
@@ -2582,7 +2582,7 @@
   {
     "slug": "lavanderia-vicalvaro",
     "name": "Lavandería Vicálvaro",
-    "description": "Lavandería Vicálvaro es una lavandería de autoservicio moderna y eficiente, perfecta para lavar grandes volúmenes de ropa o prendas voluminosas como edredones y mantas. Sus máquinas industriales de última generación garantizan un lavado y secado óptimos, con detergente y suavizante incluidos, y está abierta 7 días a la semana para tu conveniencia.",
+    "description": "Lavandería Vicálvaro es una lavandería de autoservicio moderna y eficiente, perfecta para lavar grandes volúmenes de ropa o prendas voluminosas como.",
     "category": "hogar",
     "categoryName": "Hogar y Reformas",
     "zona": "vicalvaro",
@@ -2616,7 +2616,7 @@
   {
     "slug": "mediesven-canaveral",
     "name": "Mediesven Centro Médico",
-    "description": "Mediesven Centro Médico es un referente en salud y bienestar en El Cañaveral, ofreciendo una amplia gama de especialidades médicas y tratamientos de medicina estética. Con un equipo de profesionales cualificados, se preocupan por la salud integral de toda la familia, desde pediatría hasta ginecología y dermatología, en un ambiente cercano y de confianza.",
+    "description": "Mediesven Centro Médico es un referente en salud y bienestar en El Cañaveral, ofreciendo una amplia gama de especialidades médicas y tratamientos de.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -2654,7 +2654,7 @@
   {
     "slug": "mr-kebab-canaveral",
     "name": "Mr Kebab El Cañaveral",
-    "description": "Mr Kebab El Cañaveral es el lugar ideal para disfrutar de auténtica comida turca con raciones generosas y precios muy competitivos. Desde los clásicos kebabs y durum hasta falafel crujiente y platos combinados, tienen opciones para todos los gustos. Además, ofrecen un cómodo servicio a domicilio para que disfrutes en casa.",
+    "description": "Mr Kebab El Cañaveral es el lugar ideal para disfrutar de auténtica comida turca con raciones generosas y precios muy competitivos. Desde los clásicos.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -2690,7 +2690,7 @@
   {
     "slug": "telepizza-canaveral",
     "name": "Telepizza Cañaveral",
-    "description": "Telepizza Cañaveral es tu opción de confianza para disfrutar de pizzas recién hechas con la comodidad de la entrega a domicilio o la recogida en tienda. Con una amplia variedad de pizzas, entrantes, postres y ofertas diarias, es perfecto para cenas familiares, reuniones con amigos o simplemente para darte un capricho. Ubicado estratégicamente para servir a toda la zona de Vicálvaro.",
+    "description": "Telepizza Cañaveral es tu opción de confianza para disfrutar de pizzas recién hechas con la comodidad de la entrega a domicilio o la recogida en.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
@@ -2725,7 +2725,7 @@
   {
     "slug": "kebabish-vicalvaro",
     "name": "Kebabish Vicálvaro",
-    "description": "Kebabish Vicálvaro te invita a un viaje culinario por la gastronomía turca, ofreciendo una extensa carta de kebabs, durum y platos elaborados con pollo y cordero. Con un ambiente familiar y precios accesibles, es una excelente opción para disfrutar de una comida auténtica y sabrosa en el corazón de Vicálvaro. No olvides visitar su web para ver el menú completo.",
+    "description": "Kebabish Vicálvaro te invita a un viaje culinario por la gastronomía turca, ofreciendo una extensa carta de kebabs, durum y platos elaborados con pollo.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
@@ -2760,7 +2760,7 @@
   {
     "slug": "lidl-canaveral",
     "name": "Lidl El Cañaveral",
-    "description": "Lidl El Cañaveral es tu supermercado de referencia para una compra inteligente, ofreciendo productos de marca propia de alta calidad a precios muy competitivos. Destaca por su panadería fresca en tienda, una amplia sección de frutas y verduras, y sus populares ofertas semanales en productos de alimentación y bazar. Es una opción excelente para la compra diaria en el barrio.",
+    "description": "Lidl El Cañaveral es tu supermercado de referencia para una compra inteligente, ofreciendo productos de marca propia de alta calidad a precios muy.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
@@ -2792,7 +2792,7 @@
   {
     "slug": "mercadona-san-fernando",
     "name": "Mercadona San Fernando",
-    "description": "Mercadona San Fernando es el supermercado de referencia para muchos vecinos, conocido por su amplio surtido de productos de alimentación, droguería, perfumería y hogar, con especial énfasis en sus marcas propias como Hacendado, Deliplus y Bosque Verde. Ofrece una experiencia de compra completa y eficiente, con productos frescos de calidad y un servicio al cliente enfocado en la satisfacción.",
+    "description": "Mercadona San Fernando es el supermercado de referencia para muchos vecinos, conocido por su amplio surtido de productos de alimentación, droguería,.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "san-fernando-de-henares",
@@ -2823,7 +2823,7 @@
   {
     "slug": "aldi-coslada",
     "name": "Aldi Coslada",
-    "description": "Aldi Coslada es una excelente opción para los vecinos de El Cañaveral que buscan calidad a buen precio, con un enfoque en productos frescos, ecológicos y un surtido internacional. Este supermercado discount se distingue por sus ofertas semanales en alimentación y bazar, y por ofrecer una experiencia de compra sencilla y eficiente. Es ideal para una compra completa y consciente.",
+    "description": "Aldi Coslada es una excelente opción para los vecinos de El Cañaveral que buscan calidad a buen precio, con un enfoque en productos frescos, ecológicos.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "coslada",
@@ -2855,7 +2855,7 @@
   {
     "slug": "laura-vivar-estilistas",
     "name": "Laura Vivar Estilistas",
-    "description": "Laura Vivar Estilistas es tu peluquería de confianza en la zona de Ambroz, Vicálvaro, donde la atención personalizada y las últimas tendencias se unen para realzar tu belleza. Especialistas en cortes modernos, coloraciones vibrantes, mechas y tratamientos capilares, te asesorarán para encontrar el estilo que mejor se adapte a ti y a tu cabello.",
+    "description": "Laura Vivar Estilistas es tu peluquería de confianza en la zona de Ambroz, Vicálvaro, donde la atención personalizada y las últimas tendencias se unen.",
     "category": "belleza",
     "categoryName": "Belleza y Peluquerías",
     "zona": "vicalvaro",
@@ -2887,7 +2887,7 @@
   {
     "slug": "obramat-canaveral",
     "name": "Obramat El Cañaveral",
-    "description": "Obramat El Cañaveral es el almacén profesional de referencia para todos tus proyectos de bricolaje, construcción y reformas. Con una vasta selección de herramientas, materiales de construcción, pintura, fontanería, electricidad, jardinería y decoración, encontrarás todo lo que necesitas, ya seas profesional o particular. Su amplio stock y precios competitivos lo hacen indispensable en la zona.",
+    "description": "Obramat El Cañaveral es el almacén profesional de referencia para todos tus proyectos de bricolaje, construcción y reformas. Con una vasta selección de.",
     "category": "hogar",
     "categoryName": "Hogar y Reformas",
     "zona": "el-canaveral",
@@ -2920,7 +2920,7 @@
   {
     "slug": "mcdonalds-canaveral",
     "name": "McDonald's El Cañaveral",
-    "description": "McDonald's El Cañaveral es el lugar perfecto para disfrutar de tus hamburguesas favoritas, desayunos, ensaladas y postres en un ambiente familiar y moderno. Cuenta con servicio de auto-mac para mayor comodidad, una amplia sala interior y una agradable terraza. Además, integra un McCafé para los amantes del buen café y la repostería, siendo un punto de encuentro ideal en el barrio.",
+    "description": "McDonald's El Cañaveral es el lugar perfecto para disfrutar de tus hamburguesas favoritas, desayunos, ensaladas y postres en un ambiente familiar y.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -2956,7 +2956,7 @@
   {
     "slug": "dreamfit-valdebernardo",
     "name": "Dreamfit Valdebernardo",
-    "description": "Dreamfit Valdebernardo es un gimnasio moderno y completo, abierto 24 horas para adaptarse a cualquier horario. Ofrece una extensa zona de musculación y cardio con equipamiento de última generación, una gran variedad de clases dirigidas, piscina y una relajante zona de spa. Es la opción perfecta para quienes buscan un gimnasio con todo incluido y sin permanencia en Vicálvaro.",
+    "description": "Dreamfit Valdebernardo es un gimnasio moderno y completo, abierto 24 horas para adaptarse a cualquier horario. Ofrece una extensa zona de musculación y.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "vicalvaro",
@@ -2990,7 +2990,7 @@
   {
     "slug": "vicalvaro-crossfit",
     "name": "Vicálvaro CrossFit",
-    "description": "Vicálvaro CrossFit es el box ideal para los amantes del CrossFit, ofreciendo una programación WOD diaria diseñada para desafiar y mejorar tu condición física. Con entrenadores certificados y una comunidad activa y motivadora, es el lugar perfecto para alcanzar tus objetivos de fuerza, resistencia y agilidad, independientemente de tu nivel de experiencia. Ubicado en la Calle de Prat, 32.",
+    "description": "Vicálvaro CrossFit es el box ideal para los amantes del CrossFit, ofreciendo una programación WOD diaria diseñada para desafiar y mejorar tu condición.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "vicalvaro",
@@ -3024,7 +3024,7 @@
   {
     "slug": "lorange-bleue-vicalvaro",
     "name": "L'Orange Bleue Vicálvaro",
-    "description": "L'Orange Bleue Vicálvaro es un gimnasio que te ofrece un ambiente motivador y un plan de entrenamiento personalizado para ayudarte a alcanzar tus metas de fitness. Con una amplia sala de musculación y cardio, y una gran variedad de clases dirigidas como Body Pump, Spinning, Yoga y funcional, es el lugar perfecto para mantenerte activo y en forma en Vicálvaro.",
+    "description": "L'Orange Bleue Vicálvaro es un gimnasio que te ofrece un ambiente motivador y un plan de entrenamiento personalizado para ayudarte a alcanzar tus metas.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "vicalvaro",
@@ -3057,7 +3057,7 @@
   {
     "slug": "nemomarlin-canaveral",
     "name": "Escuela Infantil Nemomarlin Cañaveral",
-    "description": "Escuela infantil bilingüe ubicada en Alto del Esparragal, 202, que ofrece un entorno seguro y estimulante para los más pequeños. Con 7 amplias aulas, sala de psicomotricidad y un patio semi-cubierto, su metodología activa y atención individualizada garantizan el desarrollo integral de niños de 0 a 3 años.",
+    "description": "Escuela infantil bilingüe ubicada en Alto del Esparragal, 202, que ofrece un entorno seguro y estimulante para los más pequeños. Con 7 amplias aulas,.",
     "category": "educacion",
     "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
@@ -3094,7 +3094,7 @@
   {
     "slug": "escuela-infantil-aupa",
     "name": "Escuela Infantil AUPA",
-    "description": "La Escuela Infantil AUPA, situada en Calle de Blas de Lezo, 15, se distingue por su pedagogía activa, donde el aprendizaje se fomenta a través de la exploración, el juego y la experimentación. Ofrece un entorno seguro y estimulante, ideal para el desarrollo integral de los niños en sus primeros años.",
+    "description": "La Escuela Infantil AUPA, situada en Calle de Blas de Lezo, 15, se distingue por su pedagogía activa, donde el aprendizaje se fomenta a través de la.",
     "category": "educacion",
     "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
@@ -3133,7 +3133,7 @@
   {
     "slug": "ikigai-dental-canaveral-v2",
     "name": "Ikigai Dental",
-    "description": "Ikigai Dental es una clínica dental moderna en la Av. de Blas de Lezo, 18, especializada en ortodoncia invisible, micro-ortodoncia y odontología general. Cuentan con un equipo multidisciplinar y tecnología digital avanzada para ofrecer tratamientos precisos y personalizados a toda la familia.",
+    "description": "Ikigai Dental es una clínica dental moderna en la Av. de Blas de Lezo, 18, especializada en ortodoncia invisible, micro-ortodoncia y odontología.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -3179,7 +3179,7 @@
   {
     "slug": "vicalvaro-dental",
     "name": "Vicálvaro Dental",
-    "description": "Con más de 15 años de experiencia, Vicálvaro Dental es un centro odontológico de confianza en la Calle de San Cipriano, 20. Su equipo multidisciplinar está especializado en cirugías bucales complejas, periodoncia, implantología y ortodoncia, garantizando tratamientos de alta calidad con registro sanitario CS8092.",
+    "description": "Con más de 15 años de experiencia, Vicálvaro Dental es un centro odontológico de confianza en la Calle de San Cipriano, 20. Su equipo multidisciplinar.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "vicalvaro",
@@ -3224,7 +3224,7 @@
   {
     "slug": "dentistaelcanaveral-consultorio",
     "name": "Dentistas El Cañaveral",
-    "description": "Dentistas El Cañaveral es un portal informativo y consultorio de referencia en la Calle de Victoria Kent, 5, que agrupa y facilita el acceso a los servicios odontológicos disponibles en la zona. Ofrecen información detallada sobre los dentistas locales y sus especialidades para ayudarte a encontrar el profesional adecuado.",
+    "description": "Dentistas El Cañaveral es un portal informativo y consultorio de referencia en la Calle de Victoria Kent, 5, que agrupa y facilita el acceso a los.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -3259,7 +3259,7 @@
   {
     "slug": "vietnam-2013-canaveral",
     "name": "Vietnam 2013 El Cañaveral",
-    "description": "Restaurante vietnamita auténtico, sucursal de la reconocida Chef Duong. Ofrecen pho, banh mi, rollitos de primavera y otros platos tradicionales vietnamitas. Cuenta con una valoración de 9.1/10 en TheFork y fue inaugurado en febrero de 2025.",
+    "description": "Restaurante vietnamita auténtico, sucursal de la reconocida Chef Duong. Ofrecen pho, banh mi, rollitos de primavera y otros platos tradicionales.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -3297,7 +3297,7 @@
   {
     "slug": "seven-canaveral",
     "name": "Seven El Cañaveral",
-    "description": "Restaurante bar con horario amplio de lunes a domingo. Ofrece cocina variada, una agradable terraza y un ambiente moderno en el corazón del Cañaveral. Es el lugar ideal para disfrutar de una comida o cena informal con amigos o familia.",
+    "description": "Restaurante bar con horario amplio de lunes a domingo. Ofrece cocina variada, una agradable terraza y un ambiente moderno en el corazón del Cañaveral.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -3329,7 +3329,7 @@
   {
     "slug": "havana-madrid-canaveral",
     "name": "Havana Madrid",
-    "description": "Cafetería y restaurante de comida rápida cubana. Ofrecen cafés, refrigerios, bocadillos y platos cubanos auténticos. Abierto de martes a domingo, es el lugar perfecto para disfrutar de los sabores del Caribe en El Cañaveral.",
+    "description": "Cafetería y restaurante de comida rápida cubana. Ofrecen cafés, refrigerios, bocadillos y platos cubanos auténticos. Abierto de martes a domingo, es el.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -3365,7 +3365,7 @@
   {
     "slug": "guasacaca-madrid-canaveral",
     "name": "Guasacaca Madrid",
-    "description": "Restaurante de comida venezolana en El Cañaveral. Ofrecen arepas, tequeños, cachapas, pabellón criollo y otros platos típicos venezolanos. Han inaugurado un nuevo local en la esquina de Blas de Lezo con Mayorazgo de Duarte, trayendo los auténticos sabores de Venezuela al barrio.",
+    "description": "Restaurante de comida venezolana en El Cañaveral. Ofrecen arepas, tequeños, cachapas, pabellón criollo y otros platos típicos venezolanos. Han.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -3400,7 +3400,7 @@
   {
     "slug": "chinawok-express-canaveral",
     "name": "ChinaWok Express El Cañaveral",
-    "description": "Comida china estilo venezolano. Arroz frito, chop suey, lumpias, wok y platos fusión chino-venezolana. Nueva sede en El Cañaveral, ofreciendo una experiencia culinaria única con sabores auténticos y una atmósfera acogedora.",
+    "description": "Comida china estilo venezolano. Arroz frito, chop suey, lumpias, wok y platos fusión chino-venezolana. Nueva sede en El Cañaveral, ofreciendo una.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -3439,7 +3439,7 @@
   {
     "slug": "la-bajada-street-food-vicalvaro",
     "name": "La Bajada Street Food Vicálvaro",
-    "description": "Street food de autor en Vicálvaro. Uno de los restaurantes nuevos mejor valorados de la zona con nota 9.1 en TheFork. Cocina creativa e informal, ideal para disfrutar de sabores innovadores en un ambiente moderno y desenfadado.",
+    "description": "Street food de autor en Vicálvaro. Uno de los restaurantes nuevos mejor valorados de la zona con nota 9.1 en TheFork. Cocina creativa e informal, ideal.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
@@ -3479,7 +3479,7 @@
   {
     "slug": "farmacia-central-canaveral",
     "name": "Farmacia Central Cañaveral",
-    "description": "Farmacia de referencia en El Cañaveral con amplio horario. Medicamentos, parafarmacia, dermocosmética, ortopedia y atención farmacéutica personalizada. Servicio de guardia para cubrir todas las necesidades de salud de la comunidad.",
+    "description": "Farmacia de referencia en El Cañaveral con amplio horario. Medicamentos, parafarmacia, dermocosmética, ortopedia y atención farmacéutica personalizada.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -3511,7 +3511,7 @@
   {
     "slug": "farmacia-sonrisas-canaveral",
     "name": "Farmacia Sonrisas del Cañaveral",
-    "description": "Farmacia en Calle Anna Frank con atención cercana. Artículos para el cuidado de la salud y bienestar, cosmética natural y productos infantiles. Un espacio dedicado al cuidado integral de toda la familia con un trato amable y profesional.",
+    "description": "Farmacia en Calle Anna Frank con atención cercana. Artículos para el cuidado de la salud y bienestar, cosmética natural y productos infantiles. Un.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -3542,7 +3542,7 @@
   {
     "slug": "farmacia-botica-de-mar",
     "name": "Farmacia La Botica de Mar",
-    "description": "Farmacia en Avenida Blas de Lezo. Medicamentos, dermofarmacia y servicio personalizado para los vecinos del Cañaveral. Ofrecemos una amplia variedad de productos y un equipo de profesionales dispuesto a resolver cualquier duda sobre su salud.",
+    "description": "Farmacia en Avenida Blas de Lezo. Medicamentos, dermofarmacia y servicio personalizado para los vecinos del Cañaveral. Ofrecemos una amplia variedad de.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -3570,7 +3570,7 @@
   {
     "slug": "farmacia-el-canaveral-vk",
     "name": "Farmacia El Cañaveral",
-    "description": "Farmacia con 12 horas de servicio diario. Ubicada en esquina Victorino Granizo con Victoria Kent. Amplio horario para comodidad de los vecinos, garantizando acceso a medicamentos y productos de salud durante gran parte del día.",
+    "description": "Farmacia con 12 horas de servicio diario. Ubicada en esquina Victorino Granizo con Victoria Kent. Amplio horario para comodidad de los vecinos,.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -3599,7 +3599,7 @@
   {
     "slug": "jardin-canaveral",
     "name": "El Jardín del Cañaveral",
-    "description": "Restaurante familiar con amplia terraza ajardinada en El Cañaveral. Cocina mediterránea, carnes a la brasa y platos caseros. Espacio accesible con parking gratuito en la calle.",
+    "description": "Restaurante familiar con amplia terraza ajardinada en El Cañaveral. Cocina mediterránea, carnes a la brasa y platos caseros. Espacio accesible con.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -3638,7 +3638,7 @@
   {
     "slug": "estanco-el-canaveral",
     "name": "Estanco El Cañaveral",
-    "description": "Expendeduría de tabaco y timbre del Estado. También lotería, recargas, prensa y artículos de fumador. Primer estanco del barrio, licencia adjudicada por subasta, ofreciendo una amplia gama de productos y servicios esenciales para la comunidad.",
+    "description": "Expendeduría de tabaco y timbre del Estado. También lotería, recargas, prensa y artículos de fumador. Primer estanco del barrio, licencia adjudicada.",
     "category": "servicios-profesionales",
     "categoryName": "Servicios Profesionales",
     "zona": "el-canaveral",

@@ -22,12 +22,29 @@ const categoriasEnZona = categorias
     count: getNegociosByCategoriaYZona(cat.slug, slug!).length,
   }))
   .filter((cat) => cat.count > 0);
+
+const zonaSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: `Negocios en ${name}`,
+  numberOfItems: negocios.length,
+  itemListElement: negocios.slice(0, 20).map((n, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    url: `https://elcanaveral.info/${n.category}/${n.slug}/`,
+    name: n.name,
+  })),
+};
 ---
 
 <BaseLayout
   title={`Negocios en ${name}`}
-  description={`Directorio de negocios, comercios y servicios en ${name}. ${description}`}
+  description={`Directorio de negocios y servicios en ${name}. ${description}`}
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(zonaSchema)} />
+  </Fragment>
+
   <Header />
 
   <section class="pt-24 pb-16 px-4">

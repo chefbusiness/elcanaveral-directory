@@ -28,12 +28,30 @@ const seo = (seoOverrides.categorias as Record<string, any>)[slug!] || {};
 const seoTitle = seo.title || `${name} en El Canaveral y alrededores`;
 const seoDesc = seo.description || description;
 const seoH1 = seo.h1 || name;
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: seoH1,
+  description: seoDesc,
+  numberOfItems: negocios.length,
+  itemListElement: negocios.map((n, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    url: `https://elcanaveral.info/${n.category}/${n.slug}/`,
+    name: n.name,
+  })),
+};
 ---
 
 <BaseLayout
   title={seoTitle}
   description={seoDesc}
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  </Fragment>
+
   <Header />
 
   <section class="pt-24 pb-16 px-4">
