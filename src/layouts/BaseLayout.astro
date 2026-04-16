@@ -10,7 +10,7 @@ interface Props {
 }
 
 const { title, description, image = "/images/og-default.jpg", noindex = false } = Astro.props;
-const siteName = import.meta.env.PUBLIC_SITE_NAME || "El Canaveral Info";
+const siteName = "elcañaveral.info";
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const fullTitle = `${title} | ${siteName}`;
 ---
