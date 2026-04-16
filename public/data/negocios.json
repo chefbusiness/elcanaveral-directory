@@ -984,84 +984,6 @@
     "address": "Avenida Miguel Delibes 25, 28052 Madrid"
   },
   {
-    "slug": "guasacaca-canaveral",
-    "name": "Guasacaca Canaveral",
-    "description": "Guasacaca Cañaveral te transporta a Venezuela con su auténtica gastronomía. Aquí podrás disfrutar de deliciosas arepas, cachapas, tequeños y otros platos típicos venezolanos, elaborados con el sabor tradicional, perfecto para descubrir nuevos sabores en el corazón de El Cañaveral.",
-    "category": "restaurantes",
-    "categoryName": "Restaurantes",
-    "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
-    "tags": [
-      "venezolano",
-      "arepas"
-    ],
-    "featured": false,
-    "servicios": [
-      "Comida en sala",
-      "Comida para llevar",
-      "Delivery (a través de apps)",
-      "Cenas",
-      "Bebidas típicas",
-      "Postres venezolanos"
-    ],
-    "destacados": [
-      "Auténtica comida venezolana",
-      "Arepas variadas y sabrosas",
-      "Ambiente informal y agradable",
-      "Ideal para probar algo diferente"
-    ],
-    "horario": "M-D 13:00-16:00 y 20:00-23:00, L Cerrado",
-    "tiposCocina": [
-      "Venezolana",
-      "Latinoamericana"
-    ],
-    "delivery": true,
-    "precioRango": "€",
-    "image": "/images/categorias/restaurantes.jpg",
-    "address": "Calle Blas de Lezo 15, 28052 Madrid"
-  },
-  {
-    "slug": "restaurante-chino-chinawok-express",
-    "name": "Chinawok Express",
-    "description": "Chinawok Express ofrece una experiencia culinaria asiática rápida y deliciosa, ideal para una comida informal o para llevar a casa. Ubicado convenientemente en El Cañaveral, es perfecto para disfrutar de auténticos sabores orientales sin esperas.",
-    "category": "restaurantes",
-    "categoryName": "Restaurantes",
-    "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
-    "tags": [
-      "chino",
-      "wok",
-      "take-away"
-    ],
-    "featured": false,
-    "servicios": [
-      "Platos de wok personalizados",
-      "Arroces y noodles",
-      "Dim sum y entrantes",
-      "Menús combinados",
-      "Opciones vegetarianas",
-      "Bebidas asiáticas",
-      "Servicio de comida para llevar",
-      "Comida en local"
-    ],
-    "destacados": [
-      "Rapidez en el servicio",
-      "Amplia variedad de platos wok",
-      "Precios económicos",
-      "Ideal para llevar"
-    ],
-    "horario": "L-D 12:30-16:00, 19:30-23:30",
-    "tiposCocina": [
-      "China",
-      "Wok",
-      "Asiática"
-    ],
-    "delivery": true,
-    "precioRango": "€",
-    "image": "/images/categorias/restaurantes.jpg",
-    "address": "Calle Victoria Kent 20, 28052 Madrid"
-  },
-  {
     "slug": "con-sazon-el-canaveral",
     "name": "Con Sazon El Canaveral",
     "description": "Con Sazón El Cañaveral te trae el auténtico sabor de la cocina latina casera, con platos elaborados siguiendo recetas tradicionales que te transportarán a Latinoamérica. Es el lugar perfecto para disfrutar de una comida reconfortante y llena de sabor en el barrio.",
@@ -3362,5 +3284,135 @@
       "Información actualizada y completa"
     ],
     "horario": "L-V 9:00-19:00"
+  },
+  {
+    "slug": "vietnam-2013-canaveral",
+    "name": "Vietnam 2013 El Canaveral",
+    "description": "Restaurante vietnamita autentico, sucursal de la reconocida Chef Duong. Pho, banh mi, rollitos de primavera y platos tradicionales vietnamitas. Valoracion 9.1/10 en TheFork. Inaugurado en febrero 2025.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Calle Ferenc Puskas, 193, 28052 Madrid",
+    "website": "https://vietnamrestaurante.com/",
+    "rating": 4.6,
+    "tags": [
+      "vietnamita",
+      "pho",
+      "banh-mi",
+      "asiatico"
+    ],
+    "tiposCocina": [
+      "vietnamita",
+      "asiatica"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "seven-canaveral",
+    "name": "Seven El Canaveral",
+    "description": "Restaurante bar con horario amplio de lunes a domingo. Cocina variada, terraza y ambiente moderno en el corazon del Canaveral.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Av. de Miguel Delibes, 30, 28052 Madrid",
+    "phone": "657 77 78 80",
+    "tags": [
+      "bar",
+      "terraza",
+      "cocina-variada"
+    ],
+    "terraza": true,
+    "horario": "L-J 07:00-00:00, V 07:00-01:00, S-D 09:00-01:00",
+    "featured": false
+  },
+  {
+    "slug": "havana-madrid-canaveral",
+    "name": "Havana Madrid",
+    "description": "Cafeteria y restaurante de comida rapida cubana. Cafes, refrigerios, bocadillos y platos cubanos. Abierto de martes a domingo.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Av. de Miguel Delibes, 30, local 1, 28052 Madrid",
+    "phone": "918 98 69 36",
+    "tags": [
+      "cubano",
+      "cafeteria",
+      "comida-rapida"
+    ],
+    "tiposCocina": [
+      "cubana",
+      "latina"
+    ],
+    "horario": "Ma-D 10:00-16:00, 20:00-23:30",
+    "delivery": false,
+    "featured": false
+  },
+  {
+    "slug": "guasacaca-madrid-canaveral",
+    "name": "Guasacaca Madrid",
+    "description": "Restaurante de comida venezolana en El Canaveral. Arepas, tequeños, cachapas, pabellon criollo y platos tipicos. Nuevo local en esquina Blas de Lezo con Mayorazgo de Duarte.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Calle Blas de Lezo esq. Mayorazgo de Duarte, 28052 Madrid",
+    "tags": [
+      "venezolano",
+      "arepas",
+      "tequeños",
+      "cachapas"
+    ],
+    "tiposCocina": [
+      "venezolana",
+      "latina"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "chinawok-express-canaveral",
+    "name": "ChinaWok Express El Canaveral",
+    "description": "Comida china estilo venezolano. Arroz frito, chop suey, lumpias, wok y platos fusion chino-venezolana. Nueva sede en El Canaveral.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Av. de Blas de Lezo, 39, 28052 Madrid",
+    "website": "https://chinawokexpress.es/",
+    "tags": [
+      "chino",
+      "venezolano",
+      "fusion",
+      "wok"
+    ],
+    "tiposCocina": [
+      "china",
+      "venezolana",
+      "fusion"
+    ],
+    "delivery": true,
+    "featured": false
+  },
+  {
+    "slug": "la-bajada-street-food-vicalvaro",
+    "name": "La Bajada Street Food Vicalvaro",
+    "description": "Street food de autor en Vicalvaro. Uno de los restaurantes nuevos mejor valorados de la zona con nota 9.1 en TheFork. Cocina creativa e informal.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "rating": 4.5,
+    "tags": [
+      "street-food",
+      "creativo",
+      "tendencia"
+    ],
+    "tiposCocina": [
+      "fusion",
+      "street-food"
+    ],
+    "featured": true
   }
 ]
