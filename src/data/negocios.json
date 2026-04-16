@@ -14,7 +14,8 @@
       "cadena",
       "platos-preparados"
     ],
-    "featured": false
+    "featured": false,
+    "image": "/images/negocios/mercadona-coslada.jpg"
   },
   {
     "slug": "hiper-canaveral",
@@ -27,7 +28,8 @@
     "tags": [
       "local"
     ],
-    "featured": true
+    "featured": true,
+    "image": "/images/negocios/hiper-canaveral.jpg"
   },
   {
     "slug": "supermercado-el-canaveral",
@@ -41,7 +43,8 @@
       "local",
       "proximidad"
     ],
-    "featured": false
+    "featured": false,
+    "image": "/images/negocios/supermercado-el-canaveral.jpg"
   },
   {
     "slug": "coviran-plus",
@@ -54,7 +57,8 @@
     "tags": [
       "franquicia"
     ],
-    "featured": false
+    "featured": false,
+    "image": "/images/negocios/coviran-plus.jpg"
   },
   {
     "slug": "ahorramas",
@@ -68,7 +72,8 @@
       "cadena",
       "productos-frescos"
     ],
-    "featured": true
+    "featured": true,
+    "image": "/images/negocios/ahorramas.jpg"
   },
   {
     "slug": "mi-alcampo",
@@ -81,7 +86,8 @@
     "tags": [
       "cadena"
     ],
-    "featured": false
+    "featured": false,
+    "image": "/images/negocios/mi-alcampo.jpg"
   },
   {
     "slug": "family-mini-market",
@@ -95,7 +101,8 @@
       "horario-extendido",
       "familiar"
     ],
-    "featured": false
+    "featured": false,
+    "image": "/images/negocios/family-mini-market.jpg"
   },
   {
     "slug": "alimentacion-y-bazar",
@@ -108,7 +115,8 @@
     "tags": [
       "bazar"
     ],
-    "featured": false
+    "featured": false,
+    "image": "/images/negocios/alimentacion-y-bazar.jpg"
   },
   {
     "slug": "alimentacion-canaveral",
@@ -121,7 +129,8 @@
     "tags": [
       "local"
     ],
-    "featured": false
+    "featured": false,
+    "image": "/images/negocios/alimentacion-canaveral.jpg"
   },
   {
     "slug": "casa-elias",
@@ -136,7 +145,8 @@
       "local",
       "productos-frescos"
     ],
-    "featured": true
+    "featured": true,
+    "image": "/images/negocios/casa-elias.jpg"
   },
   {
     "slug": "la-fruteria-de-mama",
@@ -153,7 +163,8 @@
     "featured": true,
     "address": "C. Anna Frank, 12, Local 7, Vicalvaro, 28052 Madrid",
     "rating": 5.0,
-    "phone": "699 90 33 69"
+    "phone": "699 90 33 69",
+    "image": "/images/negocios/la-fruteria-de-mama.jpg"
   },
   {
     "slug": "megafruta-canaveral",
@@ -167,7 +178,8 @@
       "precios-competitivos"
     ],
     "featured": false,
-    "address": "Av. de Miguel Delibes, 25, Vicalvaro, 28052 Madrid"
+    "address": "Av. de Miguel Delibes, 25, Vicalvaro, 28052 Madrid",
+    "image": "/images/negocios/megafruta-canaveral.jpg"
   },
   {
     "slug": "megafruta-2",
@@ -178,7 +190,8 @@
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
     "tags": [],
-    "featured": false
+    "featured": false,
+    "image": "/images/negocios/megafruta-2.jpg"
   },
   {
     "slug": "frutas-y-verduras-vida-sana",
@@ -193,7 +206,8 @@
       "proximidad"
     ],
     "featured": false,
-    "address": "Av. de Miguel Delibes, 47, Vicalvaro, 28052 Madrid"
+    "address": "Av. de Miguel Delibes, 47, Vicalvaro, 28052 Madrid",
+    "image": "/images/negocios/frutas-y-verduras-vida-sana.jpg"
   },
   {
     "slug": "fruteria-charcuteria-el-canaveral",
@@ -209,7 +223,8 @@
     ],
     "featured": false,
     "address": "Av. de Miguel Delibes, 30-44, Vicalvaro, 28052 Madrid",
-    "phone": "610 44 34 73"
+    "phone": "610 44 34 73",
+    "image": "/images/negocios/fruteria-charcuteria-el-canaveral.jpg"
   },
   {
     "slug": "levaduramadre",
@@ -300,7 +315,7 @@
     "rating": 4.4,
     "numReviews": 126,
     "phone": "910 44 22 38",
-    "image": "/images/negocios/panaderia-bulevar.jpg"
+    "image": "/images/negocios/panaderia-bulevar.jpeg"
   },
   {
     "slug": "fabricacion-y-distribucion-panaderia",
@@ -317,7 +332,7 @@
     "featured": false,
     "address": "Calle de Rivas, Vicalvaro, 28052 Madrid",
     "phone": "917 75 22 11",
-    "image": "/images/negocios/fabricacion-y-distribucion-panaderia.jpg"
+    "image": "/images/negocios/fabricacion-y-distribucion-panaderia.jpeg"
   },
   {
     "slug": "mimarutxa",
@@ -370,6 +385,7 @@
       "clases",
       "alquiler"
     ],
-    "featured": true
+    "featured": true,
+    "image": "/images/negocios/padel-el-canaveral.jpg"
   }
 ]
