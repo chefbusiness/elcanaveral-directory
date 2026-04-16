@@ -817,7 +817,8 @@
     "horario": "L-V 7:30-17:00",
     "edades": "0-3 años",
     "plazas": 80,
-    "tipoGestion": "privada"
+    "tipoGestion": "privada",
+    "image": "/images/categorias/educacion.jpg"
   },
   {
     "slug": "escuela-infantil-municipal-muneco-de-nieve",
@@ -853,7 +854,8 @@
     "horario": "L-V 7:30-16:30",
     "edades": "0-3 años",
     "plazas": 156,
-    "tipoGestion": "publica"
+    "tipoGestion": "publica",
+    "image": "/images/categorias/educacion.jpg"
   },
   {
     "slug": "escuela-infantil-conde-nino",
@@ -889,7 +891,8 @@
     "horario": "L-V 7:30-16:30",
     "edades": "0-3 años",
     "plazas": 186,
-    "tipoGestion": "publica"
+    "tipoGestion": "publica",
+    "image": "/images/categorias/educacion.jpg"
   },
   {
     "slug": "arturos-el-canaveral",
@@ -926,7 +929,8 @@
       "Tradicional Española"
     ],
     "terraza": true,
-    "precioRango": "€€"
+    "precioRango": "€€",
+    "image": "/images/categorias/restaurantes.jpg"
   },
   {
     "slug": "los-fogones-canaveral",
@@ -962,7 +966,8 @@
     ],
     "menuDelDia": true,
     "terraza": true,
-    "precioRango": "€"
+    "precioRango": "€",
+    "image": "/images/categorias/restaurantes.jpg"
   },
   {
     "slug": "guasacaca-canaveral",
@@ -997,7 +1002,8 @@
       "Latinoamericana"
     ],
     "delivery": true,
-    "precioRango": "€"
+    "precioRango": "€",
+    "image": "/images/categorias/restaurantes.jpg"
   },
   {
     "slug": "restaurante-chino-chinawok-express",
@@ -1036,7 +1042,8 @@
       "Asiática"
     ],
     "delivery": true,
-    "precioRango": "€"
+    "precioRango": "€",
+    "image": "/images/categorias/restaurantes.jpg"
   },
   {
     "slug": "con-sazon-el-canaveral",
@@ -1076,7 +1083,8 @@
     "menuDelDia": true,
     "terraza": true,
     "delivery": true,
-    "precioRango": "€€"
+    "precioRango": "€€",
+    "image": "/images/categorias/restaurantes.jpg"
   },
   {
     "slug": "clinica-dental-canaveral",
@@ -1119,7 +1127,8 @@
       "Endodoncia",
       "Periodoncia",
       "Odontopediatría"
-    ]
+    ],
+    "image": "/images/categorias/salud.jpg"
   },
   {
     "slug": "sanitas-dental-el-canaveral",
@@ -1160,7 +1169,8 @@
       "Odontopediatría",
       "Periodoncia",
       "Cirugía Oral"
-    ]
+    ],
+    "image": "/images/categorias/salud.jpg"
   },
   {
     "slug": "clinica-dental-siglo-xxi-canaveral",
@@ -1201,7 +1211,8 @@
       "Odontología General",
       "Endodoncia",
       "Periodoncia"
-    ]
+    ],
+    "image": "/images/categorias/salud.jpg"
   },
   {
     "slug": "mardones-y-martinez-dental",
@@ -1241,7 +1252,8 @@
       "Ortodoncia",
       "Estética Dental",
       "Odontopediatría"
-    ]
+    ],
+    "image": "/images/categorias/salud.jpg"
   },
   {
     "slug": "ikigai-dental-canaveral",
@@ -1279,7 +1291,8 @@
       "Ortodoncia",
       "Odontología General",
       "Estética Dental"
-    ]
+    ],
+    "image": "/images/categorias/salud.jpg"
   },
   {
     "slug": "farmacia-canaveral",
@@ -1317,7 +1330,8 @@
       "Dermocosmética",
       "Nutrición",
       "Salud Infantil"
-    ]
+    ],
+    "image": "/images/categorias/salud.jpg"
   },
   {
     "slug": "antonella-peluqueria-y-belleza",
@@ -1349,7 +1363,8 @@
       "Productos de calidad",
       "Ambiente agradable y relajante"
     ],
-    "horario": "M-V 10:00-19:00, S 9:30-14:00"
+    "horario": "M-V 10:00-19:00, S 9:30-14:00",
+    "image": "/images/categorias/belleza.jpg"
   },
   {
     "slug": "la-belle-vie-canaveral",
@@ -1383,7 +1398,8 @@
       "Ambiente sofisticado y relajante",
       "Atención personalizada"
     ],
-    "horario": "M-V 10:00-20:00, S 9:00-15:00"
+    "horario": "M-V 10:00-20:00, S 9:00-15:00",
+    "image": "/images/categorias/belleza.jpg"
   },
   {
     "slug": "rizal-organic-studio",
@@ -1416,7 +1432,8 @@
       "Enfoque en la sostenibilidad",
       "Resultados naturales y duraderos"
     ],
-    "horario": "M-V 10:00-19:00, S 9:00-14:00"
+    "horario": "M-V 10:00-19:00, S 9:00-14:00",
+    "image": "/images/categorias/belleza.jpg"
   },
   {
     "slug": "mai-de-diego-estetica-estilistas",
@@ -1448,7 +1465,8 @@
       "Compromiso con la sostenibilidad",
       "Productos de alta calidad y éticos"
     ],
-    "horario": "M-V 9:30-19:30, S 9:00-14:00"
+    "horario": "M-V 9:30-19:30, S 9:00-14:00",
+    "image": "/images/categorias/belleza.jpg"
   },
   {
     "slug": "caliza-estilistas",
@@ -1481,7 +1499,8 @@
       "Profesionales con experiencia",
       "Productos de calidad"
     ],
-    "horario": "M-V 9:30-19:30, S 9:00-14:00"
+    "horario": "M-V 9:30-19:30, S 9:00-14:00",
+    "image": "/images/categorias/belleza.jpg"
   },
   {
     "slug": "energie-fitness-canaveral",
@@ -1514,7 +1533,8 @@
       "Ambiente motivador y moderno",
       "Monitores cualificados"
     ],
-    "horario": "L-V 7:00-22:00, S 9:00-14:00, D 10:00-14:00"
+    "horario": "L-V 7:00-22:00, S 9:00-14:00, D 10:00-14:00",
+    "image": "/images/categorias/deporte.jpg"
   },
   {
     "slug": "apache-crosstraining-canaveral",
@@ -1547,7 +1567,8 @@
       "Monitores altamente cualificados",
       "Comunidad activa y motivadora"
     ],
-    "horario": "L-V 7:00-12:00, 17:00-22:00, S 9:00-13:00"
+    "horario": "L-V 7:00-12:00, 17:00-22:00, S 9:00-13:00",
+    "image": "/images/categorias/deporte.jpg"
   },
   {
     "slug": "winfit-canaveral",
@@ -1577,7 +1598,8 @@
       "Entrenadores cualificados y motivadores",
       "Variedad de entrenamientos para todos los niveles"
     ],
-    "horario": "L-V 7:00-22:00, S 9:00-14:00"
+    "horario": "L-V 7:00-22:00, S 9:00-14:00",
+    "image": "/images/categorias/deporte.jpg"
   },
   {
     "slug": "brooklyn-fitboxing-canaveral",
@@ -1607,7 +1629,8 @@
       "Resultados rápidos en poco tiempo",
       "Comunidad activa y motivadora"
     ],
-    "horario": "L-V 7:00-22:00, S 9:00-14:00"
+    "horario": "L-V 7:00-22:00, S 9:00-14:00",
+    "image": "/images/categorias/deporte.jpg"
   },
   {
     "slug": "peludos-del-canaveral",
@@ -1642,7 +1665,8 @@
       "Ubicación céntrica en El Cañaveral",
       "Trato amable y cercano con las mascotas"
     ],
-    "horario": "L-V 10:00-14:00 y 17:00-20:00, S 10:00-14:00"
+    "horario": "L-V 10:00-14:00 y 17:00-20:00, S 10:00-14:00",
+    "image": "/images/categorias/mascotas.jpg"
   },
   {
     "slug": "vicalcan-veterinario",
@@ -1673,7 +1697,8 @@
       "Atención integral para mascotas",
       "Urgencias veterinarias (horario comercial)"
     ],
-    "horario": "L-V 10:00-14:00 y 17:00-20:30, S 10:00-14:00"
+    "horario": "L-V 10:00-14:00 y 17:00-20:30, S 10:00-14:00",
+    "image": "/images/categorias/mascotas.jpg"
   },
   {
     "slug": "ferrokey-vicalvaro",
@@ -1704,7 +1729,8 @@
       "Ubicación céntrica en Vicálvaro",
       "Servicio de duplicado de llaves al instante"
     ],
-    "horario": "L-V 9:00-14:00 y 17:00-20:00, S 9:30-14:00"
+    "horario": "L-V 9:00-14:00 y 17:00-20:00, S 9:30-14:00",
+    "image": "/images/categorias/hogar.jpg"
   },
   {
     "slug": "ferreteria-directa-vicalvaro",
@@ -1735,7 +1761,8 @@
       "Productos de alta calidad y marcas reconocidas",
       "Asesoramiento experto para proyectos complejos"
     ],
-    "horario": "L-V 8:30-19:00"
+    "horario": "L-V 8:30-19:00",
+    "image": "/images/categorias/hogar.jpg"
   },
   {
     "slug": "abogados-el-canaveral",
@@ -1767,7 +1794,8 @@
       "Amplia experiencia en diversas ramas del derecho",
       "Primera consulta informativa"
     ],
-    "horario": "L-V 9:00-14:00 y 16:00-19:00"
+    "horario": "L-V 9:00-14:00 y 16:00-19:00",
+    "image": "/images/categorias/servicios-profesionales.jpg"
   },
   {
     "slug": "garcia-asociados-asesoria",
@@ -1798,7 +1826,8 @@
       "Atención personalizada y seguimiento constante",
       "Optimización fiscal y laboral"
     ],
-    "horario": "L-V 9:00-14:00 y 16:00-19:00"
+    "horario": "L-V 9:00-14:00 y 16:00-19:00",
+    "image": "/images/categorias/servicios-profesionales.jpg"
   },
   {
     "slug": "templo-consulting-inmobiliaria",
@@ -1829,6 +1858,7 @@
       "Amplio conocimiento del mercado local",
       "Asesoramiento integral en todo el proceso"
     ],
-    "horario": "L-V 9:30-14:00 y 16:30-20:00, S 10:00-14:00"
+    "horario": "L-V 9:30-14:00 y 16:30-20:00, S 10:00-14:00",
+    "image": "/images/categorias/servicios-profesionales.jpg"
   }
 ]
