@@ -10,7 +10,10 @@
     "address": "Av. de Espana, 116, 28822 Coslada, Madrid",
     "rating": 4.1,
     "numReviews": 1820,
-    "tags": ["cadena", "platos-preparados"],
+    "tags": [
+      "cadena",
+      "platos-preparados"
+    ],
     "featured": false
   },
   {
@@ -21,7 +24,9 @@
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["local"],
+    "tags": [
+      "local"
+    ],
     "featured": true
   },
   {
@@ -32,7 +37,10 @@
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["local", "proximidad"],
+    "tags": [
+      "local",
+      "proximidad"
+    ],
     "featured": false
   },
   {
@@ -43,7 +51,9 @@
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["franquicia"],
+    "tags": [
+      "franquicia"
+    ],
     "featured": false
   },
   {
@@ -54,7 +64,10 @@
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["cadena", "productos-frescos"],
+    "tags": [
+      "cadena",
+      "productos-frescos"
+    ],
     "featured": true
   },
   {
@@ -65,7 +78,9 @@
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["cadena"],
+    "tags": [
+      "cadena"
+    ],
     "featured": false
   },
   {
@@ -76,7 +91,10 @@
     "categoryName": "Tiendas de Alimentacion",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["horario-extendido", "familiar"],
+    "tags": [
+      "horario-extendido",
+      "familiar"
+    ],
     "featured": false
   },
   {
@@ -87,7 +105,9 @@
     "categoryName": "Tiendas de Alimentacion",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["bazar"],
+    "tags": [
+      "bazar"
+    ],
     "featured": false
   },
   {
@@ -98,7 +118,9 @@
     "categoryName": "Tiendas de Alimentacion",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["local"],
+    "tags": [
+      "local"
+    ],
     "featured": false
   },
   {
@@ -110,7 +132,10 @@
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
     "address": "Miguel Delibes - Mario Moreno, Vicalvaro, 28052 Madrid",
-    "tags": ["local", "productos-frescos"],
+    "tags": [
+      "local",
+      "productos-frescos"
+    ],
     "featured": true
   },
   {
@@ -121,8 +146,14 @@
     "categoryName": "Fruterias",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["familiar", "temporada"],
-    "featured": true
+    "tags": [
+      "familiar",
+      "temporada"
+    ],
+    "featured": true,
+    "address": "C. Anna Frank, 12, Local 7, Vicalvaro, 28052 Madrid",
+    "rating": 5.0,
+    "phone": "699 90 33 69"
   },
   {
     "slug": "megafruta-canaveral",
@@ -132,8 +163,11 @@
     "categoryName": "Fruterias",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["precios-competitivos"],
-    "featured": false
+    "tags": [
+      "precios-competitivos"
+    ],
+    "featured": false,
+    "address": "Av. de Miguel Delibes, 25, Vicalvaro, 28052 Madrid"
   },
   {
     "slug": "megafruta-2",
@@ -154,8 +188,12 @@
     "categoryName": "Fruterias",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["ecologico", "proximidad"],
-    "featured": false
+    "tags": [
+      "ecologico",
+      "proximidad"
+    ],
+    "featured": false,
+    "address": "Av. de Miguel Delibes, 47, Vicalvaro, 28052 Madrid"
   },
   {
     "slug": "fruteria-charcuteria-el-canaveral",
@@ -165,8 +203,13 @@
     "categoryName": "Fruterias",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["charcuteria", "ibéricos"],
-    "featured": false
+    "tags": [
+      "charcuteria",
+      "ibéricos"
+    ],
+    "featured": false,
+    "address": "Av. de Miguel Delibes, 30-44, Vicalvaro, 28052 Madrid",
+    "phone": "610 44 34 73"
   },
   {
     "slug": "levaduramadre",
@@ -176,8 +219,15 @@
     "categoryName": "Panaderias y Obradores",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["artesanal", "masa-madre"],
-    "featured": true
+    "tags": [
+      "artesanal",
+      "masa-madre"
+    ],
+    "featured": true,
+    "address": "Av. de Blas de Lezo, Vicalvaro, 28052 Madrid",
+    "rating": 4.2,
+    "numReviews": 49,
+    "image": "/images/negocios/levaduramadre.jpg"
   },
   {
     "slug": "el-horno-de-izan-iii",
@@ -187,8 +237,15 @@
     "categoryName": "Panaderias y Obradores",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["obrador-propio", "tartas-encargo"],
-    "featured": false
+    "tags": [
+      "obrador-propio",
+      "tartas-encargo"
+    ],
+    "featured": false,
+    "address": "Calle de Mario Moreno Cantinflas & C. de Francisco Grande Covian, 28052 Madrid",
+    "rating": 4.3,
+    "numReviews": 437,
+    "image": "/images/negocios/el-horno-de-izan-iii.jpg"
   },
   {
     "slug": "caprichos-coffee-bakery",
@@ -198,8 +255,15 @@
     "categoryName": "Panaderias y Obradores",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["cafe-especialidad", "desayunos"],
-    "featured": false
+    "tags": [
+      "cafe-especialidad",
+      "desayunos"
+    ],
+    "featured": false,
+    "address": "Av. de Miguel Delibes, 30, Vicalvaro, 28052 Madrid",
+    "rating": 4.2,
+    "numReviews": 290,
+    "image": "/images/negocios/caprichos-coffee-bakery.jpg"
   },
   {
     "slug": "obrador-de-goya",
@@ -209,8 +273,16 @@
     "categoryName": "Panaderias y Obradores",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["tradicional", "pan-de-lena"],
-    "featured": false
+    "tags": [
+      "tradicional",
+      "pan-de-lena"
+    ],
+    "featured": false,
+    "address": "Av. de Miguel Delibes, 80, local 4, Vicalvaro, 28052 Madrid",
+    "rating": 3.8,
+    "numReviews": 300,
+    "email": "info@obradordegoya.com",
+    "image": "/images/negocios/obrador-de-goya.jpg"
   },
   {
     "slug": "panaderia-bulevar",
@@ -220,8 +292,15 @@
     "categoryName": "Panaderias y Obradores",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["barrio"],
-    "featured": false
+    "tags": [
+      "barrio"
+    ],
+    "featured": false,
+    "address": "Blvr. de Indalecio Prieto, 12, local 6, Vicalvaro, 28032 Madrid",
+    "rating": 4.4,
+    "numReviews": 126,
+    "phone": "910 44 22 38",
+    "image": "/images/negocios/panaderia-bulevar.jpg"
   },
   {
     "slug": "fabricacion-y-distribucion-panaderia",
@@ -231,8 +310,14 @@
     "categoryName": "Panaderias y Obradores",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["mayorista", "distribucion"],
-    "featured": false
+    "tags": [
+      "mayorista",
+      "distribucion"
+    ],
+    "featured": false,
+    "address": "Calle de Rivas, Vicalvaro, 28052 Madrid",
+    "phone": "917 75 22 11",
+    "image": "/images/negocios/fabricacion-y-distribucion-panaderia.jpg"
   },
   {
     "slug": "mimarutxa",
@@ -242,8 +327,17 @@
     "categoryName": "Cafeterias",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["brunch", "familias", "zona-infantil"],
-    "featured": true
+    "tags": [
+      "brunch",
+      "familias",
+      "zona-infantil"
+    ],
+    "featured": true,
+    "address": "Avenida Miguel Delibes & C. Concejal Victorino Granizo, 28052 Madrid",
+    "rating": 3.8,
+    "numReviews": 173,
+    "phone": "912 93 91 55",
+    "image": "/images/negocios/mimarutxa.jpg"
   },
   {
     "slug": "le-petit-cafe-de-cryss",
@@ -253,8 +347,15 @@
     "categoryName": "Cafeterias",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["acogedor", "casero"],
-    "featured": false
+    "tags": [
+      "acogedor",
+      "casero"
+    ],
+    "featured": false,
+    "address": "Av. de Blas de Lezo, 287, Vicalvaro, 28052 Madrid",
+    "rating": 4.6,
+    "numReviews": 47,
+    "image": "/images/negocios/le-petit-cafe-de-cryss.jpg"
   },
   {
     "slug": "padel-el-canaveral",
@@ -264,7 +365,11 @@
     "categoryName": "Deporte y Fitness",
     "zona": "el-canaveral",
     "zonaName": "El Canaveral",
-    "tags": ["padel", "clases", "alquiler"],
+    "tags": [
+      "padel",
+      "clases",
+      "alquiler"
+    ],
     "featured": true
   }
 ]
