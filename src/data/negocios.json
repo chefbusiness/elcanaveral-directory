@@ -387,5 +387,481 @@
     ],
     "featured": true,
     "image": "/images/negocios/padel-el-canaveral.jpg"
+  },
+  {
+    "slug": "escuela-infantil-los-minons",
+    "name": "Escuela Infantil Los Minons",
+    "description": "Escuela infantil privada para ninos de 4 meses a 3 anos. Acepta cheques guarderia (Edenred, Sodexo) y becas de la Comunidad de Madrid.",
+    "category": "educacion",
+    "categoryName": "Educacion e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "website": "https://www.escuelainfantilosminions.com/",
+    "tags": [
+      "guarderia",
+      "privada",
+      "cheque-guarderia"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "escuela-infantil-municipal-muneco-de-nieve",
+    "name": "Escuela Infantil Municipal Muneco de Nieve",
+    "description": "Escuela infantil municipal del Ayuntamiento de Madrid en El Canaveral. 156 plazas para alumnos de 0 a 3 anos. Centro publico de referencia en el barrio.",
+    "category": "educacion",
+    "categoryName": "Educacion e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Calle Enrique Urquijo, 56, 28052 Madrid",
+    "phone": "645 053 537",
+    "email": "eicanaveral@madrid.es",
+    "tags": [
+      "publica",
+      "municipal",
+      "guarderia"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "escuela-infantil-conde-nino",
+    "name": "Escuela Infantil Autonomica Conde Nino",
+    "description": "Escuela infantil de la Comunidad de Madrid inaugurada en 2024. 186 plazas en 12 aulas. Centro de referencia autonomico para familias del Canaveral.",
+    "category": "educacion",
+    "categoryName": "Educacion e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Calle Victoria Kent, 22, 28052 Madrid",
+    "phone": "917 48 72 50",
+    "email": "eei.condenino.madrid.madrid@educa.madrid.org",
+    "tags": [
+      "publica",
+      "autonomica",
+      "guarderia"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "arturos-el-canaveral",
+    "name": "Arturos El Canaveral",
+    "description": "Restaurante especializado en cachopo asturiano y arroz con bogavante. Cocina tradicional asturiana en el corazon del Canaveral.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Avenida de Miguel Delibes, 30, Vicalvaro, 28052 Madrid",
+    "tags": [
+      "asturiano",
+      "cachopo",
+      "arroz-bogavante"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "los-fogones-canaveral",
+    "name": "Los Fogones",
+    "description": "Restaurante con horario amplio de 7:00 a 19:00. Cocina casera y platos del dia para desayunos, comidas y meriendas.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "cocina-casera",
+      "menu-del-dia"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "guasacaca-canaveral",
+    "name": "Guasacaca Canaveral",
+    "description": "Restaurante de comida venezolana. Arepas, cachapas, tequeños y platos tipicos venezolanos en El Canaveral.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "venezolano",
+      "arepas"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "restaurante-chino-chinawok-express",
+    "name": "Chinawok Express",
+    "description": "Restaurante de comida china y wok con servicio rapido. Platos asiaticos para comer en el local o llevar.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "chino",
+      "wok",
+      "take-away"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "con-sazon-el-canaveral",
+    "name": "Con Sazon El Canaveral",
+    "description": "Restaurante de cocina latina con sabor casero. Platos preparados con recetas tradicionales latinoamericanas.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "latino",
+      "casero"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "clinica-dental-canaveral",
+    "name": "Clinica Dental Canaveral",
+    "description": "Clinica dental con todos los tratamientos: limpieza, ortodoncia, implantes, cirugia oral y odontologia general. Atencion para toda la familia.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Av. de Miguel Delibes, 59, Vicalvaro, 28052 Madrid",
+    "phone": "911 94 05 47",
+    "tags": [
+      "dentista",
+      "ortodoncia",
+      "implantes"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "sanitas-dental-el-canaveral",
+    "name": "Sanitas Dental Milenium El Canaveral",
+    "description": "Centro dental Sanitas con tecnologia avanzada. Todas las especialidades dentales con financiacion y seguros.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "dentista",
+      "sanitas",
+      "seguros"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "clinica-dental-siglo-xxi-canaveral",
+    "name": "Clinica Dental Siglo XXI El Canaveral",
+    "description": "Clinica dental con tecnologias de ultima generacion. Especialistas en ortodoncia, estetica dental e implantologia.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "website": "https://www.clinicadentalsigloxxi.com/clinica-dental-el-canaveral/",
+    "tags": [
+      "dentista",
+      "ortodoncia",
+      "estetica-dental"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "mardones-y-martinez-dental",
+    "name": "Mardones y Martinez Clinica Dental",
+    "description": "Clinica dental en El Canaveral con servicio de urgencias dentales. Atencion profesional y cercana para toda la familia.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "website": "https://dentalmardonesymartinez.com/",
+    "tags": [
+      "dentista",
+      "urgencias"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "ikigai-dental-canaveral",
+    "name": "Clinica Dental Ikigai",
+    "description": "Clinica dental especializada en ortodoncia avanzada para adultos y ninos. Tratamientos personalizados con tecnologia digital.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "website": "https://garantiadeclinica.com/clinicas-dentales-en-madrid/dentista-en-el-canaveral/",
+    "tags": [
+      "dentista",
+      "ortodoncia",
+      "digital"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "farmacia-canaveral",
+    "name": "Farmacia Canaveral",
+    "description": "Farmacia de referencia en El Canaveral. Medicamentos, parafarmacia, dermocosmética y atencion farmaceutica personalizada.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "farmacia",
+      "parafarmacia"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "antonella-peluqueria-y-belleza",
+    "name": "Antonella Peluqueria y Belleza",
+    "description": "Centro de belleza y peluqueria en El Canaveral. Servicios de corte, color, peinados, tratamientos capilares, estetica facial y corporal.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerias",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "peluqueria",
+      "estetica",
+      "color"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "la-belle-vie-canaveral",
+    "name": "La Belle Vie",
+    "description": "Salon de peluqueria y estetica en El Canaveral. Servicios de belleza integral, tratamientos faciales y corporales.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerias",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Calle de Victoria Kent, 7, local A, 28052 El Canaveral, Madrid",
+    "website": "https://www.labellevie.es/",
+    "tags": [
+      "peluqueria",
+      "estetica",
+      "belleza-integral"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "rizal-organic-studio",
+    "name": "Rizal Organic Studio",
+    "description": "Peluqueria y centro de estetica con productos organicos. Especialistas en cortes, tratamientos capilares y alisados con acido hialuronico.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerias",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Calle Francisco Grande Covian, 3, 28052 Madrid",
+    "tags": [
+      "organico",
+      "alisado",
+      "tratamientos"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "mai-de-diego-estetica-estilistas",
+    "name": "Mai de Diego Estetica y Estilistas",
+    "description": "Salon de estetica y estilistas unisex 100% organico y vegano. Especialista en coloracion natural y tratamientos sostenibles.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerias",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "vegano",
+      "organico",
+      "coloracion-natural"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "caliza-estilistas",
+    "name": "Caliza Estilistas",
+    "description": "Peluqueria unisex especialista en tratamientos de color. Corte, peinado, balayage, mechas y barberia en Vicalvaro.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerias",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "website": "https://www.calizaestilistas.es/",
+    "tags": [
+      "color",
+      "balayage",
+      "barberia"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "energie-fitness-canaveral",
+    "name": "energie Fitness El Canaveral",
+    "description": "Gimnasio completo con salas de musculacion, clases dirigidas, cardio y zona de entrenamiento funcional. Ambiente moderno y equipamiento de ultima generacion.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "C. Cerro del Campo, 40, Vicalvaro, 28052 Madrid",
+    "tags": [
+      "gimnasio",
+      "clases",
+      "musculacion"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "apache-crosstraining-canaveral",
+    "name": "Apache CrossTraining El Canaveral",
+    "description": "Centro de entrenamiento funcional y crosstraining. Sesiones en grupo reducido con entrenadores certificados. Referencia en fitness funcional en la zona.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "website": "https://www.apachecrosstraining.com/",
+    "tags": [
+      "crosstraining",
+      "funcional",
+      "grupos"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "winfit-canaveral",
+    "name": "Winfit Gimnasio Canaveral",
+    "description": "Centro de entrenamiento con sesiones personalizadas y en grupos reducidos. HIIT, entrenamiento funcional y atencion individualizada.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "hiit",
+      "personal-trainer",
+      "grupos-reducidos"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "brooklyn-fitboxing-canaveral",
+    "name": "Brooklyn Fitboxing Canaveral",
+    "description": "Centro de fitboxing con sacos interactivos y tecnologia LED. Entrenamiento cardio-boxeo en sesiones de 47 minutos.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "fitboxing",
+      "cardio",
+      "interactivo"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "peludos-del-canaveral",
+    "name": "Peludos del Canaveral",
+    "description": "Clinica veterinaria y peluqueria canina de referencia en El Canaveral. Consultas veterinarias, vacunaciones, lectura de microchip, peluqueria para perros y gatos.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Calle Victoria Kent s/n, 28052 El Canaveral, Madrid",
+    "phone": "664 35 69 20",
+    "website": "https://peludosdelcanaveral.es/",
+    "rating": 4.7,
+    "numReviews": 153,
+    "tags": [
+      "veterinario",
+      "peluqueria-canina",
+      "vacunas"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "vicalcan-veterinario",
+    "name": "Vicalcan Clinica Veterinaria",
+    "description": "Clinica veterinaria en Vicalvaro con equipo cualificado. Medicina general, cirugia, diagnostico por imagen y hospitalizacion.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "website": "https://www.vicalcan.es/",
+    "tags": [
+      "veterinario",
+      "cirugia",
+      "diagnostico"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "ferrokey-vicalvaro",
+    "name": "Ferrokey Vicalvaro",
+    "description": "Ferreteria de proximidad con amplio surtido de herramientas, material electrico, fontaneria, cerrajeria, jardineria y bricolaje.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "address": "Calle San Cipriano, 18, 28032 Madrid",
+    "tags": [
+      "ferreteria",
+      "bricolaje",
+      "herramientas"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "ferreteria-directa-vicalvaro",
+    "name": "Ferreteria Directa",
+    "description": "Suministros industriales y ferreteria. Herramientas electricas, material electrico, fontaneria, ropa de trabajo y jardineria.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "website": "https://www.ferreteriadirecta.es/",
+    "tags": [
+      "ferreteria",
+      "industrial",
+      "herramientas"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "abogados-el-canaveral",
+    "name": "Abogados El Canaveral",
+    "description": "Despacho de abogados en El Canaveral. Derecho inmobiliario, compraventa, derecho penal, laboral, familia, fiscal y defensa del consumidor.",
+    "category": "servicios-profesionales",
+    "categoryName": "Servicios Profesionales",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Av. de Miguel Delibes, 74, Vicalvaro, 28052 Madrid",
+    "website": "https://abogadoselcanaveral.com/",
+    "tags": [
+      "abogados",
+      "inmobiliario",
+      "familia"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "garcia-asociados-asesoria",
+    "name": "Garcia y Asociados Asesoria",
+    "description": "Asesoria integral en Vicalvaro. Servicios fiscales, laborales, contables y juridico-mercantiles para empresas y autonomos.",
+    "category": "servicios-profesionales",
+    "categoryName": "Servicios Profesionales",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "website": "https://garciaasociados.es/",
+    "tags": [
+      "gestoria",
+      "fiscal",
+      "laboral"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "templo-consulting-inmobiliaria",
+    "name": "Templo Consulting Inmobiliaria",
+    "description": "Inmobiliaria sin comisiones en Vicalvaro y El Canaveral. Valoracion gratuita de viviendas, compraventa y alquiler.",
+    "category": "servicios-profesionales",
+    "categoryName": "Servicios Profesionales",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "website": "https://temploconsulting.com/",
+    "tags": [
+      "inmobiliaria",
+      "sin-comisiones",
+      "valoracion"
+    ],
+    "featured": false
   }
 ]
