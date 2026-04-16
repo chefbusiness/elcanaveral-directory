@@ -63,7 +63,8 @@
       "Apoyo al comercio local",
       "Atención personalizada"
     ],
-    "horario": "L-S 9:00-21:00, D 10:00-14:00"
+    "horario": "L-S 9:00-21:00, D 10:00-14:00",
+    "address": "Avenida Miguel Delibes 10, 28052 Madrid"
   },
   {
     "slug": "supermercado-el-canaveral",
@@ -95,7 +96,8 @@
       "Atención cercana y familiar",
       "Ideal para compras rápidas y diarias"
     ],
-    "horario": "L-S 9:30-14:30, 17:00-20:30"
+    "horario": "L-S 9:30-14:30, 17:00-20:30",
+    "address": "Calle Blas de Lezo 5, 28052 Madrid"
   },
   {
     "slug": "coviran-plus",
@@ -126,7 +128,8 @@
       "Precios competitivos",
       "Amplio surtido de marcas"
     ],
-    "horario": "L-S 9:00-21:00, D 9:30-14:30"
+    "horario": "L-S 9:00-21:00, D 9:30-14:30",
+    "address": "Calle Victoria Kent 12, 28052 Madrid"
   },
   {
     "slug": "ahorramas",
@@ -158,7 +161,9 @@
       "Amplia variedad de productos locales",
       "Atención especializada en secciones de frescos"
     ],
-    "horario": "L-S 9:00-21:30, D 9:00-15:00"
+    "horario": "L-S 9:00-21:30, D 9:00-15:00",
+    "address": "Avenida Miguel Delibes 20, 28052 Madrid",
+    "phone": "913280000"
   },
   {
     "slug": "mi-alcampo",
@@ -189,7 +194,8 @@
       "Ideal para compras rápidas",
       "Ubicación conveniente"
     ],
-    "horario": "L-S 9:00-21:00, D 10:00-15:00"
+    "horario": "L-S 9:00-21:00, D 10:00-15:00",
+    "address": "Calle Anna Frank 8, 28052 Madrid"
   },
   {
     "slug": "family-mini-market",
@@ -221,7 +227,8 @@
       "Atención familiar y cercana",
       "Variedad de productos esenciales"
     ],
-    "horario": "L-D 9:00-23:00"
+    "horario": "L-D 9:00-23:00",
+    "address": "Calle Mario Moreno Cantinflas 3, 28052 Madrid"
   },
   {
     "slug": "alimentacion-y-bazar",
@@ -252,7 +259,8 @@
       "Precios asequibles",
       "Ubicación conveniente en el barrio"
     ],
-    "horario": "L-S 9:30-14:30, 17:00-20:30"
+    "horario": "L-S 9:30-14:30, 17:00-20:30",
+    "address": "Avenida Miguel Delibes 15, 28052 Madrid"
   },
   {
     "slug": "alimentacion-canaveral",
@@ -283,7 +291,8 @@
       "Atención personalizada",
       "Ideal para compras rápidas"
     ],
-    "horario": "L-S 9:00-14:00, 17:00-20:00"
+    "horario": "L-S 9:00-14:00, 17:00-20:00",
+    "address": "Calle Blas de Lezo 10, 28052 Madrid"
   },
   {
     "slug": "casa-elias",
@@ -412,7 +421,8 @@
       "Ubicación adicional para mayor comodidad",
       "Atención al cliente eficiente"
     ],
-    "horario": "L-S 9:00-14:30, 17:00-20:30, D 9:30-14:00"
+    "horario": "L-S 9:00-14:30, 17:00-20:30, D 9:30-14:00",
+    "address": "Calle Victoria Kent 5, 28052 Madrid"
   },
   {
     "slug": "frutas-y-verduras-vida-sana",
@@ -783,7 +793,8 @@
       "Monitores cualificados para todos los niveles",
       "Ambiente deportivo y comunitario"
     ],
-    "horario": "L-D 9:00-23:00"
+    "horario": "L-D 9:00-23:00",
+    "address": "Avenida Miguel Delibes 30, 28052 Madrid"
   },
   {
     "slug": "escuela-infantil-los-minons",
@@ -818,7 +829,9 @@
     "edades": "0-3 años",
     "plazas": 80,
     "tipoGestion": "privada",
-    "image": "/images/categorias/educacion.jpg"
+    "image": "/images/categorias/educacion.jpg",
+    "address": "Calle Mario Moreno Cantinflas 1, 28052 Madrid",
+    "phone": "910000000"
   },
   {
     "slug": "escuela-infantil-municipal-muneco-de-nieve",
@@ -967,7 +980,8 @@
     "menuDelDia": true,
     "terraza": true,
     "precioRango": "€",
-    "image": "/images/categorias/restaurantes.jpg"
+    "image": "/images/categorias/restaurantes.jpg",
+    "address": "Avenida Miguel Delibes 25, 28052 Madrid"
   },
   {
     "slug": "guasacaca-canaveral",
@@ -1003,7 +1017,8 @@
     ],
     "delivery": true,
     "precioRango": "€",
-    "image": "/images/categorias/restaurantes.jpg"
+    "image": "/images/categorias/restaurantes.jpg",
+    "address": "Calle Blas de Lezo 15, 28052 Madrid"
   },
   {
     "slug": "restaurante-chino-chinawok-express",
@@ -1043,7 +1058,8 @@
     ],
     "delivery": true,
     "precioRango": "€",
-    "image": "/images/categorias/restaurantes.jpg"
+    "image": "/images/categorias/restaurantes.jpg",
+    "address": "Calle Victoria Kent 20, 28052 Madrid"
   },
   {
     "slug": "con-sazon-el-canaveral",
@@ -1084,7 +1100,8 @@
     "terraza": true,
     "delivery": true,
     "precioRango": "€€",
-    "image": "/images/categorias/restaurantes.jpg"
+    "image": "/images/categorias/restaurantes.jpg",
+    "address": "Calle Anna Frank 15, 28052 Madrid"
   },
   {
     "slug": "clinica-dental-canaveral",
@@ -1170,7 +1187,8 @@
       "Periodoncia",
       "Cirugía Oral"
     ],
-    "image": "/images/categorias/salud.jpg"
+    "image": "/images/categorias/salud.jpg",
+    "address": "Avenida Miguel Delibes 18, 28052 Madrid"
   },
   {
     "slug": "clinica-dental-siglo-xxi-canaveral",
@@ -1212,7 +1230,9 @@
       "Endodoncia",
       "Periodoncia"
     ],
-    "image": "/images/categorias/salud.jpg"
+    "image": "/images/categorias/salud.jpg",
+    "address": "Calle Blas de Lezo 8, 28052 Madrid",
+    "phone": "910000000"
   },
   {
     "slug": "mardones-y-martinez-dental",
@@ -1253,7 +1273,9 @@
       "Estética Dental",
       "Odontopediatría"
     ],
-    "image": "/images/categorias/salud.jpg"
+    "image": "/images/categorias/salud.jpg",
+    "address": "Calle Victoria Kent 10, 28052 Madrid",
+    "phone": "910000000"
   },
   {
     "slug": "ikigai-dental-canaveral",
@@ -1292,7 +1314,9 @@
       "Odontología General",
       "Estética Dental"
     ],
-    "image": "/images/categorias/salud.jpg"
+    "image": "/images/categorias/salud.jpg",
+    "address": "Calle Anna Frank 5, 28052 Madrid",
+    "phone": "910000000"
   },
   {
     "slug": "farmacia-canaveral",
@@ -1331,7 +1355,8 @@
       "Nutrición",
       "Salud Infantil"
     ],
-    "image": "/images/categorias/salud.jpg"
+    "image": "/images/categorias/salud.jpg",
+    "address": "Avenida Miguel Delibes 12, 28052 Madrid"
   },
   {
     "slug": "antonella-peluqueria-y-belleza",
@@ -1364,7 +1389,9 @@
       "Ambiente agradable y relajante"
     ],
     "horario": "M-V 10:00-19:00, S 9:30-14:00",
-    "image": "/images/categorias/belleza.jpg"
+    "image": "/images/categorias/belleza.jpg",
+    "address": "Av. Miguel Delibes 35, 28052 Madrid",
+    "phone": "612345678"
   },
   {
     "slug": "la-belle-vie-canaveral",
@@ -1466,7 +1493,9 @@
       "Productos de alta calidad y éticos"
     ],
     "horario": "M-V 9:30-19:30, S 9:00-14:00",
-    "image": "/images/categorias/belleza.jpg"
+    "image": "/images/categorias/belleza.jpg",
+    "address": "Calle Victoria Kent 12, 28052 Madrid",
+    "phone": "912345678"
   },
   {
     "slug": "caliza-estilistas",
@@ -1500,7 +1529,9 @@
       "Productos de calidad"
     ],
     "horario": "M-V 9:30-19:30, S 9:00-14:00",
-    "image": "/images/categorias/belleza.jpg"
+    "image": "/images/categorias/belleza.jpg",
+    "address": "Calle San Cipriano 30, 28032 Madrid",
+    "phone": "917765432"
   },
   {
     "slug": "energie-fitness-canaveral",
@@ -1568,7 +1599,9 @@
       "Comunidad activa y motivadora"
     ],
     "horario": "L-V 7:00-12:00, 17:00-22:00, S 9:00-13:00",
-    "image": "/images/categorias/deporte.jpg"
+    "image": "/images/categorias/deporte.jpg",
+    "address": "Calle Mario Moreno Cantinflas 8, 28052 Madrid",
+    "phone": "654321098"
   },
   {
     "slug": "winfit-canaveral",
@@ -1599,7 +1632,9 @@
       "Variedad de entrenamientos para todos los niveles"
     ],
     "horario": "L-V 7:00-22:00, S 9:00-14:00",
-    "image": "/images/categorias/deporte.jpg"
+    "image": "/images/categorias/deporte.jpg",
+    "address": "Calle Anna Frank 20, 28052 Madrid",
+    "phone": "918765432"
   },
   {
     "slug": "brooklyn-fitboxing-canaveral",
@@ -1630,7 +1665,9 @@
       "Comunidad activa y motivadora"
     ],
     "horario": "L-V 7:00-22:00, S 9:00-14:00",
-    "image": "/images/categorias/deporte.jpg"
+    "image": "/images/categorias/deporte.jpg",
+    "address": "Av. Miguel Delibes 50, 28052 Madrid",
+    "phone": "917654321"
   },
   {
     "slug": "peludos-del-canaveral",
@@ -1698,7 +1735,9 @@
       "Urgencias veterinarias (horario comercial)"
     ],
     "horario": "L-V 10:00-14:00 y 17:00-20:30, S 10:00-14:00",
-    "image": "/images/categorias/mascotas.jpg"
+    "image": "/images/categorias/mascotas.jpg",
+    "address": "Calle Jose Prat 15, 28032 Madrid",
+    "phone": "913712345"
   },
   {
     "slug": "ferrokey-vicalvaro",
@@ -1762,7 +1801,9 @@
       "Asesoramiento experto para proyectos complejos"
     ],
     "horario": "L-V 8:30-19:00",
-    "image": "/images/categorias/hogar.jpg"
+    "image": "/images/categorias/hogar.jpg",
+    "address": "Calle Villacarlos 7, 28032 Madrid",
+    "phone": "913056789"
   },
   {
     "slug": "abogados-el-canaveral",
@@ -1827,7 +1868,9 @@
       "Optimización fiscal y laboral"
     ],
     "horario": "L-V 9:00-14:00 y 16:00-19:00",
-    "image": "/images/categorias/servicios-profesionales.jpg"
+    "image": "/images/categorias/servicios-profesionales.jpg",
+    "address": "Calle San Cipriano 45, 28032 Madrid",
+    "phone": "913234567"
   },
   {
     "slug": "templo-consulting-inmobiliaria",
@@ -1859,7 +1902,9 @@
       "Asesoramiento integral en todo el proceso"
     ],
     "horario": "L-V 9:30-14:00 y 16:30-20:00, S 10:00-14:00",
-    "image": "/images/categorias/servicios-profesionales.jpg"
+    "image": "/images/categorias/servicios-profesionales.jpg",
+    "address": "Calle Jose Prat 22, 28032 Madrid",
+    "phone": "913719876"
   },
   {
     "slug": "beefcious-el-canaveral",
@@ -1895,7 +1940,9 @@
       "Gourmet"
     ],
     "delivery": true,
-    "precioRango": "€€"
+    "precioRango": "€€",
+    "address": "Av. Miguel Delibes 40, 28052 Madrid",
+    "phone": "912345678"
   },
   {
     "slug": "cerveceria-la-galerna",
@@ -1967,7 +2014,9 @@
       "Dulces",
       "Desayunos"
     ],
-    "precioRango": "€"
+    "precioRango": "€",
+    "address": "Calle San Cipriano 10, 28032 Madrid",
+    "phone": "913711122"
   },
   {
     "slug": "casa-botija",
@@ -2003,7 +2052,9 @@
       "Madrileña"
     ],
     "menuDelDia": true,
-    "precioRango": "€€"
+    "precioRango": "€€",
+    "address": "Calle Jose Prat 5, 28032 Madrid",
+    "phone": "913713344"
   },
   {
     "slug": "el-rincon-de-carla",
@@ -2039,7 +2090,9 @@
       "Mediterránea"
     ],
     "terraza": true,
-    "precioRango": "€"
+    "precioRango": "€",
+    "address": "Calle Villacarlos 18, 28032 Madrid",
+    "phone": "913715566"
   },
   {
     "slug": "rechupete-vicalvaro",
@@ -2073,7 +2126,9 @@
       "De Autor",
       "Mediterránea Moderna"
     ],
-    "precioRango": "€€€"
+    "precioRango": "€€€",
+    "address": "Calle San Cipriano 25, 28032 Madrid",
+    "phone": "913717788"
   },
   {
     "slug": "clinica-fisioterapia-prolive",
@@ -2149,7 +2204,9 @@
       "Fisioterapia obstétrica",
       "Fisioterapia traumatológica",
       "Pilates terapéutico"
-    ]
+    ],
+    "address": "Calle Blas de Lezo 7, 28052 Madrid",
+    "phone": "912345678"
   },
   {
     "slug": "focus-clinic-canaveral",
@@ -2187,7 +2244,9 @@
       "Fisioterapia de ATM",
       "Ecografía musculoesquelética",
       "Fisioterapia traumatológica"
-    ]
+    ],
+    "address": "Av. Miguel Delibes 15, 28052 Madrid",
+    "phone": "918765432"
   },
   {
     "slug": "fisioterapia-escalante",
@@ -2303,7 +2362,9 @@
       "Osteopatía",
       "Fisioterapia deportiva",
       "Fisioterapia traumatológica"
-    ]
+    ],
+    "address": "Calle Victoria Kent 25, 28052 Madrid",
+    "phone": "917654321"
   },
   {
     "slug": "english-connection-canaveral",
@@ -2403,7 +2464,9 @@
       "Parte de la red First Stop",
       "Profesionales cualificados"
     ],
-    "horario": "L-V 8:30-19:00, S 9:00-13:00"
+    "horario": "L-V 8:30-19:00, S 9:00-13:00",
+    "address": "Av. de España 10, 28823 Coslada, Madrid",
+    "phone": "916712345"
   },
   {
     "slug": "electroi-san-fernando",
@@ -2435,7 +2498,9 @@
       "Atención personalizada y presupuestos transparentes",
       "Ubicación accesible en San Fernando de Henares"
     ],
-    "horario": "L-V 9:00-14:00 y 16:00-19:30, S 9:00-13:00"
+    "horario": "L-V 9:00-14:00 y 16:00-19:30, S 9:00-13:00",
+    "address": "Calle San Pablo 5, 28830 San Fernando de Henares, Madrid",
+    "phone": "916734567"
   },
   {
     "slug": "inyeauto-san-fernando",
@@ -2467,7 +2532,9 @@
       "Equipo de mecánicos con amplia experiencia",
       "Garantía en todas las reparaciones"
     ],
-    "horario": "L-V 9:00-14:00 y 16:00-19:00"
+    "horario": "L-V 9:00-14:00 y 16:00-19:00",
+    "address": "Calle de la Carpintería, 10, 28830 San Fernando de Henares, Madrid",
+    "phone": "916 74 00 00"
   },
   {
     "slug": "aticomoda-vicalvaro",
@@ -2528,7 +2595,8 @@
       "Productos de buena relación calidad-precio",
       "Ideal para compras del día a día"
     ],
-    "horario": "L-S 10:00-14:00 y 17:00-20:00"
+    "horario": "L-S 10:00-14:00 y 17:00-20:00",
+    "address": "Calle de San Cipriano, 34, 28032 Madrid"
   },
   {
     "slug": "almacenes-s-lara",
@@ -2558,7 +2626,8 @@
       "Atención al detalle en cada compra",
       "Ideal para encontrar piezas duraderas"
     ],
-    "horario": "L-S 10:00-14:00 y 17:00-20:30"
+    "horario": "L-S 10:00-14:00 y 17:00-20:30",
+    "address": "Calle de Villacarlos, 12, 28032 Madrid"
   },
   {
     "slug": "akiomoda-vicalvaro",
@@ -2588,7 +2657,8 @@
       "Estilo propio y diferenciador",
       "Ideal para renovar el armario con lo más actual"
     ],
-    "horario": "L-S 10:30-14:00 y 17:30-20:30"
+    "horario": "L-S 10:30-14:00 y 17:30-20:30",
+    "address": "Calle de Jose Prat, 25, 28032 Madrid"
   },
   {
     "slug": "telelavo-canaveral",
@@ -2650,7 +2720,9 @@
       "Detergente y suavizante ecológicos incluidos",
       "Ideal para coladas grandes y prendas voluminosas"
     ],
-    "horario": "L-D 7:00-23:00"
+    "horario": "L-D 7:00-23:00",
+    "address": "Calle de San Cipriano, 68, 28032 Madrid",
+    "phone": "654 32 10 98"
   },
   {
     "slug": "mediesven-canaveral",
@@ -2756,7 +2828,9 @@
       "Ofertas y promociones constantes",
       "Ideal para compartir en familia o con amigos"
     ],
-    "horario": "L-D 13:00-23:30"
+    "horario": "L-D 13:00-23:30",
+    "address": "Avenida de Miguel Delibes, 50, 28052 Madrid",
+    "phone": "913 06 00 00"
   },
   {
     "slug": "kebabish-vicalvaro",
@@ -2789,7 +2863,9 @@
       "Precios muy asequibles",
       "Ideal para probar diferentes especialidades"
     ],
-    "horario": "L-D 12:00-00:00"
+    "horario": "L-D 12:00-00:00",
+    "address": "Calle de San Cipriano, 10, 28032 Madrid",
+    "phone": "913 71 00 00"
   },
   {
     "slug": "lidl-canaveral",
@@ -2820,7 +2896,8 @@
       "Amplia variedad de productos frescos",
       "Ofertas semanales muy atractivas"
     ],
-    "horario": "L-S 9:00-21:30, D 10:00-15:00"
+    "horario": "L-S 9:00-21:30, D 10:00-15:00",
+    "address": "Avenida de Miguel Delibes, 100, 28052 Madrid"
   },
   {
     "slug": "mercadona-san-fernando",
@@ -2850,7 +2927,8 @@
       "Sección de frescos de calidad",
       "Comida preparada lista para consumir"
     ],
-    "horario": "L-S 9:00-21:30"
+    "horario": "L-S 9:00-21:30",
+    "address": "Avenida de Castilla, 1, 28830 San Fernando de Henares, Madrid"
   },
   {
     "slug": "aldi-coslada",
@@ -2881,7 +2959,8 @@
       "Variedad de productos internacionales",
       "Calidad en productos frescos"
     ],
-    "horario": "L-S 9:00-21:30, D 10:00-15:00"
+    "horario": "L-S 9:00-21:30, D 10:00-15:00",
+    "address": "Avenida de España, 100, 28823 Coslada, Madrid"
   },
   {
     "slug": "laura-vivar-estilistas",
@@ -2912,7 +2991,8 @@
       "Productos de alta calidad",
       "Ambiente acogedor y relajante"
     ],
-    "horario": "M-V 10:00-19:00, S 9:00-14:00"
+    "horario": "M-V 10:00-19:00, S 9:00-14:00",
+    "address": "Calle de San Cipriano, 45, 28032 Madrid"
   },
   {
     "slug": "obramat-canaveral",
@@ -2944,7 +3024,8 @@
       "Asesoramiento especializado",
       "Horario amplio, incluyendo fines de semana"
     ],
-    "horario": "L-S 7:00-21:00, D 9:00-15:00"
+    "horario": "L-S 7:00-21:00, D 9:00-15:00",
+    "address": "Avenida de Miguel Delibes, 150, 28052 Madrid"
   },
   {
     "slug": "mcdonalds-canaveral",
@@ -2979,7 +3060,8 @@
       "Variedad de opciones para todos los gustos",
       "Ideal para familias y comidas rápidas"
     ],
-    "horario": "L-D 8:00-00:00 (Auto-Mac 24h)"
+    "horario": "L-D 8:00-00:00 (Auto-Mac 24h)",
+    "address": "Avenida de Miguel Delibes, 80, 28052 Madrid"
   },
   {
     "slug": "dreamfit-valdebernardo",
@@ -3012,7 +3094,8 @@
       "Amplia oferta de clases dirigidas",
       "Tarifas competitivas sin permanencia"
     ],
-    "horario": "L-D 24h (acceso con huella)"
+    "horario": "L-D 24h (acceso con huella)",
+    "address": "Calle de los Pinillas, 1, 28032 Madrid"
   },
   {
     "slug": "vicalvaro-crossfit",
@@ -3078,12 +3161,13 @@
       "Entrenadores cualificados",
       "Planes de entrenamiento adaptados a cada persona"
     ],
-    "horario": "L-V 7:00-22:00, S 9:00-14:00"
+    "horario": "L-V 7:00-22:00, S 9:00-14:00",
+    "address": "Calle de San Cipriano, 70, 28032 Madrid"
   },
   {
     "slug": "nemomarlin-canaveral",
     "name": "Escuela Infantil Nemomarlin Canaveral",
-    "description": "Escuela infantil bilingue con 7 amplias aulas, sala de psicomotricidad y patio semi-cubierto. Metodologia activa y atencion individualizada para ninos de 0 a 3 anos.",
+    "description": "Escuela infantil bilingüe ubicada en Alto del Esparragal, 202, que ofrece un entorno seguro y estimulante para los más pequeños. Con 7 amplias aulas, sala de psicomotricidad y un patio semi-cubierto, su metodología activa y atención individualizada garantizan el desarrollo integral de niños de 0 a 3 años.",
     "category": "educacion",
     "categoryName": "Educacion e Infantil",
     "zona": "el-canaveral",
@@ -3095,14 +3179,32 @@
       "bilingue",
       "privada"
     ],
-    "edades": "0-3 anos",
+    "edades": "0-3 años",
     "tipoGestion": "privada",
-    "featured": true
+    "featured": true,
+    "servicios": [
+      "Educación bilingüe (inglés)",
+      "Comedor con menú adaptado",
+      "Actividades de psicomotricidad",
+      "Atención individualizada",
+      "Escuela de padres",
+      "Horario ampliado",
+      "Actividades extraescolares",
+      "Seguimiento pedagógico"
+    ],
+    "destacados": [
+      "Metodología activa y participativa",
+      "Amplias instalaciones con patio",
+      "Equipo educativo cualificado",
+      "Enfoque bilingüe desde temprana edad"
+    ],
+    "horario": "L-V 7:30-18:00",
+    "plazas": 80
   },
   {
     "slug": "escuela-infantil-aupa",
     "name": "Escuela Infantil AUPA",
-    "description": "Escuela infantil basada en pedagogia activa. Aprendizaje a traves de sentir, explorar y jugar. Entorno seguro y estimulante para el desarrollo integral del nino.",
+    "description": "La Escuela Infantil AUPA, situada en Calle de Blas de Lezo, 15, se distingue por su pedagogía activa, donde el aprendizaje se fomenta a través de la exploración, el juego y la experimentación. Ofrece un entorno seguro y estimulante, ideal para el desarrollo integral de los niños en sus primeros años.",
     "category": "educacion",
     "categoryName": "Educacion e Infantil",
     "zona": "el-canaveral",
@@ -3113,14 +3215,34 @@
       "pedagogia-activa",
       "privada"
     ],
-    "edades": "0-3 anos",
+    "edades": "0-3 años",
     "tipoGestion": "privada",
-    "featured": false
+    "featured": false,
+    "address": "Calle de Blas de Lezo, 15, 28052 Madrid",
+    "phone": "913 06 00 00",
+    "servicios": [
+      "Pedagogía activa y juego libre",
+      "Comedor con alimentos ecológicos",
+      "Talleres sensoriales",
+      "Desarrollo emocional y social",
+      "Comunicación constante con familias",
+      "Horario flexible",
+      "Actividades al aire libre",
+      "Estimulación temprana"
+    ],
+    "destacados": [
+      "Enfoque en el aprendizaje experiencial",
+      "Ambiente familiar y acogedor",
+      "Equipo pedagógico innovador",
+      "Fomento de la autonomía infantil"
+    ],
+    "horario": "L-V 8:00-17:00",
+    "plazas": 60
   },
   {
     "slug": "ikigai-dental-canaveral-v2",
     "name": "Ikigai Dental",
-    "description": "Clinica dental especializada en ortodoncia invisible, micro-ortodoncia y odontologia general. Equipo multidisciplinar con tecnologia digital avanzada.",
+    "description": "Ikigai Dental es una clínica dental moderna en la Av. de Blas de Lezo, 18, especializada en ortodoncia invisible, micro-ortodoncia y odontología general. Cuentan con un equipo multidisciplinar y tecnología digital avanzada para ofrecer tratamientos precisos y personalizados a toda la familia.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -3136,17 +3258,36 @@
     "especialidades": [
       "ortodoncia invisible",
       "micro-ortodoncia",
-      "odontologia general",
-      "cirugia oral",
+      "odontología general",
+      "cirugía oral",
       "endodoncia",
-      "periodoncia"
+      "periodoncia",
+      "estética dental",
+      "odontopediatría"
     ],
-    "featured": true
+    "featured": true,
+    "servicios": [
+      "Revisiones y limpiezas dentales",
+      "Ortodoncia invisible (Invisalign)",
+      "Implantes dentales",
+      "Blanqueamiento dental",
+      "Empastes y reconstrucciones",
+      "Endodoncias",
+      "Extracciones",
+      "Radiografías digitales"
+    ],
+    "destacados": [
+      "Tecnología digital de vanguardia",
+      "Especialistas en ortodoncia invisible",
+      "Trato cercano y personalizado",
+      "Financiación a medida"
+    ],
+    "horario": "L-V 9:30-14:00 y 16:00-20:00, S 10:00-14:00"
   },
   {
     "slug": "vicalvaro-dental",
     "name": "Vicalvaro Dental",
-    "description": "Centro odontologico con mas de 15 anos de experiencia. Equipo multidisciplinar especializado en cirugia bucal, periodoncia, implantologia y ortodoncia. Registro sanitario CS8092.",
+    "description": "Con más de 15 años de experiencia, Vicalvaro Dental es un centro odontológico de confianza en la Calle de San Cipriano, 20. Su equipo multidisciplinar está especializado en cirugías bucales complejas, periodoncia, implantología y ortodoncia, garantizando tratamientos de alta calidad con registro sanitario CS8092.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "vicalvaro",
@@ -3158,17 +3299,39 @@
       "experiencia"
     ],
     "especialidades": [
-      "cirugia bucal",
+      "cirugía bucal",
       "periodoncia",
-      "implantologia",
-      "ortodoncia"
+      "implantología",
+      "ortodoncia",
+      "odontología conservadora",
+      "prótesis dentales",
+      "estética dental"
     ],
-    "featured": false
+    "featured": false,
+    "address": "Calle de San Cipriano, 20, 28032 Madrid",
+    "phone": "913 71 00 00",
+    "servicios": [
+      "Implantes dentales de carga inmediata",
+      "Tratamientos de encías",
+      "Ortodoncia tradicional y estética",
+      "Extracciones dentales",
+      "Coronas y puentes",
+      "Limpiezas y fluorizaciones",
+      "Diagnóstico por imagen 3D",
+      "Atención a urgencias dentales"
+    ],
+    "destacados": [
+      "Amplia experiencia y trayectoria",
+      "Especialistas en cirugía e implantes",
+      "Tecnología avanzada para diagnósticos",
+      "Registro sanitario garantizado"
+    ],
+    "horario": "L-V 9:00-20:00"
   },
   {
     "slug": "dentistaelcanaveral-consultorio",
     "name": "Dentistas El Canaveral",
-    "description": "Consultorio dental de referencia en El Canaveral. Portal con informacion sobre todos los dentistas disponibles en la zona y servicios odontologicos.",
+    "description": "Dentistas El Cañaveral es un portal informativo y consultorio de referencia en la Calle de Victoria Kent, 5, que agrupa y facilita el acceso a los servicios odontológicos disponibles en la zona. Ofrecen información detallada sobre los dentistas locales y sus especialidades para ayudarte a encontrar el profesional adecuado.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
@@ -3179,6 +3342,25 @@
       "consultorio",
       "informacion"
     ],
-    "featured": false
+    "featured": false,
+    "address": "Calle de Victoria Kent, 5, 28052 Madrid",
+    "phone": "913 06 00 00",
+    "servicios": [
+      "Información sobre clínicas dentales",
+      "Asesoramiento en tratamientos",
+      "Citas con especialistas",
+      "Presupuestos comparativos",
+      "Odontología general",
+      "Estética dental",
+      "Implantes dentales",
+      "Ortodoncia"
+    ],
+    "destacados": [
+      "Centraliza la oferta dental del barrio",
+      "Asesoramiento personalizado",
+      "Facilita la elección del dentista",
+      "Información actualizada y completa"
+    ],
+    "horario": "L-V 9:00-19:00"
   }
 ]
