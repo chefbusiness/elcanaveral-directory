@@ -3079,5 +3079,106 @@
       "Planes de entrenamiento adaptados a cada persona"
     ],
     "horario": "L-V 7:00-22:00, S 9:00-14:00"
+  },
+  {
+    "slug": "nemomarlin-canaveral",
+    "name": "Escuela Infantil Nemomarlin Canaveral",
+    "description": "Escuela infantil bilingue con 7 amplias aulas, sala de psicomotricidad y patio semi-cubierto. Metodologia activa y atencion individualizada para ninos de 0 a 3 anos.",
+    "category": "educacion",
+    "categoryName": "Educacion e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Alto del Esparragal, 202, 28052 Madrid",
+    "website": "https://www.escuelanemomarlin.com/escuelas/escuela-infantil-canaveral/",
+    "tags": [
+      "guarderia",
+      "bilingue",
+      "privada"
+    ],
+    "edades": "0-3 anos",
+    "tipoGestion": "privada",
+    "featured": true
+  },
+  {
+    "slug": "escuela-infantil-aupa",
+    "name": "Escuela Infantil AUPA",
+    "description": "Escuela infantil basada en pedagogia activa. Aprendizaje a traves de sentir, explorar y jugar. Entorno seguro y estimulante para el desarrollo integral del nino.",
+    "category": "educacion",
+    "categoryName": "Educacion e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "website": "https://www.escuelainfantilaupa.com/",
+    "tags": [
+      "guarderia",
+      "pedagogia-activa",
+      "privada"
+    ],
+    "edades": "0-3 anos",
+    "tipoGestion": "privada",
+    "featured": false
+  },
+  {
+    "slug": "ikigai-dental-canaveral-v2",
+    "name": "Ikigai Dental",
+    "description": "Clinica dental especializada en ortodoncia invisible, micro-ortodoncia y odontologia general. Equipo multidisciplinar con tecnologia digital avanzada.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Av. de Blas de Lezo, 18, Vicalvaro, 28052 Madrid",
+    "phone": "919 26 51 11",
+    "website": "https://ikigaidental.com/",
+    "tags": [
+      "dentista",
+      "ortodoncia-invisible",
+      "digital"
+    ],
+    "especialidades": [
+      "ortodoncia invisible",
+      "micro-ortodoncia",
+      "odontologia general",
+      "cirugia oral",
+      "endodoncia",
+      "periodoncia"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "vicalvaro-dental",
+    "name": "Vicalvaro Dental",
+    "description": "Centro odontologico con mas de 15 anos de experiencia. Equipo multidisciplinar especializado en cirugia bucal, periodoncia, implantologia y ortodoncia. Registro sanitario CS8092.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "website": "https://vicalvarodental.es/",
+    "tags": [
+      "dentista",
+      "implantes",
+      "experiencia"
+    ],
+    "especialidades": [
+      "cirugia bucal",
+      "periodoncia",
+      "implantologia",
+      "ortodoncia"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "dentistaelcanaveral-consultorio",
+    "name": "Dentistas El Canaveral",
+    "description": "Consultorio dental de referencia en El Canaveral. Portal con informacion sobre todos los dentistas disponibles en la zona y servicios odontologicos.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "website": "https://dentistaelcanaveral.com/",
+    "tags": [
+      "dentista",
+      "consultorio",
+      "informacion"
+    ],
+    "featured": false
   }
 ]

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import { generateCategoriaPaths, loadZonas, getNegociosByCategoriaYZona } from "@/lib/directory";
 import type { Negocio, Categoria } from "@/lib/directory";
+import seoOverrides from "@/data/seo-overrides.json";
 
 export function getStaticPaths() {
   return generateCategoriaPaths();
@@ -22,11 +23,16 @@ const zonasConNegocios = zonas
     count: getNegociosByCategoriaYZona(slug!, z.slug).length,
   }))
   .filter((z) => z.count > 0);
+
+const seo = (seoOverrides.categorias as Record<string, any>)[slug!] || {};
+const seoTitle = seo.title || `${name} en El Canaveral y alrededores`;
+const seoDesc = seo.description || description;
+const seoH1 = seo.h1 || name;
 ---
 
 <BaseLayout
-  title={`${name} en El Canaveral y alrededores`}
-  description={description}
+  title={seoTitle}
+  description={seoDesc}
 >
   <Header />
 
@@ -42,9 +48,9 @@ const zonasConNegocios = zonas
 
       <div class="mb-8">
         <h1 class="text-3xl font-bold">
-          {icon && <span class="mr-2">{icon}</span>}{name}
+          {icon && <span class="mr-2">{icon}</span>}{seoH1}
         </h1>
-        <p class="text-gray-600 mt-2">{description}</p>
+        <p class="text-gray-600 mt-2">{seoDesc}</p>
         <p class="text-sm text-gray-400 mt-1">{count} negocios</p>
       </div>
 

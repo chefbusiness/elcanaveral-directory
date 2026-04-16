@@ -1,0 +1,79 @@
+{
+  "categorias": {
+    "supermercados": {
+      "title": "Supermercados en El Canaveral y Vicalvaro — Los 10 mejores",
+      "description": "Guia completa de supermercados en El Canaveral, Vicalvaro, Coslada y San Fernando. Mercadona, Ahorramas, Lidl, Alcampo y mas. Horarios, direcciones y valoraciones.",
+      "h1": "Supermercados en El Canaveral y alrededores"
+    },
+    "restaurantes": {
+      "title": "Restaurantes en El Canaveral Madrid — Donde comer en tu barrio",
+      "description": "Los mejores restaurantes en El Canaveral y Vicalvaro: cocina asturiana, venezolana, turca, hamburguesas gourmet y mas. Con horarios, precios y resenas de vecinos.",
+      "h1": "Restaurantes en El Canaveral y Vicalvaro"
+    },
+    "educacion": {
+      "title": "Guarderias y Escuelas Infantiles en El Canaveral Madrid 2026",
+      "description": "Todas las guarderias y escuelas infantiles en El Canaveral: publicas (Muneco de Nieve, Conde Nino), privadas (Los Minons, Nemomarlin, AUPA). Plazas, edades, contacto.",
+      "h1": "Guarderias y Escuelas Infantiles en El Canaveral"
+    },
+    "salud": {
+      "title": "Dentistas, Clinicas y Farmacias en El Canaveral Vicalvaro",
+      "description": "Directorio de clinicas dentales, centros medicos, fisioterapeutas y farmacias en El Canaveral y Vicalvaro. Valoraciones, especialidades y datos de contacto.",
+      "h1": "Salud y Bienestar en El Canaveral"
+    },
+    "belleza": {
+      "title": "Peluquerias y Centros de Estetica en El Canaveral Madrid",
+      "description": "Las mejores peluquerias, barberias y centros de estetica en El Canaveral y Vicalvaro. Antonella, La Belle Vie, Rizal Organic y mas. Servicios y valoraciones.",
+      "h1": "Peluquerias y Estetica en El Canaveral"
+    },
+    "deporte": {
+      "title": "Gimnasios y Fitness en El Canaveral Vicalvaro — CrossFit, Padel",
+      "description": "Gimnasios, CrossFit, padel y centros deportivos en El Canaveral y Vicalvaro. energie Fitness, Apache CrossTraining, Brooklyn Fitboxing, Dreamfit y mas.",
+      "h1": "Gimnasios y Deporte en El Canaveral"
+    },
+    "mascotas": {
+      "title": "Veterinarios y Peluqueria Canina en El Canaveral Madrid",
+      "description": "Clinicas veterinarias y peluqueria canina en El Canaveral y Vicalvaro. Peludos del Canaveral (4.7 estrellas), Vicalcan. Vacunas, urgencias, peluqueria.",
+      "h1": "Veterinarios y Mascotas en El Canaveral"
+    },
+    "hogar": {
+      "title": "Ferreterias, Reformas y Servicios del Hogar en El Canaveral",
+      "description": "Ferreterias, lavanderias, bricolaje y servicios del hogar en El Canaveral y Vicalvaro. Obramat, Ferrokey, Telelavo. Direcciones y horarios.",
+      "h1": "Hogar y Reformas en El Canaveral"
+    },
+    "automocion": {
+      "title": "Talleres Mecanicos y ITV cerca de El Canaveral Madrid",
+      "description": "Talleres mecanicos, Pre-ITV y neumaticos en Coslada y San Fernando de Henares, cerca de El Canaveral. Sadeco, Masruedas, Electroi. Servicios y precios.",
+      "h1": "Talleres y Automocion cerca de El Canaveral"
+    },
+    "servicios-profesionales": {
+      "title": "Abogados, Gestorias e Inmobiliarias en El Canaveral Vicalvaro",
+      "description": "Servicios profesionales en El Canaveral y Vicalvaro: abogados, asesoria fiscal, gestorias e inmobiliarias. Abogados El Canaveral, Garcia Asociados y mas.",
+      "h1": "Servicios Profesionales en El Canaveral"
+    },
+    "moda": {
+      "title": "Tiendas de Ropa y Moda en Vicalvaro y El Canaveral Madrid",
+      "description": "Tiendas de ropa, moda femenina y complementos en Vicalvaro y El Canaveral. Aticomoda, Almacenes Jimar, S. Lara, Akiomoda. Asesoramiento personalizado.",
+      "h1": "Moda y Complementos en El Canaveral"
+    },
+    "cafeterias": {
+      "title": "Cafeterias en El Canaveral Madrid — Desayunos y Brunch",
+      "description": "Las mejores cafeterias en El Canaveral: Mimarutxa (brunch, zona infantil), Le Petit Cafe de Cryss. Cafe de especialidad, tostas y reposteria casera.",
+      "h1": "Cafeterias en El Canaveral"
+    },
+    "fruterias": {
+      "title": "Fruterias en El Canaveral Vicalvaro — Producto fresco diario",
+      "description": "Fruterias con producto de temporada en El Canaveral: La Fruteria de Mama (5 estrellas), Megafruta, Vida Sana, Charcuteria. Frutas, verduras y productos ecologicos.",
+      "h1": "Fruterias en El Canaveral"
+    },
+    "panaderias": {
+      "title": "Panaderias y Obradores en El Canaveral Madrid — Pan artesanal",
+      "description": "Panaderias artesanales en El Canaveral: Levadura Madre (masa madre), El Horno de Izan, Caprichos Coffee, Obrador de Goya. Pan del dia, bolleria y tartas.",
+      "h1": "Panaderias y Obradores en El Canaveral"
+    },
+    "tiendas-alimentacion": {
+      "title": "Tiendas de Alimentacion en El Canaveral — Compra de proximidad",
+      "description": "Tiendas de alimentacion y mini markets en El Canaveral. Family Mini Market, Alimentacion y Bazar. Horario extendido, productos basicos y servicio cercano.",
+      "h1": "Tiendas de Alimentacion en El Canaveral"
+    }
+  }
+}
