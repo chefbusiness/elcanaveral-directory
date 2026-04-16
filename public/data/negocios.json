@@ -1860,5 +1860,428 @@
     ],
     "horario": "L-V 9:30-14:00 y 16:30-20:00, S 10:00-14:00",
     "image": "/images/categorias/servicios-profesionales.jpg"
+  },
+  {
+    "slug": "beefcious-el-canaveral",
+    "name": "Beefcious El Canaveral",
+    "description": "Hamburgueseria gourmet con carnes premium a la brasa. Hamburguesas smash, costillas BBQ y opciones veganas.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "hamburguesas",
+      "gourmet",
+      "brasa"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "cerveceria-la-galerna",
+    "name": "Cerveceria La Galerna",
+    "description": "Cerveceria de barrio con amplia carta de cervezas artesanales, tapas y raciones. Terraza en Avenida Miguel Delibes.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Av. de Miguel Delibes, 25, Vicalvaro, 28052 Madrid",
+    "tags": [
+      "cerveceria",
+      "tapas",
+      "terraza"
+    ],
+    "terraza": true,
+    "featured": true
+  },
+  {
+    "slug": "churreria-bernis",
+    "name": "Churreria Bernis",
+    "description": "Churreria tradicional con churros y porras artesanales. Chocolate caliente casero. Institucion del barrio de Vicalvaro.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "tags": [
+      "churros",
+      "tradicional",
+      "chocolate"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "casa-botija",
+    "name": "Casa Botija",
+    "description": "Restaurante de cocina tradicional madrilena en el casco historico de Vicalvaro. Raciones generosas y ambiente familiar.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "tags": [
+      "tradicional",
+      "madrileno",
+      "raciones"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "el-rincon-de-carla",
+    "name": "El Rincon de Carla",
+    "description": "Bar-restaurante con cocina casera y menu del dia. Ambiente acogedor en el corazon de Vicalvaro.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "tags": [
+      "casero",
+      "menu-del-dia"
+    ],
+    "menuDelDia": true,
+    "featured": false
+  },
+  {
+    "slug": "rechupete-vicalvaro",
+    "name": "Rechupete",
+    "description": "Restaurante con platos elaborados y buen ambiente. Cocina de autor con productos de temporada en Vicalvaro.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "tags": [
+      "cocina-autor",
+      "temporada"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "clinica-fisioterapia-prolive",
+    "name": "Clinica de Fisioterapia Prolive",
+    "description": "Centro de fisioterapia especializado en rehabilitacion deportiva y dolor cronico. Tratamientos personalizados con tecnologia avanzada.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "C. Victoria Kent, Local 8, Vicalvaro, 28052 Madrid",
+    "tags": [
+      "fisioterapia",
+      "rehabilitacion",
+      "deportiva"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "clinica-muv-canaveral",
+    "name": "Clinica MUV Fisioterapia y Pilates",
+    "description": "Centro de fisioterapia y pilates terapeutico. Especialistas en suelo pelvico, rehabilitacion postparto y dolor de espalda.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "website": "https://clinicamuv.com/",
+    "tags": [
+      "fisioterapia",
+      "pilates",
+      "suelo-pelvico"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "focus-clinic-canaveral",
+    "name": "Focus Clinic Fisioterapia",
+    "description": "Clinica de fisioterapia avanzada especializada en fisioterapia deportiva, ATM y disfunciones orofaciales. Ecografia de alta gama disponible.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "website": "https://focuscliniccanaveral.es/",
+    "tags": [
+      "fisioterapia",
+      "deportiva",
+      "ecografia"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "fisioterapia-escalante",
+    "name": "Fisioterapia Escalante El Canaveral",
+    "description": "Centro de fisioterapia con atencion personalizada. Tratamientos manuales, puncion seca y ejercicio terapeutico.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "C. Aloe Vera, Vicalvaro, 28052 Madrid",
+    "tags": [
+      "fisioterapia",
+      "puncion-seca",
+      "manual"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "centro-sanitario-cano",
+    "name": "Centro Sanitario Cano",
+    "description": "Centro multidisciplinar con podologia, fisioterapia, psicologia y logopedia. Atencion integral para toda la familia en Valdebernardo.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "address": "Bulevar Indalecio Prieto, 12, 28032 Madrid",
+    "website": "https://podocano.com/",
+    "tags": [
+      "podologia",
+      "psicologia",
+      "logopedia",
+      "multidisciplinar"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "soul-fisioterapia",
+    "name": "Soul Fisioterapia",
+    "description": "Clinica de fisioterapia en El Canaveral con enfoque holístico. Tratamientos de fisioterapia, osteopatia y bienestar integral.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "website": "https://www.clinica.soulfisioterapia.com/",
+    "tags": [
+      "fisioterapia",
+      "osteopatia",
+      "holístico"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "english-connection-canaveral",
+    "name": "English Connection El Canaveral",
+    "description": "Academia de ingles con metodo comunicativo. Clases para ninos, jovenes y adultos. Enfoque practico y conversacional.",
+    "category": "educacion",
+    "categoryName": "Educacion e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Calle de la Igualdad, 181, Vicalvaro, 28052 Madrid",
+    "tags": [
+      "ingles",
+      "academia",
+      "idiomas"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "sadeco-coslada",
+    "name": "Talleres Sadeco Coslada",
+    "description": "Taller mecanico multimarca con servicio de Pre-ITV, mecanica rapida, neumaticos y mantenimiento preventivo. Dos sedes en Coslada.",
+    "category": "automocion",
+    "categoryName": "Automocion",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. San Pablo, 32, 28823 Coslada, Madrid",
+    "website": "https://sadecocoslada.com/",
+    "tags": [
+      "taller",
+      "pre-itv",
+      "neumaticos"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "masruedas-coslada",
+    "name": "Masruedas First Stop Coslada",
+    "description": "Centro de neumaticos y mecanica rapida. Revision Pre-ITV, cambio de aceite, frenos y amortiguadores.",
+    "category": "automocion",
+    "categoryName": "Automocion",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "website": "https://masruedas.es/",
+    "tags": [
+      "neumaticos",
+      "mecanica-rapida",
+      "first-stop"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "electroi-san-fernando",
+    "name": "Electroi Talleres",
+    "description": "Electroi Talleres es tu centro de confianza en San Fernando de Henares para el mantenimiento y reparación de tu vehículo. Especializados en mecánica general, electricidad del automóvil y diagnóstico electrónico avanzado, te aseguran un servicio completo y de calidad para que tu coche esté siempre a punto. Ubicados estratégicamente para tu comodidad.",
+    "category": "automocion",
+    "categoryName": "Automocion",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "website": "https://electroi.es/",
+    "tags": [
+      "taller",
+      "electricidad",
+      "diagnostico"
+    ],
+    "featured": false,
+    "servicios": [
+      "Mecánica general (frenos, suspensiones, embragues)",
+      "Diagnóstico electrónico avanzado",
+      "Reparación de sistemas eléctricos",
+      "Mantenimiento preventivo y revisiones",
+      "Pre-ITV",
+      "Cambio de neumáticos",
+      "Carga de aire acondicionado"
+    ],
+    "destacados": [
+      "Especialistas en electrónica del automóvil",
+      "Diagnóstico preciso con tecnología de vanguardia",
+      "Atención personalizada y presupuestos transparentes",
+      "Ubicación accesible en San Fernando de Henares"
+    ],
+    "horario": "L-V 9:00-14:00 y 16:00-19:30, S 9:00-13:00"
+  },
+  {
+    "slug": "inyeauto-san-fernando",
+    "name": "Inyeauto Taller Mecanico",
+    "description": "Inyeauto es un taller mecánico de referencia en San Fernando de Henares, con una sólida experiencia en la reparación de motores, sistemas de inyección y electrónica del automóvil. Si tu coche presenta problemas complejos o simplemente necesitas un mantenimiento de confianza, aquí encontrarás profesionales cualificados para dejarlo como nuevo. Su especialización garantiza soluciones efectivas.",
+    "category": "automocion",
+    "categoryName": "Automocion",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "website": "https://www.inyeauto.es/",
+    "tags": [
+      "taller",
+      "inyeccion",
+      "motores"
+    ],
+    "featured": false,
+    "servicios": [
+      "Reparación y reconstrucción de motores",
+      "Diagnóstico y reparación de sistemas de inyección",
+      "Mantenimiento y reparación de sistemas electrónicos",
+      "Cambio de aceite y filtros",
+      "Revisión de frenos y suspensión",
+      "Pre-ITV y puesta a punto",
+      "Reparación de cajas de cambio"
+    ],
+    "destacados": [
+      "Alta especialización en motores e inyección",
+      "Tecnología avanzada para diagnósticos complejos",
+      "Equipo de mecánicos con amplia experiencia",
+      "Garantía en todas las reparaciones"
+    ],
+    "horario": "L-V 9:00-14:00 y 16:00-19:00"
+  },
+  {
+    "slug": "aticomoda-vicalvaro",
+    "name": "Aticomoda",
+    "description": "Aticomoda es tu boutique de moda femenina en Vicálvaro, donde Carmen te ofrece un asesoramiento personalizado para encontrar prendas únicas que realcen tu estilo. Aquí descubrirás una selección cuidada de ropa y complementos, pensada para la mujer moderna que busca calidad y originalidad. Ubicada en Blvr. de Jose Prat, 29, B, es el lugar perfecto para renovar tu armario con un toque especial.",
+    "category": "moda",
+    "categoryName": "Moda y Complementos",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "address": "Blvr. de Jose Prat, 29, B, 28032 Madrid",
+    "tags": [
+      "moda-femenina",
+      "asesoramiento",
+      "unico"
+    ],
+    "featured": true,
+    "servicios": [
+      "Asesoramiento de imagen personalizado",
+      "Venta de ropa femenina (vestidos, blusas, pantalones)",
+      "Venta de complementos (bolsos, pañuelos, bisutería)",
+      "Selección de prendas de temporada",
+      "Estilismo para eventos",
+      "Arreglos básicos de prendas"
+    ],
+    "destacados": [
+      "Atención cercana y experta de Carmen",
+      "Prendas exclusivas y de calidad",
+      "Ambiente acogedor y personal",
+      "Ideal para encontrar ese 'algo' diferente"
+    ],
+    "horario": "L-S 10:00-14:00 y 17:00-20:30"
+  },
+  {
+    "slug": "almacenes-jimar",
+    "name": "Almacenes Jimar",
+    "description": "Almacenes Jimar es una tienda de ropa y complementos en Vicálvaro que ofrece una amplia variedad de productos de calidad a precios muy competitivos. Es el lugar ideal para vestir a toda la familia, desde los más pequeños hasta los adultos, con opciones para cada estilo y ocasión. Aquí encontrarás moda práctica y funcional sin renunciar a la buena calidad.",
+    "category": "moda",
+    "categoryName": "Moda y Complementos",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "tags": [
+      "ropa",
+      "familia",
+      "precios"
+    ],
+    "featured": false,
+    "servicios": [
+      "Venta de ropa para mujer",
+      "Venta de ropa para hombre",
+      "Venta de ropa infantil",
+      "Venta de complementos (cinturones, calcetines)",
+      "Ofertas y promociones regulares",
+      "Asesoramiento básico de tallas"
+    ],
+    "destacados": [
+      "Amplia variedad para toda la familia",
+      "Precios muy asequibles",
+      "Productos de buena relación calidad-precio",
+      "Ideal para compras del día a día"
+    ],
+    "horario": "L-S 10:00-14:00 y 17:00-20:00"
+  },
+  {
+    "slug": "almacenes-s-lara",
+    "name": "Almacenes S. Lara",
+    "description": "Almacenes S. Lara es una tienda de ropa en Vicálvaro que se distingue por su cuidadosa selección de prendas y un asesoramiento experto y honesto. Aquí te ayudarán a encontrar lo que mejor te sienta, ofreciéndote recomendaciones personalizadas con total transparencia. Es el lugar perfecto para quienes buscan calidad y un trato cercano al elegir su vestuario.",
+    "category": "moda",
+    "categoryName": "Moda y Complementos",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "tags": [
+      "ropa",
+      "seleccion",
+      "asesoramiento"
+    ],
+    "featured": false,
+    "servicios": [
+      "Venta de ropa de mujer (casual y formal)",
+      "Venta de ropa de hombre (camisas, pantalones)",
+      "Asesoramiento de estilo personalizado",
+      "Selección de prendas de calidad",
+      "Novedades de temporada",
+      "Ayuda para combinar atuendos"
+    ],
+    "destacados": [
+      "Asesoramiento experto y sincero",
+      "Selección de prendas con buen gusto",
+      "Atención al detalle en cada compra",
+      "Ideal para encontrar piezas duraderas"
+    ],
+    "horario": "L-S 10:00-14:00 y 17:00-20:30"
+  },
+  {
+    "slug": "akiomoda-vicalvaro",
+    "name": "Akiomoda",
+    "description": "Akiomoda es una tienda de moda ubicada en el corazón del casco histórico de Vicálvaro, donde podrás descubrir las últimas tendencias con un estilo propio y distintivo. Ofrecen una cuidada selección de prendas de temporada que te permitirán crear looks modernos y originales. Es el lugar ideal para quienes buscan estar a la última sin perder su esencia personal.",
+    "category": "moda",
+    "categoryName": "Moda y Complementos",
+    "zona": "vicalvaro",
+    "zonaName": "Vicalvaro",
+    "tags": [
+      "moda",
+      "tendencias",
+      "temporada"
+    ],
+    "featured": false,
+    "servicios": [
+      "Venta de ropa de mujer (tendencias)",
+      "Venta de complementos de moda",
+      "Novedades semanales",
+      "Asesoramiento de estilo para looks actuales",
+      "Prendas para diferentes ocasiones",
+      "Colecciones de temporada"
+    ],
+    "destacados": [
+      "Ubicación céntrica en el casco histórico",
+      "Siempre a la última en tendencias",
+      "Estilo propio y diferenciador",
+      "Ideal para renovar el armario con lo más actual"
+    ],
+    "horario": "L-S 10:30-14:00 y 17:30-20:30"
   }
 ]
