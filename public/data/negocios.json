@@ -1241,46 +1241,6 @@
     "phone": "910000000"
   },
   {
-    "slug": "farmacia-canaveral",
-    "name": "Farmacia Canaveral",
-    "description": "Farmacia Cañaveral es tu punto de referencia en el barrio para todo lo relacionado con la salud y el bienestar. Ofrecen una amplia gama de medicamentos, productos de parafarmacia y dermocosmética, con un servicio de atención farmacéutica personalizada y de confianza.",
-    "category": "salud",
-    "categoryName": "Salud y Bienestar",
-    "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
-    "tags": [
-      "farmacia",
-      "parafarmacia"
-    ],
-    "featured": true,
-    "servicios": [
-      "Dispensación de medicamentos",
-      "Productos de parafarmacia",
-      "Dermocosmética y cuidado de la piel",
-      "Nutrición y dietética",
-      "Salud infantil y maternal",
-      "Toma de tensión y glucosa",
-      "Consejo farmacéutico personalizado",
-      "Fórmulas magistrales"
-    ],
-    "destacados": [
-      "Amplio stock de productos",
-      "Atención farmacéutica experta",
-      "Variedad en parafarmacia y dermocosmética",
-      "Ubicación accesible en El Cañaveral"
-    ],
-    "horario": "L-V 9:00-21:00, S 9:30-14:00",
-    "especialidades": [
-      "Farmacia",
-      "Parafarmacia",
-      "Dermocosmética",
-      "Nutrición",
-      "Salud Infantil"
-    ],
-    "image": "/images/categorias/salud.jpg",
-    "address": "Avenida Miguel Delibes 12, 28052 Madrid"
-  },
-  {
     "slug": "antonella-peluqueria-y-belleza",
     "name": "Antonella Peluqueria y Belleza",
     "description": "Antonella Peluquería y Belleza es tu salón de confianza en El Cañaveral para un cambio de look o un tratamiento de belleza. Ofrecen una amplia gama de servicios, desde cortes y color hasta tratamientos capilares y estética facial y corporal, para que te sientas radiante.",
@@ -3414,5 +3374,106 @@
       "street-food"
     ],
     "featured": true
+  },
+  {
+    "slug": "farmacia-central-canaveral",
+    "name": "Farmacia Central Canaveral",
+    "description": "Farmacia de referencia en El Canaveral con amplio horario. Medicamentos, parafarmacia, dermocosmetica, ortopedia y atencion farmaceutica personalizada. Servicio de guardia.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Av. de Miguel Delibes, 72, 28052 Madrid",
+    "phone": "911 08 10 08",
+    "website": "http://www.farmaciacentralcanaveral.es/",
+    "tags": [
+      "farmacia",
+      "guardia",
+      "parafarmacia"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "farmacia-sonrisas-canaveral",
+    "name": "Farmacia Sonrisas del Canaveral",
+    "description": "Farmacia en Calle Anna Frank con atencion cercana. Articulos para el cuidado de la salud y bienestar, cosmetica natural y productos infantiles.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Calle Anna Frank, 10, 28052 Madrid",
+    "website": "https://www.farmaciasonrisascanaveral.com/",
+    "tags": [
+      "farmacia",
+      "cosmetica-natural",
+      "infantil"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "farmacia-botica-de-mar",
+    "name": "Farmacia La Botica de Mar",
+    "description": "Farmacia en Avenida Blas de Lezo. Medicamentos, dermofarmacia y servicio personalizado para los vecinos del Canaveral.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "Av. de Blas de Lezo, 28052 Madrid",
+    "tags": [
+      "farmacia"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "farmacia-el-canaveral-vk",
+    "name": "Farmacia El Canaveral",
+    "description": "Farmacia con 12 horas de servicio diario. Ubicada en esquina Victorino Granizo con Victoria Kent. Amplio horario para comodidad de los vecinos.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "address": "C. Victorino Granizo, 71, esq. Victoria Kent, 28052 Madrid",
+    "tags": [
+      "farmacia",
+      "horario-amplio"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "jardin-canaveral",
+    "name": "Jardin Canaveral",
+    "description": "Restaurante con terraza ajardinada en El Canaveral. Cocina mediterranea, carnes a la brasa y ambiente familiar. Espacio exterior amplio para disfrutar al aire libre.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "terraza",
+      "jardin",
+      "mediterraneo",
+      "brasa"
+    ],
+    "tiposCocina": [
+      "mediterranea",
+      "brasa"
+    ],
+    "terraza": true,
+    "featured": false
+  },
+  {
+    "slug": "estanco-el-canaveral",
+    "name": "Estanco El Canaveral",
+    "description": "Expendeduria de tabaco y timbre del Estado. Tambien loteria, recargas, prensa y articulos de fumador. Primer estanco del barrio, licencia adjudicada por subasta.",
+    "category": "servicios-profesionales",
+    "categoryName": "Servicios Profesionales",
+    "zona": "el-canaveral",
+    "zonaName": "El Canaveral",
+    "tags": [
+      "estanco",
+      "tabaco",
+      "loteria",
+      "prensa"
+    ],
+    "featured": false
   }
 ]
