@@ -13,7 +13,7 @@ from pathlib import Path
 
 import requests
 
-API_KEY = "AIzaSyARZuyrpA57DjYKLq2QFZA06nTUUnSwhvQ"
+API_KEY = os.getenv("GEMINI_API_KEY", "")
 ENDPOINT = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image-preview:generateContent?key={API_KEY}"
 IMAGES_DIR = Path(__file__).parent.parent / "public" / "images" / "categorias"
 DATA_FILE = Path(__file__).parent.parent / "src" / "data" / "negocios.json"

@@ -12,7 +12,7 @@ import requests
 
 OPENROUTER_API_KEY = os.getenv(
     "OPENROUTER_API_KEY",
-    "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",
+    "",
 )
 DATA_FILE = Path(__file__).parent.parent / "src" / "data" / "negocios.json"
 
