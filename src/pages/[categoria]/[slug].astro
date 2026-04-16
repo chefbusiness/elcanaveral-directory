@@ -237,10 +237,11 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
         </div>
 
         <!-- ===== SIDEBAR ===== -->
-        <div class="lg:col-span-1 space-y-5">
+        <div class="lg:col-span-1">
+          <div class="space-y-5 lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto lg:pb-4 scrollbar-hide">
 
           <!-- Card contacto -->
-          <div class="bg-white rounded-xl border border-warm-200 p-5 sticky top-20">
+          <div class="bg-white rounded-xl border border-warm-200 p-5">
             <h2 class="font-semibold text-lg mb-4">Contacto</h2>
             <div class="space-y-3">
               {negocio.address && (
@@ -337,6 +338,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
               Posicionar mi negocio
             </a>
           </div>
+          </div><!-- close sticky wrapper -->
         </div>
       </div>
     </div>
