@@ -11,6 +11,11 @@ export function getStaticPaths() {
 
 const negocio = Astro.props as Negocio;
 const schema = generateLocalBusinessSchema(negocio);
+const servicios = (negocio.servicios as string[] | undefined) || [];
+const destacados = (negocio.destacados as string[] | undefined) || [];
+const especialidades = (negocio.especialidades as string[] | undefined) || [];
+const tiposCocina = (negocio.tiposCocina as string[] | undefined) || [];
+const redes = (negocio.redesSociales as Record<string, string> | undefined) || {};
 ---
 
 <BaseLayout title={negocio.name} description={negocio.description}>
@@ -21,7 +26,7 @@ const schema = generateLocalBusinessSchema(negocio);
   <Header />
 
   <section class="pt-24 pb-16 px-4">
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-4xl mx-auto">
       <!-- Breadcrumb -->
       <nav class="text-sm text-gray-500 mb-6">
         <a href="/" class="hover:text-gray-700">Inicio</a>
@@ -31,135 +36,277 @@ const schema = generateLocalBusinessSchema(negocio);
         <span class="text-gray-900">{negocio.name}</span>
       </nav>
 
-      {negocio.image && (
-        <img
-          src={negocio.image}
-          alt={negocio.name}
-          class="w-full h-64 object-cover rounded-xl mb-8"
-        />
-      )}
+      <!-- Layout 2 columnas en desktop -->
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Columna principal -->
+        <div class="lg:col-span-2">
+          {negocio.image && (
+            <img
+              src={negocio.image}
+              alt={negocio.name}
+              class="w-full h-72 object-cover rounded-xl mb-6"
+            />
+          )}
 
-      <div class="flex items-start gap-3 mb-4">
-        <h1 class="text-3xl font-bold">{negocio.name}</h1>
-        {negocio.featured && (
-          <span class="shrink-0 text-xs font-medium bg-brand-50 text-brand-700 px-3 py-1 rounded-full mt-2">
-            Destacado
-          </span>
-        )}
-      </div>
+          <div class="flex items-start gap-3 mb-3">
+            <h1 class="text-3xl font-bold">{negocio.name}</h1>
+            {negocio.featured && (
+              <span class="shrink-0 text-xs font-medium bg-brand-50 text-brand-700 px-3 py-1 rounded-full mt-2">
+                Destacado
+              </span>
+            )}
+          </div>
 
-      {negocio.rating && (
-        <div class="flex items-center gap-2 mb-4">
-          <span class="text-yellow-500 text-lg">&#9733;</span>
-          <span class="font-semibold text-lg">{negocio.rating}</span>
-          {negocio.numReviews && (
-            <span class="text-gray-400">({negocio.numReviews} resenas)</span>
+          <!-- Rating + precio -->
+          <div class="flex items-center gap-4 mb-4">
+            {negocio.rating && (
+              <div class="flex items-center gap-1.5">
+                <span class="text-yellow-500 text-lg">&#9733;</span>
+                <span class="font-semibold">{negocio.rating}</span>
+                {negocio.numReviews && (
+                  <span class="text-gray-400 text-sm">({negocio.numReviews} resenas)</span>
+                )}
+              </div>
+            )}
+            {negocio.precioRango && (
+              <span class="text-sm text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{negocio.precioRango}</span>
+            )}
+            <span class="text-sm text-gray-400">{negocio.categoryName}</span>
+          </div>
+
+          <!-- Badges rapidos -->
+          <div class="flex flex-wrap gap-2 mb-6">
+            {negocio.terraza && <span class="text-xs bg-green-50 text-green-700 px-2.5 py-1 rounded-full">Terraza</span>}
+            {negocio.wifi && <span class="text-xs bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">WiFi</span>}
+            {negocio.delivery && <span class="text-xs bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full">Delivery</span>}
+            {negocio.menuDelDia && <span class="text-xs bg-amber-50 text-amber-700 px-2.5 py-1 rounded-full">Menu del dia</span>}
+            {negocio.aparcamiento && <span class="text-xs bg-purple-50 text-purple-700 px-2.5 py-1 rounded-full">Parking</span>}
+            {negocio.accesibilidad && <span class="text-xs bg-teal-50 text-teal-700 px-2.5 py-1 rounded-full">Accesible</span>}
+          </div>
+
+          <!-- Descripcion -->
+          <div class="prose prose-gray max-w-none mb-8">
+            <p class="text-gray-600 text-lg leading-relaxed">{negocio.description}</p>
+          </div>
+
+          <!-- Campos especificos por tipo -->
+          {/* Educacion: edades, plazas, tipo gestion */}
+          {(negocio.edades || negocio.plazas || negocio.tipoGestion) && (
+            <div class="bg-blue-50 rounded-xl p-5 mb-6">
+              <h2 class="font-semibold text-lg mb-3">Informacion del centro</h2>
+              <div class="grid sm:grid-cols-3 gap-4">
+                {negocio.edades && (
+                  <div>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider">Edades</span>
+                    <p class="font-medium mt-1">{negocio.edades}</p>
+                  </div>
+                )}
+                {negocio.plazas && (
+                  <div>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider">Plazas</span>
+                    <p class="font-medium mt-1">{negocio.plazas}</p>
+                  </div>
+                )}
+                {negocio.tipoGestion && (
+                  <div>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider">Gestion</span>
+                    <p class="font-medium mt-1 capitalize">{negocio.tipoGestion}</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* Restaurantes: tipos de cocina */}
+          {tiposCocina.length > 0 && (
+            <div class="mb-6">
+              <h2 class="font-semibold text-lg mb-3">Tipo de cocina</h2>
+              <div class="flex flex-wrap gap-2">
+                {tiposCocina.map((tipo) => (
+                  <span class="text-sm bg-orange-50 text-orange-700 px-3 py-1 rounded-full capitalize">{tipo}</span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Salud: especialidades */}
+          {especialidades.length > 0 && (
+            <div class="mb-6">
+              <h2 class="font-semibold text-lg mb-3">Especialidades</h2>
+              <div class="grid sm:grid-cols-2 gap-2">
+                {especialidades.map((esp) => (
+                  <div class="flex items-center gap-2 text-sm text-gray-700">
+                    <span class="text-brand-500">&#10003;</span>
+                    <span class="capitalize">{esp}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <!-- Servicios -->
+          {servicios.length > 0 && (
+            <div class="mb-8">
+              <h2 class="font-semibold text-lg mb-3">Servicios</h2>
+              <div class="grid sm:grid-cols-2 gap-2">
+                {servicios.map((servicio) => (
+                  <div class="flex items-center gap-2 text-sm text-gray-700">
+                    <span class="text-brand-500">&#10003;</span>
+                    <span>{servicio}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <!-- Destacados / Puntos fuertes -->
+          {destacados.length > 0 && (
+            <div class="bg-brand-50 rounded-xl p-5 mb-8">
+              <h2 class="font-semibold text-lg mb-3">Por que elegir {negocio.name}</h2>
+              <ul class="space-y-2">
+                {destacados.map((d) => (
+                  <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <span class="text-brand-600 mt-0.5">&#9733;</span>
+                    <span>{d}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <!-- Tags -->
+          {negocio.tags && negocio.tags.length > 0 && (
+            <div class="flex flex-wrap gap-2 mb-8">
+              {negocio.tags.map((tag) => (
+                <span class="text-sm bg-gray-100 text-gray-600 px-3 py-1 rounded-full">{tag}</span>
+              ))}
+            </div>
+          )}
+
+          <!-- Mapa -->
+          {negocio.address && (
+            <div class="mb-8">
+              <h2 class="font-semibold text-lg mb-3">Ubicacion</h2>
+              <div class="rounded-xl overflow-hidden border border-gray-200">
+                <iframe
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(negocio.address)}&output=embed`}
+                  width="100%"
+                  height="300"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title={`Mapa de ${negocio.name}`}
+                ></iframe>
+              </div>
+              <div class="flex items-center justify-between mt-2">
+                <p class="text-sm text-gray-500">{negocio.address}</p>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(negocio.address)}`}
+                  target="_blank"
+                  rel="noopener"
+                  class="text-sm text-brand-600 hover:text-brand-700"
+                >
+                  Obtener direcciones &rarr;
+                </a>
+              </div>
+            </div>
           )}
         </div>
-      )}
 
-      <p class="text-lg text-gray-600 mb-8">{negocio.description}</p>
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <!-- Card de contacto -->
+          <div class="bg-gray-50 rounded-xl p-5 mb-6 sticky top-20">
+            <h2 class="font-semibold text-lg mb-4">Contacto</h2>
+            <div class="space-y-3">
+              {negocio.address && (
+                <div class="flex items-start gap-3">
+                  <span class="text-gray-400 text-sm mt-0.5">&#128205;</span>
+                  <span class="text-sm">{negocio.address}</span>
+                </div>
+              )}
+              <div class="flex items-center gap-3">
+                <span class="text-gray-400 text-sm">&#128204;</span>
+                <a href={`/zona/${negocio.zona}`} class="text-sm text-brand-600 hover:text-brand-700">{negocio.zonaName}</a>
+              </div>
+              {negocio.phone && (
+                <div class="flex items-center gap-3">
+                  <span class="text-gray-400 text-sm">&#128222;</span>
+                  <a href={`tel:${negocio.phone}`} class="text-sm text-brand-600 hover:text-brand-700 font-medium">{negocio.phone}</a>
+                </div>
+              )}
+              {negocio.email && (
+                <div class="flex items-center gap-3">
+                  <span class="text-gray-400 text-sm">&#9993;</span>
+                  <a href={`mailto:${negocio.email}`} class="text-sm text-brand-600 hover:text-brand-700 break-all">{negocio.email}</a>
+                </div>
+              )}
+              {negocio.website && (
+                <div class="flex items-center gap-3">
+                  <span class="text-gray-400 text-sm">&#127760;</span>
+                  <a href={negocio.website} target="_blank" rel="noopener" class="text-sm text-brand-600 hover:text-brand-700 break-all">{negocio.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a>
+                </div>
+              )}
+              {negocio.horario && (
+                <div class="flex items-start gap-3">
+                  <span class="text-gray-400 text-sm mt-0.5">&#128336;</span>
+                  <span class="text-sm">{negocio.horario}</span>
+                </div>
+              )}
+            </div>
 
-      <!-- Datos de contacto -->
-      <div class="bg-gray-50 rounded-xl p-6 space-y-3 mb-8">
-        <h2 class="font-semibold text-lg mb-3">Informacion de contacto</h2>
-        {negocio.address && (
-          <div class="flex gap-3">
-            <span class="text-gray-400 w-24 shrink-0 text-sm">Direccion</span>
-            <span>{negocio.address}</span>
+            <!-- Redes sociales -->
+            {(redes.instagram || redes.facebook) && (
+              <div class="border-t border-gray-200 mt-4 pt-4">
+                <div class="flex gap-3">
+                  {redes.instagram && (
+                    <a href={`https://instagram.com/${redes.instagram.replace('@', '')}`} target="_blank" rel="noopener" class="text-sm text-gray-500 hover:text-gray-700">
+                      Instagram
+                    </a>
+                  )}
+                  {redes.facebook && (
+                    <a href={redes.facebook} target="_blank" rel="noopener" class="text-sm text-gray-500 hover:text-gray-700">
+                      Facebook
+                    </a>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {negocio.phone && (
+              <a
+                href={`tel:${negocio.phone}`}
+                class="block w-full text-center bg-brand-600 text-white py-2.5 rounded-lg mt-4 font-medium hover:bg-brand-700 transition-colors"
+              >
+                Llamar ahora
+              </a>
+            )}
+            {negocio.website && !negocio.phone && (
+              <a
+                href={negocio.website}
+                target="_blank"
+                rel="noopener"
+                class="block w-full text-center bg-brand-600 text-white py-2.5 rounded-lg mt-4 font-medium hover:bg-brand-700 transition-colors"
+              >
+                Visitar web
+              </a>
+            )}
           </div>
-        )}
-        <div class="flex gap-3">
-          <span class="text-gray-400 w-24 shrink-0 text-sm">Zona</span>
-          <a href={`/zona/${negocio.zona}`} class="text-brand-600 hover:text-brand-700">{negocio.zonaName}</a>
-        </div>
-        {negocio.phone && (
-          <div class="flex gap-3">
-            <span class="text-gray-400 w-24 shrink-0 text-sm">Telefono</span>
-            <a href={`tel:${negocio.phone}`} class="text-brand-600 hover:text-brand-700">{negocio.phone}</a>
-          </div>
-        )}
-        {negocio.email && (
-          <div class="flex gap-3">
-            <span class="text-gray-400 w-24 shrink-0 text-sm">Email</span>
-            <a href={`mailto:${negocio.email}`} class="text-brand-600 hover:text-brand-700">{negocio.email}</a>
-          </div>
-        )}
-        {negocio.website && (
-          <div class="flex gap-3">
-            <span class="text-gray-400 w-24 shrink-0 text-sm">Web</span>
-            <a href={negocio.website} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{negocio.website}</a>
-          </div>
-        )}
-        {negocio.horario && (
-          <div class="flex gap-3">
-            <span class="text-gray-400 w-24 shrink-0 text-sm">Horario</span>
-            <span>{negocio.horario}</span>
-          </div>
-        )}
-        {negocio.address && (
-          <div class="pt-2">
+
+          <!-- Banner LocalSEOAds -->
+          <div class="bg-accent-50 border border-blue-100 rounded-xl p-5 text-center">
+            <p class="text-sm text-gray-600 mb-2">Quieres destacar tu negocio?</p>
             <a
-              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(negocio.address)}`}
+              href="https://localseoads.com"
               target="_blank"
               rel="noopener"
-              class="inline-flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700"
+              class="text-sm font-medium text-accent-600 hover:text-accent-700"
             >
-              Ver en Google Maps &rarr;
-            </a>
-          </div>
-        )}
-      </div>
-
-      {negocio.tags && negocio.tags.length > 0 && (
-        <div class="flex flex-wrap gap-2 mb-8">
-          {negocio.tags.map((tag) => (
-            <span class="text-sm bg-gray-100 text-gray-600 px-3 py-1 rounded-full">{tag}</span>
-          ))}
-        </div>
-      )}
-
-      <!-- Mapa -->
-      {negocio.address && (
-        <div class="mb-8">
-          <h2 class="font-semibold text-lg mb-3">Ubicacion</h2>
-          <div class="rounded-xl overflow-hidden border border-gray-200">
-            <iframe
-              src={`https://www.google.com/maps?q=${encodeURIComponent(negocio.address)}&output=embed`}
-              width="100%"
-              height="300"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title={`Mapa de ${negocio.name}`}
-            ></iframe>
-          </div>
-          <div class="flex items-center justify-between mt-2">
-            <p class="text-sm text-gray-500">{negocio.address}</p>
-            <a
-              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(negocio.address)}`}
-              target="_blank"
-              rel="noopener"
-              class="text-sm text-brand-600 hover:text-brand-700"
-            >
-              Obtener direcciones &rarr;
+              Servicios de posicionamiento local &rarr;
             </a>
           </div>
         </div>
-      )}
-
-      <!-- Banner LocalSEOAds -->
-      <div class="bg-accent-50 border border-blue-100 rounded-xl p-6 text-center">
-        <p class="text-sm text-gray-600 mb-2">Quieres destacar tu negocio en este directorio?</p>
-        <a
-          href="https://localseoads.com"
-          target="_blank"
-          rel="noopener"
-          class="text-sm font-medium text-accent-600 hover:text-accent-700"
-        >
-          Conoce nuestros servicios de posicionamiento local &rarr;
-        </a>
       </div>
     </div>
   </section>

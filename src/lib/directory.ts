@@ -10,18 +10,40 @@ export interface Negocio {
   categoryName: string;
   zona: string;
   zonaName: string;
+  // Contacto y ubicacion
   address?: string;
   phone?: string;
   email?: string;
   website?: string;
   image?: string;
-  tags?: string[];
-  featured?: boolean;
-  rating?: number;
-  numReviews?: number;
   horario?: string;
   googleMapsUrl?: string;
-  [key: string]: string | string[] | boolean | number | undefined;
+  // Reputacion
+  rating?: number;
+  numReviews?: number;
+  // Clasificacion
+  tags?: string[];
+  featured?: boolean;
+  // Campos enriquecidos (comunes a todos)
+  servicios?: string[];
+  destacados?: string[];    // puntos fuertes / highlights
+  precioRango?: string;     // "€" | "€€" | "€€€" | "€€€€"
+  anoApertura?: number;
+  redesSociales?: { instagram?: string; facebook?: string; tiktok?: string };
+  // Campos especificos por categoria (flexibles)
+  edades?: string;          // educacion: "0-3 anos"
+  plazas?: number;          // educacion: 156
+  tipoGestion?: string;     // educacion: "publica" | "privada" | "concertada"
+  especialidades?: string[];// salud: ["ortodoncia", "implantes"]
+  tiposCocina?: string[];   // restaurantes: ["asturiano", "venezolano"]
+  menuDelDia?: boolean;     // restaurantes
+  terraza?: boolean;        // restaurantes, cafeterias
+  delivery?: boolean;       // restaurantes
+  aparcamiento?: boolean;
+  accesibilidad?: boolean;
+  wifi?: boolean;
+  // Catch-all
+  [key: string]: string | string[] | boolean | number | Record<string, string> | undefined;
 }
 
 export interface Categoria {
