@@ -1,32 +1,32 @@
 [
   {
     "slug": "el-canaveral",
-    "name": "El Canaveral",
-    "description": "Barrio de El Canaveral, distrito de Vicalvaro. Mas de 30.000 habitantes y en pleno crecimiento con nuevas promociones de viviendas y comercios.",
+    "name": "El Cañaveral",
+    "description": "Barrio de El Cañaveral, distrito de Vicálvaro. Más de 30.000 habitantes y en pleno crecimiento con nuevas promociones de viviendas y comercios.",
     "municipality": "Madrid",
-    "district": "Vicalvaro",
+    "district": "Vicálvaro",
     "postalCodes": ["28052"],
     "primary": true
   },
   {
     "slug": "vicalvaro",
-    "name": "Vicalvaro",
-    "description": "Distrito de Vicalvaro, al este de Madrid. Nucleo historico con servicios consolidados que complementa la oferta del Canaveral.",
+    "name": "Vicálvaro",
+    "description": "Distrito de Vicálvaro, al este de Madrid. Núcleo histórico con servicios consolidados que complementa la oferta de El Cañaveral.",
     "municipality": "Madrid",
-    "district": "Vicalvaro",
+    "district": "Vicálvaro",
     "postalCodes": ["28032", "28052"]
   },
   {
     "slug": "coslada",
     "name": "Coslada",
-    "description": "Municipio del Corredor del Henares colindante con El Canaveral. Amplia oferta comercial y de servicios, excelente conexion por carretera.",
+    "description": "Municipio del Corredor del Henares colindante con El Cañaveral. Amplia oferta comercial y de servicios, excelente conexión por carretera.",
     "municipality": "Coslada",
     "postalCodes": ["28822", "28823"]
   },
   {
     "slug": "san-fernando-de-henares",
     "name": "San Fernando de Henares",
-    "description": "Municipio del este de Madrid con zona comercial consolidada. Destino habitual de compras para los residentes del Canaveral.",
+    "description": "Municipio del este de Madrid con zona comercial consolidada. Destino habitual de compras para los residentes de El Cañaveral.",
     "municipality": "San Fernando de Henares",
     "postalCodes": ["28830"]
   }

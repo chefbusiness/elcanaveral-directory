@@ -2,85 +2,85 @@
   {
     "slug": "supermercados",
     "name": "Supermercados",
-    "description": "Supermercados y grandes superficies de alimentacion en El Canaveral y alrededores",
+    "description": "Supermercados y grandes superficies de alimentación en El Cañaveral y alrededores",
     "icon": "🛒"
   },
   {
     "slug": "fruterias",
-    "name": "Fruterias",
-    "description": "Fruterias y verdulerías con producto fresco de temporada",
+    "name": "Fruterías",
+    "description": "Fruterías y verdulerías con producto fresco de temporada",
     "icon": "🍎"
   },
   {
     "slug": "panaderias",
-    "name": "Panaderias y Obradores",
-    "description": "Panaderias, obradores y pastelerias artesanales",
+    "name": "Panaderías y Obradores",
+    "description": "Panaderías, obradores y pastelerías artesanales",
     "icon": "🥖"
   },
   {
     "slug": "cafeterias",
-    "name": "Cafeterias",
-    "description": "Cafeterias, coffee shops y salones de te",
+    "name": "Cafeterías",
+    "description": "Cafeterías, coffee shops y salones de té",
     "icon": "☕"
   },
   {
     "slug": "restaurantes",
     "name": "Restaurantes",
-    "description": "Restaurantes, pizzerias y establecimientos de comida para llevar",
+    "description": "Restaurantes, pizzerías y establecimientos de comida para llevar",
     "icon": "🍽️"
   },
   {
     "slug": "tiendas-alimentacion",
-    "name": "Tiendas de Alimentacion",
-    "description": "Tiendas de alimentacion, bazares y mini markets",
+    "name": "Tiendas de Alimentación",
+    "description": "Tiendas de alimentación, bazares y mini markets",
     "icon": "🏪"
   },
   {
     "slug": "salud",
     "name": "Salud y Bienestar",
-    "description": "Clinicas, dentistas, farmacias, fisioterapeutas y centros de salud",
+    "description": "Clínicas, dentistas, farmacias, fisioterapeutas y centros de salud",
     "icon": "🏥"
   },
   {
     "slug": "belleza",
-    "name": "Belleza y Peluquerias",
-    "description": "Peluquerias, barberías, centros de estetica y bienestar",
+    "name": "Belleza y Peluquerías",
+    "description": "Peluquerías, barberías, centros de estética y bienestar",
     "icon": "💇"
   },
   {
     "slug": "deporte",
     "name": "Deporte y Fitness",
-    "description": "Gimnasios, padel, instalaciones deportivas y actividades al aire libre",
+    "description": "Gimnasios, pádel, instalaciones deportivas y actividades al aire libre",
     "icon": "🏋️"
   },
   {
     "slug": "educacion",
-    "name": "Educacion e Infantil",
-    "description": "Guarderias, colegios, academias y centros de formacion",
+    "name": "Educación e Infantil",
+    "description": "Guarderías, colegios, academias y centros de formación",
     "icon": "📚"
   },
   {
     "slug": "hogar",
     "name": "Hogar y Reformas",
-    "description": "Ferreterias, fontaneros, electricistas, reformas y mantenimiento del hogar",
+    "description": "Ferreterías, fontaneros, electricistas, reformas y mantenimiento del hogar",
     "icon": "🔧"
   },
   {
     "slug": "mascotas",
     "name": "Mascotas",
-    "description": "Veterinarios, tiendas de mascotas y peluquerias caninas",
+    "description": "Veterinarios, tiendas de mascotas y peluquerías caninas",
     "icon": "🐾"
   },
   {
     "slug": "moda",
     "name": "Moda y Complementos",
-    "description": "Tiendas de ropa, zapaterias y accesorios",
+    "description": "Tiendas de ropa, zapaterías y accesorios",
     "icon": "👗"
   },
   {
     "slug": "automocion",
-    "name": "Automocion",
-    "description": "Talleres mecanicos, lavaderos, ITV y concesionarios",
+    "name": "Automoción",
+    "description": "Talleres mecánicos, lavaderos, ITV y concesionarios",
     "icon": "🚗"
   },
   {

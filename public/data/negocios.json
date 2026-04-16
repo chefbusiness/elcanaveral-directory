@@ -24,7 +24,7 @@
       "Productos de limpieza y droguería",
       "Cosmética y cuidado personal",
       "Alimentos sin gluten y sin lactosa",
-      "Parking gratuito"
+      "Párking gratuito"
     ],
     "destacados": [
       "Amplia variedad de productos de marca propia Hacendado",
@@ -36,12 +36,12 @@
   },
   {
     "slug": "hiper-canaveral",
-    "name": "Hiper Canaveral",
+    "name": "Hiper Cañaveral",
     "description": "Este hipermercado local es un pilar en el barrio de El Cañaveral, ofreciendo una gran variedad de productos de alimentación, limpieza y hogar. Es conocido por sus precios competitivos y su compromiso con la comunidad local.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "local"
     ],
@@ -54,7 +54,7 @@
       "Panadería y bollería",
       "Bebidas y licores",
       "Productos de alimentación general",
-      "Parking disponible",
+      "Párking disponible",
       "Ofertas semanales"
     ],
     "destacados": [
@@ -68,12 +68,12 @@
   },
   {
     "slug": "supermercado-el-canaveral",
-    "name": "Supermercado El Canaveral",
+    "name": "Supermercado El Cañaveral",
     "description": "Un supermercado de proximidad situado en el corazón del barrio de El Cañaveral, ideal para las compras diarias. Ofrece productos de primera necesidad y marcas de confianza, garantizando frescura y calidad en cada compra.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "local",
       "proximidad"
@@ -106,7 +106,7 @@
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "franquicia"
     ],
@@ -138,7 +138,7 @@
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "cadena",
       "productos-frescos"
@@ -153,7 +153,7 @@
       "Charcutería al corte",
       "Productos de marca propia Alipende",
       "Alimentos sin gluten y sin lactosa",
-      "Parking para clientes"
+      "Párking para clientes"
     ],
     "destacados": [
       "Excelente calidad en productos frescos",
@@ -172,7 +172,7 @@
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "cadena"
     ],
@@ -200,11 +200,11 @@
   {
     "slug": "family-mini-market",
     "name": "Family Mini Market",
-    "description": "Family Mini Market es un mini mercado familiar en El Cañaveral que destaca por su horario extendido, ideal para cualquier necesidad de última hora. Ofrece una selección esencial de productos de alimentación, bebidas y artículos de primera necesidad.",
+    "description": "Family Mini Market es un minimercado familiar en El Cañaveral que destaca por su horario extendido, ideal para cualquier necesidad de última hora. Ofrece una selección esencial de productos de alimentación, bebidas y artículos de primera necesidad.",
     "category": "tiendas-alimentacion",
-    "categoryName": "Tiendas de Alimentacion",
+    "categoryName": "Tiendas de Alimentación",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "horario-extendido",
       "familiar"
@@ -232,12 +232,12 @@
   },
   {
     "slug": "alimentacion-y-bazar",
-    "name": "Alimentacion y Bazar",
+    "name": "Alimentación y Bazar",
     "description": "Esta tienda en El Cañaveral combina una completa sección de alimentación con un práctico bazar, ofreciendo una solución integral para las necesidades diarias del hogar. Aquí encontrarás desde productos frescos hasta artículos variados para tu casa.",
     "category": "tiendas-alimentacion",
-    "categoryName": "Tiendas de Alimentacion",
+    "categoryName": "Tiendas de Alimentación",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "bazar"
     ],
@@ -264,12 +264,12 @@
   },
   {
     "slug": "alimentacion-canaveral",
-    "name": "Alimentacion Canaveral",
+    "name": "Alimentación Cañaveral",
     "description": "Alimentación Cañaveral es una tienda de barrio que ofrece productos básicos, embutidos y conservas de calidad. Es el lugar perfecto para las compras diarias y para encontrar esos productos esenciales que necesitas en tu despensa en El Cañaveral.",
     "category": "tiendas-alimentacion",
-    "categoryName": "Tiendas de Alimentacion",
+    "categoryName": "Tiendas de Alimentación",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "local"
     ],
@@ -296,12 +296,12 @@
   },
   {
     "slug": "casa-elias",
-    "name": "Supermercado Casa Elias",
-    "description": "Casa Elías es un minisupermercado en El Cañaveral que se distingue por la calidad de sus productos, la limpieza de sus instalaciones y un servicio amable y cercano. Ofrece una frutería muy surtida, panadería con pan recién hecho a diario y una carnicería de confianza.",
+    "name": "Supermercado Casa Elías",
+    "description": "Casa Elías es un minimercado en El Cañaveral que se distingue por la calidad de sus productos, la limpieza de sus instalaciones y un servicio amable y cercano. Ofrece una frutería muy surtida, panadería con pan recién hecho a diario y una carnicería de confianza.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Miguel Delibes - Mario Moreno, Vicalvaro, 28052 Madrid",
     "tags": [
       "local",
@@ -329,12 +329,12 @@
   },
   {
     "slug": "la-fruteria-de-mama",
-    "name": "La Fruteria de Mama",
+    "name": "La Frutería de Mamá",
     "description": "La Frutería de Mamá es una encantadora frutería familiar en El Cañaveral, conocida por su producto de temporada cuidadosamente seleccionado. Cada día, ofrece frutas, verduras y hortalizas frescas, garantizando la máxima calidad para tu mesa. Se encuentra en la C. Anna Frank.",
     "category": "fruterias",
-    "categoryName": "Fruterias",
+    "categoryName": "Fruterías",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "familiar",
       "temporada"
@@ -367,9 +367,9 @@
     "name": "Megafruta",
     "description": "Megafruta en El Cañaveral es una frutería con un amplio surtido de frutas y verduras a precios muy competitivos. Su compromiso es ofrecer producto fresco diario, asegurando que siempre encuentres lo mejor para tu alimentación.",
     "category": "fruterias",
-    "categoryName": "Fruterias",
+    "categoryName": "Fruterías",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "precios-competitivos"
     ],
@@ -399,9 +399,9 @@
     "name": "Megafruta 2",
     "description": "Megafruta 2 es la segunda ubicación de la popular frutería en El Cañaveral, manteniendo la misma calidad de producto fresco y la atención cercana que caracteriza a la marca. Es una opción conveniente para los vecinos de otra zona del barrio.",
     "category": "fruterias",
-    "categoryName": "Fruterias",
+    "categoryName": "Fruterías",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [],
     "featured": false,
     "image": "/images/negocios/megafruta-2.jpg",
@@ -429,11 +429,11 @@
     "name": "Frutas y Verduras Vida Sana",
     "description": "Frutas y Verduras Vida Sana es una frutería en El Cañaveral especializada en producto ecológico y de proximidad. Ofrece una selección cuidada de frutas de temporada, ideal para quienes buscan una alimentación más saludable y sostenible.",
     "category": "fruterias",
-    "categoryName": "Fruterias",
+    "categoryName": "Fruterías",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
-      "ecologico",
+      "ecológico",
       "proximidad"
     ],
     "featured": false,
@@ -459,14 +459,14 @@
   },
   {
     "slug": "fruteria-charcuteria-el-canaveral",
-    "name": "Fruteria Charcuteria El Canaveral",
+    "name": "Frutería Charcutería El Cañaveral",
     "description": "Esta frutería en El Cañaveral ofrece una combinación perfecta de productos frescos y delicatessen. Además de frutas y verduras de calidad, cuenta con una excelente sección de charcutería, donde encontrarás embutidos ibéricos y quesos artesanales para los paladares más exigentes.",
     "category": "fruterias",
-    "categoryName": "Fruterias",
+    "categoryName": "Fruterías",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
-      "charcuteria",
+      "charcutería",
       "ibéricos"
     ],
     "featured": false,
@@ -496,9 +496,9 @@
     "name": "Levadura Madre",
     "description": "Panadería artesanal en la Avenida de Blas de Lezo, conocida por su pan de masa madre de larga fermentación. Ofrecen una amplia variedad de panes, bollería casera y repostería elaborada diariamente con ingredientes de primera calidad, ideal para el desayuno o la merienda.",
     "category": "panaderias",
-    "categoryName": "Panaderias y Obradores",
+    "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "artesanal",
       "masa-madre"
@@ -529,9 +529,9 @@
     "name": "El Horno de Izan III",
     "description": "Panadería y pastelería con obrador propio, ubicada en la intersección de Mario Moreno Cantinflas y Francisco Grande Covián. Aquí encontrarás panes artesanales recién horneados, bollería variada para el día a día y la posibilidad de encargar tartas personalizadas para cualquier celebración.",
     "category": "panaderias",
-    "categoryName": "Panaderias y Obradores",
+    "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "obrador-propio",
       "tartas-encargo"
@@ -562,11 +562,11 @@
     "name": "Caprichos Coffee & Bakery",
     "description": "Una encantadora cafetería-panadería en la Avenida de Miguel Delibes, perfecta para disfrutar de un buen café de especialidad y bollería artesanal. Su ambiente acogedor lo convierte en el lugar ideal para desayunar, merendar o simplemente relajarse con una bebida caliente.",
     "category": "panaderias",
-    "categoryName": "Panaderias y Obradores",
+    "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
-      "cafe-especialidad",
+      "café-especialidad",
       "desayunos"
     ],
     "featured": false,
@@ -596,12 +596,12 @@
     "name": "Obrador de Goya",
     "description": "Obrador tradicional situado en la Avenida de Miguel Delibes, que se distingue por su pan de leña y sus recetas clásicas. Aquí encontrarás una gran variedad de bollería, empanadas caseras y productos de pastelería elaborados con el sabor de siempre, perfectos para cualquier momento del día.",
     "category": "panaderias",
-    "categoryName": "Panaderias y Obradores",
+    "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "tradicional",
-      "pan-de-lena"
+      "pan-de-leña"
     ],
     "featured": false,
     "address": "Av. de Miguel Delibes, 80, local 4, Vicalvaro, 28052 Madrid",
@@ -627,12 +627,12 @@
   },
   {
     "slug": "panaderia-bulevar",
-    "name": "Panaderia Bulevar",
+    "name": "Panadería Bulevar",
     "description": "La panadería de barrio por excelencia en el Bulevar de Indalecio Prieto, ofreciendo un surtido diario de panes, bollería y empanadas. Destaca por su servicio rápido y la frescura de sus productos, ideales para las compras del día a día de los vecinos.",
     "category": "panaderias",
-    "categoryName": "Panaderias y Obradores",
+    "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "barrio"
     ],
@@ -660,15 +660,15 @@
   },
   {
     "slug": "fabricacion-y-distribucion-panaderia",
-    "name": "Fabricacion y Distribucion de Panaderia",
+    "name": "Fabricación y Distribución de Panadería",
     "description": "Este obrador mayorista, ubicado en la Calle de Rivas, se especializa en la fabricación y distribución de pan y bollería a diversos comercios de la zona. Además, ofrece venta directa al público, permitiendo a los vecinos adquirir productos frescos a precios de mayorista.",
     "category": "panaderias",
-    "categoryName": "Panaderias y Obradores",
+    "categoryName": "Panaderías y Obradores",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "mayorista",
-      "distribucion"
+      "distribución"
     ],
     "featured": false,
     "address": "Calle de Rivas, Vicalvaro, 28052 Madrid",
@@ -695,9 +695,9 @@
     "name": "Mimarutxa",
     "description": "Mimarutxa es una cafetería con encanto en la Avenida Miguel Delibes, conocida por su repostería creativa y sus deliciosos brunches. Es un espacio ideal para familias, ya que cuenta con una zona infantil dedicada, permitiendo a los padres disfrutar mientras los pequeños se divierten.",
     "category": "cafeterias",
-    "categoryName": "Cafeterias",
+    "categoryName": "Cafeterías",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "brunch",
       "familias",
@@ -730,12 +730,12 @@
   },
   {
     "slug": "le-petit-cafe-de-cryss",
-    "name": "Le Petit Cafe de Cryss",
+    "name": "Le Petit Café de Cryss",
     "description": "Una cafetería acogedora en la Avenida de Blas de Lezo, que se distingue por su café de calidad, sus tostas variadas y sus meriendas caseras. Ofrecen una atención personalizada en un ambiente tranquilo, ideal para un momento de relax o una pequeña reunión.",
     "category": "cafeterias",
-    "categoryName": "Cafeterias",
+    "categoryName": "Cafeterías",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "acogedor",
       "casero"
@@ -764,14 +764,14 @@
   },
   {
     "slug": "padel-el-canaveral",
-    "name": "Padel El Canaveral",
+    "name": "Pádel El Cañaveral",
     "description": "Club de pádel completo con pistas cubiertas y al aire libre, ubicado estratégicamente para los amantes de este deporte en El Cañaveral. Ofrecen clases para todos los niveles, desde principiantes hasta avanzados, y la posibilidad de alquilar pistas por horas para partidos con amigos o familiares.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
-      "padel",
+      "pádel",
       "clases",
       "alquiler"
     ],
@@ -801,14 +801,14 @@
     "name": "Escuela Infantil Los Minons",
     "description": "Escuela infantil privada en El Cañaveral, dedicada al cuidado y educación de niños de 4 meses a 3 años. Destaca por su flexibilidad y por aceptar cheques guardería (Edenred, Sodexo) y becas de la Comunidad de Madrid, facilitando el acceso a las familias del barrio.",
     "category": "educacion",
-    "categoryName": "Educacion e Infantil",
+    "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "website": "https://www.escuelainfantilosminions.com/",
     "tags": [
-      "guarderia",
+      "guardería",
       "privada",
-      "cheque-guarderia"
+      "cheque-guardería"
     ],
     "featured": true,
     "servicios": [
@@ -835,19 +835,19 @@
   },
   {
     "slug": "escuela-infantil-municipal-muneco-de-nieve",
-    "name": "Escuela Infantil Municipal Muneco de Nieve",
+    "name": "Escuela Infantil Municipal Muñeco de Nieve",
     "description": "Esta escuela infantil municipal, gestionada por el Ayuntamiento de Madrid, es un centro de referencia en El Cañaveral. Ofrece 156 plazas para niños de 0 a 3 años, brindando una educación pública de calidad y un entorno seguro y estimulante para los más pequeños del barrio.",
     "category": "educacion",
-    "categoryName": "Educacion e Infantil",
+    "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Calle Enrique Urquijo, 56, 28052 Madrid",
     "phone": "645 053 537",
     "email": "eicanaveral@madrid.es",
     "tags": [
-      "publica",
+      "pública",
       "municipal",
-      "guarderia"
+      "guardería"
     ],
     "featured": true,
     "servicios": [
@@ -867,24 +867,24 @@
     "horario": "L-V 7:30-16:30",
     "edades": "0-3 años",
     "plazas": 156,
-    "tipoGestion": "publica",
+    "tipoGestion": "pública",
     "image": "/images/categorias/educacion.jpg"
   },
   {
     "slug": "escuela-infantil-conde-nino",
-    "name": "Escuela Infantil Autonomica Conde Nino",
+    "name": "Escuela Infantil Autonómica Conde Niño",
     "description": "Inaugurada en 2024, esta escuela infantil de la Comunidad de Madrid en la Calle Victoria Kent es un nuevo referente para las familias de El Cañaveral. Con 186 plazas distribuidas en 12 aulas, ofrece una educación pública de calidad para los niños de 0 a 3 años, con un proyecto educativo moderno y completo.",
     "category": "educacion",
-    "categoryName": "Educacion e Infantil",
+    "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Calle Victoria Kent, 22, 28052 Madrid",
     "phone": "917 48 72 50",
     "email": "eei.condenino.madrid.madrid@educa.madrid.org",
     "tags": [
-      "publica",
-      "autonomica",
-      "guarderia"
+      "pública",
+      "autonómica",
+      "guardería"
     ],
     "featured": true,
     "servicios": [
@@ -904,17 +904,17 @@
     "horario": "L-V 7:30-16:30",
     "edades": "0-3 años",
     "plazas": 186,
-    "tipoGestion": "publica",
+    "tipoGestion": "pública",
     "image": "/images/categorias/educacion.jpg"
   },
   {
     "slug": "arturos-el-canaveral",
-    "name": "Arturos El Canaveral",
+    "name": "Arturos El Cañaveral",
     "description": "Arturos El Cañaveral es el lugar perfecto para los amantes de la cocina asturiana, ubicado en la Avenida de Miguel Delibes. Este restaurante se especializa en auténticos cachopos y un delicioso arroz con bogavante, trayendo los sabores del norte a nuestro barrio en un ambiente acogedor.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Avenida de Miguel Delibes, 30, Vicalvaro, 28052 Madrid",
     "tags": [
       "asturiano",
@@ -952,10 +952,10 @@
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "cocina-casera",
-      "menu-del-dia"
+      "menú-del-día"
     ],
     "featured": false,
     "servicios": [
@@ -985,12 +985,12 @@
   },
   {
     "slug": "con-sazon-el-canaveral",
-    "name": "Con Sazon El Canaveral",
+    "name": "Con Sazón El Cañaveral",
     "description": "Con Sazón El Cañaveral te trae el auténtico sabor de la cocina latina casera, con platos elaborados siguiendo recetas tradicionales que te transportarán a Latinoamérica. Es el lugar perfecto para disfrutar de una comida reconfortante y llena de sabor en el barrio.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "latino",
       "casero"
@@ -1027,12 +1027,12 @@
   },
   {
     "slug": "clinica-dental-canaveral",
-    "name": "Clinica Dental Canaveral",
+    "name": "Clínica Dental Cañaveral",
     "description": "Clínica Dental Cañaveral ofrece una atención odontológica integral para toda la familia, desde limpiezas rutinarias hasta tratamientos complejos. Ubicada en la Av. de Miguel Delibes, 59, es tu centro de confianza para mantener una sonrisa sana y bonita en el barrio.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Av. de Miguel Delibes, 59, Vicalvaro, 28052 Madrid",
     "phone": "911 94 05 47",
     "tags": [
@@ -1071,12 +1071,12 @@
   },
   {
     "slug": "sanitas-dental-el-canaveral",
-    "name": "Sanitas Dental Milenium El Canaveral",
+    "name": "Sanitas Dental Milenium El Cañaveral",
     "description": "Sanitas Dental Milenium El Cañaveral es un centro dental de referencia que combina la tecnología más avanzada con la comodidad de la financiación y la cobertura de seguros. Ofrecen todas las especialidades dentales para garantizar la salud bucodental de toda la familia.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "dentista",
       "sanitas",
@@ -1114,17 +1114,17 @@
   },
   {
     "slug": "clinica-dental-siglo-xxi-canaveral",
-    "name": "Clinica Dental Siglo XXI El Canaveral",
+    "name": "Clínica Dental Siglo XXI El Cañaveral",
     "description": "Clínica Dental Siglo XXI en El Cañaveral se distingue por el uso de tecnologías de última generación para ofrecer tratamientos dentales de alta calidad. Son especialistas en ortodoncia, estética dental e implantología, garantizando resultados óptimos y duraderos para tu sonrisa.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "website": "https://www.clinicadentalsigloxxi.com/clinica-dental-el-canaveral/",
     "tags": [
       "dentista",
       "ortodoncia",
-      "estetica-dental"
+      "digital"
     ],
     "featured": false,
     "servicios": [
@@ -1158,12 +1158,12 @@
   },
   {
     "slug": "mardones-y-martinez-dental",
-    "name": "Mardones y Martinez Clinica Dental",
+    "name": "Mardones y Martínez Clínica Dental",
     "description": "Mardones y Martínez Clínica Dental ofrece una atención profesional y cercana en El Cañaveral, con un servicio de urgencias dentales para cualquier imprevisto. Su compromiso es cuidar la salud bucodental de toda la familia con un trato humano y de confianza.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "website": "https://dentalmardonesymartinez.com/",
     "tags": [
       "dentista",
@@ -1201,12 +1201,12 @@
   },
   {
     "slug": "ikigai-dental-canaveral",
-    "name": "Clinica Dental Ikigai",
+    "name": "Clínica Dental Ikigai",
     "description": "Clínica Dental Ikigai en El Cañaveral se especializa en ortodoncia avanzada para pacientes de todas las edades, utilizando tecnología digital para tratamientos precisos y personalizados. Su enfoque se centra en encontrar el equilibrio perfecto para tu sonrisa y bienestar.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "website": "https://garantiadeclinica.com/clinicas-dentales-en-madrid/dentista-en-el-canaveral/",
     "tags": [
       "dentista",
@@ -1242,15 +1242,15 @@
   },
   {
     "slug": "antonella-peluqueria-y-belleza",
-    "name": "Antonella Peluqueria y Belleza",
+    "name": "Antonella Peluquería y Belleza",
     "description": "Antonella Peluquería y Belleza es tu salón de confianza en El Cañaveral para un cambio de look o un tratamiento de belleza. Ofrecen una amplia gama de servicios, desde cortes y color hasta tratamientos capilares y estética facial y corporal, para que te sientas radiante.",
     "category": "belleza",
-    "categoryName": "Belleza y Peluquerias",
+    "categoryName": "Belleza y Peluquerías",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
-      "peluqueria",
-      "estetica",
+      "peluquería",
+      "estética",
       "color"
     ],
     "featured": true,
@@ -1278,16 +1278,16 @@
   {
     "slug": "la-belle-vie-canaveral",
     "name": "La Belle Vie",
-    "description": "La Belle Vie es un salón de peluquería y estética en El Cañaveral que te ofrece una experiencia de belleza integral. Desde un nuevo corte de pelo hasta tratamientos faciales y corporales, aquí encontrarás todo lo necesario para cuidar tu imagen y bienestar en un ambiente exclusivo.",
+    "description": "La Belle Vie es un salón de peluquería y estética en El Cañaveral que te ofrece una experiencia de belleza integral. Desde un nuevo corte de pelo hasta tratamientos faciales y corporales, aquí encontrarás todo lo necesario para cuidar tu imagen y bienestar en un ambiente exclusivo y relajante. Nuestro equipo de profesionales está dedicado a proporcionarte un servicio excepcional y personalizado.",
     "category": "belleza",
-    "categoryName": "Belleza y Peluquerias",
+    "categoryName": "Belleza y Peluquerías",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Calle de Victoria Kent, 7, local A, 28052 El Canaveral, Madrid",
     "website": "https://www.labellevie.es/",
     "tags": [
-      "peluqueria",
-      "estetica",
+      "peluquería",
+      "estética",
       "belleza-integral"
     ],
     "featured": false,
@@ -1313,14 +1313,14 @@
   {
     "slug": "rizal-organic-studio",
     "name": "Rizal Organic Studio",
-    "description": "Rizal Organic Studio es una peluquería y centro de estética comprometido con la belleza natural, utilizando exclusivamente productos orgánicos y respetuosos con el medio ambiente. Son especialistas en cortes, tratamientos capilares y alisados con ácido hialurónico, ofreciendo resultados saludables y espectaculares en la Calle Francisco Grande Covian.",
+    "description": "Rizal Organic Studio es una peluquería y centro de estética comprometido con la belleza natural, utilizando exclusivamente productos orgánicos y respetuosos con el medio ambiente. Son especialistas en cortes, tratamientos capilares y alisados con ácido hialurónico, ofreciendo resultados saludables y espectaculares en la Calle Francisco Grande Covián. Su filosofía se centra en el bienestar del cliente y el cuidado del planeta.",
     "category": "belleza",
-    "categoryName": "Belleza y Peluquerias",
+    "categoryName": "Belleza y Peluquerías",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Calle Francisco Grande Covian, 3, 28052 Madrid",
     "tags": [
-      "organico",
+      "orgánico",
       "alisado",
       "tratamientos"
     ],
@@ -1346,16 +1346,16 @@
   },
   {
     "slug": "mai-de-diego-estetica-estilistas",
-    "name": "Mai de Diego Estetica y Estilistas",
-    "description": "Mai de Diego Estética y Estilistas es un salón unisex que se enorgullece de ser 100% orgánico y vegano, ofreciendo una experiencia de belleza consciente y respetuosa. Son especialistas en coloración natural y tratamientos sostenibles, garantizando resultados espectaculares sin comprometer tu salud ni el medio ambiente.",
+    "name": "Mai de Diego Estética y Estilistas",
+    "description": "Mai de Diego Estética y Estilistas es un salón unisex que se enorgullece de ser 100% orgánico y vegano, ofreciendo una experiencia de belleza consciente y respetuosa. Son especialistas en coloración natural y tratamientos sostenibles, garantizando resultados espectaculares sin comprometer tu salud ni el medio ambiente. Su compromiso con la ética y la calidad los convierte en una opción ideal para quienes buscan un cuidado capilar y estético responsable.",
     "category": "belleza",
-    "categoryName": "Belleza y Peluquerias",
+    "categoryName": "Belleza y Peluquerías",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "vegano",
-      "organico",
-      "coloracion-natural"
+      "orgánico",
+      "coloración-natural"
     ],
     "featured": false,
     "servicios": [
@@ -1382,16 +1382,16 @@
   {
     "slug": "caliza-estilistas",
     "name": "Caliza Estilistas",
-    "description": "Caliza Estilistas es una peluquería unisex en Vicálvaro, reconocida por su especialización en tratamientos de color y barbería. Ofrecen desde cortes y peinados modernos hasta las últimas tendencias en balayage y mechas, garantizando un look actual y personalizado para cada cliente.",
+    "description": "Caliza Estilistas es una peluquería unisex en Vicálvaro, reconocida por su especialización en tratamientos de color y barbería. Ofrecen desde cortes y peinados modernos hasta las últimas tendencias en balayage y mechas, garantizando un look actual y personalizado para cada cliente. Su equipo de estilistas profesionales está siempre al tanto de las últimas novedades para ofrecerte el mejor servicio.",
     "category": "belleza",
-    "categoryName": "Belleza y Peluquerias",
+    "categoryName": "Belleza y Peluquerías",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "website": "https://www.calizaestilistas.es/",
     "tags": [
       "color",
       "balayage",
-      "barberia"
+      "barbería"
     ],
     "featured": false,
     "servicios": [
@@ -1417,17 +1417,17 @@
   },
   {
     "slug": "energie-fitness-canaveral",
-    "name": "energie Fitness El Canaveral",
-    "description": "energie Fitness El Cañaveral es un gimnasio moderno y completo, ideal para quienes buscan mejorar su forma física en el barrio. Dispone de amplias salas de musculación, cardio, entrenamiento funcional y una variada oferta de clases dirigidas, todo con equipamiento de última generación.",
+    "name": "Energie Fitness El Cañaveral",
+    "description": "Energie Fitness El Cañaveral es un gimnasio moderno y completo, ideal para quienes buscan mejorar su forma física en el barrio. Dispone de amplias salas de musculación, cardio, entrenamiento funcional y una variada oferta de clases dirigidas, todo con equipamiento de última generación. Es el lugar perfecto para alcanzar tus objetivos de salud y bienestar en un ambiente dinámico y motivador.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "C. Cerro del Campo, 40, Vicalvaro, 28052 Madrid",
     "tags": [
       "gimnasio",
       "clases",
-      "musculacion"
+      "musculación"
     ],
     "featured": true,
     "servicios": [
@@ -1451,12 +1451,12 @@
   },
   {
     "slug": "apache-crosstraining-canaveral",
-    "name": "Apache CrossTraining El Canaveral",
-    "description": "Apache CrossTraining El Cañaveral es el centro de referencia para el entrenamiento funcional y CrossTraining en la zona. Ofrecen sesiones en grupo reducido con entrenadores certificados, garantizando una atención personalizada y resultados efectivos para mejorar tu fuerza, resistencia y agilidad.",
+    "name": "Apache CrossTraining El Cañaveral",
+    "description": "Apache CrossTraining El Cañaveral es el centro de referencia para el entrenamiento funcional y CrossTraining en la zona. Ofrecen sesiones en grupo reducido con entrenadores certificados, garantizando una atención personalizada y resultados efectivos para mejorar tu fuerza, resistencia y agilidad. Su metodología de entrenamiento está diseñada para desafiarte y ayudarte a superar tus límites.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "website": "https://www.apachecrosstraining.com/",
     "tags": [
       "crosstraining",
@@ -1487,12 +1487,12 @@
   },
   {
     "slug": "winfit-canaveral",
-    "name": "Winfit Gimnasio Canaveral",
-    "description": "Winfit Canaveral es un centro de entrenamiento moderno y cercano, ideal para quienes buscan resultados a través de sesiones personalizadas o en grupos reducidos. Ubicado estratégicamente en El Cañaveral, ofrece un ambiente motivador para mejorar tu forma física.",
+    "name": "Winfit Gimnasio Cañaveral",
+    "description": "Winfit Cañaveral es un centro de entrenamiento moderno y cercano, ideal para quienes buscan resultados a través de sesiones personalizadas o en grupos reducidos. Ubicado estratégicamente en El Cañaveral, ofrece un ambiente motivador para mejorar tu forma física. Su enfoque individualizado garantiza que cada cliente reciba la atención necesaria para alcanzar sus metas de salud y bienestar.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "hiit",
       "personal-trainer",
@@ -1520,12 +1520,12 @@
   },
   {
     "slug": "brooklyn-fitboxing-canaveral",
-    "name": "Brooklyn Fitboxing Canaveral",
-    "description": "Brooklyn Fitboxing Canaveral ofrece una experiencia de entrenamiento única y de alta intensidad, combinando boxeo sin contacto con ejercicios funcionales. Es perfecto para liberar estrés y quemar calorías en sesiones dinámicas de 47 minutos, con la última tecnología interactiva.",
+    "name": "Brooklyn Fitboxing Cañaveral",
+    "description": "Brooklyn Fitboxing Cañaveral ofrece una experiencia de entrenamiento única y de alta intensidad, combinando boxeo sin contacto con ejercicios funcionales. Es perfecto para liberar estrés y quemar calorías en sesiones dinámicas de 47 minutos, con la última tecnología interactiva. Disfruta de un entrenamiento divertido y efectivo que te ayudará a mejorar tu condición física y mental.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "fitboxing",
       "cardio",
@@ -1553,12 +1553,12 @@
   },
   {
     "slug": "peludos-del-canaveral",
-    "name": "Peludos del Canaveral",
-    "description": "Peludos del Cañaveral es la clínica veterinaria y peluquería canina de referencia en el barrio, ofreciendo un cuidado integral para tus mascotas. Ubicada en la Calle Victoria Kent, es el lugar ideal para la salud y el bienestar de perros y gatos, con un equipo profesional y cercano.",
+    "name": "Peludos del Cañaveral",
+    "description": "Peludos del Cañaveral es la clínica veterinaria y peluquería canina de referencia en el barrio, ofreciendo un cuidado integral para tus mascotas. Ubicada en la Calle Victoria Kent, es el lugar ideal para la salud y el bienestar de perros y gatos, con un equipo profesional y cercano. Se preocupan por cada detalle para que tus compañeros peludos reciban la mejor atención posible.",
     "category": "mascotas",
     "categoryName": "Mascotas",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Calle Victoria Kent s/n, 28052 El Canaveral, Madrid",
     "phone": "664 35 69 20",
     "website": "https://peludosdelcanaveral.es/",
@@ -1566,7 +1566,7 @@
     "numReviews": 153,
     "tags": [
       "veterinario",
-      "peluqueria-canina",
+      "peluquería-canina",
       "vacunas"
     ],
     "featured": true,
@@ -1589,17 +1589,17 @@
   },
   {
     "slug": "vicalcan-veterinario",
-    "name": "Vicalcan Clinica Veterinaria",
-    "description": "Vicalcan es una clínica veterinaria de confianza en Vicálvaro, con un equipo cualificado y dedicado al cuidado de tus animales. Ofrecen una amplia gama de servicios, desde medicina general hasta cirugías complejas, garantizando la salud y el bienestar de tus mascotas.",
+    "name": "Vicalcan Clínica Veterinaria",
+    "description": "Vicalcan es una clínica veterinaria de confianza en Vicálvaro, con un equipo cualificado y dedicado al cuidado de tus animales. Ofrecen una amplia gama de servicios, desde medicina general hasta cirugías complejas, garantizando la salud y el bienestar de tus mascotas. Su compromiso es proporcionar una atención médica de excelencia, utilizando las técnicas más avanzadas y un trato humano y compasivo.",
     "category": "mascotas",
     "categoryName": "Mascotas",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "website": "https://www.vicalcan.es/",
     "tags": [
       "veterinario",
-      "cirugia",
-      "diagnostico"
+      "cirugía",
+      "diagnóstico"
     ],
     "featured": false,
     "servicios": [
@@ -1623,15 +1623,15 @@
   },
   {
     "slug": "ferrokey-vicalvaro",
-    "name": "Ferrokey Vicalvaro",
-    "description": "Ferrokey Vicálvaro es tu ferretería de proximidad, ideal para encontrar todo lo que necesitas para el hogar, reparaciones o proyectos de bricolaje. Ubicada en la Calle San Cipriano, cuenta con un amplio surtido y personal experto para asesorarte.",
+    "name": "Ferrokey Vicálvaro",
+    "description": "Ferrokey Vicálvaro es tu ferretería de proximidad, ideal para encontrar todo lo que necesitas para el hogar, reparaciones o proyectos de bricolaje. Ubicada en la Calle San Cipriano, cuenta con un amplio surtido y personal experto para asesorarte. Su objetivo es ofrecer soluciones prácticas y productos de calidad para todas tus necesidades.",
     "category": "hogar",
     "categoryName": "Hogar y Reformas",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "address": "Calle San Cipriano, 18, 28032 Madrid",
     "tags": [
-      "ferreteria",
+      "ferretería",
       "bricolaje",
       "herramientas"
     ],
@@ -1655,15 +1655,15 @@
   },
   {
     "slug": "ferreteria-directa-vicalvaro",
-    "name": "Ferreteria Directa",
-    "description": "Ferretería Directa en Vicálvaro es un proveedor integral de suministros industriales y ferretería, ideal para profesionales y particulares con proyectos más exigentes. Ofrecen una gran variedad de herramientas, material eléctrico y ropa de trabajo, con la comodidad de su tienda online.",
+    "name": "Ferretería Directa",
+    "description": "Ferretería Directa en Vicálvaro es un proveedor integral de suministros industriales y ferretería, ideal para profesionales y particulares con proyectos más exigentes. Ofrecen una gran variedad de herramientas, material eléctrico y ropa de trabajo, con la comodidad de su tienda online. Su compromiso es brindar productos de alta calidad y un servicio eficiente para satisfacer las demandas de sus clientes.",
     "category": "hogar",
     "categoryName": "Hogar y Reformas",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "website": "https://www.ferreteriadirecta.es/",
     "tags": [
-      "ferreteria",
+      "ferretería",
       "industrial",
       "herramientas"
     ],
@@ -1689,12 +1689,12 @@
   },
   {
     "slug": "abogados-el-canaveral",
-    "name": "Abogados El Canaveral",
+    "name": "Abogados El Cañaveral",
     "description": "Abogados El Cañaveral es un despacho multidisciplinar que ofrece asesoramiento legal integral a vecinos y empresas del barrio. Ubicados en la Av. de Miguel Delibes, son especialistas en derecho inmobiliario, laboral y de familia, garantizando un servicio cercano y eficaz.",
     "category": "servicios-profesionales",
     "categoryName": "Servicios Profesionales",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Av. de Miguel Delibes, 74, Vicalvaro, 28052 Madrid",
     "website": "https://abogadoselcanaveral.com/",
     "tags": [
@@ -1722,15 +1722,15 @@
   },
   {
     "slug": "garcia-asociados-asesoria",
-    "name": "Garcia y Asociados Asesoria",
+    "name": "García y Asociados Asesoría",
     "description": "García y Asociados es una asesoría integral en Vicálvaro, perfecta para autónomos y pequeñas empresas que buscan una gestión eficiente. Ofrecen servicios fiscales, laborales y contables, liberándote de las preocupaciones administrativas para que te centres en tu negocio.",
     "category": "servicios-profesionales",
     "categoryName": "Servicios Profesionales",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "website": "https://garciaasociados.es/",
     "tags": [
-      "gestoria",
+      "gestoría",
       "fiscal",
       "laboral"
     ],
@@ -1761,12 +1761,12 @@
     "category": "servicios-profesionales",
     "categoryName": "Servicios Profesionales",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "website": "https://temploconsulting.com/",
     "tags": [
       "inmobiliaria",
       "sin-comisiones",
-      "valoracion"
+      "valoración"
     ],
     "featured": false,
     "servicios": [
@@ -1790,12 +1790,12 @@
   },
   {
     "slug": "beefcious-el-canaveral",
-    "name": "Beefcious El Canaveral",
-    "description": "Hamburguesería gourmet en El Cañaveral que ofrece una experiencia culinaria única con carnes premium a la brasa. Además de sus jugosas hamburguesas smash, podrás disfrutar de costillas BBQ y opciones veganas, ideal para todos los gustos.",
+    "name": "Beefcious El Cañaveral",
+    "description": "Hamburguesería gourmet en El Cañaveral que ofrece una experiencia culinaria única con carnes prémium a la brasa. Además de sus jugosas hamburguesas smash, podrás disfrutar de costillas BBQ y opciones veganas, ideal para todos los gustos.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "hamburguesas",
       "gourmet",
@@ -1828,15 +1828,15 @@
   },
   {
     "slug": "cerveceria-la-galerna",
-    "name": "Cerveceria La Galerna",
+    "name": "Cervecería La Galerna",
     "description": "Una auténtica cervecería de barrio ubicada en la Avenida Miguel Delibes, perfecta para disfrutar de una amplia selección de cervezas artesanales. Ofrecen deliciosas tapas y raciones en un ambiente relajado, con una agradable terraza para los días soleados.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Av. de Miguel Delibes, 25, Vicalvaro, 28052 Madrid",
     "tags": [
-      "cerveceria",
+      "cervecería",
       "tapas",
       "terraza"
     ],
@@ -1865,12 +1865,12 @@
   },
   {
     "slug": "churreria-bernis",
-    "name": "Churreria Bernis",
+    "name": "Churrería Bernis",
     "description": "La Churrería Bernis es una institución en el barrio de Vicálvaro, famosa por sus churros y porras artesanales, elaborados con la receta tradicional. Es el lugar perfecto para disfrutar de un desayuno o merienda auténticos, acompañados de su delicioso chocolate caliente casero.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
       "churros",
       "tradicional",
@@ -1907,10 +1907,10 @@
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
       "tradicional",
-      "madrileno",
+      "madrileño",
       "raciones"
     ],
     "featured": false,
@@ -1940,15 +1940,15 @@
   },
   {
     "slug": "el-rincon-de-carla",
-    "name": "El Rincon de Carla",
+    "name": "El Rincón de Carla",
     "description": "En el corazón de Vicálvaro, El Rincón de Carla es un bar-restaurante que destaca por su cocina casera y su popular menú del día. Su ambiente acogedor lo convierte en el lugar perfecto para disfrutar de una comida rica y asequible en un entorno cercano y familiar.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
       "casero",
-      "menu-del-dia"
+      "menú-del-día"
     ],
     "menuDelDia": true,
     "featured": false,
@@ -1983,7 +1983,7 @@
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
       "cocina-autor",
       "temporada"
@@ -2014,16 +2014,16 @@
   },
   {
     "slug": "clinica-fisioterapia-prolive",
-    "name": "Clinica de Fisioterapia Prolive",
+    "name": "Clínica de Fisioterapia Prolive",
     "description": "Ubicada en la Calle Victoria Kent, Local 8, en El Cañaveral, Prolive es un centro de fisioterapia de vanguardia. Se especializan en rehabilitación deportiva y tratamiento del dolor crónico, ofreciendo tratamientos personalizados con la última tecnología para una recuperación efectiva.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "C. Victoria Kent, Local 8, Vicalvaro, 28052 Madrid",
     "tags": [
       "fisioterapia",
-      "rehabilitacion",
+      "rehabilitación",
       "deportiva"
     ],
     "featured": false,
@@ -2052,30 +2052,30 @@
   },
   {
     "slug": "clinica-muv-canaveral",
-    "name": "Clinica MUV Fisioterapia y Pilates",
-    "description": "Clínica MUV en El Cañaveral es un centro integral de fisioterapia y pilates terapéutico. Son expertos en suelo pélvico, rehabilitación postparto y alivio del dolor de espalda, ofreciendo un enfoque holístico para la salud y el bienestar de sus pacientes.",
+    "name": "Clínica MUV Fisioterapia y Pilates",
+    "description": "Clínica MUV en El Cañaveral es un centro integral de fisioterapia y pilates terapéutico. Son expertos en suelo pélvico, rehabilitación posparto y alivio del dolor de espalda, ofreciendo un enfoque holístico para la salud y el bienestar de sus pacientes.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "website": "https://clinicamuv.com/",
     "tags": [
       "fisioterapia",
       "pilates",
-      "suelo-pelvico"
+      "suelo-pélvico"
     ],
     "featured": false,
     "servicios": [
       "Fisioterapia general",
       "Pilates terapéutico",
       "Fisioterapia de suelo pélvico",
-      "Rehabilitación postparto",
+      "Rehabilitación posparto",
       "Tratamiento del dolor de espalda",
       "Fisioterapia para embarazadas",
       "Drenaje linfático"
     ],
     "destacados": [
-      "Especialistas en suelo pélvico y postparto",
+      "Especialistas en suelo pélvico y posparto",
       "Clases de pilates terapéutico",
       "Enfoque integral y personalizado",
       "Profesionales altamente cualificados"
@@ -2097,12 +2097,12 @@
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "website": "https://focuscliniccanaveral.es/",
     "tags": [
       "fisioterapia",
       "deportiva",
-      "ecografia"
+      "ecografía"
     ],
     "featured": false,
     "servicios": [
@@ -2132,16 +2132,16 @@
   },
   {
     "slug": "fisioterapia-escalante",
-    "name": "Fisioterapia Escalante El Canaveral",
+    "name": "Fisioterapia Escalante El Cañaveral",
     "description": "Fisioterapia Escalante en la Calle Aloe Vera, El Cañaveral, ofrece un enfoque de atención personalizada para cada paciente. Sus tratamientos incluyen técnicas manuales, punción seca y ejercicio terapéutico, buscando la recuperación y el bienestar integral.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "C. Aloe Vera, Vicalvaro, 28052 Madrid",
     "tags": [
       "fisioterapia",
-      "puncion-seca",
+      "punción-seca",
       "manual"
     ],
     "featured": false,
@@ -2175,12 +2175,12 @@
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "address": "Bulevar Indalecio Prieto, 12, 28032 Madrid",
     "website": "https://podocano.com/",
     "tags": [
-      "podologia",
-      "psicologia",
+      "podología",
+      "psicología",
       "logopedia",
       "multidisciplinar"
     ],
@@ -2215,11 +2215,11 @@
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "website": "https://www.clinica.soulfisioterapia.com/",
     "tags": [
       "fisioterapia",
-      "osteopatia",
+      "osteopatía",
       "holístico"
     ],
     "featured": false,
@@ -2250,15 +2250,15 @@
   },
   {
     "slug": "english-connection-canaveral",
-    "name": "English Connection El Canaveral",
+    "name": "English Connection El Cañaveral",
     "description": "Ubicada en la Calle de la Igualdad, English Connection El Cañaveral es una academia de inglés que utiliza un método comunicativo y práctico. Ofrecen clases para niños, jóvenes y adultos, enfocándose en la conversación para un aprendizaje efectivo y dinámico.",
     "category": "educacion",
-    "categoryName": "Educacion e Infantil",
+    "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Calle de la Igualdad, 181, Vicalvaro, 28052 Madrid",
     "tags": [
-      "ingles",
+      "inglés",
       "academia",
       "idiomas"
     ],
@@ -2288,7 +2288,7 @@
     "name": "Talleres Sadeco Coslada",
     "description": "Talleres Sadeco Coslada, en Av. San Pablo, es un taller mecánico multimarca de confianza. Ofrecen un servicio completo que incluye Pre-ITV, mecánica rápida, cambio de neumáticos y mantenimiento preventivo, garantizando la seguridad y el buen funcionamiento de tu vehículo.",
     "category": "automocion",
-    "categoryName": "Automocion",
+    "categoryName": "Automoción",
     "zona": "coslada",
     "zonaName": "Coslada",
     "address": "Av. San Pablo, 32, 28823 Coslada, Madrid",
@@ -2296,7 +2296,7 @@
     "tags": [
       "taller",
       "pre-itv",
-      "neumaticos"
+      "neumáticos"
     ],
     "featured": true,
     "servicios": [
@@ -2321,13 +2321,13 @@
     "name": "Masruedas First Stop Coslada",
     "description": "Masruedas First Stop Coslada es tu centro de confianza para neumáticos y mecánica rápida. Realizan revisiones Pre-ITV, cambios de aceite, frenos y amortiguadores, asegurando que tu coche esté siempre en óptimas condiciones para la carretera.",
     "category": "automocion",
-    "categoryName": "Automocion",
+    "categoryName": "Automoción",
     "zona": "coslada",
     "zonaName": "Coslada",
     "website": "https://masruedas.es/",
     "tags": [
-      "neumaticos",
-      "mecanica-rapida",
+      "neumáticos",
+      "mecánica-rápida",
       "first-stop"
     ],
     "featured": false,
@@ -2355,14 +2355,14 @@
     "name": "Electroi Talleres",
     "description": "Electroi Talleres es tu centro de confianza en San Fernando de Henares para el mantenimiento y reparación de tu vehículo. Especializados en mecánica general, electricidad del automóvil y diagnóstico electrónico avanzado, te aseguran un servicio completo y de calidad para que tu coche esté siempre a punto. Ubicados estratégicamente para tu comodidad.",
     "category": "automocion",
-    "categoryName": "Automocion",
+    "categoryName": "Automoción",
     "zona": "san-fernando-de-henares",
     "zonaName": "San Fernando de Henares",
     "website": "https://electroi.es/",
     "tags": [
       "taller",
       "electricidad",
-      "diagnostico"
+      "diagnóstico"
     ],
     "featured": false,
     "servicios": [
@@ -2386,16 +2386,16 @@
   },
   {
     "slug": "inyeauto-san-fernando",
-    "name": "Inyeauto Taller Mecanico",
+    "name": "Inyeauto Taller Mecánico",
     "description": "Inyeauto es un taller mecánico de referencia en San Fernando de Henares, con una sólida experiencia en la reparación de motores, sistemas de inyección y electrónica del automóvil. Si tu coche presenta problemas complejos o simplemente necesitas un mantenimiento de confianza, aquí encontrarás profesionales cualificados para dejarlo como nuevo. Su especialización garantiza soluciones efectivas.",
     "category": "automocion",
-    "categoryName": "Automocion",
+    "categoryName": "Automoción",
     "zona": "san-fernando-de-henares",
     "zonaName": "San Fernando de Henares",
     "website": "https://www.inyeauto.es/",
     "tags": [
       "taller",
-      "inyeccion",
+      "inyección",
       "motores"
     ],
     "featured": false,
@@ -2425,12 +2425,12 @@
     "category": "moda",
     "categoryName": "Moda y Complementos",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "address": "Blvr. de Jose Prat, 29, B, 28032 Madrid",
     "tags": [
       "moda-femenina",
       "asesoramiento",
-      "unico"
+      "único"
     ],
     "featured": true,
     "servicios": [
@@ -2456,7 +2456,7 @@
     "category": "moda",
     "categoryName": "Moda y Complementos",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
       "ropa",
       "familia",
@@ -2487,10 +2487,10 @@
     "category": "moda",
     "categoryName": "Moda y Complementos",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
       "ropa",
-      "seleccion",
+      "selección",
       "asesoramiento"
     ],
     "featured": false,
@@ -2518,7 +2518,7 @@
     "category": "moda",
     "categoryName": "Moda y Complementos",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
       "moda",
       "tendencias",
@@ -2544,17 +2544,17 @@
   },
   {
     "slug": "telelavo-canaveral",
-    "name": "Telelavo El Canaveral",
+    "name": "Telelavo El Cañaveral",
     "description": "Telelavo El Cañaveral es tu solución integral para el cuidado de la ropa en el barrio. Ofrecen servicios de lavandería y tintorería con la comodidad de recogida y entrega a domicilio, además de una zona de autoservicio para quienes prefieren hacerlo ellos mismos. Es ideal para familias y profesionales con poco tiempo, ubicado estratégicamente en la C. Anna Frank, 8.",
     "category": "hogar",
     "categoryName": "Hogar y Reformas",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "C. Anna Frank, 8, Local 2, Vicalvaro, 28052 Madrid",
     "horario": "L-V 10:00-14:00, 17:00-20:00, S 10:00-14:00",
     "tags": [
-      "lavanderia",
-      "tintoreria",
+      "lavandería",
+      "tintorería",
       "domicilio"
     ],
     "featured": false,
@@ -2575,15 +2575,15 @@
   },
   {
     "slug": "lavanderia-vicalvaro",
-    "name": "Lavanderia Vicalvaro",
+    "name": "Lavandería Vicálvaro",
     "description": "Lavandería Vicálvaro es una lavandería de autoservicio moderna y eficiente, perfecta para lavar grandes volúmenes de ropa o prendas voluminosas como edredones y mantas. Sus máquinas industriales de última generación garantizan un lavado y secado óptimos, con detergente y suavizante incluidos, y está abierta 7 días a la semana para tu conveniencia.",
     "category": "hogar",
     "categoryName": "Hogar y Reformas",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "website": "https://www.lavanderiavicalvaro.com/",
     "tags": [
-      "lavanderia",
+      "lavandería",
       "autoservicio",
       "24h"
     ],
@@ -2608,21 +2608,21 @@
   },
   {
     "slug": "mediesven-canaveral",
-    "name": "Mediesven Centro Medico",
+    "name": "Mediesven Centro Médico",
     "description": "Mediesven Centro Médico es un referente en salud y bienestar en El Cañaveral, ofreciendo una amplia gama de especialidades médicas y tratamientos de medicina estética. Con un equipo de profesionales cualificados, se preocupan por la salud integral de toda la familia, desde pediatría hasta ginecología y dermatología, en un ambiente cercano y de confianza.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Calle de Mario Moreno Cantinflas, 72, 28052 Madrid",
     "website": "https://mediesven.com/",
     "rating": 4.7,
     "numReviews": 97,
     "tags": [
-      "centro-medico",
-      "pediatria",
-      "ginecologia",
-      "estetica"
+      "centro-médico",
+      "pediatría",
+      "ginecología",
+      "estética"
     ],
     "featured": true,
     "servicios": [
@@ -2645,12 +2645,12 @@
   },
   {
     "slug": "mr-kebab-canaveral",
-    "name": "Mr Kebab El Canaveral",
+    "name": "Mr Kebab El Cañaveral",
     "description": "Mr Kebab El Cañaveral es el lugar ideal para disfrutar de auténtica comida turca con raciones generosas y precios muy competitivos. Desde los clásicos kebabs y durum hasta falafel crujiente y platos combinados, tienen opciones para todos los gustos. Además, ofrecen un cómodo servicio a domicilio para que disfrutes en casa.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "C. Canada de Vicalvaro a San Fernando, Vicalvaro, 28052 Madrid",
     "phone": "911 66 01 15",
     "tags": [
@@ -2681,12 +2681,12 @@
   },
   {
     "slug": "telepizza-canaveral",
-    "name": "Telepizza Canaveral",
+    "name": "Telepizza Cañaveral",
     "description": "Telepizza Cañaveral es tu opción de confianza para disfrutar de pizzas recién hechas con la comodidad de la entrega a domicilio o la recogida en tienda. Con una amplia variedad de pizzas, entrantes, postres y ofertas diarias, es perfecto para cenas familiares, reuniones con amigos o simplemente para darte un capricho. Ubicado estratégicamente para servir a toda la zona de Vicálvaro.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
       "pizza",
       "domicilio",
@@ -2716,12 +2716,12 @@
   },
   {
     "slug": "kebabish-vicalvaro",
-    "name": "Kebabish Vicalvaro",
+    "name": "Kebabish Vicálvaro",
     "description": "Kebabish Vicálvaro te invita a un viaje culinario por la gastronomía turca, ofreciendo una extensa carta de kebabs, durum y platos elaborados con pollo y cordero. Con un ambiente familiar y precios accesibles, es una excelente opción para disfrutar de una comida auténtica y sabrosa en el corazón de Vicálvaro. No olvides visitar su web para ver el menú completo.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "website": "https://kebabishvicalvaro.es/",
     "tags": [
       "kebab",
@@ -2751,16 +2751,16 @@
   },
   {
     "slug": "lidl-canaveral",
-    "name": "Lidl El Canaveral",
+    "name": "Lidl El Cañaveral",
     "description": "Lidl El Cañaveral es tu supermercado de referencia para una compra inteligente, ofreciendo productos de marca propia de alta calidad a precios muy competitivos. Destaca por su panadería fresca en tienda, una amplia sección de frutas y verduras, y sus populares ofertas semanales en productos de alimentación y bazar. Es una opción excelente para la compra diaria en el barrio.",
     "category": "supermercados",
     "categoryName": "Supermercados",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "cadena",
       "discount",
-      "panaderia"
+      "panadería"
     ],
     "featured": false,
     "servicios": [
@@ -2822,7 +2822,7 @@
     "zonaName": "Coslada",
     "tags": [
       "cadena",
-      "eco",
+      "ecológico",
       "internacional"
     ],
     "featured": false,
@@ -2849,11 +2849,11 @@
     "name": "Laura Vivar Estilistas",
     "description": "Laura Vivar Estilistas es tu peluquería de confianza en la zona de Ambroz, Vicálvaro, donde la atención personalizada y las últimas tendencias se unen para realzar tu belleza. Especialistas en cortes modernos, coloraciones vibrantes, mechas y tratamientos capilares, te asesorarán para encontrar el estilo que mejor se adapte a ti y a tu cabello.",
     "category": "belleza",
-    "categoryName": "Belleza y Peluquerias",
+    "categoryName": "Belleza y Peluquerías",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
-      "peluqueria",
+      "peluquería",
       "tintes",
       "mechas"
     ],
@@ -2878,16 +2878,16 @@
   },
   {
     "slug": "obramat-canaveral",
-    "name": "Obramat El Canaveral",
+    "name": "Obramat El Cañaveral",
     "description": "Obramat El Cañaveral es el almacén profesional de referencia para todos tus proyectos de bricolaje, construcción y reformas. Con una vasta selección de herramientas, materiales de construcción, pintura, fontanería, electricidad, jardinería y decoración, encontrarás todo lo que necesitas, ya seas profesional o particular. Su amplio stock y precios competitivos lo hacen indispensable en la zona.",
     "category": "hogar",
     "categoryName": "Hogar y Reformas",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "bricolaje",
-      "construccion",
-      "jardineria"
+      "construcción",
+      "jardinería"
     ],
     "featured": true,
     "servicios": [
@@ -2911,12 +2911,12 @@
   },
   {
     "slug": "mcdonalds-canaveral",
-    "name": "McDonald's El Canaveral",
+    "name": "McDonald's El Cañaveral",
     "description": "McDonald's El Cañaveral es el lugar perfecto para disfrutar de tus hamburguesas favoritas, desayunos, ensaladas y postres en un ambiente familiar y moderno. Cuenta con servicio de auto-mac para mayor comodidad, una amplia sala interior y una agradable terraza. Además, integra un McCafé para los amantes del buen café y la repostería, siendo un punto de encuentro ideal en el barrio.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "cadena",
       "fast-food",
@@ -2952,7 +2952,7 @@
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
       "gimnasio",
       "24h",
@@ -2981,12 +2981,12 @@
   },
   {
     "slug": "vicalvaro-crossfit",
-    "name": "Vicalvaro CrossFit",
+    "name": "Vicálvaro CrossFit",
     "description": "Vicálvaro CrossFit es el box ideal para los amantes del CrossFit, ofreciendo una programación WOD diaria diseñada para desafiar y mejorar tu condición física. Con entrenadores certificados y una comunidad activa y motivadora, es el lugar perfecto para alcanzar tus objetivos de fuerza, resistencia y agilidad, independientemente de tu nivel de experiencia. Ubicado en la Calle de Prat, 32.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "address": "Calle de Prat, 32, 28032 Madrid",
     "website": "http://www.crossfitvicalvaro.es/",
     "tags": [
@@ -3015,12 +3015,12 @@
   },
   {
     "slug": "lorange-bleue-vicalvaro",
-    "name": "L'Orange Bleue Vicalvaro",
+    "name": "L'Orange Bleue Vicálvaro",
     "description": "L'Orange Bleue Vicálvaro es un gimnasio que te ofrece un ambiente motivador y un plan de entrenamiento personalizado para ayudarte a alcanzar tus metas de fitness. Con una amplia sala de musculación y cardio, y una gran variedad de clases dirigidas como Body Pump, Spinning, Yoga y funcional, es el lugar perfecto para mantenerte activo y en forma en Vicálvaro.",
     "category": "deporte",
     "categoryName": "Deporte y Fitness",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
       "gimnasio",
       "clases",
@@ -3048,17 +3048,17 @@
   },
   {
     "slug": "nemomarlin-canaveral",
-    "name": "Escuela Infantil Nemomarlin Canaveral",
+    "name": "Escuela Infantil Nemomarlin Cañaveral",
     "description": "Escuela infantil bilingüe ubicada en Alto del Esparragal, 202, que ofrece un entorno seguro y estimulante para los más pequeños. Con 7 amplias aulas, sala de psicomotricidad y un patio semi-cubierto, su metodología activa y atención individualizada garantizan el desarrollo integral de niños de 0 a 3 años.",
     "category": "educacion",
-    "categoryName": "Educacion e Infantil",
+    "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Alto del Esparragal, 202, 28052 Madrid",
     "website": "https://www.escuelanemomarlin.com/escuelas/escuela-infantil-canaveral/",
     "tags": [
-      "guarderia",
-      "bilingue",
+      "guardería",
+      "bilingüe",
       "privada"
     ],
     "edades": "0-3 años",
@@ -3088,13 +3088,13 @@
     "name": "Escuela Infantil AUPA",
     "description": "La Escuela Infantil AUPA, situada en Calle de Blas de Lezo, 15, se distingue por su pedagogía activa, donde el aprendizaje se fomenta a través de la exploración, el juego y la experimentación. Ofrece un entorno seguro y estimulante, ideal para el desarrollo integral de los niños en sus primeros años.",
     "category": "educacion",
-    "categoryName": "Educacion e Infantil",
+    "categoryName": "Educación e Infantil",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "website": "https://www.escuelainfantilaupa.com/",
     "tags": [
-      "guarderia",
-      "pedagogia-activa",
+      "guardería",
+      "pedagogía-activa",
       "privada"
     ],
     "edades": "0-3 años",
@@ -3128,7 +3128,7 @@
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Av. de Blas de Lezo, 18, Vicalvaro, 28052 Madrid",
     "phone": "919 26 51 11",
     "website": "https://ikigaidental.com/",
@@ -3168,12 +3168,12 @@
   },
   {
     "slug": "vicalvaro-dental",
-    "name": "Vicalvaro Dental",
-    "description": "Con más de 15 años de experiencia, Vicalvaro Dental es un centro odontológico de confianza en la Calle de San Cipriano, 20. Su equipo multidisciplinar está especializado en cirugías bucales complejas, periodoncia, implantología y ortodoncia, garantizando tratamientos de alta calidad con registro sanitario CS8092.",
+    "name": "Vicálvaro Dental",
+    "description": "Con más de 15 años de experiencia, Vicálvaro Dental es un centro odontológico de confianza en la Calle de San Cipriano, 20. Su equipo multidisciplinar está especializado en cirugías bucales complejas, periodoncia, implantología y ortodoncia, garantizando tratamientos de alta calidad con registro sanitario CS8092.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "website": "https://vicalvarodental.es/",
     "tags": [
       "dentista",
@@ -3212,17 +3212,17 @@
   },
   {
     "slug": "dentistaelcanaveral-consultorio",
-    "name": "Dentistas El Canaveral",
+    "name": "Dentistas El Cañaveral",
     "description": "Dentistas El Cañaveral es un portal informativo y consultorio de referencia en la Calle de Victoria Kent, 5, que agrupa y facilita el acceso a los servicios odontológicos disponibles en la zona. Ofrecen información detallada sobre los dentistas locales y sus especialidades para ayudarte a encontrar el profesional adecuado.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "website": "https://dentistaelcanaveral.com/",
     "tags": [
       "dentista",
       "consultorio",
-      "informacion"
+      "información"
     ],
     "featured": false,
     "address": "Calle de Victoria Kent, 5, 28052 Madrid",
@@ -3247,12 +3247,12 @@
   },
   {
     "slug": "vietnam-2013-canaveral",
-    "name": "Vietnam 2013 El Canaveral",
-    "description": "Restaurante vietnamita autentico, sucursal de la reconocida Chef Duong. Pho, banh mi, rollitos de primavera y platos tradicionales vietnamitas. Valoracion 9.1/10 en TheFork. Inaugurado en febrero 2025.",
+    "name": "Vietnam 2013 El Cañaveral",
+    "description": "Restaurante vietnamita auténtico, sucursal de la reconocida Chef Duong. Ofrecen pho, banh mi, rollitos de primavera y otros platos tradicionales vietnamitas. Cuenta con una valoración de 9.1/10 en TheFork y fue inaugurado en febrero de 2025.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Calle Ferenc Puskas, 193, 28052 Madrid",
     "website": "https://vietnamrestaurante.com/",
     "rating": 4.6,
@@ -3260,22 +3260,36 @@
       "vietnamita",
       "pho",
       "banh-mi",
-      "asiatico"
+      "asiático"
     ],
     "tiposCocina": [
       "vietnamita",
-      "asiatica"
+      "asiática"
     ],
-    "featured": true
+    "featured": true,
+    "servicios": [
+      "Comida para llevar",
+      "Servicio a domicilio",
+      "Cenas de grupo",
+      "Opciones vegetarianas",
+      "Terraza exterior",
+      "Menú del día"
+    ],
+    "destacados": [
+      "Auténtica cocina vietnamita",
+      "Platos tradicionales y frescos",
+      "Excelente valoración en TheFork"
+    ],
+    "horario": "L-D 13:00-16:00 y 20:00-23:00"
   },
   {
     "slug": "seven-canaveral",
-    "name": "Seven El Canaveral",
-    "description": "Restaurante bar con horario amplio de lunes a domingo. Cocina variada, terraza y ambiente moderno en el corazon del Canaveral.",
+    "name": "Seven El Cañaveral",
+    "description": "Restaurante bar con horario amplio de lunes a domingo. Ofrece cocina variada, una agradable terraza y un ambiente moderno en el corazón del Cañaveral. Es el lugar ideal para disfrutar de una comida o cena informal con amigos o familia.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Av. de Miguel Delibes, 30, 28052 Madrid",
     "phone": "657 77 78 80",
     "tags": [
@@ -3285,22 +3299,35 @@
     ],
     "terraza": true,
     "horario": "L-J 07:00-00:00, V 07:00-01:00, S-D 09:00-01:00",
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Desayunos y meriendas",
+      "Menú del día",
+      "Cenas a la carta",
+      "Terraza exterior",
+      "Bebidas y cócteles",
+      "Eventos privados"
+    ],
+    "destacados": [
+      "Amplio horario de apertura",
+      "Terraza soleada",
+      "Ambiente moderno y acogedor"
+    ]
   },
   {
     "slug": "havana-madrid-canaveral",
     "name": "Havana Madrid",
-    "description": "Cafeteria y restaurante de comida rapida cubana. Cafes, refrigerios, bocadillos y platos cubanos. Abierto de martes a domingo.",
+    "description": "Cafetería y restaurante de comida rápida cubana. Ofrecen cafés, refrigerios, bocadillos y platos cubanos auténticos. Abierto de martes a domingo, es el lugar perfecto para disfrutar de los sabores del Caribe en El Cañaveral.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Av. de Miguel Delibes, 30, local 1, 28052 Madrid",
     "phone": "918 98 69 36",
     "tags": [
       "cubano",
-      "cafeteria",
-      "comida-rapida"
+      "cafetería",
+      "comida-rápida"
     ],
     "tiposCocina": [
       "cubana",
@@ -3308,16 +3335,29 @@
     ],
     "horario": "Ma-D 10:00-16:00, 20:00-23:30",
     "delivery": false,
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Desayunos cubanos",
+      "Bocadillos y sándwiches",
+      "Platos combinados",
+      "Cafés especiales",
+      "Bebidas refrescantes",
+      "Ambiente caribeño"
+    ],
+    "destacados": [
+      "Auténtica comida cubana",
+      "Variedad de cafés",
+      "Ambiente acogedor y familiar"
+    ]
   },
   {
     "slug": "guasacaca-madrid-canaveral",
     "name": "Guasacaca Madrid",
-    "description": "Restaurante de comida venezolana en El Canaveral. Arepas, tequeños, cachapas, pabellon criollo y platos tipicos. Nuevo local en esquina Blas de Lezo con Mayorazgo de Duarte.",
+    "description": "Restaurante de comida venezolana en El Cañaveral. Ofrecen arepas, tequeños, cachapas, pabellón criollo y otros platos típicos venezolanos. Han inaugurado un nuevo local en la esquina de Blas de Lezo con Mayorazgo de Duarte, trayendo los auténticos sabores de Venezuela al barrio.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Calle Blas de Lezo esq. Mayorazgo de Duarte, 28052 Madrid",
     "tags": [
       "venezolano",
@@ -3329,40 +3369,68 @@
       "venezolana",
       "latina"
     ],
-    "featured": true
+    "featured": true,
+    "servicios": [
+      "Comida para llevar",
+      "Servicio a domicilio",
+      "Opciones vegetarianas",
+      "Bebidas típicas venezolanas",
+      "Menú infantil",
+      "Catering para eventos"
+    ],
+    "destacados": [
+      "Auténtica gastronomía venezolana",
+      "Amplia variedad de arepas",
+      "Nuevo local con ambiente moderno"
+    ],
+    "horario": "Ma-D 12:30-16:00 y 19:30-23:00"
   },
   {
     "slug": "chinawok-express-canaveral",
-    "name": "ChinaWok Express El Canaveral",
-    "description": "Comida china estilo venezolano. Arroz frito, chop suey, lumpias, wok y platos fusion chino-venezolana. Nueva sede en El Canaveral.",
+    "name": "ChinaWok Express El Cañaveral",
+    "description": "Comida china estilo venezolano. Arroz frito, chop suey, lumpias, wok y platos fusión chino-venezolana. Nueva sede en El Cañaveral, ofreciendo una experiencia culinaria única con sabores auténticos y una atmósfera acogedora.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Av. de Blas de Lezo, 39, 28052 Madrid",
     "website": "https://chinawokexpress.es/",
     "tags": [
       "chino",
       "venezolano",
-      "fusion",
+      "fusión",
       "wok"
     ],
     "tiposCocina": [
       "china",
       "venezolana",
-      "fusion"
+      "fusión"
     ],
     "delivery": true,
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Comida para llevar",
+      "Servicio a domicilio",
+      "Catering para eventos",
+      "Menú del día",
+      "Opciones vegetarianas",
+      "Reservas online"
+    ],
+    "destacados": [
+      "Auténtica fusión chino-venezolana",
+      "Platos frescos y sabrosos",
+      "Excelente relación calidad-precio"
+    ],
+    "horario": "Lunes a Domingo: 13:00-16:00 y 20:00-23:00"
   },
   {
     "slug": "la-bajada-street-food-vicalvaro",
-    "name": "La Bajada Street Food Vicalvaro",
-    "description": "Street food de autor en Vicalvaro. Uno de los restaurantes nuevos mejor valorados de la zona con nota 9.1 en TheFork. Cocina creativa e informal.",
+    "name": "La Bajada Street Food Vicálvaro",
+    "description": "Street food de autor en Vicálvaro. Uno de los restaurantes nuevos mejor valorados de la zona con nota 9.1 en TheFork. Cocina creativa e informal, ideal para disfrutar de sabores innovadores en un ambiente moderno y desenfadado.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
-    "zonaName": "Vicalvaro",
+    "zonaName": "Vicálvaro",
     "rating": 4.5,
     "tags": [
       "street-food",
@@ -3370,19 +3438,33 @@
       "tendencia"
     ],
     "tiposCocina": [
-      "fusion",
+      "fusión",
       "street-food"
     ],
-    "featured": true
+    "featured": true,
+    "servicios": [
+      "Comida para llevar",
+      "Terraza exterior",
+      "Opciones veganas",
+      "Menú degustación",
+      "Música ambiente",
+      "Reservas online"
+    ],
+    "destacados": [
+      "Cocina de autor innovadora",
+      "Ambiente moderno y juvenil",
+      "Excelente valoración en TheFork"
+    ],
+    "horario": "Martes a Jueves: 13:30-16:00 y 20:30-23:00, Viernes y Sábado: 13:30-16:00 y 20:30-00:00, Domingo: 13:30-16:00"
   },
   {
     "slug": "farmacia-central-canaveral",
-    "name": "Farmacia Central Canaveral",
-    "description": "Farmacia de referencia en El Canaveral con amplio horario. Medicamentos, parafarmacia, dermocosmetica, ortopedia y atencion farmaceutica personalizada. Servicio de guardia.",
+    "name": "Farmacia Central Cañaveral",
+    "description": "Farmacia de referencia en El Cañaveral con amplio horario. Medicamentos, parafarmacia, dermocosmética, ortopedia y atención farmacéutica personalizada. Servicio de guardia para cubrir todas las necesidades de salud de la comunidad.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Av. de Miguel Delibes, 72, 28052 Madrid",
     "phone": "911 08 10 08",
     "website": "http://www.farmaciacentralcanaveral.es/",
@@ -3391,89 +3473,173 @@
       "guardia",
       "parafarmacia"
     ],
-    "featured": true
+    "featured": true,
+    "servicios": [
+      "Dispensación de medicamentos",
+      "Asesoramiento farmacéutico",
+      "Toma de tensión",
+      "Control de peso",
+      "Preparación de SPD",
+      "Dermocosmética"
+    ],
+    "destacados": [
+      "Amplio horario y servicio de guardia",
+      "Atención personalizada y profesional",
+      "Gran variedad de productos de parafarmacia"
+    ],
+    "horario": "Lunes a Viernes: 09:00-22:00, Sábado: 09:30-14:00 y 17:00-21:00, Domingo: Cerrado (consultar guardias)"
   },
   {
     "slug": "farmacia-sonrisas-canaveral",
-    "name": "Farmacia Sonrisas del Canaveral",
-    "description": "Farmacia en Calle Anna Frank con atencion cercana. Articulos para el cuidado de la salud y bienestar, cosmetica natural y productos infantiles.",
+    "name": "Farmacia Sonrisas del Cañaveral",
+    "description": "Farmacia en Calle Anna Frank con atención cercana. Artículos para el cuidado de la salud y bienestar, cosmética natural y productos infantiles. Un espacio dedicado al cuidado integral de toda la familia con un trato amable y profesional.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Calle Anna Frank, 10, 28052 Madrid",
     "website": "https://www.farmaciasonrisascanaveral.com/",
     "tags": [
       "farmacia",
-      "cosmetica-natural",
+      "cosmética-natural",
       "infantil"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Dispensación de medicamentos",
+      "Asesoramiento en cosmética natural",
+      "Productos para bebés",
+      "Nutrición y dietética",
+      "Homeopatía",
+      "Toma de tensión"
+    ],
+    "destacados": [
+      "Especialistas en cosmética natural",
+      "Amplia gama de productos infantiles",
+      "Trato cercano y familiar"
+    ],
+    "horario": "Lunes a Viernes: 09:30-14:00 y 17:00-20:30, Sábado: 10:00-14:00, Domingo: Cerrado"
   },
   {
     "slug": "farmacia-botica-de-mar",
     "name": "Farmacia La Botica de Mar",
-    "description": "Farmacia en Avenida Blas de Lezo. Medicamentos, dermofarmacia y servicio personalizado para los vecinos del Canaveral.",
+    "description": "Farmacia en Avenida Blas de Lezo. Medicamentos, dermofarmacia y servicio personalizado para los vecinos del Cañaveral. Ofrecemos una amplia variedad de productos y un equipo de profesionales dispuesto a resolver cualquier duda sobre su salud.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "Av. de Blas de Lezo, 28052 Madrid",
     "tags": [
       "farmacia"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Dispensación de medicamentos",
+      "Dermofarmacia",
+      "Asesoramiento nutricional",
+      "Productos de higiene personal",
+      "Ortopedia básica",
+      "Control de glucosa"
+    ],
+    "destacados": [
+      "Servicio personalizado y cercano",
+      "Especialistas en dermofarmacia",
+      "Ubicación céntrica en el barrio"
+    ],
+    "horario": "Lunes a Viernes: 09:00-14:00 y 17:00-20:00, Sábado: 10:00-14:00, Domingo: Cerrado"
   },
   {
     "slug": "farmacia-el-canaveral-vk",
-    "name": "Farmacia El Canaveral",
-    "description": "Farmacia con 12 horas de servicio diario. Ubicada en esquina Victorino Granizo con Victoria Kent. Amplio horario para comodidad de los vecinos.",
+    "name": "Farmacia El Cañaveral",
+    "description": "Farmacia con 12 horas de servicio diario. Ubicada en esquina Victorino Granizo con Victoria Kent. Amplio horario para comodidad de los vecinos, garantizando acceso a medicamentos y productos de salud durante gran parte del día.",
     "category": "salud",
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "address": "C. Victorino Granizo, 71, esq. Victoria Kent, 28052 Madrid",
     "tags": [
       "farmacia",
       "horario-amplio"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Dispensación de medicamentos",
+      "Parafarmacia",
+      "Asesoramiento farmacéutico",
+      "Toma de tensión arterial",
+      "Control de peso",
+      "Productos de higiene bucal"
+    ],
+    "destacados": [
+      "Horario extendido de 12 horas",
+      "Ubicación estratégica en el barrio",
+      "Amplia disponibilidad de productos"
+    ],
+    "horario": "Lunes a Viernes: 09:00-21:00, Sábado: 09:30-14:00, Domingo: Cerrado"
   },
   {
     "slug": "jardin-canaveral",
-    "name": "Jardin Canaveral",
-    "description": "Restaurante con terraza ajardinada en El Canaveral. Cocina mediterranea, carnes a la brasa y ambiente familiar. Espacio exterior amplio para disfrutar al aire libre.",
+    "name": "Jardín Cañaveral",
+    "description": "Restaurante con terraza ajardinada en El Cañaveral. Cocina mediterránea, carnes a la brasa y ambiente familiar. Espacio exterior amplio para disfrutar al aire libre, ideal para comidas y cenas en un entorno relajado y agradable.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "terraza",
-      "jardin",
-      "mediterraneo",
+      "jardín",
+      "mediterráneo",
       "brasa"
     ],
     "tiposCocina": [
-      "mediterranea",
+      "mediterránea",
       "brasa"
     ],
     "terraza": true,
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Terraza exterior",
+      "Zona infantil",
+      "Menú del día",
+      "Eventos privados",
+      "Opciones sin gluten",
+      "Reservas online"
+    ],
+    "destacados": [
+      "Amplia terraza ajardinada",
+      "Especialidad en carnes a la brasa",
+      "Ambiente familiar y acogedor"
+    ],
+    "horario": "Martes a Domingo: 13:00-16:30 y 20:00-23:30, Lunes: Cerrado"
   },
   {
     "slug": "estanco-el-canaveral",
-    "name": "Estanco El Canaveral",
-    "description": "Expendeduria de tabaco y timbre del Estado. Tambien loteria, recargas, prensa y articulos de fumador. Primer estanco del barrio, licencia adjudicada por subasta.",
+    "name": "Estanco El Cañaveral",
+    "description": "Expendeduría de tabaco y timbre del Estado. También lotería, recargas, prensa y artículos de fumador. Primer estanco del barrio, licencia adjudicada por subasta, ofreciendo una amplia gama de productos y servicios esenciales para la comunidad.",
     "category": "servicios-profesionales",
     "categoryName": "Servicios Profesionales",
     "zona": "el-canaveral",
-    "zonaName": "El Canaveral",
+    "zonaName": "El Cañaveral",
     "tags": [
       "estanco",
       "tabaco",
-      "loteria",
+      "lotería",
       "prensa"
     ],
-    "featured": false
+    "featured": false,
+    "servicios": [
+      "Venta de tabaco y sellos",
+      "Loterías y apuestas del Estado",
+      "Recargas de teléfono",
+      "Prensa y revistas",
+      "Artículos de fumador",
+      "Servicio de paquetería"
+    ],
+    "destacados": [
+      "Primer estanco del barrio",
+      "Amplia variedad de productos",
+      "Punto de venta de loterías"
+    ],
+    "horario": "Lunes a Viernes: 09:00-14:00 y 17:00-20:00, Sábado: 09:30-14:00, Domingo: Cerrado"
   }
 ]
