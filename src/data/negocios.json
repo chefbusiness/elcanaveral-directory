@@ -868,7 +868,7 @@
     "edades": "0-3 años",
     "plazas": 156,
     "tipoGestion": "pública",
-    "image": "/images/categorias/educacion.jpg"
+    "image": "/images/negocios/escuela-infantil-municipal-muneco-de-nieve.jpg"
   },
   {
     "slug": "escuela-infantil-conde-nino",
@@ -943,7 +943,7 @@
     ],
     "terraza": true,
     "precioRango": "€€",
-    "image": "/images/categorias/restaurantes.jpg"
+    "image": "/images/negocios/arturos-el-canaveral.jpg"
   },
   {
     "slug": "los-fogones-canaveral",
@@ -980,7 +980,7 @@
     "menuDelDia": true,
     "terraza": true,
     "precioRango": "€",
-    "image": "/images/categorias/restaurantes.jpg",
+    "image": "/images/negocios/los-fogones-canaveral.jpg",
     "address": "Avenida Miguel Delibes 25, 28052 Madrid"
   },
   {
@@ -1022,7 +1022,7 @@
     "terraza": true,
     "delivery": true,
     "precioRango": "€€",
-    "image": "/images/categorias/restaurantes.jpg",
+    "image": "/images/negocios/con-sazon-el-canaveral.jpg",
     "address": "Calle Anna Frank 15, 28052 Madrid"
   },
   {
@@ -1067,7 +1067,7 @@
       "Periodoncia",
       "Odontopediatría"
     ],
-    "image": "/images/categorias/salud.jpg"
+    "image": "/images/negocios/clinica-dental-canaveral.jpg"
   },
   {
     "slug": "sanitas-dental-el-canaveral",
@@ -1109,7 +1109,7 @@
       "Periodoncia",
       "Cirugía Oral"
     ],
-    "image": "/images/categorias/salud.jpg",
+    "image": "/images/negocios/sanitas-dental-el-canaveral.jpg",
     "address": "Avenida Miguel Delibes 18, 28052 Madrid"
   },
   {
@@ -1271,7 +1271,7 @@
       "Ambiente agradable y relajante"
     ],
     "horario": "M-V 10:00-19:00, S 9:30-14:00",
-    "image": "/images/categorias/belleza.jpg",
+    "image": "/images/negocios/antonella-peluqueria-y-belleza.jpg",
     "address": "Av. Miguel Delibes 35, 28052 Madrid",
     "phone": "612345678"
   },
@@ -1342,7 +1342,7 @@
       "Resultados naturales y duraderos"
     ],
     "horario": "M-V 10:00-19:00, S 9:00-14:00",
-    "image": "/images/categorias/belleza.jpg"
+    "image": "/images/negocios/rizal-organic-studio.jpg"
   },
   {
     "slug": "mai-de-diego-estetica-estilistas",
@@ -1375,7 +1375,7 @@
       "Productos de alta calidad y éticos"
     ],
     "horario": "M-V 9:30-19:30, S 9:00-14:00",
-    "image": "/images/categorias/belleza.jpg",
+    "image": "/images/negocios/mai-de-diego-estetica-estilistas.jpg",
     "address": "Calle Victoria Kent 12, 28052 Madrid",
     "phone": "912345678"
   },
@@ -1447,7 +1447,7 @@
       "Monitores cualificados"
     ],
     "horario": "L-V 7:00-22:00, S 9:00-14:00, D 10:00-14:00",
-    "image": "/images/categorias/deporte.jpg"
+    "image": "/images/negocios/energie-fitness-canaveral.jpg"
   },
   {
     "slug": "apache-crosstraining-canaveral",
@@ -1514,7 +1514,7 @@
       "Variedad de entrenamientos para todos los niveles"
     ],
     "horario": "L-V 7:00-22:00, S 9:00-14:00",
-    "image": "/images/categorias/deporte.jpg",
+    "image": "/images/negocios/winfit-canaveral.jpg",
     "address": "Calle Anna Frank 20, 28052 Madrid",
     "phone": "918765432"
   },
@@ -1547,7 +1547,7 @@
       "Comunidad activa y motivadora"
     ],
     "horario": "L-V 7:00-22:00, S 9:00-14:00",
-    "image": "/images/categorias/deporte.jpg",
+    "image": "/images/negocios/brooklyn-fitboxing-canaveral.jpg",
     "address": "Av. Miguel Delibes 50, 28052 Madrid",
     "phone": "917654321"
   },
@@ -1585,7 +1585,7 @@
       "Trato amable y cercano con las mascotas"
     ],
     "horario": "L-V 10:00-14:00 y 17:00-20:00, S 10:00-14:00",
-    "image": "/images/categorias/mascotas.jpg"
+    "image": "/images/negocios/peludos-del-canaveral.jpg"
   },
   {
     "slug": "vicalcan-veterinario",
@@ -1651,7 +1651,7 @@
       "Servicio de duplicado de llaves al instante"
     ],
     "horario": "L-V 9:00-14:00 y 17:00-20:00, S 9:30-14:00",
-    "image": "/images/categorias/hogar.jpg"
+    "image": "/images/negocios/ferrokey-vicalvaro.jpg"
   },
   {
     "slug": "ferreteria-directa-vicalvaro",
@@ -1683,7 +1683,7 @@
       "Asesoramiento experto para proyectos complejos"
     ],
     "horario": "L-V 8:30-19:00",
-    "image": "/images/categorias/hogar.jpg",
+    "image": "/images/negocios/ferreteria-directa-vicalvaro.jpg",
     "address": "Calle Villacarlos 7, 28032 Madrid",
     "phone": "913056789"
   },
@@ -1824,7 +1824,8 @@
     "delivery": true,
     "precioRango": "€€",
     "address": "Av. Miguel Delibes 40, 28052 Madrid",
-    "phone": "912345678"
+    "phone": "912345678",
+    "image": "/images/negocios/beefcious-el-canaveral.jpg"
   },
   {
     "slug": "cerveceria-la-galerna",
@@ -1861,7 +1862,8 @@
       "Española",
       "Tapas"
     ],
-    "precioRango": "€"
+    "precioRango": "€",
+    "image": "/images/negocios/cerveceria-la-galerna.jpg"
   },
   {
     "slug": "churreria-bernis",
@@ -1898,7 +1900,8 @@
     ],
     "precioRango": "€",
     "address": "Calle San Cipriano 10, 28032 Madrid",
-    "phone": "913711122"
+    "phone": "913711122",
+    "image": "/images/negocios/churreria-bernis.jpg"
   },
   {
     "slug": "casa-botija",
@@ -1936,7 +1939,8 @@
     "menuDelDia": true,
     "precioRango": "€€",
     "address": "Calle Jose Prat 5, 28032 Madrid",
-    "phone": "913713344"
+    "phone": "913713344",
+    "image": "/images/negocios/casa-botija.jpg"
   },
   {
     "slug": "el-rincon-de-carla",
@@ -1974,7 +1978,8 @@
     "terraza": true,
     "precioRango": "€",
     "address": "Calle Villacarlos 18, 28032 Madrid",
-    "phone": "913715566"
+    "phone": "913715566",
+    "image": "/images/negocios/el-rincon-de-carla.jpg"
   },
   {
     "slug": "rechupete-vicalvaro",
@@ -2010,7 +2015,8 @@
     ],
     "precioRango": "€€€",
     "address": "Calle San Cipriano 25, 28032 Madrid",
-    "phone": "913717788"
+    "phone": "913717788",
+    "image": "/images/negocios/rechupete-vicalvaro.jpg"
   },
   {
     "slug": "clinica-fisioterapia-prolive",
@@ -2048,7 +2054,8 @@
       "Fisioterapia traumatológica",
       "Fisioterapia reumatológica",
       "Fisioterapia neurológica"
-    ]
+    ],
+    "image": "/images/negocios/clinica-fisioterapia-prolive.jpg"
   },
   {
     "slug": "clinica-muv-canaveral",
@@ -2168,7 +2175,8 @@
       "Fisioterapia deportiva",
       "Fisioterapia general",
       "Punción seca"
-    ]
+    ],
+    "image": "/images/negocios/fisioterapia-escalante.jpg"
   },
   {
     "slug": "centro-sanitario-cano",
@@ -2208,7 +2216,8 @@
       "Fisioterapia",
       "Psicología",
       "Logopedia"
-    ]
+    ],
+    "image": "/images/negocios/centro-sanitario-cano.jpg"
   },
   {
     "slug": "soul-fisioterapia",
@@ -2284,7 +2293,8 @@
     "horario": "L-V 10:00-14:00, 16:00-21:00",
     "edades": "Desde 3 años hasta adultos",
     "plazas": 150,
-    "tipoGestion": "privada"
+    "tipoGestion": "privada",
+    "image": "/images/negocios/english-connection-canaveral.jpg"
   },
   {
     "slug": "sadeco-coslada",
@@ -2422,7 +2432,8 @@
     ],
     "horario": "L-V 9:00-14:00 y 16:00-19:00",
     "address": "Calle de la Carpintería, 10, 28830 San Fernando de Henares, Madrid",
-    "phone": "916 74 00 00"
+    "phone": "916 74 00 00",
+    "image": "/images/negocios/inyeauto-san-fernando.jpg"
   },
   {
     "slug": "aticomoda-vicalvaro",
@@ -2453,7 +2464,8 @@
       "Ambiente acogedor y personal",
       "Ideal para encontrar ese 'algo' diferente"
     ],
-    "horario": "L-S 10:00-14:00 y 17:00-20:30"
+    "horario": "L-S 10:00-14:00 y 17:00-20:30",
+    "image": "/images/negocios/aticomoda-vicalvaro.jpg"
   },
   {
     "slug": "almacenes-jimar",
@@ -2484,7 +2496,8 @@
       "Ideal para compras del día a día"
     ],
     "horario": "L-S 10:00-14:00 y 17:00-20:00",
-    "address": "Calle de San Cipriano, 34, 28032 Madrid"
+    "address": "Calle de San Cipriano, 34, 28032 Madrid",
+    "image": "/images/negocios/almacenes-jimar.jpg"
   },
   {
     "slug": "almacenes-s-lara",
@@ -2515,7 +2528,8 @@
       "Ideal para encontrar piezas duraderas"
     ],
     "horario": "L-S 10:00-14:00 y 17:00-20:30",
-    "address": "Calle de Villacarlos, 12, 28032 Madrid"
+    "address": "Calle de Villacarlos, 12, 28032 Madrid",
+    "image": "/images/negocios/almacenes-s-lara.jpg"
   },
   {
     "slug": "akiomoda-vicalvaro",
@@ -2546,7 +2560,8 @@
       "Ideal para renovar el armario con lo más actual"
     ],
     "horario": "L-S 10:30-14:00 y 17:30-20:30",
-    "address": "Calle de Jose Prat, 25, 28032 Madrid"
+    "address": "Calle de Jose Prat, 25, 28032 Madrid",
+    "image": "/images/negocios/akiomoda-vicalvaro.jpg"
   },
   {
     "slug": "telelavo-canaveral",
@@ -2577,7 +2592,8 @@
       "Amplia gama de servicios para todo tipo de prendas",
       "Ubicación céntrica en El Cañaveral",
       "Horario flexible para adaptarse a tus necesidades"
-    ]
+    ],
+    "image": "/images/negocios/telelavo-canaveral.jpg"
   },
   {
     "slug": "lavanderia-vicalvaro",
@@ -2685,7 +2701,8 @@
       "Servicio de entrega a domicilio rápido",
       "Ideal para una comida rápida y sabrosa"
     ],
-    "horario": "L-D 12:00-00:00"
+    "horario": "L-D 12:00-00:00",
+    "image": "/images/negocios/mr-kebab-canaveral.jpg"
   },
   {
     "slug": "telepizza-canaveral",
@@ -2720,7 +2737,8 @@
     ],
     "horario": "L-D 13:00-23:30",
     "address": "Avenida de Miguel Delibes, 50, 28052 Madrid",
-    "phone": "913 06 00 00"
+    "phone": "913 06 00 00",
+    "image": "/images/negocios/telepizza-canaveral.jpg"
   },
   {
     "slug": "kebabish-vicalvaro",
@@ -2755,7 +2773,8 @@
     ],
     "horario": "L-D 12:00-00:00",
     "address": "Calle de San Cipriano, 10, 28032 Madrid",
-    "phone": "913 71 00 00"
+    "phone": "913 71 00 00",
+    "image": "/images/negocios/kebabish-vicalvaro.jpg"
   },
   {
     "slug": "lidl-canaveral",
@@ -2787,7 +2806,8 @@
       "Ofertas semanales muy atractivas"
     ],
     "horario": "L-S 9:00-21:30, D 10:00-15:00",
-    "address": "Avenida de Miguel Delibes, 100, 28052 Madrid"
+    "address": "Avenida de Miguel Delibes, 100, 28052 Madrid",
+    "image": "/images/negocios/lidl-canaveral.jpg"
   },
   {
     "slug": "mercadona-san-fernando",
@@ -2818,7 +2838,8 @@
       "Comida preparada lista para consumir"
     ],
     "horario": "L-S 9:00-21:30",
-    "address": "Avenida de Castilla, 1, 28830 San Fernando de Henares, Madrid"
+    "address": "Avenida de Castilla, 1, 28830 San Fernando de Henares, Madrid",
+    "image": "/images/negocios/mercadona-san-fernando.jpg"
   },
   {
     "slug": "aldi-coslada",
@@ -2850,7 +2871,8 @@
       "Calidad en productos frescos"
     ],
     "horario": "L-S 9:00-21:30, D 10:00-15:00",
-    "address": "Avenida de España, 100, 28823 Coslada, Madrid"
+    "address": "Avenida de España, 100, 28823 Coslada, Madrid",
+    "image": "/images/negocios/aldi-coslada.jpg"
   },
   {
     "slug": "laura-vivar-estilistas",
@@ -2882,7 +2904,8 @@
       "Ambiente acogedor y relajante"
     ],
     "horario": "M-V 10:00-19:00, S 9:00-14:00",
-    "address": "Calle de San Cipriano, 45, 28032 Madrid"
+    "address": "Calle de San Cipriano, 45, 28032 Madrid",
+    "image": "/images/negocios/laura-vivar-estilistas.jpg"
   },
   {
     "slug": "obramat-canaveral",
@@ -2915,7 +2938,8 @@
       "Horario amplio, incluyendo fines de semana"
     ],
     "horario": "L-S 7:00-21:00, D 9:00-15:00",
-    "address": "Avenida de Miguel Delibes, 150, 28052 Madrid"
+    "address": "Avenida de Miguel Delibes, 150, 28052 Madrid",
+    "image": "/images/negocios/obramat-canaveral.jpg"
   },
   {
     "slug": "mcdonalds-canaveral",
@@ -2951,7 +2975,8 @@
       "Ideal para familias y comidas rápidas"
     ],
     "horario": "L-D 8:00-00:00 (Auto-Mac 24h)",
-    "address": "Avenida de Miguel Delibes, 80, 28052 Madrid"
+    "address": "Avenida de Miguel Delibes, 80, 28052 Madrid",
+    "image": "/images/negocios/mcdonalds-canaveral.jpg"
   },
   {
     "slug": "dreamfit-valdebernardo",
@@ -2985,7 +3010,8 @@
       "Tarifas competitivas sin permanencia"
     ],
     "horario": "L-D 24h (acceso con huella)",
-    "address": "Calle de los Pinillas, 1, 28032 Madrid"
+    "address": "Calle de los Pinillas, 1, 28032 Madrid",
+    "image": "/images/negocios/dreamfit-valdebernardo.jpg"
   },
   {
     "slug": "vicalvaro-crossfit",
@@ -3019,7 +3045,8 @@
       "Programación de entrenamientos variada",
       "Ideal para todos los niveles, desde principiantes a avanzados"
     ],
-    "horario": "L-V 7:00-22:00, S 9:00-14:00"
+    "horario": "L-V 7:00-22:00, S 9:00-14:00",
+    "image": "/images/negocios/vicalvaro-crossfit.jpg"
   },
   {
     "slug": "lorange-bleue-vicalvaro",
@@ -3052,7 +3079,8 @@
       "Planes de entrenamiento adaptados a cada persona"
     ],
     "horario": "L-V 7:00-22:00, S 9:00-14:00",
-    "address": "Calle de San Cipriano, 70, 28032 Madrid"
+    "address": "Calle de San Cipriano, 70, 28032 Madrid",
+    "image": "/images/negocios/lorange-bleue-vicalvaro.jpg"
   },
   {
     "slug": "nemomarlin-canaveral",
@@ -3089,7 +3117,8 @@
       "Enfoque bilingüe desde temprana edad"
     ],
     "horario": "L-V 7:30-18:00",
-    "plazas": 80
+    "plazas": 80,
+    "image": "/images/negocios/nemomarlin-canaveral.jpg"
   },
   {
     "slug": "escuela-infantil-aupa",
@@ -3254,7 +3283,8 @@
       "Facilita la elección del dentista",
       "Información actualizada y completa"
     ],
-    "horario": "L-V 9:00-19:00"
+    "horario": "L-V 9:00-19:00",
+    "image": "/images/negocios/dentistaelcanaveral-consultorio.jpg"
   },
   {
     "slug": "vietnam-2013-canaveral",
@@ -3324,7 +3354,8 @@
       "Amplio horario de apertura",
       "Terraza soleada",
       "Ambiente moderno y acogedor"
-    ]
+    ],
+    "image": "/images/negocios/seven-canaveral.jpg"
   },
   {
     "slug": "havana-madrid-canaveral",
@@ -3360,7 +3391,8 @@
       "Auténtica comida cubana",
       "Variedad de cafés",
       "Ambiente acogedor y familiar"
-    ]
+    ],
+    "image": "/images/negocios/havana-madrid-canaveral.jpg"
   },
   {
     "slug": "guasacaca-madrid-canaveral",
@@ -3395,7 +3427,8 @@
       "Amplia variedad de arepas",
       "Nuevo local con ambiente moderno"
     ],
-    "horario": "Ma-D 12:30-16:00 y 19:30-23:00"
+    "horario": "Ma-D 12:30-16:00 y 19:30-23:00",
+    "image": "/images/negocios/guasacaca-madrid-canaveral.jpg"
   },
   {
     "slug": "chinawok-express-canaveral",
@@ -3506,7 +3539,8 @@
       "Atención personalizada y profesional",
       "Gran variedad de productos de parafarmacia"
     ],
-    "horario": "Lunes a Viernes: 09:00-22:00, Sábado: 09:30-14:00 y 17:00-21:00, Domingo: Cerrado (consultar guardias)"
+    "horario": "Lunes a Viernes: 09:00-22:00, Sábado: 09:30-14:00 y 17:00-21:00, Domingo: Cerrado (consultar guardias)",
+    "image": "/images/negocios/farmacia-central-canaveral.jpg"
   },
   {
     "slug": "farmacia-sonrisas-canaveral",
@@ -3537,7 +3571,8 @@
       "Amplia gama de productos infantiles",
       "Trato cercano y familiar"
     ],
-    "horario": "Lunes a Viernes: 09:30-14:00 y 17:00-20:30, Sábado: 10:00-14:00, Domingo: Cerrado"
+    "horario": "Lunes a Viernes: 09:30-14:00 y 17:00-20:30, Sábado: 10:00-14:00, Domingo: Cerrado",
+    "image": "/images/negocios/farmacia-sonrisas-canaveral.jpg"
   },
   {
     "slug": "farmacia-botica-de-mar",
@@ -3565,7 +3600,8 @@
       "Especialistas en dermofarmacia",
       "Ubicación céntrica en el barrio"
     ],
-    "horario": "Lunes a Viernes: 09:00-14:00 y 17:00-20:00, Sábado: 10:00-14:00, Domingo: Cerrado"
+    "horario": "Lunes a Viernes: 09:00-14:00 y 17:00-20:00, Sábado: 10:00-14:00, Domingo: Cerrado",
+    "image": "/images/negocios/farmacia-botica-de-mar.jpg"
   },
   {
     "slug": "farmacia-el-canaveral-vk",
@@ -3594,7 +3630,8 @@
       "Ubicación estratégica en el barrio",
       "Amplia disponibilidad de productos"
     ],
-    "horario": "Lunes a Viernes: 09:00-21:00, Sábado: 09:30-14:00, Domingo: Cerrado"
+    "horario": "Lunes a Viernes: 09:00-21:00, Sábado: 09:30-14:00, Domingo: Cerrado",
+    "image": "/images/negocios/farmacia-el-canaveral-vk.jpg"
   },
   {
     "slug": "jardin-canaveral",
@@ -3633,7 +3670,8 @@
     "address": "C. Cerro del Campo, 62, 28052 Madrid",
     "phone": "912 62 40 03",
     "accesibilidad": true,
-    "aparcamiento": true
+    "aparcamiento": true,
+    "image": "/images/negocios/jardin-canaveral.jpg"
   },
   {
     "slug": "estanco-el-canaveral",
@@ -3664,6 +3702,7 @@
       "Punto de venta de loterías"
     ],
     "horario": "Lunes a Viernes: 09:00-14:00 y 17:00-20:00, Sábado: 09:30-14:00, Domingo: Cerrado",
-    "address": "Av. de Miguel Delibes, 60, 28052 Madrid"
+    "address": "Av. de Miguel Delibes, 60, 28052 Madrid",
+    "image": "/images/negocios/estanco-el-canaveral.jpg"
   }
 ]
