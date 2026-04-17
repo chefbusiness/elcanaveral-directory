@@ -39,4 +39,4 @@ Cada ficha incluye: nombre, descripcion, direccion, telefono, email, web, horari
 
 Gestionado por LocalSEOAds.com
 Email: info@localseoads.com
-Web: https://elcanaveral.info
+Web: https://www.elcanaveral.info

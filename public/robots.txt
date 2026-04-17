@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://elcanaveral.info/sitemap-index.xml
+Sitemap: https://www.elcanaveral.info/sitemap-index.xml
 
 # AI Crawlers — welcome
 User-agent: GPTBot
