@@ -17,12 +17,42 @@ interface Props {
 }
 
 const { zona, categoria, negocios } = Astro.props;
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: `${categoria.name} en ${zona.name}`,
+  description: `Directorio de ${categoria.name.toLowerCase()} en ${zona.name}.`,
+  numberOfItems: negocios.length,
+  itemListElement: negocios.slice(0, 20).map((n, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    url: `https://www.elcanaveral.info/${n.category}/${n.slug}/`,
+    name: n.name,
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.elcanaveral.info/" },
+    { "@type": "ListItem", position: 2, name: "Zonas", item: "https://www.elcanaveral.info/zonas/" },
+    { "@type": "ListItem", position: 3, name: zona.name, item: `https://www.elcanaveral.info/zona/${zona.slug}/` },
+    { "@type": "ListItem", position: 4, name: categoria.name, item: `https://www.elcanaveral.info/zona/${zona.slug}/${categoria.slug}/` },
+  ],
+};
 ---
 
 <BaseLayout
   title={`${categoria.name} en ${zona.name}`}
   description={`${categoria.name} en ${zona.name}. Encuentra los mejores establecimientos de ${categoria.name.toLowerCase()} cerca de ti en ${zona.name} y alrededores.`}
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
   <Header />
 
   <section class="pt-24 pb-16 px-4">
