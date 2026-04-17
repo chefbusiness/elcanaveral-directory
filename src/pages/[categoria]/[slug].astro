@@ -3,6 +3,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
+import Galeria from "@/components/Galeria.astro";
 import { generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona } from "@/lib/directory";
 import type { Negocio } from "@/lib/directory";
 
@@ -56,8 +57,10 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
         <!-- ===== COLUMNA PRINCIPAL ===== -->
         <div class="lg:col-span-2 space-y-6">
 
-          <!-- Hero image -->
-          {negocio.image && (
+          <!-- Galería de fotos -->
+          {negocio.images && negocio.images.length > 0 ? (
+            <Galeria images={negocio.images} alt={`${negocio.name} en ${negocio.zonaName}`} />
+          ) : negocio.image && (
             <img
               src={negocio.image}
               alt={`${negocio.name} en ${negocio.zonaName}`}

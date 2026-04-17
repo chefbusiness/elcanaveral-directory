@@ -16,6 +16,7 @@ export interface Negocio {
   email?: string;
   website?: string;
   image?: string;
+  images?: string[];
   horario?: string;
   googleMapsUrl?: string;
   // Reputacion
@@ -210,7 +211,9 @@ export function generateLocalBusinessSchema(negocio: Negocio) {
     ...(negocio.phone && { telephone: negocio.phone }),
     ...(negocio.email && { email: negocio.email }),
     ...(negocio.website && { url: negocio.website }),
-    ...(negocio.image && { image: negocio.image }),
+    ...((negocio.images && negocio.images.length > 0)
+      ? { image: negocio.images.map((img) => `https://www.elcanaveral.info${img}`) }
+      : negocio.image && { image: `https://www.elcanaveral.info${negocio.image}` }),
     ...(negocio.rating && {
       aggregateRating: {
         "@type": "AggregateRating",

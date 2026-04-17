@@ -1,0 +1,146 @@
+---
+interface Props {
+  images: string[];
+  alt: string;
+}
+
+const { images, alt } = Astro.props;
+const count = images.length;
+const hero = images[0];
+const extras = images.slice(1, 5); // hasta 4 extras (= 5 total)
+---
+
+{count > 1 ? (
+  <section class="galeria" data-galeria>
+    <!-- Desktop grid: 1 hero + 2x2 thumbnails -->
+    <div class="hidden sm:grid grid-cols-4 gap-2 h-80 rounded-xl overflow-hidden">
+      <button type="button" class="col-span-2 row-span-2 relative group cursor-pointer" data-open-gallery data-index="0">
+        <img src={hero} alt={alt} class="w-full h-full object-cover" loading="eager" />
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+      </button>
+      {extras.map((img, i) => (
+        <button
+          type="button"
+          class={`relative group cursor-pointer ${extras.length === 1 ? 'col-span-2 row-span-2' : ''} ${extras.length === 2 ? 'col-span-2' : ''}`}
+          data-open-gallery
+          data-index={i + 1}
+        >
+          <img src={img} alt={`${alt} — foto ${i + 2}`} class="w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+          {i === extras.length - 1 && count > 5 && (
+            <div class="absolute inset-0 bg-black/50 flex items-center justify-center text-white font-semibold text-sm">
+              +{count - 5} fotos
+            </div>
+          )}
+        </button>
+      ))}
+    </div>
+
+    <!-- Mobile: hero + botón ver todas -->
+    <div class="sm:hidden relative">
+      <button type="button" class="block w-full" data-open-gallery data-index="0">
+        <img src={hero} alt={alt} class="w-full h-72 object-cover rounded-xl" loading="eager" />
+      </button>
+      <button
+        type="button"
+        data-open-gallery
+        data-index="0"
+        class="absolute bottom-3 right-3 bg-white/95 backdrop-blur text-gray-900 text-xs font-semibold px-3 py-1.5 rounded-lg shadow-sm"
+      >
+        Ver {count} fotos
+      </button>
+    </div>
+
+    <!-- Lightbox modal -->
+    <dialog
+      data-lightbox
+      class="backdrop:bg-black/80 p-0 bg-transparent w-screen max-w-none h-screen max-h-none m-0 overflow-hidden"
+    >
+      <div class="relative w-full h-full flex items-center justify-center">
+        <button
+          type="button"
+          data-close-gallery
+          class="absolute top-4 right-4 z-10 text-white bg-black/50 hover:bg-black/70 w-10 h-10 rounded-full flex items-center justify-center text-xl"
+          aria-label="Cerrar"
+        >&#10005;</button>
+
+        <button
+          type="button"
+          data-prev-gallery
+          class="absolute left-4 z-10 text-white bg-black/50 hover:bg-black/70 w-12 h-12 rounded-full flex items-center justify-center text-2xl"
+          aria-label="Anterior"
+        >&#8249;</button>
+
+        <img data-lightbox-img src={hero} alt={alt} class="max-w-[90vw] max-h-[85vh] object-contain" />
+
+        <button
+          type="button"
+          data-next-gallery
+          class="absolute right-4 z-10 text-white bg-black/50 hover:bg-black/70 w-12 h-12 rounded-full flex items-center justify-center text-2xl"
+          aria-label="Siguiente"
+        >&#8250;</button>
+
+        <div data-lightbox-counter class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white bg-black/50 px-3 py-1 rounded text-sm">
+          1 / {count}
+        </div>
+      </div>
+    </dialog>
+
+    <script is:inline define:vars={{ images, alt }}>
+      (function () {
+        const root = document.currentScript.closest("[data-galeria]");
+        if (!root) return;
+        const dialog = root.querySelector("[data-lightbox]");
+        const imgEl = root.querySelector("[data-lightbox-img]");
+        const counter = root.querySelector("[data-lightbox-counter]");
+        let idx = 0;
+
+        function render() {
+          imgEl.src = images[idx];
+          imgEl.alt = `${alt} — foto ${idx + 1}`;
+          counter.textContent = `${idx + 1} / ${images.length}`;
+        }
+        function open(i) {
+          idx = i;
+          render();
+          dialog.showModal();
+        }
+        function close() {
+          dialog.close();
+        }
+        function next() {
+          idx = (idx + 1) % images.length;
+          render();
+        }
+        function prev() {
+          idx = (idx - 1 + images.length) % images.length;
+          render();
+        }
+
+        root.querySelectorAll("[data-open-gallery]").forEach((btn) => {
+          btn.addEventListener("click", () => open(Number(btn.dataset.index) || 0));
+        });
+        root.querySelector("[data-close-gallery]")?.addEventListener("click", close);
+        root.querySelector("[data-next-gallery]")?.addEventListener("click", next);
+        root.querySelector("[data-prev-gallery]")?.addEventListener("click", prev);
+        dialog.addEventListener("click", (e) => {
+          if (e.target === dialog) close();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (!dialog.open) return;
+          if (e.key === "ArrowRight") next();
+          else if (e.key === "ArrowLeft") prev();
+        });
+      })();
+    </script>
+  </section>
+) : (
+  hero && (
+    <img
+      src={hero}
+      alt={alt}
+      class="w-full h-72 sm:h-80 object-cover rounded-xl"
+      loading="eager"
+    />
+  )
+)}
