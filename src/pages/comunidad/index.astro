@@ -1,0 +1,358 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import comunidadData from "@/data/comunidad.json";
+
+const { intro, platforms, types, accounts } = comunidadData as any;
+
+// Conteos para stats
+const total = accounts.length;
+const platformCounts = Object.fromEntries(
+  platforms.map((p: any) => [p.id, accounts.filter((a: any) => a.platform === p.id).length])
+);
+const typeCounts = Object.fromEntries(
+  types.map((t: any) => [t.id, accounts.filter((a: any) => a.type === t.id).length])
+);
+const imprescindibles = accounts.filter((a: any) => a.imprescindible);
+const featured = accounts.filter((a: any) => a.featured && !a.imprescindible);
+const restantes = accounts.filter((a: any) => !a.imprescindible && !a.featured);
+
+const platformIcons: Record<string, string> = {
+  facebook: "f",
+  instagram: "ig",
+  twitter: "𝕏",
+  tiktok: "tt",
+  youtube: "yt",
+  telegram: "tg",
+  whatsapp: "wa",
+  web: "→",
+};
+
+const platformBg: Record<string, string> = {
+  facebook: "bg-[#1877F2]",
+  instagram: "bg-gradient-to-br from-[#feda75] via-[#d62976] to-[#962fbf]",
+  twitter: "bg-[#0F1419]",
+  tiktok: "bg-black",
+  youtube: "bg-[#FF0000]",
+  telegram: "bg-[#26A5E4]",
+  whatsapp: "bg-[#25D366]",
+  web: "bg-brand-600",
+};
+
+const typeIcons: Record<string, string> = Object.fromEntries(
+  (types as any[]).map((t) => [t.id, t.icon])
+);
+const typeNames: Record<string, string> = Object.fromEntries(
+  (types as any[]).map((t) => [t.id, t.name])
+);
+
+function platformLabel(id: string) {
+  const p = (platforms as any[]).find((pp) => pp.id === id);
+  return p ? p.name : id;
+}
+
+function ctaLabel(platform: string, type: string) {
+  if (platform === "telegram" || platform === "whatsapp") return "Unirme";
+  if (platform === "web") return "Visitar web";
+  if (type === "asociacion" && platform === "facebook" && (platform as string)) return "Ver grupo";
+  return "Seguir";
+}
+---
+
+<BaseLayout
+  title="Comunidad de El Cañaveral — Perfiles sociales del barrio"
+  description="Directorio de cuentas, grupos y perfiles sociales relacionados con El Cañaveral, Vicálvaro y alrededores. Asociaciones vecinales, medios locales, centros públicos y comercios con presencia digital activa."
+>
+  <Header />
+
+  <!-- Hero -->
+  <section class="pt-24 pb-12 px-4 bg-gradient-to-b from-brand-50 via-white to-warm-50 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.04] -z-0" style="background-image: url('data:image/svg+xml,<svg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22><g fill=%22none%22 fill-rule=%22evenodd%22><g fill=%22%231e3a8a%22><path d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/></g></g></svg>');"></div>
+    <div class="max-w-5xl mx-auto text-center relative">
+      <div class="inline-flex items-center gap-2 bg-white/85 backdrop-blur-sm text-brand-700 text-xs font-medium px-3 py-1.5 rounded-full mb-5 border border-brand-100 shadow-sm uppercase tracking-wider">
+        <span class="w-1.5 h-1.5 bg-accent-500 rounded-full animate-pulse"></span>
+        Nuevo · Hub comunidad
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-brand-900 mb-4 leading-[1.1]">
+        Toda la comunidad del barrio<br/>
+        <span class="text-brand-600">en un solo lugar.</span>
+      </h1>
+      <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+        {intro.description}
+      </p>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
+        <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+          <p class="text-3xl font-bold text-brand-600">{total}</p>
+          <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">Cuentas verificadas</p>
+        </div>
+        <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+          <p class="text-3xl font-bold text-brand-600">{platforms.length}</p>
+          <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">Plataformas</p>
+        </div>
+        <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+          <p class="text-3xl font-bold text-brand-600">{typeCounts["medio"] || 0}</p>
+          <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">Medios locales</p>
+        </div>
+        <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+          <p class="text-3xl font-bold text-brand-600">{typeCounts["asociacion"] || 0}</p>
+          <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">Vecinales</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filtros -->
+  <section class="px-4 py-6 sticky top-14 sm:top-16 bg-white/85 backdrop-blur-md z-30 border-b border-warm-200">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-xs uppercase tracking-wider font-semibold text-gray-500 mr-1">Plataforma:</span>
+        <button data-filter-plat="all" class="filter-plat active text-xs font-medium px-3 py-1.5 rounded-full bg-brand-600 text-white">Todas ({total})</button>
+        {platforms.map((p: any) => (
+          <button data-filter-plat={p.id} class="filter-plat text-xs font-medium px-3 py-1.5 rounded-full bg-white border border-warm-200 text-gray-700 hover:bg-warm-50 transition-colors">
+            {p.name} ({platformCounts[p.id] || 0})
+          </button>
+        ))}
+      </div>
+      <div class="flex flex-wrap items-center gap-2 mt-3">
+        <span class="text-xs uppercase tracking-wider font-semibold text-gray-500 mr-1">Tipo:</span>
+        <button data-filter-type="all" class="filter-type active text-xs font-medium px-3 py-1.5 rounded-full bg-brand-600 text-white">Todos</button>
+        {types.map((t: any) => (typeCounts[t.id] || 0) > 0 && (
+          <button data-filter-type={t.id} class="filter-type text-xs font-medium px-3 py-1.5 rounded-full bg-white border border-warm-200 text-gray-700 hover:bg-warm-50 transition-colors">
+            <span>{t.icon}</span> {t.name} ({typeCounts[t.id] || 0})
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Imprescindibles -->
+  {imprescindibles.length > 0 && (
+    <section class="py-12 px-4 bg-gradient-to-b from-warm-50 to-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-end justify-between mb-6">
+          <div>
+            <h2 class="text-2xl font-bold text-brand-900">Imprescindibles</h2>
+            <p class="text-gray-500 mt-1 text-sm">Las cuentas que cualquier vecino debería seguir</p>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {imprescindibles.map((a: any) => (
+            <a
+              href={a.url}
+              target="_blank"
+              rel="noopener nofollow"
+              class="comunidad-card group block bg-white rounded-2xl border-2 border-brand-100 hover:border-brand-400 hover:shadow-lg p-5 transition-all relative overflow-hidden"
+              data-platform={a.platform}
+              data-type={a.type}
+            >
+              <div class="absolute top-0 right-0 bg-accent-500 text-white text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-bl-lg">★ Top</div>
+              <div class="flex items-start gap-3 mb-3">
+                <span class={`shrink-0 w-10 h-10 rounded-lg ${platformBg[a.platform]} text-white flex items-center justify-center font-bold text-sm`}>
+                  {platformIcons[a.platform]}
+                </span>
+                <div class="min-w-0 flex-1">
+                  <h3 class="font-bold text-brand-900 leading-tight truncate">{a.name}</h3>
+                  <p class="text-xs text-gray-500 truncate">{a.handle} · {platformLabel(a.platform)}</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 leading-snug line-clamp-3 mb-3">{a.description}</p>
+              <div class="flex items-center justify-between text-xs">
+                <span class="inline-flex items-center gap-1 text-gray-500">
+                  <span>{typeIcons[a.type]}</span>
+                  <span>{typeNames[a.type]}</span>
+                </span>
+                {a.followers_aprox && (
+                  <span class="text-gray-400 font-medium">{a.followers_aprox >= 1000 ? `${(a.followers_aprox / 1000).toFixed(1)}K` : a.followers_aprox} seguidores</span>
+                )}
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Destacadas -->
+  {featured.length > 0 && (
+    <section class="py-12 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">Destacadas</h2>
+        <p class="text-gray-500 mb-6 text-sm">Cuentas con presencia activa y comunidad consolidada</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {featured.map((a: any) => (
+            <a
+              href={a.url}
+              target="_blank"
+              rel="noopener nofollow"
+              class="comunidad-card group block bg-white rounded-xl border border-warm-200 hover:border-brand-300 hover:shadow-md p-5 transition-all"
+              data-platform={a.platform}
+              data-type={a.type}
+            >
+              <div class="flex items-start gap-3 mb-3">
+                <span class={`shrink-0 w-9 h-9 rounded-lg ${platformBg[a.platform]} text-white flex items-center justify-center font-bold text-xs`}>
+                  {platformIcons[a.platform]}
+                </span>
+                <div class="min-w-0 flex-1">
+                  <h3 class="font-semibold text-brand-900 leading-tight truncate">{a.name}</h3>
+                  <p class="text-xs text-gray-500 truncate">{a.handle} · {platformLabel(a.platform)}</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 leading-snug line-clamp-3 mb-3">{a.description}</p>
+              <div class="flex items-center justify-between text-xs">
+                <span class="inline-flex items-center gap-1 text-gray-500">
+                  <span>{typeIcons[a.type]}</span>
+                  <span>{typeNames[a.type]}</span>
+                </span>
+                {a.followers_aprox && (
+                  <span class="text-gray-400 font-medium">{a.followers_aprox >= 1000 ? `${(a.followers_aprox / 1000).toFixed(1)}K` : a.followers_aprox}</span>
+                )}
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Resto -->
+  <section class="py-12 px-4 bg-warm-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-brand-900 mb-1">Más cuentas del barrio</h2>
+      <p class="text-gray-500 mb-6 text-sm">Comercios, centros, clubes deportivos y otras cuentas con presencia local</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {restantes.map((a: any) => (
+          <a
+            href={a.url}
+            target="_blank"
+            rel="noopener nofollow"
+            class="comunidad-card group block bg-white rounded-xl border border-warm-200 hover:border-brand-300 hover:shadow-md p-4 transition-all"
+            data-platform={a.platform}
+            data-type={a.type}
+          >
+            <div class="flex items-start gap-3 mb-2">
+              <span class={`shrink-0 w-8 h-8 rounded-lg ${platformBg[a.platform]} text-white flex items-center justify-center font-bold text-xs`}>
+                {platformIcons[a.platform]}
+              </span>
+              <div class="min-w-0 flex-1">
+                <h3 class="font-semibold text-brand-900 leading-tight text-sm truncate">{a.name}</h3>
+                <p class="text-[11px] text-gray-500 truncate">{a.handle} · {platformLabel(a.platform)}</p>
+              </div>
+            </div>
+            <p class="text-xs text-gray-600 leading-snug line-clamp-2">{a.description}</p>
+            <div class="flex items-center gap-2 mt-2 text-[11px] text-gray-500">
+              <span>{typeIcons[a.type]}</span>
+              <span>{typeNames[a.type]}</span>
+              {a.followers_aprox && (
+                <span class="ml-auto text-gray-400">{a.followers_aprox >= 1000 ? `${(a.followers_aprox / 1000).toFixed(1)}K` : a.followers_aprox}</span>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <p id="empty-state" class="hidden text-center text-gray-500 py-12 text-sm">
+        Sin resultados con estos filtros. <button id="clear-filters" class="text-brand-600 underline">Restablecer</button>
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA Sumar tu cuenta -->
+  <section class="py-16 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="bg-brand-900 rounded-2xl p-10 sm:p-12 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,<svg width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22 xmlns=%22http://www.w3.org/2000/svg%22><circle cx=%221%22 cy=%221%22 r=%221%22 fill=%22white%22/></svg>');"></div>
+        <div class="relative">
+          <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">¿Gestionas una cuenta del barrio?</h2>
+          <p class="text-brand-200 mb-6 max-w-xl mx-auto text-sm">
+            Si llevas una asociación, comercio, medio o eres creador de contenido sobre El Cañaveral, escríbenos para aparecer en este hub.
+          </p>
+          <a href="mailto:info@localseoads.com?subject=Sumar%20cuenta%20a%20Comunidad%20elcanaveral.info" class="inline-block bg-accent-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent-600 transition-colors shadow-lg">
+            Escríbenos a info@localseoads.com
+          </a>
+          <p class="text-xs text-brand-300 mt-5 italic">Última revisión: {intro.lastReview}. Listado curado a partir de búsqueda OSINT pública.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<script is:inline>
+  (function () {
+    let activePlatform = "all";
+    let activeType = "all";
+
+    function applyFilters() {
+      const cards = document.querySelectorAll(".comunidad-card");
+      let visible = 0;
+      cards.forEach((card) => {
+        const p = card.getAttribute("data-platform");
+        const t = card.getAttribute("data-type");
+        const matchPlat = activePlatform === "all" || p === activePlatform;
+        const matchType = activeType === "all" || t === activeType;
+        const show = matchPlat && matchType;
+        card.style.display = show ? "" : "none";
+        if (show) visible++;
+      });
+      const empty = document.getElementById("empty-state");
+      if (empty) empty.classList.toggle("hidden", visible > 0);
+    }
+
+    function setActiveButton(group, value) {
+      document.querySelectorAll(`[data-filter-${group}]`).forEach((b) => {
+        const isActive = b.getAttribute(`data-filter-${group}`) === value;
+        b.classList.toggle("active", isActive);
+        b.classList.toggle("bg-brand-600", isActive);
+        b.classList.toggle("text-white", isActive);
+        b.classList.toggle("bg-white", !isActive);
+        b.classList.toggle("text-gray-700", !isActive);
+        b.classList.toggle("border", !isActive);
+        b.classList.toggle("border-warm-200", !isActive);
+      });
+    }
+
+    document.querySelectorAll("[data-filter-plat]").forEach((b) => {
+      b.addEventListener("click", () => {
+        activePlatform = b.getAttribute("data-filter-plat");
+        setActiveButton("plat", activePlatform);
+        applyFilters();
+      });
+    });
+    document.querySelectorAll("[data-filter-type]").forEach((b) => {
+      b.addEventListener("click", () => {
+        activeType = b.getAttribute("data-filter-type");
+        setActiveButton("type", activeType);
+        applyFilters();
+      });
+    });
+    const clearBtn = document.getElementById("clear-filters");
+    if (clearBtn) {
+      clearBtn.addEventListener("click", () => {
+        activePlatform = "all";
+        activeType = "all";
+        setActiveButton("plat", "all");
+        setActiveButton("type", "all");
+        applyFilters();
+      });
+    }
+  })();
+</script>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
