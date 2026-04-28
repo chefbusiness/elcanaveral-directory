@@ -19,18 +19,34 @@ const totalNegocios = loadNegocios().length;
   <Header />
 
   <!-- Hero -->
-  <section class="pt-24 pb-20 px-4 bg-gradient-to-b from-brand-50 via-white to-warm-50 relative">
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,<svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;><g fill=&quot;%23000&quot;><path d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/></g></g></svg>');"></div>
+  <section class="pt-24 pb-20 px-4 relative overflow-hidden isolate">
+    <!-- Capa 1: imagen aerea El Canaveral, blur + desaturacion para textura suave -->
+    <img
+      src="/images/hero/canaveral-skyline.jpg"
+      alt=""
+      aria-hidden="true"
+      class="absolute inset-0 w-full h-full object-cover -z-10 select-none pointer-events-none"
+      style="filter: blur(2px) saturate(0.85) brightness(1.05); transform: scale(1.04);"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <!-- Capa 2: degradado azul corporativo semi-translucido (deja ver edificios al fondo) -->
+    <div
+      class="absolute inset-0 -z-10"
+      style="background: linear-gradient(180deg, rgba(238,242,255,0.78) 0%, rgba(255,255,255,0.72) 45%, rgba(255,247,237,0.85) 100%);"
+    ></div>
+    <!-- Capa 3: patron de cruces -->
+    <div class="absolute inset-0 opacity-[0.05] -z-10" style="background-image: url('data:image/svg+xml,<svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;><g fill=&quot;%231e3a8a&quot;><path d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/></g></g></svg>');"></div>
     <div class="max-w-4xl mx-auto text-center relative">
-      <div class="inline-flex items-center gap-2 bg-brand-100 text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
+      <div class="inline-flex items-center gap-2 bg-white/85 backdrop-blur-sm text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6 shadow-sm border border-brand-100">
         <span class="w-2 h-2 bg-brand-500 rounded-full animate-pulse"></span>
         {totalNegocios} negocios registrados
       </div>
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-brand-900 mb-4 sm:mb-5 leading-[1.1]">
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-brand-900 mb-4 sm:mb-5 leading-[1.1] [text-shadow:0_1px_2px_rgba(255,255,255,0.6)]">
         Tu barrio, tus negocios.<br/>
         <span class="text-brand-600">Todo en un solo lugar.</span>
       </h1>
-      <p class="text-base sm:text-lg text-gray-500 mb-8 sm:mb-10 max-w-2xl mx-auto">
+      <p class="text-base sm:text-lg text-gray-700 mb-8 sm:mb-10 max-w-2xl mx-auto">
         Encuentra comercios, restaurantes y servicios en El Cañaveral, Vicálvaro, Coslada y San Fernando de Henares.
       </p>
       <SearchBar />
