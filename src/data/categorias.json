@@ -86,8 +86,14 @@
   {
     "slug": "servicios-profesionales",
     "name": "Servicios Profesionales",
-    "description": "Gestorías, abogados, seguros, inmobiliarias y asesores fiscales",
+    "description": "Gestorías, abogados, seguros y asesores fiscales",
     "icon": "💼"
+  },
+  {
+    "slug": "inmobiliarias",
+    "name": "Inmobiliarias",
+    "description": "Agencias inmobiliarias para comprar, vender o alquilar vivienda en El Cañaveral, Vicálvaro, Coslada y San Fernando de Henares",
+    "icon": "🏘️"
   },
   {
     "slug": "ocio",

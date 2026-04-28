@@ -2071,8 +2071,8 @@
     "slug": "templo-consulting-inmobiliaria",
     "name": "Templo Consulting Inmobiliaria",
     "description": "Templo Consulting es una inmobiliaria innovadora que opera en Vicálvaro y El Cañaveral, destacando por su modelo sin comisiones para el vendedor. Si.",
-    "category": "servicios-profesionales",
-    "categoryName": "Servicios Profesionales",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
     "zona": "vicalvaro",
     "zonaName": "Vicálvaro",
     "website": "https://temploconsulting.com/",
@@ -4380,6 +4380,48 @@
     "images": [
       "/images/negocios/estanco-el-canaveral.jpg",
       "/images/negocios/estanco-el-canaveral-2.jpg"
+    ]
+  },
+  {
+    "slug": "sm-homes-el-canaveral",
+    "name": "SM Homes El Cañaveral",
+    "description": "SM Homes es una agencia inmobiliaria con oficina física en El Cañaveral, especializada en compraventa y alquiler de viviendas en el barrio. Equipo local con valoraciones gratuitas y asesoramiento personalizado durante todo el proceso. Cuentan también con oficinas en Coslada y Chamberí.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "website": "https://www.smhomesinmobiliaria.es/",
+    "tags": [
+      "inmobiliaria",
+      "compraventa",
+      "alquiler",
+      "valoración"
+    ],
+    "featured": false,
+    "servicios": [
+      "Compraventa de viviendas",
+      "Alquiler de viviendas",
+      "Valoración gratuita de inmuebles",
+      "Asesoramiento personalizado en todo el proceso",
+      "Tramitación de herencias",
+      "Financiación a medida"
+    ],
+    "destacados": [
+      "Oficina física en El Cañaveral (Calle Enrique Urquijo 90)",
+      "Equipo local con conocimiento profundo del barrio",
+      "Valoración gratuita de tu vivienda sin compromiso",
+      "Red de oficinas: El Cañaveral, Coslada y Chamberí"
+    ],
+    "horario": "L-V 10:00-14:00 y 16:30-20:00",
+    "image": "/images/negocios/sm-homes-el-canaveral.jpg",
+    "address": "Calle Enrique Urquijo 90, 28052 Madrid",
+    "phone": "674381997",
+    "images": [
+      "/images/negocios/sm-homes-el-canaveral.jpg",
+      "/images/negocios/sm-homes-el-canaveral-2.jpg",
+      "/images/negocios/sm-homes-el-canaveral-3.jpg",
+      "/images/negocios/sm-homes-el-canaveral-4.jpg",
+      "/images/negocios/sm-homes-el-canaveral-5.jpg"
     ]
   }
 ]
