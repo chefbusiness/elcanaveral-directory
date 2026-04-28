@@ -255,9 +255,12 @@ def main():
 
     add_h(doc, "Visión: el hub de El Cañaveral", level=2)
     add_para(doc,
-        "Estamos construyendo más que un directorio. La hoja de ruta a 6 meses incluye:",
+        "Estamos construyendo más que un directorio. elcanaveral.info ya tiene una segunda capa "
+        "—el hub Comunidad— y una hoja de ruta editorial pensada para convertirse en el primer "
+        "destino digital del barrio.",
         space_after=4)
-    add_bullet(doc, "directorio de perfiles sociales del barrio (Facebook, Instagram, TikTok, X).")
+    add_bullet(doc, "directorio de perfiles sociales del barrio (Facebook, Instagram, TikTok, X) — YA LIVE.",
+               bold_prefix="Comunidad")
     add_bullet(doc, "calendario de eventos vecinales y promociones locales.")
     add_bullet(doc, "guías prácticas: dónde matricular en el cole, transporte, servicios municipales.")
     add_bullet(doc, "blog editorial sobre vida en el PAU con cobertura SEO local.")
@@ -313,7 +316,179 @@ def main():
     page_break(doc)
 
     # =========================================================
-    # 5. INVERSION Y TERMINOS
+    # 5. EL HUB COMUNIDAD
+    # =========================================================
+    add_h(doc, "El hub Comunidad: más allá del directorio", level=1)
+    add_para(doc,
+        "Hemos lanzado /comunidad/, una sección que reúne a toda la conversación digital del barrio "
+        "en una sola página. No existe nada parecido en El Cañaveral. Lo que conseguimos con esto: "
+        "que el vecino que busca 'qué pasa en el barrio' aterrice en elcanaveral.info, no en una "
+        "búsqueda dispersa por Facebook o Instagram.",
+        space_after=8)
+
+    add_h(doc, "Cifras del hub Comunidad", level=2)
+    com = [
+        ("75+", "cuentas verificadas"),
+        ("8", "plataformas (FB, IG, X, TikTok, YouTube, Telegram, WhatsApp, web)"),
+        ("16", "páginas Facebook (incluida Junta Municipal Vicálvaro oficial)"),
+        ("25+", "perfiles Instagram (vecinos, comercios, asociaciones)"),
+        ("6.2K", "miembros del grupo 'De El Cañaveral al cielo' indexado"),
+        ("3", "niveles: Imprescindibles · Destacadas · Más cuentas"),
+    ]
+    t = doc.add_table(rows=2, cols=6)
+    t.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    for i, (n, l) in enumerate(com):
+        c1 = t.cell(0, i); c2 = t.cell(1, i)
+        for c in (c1, c2):
+            c.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
+        p1 = c1.paragraphs[0]; p1.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        r = p1.add_run(n); set_run(r, size=18, bold=True, color=BRAND_BLUE)
+        p2 = c2.paragraphs[0]; p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        r2 = p2.add_run(l); set_run(r2, size=8, color=MUTED)
+    add_para(doc, "", space_after=6)
+
+    add_h(doc, "Por qué importa para SM Homes", level=2)
+    add_bullet(doc, "el sponsor del directorio es también el sponsor del hub social del barrio. "
+               "Reconocimiento de marca asociado a la 'voz oficial' de El Cañaveral.",
+               bold_prefix="Asociación de marca")
+    add_bullet(doc, "los vecinos que llegan vía Comunidad son residentes activos en el barrio — "
+               "exactamente el público objetivo de una inmobiliaria que vende y alquila aquí.",
+               bold_prefix="Tráfico cualificado")
+    add_bullet(doc, "el banner site-wide y la mención en home aparecen también en Comunidad. "
+               "El hub aporta tráfico extra al inventario publicitario del sponsor.",
+               bold_prefix="Inventario adicional")
+
+    page_break(doc)
+
+    # =========================================================
+    # 6. PROYECCION DE TRAFICO
+    # =========================================================
+    add_h(doc, "Proyección de tráfico y crecimiento", level=1)
+    add_para(doc,
+        "Estimaciones basadas en el ritmo de indexación actual, la velocidad de incorporación de "
+        "negocios y el plan editorial de los próximos 9 meses. SEO local en un PAU joven con poca "
+        "competencia es una de las jugadas con mejor retorno temporal del marketing digital.",
+        space_after=8)
+
+    proj = doc.add_table(rows=6, cols=4)
+    proj.style = "Light Grid Accent 1"
+    proj.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    headers = ["Periodo", "Visitas/mes (est.)", "Páginas vistas", "Hito"]
+    rows = [
+        ("Q2 2026 (actual)", "1.500 – 3.000", "5.000 – 9.000", "Lanzamiento, indexación inicial"),
+        ("Q3 2026", "6.000 – 10.000", "20.000 – 35.000", "Pilares SEO + 200 negocios"),
+        ("Q4 2026", "15.000 – 22.000", "50.000 – 75.000", "Blog editorial + newsletter activa"),
+        ("Q1 2027", "25.000 – 35.000", "85.000 – 120.000", "Marca instalada en el PAU"),
+        ("Cierre 2027 (est.)", "45.000 – 60.000", "150.000 – 200.000", "Referente del distrito Vicálvaro"),
+    ]
+    for j, h in enumerate(headers):
+        c = proj.cell(0, j)
+        shade_cell(c, "1F2937")
+        p = c.paragraphs[0]; p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        r = p.add_run(h); set_run(r, size=10, bold=True, color=RGBColor(0xFF, 0xFF, 0xFF))
+    for i, row in enumerate(rows, start=1):
+        for j, val in enumerate(row):
+            c = proj.cell(i, j)
+            p = c.paragraphs[0]
+            if j > 0:
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            r = p.add_run(val); set_run(r, size=10, color=INK, bold=(j == 0))
+    add_para(doc, "", space_after=6)
+
+    add_para(doc,
+        "La oferta de meses 1-2 gratuitos de SM Homes coincide exactamente con el tramo de mayor "
+        "ROI del sponsor: entrar antes de la curva de crecimiento, no después.",
+        size=10, color=MUTED, space_after=8)
+
+    page_break(doc)
+
+    # =========================================================
+    # 7. PALABRAS CLAVE QUE ATACAMOS
+    # =========================================================
+    add_h(doc, "Palabras clave que estamos atacando", level=1)
+    add_para(doc,
+        "El SEO del directorio se ha estructurado como una matriz de servicio × zona: cada categoría "
+        "se cruza con cada zona y cada subzona, generando cientos de páginas indexables que capturan "
+        "intención de búsqueda hiperlocal. Estos son los grupos de keywords con mayor prioridad:",
+        space_after=8)
+
+    add_h(doc, "Inmobiliario (prioridad sponsor)", level=2)
+    add_bullet(doc, "inmobiliaria El Cañaveral · agencia inmobiliaria El Cañaveral")
+    add_bullet(doc, "pisos en venta El Cañaveral · pisos alquiler PAU Cañaveral")
+    add_bullet(doc, "obra nueva Cañaveral · viviendas Vicálvaro · pisos Coslada")
+    add_bullet(doc, "inmobiliaria PAU Cañaveral · vender piso Cañaveral")
+    add_bullet(doc, "comprar casa El Cañaveral Madrid · alquiler PAU Cañaveral")
+
+    add_h(doc, "Servicios diarios", level=2)
+    add_bullet(doc, "supermercados El Cañaveral · fruterías Cañaveral · panaderías PAU")
+    add_bullet(doc, "restaurantes El Cañaveral · cafeterías Cañaveral · pizzerías PAU")
+    add_bullet(doc, "farmacia El Cañaveral · dentista Cañaveral · clínica PAU")
+    add_bullet(doc, "peluquería El Cañaveral · barbería Cañaveral · estética Vicálvaro")
+
+    add_h(doc, "Familias y mascotas", level=2)
+    add_bullet(doc, "guardería El Cañaveral · colegio CEIPSO Rudyard Kipling")
+    add_bullet(doc, "academia inglés Cañaveral · academia repaso PAU")
+    add_bullet(doc, "veterinario El Cañaveral · peluquería canina Cañaveral")
+
+    add_h(doc, "Hogar, deporte y ocio", level=2)
+    add_bullet(doc, "ferretería El Cañaveral · fontanero Cañaveral · electricista PAU")
+    add_bullet(doc, "gimnasio El Cañaveral · pádel Cañaveral · pilates PAU")
+    add_bullet(doc, "talleres mecánicos Cañaveral · ITV Vicálvaro")
+
+    add_h(doc, "Búsquedas de comunidad y vida en el barrio", level=2)
+    add_bullet(doc, "qué hacer en El Cañaveral · eventos PAU Cañaveral")
+    add_bullet(doc, "asociación vecinos El Cañaveral · noticias El Cañaveral")
+    add_bullet(doc, "Junta Municipal Vicálvaro · transporte PAU Cañaveral")
+    add_bullet(doc, "vivir en El Cañaveral · barrio El Cañaveral Madrid")
+
+    page_break(doc)
+
+    # =========================================================
+    # 8. HOJA DE RUTA
+    # =========================================================
+    add_h(doc, "Hoja de ruta: lo que viene", level=1)
+    add_para(doc,
+        "El sponsorship de SM Homes financia la consolidación de elcanaveral.info como hub completo "
+        "del barrio. Estas son las áreas que activamos en los próximos 12 meses, todas ellas con "
+        "presencia visible del sponsor:",
+        space_after=8)
+
+    add_h(doc, "Q3 2026 — Consolidación", level=2)
+    add_bullet(doc, "ampliación a 200+ negocios (cobertura 95% comercio físico del PAU).",
+               bold_prefix="Directorio")
+    add_bullet(doc, "calendario público de eventos del barrio (mercados, fiestas, asociaciones).",
+               bold_prefix="Eventos")
+    add_bullet(doc, "guías editoriales: 'cómo matricular en el cole', 'transporte al centro', "
+               "'servicios municipales'.", bold_prefix="Guías prácticas")
+
+    add_h(doc, "Q4 2026 — Editorial y Audiencia", level=2)
+    add_bullet(doc, "blog con 1-2 piezas semanales sobre vida en el PAU. Cobertura SEO long-tail.",
+               bold_prefix="Blog")
+    add_bullet(doc, "boletín mensual con novedades del barrio y nuevos negocios listados.",
+               bold_prefix="Newsletter")
+    add_bullet(doc, "mapa visual de El Cañaveral con todos los servicios geolocalizados.",
+               bold_prefix="Mapa interactivo")
+
+    add_h(doc, "Q1 2027 — Servicios al Vecino", level=2)
+    add_bullet(doc, "información actualizada de líneas de bus, EMT, próximas estaciones de Metro.",
+               bold_prefix="Transporte")
+    add_bullet(doc, "directorio de centros de salud, especialistas concertados, farmacias de guardia.",
+               bold_prefix="Sanidad")
+    add_bullet(doc, "información oficial de la Junta Municipal de Vicálvaro y Ayuntamiento.",
+               bold_prefix="Servicios públicos")
+
+    add_h(doc, "Q2 2027 — Marca de Barrio", level=2)
+    add_bullet(doc, "merchandising/identidad asociada a 'Hecho en El Cañaveral'.",
+               bold_prefix="Branding del barrio")
+    add_bullet(doc, "patrocinios cruzados con asociaciones vecinales y eventos locales.",
+               bold_prefix="Comunidad")
+    add_bullet(doc, "extensión a otros PAUs de Madrid bajo la misma plataforma LocalSEOAds.",
+               bold_prefix="Expansión")
+
+    page_break(doc)
+
+    # =========================================================
+    # 9. INVERSION Y TERMINOS
     # =========================================================
     add_h(doc, "Inversión y términos", level=1)
 
@@ -388,14 +563,36 @@ def main():
 
     add_h(doc, "Contacto", level=2)
     add_para(doc, "John Guerrero", size=12, bold=True, color=INK, space_after=2)
-    add_para(doc, "LocalSEOAds.com — operador de elcanaveral.info", size=10, color=MUTED, space_after=2)
-    add_para(doc, "Email: john@chefbusiness.co", size=10, color=MUTED, space_after=2)
-    add_para(doc, "Web: localseoads.com", size=10, color=MUTED, space_after=2)
-    add_para(doc, "Directorio: www.elcanaveral.info", size=10, color=MUTED, space_after=12)
+    add_para(doc, "Propietario de LocalSEOAds.com — titular oficial de elcanaveral.info",
+             size=10, color=MUTED, space_after=8)
+
+    add_para(doc, "Para esta propuesta y temas del directorio:", size=10, bold=True, color=INK, space_after=2)
+    add_para(doc, "local@elcanaveral.info", size=10, color=BRAND_BLUE, space_after=2)
+    add_para(doc, "www.elcanaveral.info", size=10, color=MUTED, space_after=8)
+
+    add_para(doc, "Para servicios de agencia digital (publicidad, web, SEO de tu empresa):",
+             size=10, bold=True, color=INK, space_after=2)
+    add_para(doc, "info@localseoads.com", size=10, color=BRAND_BLUE, space_after=2)
+    add_para(doc, "www.localseoads.com", size=10, color=MUTED, space_after=12)
+
+    add_divider(doc)
+
+    add_h(doc, "Firma", level=2)
+    add_para(doc,
+        "Esta propuesta de sponsorship la firma LocalSEOAds.com, en calidad de titular y operador "
+        "del directorio elcanaveral.info, representada por John Guerrero como propietario oficial "
+        "de ambas entidades.",
+        size=10, color=INK, space_after=10)
+
+    add_para(doc, "John Guerrero", size=12, bold=True, color=INK, space_after=0)
+    add_para(doc, "Propietario · LocalSEOAds.com",
+             size=10, color=MUTED, space_after=0)
+    add_para(doc, "Titular del directorio elcanaveral.info",
+             size=10, color=MUTED, space_after=12)
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(20)
+    p.paragraph_format.space_before = Pt(16)
     r = p.add_run("Gracias por considerar la propuesta.")
     set_run(r, size=11, italic=True, color=MUTED)
 
