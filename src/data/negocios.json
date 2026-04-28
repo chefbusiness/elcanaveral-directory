@@ -4423,5 +4423,248 @@
       "/images/negocios/sm-homes-el-canaveral-4.jpg",
       "/images/negocios/sm-homes-el-canaveral-5.jpg"
     ]
+  },
+  {
+    "slug": "mediadores-inmobiliarios-canaveral",
+    "name": "Mediadores Inmobiliarios El Cañaveral",
+    "description": "Mediadores Inmobiliarios opera con oficina en El Cañaveral (Calle Enrique Urquijo 134), prestando servicios completos de compraventa y alquiler de vivienda en el barrio. Atienden con horario amplio de lunes a sábado y ofrecen valoraciones gratuitas, asesoramiento jurídico y gestión integral de la operación.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "website": "https://www.mediadoresinmobiliarios.es/",
+    "tags": [
+      "inmobiliaria",
+      "compraventa",
+      "alquiler"
+    ],
+    "featured": false,
+    "servicios": [
+      "Compraventa de viviendas",
+      "Alquiler de viviendas",
+      "Valoración gratuita de inmuebles",
+      "Asesoramiento personalizado",
+      "Gestión de documentación",
+      "Financiación a medida"
+    ],
+    "destacados": [
+      "Oficina física en El Cañaveral",
+      "Equipo local con conocimiento del mercado",
+      "Valoración gratuita sin compromiso",
+      "Servicio integral compraventa y alquiler"
+    ],
+    "horario": "L-V 9:00–21:00 · D cerrado",
+    "image": "/images/negocios/mediadores-inmobiliarios-canaveral.jpg",
+    "address": "C. de Enrique Urquijo, 134, Vicálvaro, 28052 Madrid",
+    "phone": "722148775",
+    "images": [
+      "/images/negocios/mediadores-inmobiliarios-canaveral.jpg",
+      "/images/negocios/mediadores-inmobiliarios-canaveral-2.jpg",
+      "/images/negocios/mediadores-inmobiliarios-canaveral-3.jpg",
+      "/images/negocios/mediadores-inmobiliarios-canaveral-4.jpg",
+      "/images/negocios/mediadores-inmobiliarios-canaveral-5.jpg"
+    ]
+  },
+  {
+    "slug": "redpiso-el-canaveral",
+    "name": "Redpiso El Cañaveral",
+    "description": "Oficina de la red Redpiso en El Cañaveral, ubicada en la avenida principal del barrio (Avenida de Miguel Delibes 30). Especialistas en compraventa y alquiler de vivienda en el PAU de El Cañaveral, con respaldo de una de las redes inmobiliarias más grandes de España y atención de equipo local.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "website": "https://www.redpiso.es/oficina/inmobiliaria-el-canaveral/venta",
+    "tags": [
+      "inmobiliaria",
+      "compraventa",
+      "alquiler"
+    ],
+    "featured": false,
+    "servicios": [
+      "Compraventa de viviendas",
+      "Alquiler de viviendas",
+      "Valoración gratuita de inmuebles",
+      "Asesoramiento personalizado",
+      "Gestión de documentación",
+      "Financiación a medida"
+    ],
+    "destacados": [
+      "Oficina física en El Cañaveral",
+      "Equipo local con conocimiento del mercado",
+      "Valoración gratuita sin compromiso",
+      "Servicio integral compraventa y alquiler"
+    ],
+    "horario": "L-V 9:30–14:00, 16:00–20:00 · D cerrado",
+    "image": "/images/negocios/redpiso-el-canaveral.jpg",
+    "address": "Av. de Miguel Delibes, 30, Local 8, Vicálvaro, 28052 Madrid",
+    "phone": "910943769",
+    "images": [
+      "/images/negocios/redpiso-el-canaveral.jpg",
+      "/images/negocios/redpiso-el-canaveral-2.jpg",
+      "/images/negocios/redpiso-el-canaveral-3.jpg"
+    ]
+  },
+  {
+    "slug": "inmobiliaria-el-canaveral-coslada",
+    "name": "Inmobiliaria El Cañaveral (Coslada)",
+    "description": "Inmobiliaria de proximidad ubicada en el casco histórico de Coslada (Calle de la Iglesia 4), especializada en operaciones en Coslada, San Fernando de Henares y barrios colindantes con El Cañaveral. Servicio personalizado de compraventa y alquiler con horario partido de lunes a viernes.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "website": "http://www.inmobiliariaelcañaveral.com/",
+    "tags": [
+      "inmobiliaria",
+      "compraventa",
+      "alquiler"
+    ],
+    "featured": false,
+    "servicios": [
+      "Compraventa de viviendas",
+      "Alquiler de viviendas",
+      "Valoración gratuita de inmuebles",
+      "Asesoramiento personalizado",
+      "Gestión de documentación",
+      "Financiación a medida"
+    ],
+    "destacados": [
+      "Oficina física en Coslada",
+      "Equipo local con conocimiento del mercado",
+      "Valoración gratuita sin compromiso",
+      "Servicio integral compraventa y alquiler"
+    ],
+    "horario": "L-V 9:00–14:00, 16:00–19:00 · S cerrado · D cerrado",
+    "image": "/images/negocios/inmobiliaria-el-canaveral-coslada.jpg",
+    "address": "C. de la Iglesia, 4, 28821 Coslada, Madrid",
+    "phone": "910289808",
+    "images": [
+      "/images/negocios/inmobiliaria-el-canaveral-coslada.jpg",
+      "/images/negocios/inmobiliaria-el-canaveral-coslada-2.jpg",
+      "/images/negocios/inmobiliaria-el-canaveral-coslada-3.jpg",
+      "/images/negocios/inmobiliaria-el-canaveral-coslada-4.jpg"
+    ]
+  },
+  {
+    "slug": "inmoacierta-vicalvaro",
+    "name": "INMOACIERTA Inmobiliaria Familiar Vicálvaro",
+    "description": "Inmobiliaria familiar con sede en Vicálvaro (Calle del Lago Van 12). Más de 270 valoraciones positivas en Google avalan su trayectoria. Atienden compraventa y alquiler en Vicálvaro, El Cañaveral y Valdebernardo con un enfoque cercano y de seguimiento personalizado.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "website": "http://www.inmoacierta.com/",
+    "tags": [
+      "inmobiliaria",
+      "compraventa",
+      "alquiler"
+    ],
+    "featured": false,
+    "servicios": [
+      "Compraventa de viviendas",
+      "Alquiler de viviendas",
+      "Valoración gratuita de inmuebles",
+      "Asesoramiento personalizado",
+      "Gestión de documentación",
+      "Financiación a medida"
+    ],
+    "destacados": [
+      "Oficina física en Vicálvaro",
+      "Equipo local con conocimiento del mercado",
+      "Valoración gratuita sin compromiso",
+      "Servicio integral compraventa y alquiler"
+    ],
+    "horario": "L-V 9:30–14:00, 17:00–20:30 · S cerrado · D cerrado",
+    "image": "/images/negocios/inmoacierta-vicalvaro.jpg",
+    "address": "C. del Lago Van, 12, Vicálvaro, 28032 Madrid",
+    "phone": "623234507",
+    "images": [
+      "/images/negocios/inmoacierta-vicalvaro.jpg",
+      "/images/negocios/inmoacierta-vicalvaro-2.jpg",
+      "/images/negocios/inmoacierta-vicalvaro-3.jpg",
+      "/images/negocios/inmoacierta-vicalvaro-4.jpg",
+      "/images/negocios/inmoacierta-vicalvaro-5.jpg"
+    ]
+  },
+  {
+    "slug": "globalpiso-vicalvaro",
+    "name": "Globalpiso Inmobiliaria Vicálvaro",
+    "description": "Globalpiso es una de las oficinas inmobiliarias con más recorrido en Vicálvaro (Calle San Cipriano 30). Casi 300 reseñas en Google y un servicio integral de compraventa, alquiler, valoración y financiación para todo el distrito de Vicálvaro y El Cañaveral.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "website": "http://www.globalpiso.es/inmobiliaria/vicalvaro",
+    "tags": [
+      "inmobiliaria",
+      "compraventa",
+      "alquiler"
+    ],
+    "featured": false,
+    "servicios": [
+      "Compraventa de viviendas",
+      "Alquiler de viviendas",
+      "Valoración gratuita de inmuebles",
+      "Asesoramiento personalizado",
+      "Gestión de documentación",
+      "Financiación a medida"
+    ],
+    "destacados": [
+      "Oficina física en Vicálvaro",
+      "Equipo local con conocimiento del mercado",
+      "Valoración gratuita sin compromiso",
+      "Servicio integral compraventa y alquiler"
+    ],
+    "horario": "L-V 10:00–14:00, 17:00–20:30 · D cerrado",
+    "image": "/images/negocios/globalpiso-vicalvaro.jpg",
+    "address": "C. de S. Cipriano, 30, Vicálvaro, 28032 Madrid",
+    "phone": "910429760",
+    "images": [
+      "/images/negocios/globalpiso-vicalvaro.jpg",
+      "/images/negocios/globalpiso-vicalvaro-2.jpg",
+      "/images/negocios/globalpiso-vicalvaro-3.jpg",
+      "/images/negocios/globalpiso-vicalvaro-4.jpg",
+      "/images/negocios/globalpiso-vicalvaro-5.jpg"
+    ]
+  },
+  {
+    "slug": "alianza-madrid-vicalvaro",
+    "name": "Alianza Madrid Inmobiliaria Vicálvaro",
+    "description": "Alianza Madrid es una agencia inmobiliaria consolidada en Vicálvaro (Calle San Cipriano 20), con casi 200 reseñas con 4.8 de media. Ofrecen compraventa y alquiler de vivienda con asesoramiento integral, valoración gratuita y especialización en el distrito Vicálvaro–El Cañaveral.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "website": "http://www.alianzamadrid.com/",
+    "tags": [
+      "inmobiliaria",
+      "compraventa",
+      "alquiler"
+    ],
+    "featured": false,
+    "servicios": [
+      "Compraventa de viviendas",
+      "Alquiler de viviendas",
+      "Valoración gratuita de inmuebles",
+      "Asesoramiento personalizado",
+      "Gestión de documentación",
+      "Financiación a medida"
+    ],
+    "destacados": [
+      "Oficina física en Vicálvaro",
+      "Equipo local con conocimiento del mercado",
+      "Valoración gratuita sin compromiso",
+      "Servicio integral compraventa y alquiler"
+    ],
+    "horario": "L-V 9:30–14:00, 17:00–20:30 · D cerrado",
+    "image": "/images/negocios/alianza-madrid-vicalvaro.jpg",
+    "address": "C. de S. Cipriano, 20, Vicálvaro, 28032 Madrid",
+    "phone": "910424755",
+    "images": [
+      "/images/negocios/alianza-madrid-vicalvaro.jpg",
+      "/images/negocios/alianza-madrid-vicalvaro-2.jpg",
+      "/images/negocios/alianza-madrid-vicalvaro-3.jpg",
+      "/images/negocios/alianza-madrid-vicalvaro-4.jpg",
+      "/images/negocios/alianza-madrid-vicalvaro-5.jpg"
+    ]
   }
 ]
