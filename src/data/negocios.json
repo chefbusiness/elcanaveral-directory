@@ -110,10 +110,11 @@
       "Ideal para compras rápidas y diarias"
     ],
     "horario": "L-S 9:30-14:30, 17:00-20:30",
-    "address": "Calle Blas de Lezo 5, 28052 Madrid",
+    "address": "C. Ferenc Puskas, 245, Vicálvaro, 28052 Madrid",
     "images": [
       "/images/negocios/supermercado-el-canaveral.jpg",
-      "/images/negocios/supermercado-el-canaveral-2.jpg"
+      "/images/negocios/supermercado-el-canaveral-2.jpg",
+      "/images/negocios/supermercado-el-canaveral-3.jpg"
     ]
   },
   {
@@ -459,43 +460,6 @@
       "/images/negocios/megafruta-canaveral-3.jpg",
       "/images/negocios/megafruta-canaveral-4.jpg",
       "/images/negocios/megafruta-canaveral-5.jpg"
-    ]
-  },
-  {
-    "slug": "megafruta-2",
-    "name": "Megafruta 2",
-    "description": "Megafruta 2 es la segunda ubicación de la popular frutería en El Cañaveral, manteniendo la misma calidad de producto fresco y la atención cercana que.",
-    "category": "fruterias",
-    "categoryName": "Fruterías",
-    "zona": "el-canaveral",
-    "zonaName": "El Cañaveral",
-    "tags": [],
-    "featured": false,
-    "image": "/images/negocios/megafruta-2.jpg",
-    "servicios": [
-      "Amplia variedad de frutas",
-      "Gran surtido de verduras",
-      "Ofertas diarias",
-      "Productos de temporada",
-      "Legumbres",
-      "Frutos secos",
-      "Huevos",
-      "Atención rápida"
-    ],
-    "destacados": [
-      "Misma calidad y precios que la tienda original",
-      "Producto fresco garantizado",
-      "Ubicación adicional para mayor comodidad",
-      "Atención al cliente eficiente"
-    ],
-    "horario": "L-S 9:00-14:30, 17:00-20:30, D 9:30-14:00",
-    "address": "Calle Victoria Kent 5, 28052 Madrid",
-    "images": [
-      "/images/negocios/megafruta-2.jpg",
-      "/images/negocios/megafruta-2-2.jpg",
-      "/images/negocios/megafruta-2-3.jpg",
-      "/images/negocios/megafruta-2-4.jpg",
-      "/images/negocios/megafruta-2-5.jpg"
     ]
   },
   {
@@ -1141,7 +1105,7 @@
     "terraza": true,
     "precioRango": "€",
     "image": "/images/negocios/los-fogones-canaveral.jpg",
-    "address": "Avenida Miguel Delibes 25, 28052 Madrid",
+    "address": "C. de Enrique Urquijo, 170, Vicálvaro, 28052 Madrid",
     "images": [
       "/images/negocios/los-fogones-canaveral.jpg",
       "/images/negocios/los-fogones-canaveral-2.jpg",
@@ -1391,7 +1355,7 @@
       "Odontopediatría"
     ],
     "image": "/images/negocios/mardones-y-martinez-dental.jpg",
-    "address": "Calle Victoria Kent 10, 28052 Madrid",
+    "address": "C. Victoria Kent, 75, local 9, Vicálvaro, 28052 Madrid",
     "phone": "910000000",
     "images": [
       "/images/negocios/mardones-y-martinez-dental.jpg",
@@ -1399,54 +1363,6 @@
       "/images/negocios/mardones-y-martinez-dental-3.jpg",
       "/images/negocios/mardones-y-martinez-dental-4.jpg",
       "/images/negocios/mardones-y-martinez-dental-5.jpg"
-    ]
-  },
-  {
-    "slug": "ikigai-dental-canaveral",
-    "name": "Clínica Dental Ikigai",
-    "description": "Clínica Dental Ikigai en El Cañaveral se especializa en ortodoncia avanzada para pacientes de todas las edades, utilizando tecnología digital para.",
-    "category": "salud",
-    "categoryName": "Salud y Bienestar",
-    "zona": "el-canaveral",
-    "zonaName": "El Cañaveral",
-    "website": "https://garantiadeclinica.com/clinicas-dentales-en-madrid/dentista-en-el-canaveral/",
-    "tags": [
-      "dentista",
-      "ortodoncia",
-      "digital"
-    ],
-    "featured": false,
-    "servicios": [
-      "Ortodoncia invisible (Invisalign)",
-      "Ortodoncia con brackets (metálicos, estéticos)",
-      "Ortodoncia interceptiva infantil",
-      "Estudio de ortodoncia digital 3D",
-      "Retenedores personalizados",
-      "Blanqueamiento dental post-ortodoncia",
-      "Revisiones y mantenimiento",
-      "Odontología general"
-    ],
-    "destacados": [
-      "Especialistas en ortodoncia avanzada",
-      "Tecnología digital para diagnósticos",
-      "Tratamientos personalizados",
-      "Enfoque en la estética y función"
-    ],
-    "horario": "L-V 10:00-14:00, 16:00-20:00",
-    "especialidades": [
-      "Ortodoncia",
-      "Odontología General",
-      "Estética Dental"
-    ],
-    "image": "/images/negocios/ikigai-dental-canaveral.jpg",
-    "address": "Calle Anna Frank 5, 28052 Madrid",
-    "phone": "910000000",
-    "images": [
-      "/images/negocios/ikigai-dental-canaveral.jpg",
-      "/images/negocios/ikigai-dental-canaveral-2.jpg",
-      "/images/negocios/ikigai-dental-canaveral-3.jpg",
-      "/images/negocios/ikigai-dental-canaveral-4.jpg",
-      "/images/negocios/ikigai-dental-canaveral-5.jpg"
     ]
   },
   {
@@ -2379,52 +2295,6 @@
     ]
   },
   {
-    "slug": "clinica-fisioterapia-prolive",
-    "name": "Clínica de Fisioterapia Prolive",
-    "description": "Ubicada en la Calle Victoria Kent, Local 8, en El Cañaveral, Prolive es un centro de fisioterapia de vanguardia. Se especializan en rehabilitación.",
-    "category": "salud",
-    "categoryName": "Salud y Bienestar",
-    "zona": "el-canaveral",
-    "zonaName": "El Cañaveral",
-    "address": "C. Victoria Kent, Local 8, Vicalvaro, 28052 Madrid",
-    "tags": [
-      "fisioterapia",
-      "rehabilitación",
-      "deportiva"
-    ],
-    "featured": false,
-    "servicios": [
-      "Fisioterapia deportiva",
-      "Tratamiento del dolor crónico",
-      "Rehabilitación post-quirúrgica",
-      "Punción seca",
-      "Terapia manual",
-      "Electroterapia",
-      "Readaptación al ejercicio"
-    ],
-    "destacados": [
-      "Especialistas en deporte y dolor crónico",
-      "Tecnología avanzada para tratamientos",
-      "Atención personalizada y seguimiento",
-      "Ubicación céntrica en El Cañaveral"
-    ],
-    "horario": "L-V 9:00-21:00",
-    "especialidades": [
-      "Fisioterapia deportiva",
-      "Fisioterapia traumatológica",
-      "Fisioterapia reumatológica",
-      "Fisioterapia neurológica"
-    ],
-    "image": "/images/negocios/clinica-fisioterapia-prolive.jpg",
-    "images": [
-      "/images/negocios/clinica-fisioterapia-prolive.jpg",
-      "/images/negocios/clinica-fisioterapia-prolive-2.jpg",
-      "/images/negocios/clinica-fisioterapia-prolive-3.jpg",
-      "/images/negocios/clinica-fisioterapia-prolive-4.jpg",
-      "/images/negocios/clinica-fisioterapia-prolive-5.jpg"
-    ]
-  },
-  {
     "slug": "clinica-muv-canaveral",
     "name": "Clínica MUV Fisioterapia y Pilates",
     "description": "Clínica MUV en El Cañaveral es un centro integral de fisioterapia y pilates terapéutico. Son expertos en suelo pélvico, rehabilitación posparto y.",
@@ -2461,7 +2331,7 @@
       "Fisioterapia traumatológica",
       "Pilates terapéutico"
     ],
-    "address": "Calle Blas de Lezo 7, 28052 Madrid",
+    "address": "C. Victoria Kent, Local 8, Vicálvaro, 28052 Madrid",
     "phone": "912345678",
     "image": "/images/negocios/clinica-muv-canaveral.jpg",
     "images": [
@@ -3837,49 +3707,6 @@
     ]
   },
   {
-    "slug": "dentistaelcanaveral-consultorio",
-    "name": "Dentistas El Cañaveral",
-    "description": "Dentistas El Cañaveral es un portal informativo y consultorio de referencia en la Calle de Victoria Kent, 5, que agrupa y facilita el acceso a los.",
-    "category": "salud",
-    "categoryName": "Salud y Bienestar",
-    "zona": "el-canaveral",
-    "zonaName": "El Cañaveral",
-    "website": "https://dentistaelcanaveral.com/",
-    "tags": [
-      "dentista",
-      "consultorio",
-      "información"
-    ],
-    "featured": false,
-    "address": "Calle de Victoria Kent, 5, 28052 Madrid",
-    "phone": "913 06 00 00",
-    "servicios": [
-      "Información sobre clínicas dentales",
-      "Asesoramiento en tratamientos",
-      "Citas con especialistas",
-      "Presupuestos comparativos",
-      "Odontología general",
-      "Estética dental",
-      "Implantes dentales",
-      "Ortodoncia"
-    ],
-    "destacados": [
-      "Centraliza la oferta dental del barrio",
-      "Asesoramiento personalizado",
-      "Facilita la elección del dentista",
-      "Información actualizada y completa"
-    ],
-    "horario": "L-V 9:00-19:00",
-    "image": "/images/negocios/dentistaelcanaveral-consultorio.jpg",
-    "images": [
-      "/images/negocios/dentistaelcanaveral-consultorio.jpg",
-      "/images/negocios/dentistaelcanaveral-consultorio-2.jpg",
-      "/images/negocios/dentistaelcanaveral-consultorio-3.jpg",
-      "/images/negocios/dentistaelcanaveral-consultorio-4.jpg",
-      "/images/negocios/dentistaelcanaveral-consultorio-5.jpg"
-    ]
-  },
-  {
     "slug": "vietnam-2013-canaveral",
     "name": "Vietnam 2013 El Cañaveral",
     "description": "Restaurante vietnamita auténtico, sucursal de la reconocida Chef Duong. Ofrecen pho, banh mi, rollitos de primavera y otros platos tradicionales.",
@@ -4371,7 +4198,7 @@
       "Punto de venta de loterías"
     ],
     "horario": "Lunes a Viernes: 09:00-14:00 y 17:00-20:00, Sábado: 09:30-14:00, Domingo: Cerrado",
-    "address": "Av. de Miguel Delibes, 60, 28052 Madrid",
+    "address": "Av. de Blas de Lezo, 74, Vicálvaro, 28052 Madrid",
     "image": "/images/negocios/estanco-el-canaveral.jpg",
     "images": [
       "/images/negocios/estanco-el-canaveral.jpg",
