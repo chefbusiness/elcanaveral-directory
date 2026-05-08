@@ -1,0 +1,289 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+
+const tiers = [
+  {
+    name: "Listado básico",
+    price: "Gratis",
+    cadence: "",
+    tagline: "Aparece en el directorio sin coste",
+    cta: "Reclamar ficha",
+    href: "/alta",
+    highlight: false,
+    features: [
+      { label: "Ficha automática del negocio", on: true },
+      { label: "Categoría y zona asignadas", on: true },
+      { label: "Hasta 5 fotos públicas (Google Maps)", on: true },
+      { label: "Descripción editorial", on: true },
+      { label: "Mapa de ubicación", on: true },
+      { label: "Solicitud de cambios por email", on: true },
+      { label: "Edición directa por el titular", on: false },
+      { label: "Botones de contacto (web, WhatsApp, tel)", on: false },
+      { label: "Badge verificado", on: false },
+      { label: "Sin banner externo en tu ficha", on: false },
+      { label: "Featured en home", on: false },
+      { label: "Top de tu categoría y zona", on: false },
+      { label: "Reporte mensual de visitas", on: false },
+    ],
+  },
+  {
+    name: "Verificado",
+    price: "19 €",
+    cadence: "/mes · 190 € anual",
+    tagline: "Toma el control de tu ficha y elimina la publicidad externa",
+    cta: "Contratar",
+    href: "/anunciate?plan=verificado",
+    highlight: false,
+    features: [
+      { label: "Todo lo del plan gratuito", on: true },
+      { label: "Edición directa de tu ficha", on: true },
+      { label: "Hasta 10 fotografías propias", on: true },
+      { label: "Botones de contacto reales (web, WhatsApp, tel)", on: true },
+      { label: "Badge \"Verificado\" en tu ficha", on: true },
+      { label: "Sin banner LocalSEOAds en tu ficha", on: true },
+      { label: "Soporte por email <72 h", on: true },
+      { label: "Featured en home", on: false },
+      { label: "Top de tu categoría y zona", on: false },
+      { label: "Banner propio en tu ficha", on: false },
+      { label: "Reporte mensual de visitas", on: false },
+    ],
+  },
+  {
+    name: "Destacado",
+    price: "49 €",
+    cadence: "/mes · 490 € anual",
+    tagline: "Visibilidad prioritaria en home, categoría y zona",
+    cta: "Contratar",
+    href: "/anunciate?plan=destacado",
+    highlight: true,
+    features: [
+      { label: "Todo lo del plan Verificado", on: true },
+      { label: "Featured rotativo en home", on: true },
+      { label: "Top de tu categoría", on: true },
+      { label: "Top de tu zona", on: true },
+      { label: "Banner propio inline en tu ficha (CTA a tu web)", on: true },
+      { label: "Hasta 15 fotografías propias", on: true },
+      { label: "Reporte mensual de visitas y clics", on: true },
+      { label: "Mención mensual en redes sociales del directorio", on: true },
+      { label: "Soporte por email <48 h", on: true },
+    ],
+  },
+  {
+    name: "Sponsor exclusivo",
+    price: "Desde 800 €",
+    cadence: "/mes · solo 1 por categoría",
+    tagline: "Patrocinio integral de tu categoría con presencia site-wide",
+    cta: "Solicitar propuesta",
+    href: "/sponsor",
+    highlight: false,
+    features: [
+      { label: "Todo lo del plan Destacado", on: true },
+      { label: "Sponsor exclusivo de tu categoría (1 único cliente)", on: true },
+      { label: "Banner site-wide rotativo (todas las páginas)", on: true },
+      { label: "Badge \"Patrocinador oficial\" en tu ficha", on: true },
+      { label: "Tarjeta sponsor en sidebar de toda la categoría", on: true },
+      { label: "Newsletter mensual con mención", on: true },
+      { label: "Hub social del barrio co-brandeado", on: true },
+      { label: "Reporte mensual detallado", on: true },
+      { label: "Acuerdo personalizado 12 meses", on: true },
+    ],
+  },
+];
+
+const faqs = [
+  {
+    q: "¿Quién está detrás del directorio?",
+    a: "elcanaveral.info es un proyecto editorial gestionado por LocalSEOAds.com, especialistas en SEO local de negocios de proximidad. El operador es vecino del barrio y mantiene el directorio con datos verificados.",
+  },
+  {
+    q: "¿Cómo se genera tráfico al directorio?",
+    a: "El directorio está optimizado para SEO local: Schema.org LocalBusiness por ficha, fotos reales, contenido único por zona y categoría, sitemap completo y canonical correcto. La mayor parte de las visitas llega vía búsquedas en Google del tipo \"[categoría] El Cañaveral\" o \"[negocio] Vicálvaro\".",
+  },
+  {
+    q: "¿Por qué pagar si mi negocio ya aparece gratis?",
+    a: "El listado gratuito te da presencia. Los planes de pago te dan control (editar tu ficha, subir tus fotos, mostrar tus contactos) y posicionamiento prioritario (featured en home, top de categoría, banner propio). Para negocios competitivos del barrio, marca diferencia.",
+  },
+  {
+    q: "¿Cómo se contrata el plan?",
+    a: "Rellenas el formulario en /anunciate, te confirmamos disponibilidad por email en menos de 48 horas, te enviamos los datos para el pago (transferencia, SEPA o pasarela) y activamos el plan en menos de 24 horas tras recibir el primer pago.",
+  },
+  {
+    q: "¿Hay permanencia?",
+    a: "No. Los planes mensuales se renuevan automáticamente y puedes cancelar cuando quieras escribiendo a local@elcanaveral.info con 7 días de antelación al final del periodo. Los planes anuales tienen una pequeña bonificación a cambio del compromiso de 12 meses.",
+  },
+  {
+    q: "¿Qué pasa si el sponsor exclusivo de mi categoría ya está cogido?",
+    a: "Si la categoría ya tiene un sponsor activo, te avisamos al recibir tu solicitud y te ofrecemos una posición en el plan Destacado. En cuanto el slot del sponsor quede libre, puedes optar a él.",
+  },
+  {
+    q: "¿Garantizáis resultados de leads o ventas?",
+    a: "No. Los planes de pago aumentan la visibilidad dentro del directorio, pero el resultado comercial depende de muchos factores (estacionalidad, competencia, calidad del propio negocio, oferta). Lo que sí garantizamos es la posición visual contratada y un reporte mensual transparente de visitas y clics a tu ficha.",
+  },
+  {
+    q: "¿Hacéis SEO de mi web aparte del directorio?",
+    a: "Sí, pero como servicio separado a través de LocalSEOAds.com. El directorio es un canal de visibilidad complementario; el SEO de tu propia web requiere un trabajo dedicado que cotizamos en función del proyecto.",
+  },
+];
+---
+
+<BaseLayout
+  title="Planes y precios"
+  description="Listado básico gratis, plan Verificado 19€/mes, Destacado 49€/mes y Sponsor exclusivo desde 800€/mes. Visibilidad real para negocios del barrio El Cañaveral."
+>
+  <Header />
+
+  <!-- Hero -->
+  <section class="pt-24 pb-12 px-4 bg-gradient-to-b from-warm-50 to-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold text-brand-900 mb-4 tracking-tight">
+        Planes y precios
+      </h1>
+      <p class="text-lg sm:text-xl text-warm-700 max-w-2xl mx-auto leading-relaxed">
+        Aparece en el directorio del barrio. Gratis para empezar. Planes de pago cuando quieras
+        ganar visibilidad y control sobre tu ficha.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tiers grid -->
+  <section class="px-4 pb-16">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {tiers.map((tier) => (
+        <article class={`relative rounded-2xl border-2 p-6 flex flex-col ${
+          tier.highlight
+            ? "border-accent-500 bg-white shadow-xl"
+            : "border-warm-200 bg-white"
+        }`}>
+          {tier.highlight && (
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent-500 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+              Más elegido
+            </div>
+          )}
+          <div class="mb-5">
+            <h2 class="text-xl font-bold text-brand-900 mb-1">{tier.name}</h2>
+            <p class="text-sm text-warm-600 min-h-[40px]">{tier.tagline}</p>
+          </div>
+          <div class="mb-5">
+            <div class="text-3xl font-bold text-brand-900">{tier.price}</div>
+            {tier.cadence && (
+              <div class="text-xs text-warm-600 mt-1">{tier.cadence}</div>
+            )}
+          </div>
+          <ul class="space-y-2 mb-6 flex-1">
+            {tier.features.map((f) => (
+              <li class={`flex items-start gap-2 text-sm ${f.on ? "text-warm-800" : "text-warm-400 line-through"}`}>
+                <span class={`shrink-0 mt-0.5 ${f.on ? "text-accent-500" : "text-warm-300"}`}>
+                  {f.on ? "✓" : "·"}
+                </span>
+                <span>{f.label}</span>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={tier.href}
+            class={`block text-center font-semibold px-4 py-3 rounded-lg transition-colors ${
+              tier.highlight
+                ? "bg-accent-500 text-white hover:bg-accent-600"
+                : "bg-brand-900 text-white hover:bg-brand-800"
+            }`}
+          >
+            {tier.cta} →
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- Comparativa rápida -->
+  <section class="px-4 py-16 bg-warm-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-brand-900 text-center mb-3">¿Qué incluye cada plan?</h2>
+      <p class="text-center text-warm-600 mb-10 max-w-2xl mx-auto">
+        Resumen rápido para elegir según el momento de tu negocio.
+      </p>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-warm-200">
+        <div class="divide-y divide-warm-100">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5">
+            <div class="font-semibold text-brand-900">Empiezas el negocio</div>
+            <div class="sm:col-span-2 text-warm-700 text-sm">
+              <strong class="text-brand-900">Listado básico (gratis).</strong> Aparece en el directorio,
+              gana presencia, pide a tus clientes que te encuentren aquí.
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5">
+            <div class="font-semibold text-brand-900">Quieres control de tu ficha</div>
+            <div class="sm:col-span-2 text-warm-700 text-sm">
+              <strong class="text-brand-900">Verificado (19 €/mes).</strong> Editas tu ficha, subes tus
+              fotos, muestras tu WhatsApp y eliminas la publicidad de LocalSEOAds en tu página.
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5">
+            <div class="font-semibold text-brand-900">Compites con otros del barrio</div>
+            <div class="sm:col-span-2 text-warm-700 text-sm">
+              <strong class="text-brand-900">Destacado (49 €/mes).</strong> Apareces primero en tu
+              categoría y zona, en el home rotativo y con banner propio en tu ficha. Reporte mensual.
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5">
+            <div class="font-semibold text-brand-900">Quieres dominar tu sector</div>
+            <div class="sm:col-span-2 text-warm-700 text-sm">
+              <strong class="text-brand-900">Sponsor exclusivo (desde 800 €/mes).</strong> Patrocinas
+              toda una categoría: banner site-wide, ficha premium con badge dorado, newsletter,
+              acuerdo 12 meses. Solo 1 por categoría.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="px-4 py-16">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-brand-900 text-center mb-10">Preguntas frecuentes</h2>
+      <div class="space-y-3">
+        {faqs.map((f) => (
+          <details class="group bg-white border border-warm-200 rounded-lg overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 p-4 cursor-pointer font-semibold text-brand-900 hover:bg-warm-50">
+              <span>{f.q}</span>
+              <span class="text-accent-500 text-xl group-open:rotate-45 transition-transform">+</span>
+            </summary>
+            <div class="px-4 pb-4 text-warm-700 leading-relaxed">{f.a}</div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section class="px-4 pb-20">
+    <div class="max-w-3xl mx-auto text-center bg-brand-900 text-white rounded-2xl p-10">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-3">¿Hablamos?</h2>
+      <p class="text-brand-100 mb-6 max-w-xl mx-auto">
+        Si tienes dudas sobre qué plan encaja con tu negocio, escríbenos. Sin presión, sin compromiso.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/anunciate" class="inline-block bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+          Contratar Verificado o Destacado
+        </a>
+        <a href="/sponsor" class="inline-block bg-white text-brand-900 hover:bg-warm-50 font-semibold px-6 py-3 rounded-lg transition-colors">
+          Sponsor exclusivo (800 €/mes)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(f => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a }
+  }))
+})} />

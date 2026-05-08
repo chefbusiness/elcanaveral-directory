@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
 
 <footer class="border-t border-warm-200 py-12 px-4 mt-16 bg-brand-900 text-white">
   <div class="max-w-6xl mx-auto">
-    <div class="grid sm:grid-cols-4 gap-8 mb-10">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
       <div class="sm:col-span-2">
         <div class="flex items-center gap-2 mb-3">
           <span class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">EC</span>
@@ -20,21 +20,33 @@ const year = new Date().getFullYear();
         <nav class="flex flex-col gap-2 text-sm text-brand-100">
           <a href="/directorio" class="hover:text-white transition-colors">Todos los negocios</a>
           <a href="/zonas" class="hover:text-white transition-colors">Por zonas</a>
+          <a href="/comunidad" class="hover:text-white transition-colors">Comunidad</a>
+          <a href="/contacto" class="hover:text-white transition-colors">Contacto</a>
+        </nav>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3 text-sm uppercase tracking-wider text-brand-200">Para negocios</h3>
+        <nav class="flex flex-col gap-2 text-sm text-brand-100">
           <a href="/alta" class="hover:text-white transition-colors">Registra tu negocio</a>
+          <a href="/planes" class="hover:text-white transition-colors">Planes y precios</a>
+          <a href="/anunciate" class="hover:text-white transition-colors">Anúnciate</a>
+          <a href="/sponsor" class="hover:text-white transition-colors">Sponsor exclusivo</a>
         </nav>
       </div>
       <div>
         <h3 class="font-semibold mb-3 text-sm uppercase tracking-wider text-brand-200">Servicios</h3>
         <nav class="flex flex-col gap-2 text-sm text-brand-100">
+          <a href="https://localseoads.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">LocalSEOAds</a>
           <a href="https://gastroseo.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">GastroSEO</a>
           <a href="https://gastrolocal.pro" target="_blank" rel="noopener" class="hover:text-white transition-colors">GastroLocal</a>
-          <a href="https://localseoads.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">LocalSEOAds</a>
         </nav>
       </div>
     </div>
     <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-200 border-t border-brand-700 pt-6">
       <p>&copy; {year} {siteName} &mdash; Gestionado por <a href="https://localseoads.com" target="_blank" rel="noopener" class="hover:text-white underline">LocalSEOAds.com</a></p>
-      <div class="flex gap-6">
+      <div class="flex flex-wrap gap-x-5 gap-y-2 justify-center">
+        <a href="/aviso-legal" class="hover:text-white transition-colors">Aviso legal</a>
+        <a href="/terminos" class="hover:text-white transition-colors">Términos</a>
         <a href="/privacidad" class="hover:text-white transition-colors">Privacidad</a>
         <a href="/cookies" class="hover:text-white transition-colors">Cookies</a>
       </div>

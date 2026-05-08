@@ -1,0 +1,184 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+
+const submitted = Astro.url.searchParams.get("ok") === "1";
+const planParam = Astro.url.searchParams.get("plan") || "";
+const preselectVerificado = planParam === "verificado";
+const preselectDestacado = planParam === "destacado";
+---
+
+<BaseLayout
+  title="Anúnciate en el directorio"
+  description="Contrata el plan Verificado (19 €/mes) o Destacado (49 €/mes) y gana visibilidad real en El Cañaveral, Vicálvaro y alrededores."
+>
+  <Header />
+
+  <section class="pt-24 pb-12 px-4 bg-gradient-to-b from-warm-50 to-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold text-brand-900 mb-4 tracking-tight">
+        Gana visibilidad en el barrio
+      </h1>
+      <p class="text-lg text-warm-700 max-w-2xl mx-auto leading-relaxed">
+        Plan Verificado <strong class="text-brand-900">19 €/mes</strong> o Destacado <strong class="text-brand-900">49 €/mes</strong>.
+        Te confirmamos disponibilidad y te enviamos los datos de pago en menos de 48 horas.
+      </p>
+      <p class="text-sm text-warm-500 mt-4">
+        ¿Quieres ser sponsor exclusivo de toda una categoría? <a href="/sponsor" class="text-brand-700 underline">Plan Sponsor →</a>
+      </p>
+    </div>
+  </section>
+
+  {submitted ? (
+    <section class="px-4 pb-20">
+      <div class="max-w-2xl mx-auto bg-white border-2 border-accent-500 rounded-2xl p-8 text-center">
+        <div class="text-5xl mb-4">✓</div>
+        <h2 class="text-2xl font-bold text-brand-900 mb-2">Solicitud recibida</h2>
+        <p class="text-warm-700 mb-6">
+          Te confirmamos disponibilidad y te enviamos los datos de pago por email en menos de 48 horas.
+          Si necesitas urgencia, escríbenos a <a href="mailto:local@elcanaveral.info" class="text-brand-700 underline">local@elcanaveral.info</a>.
+        </p>
+        <a href="/planes" class="inline-block bg-brand-900 text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-800 transition-colors">
+          Ver todos los planes
+        </a>
+      </div>
+    </section>
+  ) : (
+    <section class="px-4 pb-20">
+      <div class="max-w-2xl mx-auto bg-white border border-warm-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+        <form
+          name="anunciate"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/anunciate?ok=1"
+          class="space-y-5"
+        >
+          <input type="hidden" name="form-name" value="anunciate" />
+          <p class="hidden"><label>No rellenar: <input name="bot-field" /></label></p>
+
+          <div>
+            <label class="block text-sm font-semibold text-brand-900 mb-2">Plan que te interesa *</label>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <label class="border border-warm-300 rounded-lg p-4 cursor-pointer hover:border-brand-600 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50 transition-colors">
+                <input type="radio" name="plan" value="Verificado (19 €/mes)" checked={preselectVerificado || (!preselectDestacado)} required class="sr-only peer" />
+                <div class="flex items-start justify-between mb-1">
+                  <span class="font-semibold text-brand-900">Verificado</span>
+                  <span class="text-brand-700 font-bold">19 €/mes</span>
+                </div>
+                <p class="text-xs text-warm-600">Edición de ficha, fotos propias, badge, sin banner externo</p>
+              </label>
+              <label class="border border-warm-300 rounded-lg p-4 cursor-pointer hover:border-accent-500 has-[:checked]:border-accent-500 has-[:checked]:bg-accent-50 transition-colors">
+                <input type="radio" name="plan" value="Destacado (49 €/mes)" checked={preselectDestacado} required class="sr-only peer" />
+                <div class="flex items-start justify-between mb-1">
+                  <span class="font-semibold text-brand-900">Destacado</span>
+                  <span class="text-accent-600 font-bold">49 €/mes</span>
+                </div>
+                <p class="text-xs text-warm-600">Featured home + top categoría + banner propio + reportes</p>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label for="cadencia" class="block text-sm font-semibold text-brand-900 mb-1">¿Mensual o anual?</label>
+            <select id="cadencia" name="cadencia" class="w-full px-4 py-2.5 border border-warm-300 rounded-lg bg-white focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100">
+              <option>Mensual</option>
+              <option>Anual (con bonificación)</option>
+              <option>Aún no lo tengo claro</option>
+            </select>
+          </div>
+
+          <hr class="border-warm-200" />
+
+          <div>
+            <label for="negocio" class="block text-sm font-semibold text-brand-900 mb-1">Nombre del negocio *</label>
+            <input id="negocio" name="negocio" type="text" required class="w-full px-4 py-2.5 border border-warm-300 rounded-lg focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100" />
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="categoria" class="block text-sm font-semibold text-brand-900 mb-1">Categoría *</label>
+              <select id="categoria" name="categoria" required class="w-full px-4 py-2.5 border border-warm-300 rounded-lg bg-white focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100">
+                <option value="">Selecciona</option>
+                <option>Restaurantes</option>
+                <option>Cafeterías</option>
+                <option>Panaderías</option>
+                <option>Supermercados</option>
+                <option>Fruterías</option>
+                <option>Tiendas de alimentación</option>
+                <option>Salud y bienestar</option>
+                <option>Belleza</option>
+                <option>Deporte</option>
+                <option>Educación</option>
+                <option>Hogar</option>
+                <option>Mascotas</option>
+                <option>Moda</option>
+                <option>Automoción</option>
+                <option>Servicios profesionales</option>
+                <option>Inmobiliarias</option>
+                <option>Otra</option>
+              </select>
+            </div>
+            <div>
+              <label for="zona" class="block text-sm font-semibold text-brand-900 mb-1">Zona *</label>
+              <select id="zona" name="zona" required class="w-full px-4 py-2.5 border border-warm-300 rounded-lg bg-white focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100">
+                <option value="">Selecciona</option>
+                <option>El Cañaveral</option>
+                <option>Vicálvaro</option>
+                <option>Coslada</option>
+                <option>San Fernando de Henares</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="ficha-existente" class="block text-sm font-semibold text-brand-900 mb-1">¿Ya tienes ficha en el directorio?</label>
+            <input id="ficha-existente" name="ficha-existente" type="url" placeholder="https://www.elcanaveral.info/..." class="w-full px-4 py-2.5 border border-warm-300 rounded-lg focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100" />
+            <p class="text-xs text-warm-500 mt-1">Pega la URL si ya estás listado. Si no, lo gestionamos en el alta.</p>
+          </div>
+
+          <hr class="border-warm-200" />
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="contacto" class="block text-sm font-semibold text-brand-900 mb-1">Tu nombre *</label>
+              <input id="contacto" name="contacto" type="text" required class="w-full px-4 py-2.5 border border-warm-300 rounded-lg focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100" />
+            </div>
+            <div>
+              <label for="telefono" class="block text-sm font-semibold text-brand-900 mb-1">Teléfono</label>
+              <input id="telefono" name="telefono" type="tel" class="w-full px-4 py-2.5 border border-warm-300 rounded-lg focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100" />
+            </div>
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-semibold text-brand-900 mb-1">Email *</label>
+            <input id="email" name="email" type="email" required class="w-full px-4 py-2.5 border border-warm-300 rounded-lg focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100" />
+          </div>
+
+          <div>
+            <label for="comentarios" class="block text-sm font-semibold text-brand-900 mb-1">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="3" placeholder="Cualquier información adicional, dudas o petición especial" class="w-full px-4 py-2.5 border border-warm-300 rounded-lg focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100"></textarea>
+          </div>
+
+          <label class="flex items-start gap-3 text-sm text-warm-700">
+            <input type="checkbox" name="acepto-rgpd" required class="mt-1" />
+            <span>
+              Acepto la <a href="/privacidad" class="text-brand-700 underline">política de privacidad</a> y los <a href="/terminos" class="text-brand-700 underline">términos y condiciones</a>.
+            </span>
+          </label>
+
+          <button type="submit" class="w-full bg-accent-500 hover:bg-accent-600 text-white font-semibold py-3 rounded-lg transition-colors">
+            Solicitar contratación →
+          </button>
+
+          <p class="text-xs text-warm-500 text-center">
+            Sin permanencia · cancelas cuando quieras · respuesta en menos de 48 h
+          </p>
+        </form>
+      </div>
+    </section>
+  )}
+
+  <Footer />
+</BaseLayout>

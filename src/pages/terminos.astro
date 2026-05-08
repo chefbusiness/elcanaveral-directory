@@ -1,0 +1,164 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<BaseLayout
+  title="Términos y Condiciones"
+  description="Términos y condiciones de uso del directorio elcanaveral.info y de los servicios de listado destacado para negocios."
+  noindex={true}
+>
+  <Header />
+  <section class="pt-24 pb-16 px-4">
+    <div class="max-w-3xl mx-auto prose prose-gray">
+      <h1>Términos y Condiciones</h1>
+      <p><strong>Última actualización:</strong> Mayo 2026</p>
+
+      <p>
+        Estos términos y condiciones regulan el uso del directorio
+        <strong>elcanaveral.info</strong> y, en particular, los servicios de listado destacado
+        ofrecidos a titulares de negocios (planes Verificado, Destacado y Sponsor exclusivo).
+      </p>
+
+      <h2>1. Aceptación</h2>
+      <p>
+        El uso del sitio implica la aceptación plena de estos términos. Si no estás de acuerdo con
+        alguno de los puntos, te pedimos que no utilices el sitio ni contrates los servicios.
+      </p>
+
+      <h2>2. Listado básico (gratuito)</h2>
+      <p>
+        Las fichas básicas del directorio se elaboran con información pública (Google Maps, web del
+        negocio, registros públicos) y se publican sin coste alguno para el titular del negocio.
+        Estas fichas pueden incluir:
+      </p>
+      <ul>
+        <li>Nombre comercial y categoría.</li>
+        <li>Dirección, teléfono, web y horario de apertura cuando estén disponibles públicamente.</li>
+        <li>Hasta 5 fotografías procedentes de Google Places API.</li>
+        <li>Descripción editorial generada por el equipo del directorio.</li>
+      </ul>
+      <p>
+        Si eres titular de un negocio listado y deseas modificar, completar o eliminar tu ficha
+        gratuita, puedes escribir a <a href="mailto:local@elcanaveral.info">local@elcanaveral.info</a>.
+      </p>
+
+      <h2>3. Planes de pago (Verificado, Destacado, Sponsor)</h2>
+      <p>
+        Los titulares de negocios pueden contratar planes de pago que ofrecen mayor visibilidad y
+        funcionalidades adicionales. Las condiciones específicas de cada plan se detallan en
+        la página <a href="/planes">Planes y precios</a>.
+      </p>
+
+      <h3>3.1. Contratación</h3>
+      <p>
+        La contratación se realiza mediante el formulario disponible en
+        <a href="/anunciate">/anunciate</a> o, en el caso del plan Sponsor exclusivo, mediante
+        propuesta personalizada tras contacto con el operador. La activación del plan requiere
+        confirmación por correo electrónico y el pago de la cuota correspondiente.
+      </p>
+
+      <h3>3.2. Facturación y pago</h3>
+      <p>
+        Los planes se facturan en cuotas mensuales o anuales según la modalidad elegida. El pago
+        se realiza mediante transferencia bancaria, domiciliación SEPA o pasarela de pago externa
+        (cuando esté disponible). El operador emite factura con todos los datos fiscales
+        correspondientes.
+      </p>
+
+      <h3>3.3. Duración y renovación</h3>
+      <p>
+        Los planes Verificado y Destacado tienen una duración mínima de un (1) mes y se renuevan
+        automáticamente al inicio de cada periodo, salvo cancelación expresa por escrito a
+        <a href="mailto:local@elcanaveral.info">local@elcanaveral.info</a> con al menos 7 días
+        de antelación al final del periodo en curso.
+      </p>
+      <p>
+        El plan Sponsor exclusivo se contrata mediante acuerdo separado de duración determinada
+        (típicamente 12 meses) con condiciones específicas pactadas entre las partes.
+      </p>
+
+      <h3>3.4. Cancelación</h3>
+      <p>
+        El cliente puede cancelar su plan en cualquier momento. La cancelación surte efecto al
+        final del periodo facturado. No se reembolsan cuotas ya satisfechas, salvo en los casos
+        previstos legalmente.
+      </p>
+
+      <h3>3.5. Derechos de desistimiento (consumidores)</h3>
+      <p>
+        Si el cliente actúa como consumidor (persona física no profesional), dispone de un plazo
+        de catorce (14) días naturales para desistir del contrato sin justificación, conforme al
+        Real Decreto Legislativo 1/2007. Este derecho no aplica a profesionales o empresas que
+        contraten servicios de visibilidad para su actividad económica.
+      </p>
+
+      <h2>4. Obligaciones del cliente</h2>
+      <p>El cliente que contrata un plan de pago se compromete a:</p>
+      <ul>
+        <li>Proporcionar información veraz, completa y actualizada del negocio.</li>
+        <li>Aportar fotografías propias o con licencia válida para su publicación.</li>
+        <li>No incluir contenidos ilícitos, engañosos o que vulneren derechos de terceros.</li>
+        <li>Comunicar al operador cualquier cambio relevante en los datos del negocio.</li>
+        <li>Abonar puntualmente las cuotas pactadas.</li>
+      </ul>
+
+      <h2>5. Derechos sobre las imágenes</h2>
+      <p>
+        Las fotografías que el cliente sube al directorio mediante el formulario de alta o
+        anúnciate deben ser propiedad del cliente o contar con licencia que permita su
+        publicación. El cliente cede al operador una licencia no exclusiva, gratuita y
+        territorialmente ilimitada para mostrar dichas imágenes en el directorio mientras dure
+        la relación contractual.
+      </p>
+      <p>
+        El operador se reserva el derecho a no publicar imágenes de baja calidad o que no se
+        correspondan con el negocio listado.
+      </p>
+
+      <h2>6. Suspensión y eliminación</h2>
+      <p>
+        El operador podrá suspender o eliminar fichas (gratuitas o de pago) en los siguientes
+        supuestos, previa notificación al cliente cuando proceda:
+      </p>
+      <ul>
+        <li>Cierre del negocio o pérdida de actividad económica.</li>
+        <li>Información manifiestamente falsa, engañosa o desactualizada.</li>
+        <li>Incumplimiento del pago de cuotas en planes contratados.</li>
+        <li>Reclamaciones acreditadas de terceros sobre derechos vulnerados.</li>
+        <li>Decisión editorial razonada del operador sobre la idoneidad del listado.</li>
+      </ul>
+
+      <h2>7. Limitación de responsabilidad</h2>
+      <p>
+        El operador no garantiza un volumen específico de visitas, contactos o conversiones
+        derivados del listado, dado que estos resultados dependen de múltiples factores
+        externos al directorio (estacionalidad, competencia, calidad del propio negocio,
+        evolución del SEO). Los planes de pago aumentan la visibilidad dentro del directorio,
+        pero no constituyen una garantía de resultados comerciales.
+      </p>
+
+      <h2>8. Modificaciones</h2>
+      <p>
+        El operador se reserva el derecho a modificar estos términos en cualquier momento.
+        Las modificaciones se notificarán a los clientes activos por correo electrónico con al
+        menos 15 días de antelación a su entrada en vigor. Si el cliente no acepta los cambios,
+        podrá cancelar su plan sin penalización.
+      </p>
+
+      <h2>9. Legislación y jurisdicción</h2>
+      <p>
+        Los presentes términos se rigen por la legislación española. Para cualquier controversia,
+        las partes se someten a los juzgados y tribunales de Madrid, salvo que la normativa de
+        consumo aplicable indique otro fuero competente.
+      </p>
+
+      <h2>10. Contacto</h2>
+      <p>
+        Para cualquier consulta sobre estos términos: <a href="mailto:local@elcanaveral.info">local@elcanaveral.info</a>.
+      </p>
+    </div>
+  </section>
+  <Footer />
+</BaseLayout>
