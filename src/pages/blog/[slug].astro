@@ -1,0 +1,212 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { generateListiclePaths, getRankedNegocios } from "@/lib/listicles";
+import type { Listicle } from "@/lib/listicles";
+
+export function getStaticPaths() {
+  return generateListiclePaths();
+}
+
+const listicle = Astro.props as Listicle;
+const ranked = getRankedNegocios(listicle.category, {
+  topN: listicle.topN,
+  minRating: listicle.minRating,
+});
+
+const fmtDate = (iso: string) =>
+  new Date(iso).toLocaleDateString("es-ES", { month: "long", year: "numeric" });
+
+const base = "https://www.elcanaveral.info";
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: listicle.h1,
+  description: listicle.metaDescription,
+  numberOfItems: ranked.length,
+  itemListElement: ranked.map((r) => ({
+    "@type": "ListItem",
+    position: r.rank,
+    url: `${base}/${r.negocio.category}/${r.negocio.slug}/`,
+    name: r.negocio.name,
+  })),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "Blog", item: `${base}/blog/` },
+    { "@type": "ListItem", position: 3, name: listicle.h1, item: `${base}/blog/${listicle.slug}/` },
+  ],
+};
+
+const faqSchema = listicle.faq && listicle.faq.length > 0
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: listicle.faq.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    }
+  : null;
+---
+
+<BaseLayout
+  title={listicle.metaTitle}
+  description={listicle.metaDescription}
+  image={ranked[0]?.negocio.image || "/images/og-default.jpg"}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <a href="/blog" class="hover:text-brand-600">Blog</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">Mejores restaurantes</span>
+      </nav>
+
+      <!-- Cabecera -->
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">{listicle.h1}</h1>
+        <p class="text-sm text-gray-400 mt-3">
+          Actualizado en {fmtDate(listicle.updatedDate)} · {ranked.length} restaurantes
+        </p>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">{listicle.intro}</p>
+      </header>
+
+      <!-- Metodología (transparencia) -->
+      <div class="bg-brand-50 border border-brand-100 rounded-xl p-4 mb-10 text-sm text-gray-600">
+        <span class="font-semibold text-brand-700">¿Cómo se ordena esta lista?</span>
+        Por una puntuación que combina la <strong>nota media</strong> de Google y el
+        <strong>número de reseñas</strong> reales de cada restaurante (ranking ponderado),
+        no por simple nota ni por número de opiniones a secas.
+      </div>
+
+      <!-- Ranking -->
+      <div class="space-y-6">
+        {ranked.map((r) => {
+          const n = r.negocio;
+          const cocinas = (n.tiposCocina as string[] | undefined) || [];
+          return (
+            <div class="bg-white rounded-xl border border-warm-200 overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition-shadow">
+              <a href={`/${n.category}/${n.slug}`} class="relative sm:w-56 shrink-0 block">
+                <span class="absolute top-3 left-3 z-10 w-9 h-9 rounded-full bg-brand-900/90 text-white font-bold flex items-center justify-center text-sm shadow">
+                  {r.rank}
+                </span>
+                {n.image ? (
+                  <img src={n.image} alt={n.name} class="w-full h-44 sm:h-full object-cover" loading="lazy" />
+                ) : (
+                  <div class="w-full h-44 sm:h-full bg-gradient-to-br from-brand-50 to-brand-100 flex items-center justify-center text-4xl">🍽️</div>
+                )}
+              </a>
+
+              <div class="p-5 flex-1 min-w-0">
+                <div class="flex items-start justify-between gap-3">
+                  <h2 class="text-lg font-bold text-brand-900 leading-snug">
+                    <a href={`/${n.category}/${n.slug}`} class="hover:text-brand-600">{n.name}</a>
+                  </h2>
+                  {n.precioRango && (
+                    <span class="shrink-0 text-xs text-gray-500 bg-warm-100 px-2 py-0.5 rounded font-medium">{n.precioRango}</span>
+                  )}
+                </div>
+
+                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1.5">
+                  {n.rating && (
+                    <span class="flex items-center gap-1">
+                      <span class="flex">
+                        {[1, 2, 3, 4, 5].map((s) => (
+                          <span class={`text-sm ${s <= Math.round(n.rating!) ? "text-yellow-400" : "text-gray-200"}`}>&#9733;</span>
+                        ))}
+                      </span>
+                      <span class="text-sm font-semibold text-gray-700">{n.rating}</span>
+                      <span class="text-xs text-gray-400">({n.numReviews} reseñas)</span>
+                    </span>
+                  )}
+                  {n.googleCategory && <span class="text-xs text-gray-400">{n.googleCategory}</span>}
+                  <span class="text-xs text-gray-400">· {n.zonaName}</span>
+                </div>
+
+                <p class="text-gray-600 text-sm mt-3 line-clamp-2">{n.description}</p>
+
+                <div class="flex flex-wrap gap-1.5 mt-3">
+                  {cocinas.slice(0, 3).map((c) => (
+                    <span class="text-[11px] bg-accent-50 text-accent-700 px-2 py-0.5 rounded capitalize">{c}</span>
+                  ))}
+                  {n.terraza && <span class="text-[11px] bg-green-50 text-green-700 px-2 py-0.5 rounded">Terraza</span>}
+                  {n.delivery && <span class="text-[11px] bg-orange-50 text-orange-700 px-2 py-0.5 rounded">A domicilio</span>}
+                  {n.menuDelDia && <span class="text-[11px] bg-amber-50 text-amber-700 px-2 py-0.5 rounded">Menú del día</span>}
+                </div>
+
+                <div class="flex items-center gap-4 mt-4 text-sm">
+                  <a href={`/${n.category}/${n.slug}`} class="font-medium text-brand-600 hover:text-brand-700">Ver ficha &rarr;</a>
+                  {n.phone && <a href={`tel:${n.phone}`} class="text-gray-500 hover:text-brand-600">Llamar</a>}
+                  {n.address && (
+                    <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(n.address)}`} target="_blank" rel="noopener" class="text-gray-500 hover:text-brand-600">Cómo llegar</a>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <!-- Gancho comercial -->
+      <div class="mt-12 bg-gradient-to-r from-brand-900 to-brand-700 rounded-2xl p-6 sm:p-8 text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-white">¿Tienes un restaurante en El Cañaveral?</h2>
+        <p class="text-brand-200 mt-2 max-w-xl mx-auto text-sm sm:text-base">
+          Si tu negocio debería estar en esta lista, dalo de alta en el directorio del barrio
+          y llega a los vecinos que buscan dónde comer cerca de casa.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 mt-5">
+          <a href="/alta" class="text-sm font-semibold bg-accent-500 text-white px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
+            Dar de alta mi restaurante
+          </a>
+          <a href="https://localseoads.com" target="_blank" rel="noopener" class="text-sm font-semibold bg-white/10 text-white border border-white/20 px-5 py-2.5 rounded-lg hover:bg-white/20 transition-colors">
+            Posicionarme en Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      {listicle.faq && listicle.faq.length > 0 && (
+        <section class="mt-12">
+          <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes</h2>
+          <div class="space-y-3">
+            {listicle.faq.map((f) => (
+              <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+                <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                  {f.q}
+                  <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+                </summary>
+                <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <p class="text-xs text-gray-400 mt-10">
+        Notas y número de reseñas obtenidos de Google. Las valoraciones cambian con el tiempo;
+        este ranking se actualiza periódicamente.
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>

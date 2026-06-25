@@ -1,0 +1,62 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { loadListicles, getRankedNegocios } from "@/lib/listicles";
+
+const listicles = loadListicles().map((l) => ({
+  ...l,
+  count: getRankedNegocios(l.category, { topN: l.topN, minRating: l.minRating }).length,
+  cover: getRankedNegocios(l.category, { topN: 1, minRating: l.minRating })[0]?.negocio.image,
+}));
+---
+
+<BaseLayout
+  title="Blog — Guías y rankings de El Cañaveral"
+  description="Guías locales y rankings de los mejores negocios de El Cañaveral, Vicálvaro y alrededores: restaurantes, comercios y servicios del barrio."
+>
+  <Header />
+
+  <section class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <header class="mb-10">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900">Blog de El Cañaveral</h1>
+        <p class="text-gray-600 mt-3 text-lg">
+          Guías y rankings de los mejores negocios del barrio y alrededores, ordenados por las
+          valoraciones reales de los vecinos.
+        </p>
+      </header>
+
+      {listicles.length === 0 ? (
+        <p class="text-gray-500 text-center py-12">Aún no hay artículos publicados.</p>
+      ) : (
+        <div class="grid sm:grid-cols-2 gap-6">
+          {listicles.map((l) => (
+            <a
+              href={`/blog/${l.slug}`}
+              class="block bg-white rounded-xl border border-warm-200 overflow-hidden hover:shadow-lg hover:border-brand-200 transition-all group"
+            >
+              {l.cover && (
+                <div class="relative">
+                  <img src={l.cover} alt={l.h1} class="w-full h-44 object-cover" loading="lazy" />
+                  <span class="absolute bottom-3 left-3 text-xs font-semibold bg-brand-900/85 text-white px-2.5 py-1 rounded-md">
+                    {l.count} negocios
+                  </span>
+                </div>
+              )}
+              <div class="p-5">
+                <h2 class="font-bold text-lg text-brand-900 group-hover:text-brand-600 transition-colors leading-snug">
+                  {l.h1}
+                </h2>
+                <p class="text-gray-500 text-sm mt-2 line-clamp-3">{l.intro}</p>
+                <span class="inline-block mt-3 text-sm font-medium text-brand-600">Leer la guía &rarr;</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
