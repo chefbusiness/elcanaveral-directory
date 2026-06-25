@@ -9,7 +9,7 @@
     "zonaName": "Coslada",
     "address": "Av. de Espana, 116, 28822 Coslada, Madrid",
     "rating": 4.1,
-    "numReviews": 1820,
+    "numReviews": 1847,
     "tags": [
       "cadena",
       "platos-preparados"
@@ -39,7 +39,13 @@
       "/images/negocios/mercadona-coslada-3.jpg",
       "/images/negocios/mercadona-coslada-4.jpg",
       "/images/negocios/mercadona-coslada-5.jpg"
-    ]
+    ],
+    "phone": "+34 916 69 29 26",
+    "website": "https://www.mercadona.es/",
+    "placeId": "ChIJuSbJKHQwQg0Ri0t_BO9aChc",
+    "googleCategory": "Supermercado",
+    "lat": 40.4202126,
+    "lng": -3.556191
   },
   {
     "slug": "hiper-canaveral",
@@ -77,7 +83,14 @@
       "/images/negocios/hiper-canaveral-2.jpg",
       "/images/negocios/hiper-canaveral-3.jpg",
       "/images/negocios/hiper-canaveral-4.jpg"
-    ]
+    ],
+    "rating": 3.6,
+    "numReviews": 178,
+    "website": "https://web.unide.es/",
+    "placeId": "ChIJ20ooLpE7Qg0RTXdMhFcJbi0",
+    "googleCategory": "Supermercado",
+    "lat": 40.4021574,
+    "lng": -3.5577583
   },
   {
     "slug": "supermercado-el-canaveral",
@@ -115,7 +128,13 @@
       "/images/negocios/supermercado-el-canaveral.jpg",
       "/images/negocios/supermercado-el-canaveral-2.jpg",
       "/images/negocios/supermercado-el-canaveral-3.jpg"
-    ]
+    ],
+    "rating": 5,
+    "numReviews": 15,
+    "placeId": "ChIJe_XHQAA7Qg0R1kKzZWOLho0",
+    "googleCategory": "Supermercado",
+    "lat": 40.4010453,
+    "lng": -3.5471579
   },
   {
     "slug": "coviran-plus",
@@ -151,7 +170,14 @@
     "images": [
       "/images/negocios/coviran-plus.jpg",
       "/images/negocios/coviran-plus-2.jpg"
-    ]
+    ],
+    "rating": 4.2,
+    "numReviews": 45,
+    "website": "https://www.coviran.es/",
+    "placeId": "ChIJyTAXDgA7Qg0RP9BSHLU3QmU",
+    "googleCategory": "Supermercado",
+    "lat": 40.3999358,
+    "lng": -3.5577051
   },
   {
     "slug": "ahorramas",
@@ -185,11 +211,18 @@
     ],
     "horario": "L-S 9:00-21:30, D 9:00-15:00",
     "address": "Avenida Miguel Delibes 20, 28052 Madrid",
-    "phone": "913280000",
+    "phone": "+34 900 113 213",
     "images": [
       "/images/negocios/ahorramas.jpg",
       "/images/negocios/ahorramas-2.jpg"
-    ]
+    ],
+    "placeId": "ChIJq21eTrs6Qg0R_gqYS9W0hp4",
+    "lat": 40.40657,
+    "lng": -3.56686,
+    "rating": 4,
+    "numReviews": 252,
+    "website": "https://www.ahorramas.com/",
+    "googleCategory": "Supermercado"
   },
   {
     "slug": "mi-alcampo",
@@ -228,7 +261,15 @@
       "/images/negocios/mi-alcampo-3.jpg",
       "/images/negocios/mi-alcampo-4.jpg",
       "/images/negocios/mi-alcampo-5.jpg"
-    ]
+    ],
+    "rating": 3,
+    "numReviews": 146,
+    "phone": "+34 913 68 78 57",
+    "website": "https://www.compraonline.alcampo.es/?utm_campaign=GMB&utm_content=home&utm_medium=organic&utm_source=google&utm_term=sitio_web",
+    "placeId": "ChIJwzSZkeA7Qg0RFEZJhm--csA",
+    "googleCategory": "Supermercado",
+    "lat": 40.4039955,
+    "lng": -3.5612349
   },
   {
     "slug": "family-mini-market",
@@ -268,7 +309,13 @@
       "/images/negocios/family-mini-market-3.jpg",
       "/images/negocios/family-mini-market-4.jpg",
       "/images/negocios/family-mini-market-5.jpg"
-    ]
+    ],
+    "rating": 5,
+    "numReviews": 4,
+    "placeId": "ChIJeZmVS7CPMYwRoEb7P4NtuWU",
+    "googleCategory": "Supermercado",
+    "lat": 10.9911991,
+    "lng": -63.8208484
   },
   {
     "slug": "alimentacion-y-bazar",
@@ -307,7 +354,13 @@
       "/images/negocios/alimentacion-y-bazar-3.jpg",
       "/images/negocios/alimentacion-y-bazar-4.jpg",
       "/images/negocios/alimentacion-y-bazar-5.jpg"
-    ]
+    ],
+    "rating": 4.4,
+    "numReviews": 5,
+    "placeId": "ChIJ620WywovQg0RXZqt960cgy0",
+    "googleCategory": "Comercio",
+    "lat": 40.4357309,
+    "lng": -3.6231957
   },
   {
     "slug": "alimentacion-canaveral",
@@ -339,7 +392,13 @@
       "Ideal para compras rápidas"
     ],
     "horario": "L-S 9:00-14:00, 17:00-20:00",
-    "address": "Calle Blas de Lezo 10, 28052 Madrid"
+    "address": "Calle Blas de Lezo 10, 28052 Madrid",
+    "rating": 4.7,
+    "numReviews": 12,
+    "placeId": "ChIJe0bIK3U7Qg0R55XQ7f8ZBto",
+    "googleCategory": "Tienda de alimentación",
+    "lat": 40.4008635,
+    "lng": -3.561971
   },
   {
     "slug": "casa-elias",
@@ -379,7 +438,14 @@
       "/images/negocios/casa-elias-3.jpg",
       "/images/negocios/casa-elias-4.jpg",
       "/images/negocios/casa-elias-5.jpg"
-    ]
+    ],
+    "rating": 4.1,
+    "numReviews": 35,
+    "website": "https://www.casa-elias.com/",
+    "placeId": "ChIJPwsrVgA7Qg0RJu7VZoL1K_8",
+    "googleCategory": "Supermercado",
+    "lat": 40.4058634,
+    "lng": -3.562111
   },
   {
     "slug": "la-fruteria-de-mama",
@@ -396,7 +462,7 @@
     "featured": true,
     "address": "C. Anna Frank, 12, Local 7, Vicalvaro, 28052 Madrid",
     "rating": 5.0,
-    "phone": "699 90 33 69",
+    "phone": "+34 699 90 33 69",
     "image": "/images/negocios/la-fruteria-de-mama.jpg",
     "servicios": [
       "Frutas de temporada",
@@ -421,7 +487,12 @@
       "/images/negocios/la-fruteria-de-mama-3.jpg",
       "/images/negocios/la-fruteria-de-mama-4.jpg",
       "/images/negocios/la-fruteria-de-mama-5.jpg"
-    ]
+    ],
+    "numReviews": 96,
+    "placeId": "ChIJb7ihGNY7Qg0RJsC9jOJXesY",
+    "googleCategory": "Frutería",
+    "lat": 40.3976963,
+    "lng": -3.5529717
   },
   {
     "slug": "megafruta-canaveral",
@@ -460,7 +531,13 @@
       "/images/negocios/megafruta-canaveral-3.jpg",
       "/images/negocios/megafruta-canaveral-4.jpg",
       "/images/negocios/megafruta-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.3,
+    "numReviews": 80,
+    "placeId": "ChIJjV0vQqs7Qg0RmE8M85IejoE",
+    "googleCategory": "Supermercado",
+    "lat": 40.4063798,
+    "lng": -3.5618629
   },
   {
     "slug": "frutas-y-verduras-vida-sana",
@@ -500,7 +577,15 @@
       "/images/negocios/frutas-y-verduras-vida-sana-3.jpg",
       "/images/negocios/frutas-y-verduras-vida-sana-4.jpg",
       "/images/negocios/frutas-y-verduras-vida-sana-5.jpg"
-    ]
+    ],
+    "rating": 4.7,
+    "numReviews": 16,
+    "phone": "+34 614 15 32 09",
+    "website": "https://www.instagram.com/vidaverde.fruteria?igsh=dGZkd3dodTdqdGVi",
+    "placeId": "ChIJz1GoLwAnQg0Run7m_1PBoE0",
+    "googleCategory": "Tienda de alimentación",
+    "lat": 40.3553629,
+    "lng": -3.6979985
   },
   {
     "slug": "fruteria-charcuteria-el-canaveral",
@@ -516,7 +601,7 @@
     ],
     "featured": false,
     "address": "Av. de Miguel Delibes, 30-44, Vicalvaro, 28052 Madrid",
-    "phone": "610 44 34 73",
+    "phone": "+34 610 44 34 73",
     "image": "/images/negocios/fruteria-charcuteria-el-canaveral.jpg",
     "servicios": [
       "Frutas y verduras frescas",
@@ -540,7 +625,13 @@
       "/images/negocios/fruteria-charcuteria-el-canaveral-2.jpg",
       "/images/negocios/fruteria-charcuteria-el-canaveral-4.jpg",
       "/images/negocios/fruteria-charcuteria-el-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.5,
+    "numReviews": 22,
+    "placeId": "ChIJfby7AVU7Qg0R7hqDxnXFen8",
+    "googleCategory": "Frutería",
+    "lat": 40.4062931,
+    "lng": -3.5628446
   },
   {
     "slug": "levaduramadre",
@@ -556,8 +647,8 @@
     ],
     "featured": true,
     "address": "Av. de Blas de Lezo, Vicalvaro, 28052 Madrid",
-    "rating": 4.2,
-    "numReviews": 49,
+    "rating": 3.8,
+    "numReviews": 74,
     "image": "/images/negocios/levaduramadre.jpg",
     "servicios": [
       "Pan de masa madre",
@@ -580,7 +671,13 @@
       "/images/negocios/levaduramadre-3.jpg",
       "/images/negocios/levaduramadre-4.jpg",
       "/images/negocios/levaduramadre-5.jpg"
-    ]
+    ],
+    "phone": "+34 611 70 70 09",
+    "website": "https://www.levaduramadre.es/",
+    "placeId": "ChIJQXWKKok7Qg0RTgnpihxK9wk",
+    "googleCategory": "Panadería",
+    "lat": 40.4081647,
+    "lng": -3.5530861
   },
   {
     "slug": "el-horno-de-izan-iii",
@@ -596,8 +693,8 @@
     ],
     "featured": false,
     "address": "Calle de Mario Moreno Cantinflas & C. de Francisco Grande Covian, 28052 Madrid",
-    "rating": 4.3,
-    "numReviews": 437,
+    "rating": 4.1,
+    "numReviews": 523,
     "image": "/images/negocios/el-horno-de-izan-iii.jpg",
     "servicios": [
       "Pan artesanal",
@@ -620,7 +717,12 @@
       "/images/negocios/el-horno-de-izan-iii-3.jpg",
       "/images/negocios/el-horno-de-izan-iii-4.jpg",
       "/images/negocios/el-horno-de-izan-iii-5.jpg"
-    ]
+    ],
+    "phone": "+34 918 23 00 92",
+    "placeId": "ChIJ47_dDEI7Qg0R5Jd_WUDF8c8",
+    "googleCategory": "Panadería",
+    "lat": 40.4026555,
+    "lng": -3.5621029
   },
   {
     "slug": "caprichos-coffee-bakery",
@@ -637,7 +739,7 @@
     "featured": false,
     "address": "Av. de Miguel Delibes, 30, Vicalvaro, 28052 Madrid",
     "rating": 4.2,
-    "numReviews": 290,
+    "numReviews": 304,
     "image": "/images/negocios/caprichos-coffee-bakery.jpg",
     "servicios": [
       "Café de especialidad",
@@ -661,7 +763,13 @@
       "/images/negocios/caprichos-coffee-bakery-3.jpg",
       "/images/negocios/caprichos-coffee-bakery-4.jpg",
       "/images/negocios/caprichos-coffee-bakery-5.jpg"
-    ]
+    ],
+    "phone": "+34 912 32 68 68",
+    "website": "https://caprichos-coffee-bakery.eatbu.com/",
+    "placeId": "ChIJEa-9Zlo7Qg0RyQUIwp0lSX0",
+    "googleCategory": "Panadería",
+    "lat": 40.4063681,
+    "lng": -3.5629753
   },
   {
     "slug": "obrador-de-goya",
@@ -678,7 +786,7 @@
     "featured": false,
     "address": "Av. de Miguel Delibes, 80, local 4, Vicalvaro, 28052 Madrid",
     "rating": 3.8,
-    "numReviews": 300,
+    "numReviews": 357,
     "email": "info@obradordegoya.com",
     "image": "/images/negocios/obrador-de-goya.jpg",
     "servicios": [
@@ -702,7 +810,13 @@
       "/images/negocios/obrador-de-goya-3.jpg",
       "/images/negocios/obrador-de-goya-4.jpg",
       "/images/negocios/obrador-de-goya-5.jpg"
-    ]
+    ],
+    "phone": "+34 911 94 06 38",
+    "website": "https://obradordegoya.com/",
+    "placeId": "ChIJZTkKDEc7Qg0Rpe7ixuM5aH4",
+    "googleCategory": "Pastelería",
+    "lat": 40.4043052,
+    "lng": -3.5594701
   },
   {
     "slug": "panaderia-bulevar",
@@ -718,8 +832,8 @@
     "featured": false,
     "address": "Blvr. de Indalecio Prieto, 12, local 6, Vicalvaro, 28032 Madrid",
     "rating": 4.4,
-    "numReviews": 126,
-    "phone": "910 44 22 38",
+    "numReviews": 128,
+    "phone": "+34 910 44 22 38",
     "image": "/images/negocios/panaderia-bulevar.jpg",
     "servicios": [
       "Pan del día",
@@ -742,7 +856,11 @@
       "/images/negocios/panaderia-bulevar-3.jpg",
       "/images/negocios/panaderia-bulevar-4.jpg",
       "/images/negocios/panaderia-bulevar-5.jpg"
-    ]
+    ],
+    "placeId": "ChIJ2dSovnclQg0RXmCHnnEQ7ms",
+    "googleCategory": "Panadería",
+    "lat": 40.4024255,
+    "lng": -3.6202365
   },
   {
     "slug": "fabricacion-y-distribucion-panaderia",
@@ -758,7 +876,7 @@
     ],
     "featured": false,
     "address": "Calle de Rivas, Vicalvaro, 28052 Madrid",
-    "phone": "917 75 22 11",
+    "phone": "+34 917 75 22 11",
     "image": "/images/negocios/fabricacion-y-distribucion-panaderia.jpeg",
     "servicios": [
       "Pan al por mayor",
@@ -774,7 +892,13 @@
       "Ideal para eventos o negocios",
       "Productos frescos y de calidad"
     ],
-    "horario": "L-V 6:00-14:00, S 6:00-12:00, D Cerrado"
+    "horario": "L-V 6:00-14:00, S 6:00-12:00, D Cerrado",
+    "rating": 3.6,
+    "numReviews": 37,
+    "placeId": "ChIJAYvmBUYlQg0R01wL2A3V0hg",
+    "googleCategory": "Panadería",
+    "lat": 40.4006516,
+    "lng": -3.5920112
   },
   {
     "slug": "mimarutxa",
@@ -792,8 +916,8 @@
     "featured": true,
     "address": "Avenida Miguel Delibes & C. Concejal Victorino Granizo, 28052 Madrid",
     "rating": 3.8,
-    "numReviews": 173,
-    "phone": "912 93 91 55",
+    "numReviews": 187,
+    "phone": "+34 912 93 91 55",
     "image": "/images/negocios/mimarutxa.jpg",
     "servicios": [
       "Desayunos y brunches",
@@ -819,7 +943,12 @@
       "/images/negocios/mimarutxa-3.jpg",
       "/images/negocios/mimarutxa-4.jpg",
       "/images/negocios/mimarutxa-5.jpg"
-    ]
+    ],
+    "website": "http://mimarutxa.com/",
+    "placeId": "ChIJl-Jfo8g7Qg0RI9ECrsgotcI",
+    "googleCategory": "Establecimiento de comida preparada",
+    "lat": 40.404164,
+    "lng": -3.558898
   },
   {
     "slug": "le-petit-cafe-de-cryss",
@@ -835,8 +964,8 @@
     ],
     "featured": false,
     "address": "Av. de Blas de Lezo, 287, Vicalvaro, 28052 Madrid",
-    "rating": 4.6,
-    "numReviews": 47,
+    "rating": 4.3,
+    "numReviews": 72,
     "image": "/images/negocios/le-petit-cafe-de-cryss.jpg",
     "servicios": [
       "Café de calidad",
@@ -860,7 +989,12 @@
       "/images/negocios/le-petit-cafe-de-cryss-3.jpg",
       "/images/negocios/le-petit-cafe-de-cryss-4.jpg",
       "/images/negocios/le-petit-cafe-de-cryss-5.jpg"
-    ]
+    ],
+    "website": "https://lepetitcafedecryss.eatbu.com/",
+    "placeId": "ChIJRyN01a87Qg0RrT7tz56o5gQ",
+    "googleCategory": "Pastelería",
+    "lat": 40.4085101,
+    "lng": -3.5523662
   },
   {
     "slug": "padel-el-canaveral",
@@ -901,7 +1035,15 @@
       "/images/negocios/padel-el-canaveral-3.jpg",
       "/images/negocios/padel-el-canaveral-4.jpg",
       "/images/negocios/padel-el-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.9,
+    "numReviews": 143,
+    "phone": "+34 744 65 46 74",
+    "website": "https://padelcanaveral.shop/",
+    "placeId": "ChIJu1e3Ik7b1WERqaQ_K7XoDHg",
+    "googleCategory": "Tienda de deportes",
+    "lat": 40.4006098,
+    "lng": -3.5594426
   },
   {
     "slug": "escuela-infantil-los-minons",
@@ -938,14 +1080,20 @@
     "tipoGestion": "privada",
     "image": "/images/negocios/escuela-infantil-los-minons.jpg",
     "address": "Calle Mario Moreno Cantinflas 1, 28052 Madrid",
-    "phone": "910000000",
+    "phone": "+34 679 60 19 86",
     "images": [
       "/images/negocios/escuela-infantil-los-minons.jpg",
       "/images/negocios/escuela-infantil-los-minons-2.jpg",
       "/images/negocios/escuela-infantil-los-minons-3.jpg",
       "/images/negocios/escuela-infantil-los-minons-4.jpg",
       "/images/negocios/escuela-infantil-los-minons-5.jpg"
-    ]
+    ],
+    "rating": 5,
+    "numReviews": 36,
+    "placeId": "ChIJJSuCV8E7Qg0RbaW8yZHNnOQ",
+    "googleCategory": "Centro de educación preescolar",
+    "lat": 40.401015,
+    "lng": -3.5622549
   },
   {
     "slug": "escuela-infantil-municipal-muneco-de-nieve",
@@ -956,7 +1104,7 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "Calle Enrique Urquijo, 56, 28052 Madrid",
-    "phone": "645 053 537",
+    "phone": "+34 645 05 35 37",
     "email": "eicanaveral@madrid.es",
     "tags": [
       "pública",
@@ -985,7 +1133,14 @@
     "image": "/images/negocios/escuela-infantil-municipal-muneco-de-nieve.jpg",
     "images": [
       "/images/negocios/escuela-infantil-municipal-muneco-de-nieve.jpg"
-    ]
+    ],
+    "rating": 4.4,
+    "numReviews": 23,
+    "website": "https://www.madrid.es/portales/munimadrid/es/Inicio/Contacto/Direcciones-y-telefonos/Escuela-infantil-municipal-Canaveral/?vgnextfmt=default&vgnextoid=51aee95a4b4ef710VgnVCM1000001d4a900aRCRD&vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD",
+    "placeId": "ChIJeSK7VPA7Qg0RX6XWCO5aMCU",
+    "googleCategory": "Jardín de infancia",
+    "lat": 40.3990657,
+    "lng": -3.5600957
   },
   {
     "slug": "escuela-infantil-conde-nino",
@@ -996,7 +1151,7 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "Calle Victoria Kent, 22, 28052 Madrid",
-    "phone": "917 48 72 50",
+    "phone": "+34 646 29 13 58",
     "email": "eei.condenino.madrid.madrid@educa.madrid.org",
     "tags": [
       "pública",
@@ -1022,7 +1177,11 @@
     "edades": "0-3 años",
     "plazas": 186,
     "tipoGestion": "pública",
-    "image": "/images/categorias/educacion.jpg"
+    "image": "/images/categorias/educacion.jpg",
+    "placeId": "ChIJaTuxCkM7Qg0R1LR1v_CTvn0",
+    "googleCategory": "Centro de educación preescolar",
+    "lat": 40.4012435,
+    "lng": -3.5640016
   },
   {
     "slug": "arturos-el-canaveral",
@@ -1067,7 +1226,14 @@
       "/images/negocios/arturos-el-canaveral-3.jpg",
       "/images/negocios/arturos-el-canaveral-4.jpg",
       "/images/negocios/arturos-el-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 3.5,
+    "numReviews": 2163,
+    "phone": "+34 911 27 14 71",
+    "placeId": "ChIJHaFX3j87Qg0RX5kGbN5EEj0",
+    "googleCategory": "Restaurante",
+    "lat": 40.4063304,
+    "lng": -3.5630458
   },
   {
     "slug": "los-fogones-canaveral",
@@ -1112,7 +1278,14 @@
       "/images/negocios/los-fogones-canaveral-3.jpg",
       "/images/negocios/los-fogones-canaveral-4.jpg",
       "/images/negocios/los-fogones-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 3,
+    "numReviews": 1056,
+    "phone": "+34 912 51 15 92",
+    "placeId": "ChIJTbvciAY7Qg0RESUMGBViZoU",
+    "googleCategory": "Restaurante",
+    "lat": 40.4022755,
+    "lng": -3.5579137
   },
   {
     "slug": "con-sazon-el-canaveral",
@@ -1161,7 +1334,15 @@
       "/images/negocios/con-sazon-el-canaveral-3.jpg",
       "/images/negocios/con-sazon-el-canaveral-4.jpg",
       "/images/negocios/con-sazon-el-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 6722,
+    "phone": "+34 615 62 50 86",
+    "website": "https://consazon.es/",
+    "placeId": "ChIJL11szugtQg0RBq4vMbgVkZc",
+    "googleCategory": "Restaurante venezolano",
+    "lat": 40.4075088,
+    "lng": -3.5523025
   },
   {
     "slug": "clinica-dental-canaveral",
@@ -1172,7 +1353,7 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "Av. de Miguel Delibes, 59, Vicalvaro, 28052 Madrid",
-    "phone": "911 94 05 47",
+    "phone": "+34 911 94 05 47",
     "tags": [
       "dentista",
       "ortodoncia",
@@ -1212,7 +1393,14 @@
       "/images/negocios/clinica-dental-canaveral-3.jpg",
       "/images/negocios/clinica-dental-canaveral-4.jpg",
       "/images/negocios/clinica-dental-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 70,
+    "website": "https://www.canaveralclinicadental.com/",
+    "placeId": "ChIJJ02sU087Qg0RQkpxpq-8iOk",
+    "googleCategory": "Dentista",
+    "lat": 40.4051692,
+    "lng": -3.5597245
   },
   {
     "slug": "sanitas-dental-el-canaveral",
@@ -1262,7 +1450,15 @@
       "/images/negocios/sanitas-dental-el-canaveral-3.jpg",
       "/images/negocios/sanitas-dental-el-canaveral-4.jpg",
       "/images/negocios/sanitas-dental-el-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 3.8,
+    "numReviews": 79,
+    "phone": "+34 914 18 87 25",
+    "website": "https://www.sanitas.es/dental/clinicas-dentales-milenium/madrid/madrid/madrid-el-canaveral?gmb=gmb%3Af-google%3Am-link%3Anc-clinica%3Ap-dental",
+    "placeId": "ChIJp0k4PeU7Qg0Rt95uI_TFth4",
+    "googleCategory": "Clínica dental",
+    "lat": 40.4052726,
+    "lng": -3.5597858
   },
   {
     "slug": "clinica-dental-siglo-xxi-canaveral",
@@ -1272,7 +1468,7 @@
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
-    "website": "https://www.clinicadentalsigloxxi.com/clinica-dental-el-canaveral/",
+    "website": "https://www.clinicadentalsigloxxi.com/",
     "tags": [
       "dentista",
       "ortodoncia",
@@ -1306,14 +1502,20 @@
     ],
     "image": "/images/negocios/clinica-dental-siglo-xxi-canaveral.jpg",
     "address": "Calle Blas de Lezo 8, 28052 Madrid",
-    "phone": "910000000",
+    "phone": "+34 918 14 54 99",
     "images": [
       "/images/negocios/clinica-dental-siglo-xxi-canaveral.jpg",
       "/images/negocios/clinica-dental-siglo-xxi-canaveral-2.jpg",
       "/images/negocios/clinica-dental-siglo-xxi-canaveral-3.jpg",
       "/images/negocios/clinica-dental-siglo-xxi-canaveral-4.jpg",
       "/images/negocios/clinica-dental-siglo-xxi-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.9,
+    "numReviews": 241,
+    "placeId": "ChIJOW-dRqY7Qg0RecPMaWTj4Fg",
+    "googleCategory": "Clínica dental",
+    "lat": 40.4009463,
+    "lng": -3.5586999
   },
   {
     "slug": "mardones-y-martinez-dental",
@@ -1323,7 +1525,7 @@
     "categoryName": "Salud y Bienestar",
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
-    "website": "https://dentalmardonesymartinez.com/",
+    "website": "https://www.dentalmardonesymartinez.com/",
     "tags": [
       "dentista",
       "urgencias"
@@ -1356,14 +1558,20 @@
     ],
     "image": "/images/negocios/mardones-y-martinez-dental.jpg",
     "address": "C. Victoria Kent, 75, local 9, Vicálvaro, 28052 Madrid",
-    "phone": "910000000",
+    "phone": "+34 744 71 67 88",
     "images": [
       "/images/negocios/mardones-y-martinez-dental.jpg",
       "/images/negocios/mardones-y-martinez-dental-2.jpg",
       "/images/negocios/mardones-y-martinez-dental-3.jpg",
       "/images/negocios/mardones-y-martinez-dental-4.jpg",
       "/images/negocios/mardones-y-martinez-dental-5.jpg"
-    ]
+    ],
+    "rating": 4.9,
+    "numReviews": 270,
+    "placeId": "ChIJlyGC2Gg7Qg0RPhubeFfYAlw",
+    "googleCategory": "Clínica dental",
+    "lat": 40.4010094,
+    "lng": -3.5624031
   },
   {
     "slug": "antonella-peluqueria-y-belleza",
@@ -1398,14 +1606,21 @@
     "horario": "M-V 10:00-19:00, S 9:30-14:00",
     "image": "/images/negocios/antonella-peluqueria-y-belleza.jpg",
     "address": "Av. Miguel Delibes 35, 28052 Madrid",
-    "phone": "612345678",
+    "phone": "+34 912 44 57 67",
     "images": [
       "/images/negocios/antonella-peluqueria-y-belleza.jpg",
       "/images/negocios/antonella-peluqueria-y-belleza-2.jpg",
       "/images/negocios/antonella-peluqueria-y-belleza-3.jpg",
       "/images/negocios/antonella-peluqueria-y-belleza-4.jpg",
       "/images/negocios/antonella-peluqueria-y-belleza-5.jpg"
-    ]
+    ],
+    "rating": 4.2,
+    "numReviews": 213,
+    "website": "https://antonellapeluqueria.com/",
+    "placeId": "ChIJhdxA2gQ7Qg0R5h2qk33dMlU",
+    "googleCategory": "Peluquería",
+    "lat": 40.4009463,
+    "lng": -3.5622231
   },
   {
     "slug": "la-belle-vie-canaveral",
@@ -1447,7 +1662,14 @@
       "/images/negocios/la-belle-vie-canaveral-3.jpg",
       "/images/negocios/la-belle-vie-canaveral-4.jpg",
       "/images/negocios/la-belle-vie-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.7,
+    "numReviews": 120,
+    "phone": "+34 697 84 91 56",
+    "placeId": "ChIJTzgyGwA7Qg0RU-26qh0wmZM",
+    "googleCategory": "Centro de estética",
+    "lat": 40.4018573,
+    "lng": -3.563912
   },
   {
     "slug": "rizal-organic-studio",
@@ -1488,7 +1710,15 @@
       "/images/negocios/rizal-organic-studio-3.jpg",
       "/images/negocios/rizal-organic-studio-4.jpg",
       "/images/negocios/rizal-organic-studio-5.jpg"
-    ]
+    ],
+    "rating": 4.7,
+    "numReviews": 317,
+    "phone": "+34 911 94 05 13",
+    "website": "https://www.fresha.com/es/providers/rizal-organic-studio-xd0fgn7s?share=true&pId=2700743&locale_geo=es&allOffer=true",
+    "placeId": "ChIJR_mZevI7Qg0RH8vC3KScPcU",
+    "googleCategory": "Peluquería",
+    "lat": 40.4042539,
+    "lng": -3.5652052
   },
   {
     "slug": "mai-de-diego-estetica-estilistas",
@@ -1523,14 +1753,21 @@
     "horario": "M-V 9:30-19:30, S 9:00-14:00",
     "image": "/images/negocios/mai-de-diego-estetica-estilistas.jpg",
     "address": "Calle Victoria Kent 12, 28052 Madrid",
-    "phone": "912345678",
+    "phone": "+34 744 63 37 59",
     "images": [
       "/images/negocios/mai-de-diego-estetica-estilistas.jpg",
       "/images/negocios/mai-de-diego-estetica-estilistas-2.jpg",
       "/images/negocios/mai-de-diego-estetica-estilistas-3.jpg",
       "/images/negocios/mai-de-diego-estetica-estilistas-4.jpg",
       "/images/negocios/mai-de-diego-estetica-estilistas-5.jpg"
-    ]
+    ],
+    "rating": 4.4,
+    "numReviews": 242,
+    "website": "https://maidediego.eu/",
+    "placeId": "ChIJiTtSn147Qg0RjTnpZrJWzYg",
+    "googleCategory": "Peluquería",
+    "lat": 40.4021875,
+    "lng": -3.5611676
   },
   {
     "slug": "caliza-estilistas",
@@ -1566,14 +1803,20 @@
     "horario": "M-V 9:30-19:30, S 9:00-14:00",
     "image": "/images/negocios/caliza-estilistas.jpg",
     "address": "Calle San Cipriano 30, 28032 Madrid",
-    "phone": "917765432",
+    "phone": "+34 917 60 26 62",
     "images": [
       "/images/negocios/caliza-estilistas.jpg",
       "/images/negocios/caliza-estilistas-2.jpg",
       "/images/negocios/caliza-estilistas-3.jpg",
       "/images/negocios/caliza-estilistas-4.jpg",
       "/images/negocios/caliza-estilistas-5.jpg"
-    ]
+    ],
+    "rating": 4.5,
+    "numReviews": 307,
+    "placeId": "ChIJ-32buWslQg0RMey96Ma5Z04",
+    "googleCategory": "Peluquería",
+    "lat": 40.3991064,
+    "lng": -3.6046449
   },
   {
     "slug": "energie-fitness-canaveral",
@@ -1614,7 +1857,15 @@
       "/images/negocios/energie-fitness-canaveral-3.jpg",
       "/images/negocios/energie-fitness-canaveral-4.jpg",
       "/images/negocios/energie-fitness-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 3.6,
+    "numReviews": 503,
+    "phone": "+34 638 84 61 24",
+    "website": "https://energiefitness.es/gym/el-canaveral-madrid",
+    "placeId": "ChIJVeF9H9c7Qg0RDUEjETGTBx8",
+    "googleCategory": "Gimnasio",
+    "lat": 40.4049998,
+    "lng": -3.5508284
   },
   {
     "slug": "apache-crosstraining-canaveral",
@@ -1650,14 +1901,20 @@
     "horario": "L-V 7:00-12:00, 17:00-22:00, S 9:00-13:00",
     "image": "/images/negocios/apache-crosstraining-canaveral.jpg",
     "address": "Calle Mario Moreno Cantinflas 8, 28052 Madrid",
-    "phone": "654321098",
+    "phone": "+34 613 05 20 92",
     "images": [
       "/images/negocios/apache-crosstraining-canaveral.jpg",
       "/images/negocios/apache-crosstraining-canaveral-2.jpg",
       "/images/negocios/apache-crosstraining-canaveral-3.jpg",
       "/images/negocios/apache-crosstraining-canaveral-4.jpg",
       "/images/negocios/apache-crosstraining-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 5,
+    "numReviews": 42,
+    "placeId": "ChIJFRy_szA7Qg0RDW0ykDZ5Dik",
+    "googleCategory": "Centro deportivo",
+    "lat": 40.3969004,
+    "lng": -3.5525933
   },
   {
     "slug": "winfit-canaveral",
@@ -1690,14 +1947,21 @@
     "horario": "L-V 7:00-22:00, S 9:00-14:00",
     "image": "/images/negocios/winfit-canaveral.jpg",
     "address": "Calle Anna Frank 20, 28052 Madrid",
-    "phone": "918765432",
+    "phone": "+34 618 85 15 65",
     "images": [
       "/images/negocios/winfit-canaveral.jpg",
       "/images/negocios/winfit-canaveral-2.jpg",
       "/images/negocios/winfit-canaveral-3.jpg",
       "/images/negocios/winfit-canaveral-4.jpg",
       "/images/negocios/winfit-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 5,
+    "numReviews": 78,
+    "website": "https://winfitep.com/",
+    "placeId": "ChIJaTmy_t07Qg0R1G6hLVoTb-0",
+    "googleCategory": "Gimnasio",
+    "lat": 40.4006098,
+    "lng": -3.5594426
   },
   {
     "slug": "brooklyn-fitboxing-canaveral",
@@ -1730,14 +1994,21 @@
     "horario": "L-V 7:00-22:00, S 9:00-14:00",
     "image": "/images/negocios/brooklyn-fitboxing-canaveral.jpg",
     "address": "Av. Miguel Delibes 50, 28052 Madrid",
-    "phone": "917654321",
+    "phone": "+34 608 26 50 97",
     "images": [
       "/images/negocios/brooklyn-fitboxing-canaveral.jpg",
       "/images/negocios/brooklyn-fitboxing-canaveral-2.jpg",
       "/images/negocios/brooklyn-fitboxing-canaveral-3.jpg",
       "/images/negocios/brooklyn-fitboxing-canaveral-4.jpg",
       "/images/negocios/brooklyn-fitboxing-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 277,
+    "website": "https://bfclick.com/canaveral-gmb",
+    "placeId": "ChIJqU3Ehxk7Qg0RvKxqscPRaz0",
+    "googleCategory": "Gimnasio",
+    "lat": 40.4087166,
+    "lng": -3.5536547
   },
   {
     "slug": "peludos-del-canaveral",
@@ -1748,10 +2019,10 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "Calle Victoria Kent s/n, 28052 El Canaveral, Madrid",
-    "phone": "664 35 69 20",
-    "website": "https://peludosdelcanaveral.es/",
-    "rating": 4.7,
-    "numReviews": 153,
+    "phone": "+34 664 35 69 20",
+    "website": "http://www.xn--peludosdelcaaveral-y0b.es/",
+    "rating": 4.8,
+    "numReviews": 228,
     "tags": [
       "veterinario",
       "peluquería-canina",
@@ -1780,7 +2051,11 @@
       "/images/negocios/peludos-del-canaveral-3.jpg",
       "/images/negocios/peludos-del-canaveral-4.jpg",
       "/images/negocios/peludos-del-canaveral-5.jpg"
-    ]
+    ],
+    "placeId": "ChIJPybiUf47Qg0RIiaQ35vHz6I",
+    "googleCategory": "Peluquero de mascotas",
+    "lat": 40.4013475,
+    "lng": -3.5629147
   },
   {
     "slug": "vicalcan-veterinario",
@@ -1814,14 +2089,20 @@
     "horario": "L-V 10:00-14:00 y 17:00-20:30, S 10:00-14:00",
     "image": "/images/negocios/vicalcan-veterinario.jpg",
     "address": "Calle Jose Prat 15, 28032 Madrid",
-    "phone": "913712345",
+    "phone": "+34 910 06 80 99",
     "images": [
       "/images/negocios/vicalcan-veterinario.jpg",
       "/images/negocios/vicalcan-veterinario-2.jpg",
       "/images/negocios/vicalcan-veterinario-3.jpg",
       "/images/negocios/vicalcan-veterinario-4.jpg",
       "/images/negocios/vicalcan-veterinario-5.jpg"
-    ]
+    ],
+    "rating": 4.6,
+    "numReviews": 942,
+    "placeId": "ChIJkbR2J2YlQg0RMmXRpEYkYcE",
+    "googleCategory": "Veterinario",
+    "lat": 40.3995111,
+    "lng": -3.6069384
   },
   {
     "slug": "ferrokey-vicalvaro",
@@ -1860,7 +2141,13 @@
       "/images/negocios/ferrokey-vicalvaro-3.jpg",
       "/images/negocios/ferrokey-vicalvaro-4.jpg",
       "/images/negocios/ferrokey-vicalvaro-5.jpg"
-    ]
+    ],
+    "rating": 4,
+    "numReviews": 154,
+    "placeId": "ChIJEw7_O28lQg0RzlS9I7miuE0",
+    "googleCategory": "Ferretería",
+    "lat": 40.4040084,
+    "lng": -3.6076173
   },
   {
     "slug": "ferreteria-directa-vicalvaro",
@@ -1870,7 +2157,7 @@
     "categoryName": "Hogar y Reformas",
     "zona": "vicalvaro",
     "zonaName": "Vicálvaro",
-    "website": "https://www.ferreteriadirecta.es/",
+    "website": "http://www.ferreteriadirecta.es/",
     "tags": [
       "ferretería",
       "industrial",
@@ -1894,12 +2181,18 @@
     "horario": "L-V 8:30-19:00",
     "image": "/images/negocios/ferreteria-directa-vicalvaro.jpg",
     "address": "Calle Villacarlos 7, 28032 Madrid",
-    "phone": "913056789",
+    "phone": "+34 648 50 14 45",
     "images": [
       "/images/negocios/ferreteria-directa-vicalvaro.jpg",
       "/images/negocios/ferreteria-directa-vicalvaro-2.jpg",
       "/images/negocios/ferreteria-directa-vicalvaro-3.jpg"
-    ]
+    ],
+    "rating": 4.5,
+    "numReviews": 31,
+    "placeId": "ChIJ63Qyn2UlQg0RlNRxFywPOn8",
+    "googleCategory": "Ferretería",
+    "lat": 40.4064057,
+    "lng": -3.5619898
   },
   {
     "slug": "abogados-el-canaveral",
@@ -1939,7 +2232,14 @@
       "/images/negocios/abogados-el-canaveral-3.jpg",
       "/images/negocios/abogados-el-canaveral-4.jpg",
       "/images/negocios/abogados-el-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.6,
+    "numReviews": 10,
+    "phone": "+34 910 22 86 69",
+    "placeId": "ChIJC8GRbIsxQg0RF66VSMxVH2E",
+    "googleCategory": "Abogado",
+    "lat": 40.4045863,
+    "lng": -3.5596656
   },
   {
     "slug": "garcia-asociados-asesoria",
@@ -1949,7 +2249,6 @@
     "categoryName": "Servicios Profesionales",
     "zona": "vicalvaro",
     "zonaName": "Vicálvaro",
-    "website": "https://garciaasociados.es/",
     "tags": [
       "gestoría",
       "fiscal",
@@ -1973,13 +2272,16 @@
     "horario": "L-V 9:00-14:00 y 16:00-19:00",
     "image": "/images/negocios/garcia-asociados-asesoria.jpg",
     "address": "Calle San Cipriano 45, 28032 Madrid",
-    "phone": "913234567",
     "images": [
       "/images/negocios/garcia-asociados-asesoria.jpg",
       "/images/negocios/garcia-asociados-asesoria-2.jpg",
       "/images/negocios/garcia-asociados-asesoria-3.jpg",
       "/images/negocios/garcia-asociados-asesoria-4.jpg"
-    ]
+    ],
+    "placeId": "ChIJtzOsf5-ZP44RPB68rSiOI64",
+    "googleCategory": "Bufete",
+    "lat": 4.6069553,
+    "lng": -74.0739086
   },
   {
     "slug": "templo-consulting-inmobiliaria",
@@ -2013,14 +2315,20 @@
     "horario": "L-V 9:30-14:00 y 16:30-20:00, S 10:00-14:00",
     "image": "/images/negocios/templo-consulting-inmobiliaria.jpg",
     "address": "Calle Jose Prat 22, 28032 Madrid",
-    "phone": "913719876",
+    "phone": "+34 919 38 56 78",
     "images": [
       "/images/negocios/templo-consulting-inmobiliaria.jpg",
       "/images/negocios/templo-consulting-inmobiliaria-2.jpg",
       "/images/negocios/templo-consulting-inmobiliaria-3.jpg",
       "/images/negocios/templo-consulting-inmobiliaria-4.jpg",
       "/images/negocios/templo-consulting-inmobiliaria-5.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 671,
+    "placeId": "ChIJlZkqBJspQg0R1zlFHGulrWg",
+    "googleCategory": "Agencia inmobiliaria",
+    "lat": 40.4814815,
+    "lng": -3.7099044
   },
   {
     "slug": "beefcious-el-canaveral",
@@ -2058,7 +2366,7 @@
     "delivery": true,
     "precioRango": "€€",
     "address": "Av. Miguel Delibes 40, 28052 Madrid",
-    "phone": "912345678",
+    "phone": "+34 654 57 88 71",
     "image": "/images/negocios/beefcious-el-canaveral.jpg",
     "images": [
       "/images/negocios/beefcious-el-canaveral.jpg",
@@ -2066,7 +2374,14 @@
       "/images/negocios/beefcious-el-canaveral-3.jpg",
       "/images/negocios/beefcious-el-canaveral-4.jpg",
       "/images/negocios/beefcious-el-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.5,
+    "numReviews": 1979,
+    "website": "http://www.beefcious.com/",
+    "placeId": "ChIJ87yYRps7Qg0Rj3px8lzK9Og",
+    "googleCategory": "Restaurante",
+    "lat": 40.4024875,
+    "lng": -3.5651233
   },
   {
     "slug": "cerveceria-la-galerna",
@@ -2111,7 +2426,14 @@
       "/images/negocios/cerveceria-la-galerna-3.jpg",
       "/images/negocios/cerveceria-la-galerna-4.jpg",
       "/images/negocios/cerveceria-la-galerna-5.jpg"
-    ]
+    ],
+    "rating": 4.2,
+    "numReviews": 896,
+    "phone": "+34 916 00 45 89",
+    "placeId": "ChIJ03tn2247Qg0R9dGfbfzMKWg",
+    "googleCategory": "Restaurante",
+    "lat": 40.4065364,
+    "lng": -3.5621905
   },
   {
     "slug": "churreria-bernis",
@@ -2148,7 +2470,7 @@
     ],
     "precioRango": "€",
     "address": "Calle San Cipriano 10, 28032 Madrid",
-    "phone": "913711122",
+    "phone": "+34 913 71 96 69",
     "image": "/images/negocios/churreria-bernis.jpg",
     "images": [
       "/images/negocios/churreria-bernis.jpg",
@@ -2156,7 +2478,14 @@
       "/images/negocios/churreria-bernis-3.jpg",
       "/images/negocios/churreria-bernis-4.jpg",
       "/images/negocios/churreria-bernis-5.jpg"
-    ]
+    ],
+    "rating": 4.5,
+    "numReviews": 1110,
+    "website": "https://cafeteriachurreria3.wixsite.com/chocolateriabernis",
+    "placeId": "ChIJS_aER2klQg0Ra0-gUeuATK4",
+    "googleCategory": "Churrería",
+    "lat": 40.40191,
+    "lng": -3.605833
   },
   {
     "slug": "casa-botija",
@@ -2194,7 +2523,7 @@
     "menuDelDia": true,
     "precioRango": "€€",
     "address": "Calle Jose Prat 5, 28032 Madrid",
-    "phone": "913713344",
+    "phone": "+34 672 57 43 31",
     "image": "/images/negocios/casa-botija.jpg",
     "images": [
       "/images/negocios/casa-botija.jpg",
@@ -2202,7 +2531,14 @@
       "/images/negocios/casa-botija-3.jpg",
       "/images/negocios/casa-botija-4.jpg",
       "/images/negocios/casa-botija-5.jpg"
-    ]
+    ],
+    "rating": 4.5,
+    "numReviews": 559,
+    "website": "https://www.facebook.com/Casa-Botija-869041903213133/",
+    "placeId": "ChIJbWA3Gm8lQg0R-QYsZVaLsM0",
+    "googleCategory": "Bar",
+    "lat": 40.4036626,
+    "lng": -3.6082415
   },
   {
     "slug": "el-rincon-de-carla",
@@ -2240,7 +2576,7 @@
     "terraza": true,
     "precioRango": "€",
     "address": "Calle Villacarlos 18, 28032 Madrid",
-    "phone": "913715566",
+    "phone": "+34 912 23 60 60",
     "image": "/images/negocios/el-rincon-de-carla.jpg",
     "images": [
       "/images/negocios/el-rincon-de-carla.jpg",
@@ -2248,7 +2584,14 @@
       "/images/negocios/el-rincon-de-carla-3.jpg",
       "/images/negocios/el-rincon-de-carla-4.jpg",
       "/images/negocios/el-rincon-de-carla-5.jpg"
-    ]
+    ],
+    "rating": 4.2,
+    "numReviews": 963,
+    "website": "https://elrincondecarla.shop/",
+    "placeId": "ChIJH2QkCmUlQg0RPH4ew1DKV6Q",
+    "googleCategory": "Bar de tapas",
+    "lat": 40.4072181,
+    "lng": -3.6088858
   },
   {
     "slug": "rechupete-vicalvaro",
@@ -2284,7 +2627,7 @@
     ],
     "precioRango": "€€€",
     "address": "Calle San Cipriano 25, 28032 Madrid",
-    "phone": "913717788",
+    "phone": "+34 910 52 66 69",
     "image": "/images/negocios/rechupete-vicalvaro.jpg",
     "images": [
       "/images/negocios/rechupete-vicalvaro.jpg",
@@ -2292,7 +2635,13 @@
       "/images/negocios/rechupete-vicalvaro-3.jpg",
       "/images/negocios/rechupete-vicalvaro-4.jpg",
       "/images/negocios/rechupete-vicalvaro-5.jpg"
-    ]
+    ],
+    "rating": 4.4,
+    "numReviews": 213,
+    "placeId": "ChIJ4S6VpkIlQg0RN7vmS4_ZDX4",
+    "googleCategory": "Cafetería",
+    "lat": 40.4044585,
+    "lng": -3.6086581
   },
   {
     "slug": "clinica-muv-canaveral",
@@ -2332,7 +2681,7 @@
       "Pilates terapéutico"
     ],
     "address": "C. Victoria Kent, Local 8, Vicálvaro, 28052 Madrid",
-    "phone": "912345678",
+    "phone": "+34 634 47 85 44",
     "image": "/images/negocios/clinica-muv-canaveral.jpg",
     "images": [
       "/images/negocios/clinica-muv-canaveral.jpg",
@@ -2340,7 +2689,13 @@
       "/images/negocios/clinica-muv-canaveral-3.jpg",
       "/images/negocios/clinica-muv-canaveral-4.jpg",
       "/images/negocios/clinica-muv-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 5,
+    "numReviews": 295,
+    "placeId": "ChIJwaW8dU87Qg0RnHObtAp_9wA",
+    "googleCategory": "Clínica de fisioterapia",
+    "lat": 40.4012311,
+    "lng": -3.5626399
   },
   {
     "slug": "focus-clinic-canaveral",
@@ -2380,7 +2735,7 @@
       "Fisioterapia traumatológica"
     ],
     "address": "Av. Miguel Delibes 15, 28052 Madrid",
-    "phone": "918765432",
+    "phone": "+34 611 80 78 28",
     "image": "/images/negocios/focus-clinic-canaveral.jpg",
     "images": [
       "/images/negocios/focus-clinic-canaveral.jpg",
@@ -2388,7 +2743,13 @@
       "/images/negocios/focus-clinic-canaveral-3.jpg",
       "/images/negocios/focus-clinic-canaveral-4.jpg",
       "/images/negocios/focus-clinic-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 5,
+    "numReviews": 92,
+    "placeId": "ChIJd_e-oM47Qg0R-abRjGlHA1E",
+    "googleCategory": "Clínica de fisioterapia",
+    "lat": 40.3974679,
+    "lng": -3.5531833
   },
   {
     "slug": "fisioterapia-escalante",
@@ -2434,7 +2795,15 @@
       "/images/negocios/fisioterapia-escalante-3.jpg",
       "/images/negocios/fisioterapia-escalante-4.jpg",
       "/images/negocios/fisioterapia-escalante-5.jpg"
-    ]
+    ],
+    "rating": 5,
+    "numReviews": 275,
+    "phone": "+34 696 08 33 39",
+    "website": "http://www.fisioterapiaescalante.com/",
+    "placeId": "ChIJq-PCmXU7Qg0R2aZdNW-SOjQ",
+    "googleCategory": "Clínica de fisioterapia",
+    "lat": 40.4082611,
+    "lng": -3.5546681
   },
   {
     "slug": "centro-sanitario-cano",
@@ -2445,7 +2814,7 @@
     "zona": "vicalvaro",
     "zonaName": "Vicálvaro",
     "address": "Bulevar Indalecio Prieto, 12, 28032 Madrid",
-    "website": "https://podocano.com/",
+    "website": "http://podocano.com/",
     "tags": [
       "podología",
       "psicología",
@@ -2482,7 +2851,14 @@
       "/images/negocios/centro-sanitario-cano-3.jpg",
       "/images/negocios/centro-sanitario-cano-4.jpg",
       "/images/negocios/centro-sanitario-cano-5.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 145,
+    "phone": "+34 917 72 52 08",
+    "placeId": "ChIJCwyCS3YlQg0RYDFvwCOKiro",
+    "googleCategory": "Podólogo",
+    "lat": 40.4025379,
+    "lng": -3.6201537
   },
   {
     "slug": "soul-fisioterapia",
@@ -2522,7 +2898,7 @@
       "Fisioterapia traumatológica"
     ],
     "address": "Calle Victoria Kent 25, 28052 Madrid",
-    "phone": "917654321",
+    "phone": "+34 644 69 12 80",
     "image": "/images/negocios/soul-fisioterapia.jpg",
     "images": [
       "/images/negocios/soul-fisioterapia.jpg",
@@ -2530,7 +2906,13 @@
       "/images/negocios/soul-fisioterapia-3.jpg",
       "/images/negocios/soul-fisioterapia-4.jpg",
       "/images/negocios/soul-fisioterapia-5.jpg"
-    ]
+    ],
+    "rating": 5,
+    "numReviews": 377,
+    "placeId": "ChIJNd8a4yk5Yg0RWi_ixuzfEyY",
+    "googleCategory": "Clínica de fisioterapia",
+    "lat": 40.429998,
+    "lng": -3.56083
   },
   {
     "slug": "english-connection-canaveral",
@@ -2573,7 +2955,15 @@
       "/images/negocios/english-connection-canaveral-3.jpg",
       "/images/negocios/english-connection-canaveral-4.jpg",
       "/images/negocios/english-connection-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.9,
+    "numReviews": 74,
+    "phone": "+34 618 59 47 43",
+    "website": "https://englishconnection.es/academia-ingles/canaveral/?utm_source=gmb&utm_medium=organic&utm_campaign=canaveral",
+    "placeId": "ChIJMY2DbLQ7Qg0RU7P3ZC7dGiU",
+    "googleCategory": "Academia de inglés",
+    "lat": 40.4075606,
+    "lng": -3.5544529
   },
   {
     "slug": "sadeco-coslada",
@@ -2584,7 +2974,7 @@
     "zona": "coslada",
     "zonaName": "Coslada",
     "address": "Av. San Pablo, 32, 28823 Coslada, Madrid",
-    "website": "https://sadecocoslada.com/",
+    "website": "https://sadecocoslada.com/?utm_source=gmb&utm_medium=organic&utm_campaign=gmb-appointment&utm_content=sadeco-coslada-mantenimovil",
     "tags": [
       "taller",
       "pre-itv",
@@ -2614,7 +3004,14 @@
       "/images/negocios/sadeco-coslada-3.jpg",
       "/images/negocios/sadeco-coslada-4.jpg",
       "/images/negocios/sadeco-coslada-5.jpg"
-    ]
+    ],
+    "rating": 4,
+    "numReviews": 405,
+    "phone": "+34 916 69 81 02",
+    "placeId": "ChIJ_T7OzY0wQg0Rs2IXDf6Jl6M",
+    "googleCategory": "Tienda de neumáticos",
+    "lat": 40.4346129,
+    "lng": -3.533146
   },
   {
     "slug": "masruedas-coslada",
@@ -2624,7 +3021,7 @@
     "categoryName": "Automoción",
     "zona": "coslada",
     "zonaName": "Coslada",
-    "website": "https://masruedas.es/",
+    "website": "https://masruedas.firststop.es/",
     "tags": [
       "neumáticos",
       "mecánica-rápida",
@@ -2648,7 +3045,7 @@
     ],
     "horario": "L-V 8:30-19:00, S 9:00-13:00",
     "address": "Av. de España 10, 28823 Coslada, Madrid",
-    "phone": "916712345",
+    "phone": "+34 919 19 19 66",
     "image": "/images/negocios/masruedas-coslada.jpg",
     "images": [
       "/images/negocios/masruedas-coslada.jpg",
@@ -2656,7 +3053,13 @@
       "/images/negocios/masruedas-coslada-3.jpg",
       "/images/negocios/masruedas-coslada-4.jpg",
       "/images/negocios/masruedas-coslada-5.jpg"
-    ]
+    ],
+    "rating": 4.9,
+    "numReviews": 116,
+    "placeId": "ChIJ7WHWDNAxQg0R3zOVw-TK71U",
+    "googleCategory": "Taller de reparación de automóviles",
+    "lat": 40.4328275,
+    "lng": -3.53798
   },
   {
     "slug": "electroi-san-fernando",
@@ -2690,7 +3093,7 @@
     ],
     "horario": "L-V 9:00-14:00 y 16:00-19:30, S 9:00-13:00",
     "address": "Calle San Pablo 5, 28830 San Fernando de Henares, Madrid",
-    "phone": "916734567",
+    "phone": "+34 916 69 69 26",
     "image": "/images/negocios/electroi-san-fernando.jpg",
     "images": [
       "/images/negocios/electroi-san-fernando.jpg",
@@ -2698,7 +3101,13 @@
       "/images/negocios/electroi-san-fernando-3.jpg",
       "/images/negocios/electroi-san-fernando-4.jpg",
       "/images/negocios/electroi-san-fernando-5.jpg"
-    ]
+    ],
+    "rating": 4.7,
+    "numReviews": 374,
+    "placeId": "ChIJSb6mXPMwQg0RNyFj_WTWsDU",
+    "googleCategory": "Taller de reparación de automóviles",
+    "lat": 40.439458,
+    "lng": -3.5351373
   },
   {
     "slug": "inyeauto-san-fernando",
@@ -2732,11 +3141,17 @@
     ],
     "horario": "L-V 9:00-14:00 y 16:00-19:00",
     "address": "Calle de la Carpintería, 10, 28830 San Fernando de Henares, Madrid",
-    "phone": "916 74 00 00",
+    "phone": "+34 916 71 78 33",
     "image": "/images/negocios/inyeauto-san-fernando.jpg",
     "images": [
       "/images/negocios/inyeauto-san-fernando.jpg"
-    ]
+    ],
+    "rating": 4.3,
+    "numReviews": 48,
+    "placeId": "ChIJZapkAAgxQg0RY4Q4fT6G_9Q",
+    "googleCategory": "Taller de automóviles",
+    "lat": 40.4208509,
+    "lng": -3.5329347
   },
   {
     "slug": "aticomoda-vicalvaro",
@@ -2775,7 +3190,15 @@
       "/images/negocios/aticomoda-vicalvaro-3.jpg",
       "/images/negocios/aticomoda-vicalvaro-4.jpg",
       "/images/negocios/aticomoda-vicalvaro-5.jpg"
-    ]
+    ],
+    "rating": 4.9,
+    "numReviews": 63,
+    "phone": "+34 910 51 82 03",
+    "website": "http://www.aticomoda.es/",
+    "placeId": "ChIJGYPJCnUlQg0RnLMnoAVpMKI",
+    "googleCategory": "Tienda de ropa de mujer",
+    "lat": 40.397466,
+    "lng": -3.620109
   },
   {
     "slug": "almacenes-jimar",
@@ -2811,7 +3234,14 @@
     "images": [
       "/images/negocios/almacenes-jimar.jpg",
       "/images/negocios/almacenes-jimar-2.jpg"
-    ]
+    ],
+    "rating": 4.2,
+    "numReviews": 24,
+    "phone": "+34 917 76 45 05",
+    "placeId": "ChIJ852kzG4lQg0RVS7DV3mDxE4",
+    "googleCategory": "Tienda de artículos para el hogar",
+    "lat": 40.40225,
+    "lng": -3.6065281
   },
   {
     "slug": "almacenes-s-lara",
@@ -2848,7 +3278,15 @@
       "/images/negocios/almacenes-s-lara.jpg",
       "/images/negocios/almacenes-s-lara-2.jpg",
       "/images/negocios/almacenes-s-lara-3.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 19,
+    "phone": "+34 917 76 39 38",
+    "website": "https://www.facebook.com/AlmacenesS.Lara/",
+    "placeId": "ChIJ1ey1Jm8lQg0RSHdJmqjtMpY",
+    "googleCategory": "Tienda de ropa de hogar",
+    "lat": 40.4034091,
+    "lng": -3.6075294
   },
   {
     "slug": "akiomoda-vicalvaro",
@@ -2887,7 +3325,15 @@
       "/images/negocios/akiomoda-vicalvaro-3.jpg",
       "/images/negocios/akiomoda-vicalvaro-4.jpg",
       "/images/negocios/akiomoda-vicalvaro-5.jpg"
-    ]
+    ],
+    "rating": 4.6,
+    "numReviews": 95,
+    "phone": "+34 917 75 21 46",
+    "website": "http://www.akiomoda.com/",
+    "placeId": "ChIJc4biMm8lQg0Rd1kKDIy--u0",
+    "googleCategory": "Tienda de ropa de mujer",
+    "lat": 40.4039678,
+    "lng": -3.6068024
   },
   {
     "slug": "telelavo-canaveral",
@@ -2926,7 +3372,15 @@
       "/images/negocios/telelavo-canaveral-3.jpg",
       "/images/negocios/telelavo-canaveral-4.jpg",
       "/images/negocios/telelavo-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.9,
+    "numReviews": 128,
+    "phone": "+34 911 64 42 32",
+    "website": "https://telelavo.com/lavanderia-cerca-de-mi/madrid/el-canaveral/",
+    "placeId": "ChIJFxebqfU7Qg0RrhlfM3Q7oJg",
+    "googleCategory": "Lavandería",
+    "lat": 40.3973608,
+    "lng": -3.55325
   },
   {
     "slug": "lavanderia-vicalvaro",
@@ -2936,7 +3390,7 @@
     "categoryName": "Hogar y Reformas",
     "zona": "vicalvaro",
     "zonaName": "Vicálvaro",
-    "website": "https://www.lavanderiavicalvaro.com/",
+    "website": "https://iwashvicalvaro.es/",
     "tags": [
       "lavandería",
       "autoservicio",
@@ -2967,7 +3421,13 @@
       "/images/negocios/lavanderia-vicalvaro-3.jpg",
       "/images/negocios/lavanderia-vicalvaro-4.jpg",
       "/images/negocios/lavanderia-vicalvaro-5.jpg"
-    ]
+    ],
+    "rating": 3.8,
+    "numReviews": 21,
+    "placeId": "ChIJCSc4PO4lQg0Rz2XP2rQNA3o",
+    "googleCategory": "Lavandería de autoservicio",
+    "lat": 40.4054241,
+    "lng": -3.6064728
   },
   {
     "slug": "mediesven-canaveral",
@@ -2978,9 +3438,9 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "Calle de Mario Moreno Cantinflas, 72, 28052 Madrid",
-    "website": "https://mediesven.com/",
+    "website": "https://www.mediesven.com/",
     "rating": 4.7,
-    "numReviews": 97,
+    "numReviews": 103,
     "tags": [
       "centro-médico",
       "pediatría",
@@ -3012,7 +3472,12 @@
       "/images/negocios/mediesven-canaveral-3.jpg",
       "/images/negocios/mediesven-canaveral-4.jpg",
       "/images/negocios/mediesven-canaveral-5.jpg"
-    ]
+    ],
+    "phone": "+34 744 74 01 10",
+    "placeId": "ChIJRxa3TfY7Qg0R66_cKYrvcUo",
+    "googleCategory": "Centro de salud",
+    "lat": 40.40468,
+    "lng": -3.5599587
   },
   {
     "slug": "mr-kebab-canaveral",
@@ -3023,7 +3488,7 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "C. Canada de Vicalvaro a San Fernando, Vicalvaro, 28052 Madrid",
-    "phone": "911 66 01 15",
+    "phone": "+34 911 66 01 15",
     "tags": [
       "kebab",
       "turco",
@@ -3056,7 +3521,13 @@
       "/images/negocios/mr-kebab-canaveral-3.jpg",
       "/images/negocios/mr-kebab-canaveral-4.jpg",
       "/images/negocios/mr-kebab-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.7,
+    "numReviews": 423,
+    "website": "https://www.instagram.com/mrkebab_el_canaveral?igsh=MXN5ZjMzbzhmbzg2cg%3D%3D&utm_source=qr",
+    "placeId": "ChIJi1s5K_c7Qg0RpAGRIOMFO8Q",
+    "lat": 40.4085461,
+    "lng": -3.55308
   },
   {
     "slug": "telepizza-canaveral",
@@ -3091,7 +3562,7 @@
     ],
     "horario": "L-D 13:00-23:30",
     "address": "Avenida de Miguel Delibes, 50, 28052 Madrid",
-    "phone": "913 06 00 00",
+    "phone": "+34 910 01 14 66",
     "image": "/images/negocios/telepizza-canaveral.jpg",
     "images": [
       "/images/negocios/telepizza-canaveral.jpg",
@@ -3099,7 +3570,14 @@
       "/images/negocios/telepizza-canaveral-3.jpg",
       "/images/negocios/telepizza-canaveral-4.jpg",
       "/images/negocios/telepizza-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 3.2,
+    "numReviews": 369,
+    "website": "https://www.telepizza.es/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+    "placeId": "ChIJ4Y66gTQ7Qg0RrJ6k512wcDQ",
+    "googleCategory": "Pizzería a domicilio",
+    "lat": 40.4025832,
+    "lng": -3.5619474
   },
   {
     "slug": "kebabish-vicalvaro",
@@ -3134,14 +3612,20 @@
     ],
     "horario": "L-D 12:00-00:00",
     "address": "Calle de San Cipriano, 10, 28032 Madrid",
-    "phone": "913 71 00 00",
+    "phone": "+34 663 87 72 77",
     "image": "/images/negocios/kebabish-vicalvaro.jpg",
     "images": [
       "/images/negocios/kebabish-vicalvaro.jpg",
       "/images/negocios/kebabish-vicalvaro-2.jpg",
       "/images/negocios/kebabish-vicalvaro-3.jpg",
       "/images/negocios/kebabish-vicalvaro-5.jpg"
-    ]
+    ],
+    "rating": 3,
+    "numReviews": 47,
+    "placeId": "ChIJ7eYapwQlQg0RCY55BJfwyC4",
+    "googleCategory": "Restaurante",
+    "lat": 40.4033771,
+    "lng": -3.6087027
   },
   {
     "slug": "lidl-canaveral",
@@ -3181,7 +3665,13 @@
       "/images/negocios/lidl-canaveral-3.jpg",
       "/images/negocios/lidl-canaveral-4.jpg",
       "/images/negocios/lidl-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.3,
+    "numReviews": 820,
+    "placeId": "ChIJJ6HgDCV4o0cRs_lNmC4zWeg",
+    "googleCategory": "Supermercado",
+    "lat": 50.71708,
+    "lng": 10.46791
   },
   {
     "slug": "mercadona-san-fernando",
@@ -3220,7 +3710,15 @@
       "/images/negocios/mercadona-san-fernando-3.jpg",
       "/images/negocios/mercadona-san-fernando-4.jpg",
       "/images/negocios/mercadona-san-fernando-5.jpg"
-    ]
+    ],
+    "rating": 4.2,
+    "numReviews": 789,
+    "phone": "+34 856 03 23 91",
+    "website": "https://www.mercadona.es/",
+    "placeId": "ChIJyaGmM_fNDQ0RKiiVcSsGra8",
+    "googleCategory": "Supermercado",
+    "lat": 36.4758326,
+    "lng": -6.2005509
   },
   {
     "slug": "aldi-coslada",
@@ -3260,7 +3758,15 @@
       "/images/negocios/aldi-coslada-3.jpg",
       "/images/negocios/aldi-coslada-4.jpg",
       "/images/negocios/aldi-coslada-5.jpg"
-    ]
+    ],
+    "rating": 4.1,
+    "numReviews": 1029,
+    "phone": "+34 900 902 466",
+    "website": "https://www.aldi.es/",
+    "placeId": "ChIJtz6fYWIxQg0Rxx7LKiJ98vg",
+    "googleCategory": "Tienda general",
+    "lat": 40.427531,
+    "lng": -3.552482
   },
   {
     "slug": "laura-vivar-estilistas",
@@ -3300,7 +3806,14 @@
       "/images/negocios/laura-vivar-estilistas-3.jpg",
       "/images/negocios/laura-vivar-estilistas-4.jpg",
       "/images/negocios/laura-vivar-estilistas-5.jpg"
-    ]
+    ],
+    "rating": 4.9,
+    "numReviews": 115,
+    "phone": "+34 617 94 77 45",
+    "placeId": "ChIJXY6OLXQlQg0RGXKoyTqTWTo",
+    "googleCategory": "Peluquería",
+    "lat": 40.4087581,
+    "lng": -3.6070565
   },
   {
     "slug": "obramat-canaveral",
@@ -3341,12 +3854,15 @@
       "/images/negocios/obramat-canaveral-3.jpg",
       "/images/negocios/obramat-canaveral-4.jpg",
       "/images/negocios/obramat-canaveral-5.jpg"
-    ]
+    ],
+    "placeId": "IjESLwoUChIJ5Yzp8ZY6Qg0RBAOy5vg9r7MQlgEqFAoSCT2vmDKSOkINESCcncyHeal5",
+    "lat": 40.4038239,
+    "lng": -3.5579595
   },
   {
-    "slug": "mcdonalds-canaveral",
-    "name": "McDonald's El Cañaveral",
-    "description": "McDonald's El Cañaveral es el lugar perfecto para disfrutar de tus hamburguesas favoritas, desayunos, ensaladas y postres en un ambiente familiar y.",
+    "slug": "burger-king-canaveral",
+    "name": "Burger King El Cañaveral",
+    "description": "Burger King El Cañaveral es el sitio para disfrutar del Whopper y sus hamburguesas a la parrilla, menús King, desayunos y postres en un ambiente familiar. Cuenta con servicio Auto-King y entrega a domicilio.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
@@ -3354,36 +3870,44 @@
     "tags": [
       "cadena",
       "fast-food",
-      "auto-mac"
+      "auto-king"
     ],
     "delivery": true,
     "terraza": true,
     "aparcamiento": true,
     "featured": false,
     "servicios": [
-      "Hamburguesas y menús",
-      "Desayunos y McCafé",
-      "Ensaladas y opciones más saludables",
-      "Postres y helados",
-      "Servicio Auto-Mac",
-      "Zona de juegos infantil",
+      "Whopper y hamburguesas a la parrilla",
+      "Menús King y King Junior",
+      "Desayunos",
+      "Postres y helados (King Fusion)",
+      "Servicio Auto-King",
+      "Quioscos de autopedido",
       "Wi-Fi gratuito",
       "Servicio a domicilio"
     ],
     "destacados": [
-      "Amplio horario, Auto-Mac 24h",
-      "Terraza exterior y zona de juegos",
-      "Variedad de opciones para todos los gustos",
+      "Carne a la parrilla, sello de Burger King",
+      "Servicio Auto-King sin bajar del coche",
+      "Pedido rápido en quioscos digitales",
       "Ideal para familias y comidas rápidas"
     ],
-    "horario": "L-D 8:00-00:00 (Auto-Mac 24h)",
+    "horario": "L-J y D 12:30-00:30, V-S 12:30-01:00",
     "address": "Avenida de Miguel Delibes, 80, 28052 Madrid",
-    "image": "/images/negocios/mcdonalds-canaveral.jpg",
+    "image": "/images/negocios/burger-king-canaveral.jpg",
     "images": [
-      "/images/negocios/mcdonalds-canaveral.jpg",
-      "/images/negocios/mcdonalds-canaveral-2.jpg",
-      "/images/negocios/mcdonalds-canaveral-3.jpg"
-    ]
+      "/images/negocios/burger-king-canaveral.jpg",
+      "/images/negocios/burger-king-canaveral-2.jpg",
+      "/images/negocios/burger-king-canaveral-3.jpg"
+    ],
+    "rating": 3.5,
+    "numReviews": 923,
+    "phone": "+34 660 96 57 99",
+    "website": "https://www.burgerking.es/",
+    "placeId": "ChIJj1y_t1g7Qg0RvZ7cznDFPKo",
+    "googleCategory": "Restaurante de comida rápida",
+    "lat": 40.4051054,
+    "lng": -3.5593309
   },
   {
     "slug": "dreamfit-valdebernardo",
@@ -3425,7 +3949,14 @@
       "/images/negocios/dreamfit-valdebernardo-3.jpg",
       "/images/negocios/dreamfit-valdebernardo-4.jpg",
       "/images/negocios/dreamfit-valdebernardo-5.jpg"
-    ]
+    ],
+    "rating": 4,
+    "numReviews": 1508,
+    "website": "https://www.dreamfit.es/centros/valdebernardo",
+    "placeId": "ChIJM0c0-3QlQg0RcjRZuhG6-Fg",
+    "googleCategory": "Gimnasio",
+    "lat": 40.397711,
+    "lng": -3.618433
   },
   {
     "slug": "vicalvaro-crossfit",
@@ -3436,7 +3967,7 @@
     "zona": "vicalvaro",
     "zonaName": "Vicálvaro",
     "address": "Calle de Prat, 32, 28032 Madrid",
-    "website": "http://www.crossfitvicalvaro.es/",
+    "website": "https://vicalvarobox.com/",
     "tags": [
       "crossfit",
       "wod",
@@ -3467,7 +3998,13 @@
       "/images/negocios/vicalvaro-crossfit-3.jpg",
       "/images/negocios/vicalvaro-crossfit-4.jpg",
       "/images/negocios/vicalvaro-crossfit-5.jpg"
-    ]
+    ],
+    "rating": 4.9,
+    "numReviews": 83,
+    "placeId": "ChIJBT5li24lQg0RWmWn9mR5_BA",
+    "googleCategory": "Gimnasio",
+    "lat": 40.4032198,
+    "lng": -3.6138262
   },
   {
     "slug": "lorange-bleue-vicalvaro",
@@ -3508,7 +4045,15 @@
       "/images/negocios/lorange-bleue-vicalvaro-3.jpg",
       "/images/negocios/lorange-bleue-vicalvaro-4.jpg",
       "/images/negocios/lorange-bleue-vicalvaro-5.jpg"
-    ]
+    ],
+    "rating": 4.7,
+    "numReviews": 380,
+    "phone": "+34 689 72 06 72",
+    "website": "https://www.lorangebleue.es/gimnasios/madrid-vicalvaro/",
+    "placeId": "ChIJwWZwWgAlQg0RyqSlKyl2eNY",
+    "googleCategory": "Club deportivo",
+    "lat": 40.4047315,
+    "lng": -3.6034735
   },
   {
     "slug": "nemomarlin-canaveral",
@@ -3519,7 +4064,7 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "Alto del Esparragal, 202, 28052 Madrid",
-    "website": "https://www.escuelanemomarlin.com/escuelas/escuela-infantil-canaveral/",
+    "website": "https://www.escuelanemomarlin.com/",
     "tags": [
       "guardería",
       "bilingüe",
@@ -3553,7 +4098,14 @@
       "/images/negocios/nemomarlin-canaveral-3.jpg",
       "/images/negocios/nemomarlin-canaveral-4.jpg",
       "/images/negocios/nemomarlin-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.6,
+    "numReviews": 36,
+    "phone": "+34 620 37 11 50",
+    "placeId": "ChIJAyDQJa07Qg0Rj8fHJmdLBa8",
+    "googleCategory": "Centro de educación preescolar",
+    "lat": 40.4031028,
+    "lng": -3.5661799
   },
   {
     "slug": "escuela-infantil-aupa",
@@ -3573,7 +4125,7 @@
     "tipoGestion": "privada",
     "featured": false,
     "address": "Calle de Blas de Lezo, 15, 28052 Madrid",
-    "phone": "913 06 00 00",
+    "phone": "+34 678 18 13 01",
     "servicios": [
       "Pedagogía activa y juego libre",
       "Comedor con alimentos ecológicos",
@@ -3599,7 +4151,13 @@
       "/images/negocios/escuela-infantil-aupa-3.jpg",
       "/images/negocios/escuela-infantil-aupa-4.jpg",
       "/images/negocios/escuela-infantil-aupa-5.jpg"
-    ]
+    ],
+    "rating": 4.7,
+    "numReviews": 43,
+    "placeId": "ChIJzTEe3fM7Qg0RnEwLjP9FQ-8",
+    "googleCategory": "Centro de educación preescolar",
+    "lat": 40.406508,
+    "lng": -3.5592815
   },
   {
     "slug": "ikigai-dental-canaveral-v2",
@@ -3610,8 +4168,8 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "Av. de Blas de Lezo, 18, Vicalvaro, 28052 Madrid",
-    "phone": "919 26 51 11",
-    "website": "https://ikigaidental.com/",
+    "phone": "+34 919 26 51 11",
+    "website": "http://www.ikigaidental.com/",
     "tags": [
       "dentista",
       "ortodoncia-invisible",
@@ -3652,7 +4210,13 @@
       "/images/negocios/ikigai-dental-canaveral-v2-3.jpg",
       "/images/negocios/ikigai-dental-canaveral-v2-4.jpg",
       "/images/negocios/ikigai-dental-canaveral-v2-5.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 448,
+    "placeId": "ChIJtc3KnV07Qg0RagIq_WcHcJg",
+    "googleCategory": "Clínica dental",
+    "lat": 40.4066026,
+    "lng": -3.5523215
   },
   {
     "slug": "vicalvaro-dental",
@@ -3662,7 +4226,7 @@
     "categoryName": "Salud y Bienestar",
     "zona": "vicalvaro",
     "zonaName": "Vicálvaro",
-    "website": "https://vicalvarodental.es/",
+    "website": "http://www.vicalvaro-dental.com/",
     "tags": [
       "dentista",
       "implantes",
@@ -3679,7 +4243,7 @@
     ],
     "featured": false,
     "address": "Calle de San Cipriano, 20, 28032 Madrid",
-    "phone": "913 71 00 00",
+    "phone": "+34 912 46 93 60",
     "servicios": [
       "Implantes dentales de carga inmediata",
       "Tratamientos de encías",
@@ -3704,7 +4268,13 @@
       "/images/negocios/vicalvaro-dental-3.jpg",
       "/images/negocios/vicalvaro-dental-4.jpg",
       "/images/negocios/vicalvaro-dental-5.jpg"
-    ]
+    ],
+    "rating": 4.5,
+    "numReviews": 51,
+    "placeId": "ChIJfclsjkMlQg0RTwrXzWrVTjI",
+    "googleCategory": "Clínica dental",
+    "lat": 40.4024891,
+    "lng": -3.5969668
   },
   {
     "slug": "vietnam-2013-canaveral",
@@ -3716,7 +4286,7 @@
     "zonaName": "El Cañaveral",
     "address": "Calle Ferenc Puskas, 193, 28052 Madrid",
     "website": "https://vietnamrestaurante.com/",
-    "rating": 4.6,
+    "rating": 4.8,
     "tags": [
       "vietnamita",
       "pho",
@@ -3749,7 +4319,13 @@
       "/images/negocios/vietnam-2013-canaveral-3.jpg",
       "/images/negocios/vietnam-2013-canaveral-4.jpg",
       "/images/negocios/vietnam-2013-canaveral-5.jpg"
-    ]
+    ],
+    "numReviews": 120,
+    "phone": "+34 910 26 18 10",
+    "placeId": "ChIJ16ByZgA7Qg0RUKLZvdovxtQ",
+    "googleCategory": "Restaurante vietnamita",
+    "lat": 40.3985434,
+    "lng": -3.5469724
   },
   {
     "slug": "seven-canaveral",
@@ -3760,7 +4336,7 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "Av. de Miguel Delibes, 30, 28052 Madrid",
-    "phone": "657 77 78 80",
+    "phone": "+34 657 77 78 80",
     "tags": [
       "bar",
       "terraza",
@@ -3789,7 +4365,13 @@
       "/images/negocios/seven-canaveral-3.jpg",
       "/images/negocios/seven-canaveral-4.jpg",
       "/images/negocios/seven-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.1,
+    "numReviews": 51,
+    "placeId": "ChIJz-YevH87Qg0R0mECXs_jcts",
+    "googleCategory": "Restaurante",
+    "lat": 40.4063304,
+    "lng": -3.5630458
   },
   {
     "slug": "havana-madrid-canaveral",
@@ -3800,7 +4382,7 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "Av. de Miguel Delibes, 30, local 1, 28052 Madrid",
-    "phone": "918 98 69 36",
+    "phone": "+34 642 89 75 48",
     "tags": [
       "cubano",
       "cafetería",
@@ -3833,7 +4415,14 @@
       "/images/negocios/havana-madrid-canaveral-3.jpg",
       "/images/negocios/havana-madrid-canaveral-4.jpg",
       "/images/negocios/havana-madrid-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.9,
+    "numReviews": 26,
+    "website": "https://www.instagram.com/havana.lounge.bar?igsh=OWE2ajBwMWxzMWho&utm_source=qr",
+    "placeId": "ChIJpepqbgAvQg0Ryib_REEDZ9g",
+    "googleCategory": "Pub",
+    "lat": 40.4378837,
+    "lng": -3.634704
   },
   {
     "slug": "guasacaca-madrid-canaveral",
@@ -3876,7 +4465,15 @@
       "/images/negocios/guasacaca-madrid-canaveral-3.jpg",
       "/images/negocios/guasacaca-madrid-canaveral-4.jpg",
       "/images/negocios/guasacaca-madrid-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 774,
+    "phone": "+34 910 94 52 64",
+    "website": "https://guasacaca.metro.bar/?lang=es",
+    "placeId": "ChIJdeuOYNc7Qg0RqIw8k92He_g",
+    "googleCategory": "Restaurante venezolano",
+    "lat": 40.4086578,
+    "lng": -3.5523544
   },
   {
     "slug": "chinawok-express-canaveral",
@@ -3922,7 +4519,14 @@
       "/images/negocios/chinawok-express-canaveral-3.jpg",
       "/images/negocios/chinawok-express-canaveral-4.jpg",
       "/images/negocios/chinawok-express-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.7,
+    "numReviews": 3191,
+    "phone": "+34 912 90 82 93",
+    "placeId": "ChIJiRwnZwA7Qg0R0GgZ_nSkBag",
+    "googleCategory": "Restaurante chino",
+    "lat": 40.4075622,
+    "lng": -3.5530804
   },
   {
     "slug": "la-bajada-street-food-vicalvaro",
@@ -3932,7 +4536,7 @@
     "categoryName": "Restaurantes",
     "zona": "vicalvaro",
     "zonaName": "Vicálvaro",
-    "rating": 4.5,
+    "rating": 4.6,
     "tags": [
       "street-food",
       "creativo",
@@ -3959,8 +4563,8 @@
     ],
     "horario": "Martes a Jueves: 13:30-16:00 y 20:30-23:00, Viernes y Sábado: 13:30-16:00 y 20:30-00:00, Domingo: 13:30-16:00",
     "address": "C. de San Cipriano, 67, Vicálvaro, 28032 Madrid",
-    "phone": "915 50 14 34",
-    "website": "https://restaurantelabajada.com/",
+    "phone": "+34 915 50 14 34",
+    "website": "https://restaurantelabajada.com/carta-vicalvaro/",
     "terraza": true,
     "image": "/images/negocios/la-bajada-street-food-vicalvaro.jpg",
     "images": [
@@ -3969,7 +4573,12 @@
       "/images/negocios/la-bajada-street-food-vicalvaro-3.jpg",
       "/images/negocios/la-bajada-street-food-vicalvaro-4.jpg",
       "/images/negocios/la-bajada-street-food-vicalvaro-5.jpg"
-    ]
+    ],
+    "numReviews": 1451,
+    "placeId": "ChIJY0IYaZwlQg0RTajZjLv1Jc8",
+    "googleCategory": "Restaurante peruano",
+    "lat": 40.4027506,
+    "lng": -3.5974406
   },
   {
     "slug": "farmacia-central-canaveral",
@@ -3980,8 +4589,8 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "Av. de Miguel Delibes, 72, 28052 Madrid",
-    "phone": "911 08 10 08",
-    "website": "http://www.farmaciacentralcanaveral.es/",
+    "phone": "+34 911 08 10 08",
+    "website": "https://xn--farmaciacentralcaaveral-8hc.es/",
     "tags": [
       "farmacia",
       "guardia",
@@ -4009,7 +4618,13 @@
       "/images/negocios/farmacia-central-canaveral-3.jpg",
       "/images/negocios/farmacia-central-canaveral-4.jpg",
       "/images/negocios/farmacia-central-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.3,
+    "numReviews": 150,
+    "placeId": "ChIJbcAlSZg7Qg0RaLkz_XmONTc",
+    "googleCategory": "Farmacia",
+    "lat": 40.4047955,
+    "lng": -3.5600651
   },
   {
     "slug": "farmacia-sonrisas-canaveral",
@@ -4048,7 +4663,14 @@
       "/images/negocios/farmacia-sonrisas-canaveral-3.jpg",
       "/images/negocios/farmacia-sonrisas-canaveral-4.jpg",
       "/images/negocios/farmacia-sonrisas-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 59,
+    "phone": "+34 912 31 95 69",
+    "placeId": "ChIJayD-_uc7Qg0RZf-8DkqfObU",
+    "googleCategory": "Farmacia",
+    "lat": 40.3976614,
+    "lng": -3.5530073
   },
   {
     "slug": "farmacia-botica-de-mar",
@@ -4084,7 +4706,15 @@
       "/images/negocios/farmacia-botica-de-mar-3.jpg",
       "/images/negocios/farmacia-botica-de-mar-4.jpg",
       "/images/negocios/farmacia-botica-de-mar-5.jpg"
-    ]
+    ],
+    "rating": 3.9,
+    "numReviews": 83,
+    "phone": "+34 913 15 83 13",
+    "website": "http://www.laboticademar.com/",
+    "placeId": "ChIJVcRa-jE7Qg0RHqNCkw3fv4s",
+    "googleCategory": "Farmacia",
+    "lat": 40.4082607,
+    "lng": -3.553119
   },
   {
     "slug": "farmacia-el-canaveral-vk",
@@ -4120,7 +4750,14 @@
       "/images/negocios/farmacia-el-canaveral-vk-2.jpg",
       "/images/negocios/farmacia-el-canaveral-vk-3.jpg",
       "/images/negocios/farmacia-el-canaveral-vk-5.jpg"
-    ]
+    ],
+    "rating": 4.1,
+    "numReviews": 91,
+    "phone": "+34 917 65 02 72",
+    "placeId": "ChIJUcZ5e746Qg0RGW3T0V6E1IA",
+    "googleCategory": "Farmacia",
+    "lat": 40.4008064,
+    "lng": -3.5618638
   },
   {
     "slug": "jardin-canaveral",
@@ -4157,7 +4794,7 @@
     ],
     "horario": "Martes a Domingo: 13:00-16:30 y 20:00-23:30, Lunes: Cerrado",
     "address": "C. Cerro del Campo, 62, 28052 Madrid",
-    "phone": "912 62 40 03",
+    "phone": "+34 912 62 40 03",
     "accesibilidad": true,
     "aparcamiento": true,
     "image": "/images/negocios/jardin-canaveral.jpg",
@@ -4167,7 +4804,13 @@
       "/images/negocios/jardin-canaveral-3.jpg",
       "/images/negocios/jardin-canaveral-4.jpg",
       "/images/negocios/jardin-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 3.6,
+    "numReviews": 426,
+    "placeId": "ChIJwSUL2Wc7Qg0R2RyYy80AOx4",
+    "googleCategory": "Restaurante familiar",
+    "lat": 40.40523,
+    "lng": -3.5502325
   },
   {
     "slug": "estanco-el-canaveral",
@@ -4203,7 +4846,14 @@
     "images": [
       "/images/negocios/estanco-el-canaveral.jpg",
       "/images/negocios/estanco-el-canaveral-2.jpg"
-    ]
+    ],
+    "rating": 4.1,
+    "numReviews": 55,
+    "phone": "+34 910 11 49 56",
+    "placeId": "ChIJk1K7nus7Qg0RCa84vbCEQB4",
+    "googleCategory": "Estanco",
+    "lat": 40.407684,
+    "lng": -3.552321
   },
   {
     "slug": "sm-homes-el-canaveral",
@@ -4238,14 +4888,20 @@
     "horario": "L-V 10:00-14:00 y 16:30-20:00",
     "image": "/images/negocios/sm-homes-el-canaveral.jpg",
     "address": "Calle Enrique Urquijo 90, 28052 Madrid",
-    "phone": "674381997",
+    "phone": "+34 674 38 19 97",
     "images": [
       "/images/negocios/sm-homes-el-canaveral.jpg",
       "/images/negocios/sm-homes-el-canaveral-2.jpg",
       "/images/negocios/sm-homes-el-canaveral-3.jpg",
       "/images/negocios/sm-homes-el-canaveral-4.jpg",
       "/images/negocios/sm-homes-el-canaveral-5.jpg"
-    ]
+    ],
+    "rating": 5,
+    "numReviews": 99,
+    "placeId": "ChIJ5X4h4dw7Qg0RoTec_HPZJcQ",
+    "googleCategory": "Agencia inmobiliaria",
+    "lat": 40.4006098,
+    "lng": -3.5594426
   },
   {
     "slug": "mediadores-inmobiliarios-canaveral",
@@ -4319,12 +4975,18 @@
     "horario": "L-V 9:30–14:00, 16:00–20:00 · D cerrado",
     "image": "/images/negocios/redpiso-el-canaveral.jpg",
     "address": "Av. de Miguel Delibes, 30, Local 8, Vicálvaro, 28052 Madrid",
-    "phone": "910943769",
+    "phone": "+34 910 94 37 69",
     "images": [
       "/images/negocios/redpiso-el-canaveral.jpg",
       "/images/negocios/redpiso-el-canaveral-2.jpg",
       "/images/negocios/redpiso-el-canaveral-3.jpg"
-    ]
+    ],
+    "rating": 4.9,
+    "numReviews": 97,
+    "placeId": "ChIJwaTYzV8pQg0Rekzh43Mcjlg",
+    "googleCategory": "Agencia inmobiliaria",
+    "lat": 40.4063304,
+    "lng": -3.5630458
   },
   {
     "slug": "inmobiliaria-el-canaveral-coslada",
@@ -4334,7 +4996,7 @@
     "categoryName": "Inmobiliarias",
     "zona": "coslada",
     "zonaName": "Coslada",
-    "website": "http://www.inmobiliariaelcañaveral.com/",
+    "website": "http://www.xn--inmobiliariaelcaaveral-zec.com/",
     "tags": [
       "inmobiliaria",
       "compraventa",
@@ -4358,13 +5020,19 @@
     "horario": "L-V 9:00–14:00, 16:00–19:00 · S cerrado · D cerrado",
     "image": "/images/negocios/inmobiliaria-el-canaveral-coslada.jpg",
     "address": "C. de la Iglesia, 4, 28821 Coslada, Madrid",
-    "phone": "910289808",
+    "phone": "+34 910 28 98 08",
     "images": [
       "/images/negocios/inmobiliaria-el-canaveral-coslada.jpg",
       "/images/negocios/inmobiliaria-el-canaveral-coslada-2.jpg",
       "/images/negocios/inmobiliaria-el-canaveral-coslada-3.jpg",
       "/images/negocios/inmobiliaria-el-canaveral-coslada-4.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 19,
+    "placeId": "ChIJoVCnpaoxQg0Rjgy9hCHxb7U",
+    "googleCategory": "Agencia inmobiliaria",
+    "lat": 40.4255379,
+    "lng": -3.5675287
   },
   {
     "slug": "inmoacierta-vicalvaro",
@@ -4398,14 +5066,20 @@
     "horario": "L-V 9:30–14:00, 17:00–20:30 · S cerrado · D cerrado",
     "image": "/images/negocios/inmoacierta-vicalvaro.jpg",
     "address": "C. del Lago Van, 12, Vicálvaro, 28032 Madrid",
-    "phone": "623234507",
+    "phone": "+34 623 23 45 07",
     "images": [
       "/images/negocios/inmoacierta-vicalvaro.jpg",
       "/images/negocios/inmoacierta-vicalvaro-2.jpg",
       "/images/negocios/inmoacierta-vicalvaro-3.jpg",
       "/images/negocios/inmoacierta-vicalvaro-4.jpg",
       "/images/negocios/inmoacierta-vicalvaro-5.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 283,
+    "placeId": "ChIJtf9woGQlQg0RZ1daeXSrtOg",
+    "googleCategory": "Agencia inmobiliaria",
+    "lat": 40.4043864,
+    "lng": -3.6061298
   },
   {
     "slug": "globalpiso-vicalvaro",
@@ -4439,14 +5113,20 @@
     "horario": "L-V 10:00–14:00, 17:00–20:30 · D cerrado",
     "image": "/images/negocios/globalpiso-vicalvaro.jpg",
     "address": "C. de S. Cipriano, 30, Vicálvaro, 28032 Madrid",
-    "phone": "910429760",
+    "phone": "+34 910 42 97 60",
     "images": [
       "/images/negocios/globalpiso-vicalvaro.jpg",
       "/images/negocios/globalpiso-vicalvaro-2.jpg",
       "/images/negocios/globalpiso-vicalvaro-3.jpg",
       "/images/negocios/globalpiso-vicalvaro-4.jpg",
       "/images/negocios/globalpiso-vicalvaro-5.jpg"
-    ]
+    ],
+    "rating": 4.7,
+    "numReviews": 289,
+    "placeId": "ChIJ2z58KmklQg0RQD2cbNboU4U",
+    "googleCategory": "Agencia inmobiliaria",
+    "lat": 40.4039643,
+    "lng": -3.6063076
   },
   {
     "slug": "alianza-madrid-vicalvaro",
@@ -4480,13 +5160,19 @@
     "horario": "L-V 9:30–14:00, 17:00–20:30 · D cerrado",
     "image": "/images/negocios/alianza-madrid-vicalvaro.jpg",
     "address": "C. de S. Cipriano, 20, Vicálvaro, 28032 Madrid",
-    "phone": "910424755",
+    "phone": "+34 910 42 47 55",
     "images": [
       "/images/negocios/alianza-madrid-vicalvaro.jpg",
       "/images/negocios/alianza-madrid-vicalvaro-2.jpg",
       "/images/negocios/alianza-madrid-vicalvaro-3.jpg",
       "/images/negocios/alianza-madrid-vicalvaro-4.jpg",
       "/images/negocios/alianza-madrid-vicalvaro-5.jpg"
-    ]
+    ],
+    "rating": 4.8,
+    "numReviews": 183,
+    "placeId": "ChIJK0yHoWUlQg0RW-Ve06Kt078",
+    "googleCategory": "Agencia inmobiliaria",
+    "lat": 40.4039725,
+    "lng": -3.6073346
   }
 ]
