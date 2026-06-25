@@ -1,0 +1,73 @@
+<!--
+  Copias estáticas de los formularios para la detección de Netlify Forms.
+  Netlify parsea este fichero en cada deploy y registra los 4 formularios.
+  No es para usuarios (oculto); los formularios reales viven en sus páginas.
+-->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Netlify Forms</title>
+  </head>
+  <body>
+    <form name="alta-negocio" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="alta-negocio" />
+      <input name="bot-field" />
+      <input name="negocio" />
+      <input name="categoria" />
+      <input name="direccion" />
+      <input name="zona" />
+      <input name="telefono" />
+      <input name="web" />
+      <input name="instagram" />
+      <textarea name="descripcion"></textarea>
+      <input name="email" />
+      <input name="rol" />
+      <input type="checkbox" name="acepto-rgpd" />
+    </form>
+
+    <form name="anunciate" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="anunciate" />
+      <input name="bot-field" />
+      <input name="negocio" />
+      <input name="categoria" />
+      <input name="zona" />
+      <input name="contacto" />
+      <input name="email" />
+      <input name="telefono" />
+      <input name="plan" />
+      <input name="cadencia" />
+      <input name="ficha-existente" />
+      <textarea name="comentarios"></textarea>
+      <input type="checkbox" name="acepto-rgpd" />
+    </form>
+
+    <form name="sponsor" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="sponsor" />
+      <input name="bot-field" />
+      <input name="empresa" />
+      <input name="contacto" />
+      <input name="cargo" />
+      <input name="email" />
+      <input name="telefono" />
+      <input name="web" />
+      <input name="categoria" />
+      <input name="presupuesto" />
+      <textarea name="comentarios"></textarea>
+      <input type="checkbox" name="acepto-rgpd" />
+    </form>
+
+    <form name="contacto" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contacto" />
+      <input name="bot-field" />
+      <input name="nombre" />
+      <input name="email" />
+      <input name="contacto" />
+      <input name="motivo" />
+      <input name="ficha-url" />
+      <textarea name="mensaje"></textarea>
+      <input type="checkbox" name="acepto-rgpd" />
+    </form>
+  </body>
+</html>
