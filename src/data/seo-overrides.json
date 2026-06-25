@@ -1,79 +1,84 @@
 {
   "categorias": {
     "supermercados": {
-      "title": "Supermercados en El Cañaveral y Vicálvaro",
-      "description": "Supermercados en El Cañaveral: Mercadona, Ahorramas, Lidl, Alcampo y más. Horarios, direcciones y valoraciones actualizadas.",
+      "title": "Supermercados en El Cañaveral: horarios y direcciones",
+      "description": "Todos los supermercados de El Cañaveral y alrededores: Mercadona, Lidl, Aldi, Ahorramás y súpers de barrio. Horarios, direcciones y reseñas, más la guía de los mejores.",
       "h1": "Supermercados en El Cañaveral y alrededores"
     },
     "restaurantes": {
-      "title": "Restaurantes en El Cañaveral Madrid",
-      "description": "Los mejores restaurantes en El Cañaveral y Vicálvaro: cocina asturiana, venezolana, vietnamita y más. Horarios, precios y reseñas.",
+      "title": "Restaurantes en El Cañaveral y Vicálvaro — Directorio",
+      "description": "Todos los restaurantes de El Cañaveral y Vicálvaro: cocina venezolana, peruana, china, parrillas y tapas. Horarios, precios y reseñas, más la guía de los mejores.",
       "h1": "Restaurantes en El Cañaveral y Vicálvaro"
     },
     "educacion": {
-      "title": "Guarderías en El Cañaveral Madrid 2026",
-      "description": "Guarderías y escuelas infantiles en El Cañaveral: públicas y privadas. Plazas, edades, contacto y valoraciones actualizadas.",
+      "title": "Guarderías y escuelas infantiles en El Cañaveral",
+      "description": "Guarderías y escuelas infantiles en El Cañaveral, públicas y privadas: plazas, edades, contacto y reseñas de las familias. Consulta también la guía de las mejores.",
       "h1": "Guarderías y Escuelas Infantiles en El Cañaveral"
     },
     "salud": {
-      "title": "Dentistas y Clínicas en El Cañaveral Vicálvaro",
-      "description": "Clínicas dentales, centros médicos, fisioterapeutas y farmacias en El Cañaveral y Vicálvaro. Especialidades y datos de contacto.",
+      "title": "Dentistas, fisios y farmacias en El Cañaveral",
+      "description": "Clínicas dentales, fisioterapeutas, farmacias y centros médicos en El Cañaveral y Vicálvaro. Especialidades, horarios y contacto, más la guía de las mejores clínicas dentales.",
       "h1": "Salud y Bienestar en El Cañaveral"
     },
     "belleza": {
-      "title": "Peluquerías en El Cañaveral Madrid",
-      "description": "Peluquerías, barberías y centros de estética en El Cañaveral y Vicálvaro. Servicios, valoraciones y datos de contacto.",
+      "title": "Peluquerías y estética en El Cañaveral y Vicálvaro",
+      "description": "Peluquerías, barberías y centros de estética en El Cañaveral y Vicálvaro. Servicios, horarios y reseñas, más la guía de las peluquerías mejor valoradas del barrio.",
       "h1": "Peluquerías y Estética en El Cañaveral"
     },
     "deporte": {
-      "title": "Gimnasios en El Cañaveral y Vicálvaro",
-      "description": "Gimnasios, CrossFit, pádel y centros deportivos en El Cañaveral y Vicálvaro. Horarios, tarifas y valoraciones.",
+      "title": "Gimnasios y centros deportivos en El Cañaveral",
+      "description": "Gimnasios, CrossFit, fitboxing y pádel en El Cañaveral y Vicálvaro. Horarios, tarifas y reseñas, más la guía de los gimnasios mejor valorados de la zona.",
       "h1": "Gimnasios y Deporte en El Cañaveral"
     },
     "mascotas": {
-      "title": "Veterinarios en El Cañaveral Madrid",
-      "description": "Clínicas veterinarias y peluquería canina en El Cañaveral y Vicálvaro. Peludos del Cañaveral (4.7★), Vicalcan. Vacunas y urgencias.",
+      "title": "Veterinarios y peluquería canina en El Cañaveral",
+      "description": "Clínicas veterinarias y peluquerías caninas en El Cañaveral y Vicálvaro: vacunas, urgencias y cuidado de tu mascota. Direcciones, horarios y reseñas.",
       "h1": "Veterinarios y Mascotas en El Cañaveral"
     },
     "hogar": {
-      "title": "Ferreterías y Reformas en El Cañaveral",
-      "description": "Ferreterías, lavanderías y bricolaje en El Cañaveral y Vicálvaro. Obramat, Ferrokey, Telelavo. Direcciones y horarios.",
+      "title": "Ferreterías y servicios del hogar en El Cañaveral",
+      "description": "Ferreterías, lavanderías, bricolaje y reformas en El Cañaveral y Vicálvaro. Direcciones, horarios y reseñas de los servicios para tu casa.",
       "h1": "Hogar y Reformas en El Cañaveral"
     },
     "automocion": {
-      "title": "Talleres Mecánicos cerca de El Cañaveral",
-      "description": "Talleres mecánicos, Pre-ITV y neumáticos en Coslada y San Fernando, cerca de El Cañaveral. Servicios y precios.",
+      "title": "Talleres mecánicos cerca de El Cañaveral",
+      "description": "Talleres mecánicos, pre-ITV y neumáticos en Coslada y San Fernando, cerca de El Cañaveral. Servicios, horarios y reseñas, más la guía de los mejores talleres.",
       "h1": "Talleres y Automoción cerca de El Cañaveral"
     },
     "servicios-profesionales": {
-      "title": "Abogados y Gestorías en El Cañaveral",
-      "description": "Abogados, asesoría fiscal, gestorías e inmobiliarias en El Cañaveral y Vicálvaro. Servicios profesionales de confianza.",
+      "title": "Abogados, gestorías y asesorías en El Cañaveral",
+      "description": "Abogados, asesoría fiscal y gestorías en El Cañaveral y Vicálvaro. Servicios profesionales de confianza con direcciones, horarios y reseñas.",
       "h1": "Servicios Profesionales en El Cañaveral"
     },
     "moda": {
-      "title": "Tiendas de Ropa en Vicálvaro y El Cañaveral",
-      "description": "Tiendas de ropa, moda y complementos en Vicálvaro y El Cañaveral. Aticomoda, Almacenes Jimar y más. Asesoramiento.",
+      "title": "Tiendas de ropa en El Cañaveral y Vicálvaro",
+      "description": "Tiendas de ropa, moda y complementos en El Cañaveral y Vicálvaro. Direcciones, horarios y reseñas, más la guía de las tiendas mejor valoradas.",
       "h1": "Moda y Complementos en El Cañaveral"
     },
     "cafeterias": {
-      "title": "Cafeterías en El Cañaveral Madrid",
-      "description": "Las mejores cafeterías en El Cañaveral: Mimarutxa, Le Petit Café de Cryss. Café de especialidad, brunch y repostería.",
+      "title": "Cafeterías en El Cañaveral — café y brunch",
+      "description": "Cafeterías y coffee shops en El Cañaveral: café de especialidad, brunch y repostería casera. Direcciones, horarios y reseñas de los vecinos.",
       "h1": "Cafeterías en El Cañaveral"
     },
     "fruterias": {
-      "title": "Fruterías en El Cañaveral Vicálvaro",
-      "description": "Fruterías con producto de temporada en El Cañaveral: La Frutería de Mamá (5★), Megafruta, Vida Sana. Fruta fresca diaria.",
+      "title": "Fruterías en El Cañaveral — fruta fresca y horarios",
+      "description": "Fruterías y verdulerías con producto de temporada en El Cañaveral. Direcciones, horarios y reseñas, más la guía de las fruterías mejor valoradas del barrio.",
       "h1": "Fruterías en El Cañaveral"
     },
     "panaderias": {
-      "title": "Panaderías en El Cañaveral Madrid",
-      "description": "Panaderías artesanales en El Cañaveral: Levadura Madre, El Horno de Izan, Caprichos Coffee. Pan del día y bollería.",
+      "title": "Panaderías y obradores en El Cañaveral",
+      "description": "Panaderías, obradores y cafeterías con bollería propia en El Cañaveral. Pan del día, horarios y reseñas, más la guía de las panaderías mejor valoradas.",
       "h1": "Panaderías y Obradores en El Cañaveral"
     },
     "tiendas-alimentacion": {
-      "title": "Tiendas de Alimentación en El Cañaveral",
-      "description": "Tiendas de alimentación y mini markets en El Cañaveral. Horario extendido, productos básicos y servicio de proximidad.",
+      "title": "Tiendas de alimentación en El Cañaveral",
+      "description": "Tiendas de alimentación y mini markets en El Cañaveral con horario extendido y productos básicos. Direcciones, horarios y reseñas de proximidad.",
       "h1": "Tiendas de Alimentación en El Cañaveral"
+    },
+    "inmobiliarias": {
+      "title": "Inmobiliarias en El Cañaveral, Vicálvaro y Coslada",
+      "description": "Agencias inmobiliarias en El Cañaveral, Vicálvaro y Coslada para comprar, vender o alquilar vivienda. Contacto y reseñas, más la guía de las mejor valoradas.",
+      "h1": "Inmobiliarias en El Cañaveral y alrededores"
     }
   }
 }

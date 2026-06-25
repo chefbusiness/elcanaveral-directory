@@ -4,6 +4,7 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import { generateZonaCategoriaPaths } from "@/lib/directory";
+import { getListicleByCategory } from "@/lib/listicles";
 import type { Negocio, Zona, Categoria } from "@/lib/directory";
 
 export function getStaticPaths() {
@@ -17,6 +18,7 @@ interface Props {
 }
 
 const { zona, categoria, negocios } = Astro.props;
+const guia = getListicleByCategory(categoria.slug);
 
 const itemListSchema = {
   "@context": "https://schema.org",
@@ -46,7 +48,7 @@ const breadcrumbSchema = {
 
 <BaseLayout
   title={`${categoria.name} en ${zona.name}`}
-  description={`${categoria.name} en ${zona.name}. Encuentra los mejores establecimientos de ${categoria.name.toLowerCase()} cerca de ti en ${zona.name} y alrededores.`}
+  description={`${categoria.name} en ${zona.name}: direcciones, horarios y reseñas de los negocios de la zona. Encuentra ${categoria.name.toLowerCase()} cerca de ti en ${zona.name}.`}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
@@ -78,6 +80,22 @@ const breadcrumbSchema = {
         </p>
         <p class="text-sm text-gray-400 mt-1">{negocios.length} negocios</p>
       </div>
+
+      {guia && (
+        <a
+          href={`/blog/${guia.slug}`}
+          class="block mb-8 bg-gradient-to-r from-brand-50 to-warm-100 border border-brand-100 rounded-xl p-4 sm:p-5 hover:border-brand-200 transition-colors group"
+        >
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <span class="text-xs font-semibold text-accent-600 uppercase tracking-wide">Guía del barrio</span>
+              <p class="font-bold text-brand-900 group-hover:text-brand-600 leading-snug mt-0.5">{guia.h1}</p>
+              <p class="text-sm text-gray-500 mt-0.5">Ranking por las valoraciones reales de Google</p>
+            </div>
+            <span class="shrink-0 text-sm font-semibold text-brand-600">Ver guía &rarr;</span>
+          </div>
+        </a>
+      )}
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {negocios.map((negocio) => (

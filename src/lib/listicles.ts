@@ -91,3 +91,8 @@ export function getRankedNegocios(
 export function generateListiclePaths() {
   return loadListicles().map((l) => ({ params: { slug: l.slug }, props: l }));
 }
+
+/** Devuelve la guia ("mejores X") asociada a una categoria del directorio, si existe. */
+export function getListicleByCategory(category: string): Listicle | undefined {
+  return loadListicles().find((l) => l.category === category);
+}

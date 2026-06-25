@@ -167,8 +167,15 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
         })}
       </div>
 
+      <!-- Enlace al directorio completo de la categoría -->
+      <div class="mt-6 text-center">
+        <a href={`/${listicle.category}`} class="text-sm font-medium text-brand-600 hover:text-brand-700">
+          Ver el directorio completo de {listicle.noun} &rarr;
+        </a>
+      </div>
+
       <!-- Gancho comercial -->
-      <div class="mt-12 bg-gradient-to-r from-brand-900 to-brand-700 rounded-2xl p-6 sm:p-8 text-center">
+      <div class="mt-8 bg-gradient-to-r from-brand-900 to-brand-700 rounded-2xl p-6 sm:p-8 text-center">
         <h2 class="text-xl sm:text-2xl font-bold text-white">{listicle.ctaTitle}</h2>
         <p class="text-brand-200 mt-2 max-w-xl mx-auto text-sm sm:text-base">
           Si tu negocio debería estar en esta lista, dalo de alta en el directorio del barrio
