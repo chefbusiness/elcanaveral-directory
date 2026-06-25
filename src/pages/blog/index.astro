@@ -4,11 +4,11 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import { loadListicles, getRankedNegocios } from "@/lib/listicles";
 
-const listicles = loadListicles().map((l) => ({
-  ...l,
-  count: getRankedNegocios(l.category, { topN: l.topN, minRating: l.minRating }).length,
-  cover: getRankedNegocios(l.category, { topN: 1, minRating: l.minRating })[0]?.negocio.image,
-}));
+const listicles = loadListicles().map((l) => {
+  const opts = { topN: l.topN, minRating: l.minRating, googleCategoryMatch: l.googleCategoryMatch };
+  const ranked = getRankedNegocios(l.category, opts);
+  return { ...l, count: ranked.length, cover: ranked[0]?.negocio.image };
+});
 ---
 
 <BaseLayout

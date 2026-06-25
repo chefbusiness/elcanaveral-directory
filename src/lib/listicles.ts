@@ -11,12 +11,16 @@ export interface ListicleFaq {
 export interface Listicle {
   slug: string;
   category: string;        // categoria del directorio a rankear
+  noun: string;            // plural para conteos: "restaurantes", "gimnasios"...
+  breadcrumb: string;      // etiqueta corta breadcrumb: "Mejores restaurantes"
+  ctaTitle: string;        // titular del gancho: "¿Tienes un restaurante...?"
   h1: string;
   metaTitle: string;
   metaDescription: string;
   intro: string;
   topN?: number;           // tope opcional de items
   minRating?: number;      // nota minima para entrar (def: sin filtro)
+  googleCategoryMatch?: string[]; // sub-filtro por categoria Google (ej. ["dental"])
   publishedDate: string;
   updatedDate: string;
   faq?: ListicleFaq[];
@@ -44,13 +48,23 @@ export function loadListicles(): Listicle[] {
  * C y m se calculan sobre TODOS los negocios valorados de la categoría (estable);
  * el filtro minRating solo afecta a qué se muestra.
  */
+const norm = (s: string) =>
+  (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
 export function getRankedNegocios(
   category: string,
-  opts: { topN?: number; minRating?: number } = {}
+  opts: { topN?: number; minRating?: number; googleCategoryMatch?: string[] } = {}
 ): RankedNegocio[] {
-  const rated = loadNegocios().filter(
+  let rated = loadNegocios().filter(
     (n) => n.category === category && typeof n.rating === "number" && typeof n.numReviews === "number"
   );
+  if (opts.googleCategoryMatch && opts.googleCategoryMatch.length > 0) {
+    const needles = opts.googleCategoryMatch.map(norm);
+    rated = rated.filter((n) => {
+      const g = norm((n.googleCategory as string) || "");
+      return needles.some((nd) => g.includes(nd));
+    });
+  }
   if (rated.length === 0) return [];
 
   const C = rated.reduce((s, n) => s + (n.rating as number), 0) / rated.length;

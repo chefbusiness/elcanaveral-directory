@@ -2,6 +2,9 @@
   {
     "slug": "mejores-restaurantes-el-canaveral",
     "category": "restaurantes",
+    "noun": "restaurantes",
+    "breadcrumb": "Mejores restaurantes",
+    "ctaTitle": "¿Tienes un restaurante en El Cañaveral?",
     "minRating": 4,
     "h1": "Los mejores restaurantes de El Cañaveral y alrededores",
     "metaTitle": "Los mejores restaurantes de El Cañaveral (2026) — Guía local",
@@ -25,6 +28,117 @@
       {
         "q": "¿El ranking incluye Vicálvaro y localidades cercanas?",
         "a": "Sí. Muchos vecinos de El Cañaveral se mueven a Vicálvaro, Coslada y San Fernando de Henares para completar su oferta de ocio y restauración, así que el listado incluye también restaurantes de esas zonas próximas."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-clinicas-dentales-el-canaveral",
+    "category": "salud",
+    "googleCategoryMatch": ["dental", "dentista"],
+    "noun": "clínicas dentales",
+    "breadcrumb": "Mejores dentistas",
+    "ctaTitle": "¿Tienes una clínica dental en El Cañaveral?",
+    "minRating": 4,
+    "h1": "Las mejores clínicas dentales de El Cañaveral y alrededores",
+    "metaTitle": "Las mejores clínicas dentales de El Cañaveral (2026)",
+    "metaDescription": "Las clínicas dentales mejor valoradas de El Cañaveral y Vicálvaro, ordenadas por valoración y número de reseñas reales de Google. Ortodoncia, implantes y odontología general.",
+    "intro": "El crecimiento de El Cañaveral ha venido acompañado de una notable oferta de clínicas dentales, muchas de ellas con valoraciones excelentes. Hemos ordenado las de la zona —El Cañaveral y Vicálvaro— con una puntuación que combina la nota media de Google con el número de reseñas, de forma que una nota alta respaldada por muchas opiniones pesa más que un sobresaliente con pocas. Solo aparecen las clínicas con 4 estrellas o más.",
+    "publishedDate": "2026-06-25",
+    "updatedDate": "2026-06-25",
+    "faq": [
+      {
+        "q": "¿Cuál es la clínica dental mejor valorada de El Cañaveral?",
+        "a": "Mardones y Martínez y la Clínica Dental Siglo XXI comparten la cabeza con 4,9 estrellas, mientras que Ikigai Dental destaca por su gran volumen de reseñas (más de 440), señal de una base de pacientes muy amplia."
+      },
+      {
+        "q": "¿Hay clínicas con ortodoncia, implantes o estética dental?",
+        "a": "Sí. Varias clínicas de la zona ofrecen ortodoncia, implantes, periodoncia y estética dental además de la odontología general; Ikigai Dental, por ejemplo, está especializada en ortodoncia avanzada para adultos y niños."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking de dentistas?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada clínica, en lugar de fiarnos solo de la nota o solo del número de opiniones."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-gimnasios-el-canaveral",
+    "category": "deporte",
+    "googleCategoryMatch": ["gimnasio", "deportivo"],
+    "noun": "gimnasios",
+    "breadcrumb": "Mejores gimnasios",
+    "ctaTitle": "¿Tienes un gimnasio o centro deportivo en El Cañaveral?",
+    "minRating": 4,
+    "h1": "Los mejores gimnasios de El Cañaveral y alrededores",
+    "metaTitle": "Los mejores gimnasios de El Cañaveral (2026)",
+    "metaDescription": "Los gimnasios y centros deportivos mejor valorados de El Cañaveral y Vicálvaro: fitness, CrossFit y fitboxing, ordenados por las reseñas reales de Google.",
+    "intro": "Del fitness multiexperiencia al CrossFit y el fitboxing, El Cañaveral y su entorno reúnen una buena variedad de gimnasios para todos los niveles. Hemos ordenado los de la zona con una puntuación que combina la nota media de Google con el número de reseñas, para que una valoración alta con muchas opiniones pese más que un 5 con apenas unas pocas. Solo aparecen los que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-06-25",
+    "updatedDate": "2026-06-25",
+    "faq": [
+      {
+        "q": "¿Cuál es el gimnasio mejor valorado de El Cañaveral?",
+        "a": "Brooklyn Fitboxing El Cañaveral encabeza la lista por su combinación de nota alta (4,8) y un volumen importante de reseñas (cerca de 280), por delante de boxes de CrossFit como Vicálvaro CrossFit y centros de fitness como Winfit."
+      },
+      {
+        "q": "¿Qué tipos de gimnasio hay en la zona?",
+        "a": "Hay fitboxing (Brooklyn Fitboxing), CrossFit y entrenamiento funcional (Vicálvaro CrossFit, Apache CrossTraining), y gimnasios de fitness y musculación (Winfit, Dreamfit, L'Orange Bleue), incluyendo opciones en Vicálvaro y Valdebernardo."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking de gimnasios?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada centro, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-peluquerias-el-canaveral",
+    "category": "belleza",
+    "googleCategoryMatch": ["peluqueria"],
+    "noun": "peluquerías",
+    "breadcrumb": "Mejores peluquerías",
+    "ctaTitle": "¿Tienes una peluquería en El Cañaveral?",
+    "minRating": 4,
+    "h1": "Las mejores peluquerías de El Cañaveral y alrededores",
+    "metaTitle": "Las mejores peluquerías de El Cañaveral (2026)",
+    "metaDescription": "Las peluquerías mejor valoradas de El Cañaveral y Vicálvaro, ordenadas por valoración y número de reseñas reales de Google. Color, corte y estilismo.",
+    "intro": "El Cañaveral y Vicálvaro cuentan con peluquerías y estudios de estilismo muy bien valorados, desde salones de color y mechas hasta propuestas más orgánicas. Hemos ordenado los de la zona con una puntuación que combina la nota media de Google con el número de reseñas, de modo que una valoración alta respaldada por muchas opiniones pesa más que un 5 con muy pocas. Solo aparecen las peluquerías con 4 estrellas o más.",
+    "publishedDate": "2026-06-25",
+    "updatedDate": "2026-06-25",
+    "faq": [
+      {
+        "q": "¿Cuál es la peluquería mejor valorada de El Cañaveral?",
+        "a": "Laura Vivar Estilistas lidera con 4,9 estrellas, seguida de cerca por Rizal Organic Studio, que destaca además por su gran número de reseñas (más de 300)."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking de peluquerías?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada salón, para no dejarnos llevar solo por la nota ni solo por el número de opiniones."
+      },
+      {
+        "q": "¿Incluye peluquerías de Vicálvaro?",
+        "a": "Sí. El listado abarca El Cañaveral y zonas próximas como Vicálvaro, ya que muchos vecinos del barrio se mueven entre ambas para sus servicios de belleza."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-panaderias-el-canaveral",
+    "category": "panaderias",
+    "noun": "panaderías",
+    "breadcrumb": "Mejores panaderías",
+    "ctaTitle": "¿Tienes una panadería u obrador en El Cañaveral?",
+    "minRating": 4,
+    "h1": "Las mejores panaderías de El Cañaveral",
+    "metaTitle": "Las mejores panaderías y obradores de El Cañaveral (2026)",
+    "metaDescription": "Las panaderías y obradores mejor valorados de El Cañaveral, ordenados por valoración y número de reseñas reales de Google. Pan artesano, bollería y café.",
+    "intro": "El pan de cada día también tiene su ranking. En El Cañaveral conviven obradores, panaderías de barrio y cafeterías con bollería propia. Hemos ordenado las panaderías de la zona con una puntuación que combina la nota media de Google con el número de reseñas, para que una valoración alta con muchas opiniones pese más que un 5 con apenas unas pocas. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-06-25",
+    "updatedDate": "2026-06-25",
+    "faq": [
+      {
+        "q": "¿Cuál es la panadería mejor valorada de El Cañaveral?",
+        "a": "Panadería Bulevar encabeza la lista por su equilibrio entre nota y reseñas, seguida de Caprichos Coffee & Bakery y El Horno de Izan III, este último con el mayor número de reseñas (más de 500)."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking de panaderías?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada panadería, en lugar de ordenar solo por nota o solo por número de opiniones."
       }
     ]
   }

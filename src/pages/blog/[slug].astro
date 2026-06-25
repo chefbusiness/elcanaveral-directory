@@ -13,6 +13,7 @@ const listicle = Astro.props as Listicle;
 const ranked = getRankedNegocios(listicle.category, {
   topN: listicle.topN,
   minRating: listicle.minRating,
+  googleCategoryMatch: listicle.googleCategoryMatch,
 });
 
 const fmtDate = (iso: string) =>
@@ -78,14 +79,14 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
         <span class="mx-1.5 text-gray-300">/</span>
         <a href="/blog" class="hover:text-brand-600">Blog</a>
         <span class="mx-1.5 text-gray-300">/</span>
-        <span class="text-gray-900">Mejores restaurantes</span>
+        <span class="text-gray-900">{listicle.breadcrumb}</span>
       </nav>
 
       <!-- Cabecera -->
       <header class="mb-8">
         <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">{listicle.h1}</h1>
         <p class="text-sm text-gray-400 mt-3">
-          Actualizado en {fmtDate(listicle.updatedDate)} · {ranked.length} restaurantes
+          Actualizado en {fmtDate(listicle.updatedDate)} · {ranked.length} {listicle.noun}
         </p>
         <p class="text-gray-600 leading-relaxed mt-4 text-lg">{listicle.intro}</p>
       </header>
@@ -94,7 +95,7 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
       <div class="bg-brand-50 border border-brand-100 rounded-xl p-4 mb-10 text-sm text-gray-600">
         <span class="font-semibold text-brand-700">¿Cómo se ordena esta lista?</span>
         Por una puntuación que combina la <strong>nota media</strong> de Google y el
-        <strong>número de reseñas</strong> reales de cada restaurante (ranking ponderado),
+        <strong>número de reseñas</strong> reales de cada negocio (ranking ponderado),
         no por simple nota ni por número de opiniones a secas.
       </div>
 
@@ -168,14 +169,14 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
 
       <!-- Gancho comercial -->
       <div class="mt-12 bg-gradient-to-r from-brand-900 to-brand-700 rounded-2xl p-6 sm:p-8 text-center">
-        <h2 class="text-xl sm:text-2xl font-bold text-white">¿Tienes un restaurante en El Cañaveral?</h2>
+        <h2 class="text-xl sm:text-2xl font-bold text-white">{listicle.ctaTitle}</h2>
         <p class="text-brand-200 mt-2 max-w-xl mx-auto text-sm sm:text-base">
           Si tu negocio debería estar en esta lista, dalo de alta en el directorio del barrio
-          y llega a los vecinos que buscan dónde comer cerca de casa.
+          y llega a los vecinos que buscan {listicle.noun} cerca de casa.
         </p>
         <div class="flex flex-wrap justify-center gap-3 mt-5">
           <a href="/alta" class="text-sm font-semibold bg-accent-500 text-white px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
-            Dar de alta mi restaurante
+            Dar de alta mi negocio
           </a>
           <a href="https://localseoads.com" target="_blank" rel="noopener" class="text-sm font-semibold bg-white/10 text-white border border-white/20 px-5 py-2.5 rounded-lg hover:bg-white/20 transition-colors">
             Posicionarme en Google Maps
