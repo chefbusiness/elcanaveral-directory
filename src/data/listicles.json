@@ -141,5 +141,151 @@
         "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada panadería, en lugar de ordenar solo por nota o solo por número de opiniones."
       }
     ]
+  },
+  {
+    "slug": "mejores-inmobiliarias-el-canaveral",
+    "category": "inmobiliarias",
+    "noun": "inmobiliarias",
+    "breadcrumb": "Mejores inmobiliarias",
+    "ctaTitle": "¿Tienes una inmobiliaria en El Cañaveral?",
+    "minRating": 4,
+    "h1": "Las mejores inmobiliarias de El Cañaveral y alrededores",
+    "metaTitle": "Las mejores inmobiliarias de El Cañaveral (2026)",
+    "metaDescription": "Las inmobiliarias mejor valoradas de El Cañaveral, Vicálvaro y Coslada para comprar, vender o alquilar vivienda, ordenadas por las reseñas reales de Google.",
+    "intro": "El Cañaveral es uno de los barrios con más obra nueva y movimiento inmobiliario de Madrid, y eso se nota en el número de agencias que operan en la zona. Hemos ordenado las inmobiliarias de El Cañaveral y alrededores (Vicálvaro y Coslada) con una puntuación que combina la nota media de Google con el número de reseñas, para que una valoración alta respaldada por muchas opiniones pese más que un 5 con muy pocas. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-06-25",
+    "updatedDate": "2026-06-25",
+    "faq": [
+      {
+        "q": "¿Cuál es la inmobiliaria mejor valorada de El Cañaveral?",
+        "a": "SM Homes y Redpiso El Cañaveral encabezan la lista con 5 y 4,9 estrellas respectivamente, aunque agencias como Templo Consulting destacan por su gran volumen de reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking de inmobiliarias?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada agencia, en lugar de fiarnos solo de la nota o solo del número de opiniones."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-supermercados-el-canaveral",
+    "category": "supermercados",
+    "noun": "supermercados",
+    "breadcrumb": "Mejores supermercados",
+    "ctaTitle": "¿Tienes un supermercado o tienda de alimentación en El Cañaveral?",
+    "minRating": 4,
+    "h1": "Los mejores supermercados de El Cañaveral y alrededores",
+    "metaTitle": "Los mejores supermercados de El Cañaveral (2026)",
+    "metaDescription": "Los supermercados mejor valorados de El Cañaveral y alrededores: grandes cadenas y súpers de barrio, ordenados por las reseñas reales de Google.",
+    "intro": "Hacer la compra cerca de casa es de lo primero que se mira al llegar a un barrio nuevo. El Cañaveral combina grandes cadenas con supermercados de barrio, y aquí los hemos ordenado con una puntuación que mezcla la nota media de Google y el número de reseñas, para que una buena valoración con muchas opiniones pese más que un 5 con apenas unas pocas. Solo aparecen los que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-06-25",
+    "updatedDate": "2026-06-25",
+    "faq": [
+      {
+        "q": "¿Qué cadenas de supermercados hay en El Cañaveral?",
+        "a": "En la zona y alrededores encontrarás Mercadona, Lidl, Aldi, Ahorramás y Covirán, además de supermercados de barrio y tiendas de alimentación independientes."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking de supermercados?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada supermercado, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-guarderias-el-canaveral",
+    "category": "educacion",
+    "googleCategoryMatch": ["preescolar", "infancia", "infantil", "jardin"],
+    "noun": "guarderías y escuelas infantiles",
+    "breadcrumb": "Mejores guarderías",
+    "ctaTitle": "¿Tienes una guardería o escuela infantil en El Cañaveral?",
+    "minRating": 4,
+    "h1": "Las mejores guarderías y escuelas infantiles de El Cañaveral",
+    "metaTitle": "Las mejores guarderías y escuelas infantiles de El Cañaveral (2026)",
+    "metaDescription": "Las guarderías y escuelas infantiles mejor valoradas de El Cañaveral, públicas y privadas, ordenadas por las reseñas reales de Google.",
+    "intro": "El Cañaveral es un barrio joven, con muchas familias y, por tanto, una demanda fuerte de plazas de 0 a 3 años. Hemos ordenado las guarderías y escuelas infantiles de la zona con una puntuación que combina la nota media de Google con el número de reseñas, para que una valoración alta con muchas opiniones pese más que un 5 con muy pocas. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-06-25",
+    "updatedDate": "2026-06-25",
+    "faq": [
+      {
+        "q": "¿Cuál es la escuela infantil mejor valorada de El Cañaveral?",
+        "a": "La Escuela Infantil Los Minons lidera con 5 estrellas, seguida de centros como la Escuela Infantil AUPA y Nemomarlin, todos con valoraciones muy altas de las familias del barrio."
+      },
+      {
+        "q": "¿Hay escuelas infantiles públicas y privadas?",
+        "a": "Sí. En la zona conviven escuelas infantiles privadas con centros de gestión pública o municipal, como la Escuela Infantil Municipal Muñeco de Nieve."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-fruterias-el-canaveral",
+    "category": "fruterias",
+    "noun": "fruterías",
+    "breadcrumb": "Mejores fruterías",
+    "ctaTitle": "¿Tienes una frutería en El Cañaveral?",
+    "minRating": 4,
+    "h1": "Las mejores fruterías de El Cañaveral",
+    "metaTitle": "Las mejores fruterías de El Cañaveral (2026)",
+    "metaDescription": "Las fruterías y verdulerías mejor valoradas de El Cañaveral, con producto fresco de temporada, ordenadas por las reseñas reales de Google.",
+    "intro": "La fruta y la verdura de proximidad tienen tirón en El Cañaveral, y el barrio cuenta con varias fruterías muy bien valoradas. Las hemos ordenado con una puntuación que combina la nota media de Google con el número de reseñas, para que una buena valoración respaldada por muchas opiniones pese más que un 5 con apenas unas pocas. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-06-25",
+    "updatedDate": "2026-06-25",
+    "faq": [
+      {
+        "q": "¿Cuál es la frutería mejor valorada de El Cañaveral?",
+        "a": "La Frutería de Mamá encabeza la lista con 5 estrellas, seguida de Frutas y Verduras Vida Sana y la Frutería Charcutería El Cañaveral."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking de fruterías?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada frutería, en lugar de ordenar solo por nota o solo por número de opiniones."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-talleres-mecanicos-el-canaveral",
+    "category": "automocion",
+    "googleCategoryMatch": ["taller", "reparacion", "automovil"],
+    "noun": "talleres mecánicos",
+    "breadcrumb": "Mejores talleres",
+    "ctaTitle": "¿Tienes un taller mecánico en El Cañaveral?",
+    "minRating": 4,
+    "h1": "Los mejores talleres mecánicos de El Cañaveral y alrededores",
+    "metaTitle": "Los mejores talleres mecánicos de El Cañaveral (2026)",
+    "metaDescription": "Los talleres mecánicos mejor valorados de El Cañaveral y alrededores (Coslada, San Fernando), ordenados por las reseñas reales de Google.",
+    "intro": "Para el mantenimiento del coche, muchos vecinos de El Cañaveral acuden a los talleres de las localidades cercanas como Coslada y San Fernando de Henares. Hemos ordenado los mejores con una puntuación que combina la nota media de Google con el número de reseñas, para que una valoración alta con muchas opiniones pese más que un 5 con muy pocas. Solo aparecen los que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-06-25",
+    "updatedDate": "2026-06-25",
+    "faq": [
+      {
+        "q": "¿Cuál es el taller mejor valorado cerca de El Cañaveral?",
+        "a": "Masruedas First Stop (Coslada) encabeza la lista con 4,9 estrellas, seguido de Electroi Talleres e Inyeauto, todos en las localidades próximas al barrio."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking de talleres?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada taller, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-tiendas-ropa-el-canaveral",
+    "category": "moda",
+    "noun": "tiendas de ropa",
+    "breadcrumb": "Mejores tiendas de ropa",
+    "ctaTitle": "¿Tienes una tienda de moda en El Cañaveral?",
+    "minRating": 4,
+    "h1": "Las mejores tiendas de ropa de El Cañaveral y alrededores",
+    "metaTitle": "Las mejores tiendas de ropa de El Cañaveral (2026)",
+    "metaDescription": "Las tiendas de ropa y moda mejor valoradas de El Cañaveral y Vicálvaro, ordenadas por las reseñas reales de Google.",
+    "intro": "Más allá de los grandes centros comerciales, El Cañaveral y Vicálvaro tienen tiendas de ropa y complementos de barrio muy bien valoradas. Las hemos ordenado con una puntuación que combina la nota media de Google con el número de reseñas, para que una buena valoración respaldada por muchas opiniones pese más que un 5 con apenas unas pocas. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-06-25",
+    "updatedDate": "2026-06-25",
+    "faq": [
+      {
+        "q": "¿Cuál es la tienda de ropa mejor valorada de la zona?",
+        "a": "Aticomoda lidera con 4,9 estrellas, seguida de Almacenes S. Lara y Akiomoda, todas con valoraciones muy altas de los vecinos."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking de tiendas de ropa?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada tienda, en lugar de ordenar solo por nota o solo por número de opiniones."
+      }
+    ]
   }
 ]
