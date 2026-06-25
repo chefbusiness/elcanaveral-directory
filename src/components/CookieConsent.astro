@@ -1,0 +1,69 @@
+---
+// Banner de consentimiento. Los mapas de Google Maps (unica cookie no esencial
+// del sitio) solo se cargan tras consentimiento, o con clic puntual en "Ver mapa".
+---
+<div id="cookie-banner" class="hidden fixed bottom-0 inset-x-0 z-[100] p-3 sm:p-4">
+  <div class="max-w-3xl mx-auto bg-brand-900 text-white rounded-xl shadow-xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+    <p class="text-sm leading-relaxed flex-1">
+      Usamos cookies propias (técnicas) y, si lo aceptas, las de <strong>Google Maps</strong>
+      para mostrar los mapas de los negocios.
+      <a href="/cookies" class="underline hover:text-brand-200">Más información</a>.
+    </p>
+    <div class="flex gap-2 shrink-0">
+      <button id="cookie-essential" class="text-sm font-medium bg-white/10 border border-white/20 px-4 py-2 rounded-lg hover:bg-white/20 transition-colors">Solo esenciales</button>
+      <button id="cookie-accept" class="text-sm font-semibold bg-accent-500 px-4 py-2 rounded-lg hover:bg-accent-600 transition-colors">Aceptar</button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var KEY = "cookie-consent";
+    var banner = document.getElementById("cookie-banner");
+
+    function buildIframe(wrap) {
+      if (wrap.dataset.loaded) return;
+      var src = wrap.getAttribute("data-src");
+      if (!src) return;
+      var f = document.createElement("iframe");
+      f.src = src;
+      f.width = "100%";
+      f.height = "350";
+      f.style.border = "0";
+      f.loading = "lazy";
+      f.referrerPolicy = "no-referrer-when-downgrade";
+      f.setAttribute("allowfullscreen", "");
+      f.title = wrap.getAttribute("data-title") || "Mapa";
+      wrap.innerHTML = "";
+      wrap.appendChild(f);
+      wrap.dataset.loaded = "1";
+    }
+    function loadAllMaps() {
+      var nodes = document.querySelectorAll("[data-maps-embed]");
+      for (var i = 0; i < nodes.length; i++) buildIframe(nodes[i]);
+    }
+    function set(v) {
+      try { localStorage.setItem(KEY, v); } catch (e) {}
+      if (banner) banner.classList.add("hidden");
+      if (v === "all") loadAllMaps();
+    }
+
+    var choice = null;
+    try { choice = localStorage.getItem(KEY); } catch (e) {}
+    if (choice === "all") loadAllMaps();
+    else if (!choice && banner) banner.classList.remove("hidden");
+
+    var a = document.getElementById("cookie-accept");
+    var e = document.getElementById("cookie-essential");
+    if (a) a.addEventListener("click", function () { set("all"); });
+    if (e) e.addEventListener("click", function () { set("essential"); });
+
+    // Carga puntual de un mapa concreto al pulsar "Ver mapa" (consentimiento ad hoc)
+    document.addEventListener("click", function (ev) {
+      var btn = ev.target.closest ? ev.target.closest("[data-maps-load]") : null;
+      if (!btn) return;
+      var wrap = btn.closest("[data-maps-embed]");
+      if (wrap) buildIframe(wrap);
+    });
+  })();
+</script>

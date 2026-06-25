@@ -222,16 +222,17 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
                 <h2 class="font-semibold text-lg">Como llegar</h2>
                 <p class="text-sm text-gray-500 mt-0.5">{negocio.address}</p>
               </div>
-              <iframe
-                src={`https://www.google.com/maps?q=${encodeURIComponent(negocio.address)}&output=embed`}
-                width="100%"
-                height="350"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title={`Mapa de ${negocio.name}`}
-              ></iframe>
+              <div
+                data-maps-embed
+                data-src={`https://www.google.com/maps?q=${encodeURIComponent(negocio.address)}&output=embed`}
+                data-title={`Mapa de ${negocio.name}`}
+                class="h-[350px] bg-warm-100 flex flex-col items-center justify-center text-center px-6"
+              >
+                <p class="text-sm text-gray-500 mb-3">El mapa usa cookies de Google Maps. Púlsalo para cargarlo.</p>
+                <button data-maps-load type="button" class="text-sm font-semibold bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors">
+                  Ver mapa
+                </button>
+              </div>
               <div class="p-3 text-right">
                 <a
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(negocio.address)}`}
