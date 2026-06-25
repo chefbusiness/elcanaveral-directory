@@ -8,3 +8,6 @@ dist/
 # backups y cache locales
 *.bak
 scripts/__pycache__/
+
+# Datos de prospeccion (privados, nunca publicos)
+prospecting/
