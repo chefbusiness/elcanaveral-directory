@@ -1,0 +1,29 @@
+name: Publicacion programada del blog
+
+# Cada dia comprueba si alguna guia tiene publishedDate = hoy. Si la hay, hace
+# un commit vacio que dispara el redeploy de Netlify; el build oculta las de
+# fecha futura y publica las que ya tocan. No necesita secretos.
+
+on:
+  schedule:
+    - cron: "15 6 * * *"   # 06:15 UTC (~08:15 Madrid) cada dia
+  workflow_dispatch: {}     # permite lanzarlo a mano desde la pestana Actions
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publicar guias cuya fecha es hoy
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if node -e "const l=require('./src/data/listicles.json');const t=new Date().toISOString().slice(0,10);const due=l.filter(x=>!x.draft&&x.publishedDate===t);if(due.length){console.error('Publicando hoy: '+due.map(x=>x.slug).join(', '));process.exit(0)}else{process.exit(1)}"; then
+            git commit --allow-empty -m "chore: publica guias programadas para $(date -u +%F)"
+            git push
+          else
+            echo "Nada programado para hoy ($(date -u +%F))."
+          fi

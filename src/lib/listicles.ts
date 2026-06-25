@@ -21,8 +21,9 @@ export interface Listicle {
   topN?: number;           // tope opcional de items
   minRating?: number;      // nota minima para entrar (def: sin filtro)
   googleCategoryMatch?: string[]; // sub-filtro por categoria Google (ej. ["dental"])
-  publishedDate: string;
+  publishedDate: string;          // YYYY-MM-DD; si es futura, la guia no se publica aun
   updatedDate: string;
+  draft?: boolean;                // true = nunca publicar (borrador), ignora la fecha
   faq?: ListicleFaq[];
 }
 
@@ -38,6 +39,18 @@ export function loadListicles(): Listicle[] {
   const filePath = path.join(DATA_DIR, "listicles.json");
   if (!fs.existsSync(filePath)) return [];
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+}
+
+/** Una guia esta publicada si no es borrador y su fecha no es futura (hora del build). */
+export function isPublished(l: Listicle): boolean {
+  if (l.draft) return false;
+  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD (UTC del build)
+  return (l.publishedDate || "9999-12-31") <= today;
+}
+
+/** Guias visibles ahora mismo: filtra borradores y fechas futuras. Es la que usa todo lo publico. */
+export function loadPublishedListicles(): Listicle[] {
+  return loadListicles().filter(isPublished);
 }
 
 /**
@@ -89,10 +102,11 @@ export function getRankedNegocios(
 }
 
 export function generateListiclePaths() {
-  return loadListicles().map((l) => ({ params: { slug: l.slug }, props: l }));
+  // Solo genera paginas de las guias ya publicadas (las futuras 404 hasta su fecha).
+  return loadPublishedListicles().map((l) => ({ params: { slug: l.slug }, props: l }));
 }
 
-/** Devuelve la guia ("mejores X") asociada a una categoria del directorio, si existe. */
+/** Devuelve la guia ("mejores X") PUBLICADA asociada a una categoria, si existe. */
 export function getListicleByCategory(category: string): Listicle | undefined {
-  return loadListicles().find((l) => l.category === category);
+  return loadPublishedListicles().find((l) => l.category === category);
 }

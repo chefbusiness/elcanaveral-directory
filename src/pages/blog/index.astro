@@ -2,9 +2,9 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import { loadListicles, getRankedNegocios } from "@/lib/listicles";
+import { loadPublishedListicles, getRankedNegocios } from "@/lib/listicles";
 
-const listicles = loadListicles().map((l) => {
+const listicles = loadPublishedListicles().map((l) => {
   const opts = { topN: l.topN, minRating: l.minRating, googleCategoryMatch: l.googleCategoryMatch };
   const ranked = getRankedNegocios(l.category, opts);
   return { ...l, count: ranked.length, cover: ranked[0]?.negocio.image };
