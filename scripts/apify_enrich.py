@@ -252,12 +252,14 @@ def mode_enrich(negocios, args):
 
 # --------------------------- modo discover -------------------------------- #
 def mode_discover(negocios, args):
-    if not args.search:
-        sys.exit("--mode discover requiere --search 'término' (ej: 'farmacia')")
+    terms = ([s.strip() for s in args.searches.split(",") if s.strip()]
+             if args.searches else ([args.search] if args.search else None))
+    if not terms:
+        sys.exit("--mode discover requiere --search 'término' o --searches 'a,b,c'")
     location = args.location or DEFAULT_LOCATION
-    print(f"Descubriendo: '{args.search}' en '{location}' (máx {args.max_places})")
+    print(f"Descubriendo {len(terms)} términos en '{location}' (máx {args.max_places}/término)")
     run_input = {
-        "searchStringsArray": [args.search],
+        "searchStringsArray": terms,
         "locationQuery": location,
         "maxCrawledPlacesPerSearch": args.max_places,
         "language": "es",
@@ -266,26 +268,39 @@ def mode_discover(negocios, args):
     }
     items, stats = run_actor(run_input, wait_secs=args.wait)
     print(f"\n  Apify status={stats['status']}  coste≈${stats['usd']}  "
-          f"CU={stats['computeUnits']}  encontrados={len(items)}\n")
+          f"CU={stats['computeUnits']}  crawleados={len(items)}\n")
 
     known = {norm(n["name"]) for n in negocios}
     known_pid = {n.get("placeId") for n in negocios if n.get("placeId")}
-    nuevos = []
+    seen, nuevos = set(), []
     for it in items:
-        t = it.get("title", "")
-        if it.get("placeId") in known_pid or norm(t) in known:
+        pid, t = it.get("placeId"), it.get("title", "")
+        if pid in known_pid or norm(t) in known:      # ya en el directorio
             continue
+        if pid and pid in seen:                        # duplicado entre términos
+            continue
+        if pid:
+            seen.add(pid)
         nuevos.append(it)
 
-    print(f"=== NUEVOS (no están en negocios.json): {len(nuevos)}/{len(items)} ===")
+    from collections import defaultdict
+    groups = defaultdict(list)
     for it in nuevos:
-        print(f"  + {it.get('title')}  | {it.get('categoryName')} "
-              f"| ⭐{it.get('totalScore')} ({it.get('reviewsCount')}) "
-              f"| {it.get('address','')}")
-    if nuevos and args.out:
-        Path(args.out).write_text(
-            json.dumps(nuevos, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"\n  → volcado a {args.out}")
+        groups[it.get("searchString", "?")].append(it)
+
+    print(f"=== NUEVOS (no en el directorio): {len(nuevos)} / {len(items)} crawleados ===")
+    for term in terms:
+        g = groups.get(term, [])
+        print(f"\n  [{term}] — {len(g)} nuevos")
+        for it in sorted(g, key=lambda x: -(x.get("reviewsCount") or 0)):
+            web = "web" if it.get("website") else "SIN WEB"
+            print(f"    + {it.get('title')} | ⭐{it.get('totalScore')} "
+                  f"({it.get('reviewsCount')}) | {web} | {it.get('address','')}")
+
+    out = Path(args.out) if args.out else (ROOT / "prospecting" / "descubrimientos.json")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(nuevos, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"\n  → {len(nuevos)} candidatos volcados a {out}")
 
 
 # ------------------------------- main ------------------------------------- #
@@ -307,7 +322,8 @@ def main():
     p.add_argument("--from-run", help="(enrich) re-usa un run de Apify ya hecho (gratis)")
     p.add_argument("--write", action="store_true",
                    help="(enrich) persiste en negocios.json (por defecto dry-run)")
-    p.add_argument("--search", help="(discover) término a buscar")
+    p.add_argument("--search", help="(discover) un término a buscar")
+    p.add_argument("--searches", help="(discover) varios términos separados por coma")
     p.add_argument("--location", help="(discover) zona; def: El Cañaveral, Madrid")
     p.add_argument("--max-places", type=int, default=10, help="(discover) tope de sitios")
     p.add_argument("--out", help="(discover) ruta JSON para volcar los nuevos")

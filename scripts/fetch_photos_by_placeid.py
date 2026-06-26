@@ -93,6 +93,7 @@ def main():
     p.add_argument("--slug")
     p.add_argument("--category")
     p.add_argument("--all", action="store_true")
+    p.add_argument("--only-missing", action="store_true", help="solo fichas con placeId y sin fotos")
     p.add_argument("--limit", type=int)
     p.add_argument("--count", type=int, default=5)
     p.add_argument("--write", action="store_true")
@@ -105,10 +106,12 @@ def main():
         targets = [n for n in negocios if n["slug"] == args.slug]
     elif args.category:
         targets = [n for n in negocios if n.get("category") == args.category]
+    elif args.only_missing:
+        targets = [n for n in negocios if n.get("placeId") and not n.get("images")]
     elif args.all:
         targets = [n for n in negocios if n.get("placeId")]
     else:
-        sys.exit("indica --slug / --category / --all")
+        sys.exit("indica --slug / --category / --all / --only-missing")
     if args.limit:
         targets = targets[: args.limit]
 

@@ -5188,5 +5188,2751 @@
     "googleCategory": "Agencia inmobiliaria",
     "lat": 40.4039725,
     "lng": -3.6073346
+  },
+  {
+    "slug": "hygge-estilistas",
+    "name": "Hygge Estilistas",
+    "description": "Salón de peluquería ubicado en Coslada que ofrece servicios de cuidado y estilismo capilar para el día a día. Un espacio pensado para el bienestar de los vecinos de la zona que buscan un trato personalizado en sus cambios de imagen. Sus profesionales atienden las necesidades de corte, color y peinado con técnicas actuales.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Chile, 65, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo para mujer y hombre",
+      "Técnicas de coloración y mechas",
+      "Lavado y peinado profesional",
+      "Tratamientos de hidratación capilar",
+      "Asesoramiento de imagen personalizado"
+    ],
+    "destacados": [
+      "Atención personalizada",
+      "Ubicación accesible en Coslada"
+    ],
+    "rating": 4.8,
+    "numReviews": 141,
+    "placeId": "ChIJccbGussxQg0RO2muCQlkmEI",
+    "googleCategory": "Peluquería",
+    "phone": "+34 916 73 39 03",
+    "website": "https://hyggeestilistas.koibox.site/",
+    "lat": 40.4230925,
+    "lng": -3.5447791,
+    "image": "/images/negocios/hygge-estilistas.jpg",
+    "images": [
+      "/images/negocios/hygge-estilistas.jpg",
+      "/images/negocios/hygge-estilistas-2.jpg",
+      "/images/negocios/hygge-estilistas-3.jpg",
+      "/images/negocios/hygge-estilistas-4.jpg",
+      "/images/negocios/hygge-estilistas-5.jpg"
+    ]
+  },
+  {
+    "slug": "peluqueros-del-prado",
+    "name": "Peluqueros del Prado",
+    "description": "Establecimiento de peluquería situado en el municipio de Coslada, orientado al cuidado del cabello de toda la familia. Ofrece una amplia gama de servicios de peluquería convencional y tratamientos capilares adaptados a cada cliente. Es una opción de confianza para el mantenimiento y cuidado estético diario en el barrio.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C/ de Colombia, 6, posterior, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Cortes de pelo modernos y clásicos",
+      "Servicios de color, tintes y reflejos",
+      "Peinados para eventos y diario",
+      "Tratamientos capilares de nutrición",
+      "Corte infantil"
+    ],
+    "destacados": [
+      "Ambiente familiar y cercano",
+      "Servicio para todas las edades"
+    ],
+    "rating": 4.9,
+    "numReviews": 64,
+    "placeId": "ChIJNdaxn4gwQg0RdOC4oEshrUA",
+    "googleCategory": "Peluquería",
+    "phone": "+34 911 43 14 33",
+    "lat": 40.4278813,
+    "lng": -3.5439454,
+    "image": "/images/negocios/peluqueros-del-prado.jpg",
+    "images": [
+      "/images/negocios/peluqueros-del-prado.jpg",
+      "/images/negocios/peluqueros-del-prado-2.jpg",
+      "/images/negocios/peluqueros-del-prado-3.jpg",
+      "/images/negocios/peluqueros-del-prado-4.jpg",
+      "/images/negocios/peluqueros-del-prado-5.jpg"
+    ]
+  },
+  {
+    "slug": "r-d-estilistas",
+    "name": "R&D Estilistas",
+    "description": "Peluquería y centro de estilismo en Coslada que proporciona servicios profesionales para el cuidado del cabello. Destaca por su enfoque en las tendencias de corte y color, ayudando a los residentes de la zona a mantener su estilo personal. Cuenta con un equipo dedicado a ofrecer soluciones capilares a medida.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Méjico, 19, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte y diseño de estilo",
+      "Coloración, mechas y balayage",
+      "Peinados y recogidos",
+      "Tratamientos de brillo y reconstrucción",
+      "Secado y moldeado"
+    ],
+    "destacados": [
+      "Especialistas en color y tendencia",
+      "Trato profesional y detallista"
+    ],
+    "rating": 4.9,
+    "numReviews": 78,
+    "placeId": "ChIJ54nQznwwQg0RWArcub4Ve2g",
+    "googleCategory": "Peluquería",
+    "phone": "+34 910 86 38 52",
+    "website": "https://www.facebook.com/RyDestilistas/?ref=aymt_homepage_panel",
+    "lat": 40.4275651,
+    "lng": -3.5442547,
+    "image": "/images/negocios/r-d-estilistas.jpg",
+    "images": [
+      "/images/negocios/r-d-estilistas.jpg",
+      "/images/negocios/r-d-estilistas-2.jpg",
+      "/images/negocios/r-d-estilistas-3.jpg",
+      "/images/negocios/r-d-estilistas-4.jpg",
+      "/images/negocios/r-d-estilistas-5.jpg"
+    ]
+  },
+  {
+    "slug": "peluqueria-en-coslada-rocio-aparicio",
+    "name": "Peluquería en Coslada | Rocío Aparicio",
+    "description": "Salón de peluquería de Coslada que ofrece una atención cuidada en servicios de estética capilar y estilismo. Un espacio idóneo para quienes buscan renovar su imagen o realizar el mantenimiento habitual de su cabello con total confianza. Su propuesta se basa en la calidad del servicio y la comodidad del cliente de la zona.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Centro Comercial La Rambla local 16, Calle de Honduras, 27, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte femenino y masculino",
+      "Aplicación de tintes y mechas",
+      "Lavado, secado y peinado",
+      "Tratamientos para el cuero cabelludo",
+      "Asesoramiento sobre cuidado capilar en casa"
+    ],
+    "destacados": [
+      "Atención individualizada",
+      "Servicios adaptados a cada tipo de cabello"
+    ],
+    "rating": 4.6,
+    "numReviews": 138,
+    "placeId": "ChIJyVvpQ3wwQg0Rw6ZvsgyoB9g",
+    "googleCategory": "Peluquería",
+    "phone": "+34 910 39 93 20",
+    "website": "https://peluqueriaencoslada.es/",
+    "lat": 40.4245817,
+    "lng": -3.5443307,
+    "image": "/images/negocios/peluqueria-en-coslada-rocio-aparicio.jpg",
+    "images": [
+      "/images/negocios/peluqueria-en-coslada-rocio-aparicio.jpg",
+      "/images/negocios/peluqueria-en-coslada-rocio-aparicio-2.jpg",
+      "/images/negocios/peluqueria-en-coslada-rocio-aparicio-3.jpg",
+      "/images/negocios/peluqueria-en-coslada-rocio-aparicio-4.jpg",
+      "/images/negocios/peluqueria-en-coslada-rocio-aparicio-5.jpg"
+    ]
+  },
+  {
+    "slug": "peinadox",
+    "name": "Peinadox",
+    "description": "Peluquería ubicada en Coslada que ofrece soluciones prácticas y actuales para el cuidado del cabello de sus clientes. Con un enfoque dinámico, el salón atiende las necesidades de corte, peinado y coloración de los vecinos del municipio. Un lugar idóneo para el mantenimiento estético habitual con un trato cercano.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Venezuela, 11, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Cortes de pelo adaptados a las tendencias",
+      "Servicios de coloración y reflejos",
+      "Lavado y peinado exprés o elaborado",
+      "Tratamientos de hidratación y brillo",
+      "Arreglo de puntas y mantenimiento"
+    ],
+    "destacados": [
+      "Servicio ágil y eficiente",
+      "Excelente relación calidad-precio local"
+    ],
+    "rating": 4.7,
+    "numReviews": 53,
+    "placeId": "ChIJa6Smn2IwQg0R3g4ulpS1GAc",
+    "googleCategory": "Peluquería",
+    "phone": "+34 916 69 67 23",
+    "website": "https://peinadox.com/",
+    "lat": 40.4294161,
+    "lng": -3.5408039,
+    "image": "/images/negocios/peinadox.jpg",
+    "images": [
+      "/images/negocios/peinadox.jpg",
+      "/images/negocios/peinadox-2.jpg",
+      "/images/negocios/peinadox-3.jpg",
+      "/images/negocios/peinadox-4.jpg",
+      "/images/negocios/peinadox-5.jpg"
+    ]
+  },
+  {
+    "slug": "imar",
+    "name": "Imar",
+    "description": "Centro de peluquería en Coslada que ofrece servicios de estilismo capilar para el público local. Su equipo se enfoca en proporcionar un servicio cómodo y de calidad para el cuidado diario del cabello, abarcando desde cortes clásicos hasta las últimas técnicas de color. Un punto de referencia para el cuidado personal en el municipio.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Méjico, 7, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo unisex",
+      "Coloración permanente y semipermanente",
+      "Peinados para el día a día y ocasiones especiales",
+      "Tratamientos capilares hidratantes",
+      "Lavado con masaje capilar"
+    ],
+    "destacados": [
+      "Profesionales con experiencia",
+      "Ubicación cómoda en el municipio"
+    ],
+    "rating": 4.9,
+    "numReviews": 46,
+    "placeId": "ChIJwfjZmHwwQg0R0rqXMHwi4_E",
+    "googleCategory": "Peluquería",
+    "phone": "+34 916 73 14 20",
+    "lat": 40.4265304,
+    "lng": -3.5458989
+  },
+  {
+    "slug": "sandra-rueda-estilistas-peluqueria-belleza-coslada",
+    "name": "Sandra Rueda estilistas Peluqueria Belleza Coslada",
+    "description": "Establecimiento especializado en peluquería y servicios de belleza situado en Coslada. Ofrece una experiencia integral para el cuidado de la imagen personal, combinando el estilismo capilar con tratamientos estéticos básicos. Ideal para los vecinos que buscan un servicio completo de cuidado personal sin salir de su zona.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Chile, 162, Local 5, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Cortes de pelo y cambios de estilo",
+      "Coloración avanzada y mechas",
+      "Tratamientos de estética y belleza capilar",
+      "Peinados y recogidos para eventos",
+      "Tratamientos de hidratación profunda"
+    ],
+    "destacados": [
+      "Servicio integral de peluquería y belleza",
+      "Asesoramiento personalizado de imagen"
+    ],
+    "rating": 4.8,
+    "numReviews": 259,
+    "placeId": "ChIJY8oSw30wQg0R-kVpBrJsEMY",
+    "googleCategory": "Peluquería",
+    "phone": "+34 916 71 31 12",
+    "website": "https://www.sandraruedaestilistas.es/",
+    "lat": 40.4239981,
+    "lng": -3.5437395,
+    "image": "/images/negocios/sandra-rueda-estilistas-peluqueria-belleza-coslada.jpg",
+    "images": [
+      "/images/negocios/sandra-rueda-estilistas-peluqueria-belleza-coslada.jpg",
+      "/images/negocios/sandra-rueda-estilistas-peluqueria-belleza-coslada-2.jpg",
+      "/images/negocios/sandra-rueda-estilistas-peluqueria-belleza-coslada-3.jpg",
+      "/images/negocios/sandra-rueda-estilistas-peluqueria-belleza-coslada-4.jpg",
+      "/images/negocios/sandra-rueda-estilistas-peluqueria-belleza-coslada-5.jpg"
+    ]
+  },
+  {
+    "slug": "peluqueria-imagen-estilistas",
+    "name": "Peluquería Imagen Estilistas",
+    "description": "Salón de peluquería y estilismo en Coslada dedicado a potenciar la imagen de sus clientes a través del cabello. Ofrece un catálogo completo de servicios de corte, color y tratamientos específicos para mantener la salud capilar. Su equipo proporciona un trato profesional enfocado en el bienestar de cada visitante.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de Madrid, 4, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo adaptado a la fisonomía",
+      "Técnicas de color, mechas y matices",
+      "Lavado, secado y peinado profesional",
+      "Tratamientos capilares reconstructores",
+      "Peinados para eventos especiales"
+    ],
+    "destacados": [
+      "Enfoque en la salud y brillo del cabello",
+      "Atención profesional y cercana"
+    ],
+    "rating": 4.7,
+    "numReviews": 74,
+    "placeId": "ChIJOfMxwn0wQg0Ra7NUJkvSKUk",
+    "googleCategory": "Peluquería",
+    "phone": "+34 916 69 14 99",
+    "lat": 40.4230512,
+    "lng": -3.5421755,
+    "image": "/images/negocios/peluqueria-imagen-estilistas.jpg",
+    "images": [
+      "/images/negocios/peluqueria-imagen-estilistas.jpg"
+    ]
+  },
+  {
+    "slug": "farmacia-castillo-de-la-torre",
+    "name": "Farmacia Castillo de la Torre",
+    "description": "Farmacia de confianza situada en Coslada, dedicada a la atención farmacéutica y al cuidado de la salud de los vecinos. Ofrece dispensación de medicamentos, asesoramiento profesional y una amplia gama de productos de parafarmacia. Un espacio de salud esencial para el bienestar de la comunidad local.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Argentina, 22, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Dispensación de medicamentos con receta",
+      "Venta de productos de parafarmacia y dermocosmética",
+      "Asesoramiento nutricional y de salud",
+      "Control de tensión arterial y parámetros básicos",
+      "Productos de higiene infantil y cuidado del bebé"
+    ],
+    "destacados": [
+      "Atención farmacéutica personalizada",
+      "Amplio catálogo de parafarmacia"
+    ],
+    "rating": 4.5,
+    "numReviews": 32,
+    "placeId": "ChIJRc4OaH0wQg0Rak7MwyLbGc0",
+    "googleCategory": "Farmacia",
+    "phone": "+34 916 73 04 51",
+    "lat": 40.4263065,
+    "lng": -3.5412689,
+    "image": "/images/negocios/farmacia-castillo-de-la-torre.jpg",
+    "images": [
+      "/images/negocios/farmacia-castillo-de-la-torre.jpg",
+      "/images/negocios/farmacia-castillo-de-la-torre-2.jpg",
+      "/images/negocios/farmacia-castillo-de-la-torre-3.jpg",
+      "/images/negocios/farmacia-castillo-de-la-torre-4.jpg",
+      "/images/negocios/farmacia-castillo-de-la-torre-5.jpg"
+    ]
+  },
+  {
+    "slug": "farmacia-mejico-23-abierto-365-dias",
+    "name": "Farmacia Méjico 23 Abierto (365 días)",
+    "description": "Establecimiento farmacéutico en Coslada que destaca por su amplio horario de apertura durante todos los días del año. Proporciona un servicio continuo y de fácil acceso para la adquisición de medicamentos y productos de salud en cualquier momento. Un recurso fundamental para la tranquilidad y atención sanitaria de los vecinos de la zona.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Méjico, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Dispensación de medicamentos los 365 días del año",
+      "Productos de parafarmacia, ortopedia y nutrición",
+      "Atención y asesoramiento farmacéutico continuo",
+      "Cuidado del bebé y nutrición infantil",
+      "Control y seguimiento de la salud"
+    ],
+    "destacados": [
+      "Abierto los 365 días del año",
+      "Disponibilidad y servicio de guardia continuo"
+    ],
+    "rating": 4.6,
+    "numReviews": 70,
+    "placeId": "ChIJ-X1FK30wQg0RxLG6J_XvbP4",
+    "googleCategory": "Farmacia",
+    "phone": "+34 628 90 87 40",
+    "website": "https://farmaciamejico23.com/",
+    "lat": 40.4280213,
+    "lng": -3.5430518,
+    "image": "/images/negocios/farmacia-mejico-23-abierto-365-dias.jpg",
+    "images": [
+      "/images/negocios/farmacia-mejico-23-abierto-365-dias.jpg",
+      "/images/negocios/farmacia-mejico-23-abierto-365-dias-2.jpg",
+      "/images/negocios/farmacia-mejico-23-abierto-365-dias-3.jpg",
+      "/images/negocios/farmacia-mejico-23-abierto-365-dias-4.jpg",
+      "/images/negocios/farmacia-mejico-23-abierto-365-dias-5.jpg"
+    ]
+  },
+  {
+    "slug": "gimnasio-vivagym-coslada-plaza",
+    "name": "Gimnasio VivaGym Coslada Plaza",
+    "description": "Gimnasio moderno ubicado en la zona de Coslada que ofrece un espacio completo para el entrenamiento diario. Cuenta con una amplia variedad de maquinaria de cardio, fuerza y salas para actividades dirigidas, adaptándose a todos los niveles de condición física. Es una opción ideal para los vecinos que buscan mantener un estilo de vida activo con flexibilidad horaria.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de José Gárate, 3, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Sala de musculación y peso libre",
+      "Zona de entrenamiento cardiovascular",
+      "Clases colectivas dirigidas",
+      "Área de entrenamiento funcional",
+      "Vestuarios y duchas",
+      "Asesoramiento técnico en sala"
+    ],
+    "destacados": [
+      "Instalaciones amplias y equipamiento moderno",
+      "Gran variedad de actividades dirigidas"
+    ],
+    "rating": 4.4,
+    "numReviews": 1092,
+    "placeId": "ChIJ33bXTVkxQg0RWO6ucpCXRcs",
+    "googleCategory": "Gimnasio",
+    "website": "https://www.vivagym.com/es-es/gimnasios/madrid/coslada/coslada-plaza/?utm_campaign=250922_es_gmb_conversion_generic_coslada-plaza&utm_medium=organic&utm_source=gmb",
+    "lat": 40.4284953,
+    "lng": -3.5511941,
+    "image": "/images/negocios/gimnasio-vivagym-coslada-plaza.jpg",
+    "images": [
+      "/images/negocios/gimnasio-vivagym-coslada-plaza.jpg",
+      "/images/negocios/gimnasio-vivagym-coslada-plaza-2.jpg",
+      "/images/negocios/gimnasio-vivagym-coslada-plaza-3.jpg",
+      "/images/negocios/gimnasio-vivagym-coslada-plaza-4.jpg",
+      "/images/negocios/gimnasio-vivagym-coslada-plaza-5.jpg"
+    ]
+  },
+  {
+    "slug": "club-deportivo-jose-arturo-blanco",
+    "name": "Club Deportivo Jose Arturo Blanco",
+    "description": "Club deportivo situado en Coslada dedicado a la promoción de la actividad física y el deporte en el municipio. Ofrece instalaciones y programas diseñados para fomentar el entrenamiento regular y la práctica deportiva en un ambiente saludable. Un punto de encuentro ideal para deportistas locales de diferentes edades y niveles.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Calle de Honduras, 30, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Entrenamientos estructurados",
+      "Preparación física general",
+      "Uso de instalaciones deportivas",
+      "Actividades para socios",
+      "Asesoramiento deportivo básico"
+    ],
+    "destacados": [
+      "Fomento del deporte local y comunitario",
+      "Ambiente orientado al rendimiento y la salud"
+    ],
+    "rating": 5,
+    "numReviews": 77,
+    "placeId": "ChIJ0wXgZ0wxQg0Rhix_Uvd4WVI",
+    "googleCategory": "Club deportivo",
+    "phone": "+34 677 56 06 12",
+    "website": "https://www.clubdeportivojosearturoblanco.com/",
+    "lat": 40.4229196,
+    "lng": -3.5404788,
+    "image": "/images/negocios/club-deportivo-jose-arturo-blanco.jpg",
+    "images": [
+      "/images/negocios/club-deportivo-jose-arturo-blanco.jpg",
+      "/images/negocios/club-deportivo-jose-arturo-blanco-2.jpg",
+      "/images/negocios/club-deportivo-jose-arturo-blanco-3.jpg",
+      "/images/negocios/club-deportivo-jose-arturo-blanco-4.jpg",
+      "/images/negocios/club-deportivo-jose-arturo-blanco-5.jpg"
+    ]
+  },
+  {
+    "slug": "gimnasio-katana",
+    "name": "Gimnasio Katana",
+    "description": "Escuela especializada en la enseñanza de judo y disciplinas asociadas en la localidad de Coslada. Ofrece clases estructuradas para diferentes grupos de edad, desde la iniciación infantil hasta niveles avanzados para adultos. Sus sesiones se centran en el desarrollo técnico, la disciplina y la preparación física de los alumnos.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de Roma, 1, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Clases de judo infantil",
+      "Entrenamiento de judo para adultos",
+      "Preparación para exámenes de cinturón",
+      "Técnicas de defensa personal",
+      "Preparación física específica"
+    ],
+    "destacados": [
+      "Enfoque en valores, disciplina y respeto",
+      "Clases adaptadas por niveles y edades"
+    ],
+    "rating": 4.7,
+    "numReviews": 77,
+    "placeId": "ChIJKQvDGn4wQg0RBJ_OQWNrRso",
+    "googleCategory": "Escuela de judo",
+    "phone": "+34 647 64 99 87",
+    "website": "https://m.facebook.com/people/Judo-Gimnasio-Katana/100073774610553/",
+    "lat": 40.4223637,
+    "lng": -3.5413507,
+    "image": "/images/negocios/gimnasio-katana.jpg",
+    "images": [
+      "/images/negocios/gimnasio-katana.jpg",
+      "/images/negocios/gimnasio-katana-2.jpg",
+      "/images/negocios/gimnasio-katana-3.jpg",
+      "/images/negocios/gimnasio-katana-4.jpg",
+      "/images/negocios/gimnasio-katana-5.jpg"
+    ]
+  },
+  {
+    "slug": "f4trainers-coslada",
+    "name": "F4Trainers - Coslada",
+    "description": "Centro de entrenamiento personal ubicado en Coslada que ofrece programas de ejercicio físico adaptados a las necesidades individuales de cada cliente. Sus profesionales diseñan planes a medida para ayudar a alcanzar objetivos de salud, pérdida de peso o mejora del rendimiento deportivo. Ideal para quienes buscan un seguimiento cercano, técnico y motivador.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de José Gárate, 3, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Entrenamientos personales individuales",
+      "Sesiones de entrenamiento en grupos reducidos",
+      "Planificación de rutinas a medida",
+      "Evaluación de la condición física",
+      "Asesoramiento deportivo y de hábitos"
+    ],
+    "destacados": [
+      "Atención y seguimiento 100% personalizado",
+      "Enfoque técnico para evitar lesiones"
+    ],
+    "rating": 5,
+    "numReviews": 44,
+    "placeId": "ChIJvUfYH48xQg0R5jrFksRBoOc",
+    "googleCategory": "Entrenador personal",
+    "website": "https://www.f4trainers.com/",
+    "lat": 40.4283899,
+    "lng": -3.5516746,
+    "image": "/images/negocios/f4trainers-coslada.jpg",
+    "images": [
+      "/images/negocios/f4trainers-coslada.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-dental-caredent-coslada",
+    "name": "Clínica dental Caredent Coslada",
+    "description": "Clínica dental ubicada en Coslada que ofrece una cobertura integral para el cuidado de la salud bucodental de toda la familia. Cuenta con un equipo de profesionales que realizan desde revisiones preventivas hasta tratamientos especializados. Sus instalaciones están equipadas con tecnología estándar para garantizar diagnósticos precisos.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Calle de Honduras, 6, 28820 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Odontología general y preventiva",
+      "Ortodoncia para niños y adultos",
+      "Implantes y prótesis dentales",
+      "Estética dental y blanqueamiento",
+      "Endodoncia y periodoncia",
+      "Higiene bucodental profesional"
+    ],
+    "destacados": [
+      "Atención odontológica integral en un mismo centro",
+      "Tratamientos adaptados para toda la familia"
+    ],
+    "rating": 4.8,
+    "numReviews": 610,
+    "placeId": "ChIJM8Q9inswQg0R_fVjC7GwFwY",
+    "googleCategory": "Clínica dental",
+    "phone": "+34 916 74 13 51",
+    "website": "https://www.caredent.es/clinicas-dentales/madrid/clinica-dental-coslada",
+    "lat": 40.4244138,
+    "lng": -3.5459393,
+    "image": "/images/negocios/clinica-dental-caredent-coslada.jpg",
+    "images": [
+      "/images/negocios/clinica-dental-caredent-coslada.jpg",
+      "/images/negocios/clinica-dental-caredent-coslada-2.jpg",
+      "/images/negocios/clinica-dental-caredent-coslada-3.jpg",
+      "/images/negocios/clinica-dental-caredent-coslada-4.jpg",
+      "/images/negocios/clinica-dental-caredent-coslada-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-dental-dra-conca",
+    "name": "Clínica Dental Dra Conca",
+    "description": "Consulta odontológica en Coslada que ofrece una atención cercana y profesional para el cuidado de la boca y los dientes. La clínica se enfoca en el diagnóstico preciso y en proponer soluciones personalizadas para mantener la salud oral de los pacientes. Un espacio de confianza para el seguimiento dental periódico de los vecinos de la zona.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Jesús de San Antonio, 8, 1ºD, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Revisiones y diagnósticos dentales",
+      "Limpieza y prevención bucal",
+      "Tratamientos de odontología conservadora",
+      "Ortodoncia y alineación dental",
+      "Tratamientos de encías (periodoncia)"
+    ],
+    "destacados": [
+      "Trato personalizado y cercano con el paciente",
+      "Enfoque en la prevención y conservación dental"
+    ],
+    "rating": 4.8,
+    "numReviews": 47,
+    "placeId": "ChIJ0TdJC4cwQg0RUmwgDEc4yxQ",
+    "googleCategory": "Clínica dental",
+    "phone": "+34 916 60 13 63",
+    "website": "https://clinicadentalsconca.com/",
+    "lat": 40.4251691,
+    "lng": -3.5401192,
+    "image": "/images/negocios/clinica-dental-dra-conca.jpg",
+    "images": [
+      "/images/negocios/clinica-dental-dra-conca.jpg",
+      "/images/negocios/clinica-dental-dra-conca-2.jpg",
+      "/images/negocios/clinica-dental-dra-conca-3.jpg",
+      "/images/negocios/clinica-dental-dra-conca-4.jpg",
+      "/images/negocios/clinica-dental-dra-conca-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-dental-ohi-odontologia-hospitalaria-coslada",
+    "name": "Clínica dental OHI | Odontología Hospitalaria | Coslada",
+    "description": "Clínica dental en Coslada especializada en ofrecer servicios de odontología con un enfoque integral y profesional. Sus instalaciones están preparadas para atender diversas necesidades de salud bucodental, desde tratamientos rutinarios hasta procedimientos más complejos. Buscan proporcionar una experiencia cómoda y segura para cada paciente.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Méjico, 31, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Odontología general y diagnóstico",
+      "Cirugía oral e implantes",
+      "Tratamientos de ortodoncia",
+      "Estética y restauración dental",
+      "Odontopediatría",
+      "Mantenimiento y limpiezas periodóticas"
+    ],
+    "destacados": [
+      "Instalaciones preparadas para tratamientos complejos",
+      "Equipo profesional multidisciplinar"
+    ],
+    "rating": 4.9,
+    "numReviews": 210,
+    "placeId": "ChIJWVkPlHsxQg0RaX-wIvR9n1g",
+    "googleCategory": "Clínica dental",
+    "phone": "+34 916 74 68 10",
+    "website": "https://odontologiahospitalaria.es/dentista-coslada-ohi/",
+    "lat": 40.4282379,
+    "lng": -3.541721,
+    "image": "/images/negocios/clinica-dental-ohi-odontologia-hospitalaria-coslada.jpg",
+    "images": [
+      "/images/negocios/clinica-dental-ohi-odontologia-hospitalaria-coslada.jpg",
+      "/images/negocios/clinica-dental-ohi-odontologia-hospitalaria-coslada-2.jpg",
+      "/images/negocios/clinica-dental-ohi-odontologia-hospitalaria-coslada-3.jpg",
+      "/images/negocios/clinica-dental-ohi-odontologia-hospitalaria-coslada-4.jpg",
+      "/images/negocios/clinica-dental-ohi-odontologia-hospitalaria-coslada-5.jpg"
+    ]
+  },
+  {
+    "slug": "seven-dental",
+    "name": "SEVEN DENTAL",
+    "description": "Consulta de dentista en Coslada orientada a ofrecer soluciones eficaces para la salud y estética dental de los residentes de la zona. El centro proporciona un servicio profesional enfocado en la prevención, el tratamiento de patologías comunes y la mejora de la sonrisa. Su objetivo es asegurar el bienestar bucal de sus pacientes mediante un trato directo.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Jesús de San Antonio, 4, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Revisiones dentales periódicas",
+      "Empastes y reconstrucciones",
+      "Limpiezas dentales profesionales",
+      "Tratamientos de ortodoncia",
+      "Prótesis e implantes dentales"
+    ],
+    "destacados": [
+      "Atención profesional orientada al bienestar del paciente",
+      "Soluciones dentales para el día a día"
+    ],
+    "rating": 4.9,
+    "numReviews": 43,
+    "placeId": "ChIJjbNFh30wQg0RAZXCuxfcLkw",
+    "googleCategory": "Dentista",
+    "phone": "+34 685 84 48 76",
+    "lat": 40.4251434,
+    "lng": -3.5407471,
+    "image": "/images/negocios/seven-dental.jpg",
+    "images": [
+      "/images/negocios/seven-dental.jpg",
+      "/images/negocios/seven-dental-2.jpg",
+      "/images/negocios/seven-dental-3.jpg",
+      "/images/negocios/seven-dental-4.jpg",
+      "/images/negocios/seven-dental-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-dental-vitaldent",
+    "name": "Clínica Dental Vitaldent",
+    "description": "Clínica dental de referencia en Coslada que ofrece una amplia gama de servicios odontológicos bajo un mismo techo. Cuenta con un equipo de odontólogos experimentados y tecnología avanzada para el diagnóstico y tratamiento de problemas bucodentales. Es una opción accesible y de confianza para las revisiones y tratamientos de toda la familia.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Méjico, 21, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Implantes dentales y prótesis",
+      "Ortodoncia invisible y tradicional",
+      "Estética dental (carillas y blanqueamiento)",
+      "Odontopediatría",
+      "Endodoncia y salud de las encías",
+      "Radiografía y diagnóstico digital"
+    ],
+    "destacados": [
+      "Servicio odontológico integral y multidisciplinar",
+      "Facilidades de diagnóstico y planes de tratamiento"
+    ],
+    "rating": 5,
+    "numReviews": 72,
+    "placeId": "ChIJKYloegAxQg0R0UKxw8XOy1Q",
+    "googleCategory": "Clínica dental",
+    "phone": "+34 917 79 02 65",
+    "website": "https://clinicas.vitaldent.com/madrid/clinica-dental-vitaldent-coslada-mexico/?utm_source=google-my-business&utm_medium=organic&utm_id=cmp-01487-q5t8w&utm_campaign=gbp:ficha-gbp&utm_term=sin-t%C3%A9rmino&utm_content=vitaldent",
+    "lat": 40.4281222,
+    "lng": -3.5428592,
+    "image": "/images/negocios/clinica-dental-vitaldent.jpg",
+    "images": [
+      "/images/negocios/clinica-dental-vitaldent.jpg",
+      "/images/negocios/clinica-dental-vitaldent-2.jpg",
+      "/images/negocios/clinica-dental-vitaldent-3.jpg",
+      "/images/negocios/clinica-dental-vitaldent-4.jpg",
+      "/images/negocios/clinica-dental-vitaldent-5.jpg"
+    ]
+  },
+  {
+    "slug": "escuela-infantil-monigotes",
+    "name": "Escuela infantil Monigotes",
+    "description": "Centro de educación preescolar en Coslada diseñado para el cuidado y desarrollo de niños en sus primeros años de vida. Ofrece un entorno seguro, cálido y estimulante donde los más pequeños pueden aprender jugando y socializar con otros niños. El centro cuenta con profesionales de la educación infantil comprometidos con el bienestar de los alumnos.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de la Virgen del Mar, 19, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Educación infantil de primer ciclo",
+      "Actividades de estimulación temprana",
+      "Servicio de comedor con menús adaptados",
+      "Juegos y actividades psicomotrices",
+      "Escuela de padres y tutorías"
+    ],
+    "destacados": [
+      "Entorno seguro y adaptado para la primera infancia",
+      "Proyecto educativo enfocado en el desarrollo integral"
+    ],
+    "rating": 4.9,
+    "numReviews": 43,
+    "placeId": "ChIJc90uERIwQg0RU-cSved2tJI",
+    "googleCategory": "Centro de educación preescolar",
+    "phone": "+34 916 74 20 90",
+    "lat": 40.4285693,
+    "lng": -3.5650028,
+    "image": "/images/negocios/escuela-infantil-monigotes.jpg",
+    "images": [
+      "/images/negocios/escuela-infantil-monigotes.jpg",
+      "/images/negocios/escuela-infantil-monigotes-2.jpg",
+      "/images/negocios/escuela-infantil-monigotes-3.jpg",
+      "/images/negocios/escuela-infantil-monigotes-4.jpg",
+      "/images/negocios/escuela-infantil-monigotes-5.jpg"
+    ]
+  },
+  {
+    "slug": "ares-baby",
+    "name": "Ares Baby",
+    "description": "Establecimiento especializado en la venta de productos y accesorios para bebés ubicado en San Fernando de Henares. Ofrece una amplia selección de artículos esenciales para el cuidado, transporte y descanso de los más pequeños, facilitando el día a día de las familias de la zona. Un comercio de proximidad ideal para encontrar todo lo necesario desde el nacimiento.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de Gonzalo de Córdoba, 51, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de cochecitos y sistemas de paseo",
+      "Mobiliario y cunas para bebés",
+      "Sistemas de retención infantil para vehículos",
+      "Ropa y accesorios de primera puesta",
+      "Artículos de lactancia y alimentación infantil",
+      "Asesoramiento personalizado a futuros padres"
+    ],
+    "destacados": [
+      "Atención cercana y personalizada",
+      "Variedad de marcas de confianza",
+      "Ubicación accesible en San Fernando de Henares"
+    ],
+    "rating": 5,
+    "numReviews": 1423,
+    "placeId": "ChIJ32gxpIYwQg0Ri5iesWVAp-I",
+    "googleCategory": "Tienda de artículos para bebés",
+    "phone": "+34 916 74 21 34",
+    "website": "http://www.aresbaby.com/",
+    "lat": 40.4239407,
+    "lng": -3.5361427,
+    "image": "/images/negocios/ares-baby.jpg",
+    "images": [
+      "/images/negocios/ares-baby.jpg",
+      "/images/negocios/ares-baby-2.jpg",
+      "/images/negocios/ares-baby-3.jpg",
+      "/images/negocios/ares-baby-4.jpg",
+      "/images/negocios/ares-baby-5.jpg"
+    ]
+  },
+  {
+    "slug": "escuela-infantil-pegasito",
+    "name": "Escuela Infantil Pegasito",
+    "description": "Centro de educación preescolar situado en Coslada, dedicado al cuidado y desarrollo temprano de niños en sus primeros años de vida. Cuenta con instalaciones adaptadas para garantizar la seguridad y el aprendizaje de los alumnos en un entorno estimulante. Una opción educativa de confianza para la conciliación familiar en el municipio.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Plaza del Mar Caribe, 4, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Primer ciclo de educación infantil",
+      "Servicio de comedor con menús adaptados",
+      "Actividades de estimulación temprana",
+      "Horarios ampliados para conciliación",
+      "Escuela de padres y tutorías personalizadas"
+    ],
+    "destacados": [
+      "Instalaciones seguras y adaptadas",
+      "Equipo educativo cualificado",
+      "Entorno idóneo para el desarrollo infantil"
+    ],
+    "rating": 4.6,
+    "numReviews": 44,
+    "placeId": "ChIJwaZHCQkwQg0RpeKMCJqpsAo",
+    "googleCategory": "Centro de educación preescolar",
+    "phone": "+34 911 68 22 06",
+    "website": "http://escuelainfantilpegasito.com/",
+    "lat": 40.4198765,
+    "lng": -3.567491,
+    "image": "/images/negocios/escuela-infantil-pegasito.jpg",
+    "images": [
+      "/images/negocios/escuela-infantil-pegasito.jpg",
+      "/images/negocios/escuela-infantil-pegasito-2.jpg",
+      "/images/negocios/escuela-infantil-pegasito-3.jpg",
+      "/images/negocios/escuela-infantil-pegasito-4.jpg",
+      "/images/negocios/escuela-infantil-pegasito-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-veterinaria-mejico-17",
+    "name": "Clínica Veterinaria Méjico 17",
+    "description": "Clínica veterinaria que presta servicios de salud y bienestar para mascotas en el municipio de Coslada. Ofrece atención médica general y preventiva para asegurar la calidad de vida de los animales de compañía del barrio. Un equipo profesional dedicado al cuidado integral de perros, gatos y otras mascotas.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Méjico, 17, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Consulta de medicina general",
+      "Vacunación y desparasitación",
+      "Identificación por microchip",
+      "Cirugía general y de tejidos blandos",
+      "Análisis clínicos y diagnóstico por imagen"
+    ],
+    "destacados": [
+      "Atención profesional y cercana",
+      "Servicios preventivos completos",
+      "Ubicación cómoda en Coslada"
+    ],
+    "rating": 4.9,
+    "numReviews": 209,
+    "placeId": "ChIJ_X8P0XwwQg0RrziAl8ckcK0",
+    "googleCategory": "Veterinario",
+    "phone": "+34 644 93 97 77",
+    "website": "http://www.veterinariamejico17.es/",
+    "lat": 40.4277485,
+    "lng": -3.5447203,
+    "image": "/images/negocios/clinica-veterinaria-mejico-17.jpg",
+    "images": [
+      "/images/negocios/clinica-veterinaria-mejico-17.jpg",
+      "/images/negocios/clinica-veterinaria-mejico-17-2.jpg",
+      "/images/negocios/clinica-veterinaria-mejico-17-3.jpg",
+      "/images/negocios/clinica-veterinaria-mejico-17-4.jpg",
+      "/images/negocios/clinica-veterinaria-mejico-17-5.jpg"
+    ]
+  },
+  {
+    "slug": "centro-veterinario-los-delfines-clinica-veterinaria-en-",
+    "name": "Centro Veterinario Los Delfines | Clínica veterinaria en Coslada",
+    "description": "Hospital veterinario de referencia en Coslada, equipado para ofrecer una atención médica avanzada y especializada a las mascotas de la zona. Dispone de instalaciones preparadas para abordar desde consultas rutinarias hasta casos de mayor complejidad médica y quirúrgica. Un centro comprometido con la salud animal a nivel integral.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Calle de Honduras, 4, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Urgencias y hospitalización veterinaria",
+      "Cirugía avanzada y anestesiología",
+      "Diagnóstico por imagen (radiografía y ecografía)",
+      "Especialidades médicas veterinarias",
+      "Análisis clínicos en laboratorio propio",
+      "Planes de salud preventivos"
+    ],
+    "destacados": [
+      "Instalaciones de alta capacidad",
+      "Atención médica especializada",
+      "Servicio de diagnóstico avanzado"
+    ],
+    "rating": 4.5,
+    "numReviews": 399,
+    "placeId": "ChIJEVc47XswQg0RcirCp4Be0FY",
+    "googleCategory": "Hospital veterinario",
+    "phone": "+34 916 73 93 23",
+    "website": "https://veterinarialosdelfines.com/",
+    "lat": 40.4244097,
+    "lng": -3.5464472,
+    "image": "/images/negocios/centro-veterinario-los-delfines-clinica-veterinaria-en-.jpg",
+    "images": [
+      "/images/negocios/centro-veterinario-los-delfines-clinica-veterinaria-en-.jpg",
+      "/images/negocios/centro-veterinario-los-delfines-clinica-veterinaria-en--2.jpg",
+      "/images/negocios/centro-veterinario-los-delfines-clinica-veterinaria-en--3.jpg",
+      "/images/negocios/centro-veterinario-los-delfines-clinica-veterinaria-en--4.jpg",
+      "/images/negocios/centro-veterinario-los-delfines-clinica-veterinaria-en--5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-veterinaria-valleaguado",
+    "name": "Clínica Veterinaria Valleaguado",
+    "description": "Centro veterinario ubicado en la zona de Valleaguado, en Coslada, orientado al cuidado de la salud de los animales de compañía. Ofrece un servicio de medicina preventiva y tratamientos personalizados para garantizar el bienestar de las mascotas del vecindario. Un espacio de confianza para el seguimiento de la salud de tu animal.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Venezuela, 7, posterior, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Consultas veterinarias generales",
+      "Planes de vacunación y prevención",
+      "Cirugía menor y esterilización",
+      "Limpieza dental y salud bucodental",
+      "Asesoramiento nutricional para mascotas"
+    ],
+    "destacados": [
+      "Trato familiar y personalizado",
+      "Especialistas en medicina preventiva",
+      "Fácil acceso en la zona de Valleaguado"
+    ],
+    "rating": 4.8,
+    "numReviews": 239,
+    "placeId": "ChIJmzytm2IwQg0R0UXyTSJVVw8",
+    "googleCategory": "Veterinario",
+    "phone": "+34 691 56 99 04",
+    "website": "https://www.clinicaveterinariavalleaguado.es/",
+    "lat": 40.4298686,
+    "lng": -3.5410958,
+    "image": "/images/negocios/clinica-veterinaria-valleaguado.jpg",
+    "images": [
+      "/images/negocios/clinica-veterinaria-valleaguado.jpg",
+      "/images/negocios/clinica-veterinaria-valleaguado-2.jpg",
+      "/images/negocios/clinica-veterinaria-valleaguado-3.jpg",
+      "/images/negocios/clinica-veterinaria-valleaguado-4.jpg",
+      "/images/negocios/clinica-veterinaria-valleaguado-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-veterinaria-vellcan",
+    "name": "Clínica Veterinaria Vellcan",
+    "description": "Clínica veterinaria situada en Coslada que ofrece asistencia médica y cuidados preventivos para todo tipo de mascotas. Su objetivo es proporcionar una atención sanitaria de calidad para asegurar el bienestar y la tranquilidad de los propietarios del municipio. Un equipo cualificado al servicio de la salud animal.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de la Cañada, 31, local, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Medicina general y preventiva",
+      "Campaña de vacunaciones y microchips",
+      "Cirugía general de animales de compañía",
+      "Diagnóstico por imagen y laboratorio",
+      "Tienda especializada en alimentación y accesorios"
+    ],
+    "destacados": [
+      "Compromiso con el bienestar animal",
+      "Servicio integral para mascotas",
+      "Atención profesional en Coslada"
+    ],
+    "rating": 4.4,
+    "numReviews": 488,
+    "placeId": "ChIJR6cogYgwQg0RyKhWz2_ZwL8",
+    "googleCategory": "Veterinario",
+    "phone": "+34 912 00 49 07",
+    "website": "https://vellcanveterinarios.com/",
+    "lat": 40.4270219,
+    "lng": -3.5377859,
+    "image": "/images/negocios/clinica-veterinaria-vellcan.jpg",
+    "images": [
+      "/images/negocios/clinica-veterinaria-vellcan.jpg",
+      "/images/negocios/clinica-veterinaria-vellcan-2.jpg",
+      "/images/negocios/clinica-veterinaria-vellcan-3.jpg",
+      "/images/negocios/clinica-veterinaria-vellcan-4.jpg",
+      "/images/negocios/clinica-veterinaria-vellcan-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-veterinaria-wecan-la-colina",
+    "name": "Clínica Veterinaria WECAN La Colina",
+    "description": "Centro veterinario perteneciente a la red WECAN, ubicado en la zona de La Colina en Coslada. Ofrece servicios veterinarios estandarizados de alta calidad, combinando la atención personalizada con el respaldo de una red profesional. Un espacio idóneo para el cuidado preventivo y clínico de las mascotas del barrio.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. De Moscú, 39, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Planes de salud y medicina preventiva",
+      "Consultas de medicina general",
+      "Vacunación, desparasitación y microchips",
+      "Cirugía y control postoperatorio",
+      "Análisis clínicos rápidos"
+    ],
+    "destacados": [
+      "Respaldo de una red veterinaria",
+      "Planes de salud adaptados",
+      "Ubicación en la zona de La Colina"
+    ],
+    "rating": 4.7,
+    "numReviews": 1176,
+    "placeId": "ChIJSb6UrYI6Qg0RfA4esr0rO1Y",
+    "googleCategory": "Veterinario",
+    "phone": "+34 916 69 86 89",
+    "website": "https://cvlacolina.com/",
+    "lat": 40.4171151,
+    "lng": -3.550611,
+    "image": "/images/negocios/clinica-veterinaria-wecan-la-colina.jpg",
+    "images": [
+      "/images/negocios/clinica-veterinaria-wecan-la-colina.jpg",
+      "/images/negocios/clinica-veterinaria-wecan-la-colina-2.jpg",
+      "/images/negocios/clinica-veterinaria-wecan-la-colina-3.jpg",
+      "/images/negocios/clinica-veterinaria-wecan-la-colina-4.jpg",
+      "/images/negocios/clinica-veterinaria-wecan-la-colina-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-veterinaria-alameda",
+    "name": "Clinica Veterinaria Alameda",
+    "description": "Clínica veterinaria de proximidad en Coslada, dedicada a ofrecer soluciones de salud para animales de compañía. Con un enfoque centrado en la prevención y el diagnóstico temprano, ayuda a mantener a las mascotas sanas y activas en su entorno familiar. Un servicio cercano y profesional para los vecinos de la zona.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. Alameda, 8, LOCAL, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Consulta veterinaria y revisiones",
+      "Vacunación y tratamientos preventivos",
+      "Cirugía general y de esterilización",
+      "Diagnóstico por imagen",
+      "Asesoramiento en comportamiento y nutrición"
+    ],
+    "destacados": [
+      "Atención de proximidad",
+      "Enfoque en medicina preventiva",
+      "Profesionales con experiencia"
+    ],
+    "rating": 4.3,
+    "numReviews": 31,
+    "placeId": "ChIJAWRV0DkxQg0RybbFFr-qnZM",
+    "googleCategory": "Veterinario",
+    "phone": "+34 916 73 78 75",
+    "website": "http://www.clinicaveterinarialameda.es/",
+    "lat": 40.4292068,
+    "lng": -3.5618432
+  },
+  {
+    "slug": "clinica-veterinaria-coslada",
+    "name": "Clínica Veterinaria Coslada",
+    "description": "Establecimiento veterinario consolidado en el municipio de Coslada, especializado en la atención médica de perros, gatos y otras mascotas. Ofrece un servicio integral que abarca desde la medicina preventiva básica hasta tratamientos clínicos específicos. Un referente local para el cuidado diario de los animales de compañía.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Calle del Dr. Fleming, 33, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Medicina general y consultas de control",
+      "Cirugía general y anestesia",
+      "Vacunaciones y expedición de pasaportes",
+      "Análisis de laboratorio y diagnóstico",
+      "Higiene dental y cuidados preventivos"
+    ],
+    "destacados": [
+      "Trayectoria en el municipio",
+      "Servicios clínicos completos",
+      "Atención personalizada y de confianza"
+    ],
+    "rating": 4.5,
+    "numReviews": 161,
+    "placeId": "ChIJtXPxJAwwQg0RnPz_tiYkcLQ",
+    "googleCategory": "Veterinario",
+    "phone": "+34 916 71 21 66",
+    "website": "https://veterinarioskliper.com/",
+    "lat": 40.4240068,
+    "lng": -3.5657046,
+    "image": "/images/negocios/clinica-veterinaria-coslada.jpg",
+    "images": [
+      "/images/negocios/clinica-veterinaria-coslada.jpg",
+      "/images/negocios/clinica-veterinaria-coslada-2.jpg",
+      "/images/negocios/clinica-veterinaria-coslada-3.jpg",
+      "/images/negocios/clinica-veterinaria-coslada-4.jpg",
+      "/images/negocios/clinica-veterinaria-coslada-5.jpg"
+    ]
+  },
+  {
+    "slug": "bar-restaurante-tierra-de-barros",
+    "name": "Bar Restaurante Tierra de Barros",
+    "description": "Establecimiento de hostelería situado en Coslada que combina la actividad de bar y restaurante. Ofrece un espacio acogedor para disfrutar de comidas diarias, raciones y tapas en un ambiente familiar y de barrio. Una opción ideal para reuniones informales, comidas de trabajo o celebraciones familiares en la zona.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Tierra de Barros, 2, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de bar y cafetería",
+      "Menú del día y carta de raciones",
+      "Celebración de eventos y comidas de grupo",
+      "Servicio de terraza (según temporada)",
+      "Comida para llevar"
+    ],
+    "destacados": [
+      "Ambiente acogedor y familiar",
+      "Variedad en menús y raciones",
+      "Excelente ubicación en Coslada"
+    ],
+    "rating": 4.6,
+    "numReviews": 279,
+    "placeId": "ChIJczpFdWAxQg0Ryfj9hPAjsV4",
+    "googleCategory": "Restaurante",
+    "phone": "+34 642 73 06 96",
+    "website": "https://www.facebook.com/profile.php?id=100075935966079",
+    "lat": 40.4322222,
+    "lng": -3.5427076,
+    "image": "/images/negocios/bar-restaurante-tierra-de-barros.jpg",
+    "images": [
+      "/images/negocios/bar-restaurante-tierra-de-barros.jpg",
+      "/images/negocios/bar-restaurante-tierra-de-barros-2.jpg",
+      "/images/negocios/bar-restaurante-tierra-de-barros-3.jpg",
+      "/images/negocios/bar-restaurante-tierra-de-barros-4.jpg",
+      "/images/negocios/bar-restaurante-tierra-de-barros-5.jpg"
+    ]
+  },
+  {
+    "slug": "la-mesa-escondida",
+    "name": "La Mesa Escondida",
+    "description": "Restaurante ubicado en Coslada que ofrece una propuesta gastronómica ideal para comidas y cenas en el municipio. Un espacio idóneo para los vecinos que buscan disfrutar de la cocina tradicional en un ambiente cómodo y cercano. Su oferta se adapta tanto a encuentros familiares como a reuniones informales.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Uruguay, 33, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de almuerzos y cenas",
+      "Reserva de mesas",
+      "Menú del día",
+      "Celebraciones de eventos privados",
+      "Atención en mesa"
+    ],
+    "destacados": [
+      "Ubicación accesible en Coslada",
+      "Ambiente acogedor y familiar"
+    ],
+    "rating": 4.8,
+    "numReviews": 184,
+    "placeId": "ChIJ45phAEcxQg0RLV2jqUd-U6M",
+    "googleCategory": "Restaurante",
+    "phone": "+34 639 10 88 70",
+    "website": "https://lamesaescondida.com/",
+    "lat": 40.4253847,
+    "lng": -3.5500707,
+    "image": "/images/negocios/la-mesa-escondida.jpg",
+    "images": [
+      "/images/negocios/la-mesa-escondida.jpg",
+      "/images/negocios/la-mesa-escondida-2.jpg",
+      "/images/negocios/la-mesa-escondida-3.jpg",
+      "/images/negocios/la-mesa-escondida-4.jpg",
+      "/images/negocios/la-mesa-escondida-5.jpg"
+    ]
+  },
+  {
+    "slug": "restaurante-hermanos-poveda-s-l",
+    "name": "Restaurante Hermanos Poveda S.L.",
+    "description": "Establecimiento de restauración situado en la zona de Coslada, referente para el almuerzo diario de los residentes y trabajadores del entorno. Cuenta con una cocina basada en recetas clásicas y una atención orientada a la fidelización del cliente local. Es un punto de encuentro idóneo para comidas de trabajo y celebraciones familiares.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Perú, 18, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Menú diario y de fin de semana",
+      "Servicio de cafetería y desayunos",
+      "Celebración de eventos familiares",
+      "Zona de barra y comedor",
+      "Comida para llevar"
+    ],
+    "destacados": [
+      "Trato cercano y profesional",
+      "Cocina casera tradicional"
+    ],
+    "rating": 4.3,
+    "numReviews": 1299,
+    "placeId": "ChIJpZ4VhyoxQg0RauAvMhzQKMs",
+    "googleCategory": "Restaurante",
+    "phone": "+34 916 69 64 24",
+    "lat": 40.4295381,
+    "lng": -3.5424887,
+    "image": "/images/negocios/restaurante-hermanos-poveda-s-l.jpg",
+    "images": [
+      "/images/negocios/restaurante-hermanos-poveda-s-l.jpg",
+      "/images/negocios/restaurante-hermanos-poveda-s-l-2.jpg",
+      "/images/negocios/restaurante-hermanos-poveda-s-l-3.jpg",
+      "/images/negocios/restaurante-hermanos-poveda-s-l-4.jpg",
+      "/images/negocios/restaurante-hermanos-poveda-s-l-5.jpg"
+    ]
+  },
+  {
+    "slug": "bar-restaurante-el-rincon-de-cristian",
+    "name": "Bar restaurante El Rincón de Cristian",
+    "description": "Bar restaurante de barrio ubicado en Coslada, ideal para disfrutar de raciones, tapas y platos combinados a cualquier hora del día. Ofrece un espacio versátil con un ambiente distendido para los vecinos de la zona. Es perfecto tanto para tomar un café por la mañana como para cenar con amigos el fin de semana.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Constantino Lobo, 10, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de bar y cafetería",
+      "Raciones y tapas variadas",
+      "Menú del día",
+      "Consumo en barra y mesa",
+      "Bebidas y refrescos"
+    ],
+    "destacados": [
+      "Ambiente de barrio muy cercano",
+      "Excelente relación calidad-precio"
+    ],
+    "rating": 4.7,
+    "numReviews": 120,
+    "placeId": "ChIJjXc7H4IxQg0Rlsy_kBBl6kU",
+    "googleCategory": "Bar restaurante",
+    "phone": "+34 615 69 58 22",
+    "lat": 40.4355356,
+    "lng": -3.5291404,
+    "image": "/images/negocios/bar-restaurante-el-rincon-de-cristian.jpg",
+    "images": [
+      "/images/negocios/bar-restaurante-el-rincon-de-cristian.jpg",
+      "/images/negocios/bar-restaurante-el-rincon-de-cristian-2.jpg",
+      "/images/negocios/bar-restaurante-el-rincon-de-cristian-3.jpg",
+      "/images/negocios/bar-restaurante-el-rincon-de-cristian-4.jpg",
+      "/images/negocios/bar-restaurante-el-rincon-de-cristian-5.jpg"
+    ]
+  },
+  {
+    "slug": "restaurante-las-americas",
+    "name": "Restaurante Las Américas",
+    "description": "Restaurante situado en Coslada que ofrece una variada oferta culinaria para los residentes y visitantes de la localidad. Su propuesta combina platos tradicionales con opciones para el día a día en un entorno agradable. Dispone de instalaciones cómodas para acoger a grupos y familias.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de las Américas, 7, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de comidas y cenas",
+      "Menús para grupos",
+      "Carta de platos tradicionales",
+      "Servicio de reservas",
+      "Atención personalizada en comedor"
+    ],
+    "destacados": [
+      "Amplitud de sus instalaciones",
+      "Variedad en la propuesta gastronómica"
+    ],
+    "rating": 4.4,
+    "numReviews": 83,
+    "placeId": "ChIJY9fHt6kxQg0R1EYNlvOZ8pY",
+    "googleCategory": "Restaurante",
+    "phone": "+34 916 73 74 65",
+    "website": "https://restaurantelasamericas.makro.rest/",
+    "lat": 40.4341207,
+    "lng": -3.5285734,
+    "image": "/images/negocios/restaurante-las-americas.jpg",
+    "images": [
+      "/images/negocios/restaurante-las-americas.jpg",
+      "/images/negocios/restaurante-las-americas-2.jpg",
+      "/images/negocios/restaurante-las-americas-3.jpg",
+      "/images/negocios/restaurante-las-americas-4.jpg",
+      "/images/negocios/restaurante-las-americas-5.jpg"
+    ]
+  },
+  {
+    "slug": "bar-caballero",
+    "name": "Bar Caballero",
+    "description": "Restaurante de corte clásico ubicado en el municipio de Coslada, enfocado en ofrecer platos de la cocina de siempre. Un lugar de paso y reunión para los vecinos que aprecian el servicio rápido y la comida casera. Destaca por su ambiente sencillo y su arraigo en la hostelería local.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de Vicálvaro, 87, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de comidas y cenas",
+      "Especialidad en raciones caseras",
+      "Menú diario",
+      "Servicio de barra",
+      "Cafetería y desayunos"
+    ],
+    "destacados": [
+      "Servicio rápido y eficiente",
+      "Cocina tradicional de confianza"
+    ],
+    "rating": 4.5,
+    "numReviews": 730,
+    "placeId": "ChIJ-TbWVIAwQg0RfoqxSTfntuc",
+    "googleCategory": "Restaurante",
+    "phone": "+34 697 79 83 70",
+    "lat": 40.4204099,
+    "lng": -3.53829,
+    "image": "/images/negocios/bar-caballero.jpg",
+    "images": [
+      "/images/negocios/bar-caballero.jpg",
+      "/images/negocios/bar-caballero-2.jpg",
+      "/images/negocios/bar-caballero-3.jpg",
+      "/images/negocios/bar-caballero-4.jpg",
+      "/images/negocios/bar-caballero-5.jpg"
+    ]
+  },
+  {
+    "slug": "greenway-grill-station",
+    "name": "GREENWAY GRILL STATION",
+    "description": "Bar restaurante en Coslada que combina la comodidad de un local de barrio con una oferta gastronómica variada y actual. Es un espacio idóneo para compartir raciones, hamburguesas o platos informales en un ambiente moderno y relajado. Perfecto para comidas rápidas, cenas de fin de semana o un encuentro después del trabajo.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de Berlin, 8, local 3, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de bar y restaurante",
+      "Especialidades a la parrilla y plancha",
+      "Opciones para compartir y raciones",
+      "Servicio de bebidas y coctelería básica",
+      "Comida para llevar"
+    ],
+    "destacados": [
+      "Ambiente moderno y juvenil",
+      "Carta variada ideal para grupos"
+    ],
+    "rating": 4.4,
+    "numReviews": 105,
+    "placeId": "ChIJWV6RPSgxQg0RneJhceLoSDE",
+    "googleCategory": "Bar restaurante",
+    "phone": "+34 916 74 39 68",
+    "lat": 40.418766,
+    "lng": -3.5411989,
+    "image": "/images/negocios/greenway-grill-station.jpg",
+    "images": [
+      "/images/negocios/greenway-grill-station.jpg",
+      "/images/negocios/greenway-grill-station-2.jpg",
+      "/images/negocios/greenway-grill-station-3.jpg",
+      "/images/negocios/greenway-grill-station-4.jpg",
+      "/images/negocios/greenway-grill-station-5.jpg"
+    ]
+  },
+  {
+    "slug": "inmobiliaria-sm-homes-coslada",
+    "name": "Inmobiliaria SM Homes Coslada",
+    "description": "Agencia inmobiliaria especializada en el mercado residencial de Coslada y sus alrededores. Ofrece un servicio integral de asesoramiento para la compra, venta y alquiler de inmuebles en la zona este de Madrid. Su equipo ayuda a los vecinos a gestionar sus operaciones inmobiliarias con total seguridad y transparencia.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Venezuela, 11, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Compraventa de viviendas y locales",
+      "Gestión de alquileres residenciales",
+      "Valoración gratuita de inmuebles",
+      "Asesoramiento financiero y de hipotecas",
+      "Gestión de trámites y contratos"
+    ],
+    "destacados": [
+      "Conocimiento profundo del mercado de Coslada",
+      "Atención personalizada y transparente"
+    ],
+    "rating": 5,
+    "numReviews": 489,
+    "placeId": "ChIJ2Rnjxn0xQg0RZxN2AenfmXc",
+    "googleCategory": "Agencia inmobiliaria",
+    "phone": "+34 608 38 99 54",
+    "website": "https://www.smhomesinmobiliaria.es/",
+    "lat": 40.4294127,
+    "lng": -3.5407292,
+    "image": "/images/negocios/inmobiliaria-sm-homes-coslada.jpg",
+    "images": [
+      "/images/negocios/inmobiliaria-sm-homes-coslada.jpg",
+      "/images/negocios/inmobiliaria-sm-homes-coslada-2.jpg",
+      "/images/negocios/inmobiliaria-sm-homes-coslada-3.jpg",
+      "/images/negocios/inmobiliaria-sm-homes-coslada-4.jpg",
+      "/images/negocios/inmobiliaria-sm-homes-coslada-5.jpg"
+    ]
+  },
+  {
+    "slug": "urbanis-inmobiliaria",
+    "name": "Urbanis inmobiliaria",
+    "description": "Agencia inmobiliaria de referencia en Coslada, dedicada a la intermediación en la compra, venta y arrendamiento de propiedades. Brinda un acompañamiento profesional durante todo el proceso de adquisición o venta de una vivienda. Su objetivo es facilitar las gestiones inmobiliarias a los vecinos del municipio.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Méjico, 9, local, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Intermediación en compra y venta",
+      "Gestión integral de alquileres",
+      "Tasación y valoración de propiedades",
+      "Asesoramiento jurídico y fiscal básico",
+      "Promoción y marketing de inmuebles"
+    ],
+    "destacados": [
+      "Trato profesional y de confianza",
+      "Amplia cartera de clientes en la zona"
+    ],
+    "rating": 4.6,
+    "numReviews": 73,
+    "placeId": "ChIJ-UNfo3wwQg0RiVH86o6Wlb8",
+    "googleCategory": "Agencia inmobiliaria",
+    "phone": "+34 916 72 21 15",
+    "website": "http://www.urbanisinmobiliaria.com/",
+    "lat": 40.4272111,
+    "lng": -3.5450056,
+    "image": "/images/negocios/urbanis-inmobiliaria.jpg",
+    "images": [
+      "/images/negocios/urbanis-inmobiliaria.jpg",
+      "/images/negocios/urbanis-inmobiliaria-2.jpg",
+      "/images/negocios/urbanis-inmobiliaria-3.jpg"
+    ]
+  },
+  {
+    "slug": "imc-cazacu-soluciones-inmobiliarias-y-financieras",
+    "name": "IMC CAZACU SOLUCIONES INMOBILIARIAS Y FINANCIERAS",
+    "description": "Oficina de servicios inmobiliarios y financieros ubicada en Coslada, diseñada para ofrecer soluciones habitacionales y de financiación a medida. Ayudan a los clientes a encontrar su vivienda ideal y a conseguir las mejores condiciones para su hipoteca en un solo lugar. Destacan por simplificar los procesos más complejos de la compraventa.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Uruguay, 12, LOC 38, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Gestión de compraventa de inmuebles",
+      "Intermediación y asesoramiento financiero",
+      "Búsqueda y tramitación de hipotecas",
+      "Valoración de viviendas",
+      "Asesoramiento en herencias y transmisiones"
+    ],
+    "destacados": [
+      "Servicio doble: inmobiliario y financiero",
+      "Orientación al ahorro del cliente"
+    ],
+    "rating": 5,
+    "numReviews": 38,
+    "placeId": "ChIJ8_bNdVwxQg0RvNdTc9Eq1Ps",
+    "googleCategory": "Agencia inmobiliaria",
+    "phone": "+34 602 49 89 60",
+    "website": "https://imcsolucionesinmobiliarias.com/",
+    "lat": 40.4240262,
+    "lng": -3.5488919
+  },
+  {
+    "slug": "tecnocasa-agencia-inmobiliaria",
+    "name": "Tecnocasa agencia inmobiliaria",
+    "description": "Oficina inmobiliaria perteneciente a una red líder, situada en Coslada para dar cobertura a las necesidades de vivienda del barrio. Especialistas en la gestión de compra, venta y alquiler de pisos y casas en la zona con un método de trabajo de gran cercanía. Su equipo de asesores locales ofrece un servicio personalizado a cada propietario y comprador.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Venezuela, 17, local 3, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Valoración gratuita y sin compromiso",
+      "Gestión de venta de pisos y casas",
+      "Tramitación de alquileres seguros",
+      "Asesoramiento financiero a través de red interna",
+      "Seguimiento posventa de las operaciones"
+    ],
+    "destacados": [
+      "Presencia y posicionamiento de marca líder",
+      "Asesores expertos con presencia a pie de calle"
+    ],
+    "rating": 4.3,
+    "numReviews": 149,
+    "placeId": "ChIJZQDYHIgwQg0RsDuCsDJcVas",
+    "googleCategory": "Agencia inmobiliaria",
+    "phone": "+34 912 47 62 26",
+    "website": "https://coslada2.tecnocasa.es/",
+    "lat": 40.4287863,
+    "lng": -3.5407144,
+    "image": "/images/negocios/tecnocasa-agencia-inmobiliaria.jpg",
+    "images": [
+      "/images/negocios/tecnocasa-agencia-inmobiliaria.jpg",
+      "/images/negocios/tecnocasa-agencia-inmobiliaria-2.jpg",
+      "/images/negocios/tecnocasa-agencia-inmobiliaria-3.jpg",
+      "/images/negocios/tecnocasa-agencia-inmobiliaria-4.jpg",
+      "/images/negocios/tecnocasa-agencia-inmobiliaria-5.jpg"
+    ]
+  },
+  {
+    "slug": "reylank-propiedades",
+    "name": "Reylank Propiedades",
+    "description": "Agencia inmobiliaria ubicada en Coslada, especializada en la gestión de compraventa y alquiler de inmuebles residenciales y comerciales en la zona. Ofrece asesoramiento personalizado a los vecinos del municipio para facilitar todos los trámites relacionados con el mercado inmobiliario local. Su equipo ayuda a valorar las propiedades y a encontrar la vivienda que mejor se adapte a las necesidades de cada cliente.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Jesús de San Antonio, 14, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Compraventa de viviendas y locales",
+      "Gestión de alquileres residenciales",
+      "Valoración y tasación de inmuebles",
+      "Asesoramiento financiero y de hipotecas",
+      "Tramitación de contratos y documentos"
+    ],
+    "destacados": [
+      "Conocimiento del mercado inmobiliario de Coslada",
+      "Atención personalizada y cercana"
+    ],
+    "rating": 4.9,
+    "numReviews": 134,
+    "placeId": "ChIJpymlBocwQg0RCqxFcKwH1_0",
+    "googleCategory": "Agencia inmobiliaria",
+    "phone": "+34 916 69 36 38",
+    "website": "http://www.reylank.com/",
+    "lat": 40.4253517,
+    "lng": -3.5387387,
+    "image": "/images/negocios/reylank-propiedades.jpg",
+    "images": [
+      "/images/negocios/reylank-propiedades.jpg",
+      "/images/negocios/reylank-propiedades-2.jpg",
+      "/images/negocios/reylank-propiedades-3.jpg",
+      "/images/negocios/reylank-propiedades-4.jpg",
+      "/images/negocios/reylank-propiedades-5.jpg"
+    ]
+  },
+  {
+    "slug": "inmobiliaria-san-fernando-de-henares-redpiso",
+    "name": "Inmobiliaria San Fernando de Henares Redpiso",
+    "description": "Oficina inmobiliaria que presta servicios de intermediación en la zona de Coslada y sus alrededores. Cuenta con profesionales dedicados a la gestión de venta y alquiler de pisos, casas y locales comerciales en el municipio. Proporciona un servicio integral que cubre desde la valoración inicial del inmueble hasta la firma final de la operación.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Jesús de San Antonio, 26, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Intermediación en compra y venta",
+      "Gestión integral de alquileres",
+      "Estudios de mercado y valoraciones gratuitas",
+      "Asesoramiento jurídico y fiscal",
+      "Gestión de préstamos hipotecarios"
+    ],
+    "destacados": [
+      "Respaldo de una red inmobiliaria consolidada",
+      "Asistencia profesional en todo el proceso"
+    ],
+    "rating": 4.8,
+    "numReviews": 211,
+    "placeId": "ChIJweSHDIsxQg0RjL1CEQoCPCU",
+    "googleCategory": "Agencia inmobiliaria",
+    "phone": "+34 910 29 97 09",
+    "website": "https://www.redpiso.es/oficina/inmobiliaria-san-fernando-de-henares/venta",
+    "lat": 40.4253106,
+    "lng": -3.537296,
+    "image": "/images/negocios/inmobiliaria-san-fernando-de-henares-redpiso.jpg",
+    "images": [
+      "/images/negocios/inmobiliaria-san-fernando-de-henares-redpiso.jpg",
+      "/images/negocios/inmobiliaria-san-fernando-de-henares-redpiso-2.jpg",
+      "/images/negocios/inmobiliaria-san-fernando-de-henares-redpiso-3.jpg",
+      "/images/negocios/inmobiliaria-san-fernando-de-henares-redpiso-4.jpg",
+      "/images/negocios/inmobiliaria-san-fernando-de-henares-redpiso-5.jpg"
+    ]
+  },
+  {
+    "slug": "confecciones-ocana",
+    "name": "Confecciones Ocaña",
+    "description": "Establecimiento de moda y confección situado en el municipio de Coslada. Ofrece una selección de prendas de vestir y complementos para el día a día de los vecinos de la zona. Se caracteriza por brindar una atención tradicional y cercana, ayudando a cada cliente a encontrar la ropa que mejor se adapte a su estilo.",
+    "category": "moda",
+    "categoryName": "Moda y Complementos",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Méjico, 9, local 9, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de ropa de temporada",
+      "Asesoramiento en moda y estilo",
+      "Venta de complementos y accesorios",
+      "Atención al cliente personalizada",
+      "Reserva de prendas en tienda"
+    ],
+    "destacados": [
+      "Trato familiar y comercio de proximidad",
+      "Variedad de prendas para el día a día"
+    ],
+    "rating": 4.6,
+    "numReviews": 68,
+    "placeId": "ChIJk8bju3wwQg0RDBgQ1X0_cBY",
+    "googleCategory": "Tienda de ropa",
+    "phone": "+34 916 69 16 53",
+    "website": "https://sites.google.com/view/confeccionesocana/contacto?authuser=3",
+    "lat": 40.4272111,
+    "lng": -3.5450056,
+    "image": "/images/negocios/confecciones-ocana.jpg",
+    "images": [
+      "/images/negocios/confecciones-ocana.jpg",
+      "/images/negocios/confecciones-ocana-2.jpg",
+      "/images/negocios/confecciones-ocana-3.jpg",
+      "/images/negocios/confecciones-ocana-4.jpg",
+      "/images/negocios/confecciones-ocana-5.jpg"
+    ]
+  },
+  {
+    "slug": "estyda",
+    "name": "Estyda",
+    "description": "Tienda de ropa ubicada en Coslada que ofrece una variedad de prendas de vestir para diferentes ocasiones. Es un comercio de proximidad ideal para quienes buscan renovar su armario sin salir del municipio. Su catálogo incluye opciones actuales con una atención al público atenta y orientada al detalle.",
+    "category": "moda",
+    "categoryName": "Moda y Complementos",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Jesús de San Antonio, 1, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de prendas de vestir",
+      "Selección de accesorios y complementos",
+      "Atención y asesoramiento personalizado",
+      "Probadores a disposición del cliente",
+      "Cambios y devoluciones según política comercial"
+    ],
+    "destacados": [
+      "Ubicación accesible en Coslada",
+      "Atención al cliente cercana y profesional"
+    ],
+    "rating": 4.4,
+    "numReviews": 30,
+    "placeId": "ChIJG9G4CYcwQg0ReLCAp7wBaF8",
+    "googleCategory": "Tienda de ropa",
+    "lat": 40.4255713,
+    "lng": -3.5391198,
+    "image": "/images/negocios/estyda.jpg",
+    "images": [
+      "/images/negocios/estyda.jpg",
+      "/images/negocios/estyda-2.jpg",
+      "/images/negocios/estyda-3.jpg",
+      "/images/negocios/estyda-4.jpg"
+    ]
+  },
+  {
+    "slug": "silueta-detalle",
+    "name": "Silueta & detalle",
+    "description": "Establecimiento especializado en arreglos de ropa y costura ubicado en Coslada. Ofrece soluciones para adaptar, reparar o transformar todo tipo de prendas de vestir, garantizando un ajuste óptimo. Es el comercio de confianza en el barrio para mantener el vestuario en perfectas condiciones.",
+    "category": "moda",
+    "categoryName": "Moda y Complementos",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Venezuela, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Arreglos de bajos de pantalones y faldas",
+      "Ajuste de anchura y entallado de prendas",
+      "Cambio de cremalleras y botones",
+      "Zurcido y reparación de roturas",
+      "Adaptación de prendas de vestir y trajes"
+    ],
+    "destacados": [
+      "Precisión y cuidado en la costura",
+      "Servicio esencial de proximidad en el municipio"
+    ],
+    "rating": 4.3,
+    "numReviews": 35,
+    "placeId": "ChIJ_2QJPeUxQg0Rreo6z_G00FI",
+    "googleCategory": "Tienda de arreglos de ropa",
+    "phone": "+34 642 55 02 78",
+    "lat": 40.4296035,
+    "lng": -3.540897,
+    "image": "/images/negocios/silueta-detalle.jpg",
+    "images": [
+      "/images/negocios/silueta-detalle.jpg",
+      "/images/negocios/silueta-detalle-2.jpg",
+      "/images/negocios/silueta-detalle-3.jpg",
+      "/images/negocios/silueta-detalle-4.jpg",
+      "/images/negocios/silueta-detalle-5.jpg"
+    ]
+  },
+  {
+    "slug": "la-huerta-de-noa",
+    "name": "La Huerta de Noa",
+    "description": "Frutería de barrio situada en Coslada que ofrece una selección de frutas y verduras frescas de temporada. Es un establecimiento de alimentación local enfocado en proporcionar productos de calidad para la cesta de la compra diaria de los vecinos. Destaca por su trato directo y la frescura de su género.",
+    "category": "fruterias",
+    "categoryName": "Fruterías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. del Mar Cantábrico, 28, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de fruta fresca de temporada",
+      "Selección de verduras y hortalizas",
+      "Venta de legumbres y productos secos",
+      "Atención y recomendación sobre el producto",
+      "Preparación de pedidos para llevar"
+    ],
+    "destacados": [
+      "Frescura garantizada en el producto diario",
+      "Fomento del comercio local y de barrio"
+    ],
+    "rating": 4.7,
+    "numReviews": 68,
+    "placeId": "ChIJC3l_yBExQg0RRtJtlsKxFrI",
+    "googleCategory": "Frutería",
+    "phone": "+34 656 37 08 25",
+    "lat": 40.4186556,
+    "lng": -3.5724204,
+    "image": "/images/negocios/la-huerta-de-noa.jpg",
+    "images": [
+      "/images/negocios/la-huerta-de-noa.jpg",
+      "/images/negocios/la-huerta-de-noa-2.jpg",
+      "/images/negocios/la-huerta-de-noa-3.jpg",
+      "/images/negocios/la-huerta-de-noa-4.jpg",
+      "/images/negocios/la-huerta-de-noa-5.jpg"
+    ]
+  },
+  {
+    "slug": "buenos-dias-princesa-coslada",
+    "name": "Buenos días princesa Coslada",
+    "description": "Cafetería acogedora en Coslada, ideal para comenzar el día con un buen desayuno o disfrutar de una merienda en un ambiente agradable. Ofrece una variedad de cafés, infusiones y opciones de repostería para los vecinos de la zona. Es un punto de encuentro cómodo y tranquilo para el día a día.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Hospital Universitario del Henares, Av. de Marie Curie, 2, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de desayunos y meriendas",
+      "Cafés especiales, tés e infusiones",
+      "Bollería, repostería y tostadas",
+      "Consumo en el establecimiento",
+      "Opciones para llevar"
+    ],
+    "destacados": [
+      "Ambiente agradable y acogedor",
+      "Ideal para desayunos y pausas diarias"
+    ],
+    "rating": 4.4,
+    "numReviews": 105,
+    "placeId": "ChIJdQHu4NQxQg0RZePBrUwQrmM",
+    "googleCategory": "Cafetería",
+    "phone": "+34 918 84 22 20",
+    "website": "https://www.bdp-buenosdiasprincesa.com/",
+    "lat": 40.4184074,
+    "lng": -3.5334942,
+    "image": "/images/negocios/buenos-dias-princesa-coslada.jpg",
+    "images": [
+      "/images/negocios/buenos-dias-princesa-coslada.jpg",
+      "/images/negocios/buenos-dias-princesa-coslada-2.jpg",
+      "/images/negocios/buenos-dias-princesa-coslada-3.jpg",
+      "/images/negocios/buenos-dias-princesa-coslada-4.jpg",
+      "/images/negocios/buenos-dias-princesa-coslada-5.jpg"
+    ]
+  },
+  {
+    "slug": "cafeteria-el-rincon-de-ilda",
+    "name": "Cafetería El Rincón de Ilda",
+    "description": "Bar de ambiente local situado en el municipio de Coslada, perfecto para tomar algo en un entorno familiar y distendido. Ofrece servicio de bebidas, raciones y aperitivos tradicionales para los residentes de la zona. Es un espacio idóneo tanto para el café de la mañana como para el aperitivo del fin de semana.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de Viena, 4, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de bar y cafetería",
+      "Desayunos con café y tostadas",
+      "Variedad de tapas y raciones",
+      "Bebidas frías y calientes",
+      "Consumo en barra y mesa"
+    ],
+    "destacados": [
+      "Ambiente de barrio cercano y familiar",
+      "Variedad de aperitivos y raciones tradicionales"
+    ],
+    "rating": 4.3,
+    "numReviews": 176,
+    "placeId": "ChIJc0XppH8wQg0RRQ87zBJ3nEs",
+    "googleCategory": "Bar",
+    "phone": "+34 911 26 45 73",
+    "lat": 40.4196371,
+    "lng": -3.5426637,
+    "image": "/images/negocios/cafeteria-el-rincon-de-ilda.jpg",
+    "images": [
+      "/images/negocios/cafeteria-el-rincon-de-ilda.jpg",
+      "/images/negocios/cafeteria-el-rincon-de-ilda-2.jpg",
+      "/images/negocios/cafeteria-el-rincon-de-ilda-3.jpg",
+      "/images/negocios/cafeteria-el-rincon-de-ilda-4.jpg",
+      "/images/negocios/cafeteria-el-rincon-de-ilda-5.jpg"
+    ]
+  },
+  {
+    "slug": "cafe-jp",
+    "name": "Café JP",
+    "description": "Cafetería de referencia en Coslada que ofrece un espacio idóneo para disfrutar de un buen café a cualquier hora del día. Cuenta con una oferta variada de desayunos, meriendas y aperitivos sencillos para los vecinos del municipio. Su ambiente tranquilo invita tanto a la desconexión como a breves reuniones de trabajo.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de la Cañada, 39, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de cafetería completo",
+      "Desayunos variados y meriendas",
+      "Bollería y tostadas preparadas al momento",
+      "Bebidas para llevar",
+      "Atención en mesa y barra"
+    ],
+    "destacados": [
+      "Servicio rápido y eficiente",
+      "Espacio cómodo para el día a día"
+    ],
+    "rating": 4.6,
+    "numReviews": 50,
+    "placeId": "ChIJxzjeNoYwQg0Rvl2-F5-AApA",
+    "googleCategory": "Cafetería",
+    "lat": 40.4271925,
+    "lng": -3.5378014,
+    "image": "/images/negocios/cafe-jp.jpg",
+    "images": [
+      "/images/negocios/cafe-jp.jpg",
+      "/images/negocios/cafe-jp-2.jpg",
+      "/images/negocios/cafe-jp-3.jpg",
+      "/images/negocios/cafe-jp-4.jpg",
+      "/images/negocios/cafe-jp-5.jpg"
+    ]
+  },
+  {
+    "slug": "bar-cafeteria-luis",
+    "name": "Bar Cafetería Luis",
+    "description": "Bar cafetería tradicional ubicado en Coslada, donde se ofrece un trato cercano y un servicio de hostelería clásico. Es un establecimiento muy frecuentado por los vecinos para desayunar, tomar el aperitivo o disfrutar de una caña con su correspondiente tapa. Un lugar de encuentro de toda la vida en el barrio.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. del Miño, 16, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de cafetería y desayunos",
+      "Venta de bebidas y refrescos",
+      "Tapas y aperitivos con la consumición",
+      "Raciones y bocadillos variados",
+      "Atención en barra y mesas"
+    ],
+    "destacados": [
+      "Trato muy familiar y cercano",
+      "Excelente opción para el aperitivo diario"
+    ],
+    "rating": 4.3,
+    "numReviews": 109,
+    "placeId": "ChIJi8utxoYwQg0RcPvWlj7xHdo",
+    "googleCategory": "Cafetería",
+    "lat": 40.4241095,
+    "lng": -3.5373655,
+    "image": "/images/negocios/bar-cafeteria-luis.jpg",
+    "images": [
+      "/images/negocios/bar-cafeteria-luis.jpg",
+      "/images/negocios/bar-cafeteria-luis-2.jpg",
+      "/images/negocios/bar-cafeteria-luis-3.jpg",
+      "/images/negocios/bar-cafeteria-luis-4.jpg",
+      "/images/negocios/bar-cafeteria-luis-5.jpg"
+    ]
+  },
+  {
+    "slug": "churreria-cafeteria-jh-i",
+    "name": "Churreria - Cafeteria Jh - I",
+    "description": "Cafetería tradicional ubicada en Coslada, ideal para los vecinos que buscan un punto de encuentro a cualquier hora del día. Destaca por su ambiente cercano y su oferta orientada al desayuno y la merienda en el municipio. Un establecimiento de barrio pensado para el día a día de la comunidad local.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Venezuela, 15, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de cafetería y bebidas calientes",
+      "Desayunos y meriendas",
+      "Venta de churros y porras",
+      "Consumo en el establecimiento",
+      "Servicio para llevar"
+    ],
+    "destacados": [
+      "Ubicación accesible en Coslada",
+      "Ambiente familiar y cercano"
+    ],
+    "rating": 4.4,
+    "numReviews": 415,
+    "placeId": "ChIJaXUd5YcwQg0RiBDyzToJ2j0",
+    "googleCategory": "Cafetería",
+    "lat": 40.4276712,
+    "lng": -3.5400499,
+    "image": "/images/negocios/churreria-cafeteria-jh-i.jpg",
+    "images": [
+      "/images/negocios/churreria-cafeteria-jh-i.jpg",
+      "/images/negocios/churreria-cafeteria-jh-i-2.jpg",
+      "/images/negocios/churreria-cafeteria-jh-i-3.jpg",
+      "/images/negocios/churreria-cafeteria-jh-i-4.jpg",
+      "/images/negocios/churreria-cafeteria-jh-i-5.jpg"
+    ]
+  },
+  {
+    "slug": "cafeteria-miky-tapas-sin-fin",
+    "name": "Cafeteria Miky- Tapas sin fin",
+    "description": "Bar de barrio situado en Coslada, idóneo para disfrutar de un ambiente distendido con amigos o familia. Ofrece un espacio cómodo para el encuentro de los vecinos de la zona, con una propuesta centrada en la hostelería tradicional. Es un lugar de referencia para el tapeo y el ocio informal en el municipio.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de Madrid, 4, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de bar y cafetería",
+      "Variedad de tapas y raciones",
+      "Bebidas y refrescos",
+      "Consumo en local",
+      "Servicio de mesas"
+    ],
+    "destacados": [
+      "Ideal para el tapeo local",
+      "Ambiente agradable y distendido"
+    ],
+    "rating": 4.3,
+    "numReviews": 370,
+    "placeId": "ChIJJagP330wQg0RjUDplNcXLvA",
+    "googleCategory": "Bar",
+    "phone": "+34 642 04 26 48",
+    "lat": 40.4230512,
+    "lng": -3.5421755,
+    "image": "/images/negocios/cafeteria-miky-tapas-sin-fin.jpg",
+    "images": [
+      "/images/negocios/cafeteria-miky-tapas-sin-fin.jpg",
+      "/images/negocios/cafeteria-miky-tapas-sin-fin-2.jpg",
+      "/images/negocios/cafeteria-miky-tapas-sin-fin-3.jpg",
+      "/images/negocios/cafeteria-miky-tapas-sin-fin-4.jpg",
+      "/images/negocios/cafeteria-miky-tapas-sin-fin-5.jpg"
+    ]
+  },
+  {
+    "slug": "pastelerias-roma-s-l",
+    "name": "PASTELERIAS ROMA S.L.",
+    "description": "Panadería y pastelería de corte tradicional que da servicio a los residentes de Coslada. Ofrece una amplia variedad de productos horneados diarios para acompañar las mesas de los hogares del municipio. Un comercio de proximidad esencial para las compras cotidianas de los vecinos.",
+    "category": "panaderias",
+    "categoryName": "Panaderías y Obradores",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de Roma, 11, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de pan del día",
+      "Bollería y pastelería",
+      "Encargos para celebraciones",
+      "Atención personalizada en tienda",
+      "Productos de repostería tradicional"
+    ],
+    "destacados": [
+      "Variedad de productos horneados",
+      "Atención cercana de barrio"
+    ],
+    "rating": 4.4,
+    "numReviews": 136,
+    "placeId": "ChIJUeG9o4AwQg0R61XPc0zy26A",
+    "googleCategory": "Panadería",
+    "phone": "+34 916 72 55 97",
+    "lat": 40.4221788,
+    "lng": -3.5403958,
+    "image": "/images/negocios/pastelerias-roma-s-l.jpg",
+    "images": [
+      "/images/negocios/pastelerias-roma-s-l.jpg",
+      "/images/negocios/pastelerias-roma-s-l-2.jpg",
+      "/images/negocios/pastelerias-roma-s-l-3.jpg",
+      "/images/negocios/pastelerias-roma-s-l-4.jpg",
+      "/images/negocios/pastelerias-roma-s-l-5.jpg"
+    ]
+  },
+  {
+    "slug": "panaderia-baki-pan",
+    "name": "Panadería Baki Pan",
+    "description": "Establecimiento especializado en panadería ubicado en el municipio de Coslada. Se enfoca en ofrecer productos frescos y de consumo diario para el vecindario de la zona. Un comercio local idóneo para adquirir el pan de cada día y repostería básica.",
+    "category": "panaderias",
+    "categoryName": "Panaderías y Obradores",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Calle del Dr. Fleming, 39, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de pan fresco diario",
+      "Bollería variada",
+      "Productos de alimentación básica",
+      "Atención al público en mostrador",
+      "Servicio de reservas de pan"
+    ],
+    "destacados": [
+      "Producto fresco diario",
+      "Servicio rápido y de proximidad"
+    ],
+    "rating": 4.3,
+    "numReviews": 919,
+    "placeId": "ChIJ7Tf5RgwwQg0ReU4ww2esLS0",
+    "googleCategory": "Panadería",
+    "phone": "+34 912 31 31 73",
+    "lat": 40.4240491,
+    "lng": -3.5646863,
+    "image": "/images/negocios/panaderia-baki-pan.jpg",
+    "images": [
+      "/images/negocios/panaderia-baki-pan.jpg",
+      "/images/negocios/panaderia-baki-pan-2.jpg",
+      "/images/negocios/panaderia-baki-pan-3.jpg",
+      "/images/negocios/panaderia-baki-pan-4.jpg",
+      "/images/negocios/panaderia-baki-pan-5.jpg"
+    ]
+  },
+  {
+    "slug": "casa-brioche",
+    "name": "Casa Brioche",
+    "description": "Panadería mayorista ubicada en Coslada, orientada a abastecer tanto a profesionales del sector como a clientes que buscan volumen. Su actividad se centra en la producción y distribución de productos de panadería y masas. Un punto clave para el suministro comercial en la zona.",
+    "category": "panaderias",
+    "categoryName": "Panaderías y Obradores",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. del Océano Pacífico, 1, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Distribución de pan al por mayor",
+      "Suministro a hostelería y comercios",
+      "Elaboración de productos de panadería",
+      "Atención a clientes profesionales",
+      "Pedidos de gran volumen"
+    ],
+    "destacados": [
+      "Capacidad de suministro mayorista",
+      "Servicio orientado a profesionales"
+    ],
+    "rating": 4.5,
+    "numReviews": 75,
+    "placeId": "ChIJ2X1xgk0pQg0RrnwzgQW5_ic",
+    "googleCategory": "Panadería mayorista",
+    "phone": "+34 917 55 60 50",
+    "website": "http://casabrioche.com/",
+    "lat": 40.4185399,
+    "lng": -3.5697809,
+    "image": "/images/negocios/casa-brioche.jpg",
+    "images": [
+      "/images/negocios/casa-brioche.jpg",
+      "/images/negocios/casa-brioche-2.jpg",
+      "/images/negocios/casa-brioche-3.jpg",
+      "/images/negocios/casa-brioche-4.jpg",
+      "/images/negocios/casa-brioche-5.jpg"
+    ]
+  },
+  {
+    "slug": "al-pan-pan",
+    "name": "Al Pan Pan",
+    "description": "Panadería de proximidad situada en Coslada, comprometida con ofrecer productos cotidianos de calidad a los vecinos del barrio. Su oferta incluye diferentes variedades de pan y opciones dulces para el día a día. Un comercio de confianza para las compras familiares.",
+    "category": "panaderias",
+    "categoryName": "Panaderías y Obradores",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de los Conquistadores, 1, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Despacho de pan diario",
+      "Venta de bollería y dulces",
+      "Productos para el desayuno",
+      "Atención directa al cliente",
+      "Encargos de pan especiales"
+    ],
+    "destacados": [
+      "Ubicación cómoda para el vecindario",
+      "Trato amable y personalizado"
+    ],
+    "rating": 4.6,
+    "numReviews": 97,
+    "placeId": "ChIJ4aVeew4wQg0R8Lypv0g7MlA",
+    "googleCategory": "Panadería",
+    "lat": 40.4249367,
+    "lng": -3.5666347,
+    "image": "/images/negocios/al-pan-pan.jpg",
+    "images": [
+      "/images/negocios/al-pan-pan.jpg",
+      "/images/negocios/al-pan-pan-2.jpg"
+    ]
+  },
+  {
+    "slug": "levaduramadre-2",
+    "name": "Levaduramadre",
+    "description": "Panadería ubicada en Coslada que destaca por su enfoque en la elaboración de panes y productos de repostería. Ofrece a los vecinos de la zona una alternativa para sus compras diarias de pan de calidad y productos de masa madre. Un espacio moderno y acogedor para el consumidor local.",
+    "category": "panaderias",
+    "categoryName": "Panaderías y Obradores",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. Mar del Nte., 2, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de panes de masa madre",
+      "Bollería y pastelería fina",
+      "Productos gourmet y de acompañamiento",
+      "Atención al cliente en tienda",
+      "Servicio de cafetería para llevar"
+    ],
+    "destacados": [
+      "Especialización en panadería de calidad",
+      "Presentación cuidada de los productos"
+    ],
+    "rating": 4.5,
+    "numReviews": 162,
+    "placeId": "ChIJGWVCL2oxQg0RrMVT70GIAlg",
+    "googleCategory": "Panadería",
+    "phone": "+34 916 69 72 00",
+    "website": "https://www.levaduramadre.es/",
+    "lat": 40.419677,
+    "lng": -3.5721831,
+    "image": "/images/negocios/levaduramadre-2.jpg",
+    "images": [
+      "/images/negocios/levaduramadre-2.jpg",
+      "/images/negocios/levaduramadre-2-2.jpg",
+      "/images/negocios/levaduramadre-2-3.jpg",
+      "/images/negocios/levaduramadre-2-4.jpg",
+      "/images/negocios/levaduramadre-2-5.jpg"
+    ]
+  },
+  {
+    "slug": "ferreteria-dato-en-coslada-afilador-copia-de-llaves-arr",
+    "name": "FERRETERIA DATO en Coslada - Afilador - Copia de llaves - Arreglo de ollas (Expres y Super rápidas) - Rodamientos - Cremonas",
+    "description": "Ferretería tradicional y multiservicio en Coslada, especializada en dar soluciones rápidas a los problemas del hogar. Ofrece una amplia gama de servicios técnicos que van desde el duplicado de llaves hasta reparaciones específicas de menaje. Un comercio de barrio indispensable para el mantenimiento doméstico.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de Berlin, 11, Local, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Duplicado y copia de llaves",
+      "Servicio de afilado de herramientas",
+      "Arreglo de ollas exprés y rápidas",
+      "Venta de rodamientos y cremonas",
+      "Venta de artículos de ferretería general"
+    ],
+    "destacados": [
+      "Servicios técnicos muy específicos",
+      "Atención y asesoramiento personalizado"
+    ],
+    "rating": 4.7,
+    "numReviews": 209,
+    "placeId": "ChIJKUoz9H8wQg0Rv5kjGhbWdxc",
+    "googleCategory": "Ferretería",
+    "phone": "+34 667 76 12 00",
+    "website": "https://wa.me/message/VQXPERCU3TMTD1",
+    "lat": 40.4180819,
+    "lng": -3.5417941,
+    "image": "/images/negocios/ferreteria-dato-en-coslada-afilador-copia-de-llaves-arr.jpg",
+    "images": [
+      "/images/negocios/ferreteria-dato-en-coslada-afilador-copia-de-llaves-arr.jpg",
+      "/images/negocios/ferreteria-dato-en-coslada-afilador-copia-de-llaves-arr-2.jpg",
+      "/images/negocios/ferreteria-dato-en-coslada-afilador-copia-de-llaves-arr-3.jpg",
+      "/images/negocios/ferreteria-dato-en-coslada-afilador-copia-de-llaves-arr-4.jpg",
+      "/images/negocios/ferreteria-dato-en-coslada-afilador-copia-de-llaves-arr-5.jpg"
+    ]
+  },
+  {
+    "slug": "ferriplus-cadena88",
+    "name": "Ferriplus - Cadena88",
+    "description": "Ferretería asociada a la red Cadena88 en Coslada, lo que garantiza un amplio catálogo de productos para el hogar, el bricolaje y la reforma. Es el lugar de referencia para vecinos y profesionales que buscan herramientas y suministros de calidad en la zona. Ofrece soluciones prácticas con el respaldo de una gran marca.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de Vicálvaro, 4, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de herramientas y maquinaria",
+      "Artículos de bricolaje y jardín",
+      "Menaje del hogar y fontanería",
+      "Copia de llaves y mandos",
+      "Asesoramiento técnico para reformas"
+    ],
+    "destacados": [
+      "Amplio catálogo de productos en stock",
+      "Garantía y respaldo de una gran cadena"
+    ],
+    "rating": 4.3,
+    "numReviews": 233,
+    "placeId": "ChIJd7F47YYwQg0R4eufTr47-8g",
+    "googleCategory": "Ferretería",
+    "phone": "+34 917 56 92 18",
+    "website": "http://www.ferriplus.es/",
+    "lat": 40.4251838,
+    "lng": -3.5373232,
+    "image": "/images/negocios/ferriplus-cadena88.jpg",
+    "images": [
+      "/images/negocios/ferriplus-cadena88.jpg",
+      "/images/negocios/ferriplus-cadena88-2.jpg",
+      "/images/negocios/ferriplus-cadena88-3.jpg",
+      "/images/negocios/ferriplus-cadena88-4.jpg",
+      "/images/negocios/ferriplus-cadena88-5.jpg"
+    ]
+  },
+  {
+    "slug": "ferreteria-coslada-s-a",
+    "name": "Ferretería Coslada, S.A.",
+    "description": "Establecimiento de ferretería de larga trayectoria en Coslada, especializado en el suministro de material tanto para particulares como para profesionales de la construcción y las reformas. Cuenta con un inventario extenso para cubrir cualquier necesidad de mantenimiento o reparación. Un referente de fiabilidad en el municipio.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de la Cañada, nº 40, 28820 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Suministro de material de ferretería",
+      "Herramientas profesionales y domésticas",
+      "Tornillería y fijaciones de todo tipo",
+      "Material eléctrico y de fontanería",
+      "Atención y asesoramiento a profesionales"
+    ],
+    "destacados": [
+      "Gran variedad de referencias y stock",
+      "Servicio especializado para profesionales y particulares"
+    ],
+    "rating": 4.3,
+    "numReviews": 501,
+    "placeId": "ChIJ6x2JrIkwQg0RQ1t_xIgTWHo",
+    "googleCategory": "Ferretería",
+    "phone": "+34 916 72 04 63",
+    "website": "http://www.ferreteriacoslada.es/",
+    "lat": 40.4304161,
+    "lng": -3.5379049,
+    "image": "/images/negocios/ferreteria-coslada-s-a.jpg",
+    "images": [
+      "/images/negocios/ferreteria-coslada-s-a.jpg",
+      "/images/negocios/ferreteria-coslada-s-a-2.jpg",
+      "/images/negocios/ferreteria-coslada-s-a-3.jpg",
+      "/images/negocios/ferreteria-coslada-s-a-4.jpg",
+      "/images/negocios/ferreteria-coslada-s-a-5.jpg"
+    ]
+  },
+  {
+    "slug": "sanfer",
+    "name": "Sanfer",
+    "description": "Ferretería de proximidad ubicada en Coslada, orientada a resolver las necesidades cotidianas del hogar y de profesionales de las reformas. Ofrece una amplia gama de productos de ferretería general, herramientas y suministros para el mantenimiento diario. Es un establecimiento de referencia en la zona para encontrar soluciones rápidas y asesoramiento directo.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de los Príncipes de España, 3, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de herramientas manuales y eléctricas",
+      "Duplicado de llaves y mandos",
+      "Artículos de fontanería y electricidad",
+      "Tornillería y herrajes a granel",
+      "Pinturas y accesorios de bricolaje"
+    ],
+    "destacados": [
+      "Atención personalizada y asesoramiento técnico",
+      "Variedad de stock para el hogar y profesionales",
+      "Ubicación accesible en el municipio de Coslada"
+    ],
+    "rating": 4.4,
+    "numReviews": 49,
+    "placeId": "ChIJ03Tkl3owQg0RKyWCK123zBM",
+    "googleCategory": "Ferretería",
+    "phone": "+34 606 79 12 07",
+    "lat": 40.4265582,
+    "lng": -3.5495558,
+    "image": "/images/negocios/sanfer.jpg",
+    "images": [
+      "/images/negocios/sanfer.jpg",
+      "/images/negocios/sanfer-2.jpg",
+      "/images/negocios/sanfer-3.jpg",
+      "/images/negocios/sanfer-4.jpg"
+    ]
+  },
+  {
+    "slug": "showroom-barral-tienda-autoservicio-y-almacen",
+    "name": "Showroom Barral. Tienda autoservicio y almacén.",
+    "description": "Establecimiento especializado en ferretería, bricolaje y suministros industriales situado en Coslada. Cuenta con un espacio de exposición y una zona de autoservicio pensada tanto para particulares como para profesionales del sector de la construcción y las reformas. Su formato combina la comodidad de la compra rápida con un amplio almacén de materiales.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. del Jarama, 13, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Exposición de materiales y acabados",
+      "Venta de maquinaria y herramienta profesional",
+      "Suministros industriales y de construcción",
+      "Servicio de autoservicio asistido",
+      "Sistemas de fijación y cerrajería"
+    ],
+    "destacados": [
+      "Amplia superficie de exposición y almacén",
+      "Variedad de marcas y gamas profesionales",
+      "Facilidad de compra para autónomos y empresas"
+    ],
+    "rating": 4.3,
+    "numReviews": 316,
+    "placeId": "ChIJryWBZokwQg0RtBMWArMUPJM",
+    "googleCategory": "Ferretería",
+    "phone": "+34 916 72 04 13",
+    "website": "http://www.barral.com/",
+    "lat": 40.4336561,
+    "lng": -3.5375498,
+    "image": "/images/negocios/showroom-barral-tienda-autoservicio-y-almacen.jpg",
+    "images": [
+      "/images/negocios/showroom-barral-tienda-autoservicio-y-almacen.jpg",
+      "/images/negocios/showroom-barral-tienda-autoservicio-y-almacen-2.jpg",
+      "/images/negocios/showroom-barral-tienda-autoservicio-y-almacen-3.jpg",
+      "/images/negocios/showroom-barral-tienda-autoservicio-y-almacen-4.jpg",
+      "/images/negocios/showroom-barral-tienda-autoservicio-y-almacen-5.jpg"
+    ]
+  },
+  {
+    "slug": "taller-mecanico-ds-motor",
+    "name": "Taller mecánico DS MOTOR",
+    "description": "Taller mecánico ubicado en Coslada que ofrece servicios de mantenimiento preventivo y reparación de vehículos multimarca. Cuenta con equipamiento para el diagnóstico y la resolución de averías mecánicas comunes, garantizando la puesta a punto del automóvil. Un taller de confianza para los conductores de la zona que buscan un servicio profesional y cercano.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Tierra de Barros, 3, nave 26, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Mantenimiento programado y cambio de aceite",
+      "Diagnosis electrónica de averías",
+      "Reparación de sistemas de frenos y suspensión",
+      "Revisión pre-ITV con puesta a punto",
+      "Cambio de filtros, baterías y bujías"
+    ],
+    "destacados": [
+      "Servicio multimarca integral",
+      "Diagnóstico preciso con tecnología actualizada",
+      "Trato directo y explicaciones claras al cliente"
+    ],
+    "rating": 4.8,
+    "numReviews": 87,
+    "placeId": "ChIJb8gwymMwQg0RMA4PLtUROIA",
+    "googleCategory": "Taller mecánico",
+    "phone": "+34 673 87 36 04",
+    "lat": 40.4321872,
+    "lng": -3.5438717,
+    "image": "/images/negocios/taller-mecanico-ds-motor.jpg",
+    "images": [
+      "/images/negocios/taller-mecanico-ds-motor.jpg",
+      "/images/negocios/taller-mecanico-ds-motor-2.jpg",
+      "/images/negocios/taller-mecanico-ds-motor-3.jpg",
+      "/images/negocios/taller-mecanico-ds-motor-4.jpg",
+      "/images/negocios/taller-mecanico-ds-motor-5.jpg"
+    ]
+  },
+  {
+    "slug": "talleres-bruster",
+    "name": "Talleres Bruster",
+    "description": "Taller de reparación de automóviles en Coslada especializado en ofrecer soluciones mecánicas y de mantenimiento para todo tipo de turismos. Su equipo técnico se encarga de asegurar el correcto funcionamiento del vehículo mediante revisiones periódicas y reparaciones garantizadas. Es una opción idónea para los vecinos del municipio que requieren un servicio rápido y eficaz.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de Vicálvaro, 103, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Mecánica general y puesta a punto",
+      "Cambio de neumáticos y alineación",
+      "Reparación de sistemas de embrague y transmisión",
+      "Revisión y carga del aire acondicionado",
+      "Preparación y traslado a la inspección ITV"
+    ],
+    "destacados": [
+      "Experiencia en mecánica general multimarca",
+      "Compromiso con los plazos de entrega",
+      "Ubicación conveniente en el área de Coslada"
+    ],
+    "rating": 4.4,
+    "numReviews": 78,
+    "placeId": "ChIJaQxQxQ0wQg0R2SIRJpgFRM8",
+    "googleCategory": "Taller de reparación de automóviles",
+    "phone": "+34 690 93 98 94",
+    "lat": 40.4199463,
+    "lng": -3.5387681,
+    "image": "/images/negocios/talleres-bruster.jpg",
+    "images": [
+      "/images/negocios/talleres-bruster.jpg",
+      "/images/negocios/talleres-bruster-2.jpg",
+      "/images/negocios/talleres-bruster-3.jpg",
+      "/images/negocios/talleres-bruster-4.jpg",
+      "/images/negocios/talleres-bruster-5.jpg"
+    ]
+  },
+  {
+    "slug": "rallye-auto-sport-s-l-taller-mecanico",
+    "name": "Rallye Auto Sport s.l - Taller mecánico",
+    "description": "Taller de reparación de automóviles situado en San Fernando de Henares, dedicado al cuidado y mantenimiento integral de vehículos. Ofrece un servicio técnico especializado para resolver desde las revisiones más sencillas hasta averías complejas de mecánica y electricidad. Su ubicación facilita el acceso a los conductores de San Fernando y de los barrios colindantes como El Cañaveral.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de la Era, 10, BAJO, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Reparaciones de mecánica general y motor",
+      "Mantenimiento preventivo y cambios de fluidos",
+      "Revisión de sistemas de seguridad y frenado",
+      "Diagnosis de fallos eléctricos y electrónicos",
+      "Sustitución de amortiguadores y neumáticos"
+    ],
+    "destacados": [
+      "Servicio técnico cualificado para diversas marcas",
+      "Atención profesional orientada a la seguridad vial",
+      "Excelente conexión con San Fernando y alrededores"
+    ],
+    "rating": 4.8,
+    "numReviews": 189,
+    "placeId": "ChIJhyusRLdEQg0RrQQJKF4VIsU",
+    "googleCategory": "Taller de reparación de automóviles",
+    "phone": "+34 916 73 99 14",
+    "website": "https://www.rallyeautosport.es/",
+    "lat": 40.4259306,
+    "lng": -3.5367657,
+    "image": "/images/negocios/rallye-auto-sport-s-l-taller-mecanico.jpg",
+    "images": [
+      "/images/negocios/rallye-auto-sport-s-l-taller-mecanico.jpg",
+      "/images/negocios/rallye-auto-sport-s-l-taller-mecanico-2.jpg",
+      "/images/negocios/rallye-auto-sport-s-l-taller-mecanico-3.jpg",
+      "/images/negocios/rallye-auto-sport-s-l-taller-mecanico-4.jpg",
+      "/images/negocios/rallye-auto-sport-s-l-taller-mecanico-5.jpg"
+    ]
+  },
+  {
+    "slug": "coslamovil",
+    "name": "Coslamovil",
+    "description": "Taller de reparación de automóviles ubicado en Coslada, especializado en dar soporte técnico y mantenimiento a vehículos particulares y comerciales. Dispone de las herramientas necesarias para llevar a cabo diagnósticos precisos y reparaciones eficientes que garantizan la fiabilidad del coche en carretera. Destaca por su orientación al cliente y su gestión ágil de las citas.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. del Ing. Fernández Casado, 13, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Revisiones oficiales y mantenimiento periódico",
+      "Reparación de sistemas de escape y emisiones",
+      "Cambio de pastillas, discos de freno y amortiguadores",
+      "Diagnosis y reparación de averías eléctricas",
+      "Chequeo completo pre-ITV"
+    ],
+    "destacados": [
+      "Instalaciones equipadas para mecánica moderna",
+      "Atención ágil para minimizar el tiempo de espera",
+      "Presupuestos claros y sin sorpresas"
+    ],
+    "rating": 4.8,
+    "numReviews": 75,
+    "placeId": "ChIJURtf144wQg0R-L_vcS6Bfgc",
+    "googleCategory": "Taller de reparación de automóviles",
+    "phone": "+34 916 72 10 25",
+    "lat": 40.431101,
+    "lng": -3.5351098
+  },
+  {
+    "slug": "galauto-motor-coslada",
+    "name": "Galauto Motor Coslada",
+    "description": "Taller mecánico y de reparación de automóviles en Coslada que ofrece un servicio integral para mantener el vehículo en óptimas condiciones de uso. Su equipo de profesionales atiende averías mecánicas, eléctricas y de mantenimiento general con altos estándares de calidad. Es un punto de referencia para los conductores locales que buscan fiabilidad y un trato profesional.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. del Ing. Fernández Casado, 1, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Mantenimiento integral y cambio de aceite",
+      "Reparación de motores y cajas de cambio",
+      "Diagnosis computarizada del vehículo",
+      "Servicio de neumáticos y equilibrado",
+      "Revisión de sistemas de climatización"
+    ],
+    "destacados": [
+      "Profesionales con sólida formación técnica",
+      "Uso de recambios de calidad garantizada",
+      "Servicio adaptado a las necesidades del conductor"
+    ],
+    "rating": 4.8,
+    "numReviews": 147,
+    "placeId": "ChIJm2VzbYowQg0RaVn8yCpOVmk",
+    "googleCategory": "Taller de reparación de automóviles",
+    "phone": "+34 914 85 22 06",
+    "website": "http://www.galauto.es/",
+    "lat": 40.4312374,
+    "lng": -3.5364247,
+    "image": "/images/negocios/galauto-motor-coslada.jpg",
+    "images": [
+      "/images/negocios/galauto-motor-coslada.jpg",
+      "/images/negocios/galauto-motor-coslada-2.jpg",
+      "/images/negocios/galauto-motor-coslada-3.jpg",
+      "/images/negocios/galauto-motor-coslada-4.jpg"
+    ]
+  },
+  {
+    "slug": "tecnoautofm",
+    "name": "tecnoautofm",
+    "description": "Taller de reparación de automóviles situado en Coslada, enfocado en dar soluciones tecnológicas y mecánicas para el automóvil actual. Combina la mecánica tradicional con avanzados sistemas de diagnosis para identificar y resolver cualquier anomalía en el vehículo de forma eficiente. Ideal para quienes buscan un mantenimiento riguroso y adaptado a las especificaciones del fabricante.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Argentina, 20B, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Diagnosis electrónica avanzada de sistemas",
+      "Mantenimiento preventivo y correctivo",
+      "Reparación de sistemas de inyección y motor",
+      "Servicio de frenos, dirección y suspensión",
+      "Puesta a punto para la ITV"
+    ],
+    "destacados": [
+      "Especialización en diagnosis y electrónica del automóvil",
+      "Tratamiento personalizado para cada vehículo",
+      "Soluciones eficientes para averías complejas"
+    ],
+    "rating": 4.8,
+    "numReviews": 50,
+    "placeId": "ChIJsUj-ZX0wQg0RYFeGVsLSM04",
+    "googleCategory": "Taller de reparación de automóviles",
+    "phone": "+34 916 72 08 09",
+    "website": "https://www.tallertecnoautofm.es/",
+    "lat": 40.426494,
+    "lng": -3.54184
+  },
+  {
+    "slug": "vertrisa-s-l",
+    "name": "Vertrisa S.L.",
+    "description": "Taller de reparación de automóviles con sede en Coslada, consolidado en la zona por ofrecer un servicio de asistencia técnica y mecánica de confianza. Sus instalaciones están preparadas para acoger vehículos de diferentes gamas y realizar intervenciones de mantenimiento, reparación y puesta a punto con total seguridad. Un taller de proximidad comprometido con el buen funcionamiento de su coche.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. del Ing. Fernández Casado, 7, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Mecánica rápida y cambios de aceite",
+      "Reparación de sistemas de transmisión y embrague",
+      "Revisión de frenos, dirección y amortiguación",
+      "Diagnosis de fallos de motor",
+      "Preparación completa para la ITV"
+    ],
+    "destacados": [
+      "Servicio multimarca de confianza en Coslada",
+      "Atención profesional y transparente",
+      "Instalaciones adecuadas para reparaciones diversas"
+    ],
+    "rating": 4.8,
+    "numReviews": 616,
+    "placeId": "ChIJWYa_RIkwQg0RpkfP5laS4TI",
+    "googleCategory": "Taller de reparación de automóviles",
+    "phone": "+34 916 69 05 17",
+    "website": "https://talleresvertrisa.com/",
+    "lat": 40.4311984,
+    "lng": -3.5360258,
+    "image": "/images/negocios/vertrisa-s-l.jpg",
+    "images": [
+      "/images/negocios/vertrisa-s-l.jpg",
+      "/images/negocios/vertrisa-s-l-2.jpg",
+      "/images/negocios/vertrisa-s-l-3.jpg",
+      "/images/negocios/vertrisa-s-l-4.jpg",
+      "/images/negocios/vertrisa-s-l-5.jpg"
+    ]
+  },
+  {
+    "slug": "talleres-j-cisneros",
+    "name": "Talleres J Cisneros",
+    "description": "Taller de reparación de automóviles ubicado en Coslada, dedicado a ofrecer servicios de mecánica general y mantenimiento para conductores de la zona. Se caracteriza por un trato cercano y un enfoque práctico para resolver las incidencias del vehículo de manera rápida y segura. Su equipo técnico cuenta con la experiencia necesaria para abordar las reparaciones habituales del automóvil.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "C. de Tierra de Barros, 1, 28823 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Mantenimiento general y cambio de filtros",
+      "Reparación de frenos y elementos de seguridad",
+      "Sustitución de baterías, alternadores y arranques",
+      "Revisión y reparación de suspensiones",
+      "Inspección pre-ITV detallada"
+    ],
+    "destacados": [
+      "Trato familiar y asesoramiento honesto",
+      "Rapidez en reparaciones de mecánica rápida",
+      "Buena relación calidad-precio en el municipio"
+    ],
+    "rating": 4.4,
+    "numReviews": 155,
+    "placeId": "ChIJ8zXxSmIwQg0R-foGp1ryhig",
+    "googleCategory": "Taller de reparación de automóviles",
+    "phone": "+34 916 73 25 54",
+    "website": "https://www.talleresjcisneros.com/",
+    "lat": 40.4319376,
+    "lng": -3.5434407,
+    "image": "/images/negocios/talleres-j-cisneros.jpg",
+    "images": [
+      "/images/negocios/talleres-j-cisneros.jpg",
+      "/images/negocios/talleres-j-cisneros-2.jpg",
+      "/images/negocios/talleres-j-cisneros-3.jpg",
+      "/images/negocios/talleres-j-cisneros-4.jpg",
+      "/images/negocios/talleres-j-cisneros-5.jpg"
+    ]
+  },
+  {
+    "slug": "bigmat-silviu-materiales-de-construccion",
+    "name": "BigMat Silviu Materiales de Construcción",
+    "description": "Establecimiento especializado en la venta de herramientas y materiales de construcción ubicado en Coslada. Ofrece una amplia gama de productos para profesionales de las reformas y particulares que buscan realizar mejoras en su hogar. Es un punto de referencia en la zona para adquirir suministros de obra y bricolaje.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de la Constitución, 7, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de herramientas manuales y eléctricas",
+      "Suministro de materiales de construcción",
+      "Asesoramiento técnico para reformas",
+      "Venta de consumibles y accesorios de obra",
+      "Servicio de transporte de materiales a pie de obra"
+    ],
+    "destacados": [
+      "Amplio catálogo de marcas profesionales",
+      "Atención especializada para profesionales y particulares"
+    ],
+    "rating": 4.3,
+    "numReviews": 277,
+    "placeId": "ChIJtY5DuwYwQg0RY0D70D_D1yI",
+    "googleCategory": "Tienda de herramientas",
+    "phone": "+34 616 52 10 16",
+    "website": "https://www.silviumateriales.com/",
+    "lat": 40.4213966,
+    "lng": -3.5751398,
+    "image": "/images/negocios/bigmat-silviu-materiales-de-construccion.jpg",
+    "images": [
+      "/images/negocios/bigmat-silviu-materiales-de-construccion.jpg",
+      "/images/negocios/bigmat-silviu-materiales-de-construccion-2.jpg",
+      "/images/negocios/bigmat-silviu-materiales-de-construccion-3.jpg",
+      "/images/negocios/bigmat-silviu-materiales-de-construccion-4.jpg",
+      "/images/negocios/bigmat-silviu-materiales-de-construccion-5.jpg"
+    ]
+  },
+  {
+    "slug": "pinturas-aldeco-distribuidor-titan-pintores-a-su-servic",
+    "name": "PINTURAS ALDECO distribuidor TITAN - PINTORES A SU SERVICIO",
+    "description": "Ferretería y tienda de pinturas situada en Coslada, especializada en la distribución de productos de pintura y herramientas de bricolaje. El establecimiento ofrece tanto la venta de material para pintar como la coordinación de servicios de pintores profesionales para la zona. Es una opción idónea para proyectos de decoración, mantenimiento y renovación del hogar.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Plaza del Dr. Marañón, 9, 28821 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de pinturas y barnices",
+      "Suministro de herramientas de ferretería y bricolaje",
+      "Servicio de preparación de colores a medida",
+      "Coordinación de servicios de pintores profesionales",
+      "Asesoramiento en la elección de materiales y acabados"
+    ],
+    "destacados": [
+      "Distribuidor oficial de marcas líderes del sector",
+      "Servicio integral que combina venta de material y mano de obra"
+    ],
+    "rating": 4.6,
+    "numReviews": 35,
+    "placeId": "ChIJCyzL9Q0wQg0RObg0xrz56Vc",
+    "googleCategory": "Ferretería",
+    "phone": "+34 669 44 96 58",
+    "website": "http://www.pinturasaldeco.com/",
+    "lat": 40.4255546,
+    "lng": -3.5627863,
+    "image": "/images/negocios/pinturas-aldeco-distribuidor-titan-pintores-a-su-servic.jpg",
+    "images": [
+      "/images/negocios/pinturas-aldeco-distribuidor-titan-pintores-a-su-servic.jpg",
+      "/images/negocios/pinturas-aldeco-distribuidor-titan-pintores-a-su-servic-2.jpg",
+      "/images/negocios/pinturas-aldeco-distribuidor-titan-pintores-a-su-servic-3.jpg",
+      "/images/negocios/pinturas-aldeco-distribuidor-titan-pintores-a-su-servic-4.jpg",
+      "/images/negocios/pinturas-aldeco-distribuidor-titan-pintores-a-su-servic-5.jpg"
+    ]
   }
 ]
