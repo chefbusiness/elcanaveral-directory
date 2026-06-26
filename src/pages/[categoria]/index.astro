@@ -5,6 +5,7 @@ import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import { generateCategoriaPaths, loadZonas, getNegociosByCategoriaYZona } from "@/lib/directory";
 import { getListicleByCategory } from "@/lib/listicles";
+import ZonaFilter from "@/components/ZonaFilter.astro";
 import type { Negocio, Categoria } from "@/lib/directory";
 import seoOverrides from "@/data/seo-overrides.json";
 
@@ -75,16 +76,7 @@ const itemListSchema = {
       </div>
 
       {zonasConNegocios.length > 1 && (
-        <div class="flex flex-wrap gap-2 mb-8">
-          {zonasConNegocios.map((z) => (
-            <a
-              href={`/zona/${z.slug}/${slug}`}
-              class="text-sm bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full hover:bg-gray-200 transition-colors"
-            >
-              {z.name} ({z.count})
-            </a>
-          ))}
-        </div>
+        <ZonaFilter zonas={zonasConNegocios} total={negocios.length} />
       )}
 
       {guia && (

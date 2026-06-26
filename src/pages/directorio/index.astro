@@ -4,6 +4,7 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import SearchBar from "@/components/SearchBar.astro";
+import ZonaFilter from "@/components/ZonaFilter.astro";
 import { loadNegocios, loadCategorias, loadZonas } from "@/lib/directory";
 
 const negocios = loadNegocios();
@@ -43,19 +44,7 @@ const zonas = loadZonas();
           </a>
         ))}
       </div>
-      <div class="mb-3">
-        <span class="text-xs font-medium text-gray-400 uppercase tracking-wider">Zonas</span>
-      </div>
-      <div class="flex flex-wrap gap-2">
-        {zonas.map((zona) => (
-          <a
-            href={`/zona/${zona.slug}`}
-            class="text-sm font-medium bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full hover:bg-gray-200 transition-colors"
-          >
-            {zona.name} ({zona.count})
-          </a>
-        ))}
-      </div>
+      <ZonaFilter zonas={zonas} total={negocios.length} />
     </div>
   </section>
 

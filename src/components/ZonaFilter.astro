@@ -1,0 +1,64 @@
+---
+// Filtro de zona multi-selección (cliente). Muestra/oculta las tarjetas con
+// [data-zona] de la página según las zonas activas. "Todas" = sin filtro.
+interface Props {
+  zonas: { slug: string; name: string; count: number }[];
+  total?: number;
+}
+const { zonas, total } = Astro.props;
+const all = total ?? zonas.reduce((s, z) => s + z.count, 0);
+---
+
+<div class="flex flex-wrap items-center gap-2 mb-6" data-zona-filter-bar>
+  <span class="text-xs uppercase tracking-wider font-semibold text-gray-500 mr-1">Zona:</span>
+  <button type="button" data-zf="all" class="zf text-sm font-medium px-3 py-1.5 rounded-full bg-brand-600 text-white transition-colors">
+    Todas ({all})
+  </button>
+  {zonas.map((z) => (
+    <button type="button" data-zf={z.slug} class="zf text-sm font-medium px-3 py-1.5 rounded-full bg-white border border-warm-200 text-gray-700 hover:bg-warm-50 transition-colors">
+      {z.name} ({z.count})
+    </button>
+  ))}
+</div>
+<p data-zona-empty class="hidden text-gray-500 text-center py-10">No hay negocios de esa selección en esta página.</p>
+
+<script is:inline>
+  (function () {
+    var bar = document.querySelector("[data-zona-filter-bar]");
+    if (!bar) return;
+    var active = new Set();
+    var btns = bar.querySelectorAll("[data-zf]");
+    var empty = document.querySelector("[data-zona-empty]");
+
+    function paint(b, on) {
+      b.classList.toggle("bg-brand-600", on);
+      b.classList.toggle("text-white", on);
+      b.classList.toggle("bg-white", !on);
+      b.classList.toggle("border", !on);
+      b.classList.toggle("border-warm-200", !on);
+      b.classList.toggle("text-gray-700", !on);
+    }
+    function apply() {
+      var visible = 0;
+      document.querySelectorAll("[data-zona]").forEach(function (c) {
+        var show = active.size === 0 || active.has(c.getAttribute("data-zona"));
+        c.style.display = show ? "" : "none";
+        if (show) visible++;
+      });
+      btns.forEach(function (b) {
+        var v = b.getAttribute("data-zf");
+        paint(b, v === "all" ? active.size === 0 : active.has(v));
+      });
+      if (empty) empty.classList.toggle("hidden", visible > 0);
+    }
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var v = b.getAttribute("data-zf");
+        if (v === "all") active.clear();
+        else active.has(v) ? active.delete(v) : active.add(v);
+        apply();
+      });
+    });
+    apply();
+  })();
+</script>

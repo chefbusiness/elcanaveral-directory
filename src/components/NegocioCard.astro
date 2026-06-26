@@ -11,6 +11,7 @@ const servicios = (negocio.servicios as string[] | undefined) || [];
 
 <a
   href={`/${negocio.category}/${negocio.slug}`}
+  data-zona={negocio.zona}
   class="block bg-white rounded-xl border border-warm-200 overflow-hidden hover:shadow-lg hover:border-brand-200 transition-all duration-200 group"
 >
   {negocio.image ? (
