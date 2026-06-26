@@ -3,22 +3,69 @@
 
 <header class="sticky top-0 w-full bg-white/90 backdrop-blur-lg border-b border-warm-200 z-50">
   <div class="max-w-6xl mx-auto flex items-center justify-between h-14 sm:h-16 px-4">
-    <a href="/" class="flex items-center gap-2 shrink-0">
-      <span class="w-7 h-7 sm:w-8 sm:h-8 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold text-xs sm:text-sm">EC</span>
-      <span class="font-bold text-sm sm:text-lg text-brand-900">elcanaveral<span class="text-brand-600">.info</span></span>
+    <a href="/" class="flex items-center gap-2 shrink-0 min-w-0">
+      <span class="w-7 h-7 sm:w-8 sm:h-8 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold text-xs sm:text-sm shrink-0">EC</span>
+      <span class="font-bold text-sm sm:text-lg text-brand-900 truncate">elcanaveral<span class="text-brand-600">.info</span></span>
     </a>
-    <nav class="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm font-medium text-gray-600">
+
+    <!-- Navegación escritorio -->
+    <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-gray-600">
       <a href="/directorio" class="hover:text-brand-600 transition-colors">Directorio</a>
       <a href="/comunidad" class="hover:text-brand-600 transition-colors">Comunidad</a>
-      <a href="/zonas" class="hidden sm:inline hover:text-brand-600 transition-colors">Zonas</a>
-      <a href="/blog" class="hidden sm:inline hover:text-brand-600 transition-colors">Blog</a>
+      <a href="/zonas" class="hover:text-brand-600 transition-colors">Zonas</a>
+      <a href="/blog" class="hover:text-brand-600 transition-colors">Blog</a>
     </nav>
     <a
       href="/alta"
-      class="shrink-0 text-xs sm:text-sm font-semibold bg-accent-500 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg hover:bg-accent-600 transition-colors shadow-sm"
+      class="hidden sm:inline-block shrink-0 text-sm font-semibold bg-accent-500 text-white px-4 py-2 rounded-lg hover:bg-accent-600 transition-colors shadow-sm"
     >
-      <span class="hidden sm:inline">Registra tu negocio</span>
-      <span class="sm:hidden">+ Negocio</span>
+      Registra tu negocio
     </a>
+
+    <!-- Botón hamburguesa (solo móvil) -->
+    <button
+      id="nav-toggle"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      class="sm:hidden shrink-0 -mr-2 p-2 text-brand-900"
+    >
+      <svg id="nav-icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+      <svg id="nav-icon-close" class="hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="6" y1="6" x2="18" y2="18" /><line x1="18" y1="6" x2="6" y2="18" />
+      </svg>
+    </button>
   </div>
+
+  <!-- Menú desplegable móvil -->
+  <nav
+    id="nav-menu"
+    class="hidden sm:hidden absolute top-full inset-x-0 bg-white border-t border-warm-200 shadow-lg px-4 py-3 space-y-1 text-sm font-medium text-gray-700"
+  >
+    <a href="/directorio" class="block py-2.5 hover:text-brand-600">Directorio</a>
+    <a href="/comunidad" class="block py-2.5 hover:text-brand-600">Comunidad</a>
+    <a href="/zonas" class="block py-2.5 hover:text-brand-600">Zonas</a>
+    <a href="/blog" class="block py-2.5 hover:text-brand-600">Blog</a>
+    <a href="/alta" class="block mt-2 text-center font-semibold bg-accent-500 text-white px-4 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
+      Registra tu negocio
+    </a>
+  </nav>
 </header>
+
+<script is:inline>
+  (function () {
+    var t = document.getElementById("nav-toggle");
+    var m = document.getElementById("nav-menu");
+    var io = document.getElementById("nav-icon-open");
+    var ic = document.getElementById("nav-icon-close");
+    if (!t || !m) return;
+    t.addEventListener("click", function () {
+      var openNow = m.classList.toggle("hidden") === false;
+      t.setAttribute("aria-expanded", openNow ? "true" : "false");
+      if (io) io.classList.toggle("hidden", openNow);
+      if (ic) ic.classList.toggle("hidden", !openNow);
+    });
+  })();
+</script>
