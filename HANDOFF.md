@@ -122,8 +122,8 @@ Refrescar todo: `python scripts/apify_enrich.py --mode enrich --write` (coste ~$
 
 ## 📁 Estado actual del sitio
 
-- **107 negocios** · 16 categorías · 4 zonas (Cañaveral 72 · Vicálvaro 27 · Coslada 5 · S. Fernando 3) · 29 `featured`.
-- **180 páginas:** `/`, `/[categoria]`, `/[categoria]/[slug]`, `/zona/[zona]`, `/zona/[zona]/[categoria]`,
+- **256 negocios** (eran 107) · 16 categorías · 4 zonas (Cañaveral 90 · Coslada 76 · San Fernando 48 · Vicálvaro 42). Zonas pobladas con Apify discover + `add_discovered.py` el 2026-06-26.
+- **356 páginas:** `/`, `/[categoria]`, `/[categoria]/[slug]`, `/zona/[zona]`, `/zona/[zona]/[categoria]`,
   `/zonas`, `/directorio`, `/comunidad`, **`/blog` + 11 guías "mejores X"**, comerciales (`/planes`, `/alta`,
   `/anunciate`, `/sponsor`, `/contacto`), legales (`/aviso-legal`, `/terminos`, `/privacidad`, `/cookies`).
 - **Blog (NUEVO):** `/blog` con 11 listicles (motor `src/lib/listicles.ts` + `src/data/listicles.json`),
