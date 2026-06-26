@@ -42,18 +42,31 @@ def slugify(s):
     return s[:55] or "negocio"
 
 
+# Código postal → zona (lo más fiable). PC fuera de esta tabla = fuera de
+# nuestras 4 zonas (Torrejón 28850, Rivas 28523, etc.) → se descarta.
+ZONA_BY_PC = {
+    "28052": "el-canaveral",
+    "28032": "vicalvaro",
+    "28820": "coslada", "28821": "coslada", "28822": "coslada", "28823": "coslada",
+    "28830": "san-fernando-de-henares",
+}
+
+
 def detect_zona(c):
-    city = (c.get("city") or "").lower()
     pc = str(c.get("postalCode") or "")
-    if "san fernando" in city or pc == "28830":
+    if pc in ZONA_BY_PC:
+        return ZONA_BY_PC[pc]
+    city = (c.get("city") or "").lower()
+    nb = (c.get("neighborhood") or "").lower()
+    if "san fernando" in city:
         return "san-fernando-de-henares"
-    if "vic" in city:
-        return "vicalvaro"
-    if "coslada" in city or pc.startswith("2882"):
+    if "coslada" in city:
         return "coslada"
-    if "cañaveral" in (c.get("neighborhood") or "").lower() or pc == "28052":
+    if "cañaveral" in city or "cañaveral" in nb:
         return "el-canaveral"
-    return "coslada"
+    if "vicálvaro" in city or "vicalvaro" in nb:
+        return "vicalvaro"
+    return None   # fuera de nuestras zonas → no dar de alta
 
 
 def llm_content(batch, model):
@@ -110,7 +123,9 @@ def main():
         if c.get("placeId") in known_pid: continue
         cat = TERM_CAT.get(c.get("searchString"))
         if not cat: continue
-        sel.append((c, cat))
+        zona = detect_zona(c)
+        if not zona: continue          # fuera de nuestras 4 zonas (Torrejón, Rivas…)
+        sel.append((c, cat, zona))
     if args.limit:
         sel = sel[: args.limit]
 
@@ -118,14 +133,13 @@ def main():
 
     # construir registros base
     nuevos = []
-    for c, cat in sel:
+    for c, cat, zona in sel:
         slug = slugify(c["title"])
         base = slug
         i = 2
         while slug in used:
             slug = f"{base}-{i}"; i += 1
         used.add(slug)
-        zona = detect_zona(c)
         loc = c.get("location") or {}
         rec = {
             "slug": slug, "name": c["title"], "description": "",

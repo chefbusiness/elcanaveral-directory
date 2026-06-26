@@ -7934,5 +7934,2994 @@
       "/images/negocios/pinturas-aldeco-distribuidor-titan-pintores-a-su-servic-4.jpg",
       "/images/negocios/pinturas-aldeco-distribuidor-titan-pintores-a-su-servic-5.jpg"
     ]
+  },
+  {
+    "slug": "afijo-de-sierra-dormida",
+    "name": "Afijo de Sierra Dormida",
+    "description": "Establecimiento dedicado a la cría y selección canina ubicado en San Fernando de Henares. Ofrece un servicio profesional enfocado en el bienestar animal y el asesoramiento a las familias que buscan incorporar un nuevo miembro a su hogar. Su actividad se centra en el respeto a los estándares de la raza y el cuidado de la salud de los ejemplares.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "ctra/ Mejorada a Torrejón de Ardoz, Km 14200, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Cría y selección de cachorros",
+      "Asesoramiento sobre la raza",
+      "Seguimiento del desarrollo del cachorro",
+      "Orientación en cuidados y alimentación",
+      "Gestión de documentación y pedigrí"
+    ],
+    "destacados": [
+      "Atención personalizada a futuros propietarios",
+      "Compromiso con el bienestar animal",
+      "Experiencia en el sector canino"
+    ],
+    "rating": 4.6,
+    "numReviews": 94,
+    "placeId": "ChIJBf289n83Qg0R-IhKgRb2Fs0",
+    "googleCategory": "Criador canino",
+    "phone": "+34 645 99 35 97",
+    "website": "http://www.sierradormida.es/",
+    "lat": 40.4213022,
+    "lng": -3.4602216,
+    "image": "/images/negocios/afijo-de-sierra-dormida.jpg",
+    "images": [
+      "/images/negocios/afijo-de-sierra-dormida.jpg",
+      "/images/negocios/afijo-de-sierra-dormida-2.jpg",
+      "/images/negocios/afijo-de-sierra-dormida-3.jpg",
+      "/images/negocios/afijo-de-sierra-dormida-4.jpg",
+      "/images/negocios/afijo-de-sierra-dormida-5.jpg"
+    ]
+  },
+  {
+    "slug": "taller-mecanico-aynacar",
+    "name": "Taller Mecánico Aynacar",
+    "description": "Taller de reparación de automóviles situado en el municipio de San Fernando de Henares. Ofrece servicios de mantenimiento preventivo y correctivo para vehículos multimarca, ayudando a los conductores de la zona a mantener sus coches en óptimas condiciones de seguridad. Cuenta con equipamiento para el diagnóstico y la resolución de averías mecánicas comunes.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de la Sierra de Albarracín, 9, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Mecánica general y mantenimiento",
+      "Cambio de aceite y filtros",
+      "Revisión de sistemas de frenos",
+      "Diagnosis de averías eléctricas",
+      "Preparación para la inspección técnica (ITV)"
+    ],
+    "destacados": [
+      "Servicio multimarca profesional",
+      "Atención cercana y de confianza",
+      "Diagnóstico preciso de averías"
+    ],
+    "rating": 4.6,
+    "numReviews": 163,
+    "placeId": "ChIJh1weI9AwQg0RDwKTGjVLtLM",
+    "googleCategory": "Taller de reparación de automóviles",
+    "phone": "+34 638 33 45 69",
+    "website": "http://www.talleresaynacar.com/",
+    "lat": 40.45017,
+    "lng": -3.508972,
+    "image": "/images/negocios/taller-mecanico-aynacar.jpg",
+    "images": [
+      "/images/negocios/taller-mecanico-aynacar.jpg",
+      "/images/negocios/taller-mecanico-aynacar-2.jpg",
+      "/images/negocios/taller-mecanico-aynacar-3.jpg",
+      "/images/negocios/taller-mecanico-aynacar-4.jpg",
+      "/images/negocios/taller-mecanico-aynacar-5.jpg"
+    ]
+  },
+  {
+    "slug": "moda-tenda",
+    "name": "Moda Tenda",
+    "description": "Tienda de ropa de proximidad ubicada en San Fernando de Henares que ofrece una selección de prendas y complementos para el día a día. Es una opción ideal para los vecinos que buscan renovar su armario con un trato cercano y sin salir del municipio. El establecimiento destaca por su variedad de estilos adaptados a diferentes ocasiones.",
+    "category": "moda",
+    "categoryName": "Moda y Complementos",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. del Comercio, 10, Local esquina, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de ropa de temporada",
+      "Asesoramiento en imagen y estilo",
+      "Venta de complementos y accesorios",
+      "Atención y asistencia en probadores",
+      "Gestión de cambios y devoluciones"
+    ],
+    "destacados": [
+      "Trato personalizado y cercano",
+      "Variedad de prendas de temporada",
+      "Comercio local de proximidad"
+    ],
+    "rating": 4.6,
+    "numReviews": 63,
+    "placeId": "ChIJLXdYB5AwQg0RomtU7-13DzE",
+    "googleCategory": "Tienda de ropa",
+    "phone": "+34 916 71 18 61",
+    "lat": 40.4279825,
+    "lng": -3.5308013,
+    "image": "/images/negocios/moda-tenda.jpg",
+    "images": [
+      "/images/negocios/moda-tenda.jpg",
+      "/images/negocios/moda-tenda-2.jpg",
+      "/images/negocios/moda-tenda-3.jpg",
+      "/images/negocios/moda-tenda-4.jpg",
+      "/images/negocios/moda-tenda-5.jpg"
+    ]
+  },
+  {
+    "slug": "restaurante-asturias",
+    "name": "Restaurante Asturias",
+    "description": "Establecimiento de restauración ubicado en San Fernando de Henares que ofrece una propuesta gastronómica basada en la cocina tradicional. Es un punto de encuentro ideal para comidas familiares, reuniones de trabajo o celebraciones informales en el municipio. Su carta cuenta con una selección de platos elaborados con ingredientes clásicos de la cocina española.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Av. de Castilla, 28, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de almuerzos y cenas",
+      "Menú del día y de fin de semana",
+      "Reserva de mesas para grupos",
+      "Servicio de barra y cafetería",
+      "Celebración de eventos familiares"
+    ],
+    "destacados": [
+      "Ambiente acogedor y familiar",
+      "Cocina tradicional de calidad",
+      "Excelente ubicación en el municipio"
+    ],
+    "rating": 4.8,
+    "numReviews": 701,
+    "placeId": "ChIJO-0NbqI3Qg0RIMxiIzTbui8",
+    "googleCategory": "Restaurante",
+    "phone": "+34 919 36 06 26",
+    "website": "https://restauranteasturias.shop/",
+    "lat": 40.4537172,
+    "lng": -3.4983429,
+    "image": "/images/negocios/restaurante-asturias.jpg",
+    "images": [
+      "/images/negocios/restaurante-asturias.jpg",
+      "/images/negocios/restaurante-asturias-2.jpg",
+      "/images/negocios/restaurante-asturias-3.jpg",
+      "/images/negocios/restaurante-asturias-4.jpg",
+      "/images/negocios/restaurante-asturias-5.jpg"
+    ]
+  },
+  {
+    "slug": "fogon-de-ramona",
+    "name": "Fogón de Ramona",
+    "description": "Restaurante situado en San Fernando de Henares especializado en ofrecer platos caseros y menús diarios para los vecinos y trabajadores de la zona. Su cocina se caracteriza por la sencillez y el sabor de las recetas de siempre, servidas en un ambiente cómodo y agradable. Es una opción excelente para comer fuera de casa con una buena relación calidad-precio.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Av. del Sistema Solar, 13, NAVE 13, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Menú diario con platos caseros",
+      "Servicio de comidas y cenas",
+      "Raciones y platos para compartir",
+      "Atención a grupos y celebraciones",
+      "Servicio de cafetería por las mañanas"
+    ],
+    "destacados": [
+      "Comida casera elaborada a diario",
+      "Servicio rápido y atento",
+      "Ambiente de barrio muy acogedor"
+    ],
+    "rating": 4.5,
+    "numReviews": 344,
+    "placeId": "ChIJoU_opQY3Qg0RRz0GzPfBRWk",
+    "googleCategory": "Restaurante",
+    "phone": "+34 919 12 72 04",
+    "lat": 40.4495545,
+    "lng": -3.4990674,
+    "image": "/images/negocios/fogon-de-ramona.jpg",
+    "images": [
+      "/images/negocios/fogon-de-ramona.jpg",
+      "/images/negocios/fogon-de-ramona-2.jpg",
+      "/images/negocios/fogon-de-ramona-3.jpg",
+      "/images/negocios/fogon-de-ramona-4.jpg",
+      "/images/negocios/fogon-de-ramona-5.jpg"
+    ]
+  },
+  {
+    "slug": "restaurante-phoenix",
+    "name": "Restaurante Phoenix",
+    "description": "Restaurante ubicado en San Fernando de Henares que ofrece un espacio idóneo para disfrutar de una comida o cena en un ambiente agradable. Su propuesta culinaria abarca una variedad de opciones pensadas para satisfacer a todo tipo de comensales, desde platos individuales hasta opciones para compartir. Destaca por su servicio atento y su ambiente idóneo para cualquier ocasión.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de la Sierra de Gata, 19, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de comidas y cenas a la carta",
+      "Menús adaptados para grupos",
+      "Servicio de bebidas y coctelería",
+      "Reserva de mesas online y telefónica",
+      "Opciones para celebraciones privadas"
+    ],
+    "destacados": [
+      "Espacio moderno y confortable",
+      "Carta variada para todos los gustos",
+      "Atención al cliente profesional"
+    ],
+    "rating": 4.6,
+    "numReviews": 358,
+    "placeId": "ChIJj0ARADkxQg0RAk_KdkPAMUo",
+    "googleCategory": "Restaurante",
+    "phone": "+34 747 40 34 11",
+    "lat": 40.4491865,
+    "lng": -3.5061407,
+    "image": "/images/negocios/restaurante-phoenix.jpg",
+    "images": [
+      "/images/negocios/restaurante-phoenix.jpg",
+      "/images/negocios/restaurante-phoenix-2.jpg",
+      "/images/negocios/restaurante-phoenix-3.jpg",
+      "/images/negocios/restaurante-phoenix-4.jpg",
+      "/images/negocios/restaurante-phoenix-5.jpg"
+    ]
+  },
+  {
+    "slug": "frutas-narcea",
+    "name": "Frutas Narcea",
+    "description": "Frutería de barrio situada en San Fernando de Henares que ofrece una amplia selección de frutas y verduras frescas de temporada. Este comercio de proximidad se enfoca en proveer alimentos saludables y de calidad para la cesta de la compra diaria de los vecinos. El establecimiento destaca por la frescura de su género y el trato directo con el cliente.",
+    "category": "fruterias",
+    "categoryName": "Fruterías",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Av. de Montserrat, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de fruta fresca de temporada",
+      "Selección de verduras y hortalizas",
+      "Venta de frutos secos y legumbres",
+      "Asesoramiento sobre el punto de maduración",
+      "Preparación de pedidos por encargo"
+    ],
+    "destacados": [
+      "Frescura garantizada en el producto",
+      "Atención al cliente cercana y familiar",
+      "Fomento del comercio de barrio"
+    ],
+    "rating": 4.3,
+    "numReviews": 40,
+    "placeId": "ChIJKQmFnI8wQg0Rq4tJKhJ1oaQ",
+    "googleCategory": "Frutería",
+    "phone": "+34 912 47 10 43",
+    "lat": 40.4291345,
+    "lng": -3.5329216,
+    "image": "/images/negocios/frutas-narcea.jpg",
+    "images": [
+      "/images/negocios/frutas-narcea.jpg",
+      "/images/negocios/frutas-narcea-2.jpg",
+      "/images/negocios/frutas-narcea-3.jpg",
+      "/images/negocios/frutas-narcea-4.jpg",
+      "/images/negocios/frutas-narcea-5.jpg"
+    ]
+  },
+  {
+    "slug": "peluqueria-mogan",
+    "name": "Peluquería Mogan",
+    "description": "Salón de peluquería ubicado en San Fernando de Henares que ofrece servicios de estilismo y cuidado capilar para el día a día o para ocasiones especiales. Su equipo de profesionales asesora a cada cliente para conseguir el look que mejor se adapte a sus necesidades y preferencias. Un espacio cómodo y moderno diseñado para el cuidado de la imagen personal.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. Rafael Sánchez Ferlosio, 7 Esquina, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo para caballeros, señoras y niños",
+      "Servicios de coloración y mechas",
+      "Lavado, peinado y tratamientos capilares",
+      "Asesoramiento de imagen personalizado",
+      "Peinados para eventos y bodas"
+    ],
+    "destacados": [
+      "Profesionales con experiencia en estilismo",
+      "Trato personalizado y detallista",
+      "Uso de productos de calidad para el cabello"
+    ],
+    "rating": 4.8,
+    "numReviews": 210,
+    "placeId": "ChIJg8ckXIYwQg0RExnJwo5yxHw",
+    "googleCategory": "Peluquería",
+    "phone": "+34 911 68 85 03",
+    "website": "https://instagram.com/mogancreandoestilo?igshid=YmMyMTA2M2Y=",
+    "lat": 40.4275104,
+    "lng": -3.5265268,
+    "image": "/images/negocios/peluqueria-mogan.jpg",
+    "images": [
+      "/images/negocios/peluqueria-mogan.jpg",
+      "/images/negocios/peluqueria-mogan-2.jpg",
+      "/images/negocios/peluqueria-mogan-3.jpg",
+      "/images/negocios/peluqueria-mogan-4.jpg",
+      "/images/negocios/peluqueria-mogan-5.jpg"
+    ]
+  },
+  {
+    "slug": "arroceria-los-amigos",
+    "name": "Arrocería Los Amigos",
+    "description": "Restaurante especializado en arroces situado en San Fernando de Henares, ideal para los amantes de la gastronomía tradicional mediterránea. Ofrece una carta donde el arroz es el principal protagonista, preparado en diferentes versiones y siempre en su punto óptimo de cocción. Es el lugar perfecto para comidas familiares de fin de semana o reuniones de negocios.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. Vergara, 5, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Especialidad en arroces y paellas",
+      "Entrantes tradicionales y raciones",
+      "Encargo de arroces para llevar",
+      "Menús especiales para grupos",
+      "Servicio de postres caseros"
+    ],
+    "destacados": [
+      "Especialistas en la cocción del arroz",
+      "Ambiente ideal para comidas familiares",
+      "Ingredientes seleccionados y de calidad"
+    ],
+    "rating": 4.8,
+    "numReviews": 258,
+    "placeId": "ChIJbVvNlGUxQg0Rb3qDJlqBULo",
+    "googleCategory": "Arrocería",
+    "phone": "+34 678 26 18 56",
+    "website": "https://docs.google.com/document/d/e/2PACX-1vRS1QIqXMoIrgS2atJcN6VwgWdbMTomrhZ5x4Lz2N03BraSNQmwwxdVFIlNsj3mA6Dwgbj-riaxxms-/pub",
+    "lat": 40.4215604,
+    "lng": -3.524992,
+    "image": "/images/negocios/arroceria-los-amigos.jpg",
+    "images": [
+      "/images/negocios/arroceria-los-amigos.jpg",
+      "/images/negocios/arroceria-los-amigos-2.jpg",
+      "/images/negocios/arroceria-los-amigos-3.jpg",
+      "/images/negocios/arroceria-los-amigos-4.jpg",
+      "/images/negocios/arroceria-los-amigos-5.jpg"
+    ]
+  },
+  {
+    "slug": "cafeteria-toy",
+    "name": "Cafetería TOY",
+    "description": "Cafetería acogedora ubicada en San Fernando de Henares, perfecta para comenzar el día con un buen desayuno o disfrutar de una merienda en un ambiente tranquilo. Ofrece una selección de cafés, infusiones, bollería y opciones saladas para los vecinos y trabajadores de la zona. Su ambiente agradable la convierte en un punto de encuentro habitual en el barrio.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Avenida de Castilla 2, Edificio Italia, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de desayunos y meriendas",
+      "Variedad de cafés, tés e infusiones",
+      "Bollería del día y tostadas",
+      "Raciones, sándwiches y bocadillos",
+      "Servicio de terraza exterior"
+    ],
+    "destacados": [
+      "Ambiente tranquilo y acogedor",
+      "Ideal para el desayuno diario",
+      "Trato amable y servicio rápido"
+    ],
+    "rating": 4.4,
+    "numReviews": 139,
+    "placeId": "ChIJ0Q6NfNowQg0RsZ4Ml02JsJE",
+    "googleCategory": "Cafetería",
+    "phone": "+34 916 56 77 00",
+    "lat": 40.4508827,
+    "lng": -3.510582,
+    "image": "/images/negocios/cafeteria-toy.jpg",
+    "images": [
+      "/images/negocios/cafeteria-toy.jpg",
+      "/images/negocios/cafeteria-toy-2.jpg",
+      "/images/negocios/cafeteria-toy-3.jpg",
+      "/images/negocios/cafeteria-toy-4.jpg",
+      "/images/negocios/cafeteria-toy-5.jpg"
+    ]
+  },
+  {
+    "slug": "gimnasio-soldiers",
+    "name": "GIMNASIO SOLDIERS",
+    "description": "Centro deportivo ubicado en San Fernando de Henares dedicado al entrenamiento físico y al bienestar de sus usuarios. Ofrece un espacio equipado para la práctica de ejercicio y la mejora de la condición física en el municipio. Es una opción idónea para los vecinos de la zona que buscan mantener una rutina activa y saludable.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de la Presa, 48, Loc 2, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Sala de musculación y peso libre",
+      "Clases colectivas dirigidas",
+      "Entrenamiento cardiovascular",
+      "Asesoramiento deportivo básico",
+      "Zona de estiramientos y movilidad"
+    ],
+    "destacados": [
+      "Instalaciones equipadas para diferentes niveles",
+      "Variedad de actividades para el entrenamiento diario"
+    ],
+    "rating": 4.9,
+    "numReviews": 81,
+    "placeId": "ChIJQWM4h-IxQg0RA1Gkc33qbXg",
+    "googleCategory": "Gimnasio",
+    "phone": "+34 910 89 07 42",
+    "website": "https://www.facebook.com/soldiers.gimnasio.3",
+    "lat": 40.4296669,
+    "lng": -3.5281262,
+    "image": "/images/negocios/gimnasio-soldiers.jpg",
+    "images": [
+      "/images/negocios/gimnasio-soldiers.jpg",
+      "/images/negocios/gimnasio-soldiers-2.jpg",
+      "/images/negocios/gimnasio-soldiers-3.jpg",
+      "/images/negocios/gimnasio-soldiers-4.jpg",
+      "/images/negocios/gimnasio-soldiers-5.jpg"
+    ]
+  },
+  {
+    "slug": "la-inmobiliaria-de-cris",
+    "name": "La inmobiliaria de Cris",
+    "description": "Agencia inmobiliaria que presta servicios de intermediación y asesoramiento en San Fernando de Henares. Ayuda a los vecinos de la zona en la gestión de compra, venta y alquiler de todo tipo de inmuebles residenciales y locales. Su actividad se centra en facilitar los trámites y conectar a propietarios con compradores o inquilinos.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Calle la Huerta, Pl. de Fernando VI, 2 esquina, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Gestión de compra y venta de inmuebles",
+      "Intermediación en alquileres residenciales",
+      "Valoración y tasación comercial de viviendas",
+      "Asesoramiento en trámites y contratos",
+      "Promoción y publicidad de propiedades"
+    ],
+    "destacados": [
+      "Conocimiento del mercado inmobiliario local",
+      "Atención personalizada en cada gestión"
+    ],
+    "rating": 5,
+    "numReviews": 114,
+    "placeId": "ChIJ93bJtLiCJ08R_c65IIpPSos",
+    "googleCategory": "Agencia inmobiliaria",
+    "phone": "+34 650 79 52 89",
+    "website": "https://www.lainmobiliariadecris.es/",
+    "lat": 40.4251665,
+    "lng": -3.5312285,
+    "image": "/images/negocios/la-inmobiliaria-de-cris.jpg",
+    "images": [
+      "/images/negocios/la-inmobiliaria-de-cris.jpg",
+      "/images/negocios/la-inmobiliaria-de-cris-2.jpg",
+      "/images/negocios/la-inmobiliaria-de-cris-3.jpg",
+      "/images/negocios/la-inmobiliaria-de-cris-4.jpg",
+      "/images/negocios/la-inmobiliaria-de-cris-5.jpg"
+    ]
+  },
+  {
+    "slug": "panaderia-el-horno-de-raquel-y-mateo",
+    "name": "Panadería el horno de Raquel y Mateo",
+    "description": "Establecimiento tradicional de panadería situado en el municipio de San Fernando de Henares. Ofrece a diario una selección de productos horneados para el consumo de las familias del barrio. Es un punto de encuentro cercano para adquirir pan fresco y repostería en el día a día.",
+    "category": "panaderias",
+    "categoryName": "Panaderías y Obradores",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. Rafael Sánchez Ferlosio, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de pan fresco diario",
+      "Variedad de bollería y repostería",
+      "Productos de panadería integral y especialidades",
+      "Encargos para eventos y celebraciones",
+      "Venta de productos de alimentación básicos"
+    ],
+    "destacados": [
+      "Elaboración diaria de productos",
+      "Trato cercano y de confianza con el vecino"
+    ],
+    "rating": 4.4,
+    "numReviews": 129,
+    "placeId": "ChIJ2_S2NVQxQg0RQPAKBi9appc",
+    "googleCategory": "Panadería",
+    "phone": "+34 919 47 46 11",
+    "website": "http://www.elhornoderaquelymateo.com/",
+    "lat": 40.4272703,
+    "lng": -3.5264257,
+    "image": "/images/negocios/panaderia-el-horno-de-raquel-y-mateo.jpg",
+    "images": [
+      "/images/negocios/panaderia-el-horno-de-raquel-y-mateo.jpg",
+      "/images/negocios/panaderia-el-horno-de-raquel-y-mateo-2.jpg",
+      "/images/negocios/panaderia-el-horno-de-raquel-y-mateo-3.jpg",
+      "/images/negocios/panaderia-el-horno-de-raquel-y-mateo-4.jpg",
+      "/images/negocios/panaderia-el-horno-de-raquel-y-mateo-5.jpg"
+    ]
+  },
+  {
+    "slug": "moon-cafeteria-restaurante",
+    "name": "MOON Cafetería Restaurante",
+    "description": "Cafetería y restaurante ubicado en Coslada, ideal para realizar pausas diarias, desayunos o comidas informales. Ofrece un espacio cómodo y un ambiente agradable para los residentes y trabajadores de la zona. Su propuesta combina el servicio de cafetería tradicional con opciones de restauración para diferentes momentos del día.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "coslada",
+    "zonaName": "Coslada",
+    "address": "Av. de San Pablo, 63, Local 3, 28822 Coslada, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de desayunos y meriendas",
+      "Menú del día y raciones",
+      "Cafés, infusiones y bebidas",
+      "Servicio de barra y mesas",
+      "Opciones de comida para llevar"
+    ],
+    "destacados": [
+      "Espacio versátil para desayunos o comidas",
+      "Ubicación accesible en el municipio de Coslada"
+    ],
+    "rating": 4.5,
+    "numReviews": 171,
+    "placeId": "ChIJHTQx0NExQg0RKQK7jaNdwiw",
+    "googleCategory": "Cafetería",
+    "phone": "+34 919 12 26 26",
+    "lat": 40.4300033,
+    "lng": -3.5325116,
+    "image": "/images/negocios/moon-cafeteria-restaurante.jpg",
+    "images": [
+      "/images/negocios/moon-cafeteria-restaurante.jpg",
+      "/images/negocios/moon-cafeteria-restaurante-2.jpg",
+      "/images/negocios/moon-cafeteria-restaurante-3.jpg",
+      "/images/negocios/moon-cafeteria-restaurante-4.jpg",
+      "/images/negocios/moon-cafeteria-restaurante-5.jpg"
+    ]
+  },
+  {
+    "slug": "restaurante-toledano-ii",
+    "name": "Restaurante Toledano Ii",
+    "description": "Establecimiento de restauración situado en San Fernando de Henares que ofrece una propuesta gastronómica para almuerzos y cenas. Es un lugar de encuentro para familias y trabajadores de la zona que buscan disfrutar de una comida en un ambiente acogedor. Cuenta con una oferta variada basada en la cocina tradicional.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. Sierra de Guadarrama, 8, POLÍGONO DE, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de comidas y cenas",
+      "Menú diario y de fin de semana",
+      "Celebración de comidas familiares y de empresa",
+      "Carta de raciones y platos combinados",
+      "Servicio de bar y cafetería"
+    ],
+    "destacados": [
+      "Cocina tradicional en un ambiente familiar",
+      "Espacio adecuado para reuniones y celebraciones"
+    ],
+    "rating": 4.4,
+    "numReviews": 2295,
+    "placeId": "ChIJAZMj1tEwQg0R-bw5UZyy6V8",
+    "googleCategory": "Restaurante",
+    "phone": "+34 916 77 89 40",
+    "lat": 40.4491819,
+    "lng": -3.5083996,
+    "image": "/images/negocios/restaurante-toledano-ii.jpg",
+    "images": [
+      "/images/negocios/restaurante-toledano-ii.jpg",
+      "/images/negocios/restaurante-toledano-ii-2.jpg",
+      "/images/negocios/restaurante-toledano-ii-3.jpg",
+      "/images/negocios/restaurante-toledano-ii-4.jpg",
+      "/images/negocios/restaurante-toledano-ii-5.jpg"
+    ]
+  },
+  {
+    "slug": "btk-motorsport",
+    "name": "BTK Motorsport",
+    "description": "Taller mecánico especializado en el mantenimiento y reparación de vehículos en San Fernando de Henares. Ofrece soluciones técnicas para garantizar el correcto funcionamiento y la seguridad de los automóviles de los vecinos de la zona. Cuenta con profesionales cualificados para el diagnóstico y puesta a punto de turismos.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Av. del Sistema Solar, 13, nave 16, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Mantenimiento general y cambio de aceite",
+      "Diagnosis de averías mecánicas y eléctricas",
+      "Revisión y cambio de neumáticos",
+      "Reparación de sistemas de frenos y suspensión",
+      "Preparación de vehículos para la ITV"
+    ],
+    "destacados": [
+      "Servicio técnico profesional y de confianza",
+      "Equipamiento de diagnosis para diversas marcas"
+    ],
+    "rating": 4.8,
+    "numReviews": 149,
+    "placeId": "ChIJa484oJ83Qg0R9s8_nvKkNP0",
+    "googleCategory": "Taller mecánico",
+    "phone": "+34 640 06 99 93",
+    "website": "http://www.btkmotorsport.com/",
+    "lat": 40.4496202,
+    "lng": -3.4991562,
+    "image": "/images/negocios/btk-motorsport.jpg",
+    "images": [
+      "/images/negocios/btk-motorsport.jpg",
+      "/images/negocios/btk-motorsport-2.jpg",
+      "/images/negocios/btk-motorsport-3.jpg",
+      "/images/negocios/btk-motorsport-4.jpg",
+      "/images/negocios/btk-motorsport-5.jpg"
+    ]
+  },
+  {
+    "slug": "restaurante-albarracin",
+    "name": "Restaurante Albarracín",
+    "description": "Restaurante ubicado en San Fernando de Henares que ofrece una propuesta culinaria orientada a la cocina clásica y de mercado. Es un espacio idóneo tanto para el menú diario de los trabajadores como para comidas de fin de semana con familiares o amigos. Su servicio destaca por la atención al cliente y la calidad de sus elaboraciones.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de la Sierra de Albarracín, nave 52, 28830, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de mesa para comidas y cenas",
+      "Menús del día elaborados",
+      "Selección de raciones para compartir",
+      "Reserva de mesas para grupos",
+      "Servicio de cafetería y barra"
+    ],
+    "destacados": [
+      "Oferta gastronómica variada y tradicional",
+      "Ambiente confortable y servicio profesional"
+    ],
+    "rating": 4.6,
+    "numReviews": 230,
+    "placeId": "ChIJnTytgtowQg0RPQd4Z4vB6Ts",
+    "googleCategory": "Restaurante",
+    "phone": "+34 639 01 01 12",
+    "website": "https://www.instagram.com/restaurante.baralbarracin3?igsh=YTVhMWE2Nzkxbjli",
+    "lat": 40.4508572,
+    "lng": -3.5095181,
+    "image": "/images/negocios/restaurante-albarracin.jpg",
+    "images": [
+      "/images/negocios/restaurante-albarracin.jpg",
+      "/images/negocios/restaurante-albarracin-2.jpg",
+      "/images/negocios/restaurante-albarracin-3.jpg",
+      "/images/negocios/restaurante-albarracin-4.jpg",
+      "/images/negocios/restaurante-albarracin-5.jpg"
+    ]
+  },
+  {
+    "slug": "peinad-s",
+    "name": "PEINAD@S",
+    "description": "Salón de peluquería y estética unisex situado en San Fernando de Henares. Ofrece servicios de cuidado del cabello y estilismo adaptados a las necesidades de cada cliente en un ambiente cómodo y profesional. Es una opción de confianza para el mantenimiento de la imagen personal en el municipio.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de Pablo Picasso, 3, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo para caballero, señora y niño",
+      "Servicios de coloración y mechas",
+      "Lavado, peinado y tratamientos capilares",
+      "Tratamientos de hidratación y brillo",
+      "Asesoramiento de imagen personalizado"
+    ],
+    "destacados": [
+      "Atención personalizada y adaptada a cada estilo",
+      "Uso de productos profesionales para el cuidado capilar"
+    ],
+    "rating": 4.8,
+    "numReviews": 79,
+    "placeId": "ChIJXZQVAYUwQg0RzHfC2RG15wo",
+    "googleCategory": "Peluquería",
+    "phone": "+34 910 34 25 64",
+    "lat": 40.4260227,
+    "lng": -3.5329696,
+    "image": "/images/negocios/peinad-s.jpg",
+    "images": [
+      "/images/negocios/peinad-s.jpg",
+      "/images/negocios/peinad-s-2.jpg",
+      "/images/negocios/peinad-s-3.jpg",
+      "/images/negocios/peinad-s-4.jpg",
+      "/images/negocios/peinad-s-5.jpg"
+    ]
+  },
+  {
+    "slug": "j-rey-barberia-peluqueria-san-fernando-de-henares",
+    "name": "J.Rey Barbería Peluquería | San Fernando de Henares",
+    "description": "Establecimiento especializado en peluquería masculina y barbería ubicado en San Fernando de Henares. Ofrece servicios de corte de cabello y cuidado de la barba con técnicas adaptadas tanto a estilos clásicos como modernos. Un espacio pensado para el cuidado y la estética del hombre en la zona.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de Badajoz, 10, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo masculino clásico y moderno",
+      "Arreglo, perfilado y afeitado de barba",
+      "Tratamientos capilares para caballero",
+      "Lavado y peinado con productos específicos",
+      "Asesoramiento en el cuidado de la barba"
+    ],
+    "destacados": [
+      "Especialización en barbería y estética masculina",
+      "Ambiente cómodo y adaptado al público masculino"
+    ],
+    "rating": 4.8,
+    "numReviews": 286,
+    "placeId": "ChIJDTwcU48wQg0RJZElC5hEa6Y",
+    "googleCategory": "Peluquería",
+    "phone": "+34 910 51 57 31",
+    "website": "http://peluqueriajrey.blogspot.com.es/",
+    "lat": 40.4287713,
+    "lng": -3.5355961,
+    "image": "/images/negocios/j-rey-barberia-peluqueria-san-fernando-de-henares.jpg",
+    "images": [
+      "/images/negocios/j-rey-barberia-peluqueria-san-fernando-de-henares.jpg",
+      "/images/negocios/j-rey-barberia-peluqueria-san-fernando-de-henares-2.jpg",
+      "/images/negocios/j-rey-barberia-peluqueria-san-fernando-de-henares-3.jpg",
+      "/images/negocios/j-rey-barberia-peluqueria-san-fernando-de-henares-4.jpg",
+      "/images/negocios/j-rey-barberia-peluqueria-san-fernando-de-henares-5.jpg"
+    ]
+  },
+  {
+    "slug": "peluqueria-khnisser",
+    "name": "Peluquería Khnisser",
+    "description": "Peluquería ubicada en San Fernando de Henares que ofrece servicios de corte, peinado y estilismo para los vecinos del municipio. Cuenta con profesionales dedicados al cuidado del cabello, proporcionando un servicio ágil y adaptado a las preferencias de cada usuario. Es un establecimiento de proximidad ideal para el cuidado personal diario.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Calle pablo picasso 1 con fachada en, C. de José Alix Alix, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo unisex",
+      "Peinados y moldeados",
+      "Servicios de tinte y cambios de color",
+      "Lavado y tratamientos capilares básicos",
+      "Arreglo de cabello para eventos"
+    ],
+    "destacados": [
+      "Servicio rápido y atención de proximidad",
+      "Precios competitivos para el mantenimiento del cabello"
+    ],
+    "rating": 4.7,
+    "numReviews": 176,
+    "placeId": "ChIJl-oqLCkxQg0R5yUA2qbX2jQ",
+    "googleCategory": "Peluquería",
+    "phone": "+34 602 83 10 21",
+    "website": "https://peluqueriaemanuel.negocio.site/",
+    "lat": 40.4262195,
+    "lng": -3.533159,
+    "image": "/images/negocios/peluqueria-khnisser.jpg",
+    "images": [
+      "/images/negocios/peluqueria-khnisser.jpg",
+      "/images/negocios/peluqueria-khnisser-2.jpg",
+      "/images/negocios/peluqueria-khnisser-3.jpg",
+      "/images/negocios/peluqueria-khnisser-4.jpg",
+      "/images/negocios/peluqueria-khnisser-5.jpg"
+    ]
+  },
+  {
+    "slug": "alba-centro-de-belleza",
+    "name": "Alba Centro de Belleza",
+    "description": "Establecimiento de peluquería y estética ubicado en San Fernando de Henares, dedicado al cuidado y estilismo capilar. Ofrece una atención personalizada para el mantenimiento y cambio de imagen de los vecinos de la zona. Sus servicios abarcan desde cortes clásicos hasta tratamientos de coloración actuales.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. Blas de Otero, 7, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo para mujer y hombre",
+      "Lavado y peinado profesional",
+      "Coloración y mechas",
+      "Tratamientos de hidratación capilar",
+      "Moldeados y alisados"
+    ],
+    "destacados": [
+      "Atención personalizada",
+      "Ubicación accesible en San Fernando de Henares"
+    ],
+    "rating": 4.9,
+    "numReviews": 69,
+    "placeId": "ChIJf6RwRtwxQg0RSZb-f2_gCbc",
+    "googleCategory": "Peluquería",
+    "phone": "+34 622 25 04 33",
+    "website": "https://albacentrodebelleza.booksy.com/",
+    "lat": 40.4264615,
+    "lng": -3.5329063,
+    "image": "/images/negocios/alba-centro-de-belleza.jpg",
+    "images": [
+      "/images/negocios/alba-centro-de-belleza.jpg",
+      "/images/negocios/alba-centro-de-belleza-2.jpg",
+      "/images/negocios/alba-centro-de-belleza-3.jpg",
+      "/images/negocios/alba-centro-de-belleza-4.jpg",
+      "/images/negocios/alba-centro-de-belleza-5.jpg"
+    ]
+  },
+  {
+    "slug": "maxima-dental",
+    "name": "Máxima Dental",
+    "description": "Clínica dental que presta servicios de salud y estética odontológica en el municipio de San Fernando de Henares. Cuenta con instalaciones equipadas para el diagnóstico y tratamiento de diversas patologías bucodentales. Su objetivo es ofrecer una atención integral para el bienestar de toda la familia.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de Pablo Picasso, 7, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Revisiones y limpiezas bucales",
+      "Odontología general y empastes",
+      "Tratamientos de ortodoncia",
+      "Implantes y prótesis dentales",
+      "Blanqueamiento dental"
+    ],
+    "destacados": [
+      "Tratamientos integrales para la salud bucodental",
+      "Instalaciones modernas y confortables"
+    ],
+    "rating": 5,
+    "numReviews": 613,
+    "placeId": "ChIJgTt0-lcxQg0RZo6VWXW2eMY",
+    "googleCategory": "Clínica dental",
+    "phone": "+34 680 66 81 86",
+    "website": "https://maximadental.es/",
+    "lat": 40.4258791,
+    "lng": -3.5325196,
+    "image": "/images/negocios/maxima-dental.jpg",
+    "images": [
+      "/images/negocios/maxima-dental.jpg",
+      "/images/negocios/maxima-dental-2.jpg",
+      "/images/negocios/maxima-dental-3.jpg",
+      "/images/negocios/maxima-dental-4.jpg",
+      "/images/negocios/maxima-dental-5.jpg"
+    ]
+  },
+  {
+    "slug": "la-choco-2",
+    "name": "La choco 2",
+    "description": "Bar restaurante situado en San Fernando de Henares, ideal para disfrutar de la gastronomía local en un ambiente cercano y distendido. Ofrece una propuesta culinaria basada en raciones, menús diarios y tapas tradicionales. Es un punto de encuentro idóneo para comidas familiares, reuniones de amigos o un aperitivo diario.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Av. de Castilla, 1, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de menú del día",
+      "Carta de raciones y tapas",
+      "Desayunos y meriendas",
+      "Servicio de bar y cafetería",
+      "Celebración de comidas grupales"
+    ],
+    "destacados": [
+      "Ambiente familiar y acogedor",
+      "Variedad de raciones y menús diarios"
+    ],
+    "rating": 4.4,
+    "numReviews": 678,
+    "placeId": "ChIJUeyc6dAwQg0RNRmgeWgNokE",
+    "googleCategory": "Bar restaurante",
+    "phone": "+34 916 75 50 50",
+    "website": "http://www.lachoco2catering.es/",
+    "lat": 40.4530158,
+    "lng": -3.5084208,
+    "image": "/images/negocios/la-choco-2.jpg",
+    "images": [
+      "/images/negocios/la-choco-2.jpg",
+      "/images/negocios/la-choco-2-2.jpg",
+      "/images/negocios/la-choco-2-3.jpg",
+      "/images/negocios/la-choco-2-4.jpg",
+      "/images/negocios/la-choco-2-5.jpg"
+    ]
+  },
+  {
+    "slug": "restaurante-naciones",
+    "name": "Restaurante Naciones",
+    "description": "Establecimiento de restauración ubicado en San Fernando de Henares que ofrece una propuesta gastronómica variada para los residentes y visitantes de la zona. Su cocina combina platos tradicionales con opciones para el día a día en un espacio cómodo y agradable. Dispone de opciones tanto para comidas de trabajo como para celebraciones informales.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Av. de Castilla, 2, 28830 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Menú diario y de fin de semana",
+      "Servicio de comidas y cenas a la carta",
+      "Reserva de mesas para grupos",
+      "Servicio de cafetería",
+      "Platos preparados para llevar"
+    ],
+    "destacados": [
+      "Cocina de base tradicional",
+      "Espacio idóneo para reuniones y comidas de grupo"
+    ],
+    "rating": 4.3,
+    "numReviews": 198,
+    "placeId": "ChIJ_0EbetowQg0Rt0MBDP9kZCU",
+    "googleCategory": "Restaurante",
+    "phone": "+34 916 75 05 05",
+    "lat": 40.4500834,
+    "lng": -3.5107328,
+    "image": "/images/negocios/restaurante-naciones.jpg",
+    "images": [
+      "/images/negocios/restaurante-naciones.jpg",
+      "/images/negocios/restaurante-naciones-2.jpg",
+      "/images/negocios/restaurante-naciones-3.jpg",
+      "/images/negocios/restaurante-naciones-4.jpg",
+      "/images/negocios/restaurante-naciones-5.jpg"
+    ]
+  },
+  {
+    "slug": "productos-de-peluqueria-rubio-professional",
+    "name": "Productos de peluquería Rubio Professional",
+    "description": "Tienda especializada en la venta de productos de belleza y peluquería en San Fernando de Henares. Ofrece una amplia gama de artículos de calidad profesional tanto para trabajadores del sector como para particulares que buscan cuidar su cabello en casa. Su catálogo incluye desde tintes y tratamientos hasta herramientas de peinado.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Av. del Sistema Solar, 7A, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de productos de coloración capilar",
+      "Champús y tratamientos específicos",
+      "Herramientas de peinado (secadores, planchas)",
+      "Accesorios y utillaje de peluquería",
+      "Asesoramiento personalizado sobre productos"
+    ],
+    "destacados": [
+      "Variedad de productos de calidad profesional",
+      "Asesoramiento técnico para clientes y profesionales"
+    ],
+    "rating": 4.5,
+    "numReviews": 330,
+    "placeId": "ChIJ4VIZd80wQg0RnCk35sCn-dA",
+    "googleCategory": "Tienda de productos de belleza",
+    "phone": "+34 916 55 53 63",
+    "website": "https://www.cnrubio.com/",
+    "lat": 40.4489462,
+    "lng": -3.5025031,
+    "image": "/images/negocios/productos-de-peluqueria-rubio-professional.jpg",
+    "images": [
+      "/images/negocios/productos-de-peluqueria-rubio-professional.jpg",
+      "/images/negocios/productos-de-peluqueria-rubio-professional-2.jpg",
+      "/images/negocios/productos-de-peluqueria-rubio-professional-3.jpg",
+      "/images/negocios/productos-de-peluqueria-rubio-professional-4.jpg",
+      "/images/negocios/productos-de-peluqueria-rubio-professional-5.jpg"
+    ]
+  },
+  {
+    "slug": "peluqueria-chus",
+    "name": "Peluquería Chus",
+    "description": "Salón de peluquería de carácter local situado en San Fernando de Henares, enfocado en el cuidado del cabello de toda la familia. Ofrece servicios de corte, peinado y coloración con un trato cercano y de confianza. Es una opción idónea para el mantenimiento estético habitual en el barrio.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. Somorrostro, 2, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo unisex",
+      "Peinados para eventos y diario",
+      "Aplicación de tintes y mechas",
+      "Tratamientos capilares básicos",
+      "Corte infantil"
+    ],
+    "destacados": [
+      "Trato cercano y de confianza",
+      "Servicio ágil y adaptado a toda la familia"
+    ],
+    "rating": 4.6,
+    "numReviews": 88,
+    "placeId": "ChIJtRn0jp4wQg0Rlqjgc4lHdoo",
+    "googleCategory": "Peluquería",
+    "phone": "+34 916 73 86 44",
+    "lat": 40.4214411,
+    "lng": -3.5247912,
+    "image": "/images/negocios/peluqueria-chus.jpg",
+    "images": [
+      "/images/negocios/peluqueria-chus.jpg",
+      "/images/negocios/peluqueria-chus-2.jpg",
+      "/images/negocios/peluqueria-chus-3.jpg",
+      "/images/negocios/peluqueria-chus-4.jpg",
+      "/images/negocios/peluqueria-chus-5.jpg"
+    ]
+  },
+  {
+    "slug": "rhyno-funcional-training-san-fernando-de-henares",
+    "name": "RHYNO Funcional Training San Fernando de Henares",
+    "description": "Gimnasio y centro de entrenamiento físico situado en San Fernando de Henares, especializado en el acondicionamiento funcional. Ofrece sesiones diseñadas para mejorar la fuerza, la resistencia y la movilidad general bajo la supervisión de instructores. Sus programas se adaptan a diferentes niveles de condición física, desde principiantes hasta deportistas.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Gta. de Europa, 2, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Clases de entrenamiento funcional",
+      "Sesiones de fuerza y acondicionamiento",
+      "Asesoramiento deportivo personalizado",
+      "Entrenamientos en grupo reducido",
+      "Planificación de rutinas de ejercicio"
+    ],
+    "destacados": [
+      "Enfoque en la salud y el rendimiento físico",
+      "Entrenamientos guiados por profesionales"
+    ],
+    "rating": 4.9,
+    "numReviews": 79,
+    "placeId": "ChIJU5iqSQAxQg0RoOLHB7scI3k",
+    "googleCategory": "Gimnasio",
+    "phone": "+34 624 63 04 30",
+    "website": "http://rhynofuncionaltraining.com/",
+    "lat": 40.42302,
+    "lng": -3.5214,
+    "image": "/images/negocios/rhyno-funcional-training-san-fernando-de-henares.jpg",
+    "images": [
+      "/images/negocios/rhyno-funcional-training-san-fernando-de-henares.jpg",
+      "/images/negocios/rhyno-funcional-training-san-fernando-de-henares-2.jpg",
+      "/images/negocios/rhyno-funcional-training-san-fernando-de-henares-3.jpg",
+      "/images/negocios/rhyno-funcional-training-san-fernando-de-henares-4.jpg"
+    ]
+  },
+  {
+    "slug": "c-veterinaria-andreal",
+    "name": "C. Veterinaria Andreal",
+    "description": "Centro veterinario en San Fernando de Henares comprometido con la salud y el bienestar de las mascotas de la zona. Ofrece servicios de medicina preventiva, diagnóstico y tratamientos para diversos animales de compañía. Su equipo proporciona una atención profesional y cercana para garantizar la tranquilidad de los propietarios.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Consultas veterinarias generales",
+      "Vacunación y desparasitación",
+      "Cirugía menor y esterilización",
+      "Análisis clínicos y diagnóstico",
+      "Asesoramiento en nutrición animal"
+    ],
+    "destacados": [
+      "Atención profesional y personalizada para mascotas",
+      "Enfoque en la medicina preventiva"
+    ],
+    "rating": 4.7,
+    "numReviews": 48,
+    "placeId": "ChIJo6-ImZ4wQg0RxPjTFDzXTSA",
+    "googleCategory": "Cuidados veterinarios",
+    "phone": "+34 679 43 38 57",
+    "lat": 40.4219106,
+    "lng": -3.525109
+  },
+  {
+    "slug": "farmacia-yague-miguel",
+    "name": "Farmacia Yague Miguel",
+    "description": "Oficina de farmacia situada en San Fernando de Henares, dedicada a la dispensación de medicamentos y productos de parafarmacia. Ofrece un servicio esencial de atención farmacéutica y asesoramiento sobre salud y bienestar para los vecinos del municipio. Cuenta con profesionales cualificados para resolver dudas sobre tratamientos y cuidado personal.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. Somorrostro, 4, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Dispensación de medicamentos con receta",
+      "Venta de productos de parafarmacia y dermocosmética",
+      "Asesoramiento nutricional y herboristería",
+      "Control de tensión arterial y parámetros básicos",
+      "Productos de higiene y cuidado infantil"
+    ],
+    "destacados": [
+      "Atención farmacéutica profesional y cercana",
+      "Amplio catálogo de productos de salud y bienestar"
+    ],
+    "rating": 4.6,
+    "numReviews": 37,
+    "placeId": "ChIJBZovjJ4wQg0ReR9ivxhM7Mo",
+    "googleCategory": "Farmacia",
+    "phone": "+34 916 60 17 94",
+    "lat": 40.4212482,
+    "lng": -3.5247141,
+    "image": "/images/negocios/farmacia-yague-miguel.jpg",
+    "images": [
+      "/images/negocios/farmacia-yague-miguel.jpg",
+      "/images/negocios/farmacia-yague-miguel-2.jpg",
+      "/images/negocios/farmacia-yague-miguel-3.jpg",
+      "/images/negocios/farmacia-yague-miguel-4.jpg",
+      "/images/negocios/farmacia-yague-miguel-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-de-implantologia-oral-dra-gomez",
+    "name": "Clinica de Implantologia Oral Dra. Gómez",
+    "description": "Clínica dental especializada en implantología y salud bucodental ubicada en San Fernando de Henares. Ofrece soluciones avanzadas para la restauración de piezas dentales y el cuidado general de la boca. Su equipo médico se enfoca en proporcionar tratamientos precisos para mejorar la funcionalidad y estética de la sonrisa.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de José Alix Alix, 18, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Implantología y cirugía oral",
+      "Prótesis dentales fijas y removibles",
+      "Diagnóstico radiológico digital",
+      "Odontología conservadora y empastes",
+      "Tratamientos de periodoncia"
+    ],
+    "destacados": [
+      "Especialización en implantología y restauración oral",
+      "Atención profesional orientada al paciente"
+    ],
+    "rating": 4.8,
+    "numReviews": 85,
+    "placeId": "ChIJVVVVVaUwQg0RqEEMml9R9Oc",
+    "googleCategory": "Clínica dental",
+    "phone": "+34 601 04 06 92",
+    "website": "https://clinicaimplantologiaoral.com/",
+    "lat": 40.4294651,
+    "lng": -3.5330019,
+    "image": "/images/negocios/clinica-de-implantologia-oral-dra-gomez.jpg",
+    "images": [
+      "/images/negocios/clinica-de-implantologia-oral-dra-gomez.jpg",
+      "/images/negocios/clinica-de-implantologia-oral-dra-gomez-2.jpg",
+      "/images/negocios/clinica-de-implantologia-oral-dra-gomez-3.jpg",
+      "/images/negocios/clinica-de-implantologia-oral-dra-gomez-4.jpg",
+      "/images/negocios/clinica-de-implantologia-oral-dra-gomez-5.jpg"
+    ]
+  },
+  {
+    "slug": "caelum-pets-tanatorio-y-crematorio-de-mascotas-en-madri",
+    "name": "Caelum Pets | Tanatorio y Crematorio de mascotas en Madrid",
+    "description": "Servicio funerario especializado en la despedida y cremación de mascotas ubicado en San Fernando de Henares. Ofrece un espacio de respeto y acompañamiento para las familias del Corredor del Henares en los momentos más difíciles. Su actividad se centra en proporcionar una gestión profesional y digna para todo tipo de animales de compañía.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Av. de Castilla, 32, Nave 29, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Cremación individual de mascotas",
+      "Cremación colectiva",
+      "Custodia y entrega de cenizas",
+      "Sala de despedida y tanatorio",
+      "Recogida a domicilio o en clínica veterinaria",
+      "Urnas y recuerdos conmemorativos"
+    ],
+    "destacados": [
+      "Atención con alta sensibilidad y respeto",
+      "Instalaciones preparadas para el duelo familiar",
+      "Servicio de recogida disponible"
+    ],
+    "rating": 5,
+    "numReviews": 103,
+    "placeId": "ChIJGYAq9N83Qg0RmYYZXWRVWdo",
+    "googleCategory": "Servicio de cremación",
+    "phone": "+34 919 93 15 38",
+    "website": "https://www.caelumpets.com/",
+    "lat": 40.4532919,
+    "lng": -3.4961753
+  },
+  {
+    "slug": "salvavidas-cardioproteccion-y-formacion-en-emergencias",
+    "name": "Salvavidas Cardioprotección y Formación en Emergencias",
+    "description": "Entidad especializada en salud ocupacional, cardioprotección y formación en emergencias con sede en San Fernando de Henares. Proporciona soluciones integrales para empresas, centros educativos y espacios públicos que buscan cumplir con la normativa de seguridad y salud. Su labor contribuye a crear entornos de trabajo y ocio mucho más seguros en toda la zona.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Edificio Best Point, Av. de Castilla, 1, Ofi 1, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Instalación y mantenimiento de desfibriladores (DESA)",
+      "Cursos de reanimación cardiopulmonar (RCP)",
+      "Formación en primeros auxilios para empresas",
+      "Planes de autoprotección y emergencia",
+      "Asesoramiento en cardioprotección de espacios",
+      "Venta de material de emergencia y rescate"
+    ],
+    "destacados": [
+      "Formación homologada y adaptada a empresas",
+      "Equipos de cardioprotección de última tecnología",
+      "Asesoramiento técnico especializado"
+    ],
+    "rating": 5,
+    "numReviews": 3740,
+    "placeId": "ChIJIaFu2FQuQg0RIa0xCBakZRA",
+    "googleCategory": "Servicio de salud ocupacional",
+    "phone": "+34 900 670 112",
+    "website": "https://www.salvavidas.com/?utm_source=GMB&utm_medium=GMB&utm_campaign=GMB&utm_id=GMB&utm_term=GMB&utm_content=GMB",
+    "lat": 40.4531943,
+    "lng": -3.5086372,
+    "image": "/images/negocios/salvavidas-cardioproteccion-y-formacion-en-emergencias.jpg",
+    "images": [
+      "/images/negocios/salvavidas-cardioproteccion-y-formacion-en-emergencias.jpg",
+      "/images/negocios/salvavidas-cardioproteccion-y-formacion-en-emergencias-2.jpg",
+      "/images/negocios/salvavidas-cardioproteccion-y-formacion-en-emergencias-3.jpg",
+      "/images/negocios/salvavidas-cardioproteccion-y-formacion-en-emergencias-4.jpg",
+      "/images/negocios/salvavidas-cardioproteccion-y-formacion-en-emergencias-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-dental-adeslas",
+    "name": "Clínica Dental Adeslas",
+    "description": "Clínica dental de referencia en San Fernando de Henares que ofrece una cobertura integral para la salud bucodental de toda la familia. Cuenta con instalaciones modernas equipadas con tecnología de diagnóstico para garantizar tratamientos precisos. Su equipo de profesionales atiende tanto a asegurados de la compañía como a pacientes privados de la zona.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de Pablo Picasso, 4, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Odontología general y preventiva",
+      "Ortodoncia para niños y adultos",
+      "Implantes y prótesis dentales",
+      "Estética dental y blanqueamiento",
+      "Periodoncia y salud de las encías",
+      "Radiografía y diagnóstico digital"
+    ],
+    "destacados": [
+      "Garantía y respaldo de una gran firma de salud",
+      "Instalaciones modernas y accesibles",
+      "Atención personalizada y planes de tratamiento"
+    ],
+    "rating": 4.3,
+    "numReviews": 196,
+    "placeId": "ChIJSQ23AYUwQg0RdTZvl3OAORI",
+    "googleCategory": "Clínica dental",
+    "phone": "+34 900 229 922",
+    "website": "https://www.adeslasdental.es/clinicas/clinica-dental-adeslas-San-Fernando-de-Henares?utm_campaign=Local&utm_medium=organic&utm_source=GoogleMyBuiness",
+    "lat": 40.4259149,
+    "lng": -3.5330124,
+    "image": "/images/negocios/clinica-dental-adeslas.jpg",
+    "images": [
+      "/images/negocios/clinica-dental-adeslas.jpg",
+      "/images/negocios/clinica-dental-adeslas-2.jpg",
+      "/images/negocios/clinica-dental-adeslas-3.jpg",
+      "/images/negocios/clinica-dental-adeslas-4.jpg",
+      "/images/negocios/clinica-dental-adeslas-5.jpg"
+    ]
+  },
+  {
+    "slug": "educacion-canina-es",
+    "name": "Educacion-Canina.es",
+    "description": "Servicio profesional de adiestramiento y educación canina que opera en el entorno de San Fernando de Henares. Su objetivo es mejorar la convivencia entre los perros y sus familias mediante técnicas de aprendizaje adaptadas a cada caso. Ofrece soluciones prácticas para problemas de comportamiento en el ámbito urbano y del hogar.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de Oviedo, 15, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Adiestramiento básico de obediencia",
+      "Modificación de conductas no deseadas",
+      "Educación y socialización de cachorros",
+      "Asesoramiento en la adopción de mascotas",
+      "Clases individuales a domicilio",
+      "Pautas para la convivencia en el hogar"
+    ],
+    "destacados": [
+      "Métodos de educación respetuosos con el animal",
+      "Sesiones adaptadas al ritmo de cada perro",
+      "Servicio personalizado en el entorno local"
+    ],
+    "rating": 4.7,
+    "numReviews": 41,
+    "placeId": "ChIJV9r4uYgwQg0RTfSFQIoo2Sc",
+    "googleCategory": "Adiestrador canino",
+    "phone": "+34 649 46 48 06",
+    "lat": 40.4292268,
+    "lng": -3.5363883,
+    "image": "/images/negocios/educacion-canina-es.jpg",
+    "images": [
+      "/images/negocios/educacion-canina-es.jpg"
+    ]
+  },
+  {
+    "slug": "decathlon-san-fernando-de-henares",
+    "name": "Decathlon San Fernando de Henares",
+    "description": "Gran superficie dedicada a la venta de material, ropa y calzado deportivo situada en San Fernando de Henares. Es el punto de encuentro de referencia para los aficionados al deporte de la zona, ofreciendo una enorme variedad de artículos para disciplinas de exterior e interior. Su amplio catálogo cubre las necesidades de deportistas principiantes y experimentados.",
+    "category": "moda",
+    "categoryName": "Moda y Complementos",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Centro Comercial Camino Real, 28830 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de ropa, calzado y equipamiento deportivo",
+      "Servicio de taller y reparación de bicicletas",
+      "Estampación y personalización de equipaciones",
+      "Recogida de pedidos online en tienda (Click&Collect)",
+      "Asesoramiento técnico por secciones deportivas",
+      "Trámite de devoluciones y garantías"
+    ],
+    "destacados": [
+      "Amplia variedad de disciplinas deportivas bajo un mismo techo",
+      "Excelente relación calidad-precio en marcas propias",
+      "Facilidad de aparcamiento y acceso"
+    ],
+    "rating": 4.3,
+    "numReviews": 8033,
+    "placeId": "ChIJQ1HFrMIwQg0R18YyH1pS54Y",
+    "googleCategory": "Tienda de deportes",
+    "phone": "+34 914 85 15 41",
+    "website": "https://www.decathlon.es/es/store-view/tienda-de-deportes-san-fernando-de-henares-0070076600766?utm_campaign=es_f-cv_xx-gbp-decathlon-san-fernando-de-henares&utm_medium=organic&utm_source=organic-shopping",
+    "lat": 40.448288,
+    "lng": -3.523219,
+    "image": "/images/negocios/decathlon-san-fernando-de-henares.jpg",
+    "images": [
+      "/images/negocios/decathlon-san-fernando-de-henares.jpg",
+      "/images/negocios/decathlon-san-fernando-de-henares-2.jpg",
+      "/images/negocios/decathlon-san-fernando-de-henares-3.jpg",
+      "/images/negocios/decathlon-san-fernando-de-henares-4.jpg",
+      "/images/negocios/decathlon-san-fernando-de-henares-5.jpg"
+    ]
+  },
+  {
+    "slug": "action-san-fernando-de-henares",
+    "name": "Action San Fernando de Henares",
+    "description": "Tienda de descuento ubicada en San Fernando de Henares que ofrece un catálogo dinámico y muy variado de productos cotidianos a precios competitivos. Los vecinos de la zona pueden encontrar desde artículos para el hogar hasta productos de limpieza, manualidades y alimentación no perecedera. Su surtido cambia constantemente, ofreciendo siempre novedades a los visitantes.",
+    "category": "moda",
+    "categoryName": "Moda y Complementos",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "A2 salida, 16B, Salida 16B, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de artículos de decoración y hogar",
+      "Sección de papelería, manualidades y oficina",
+      "Productos de limpieza y cuidado personal",
+      "Herramientas y accesorios de bricolaje",
+      "Snacks y productos de alimentación seca",
+      "Juguetes y artículos de temporada"
+    ],
+    "destacados": [
+      "Precios muy económicos y accesibles",
+      "Rotación constante de productos y ofertas semanales",
+      "Variedad de categorías en un solo establecimiento"
+    ],
+    "rating": 4.3,
+    "numReviews": 111,
+    "placeId": "ChIJQeI8BkQxQg0RCnSETLk7j5I",
+    "googleCategory": "Tienda de descuento",
+    "phone": "+34 937 81 76 20",
+    "website": "https://www.action.com/es-es/tiendas/?utm_campaign=localbusiness&utm_source=google&utm_medium=organic&utm_content=6262",
+    "lat": 40.4467431,
+    "lng": -3.5238186,
+    "image": "/images/negocios/action-san-fernando-de-henares.jpg",
+    "images": [
+      "/images/negocios/action-san-fernando-de-henares.jpg",
+      "/images/negocios/action-san-fernando-de-henares-2.jpg",
+      "/images/negocios/action-san-fernando-de-henares-3.jpg",
+      "/images/negocios/action-san-fernando-de-henares-4.jpg",
+      "/images/negocios/action-san-fernando-de-henares-5.jpg"
+    ]
+  },
+  {
+    "slug": "nutri-pets",
+    "name": "Nutri-Pets",
+    "description": "Establecimiento especializado en la venta de productos de alimentación y accesorios para mascotas en San Fernando de Henares. Ofrece una selección cuidada de piensos, comida húmeda y complementos para garantizar el bienestar diario de perros, gatos y otros animales de compañía. Es una tienda cercana que destaca por su atención al detalle con los propietarios del barrio.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de la Presa, 57, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de alimentación de alta gama para mascotas",
+      "Accesorios de paseo, descanso y transporte",
+      "Juguetes interactivos y de entretenimiento",
+      "Productos de higiene y antiparasitarios",
+      "Asesoramiento nutricional personalizado",
+      "Snacks saludables y premios"
+    ],
+    "destacados": [
+      "Atención cercana y asesoramiento de confianza",
+      "Variedad de marcas de alimentación de calidad",
+      "Ubicación cómoda para las compras del día a día"
+    ],
+    "rating": 4.9,
+    "numReviews": 83,
+    "placeId": "ChIJSU-KC5AwQg0Ra2TJPxRAN8I",
+    "googleCategory": "Tienda de productos para mascotas",
+    "phone": "+34 654 44 36 52",
+    "lat": 40.4289621,
+    "lng": -3.5297911,
+    "image": "/images/negocios/nutri-pets.jpg",
+    "images": [
+      "/images/negocios/nutri-pets.jpg",
+      "/images/negocios/nutri-pets-2.jpg",
+      "/images/negocios/nutri-pets-3.jpg",
+      "/images/negocios/nutri-pets-4.jpg",
+      "/images/negocios/nutri-pets-5.jpg"
+    ]
+  },
+  {
+    "slug": "peluqueria-canina-frenchieperbote",
+    "name": "Peluquería Canina frenchieperbote",
+    "description": "Centro de estética y peluquería canina en San Fernando de Henares dedicado al cuidado higiénico de las mascotas. Ofrece servicios adaptados a las necesidades de cada raza y tipo de pelo, asegurando una experiencia tranquila y libre de estrés para los animales. Un espacio ideal para mantener la salud de la piel y el manto de los perros de la zona.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. de Rosa Pardo, 1, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Baño higiénico y cosmética adaptada",
+      "Corte de pelo a tijera y máquina según raza",
+      "Técnica de stripping para mantos duros",
+      "Corte de uñas y limpieza de oídos",
+      "Vaciado de glándulas anales si es necesario",
+      "Tratamientos de hidratación y desenredado"
+    ],
+    "destacados": [
+      "Trato afectuoso y paciente con los animales",
+      "Uso de productos de alta calidad para la piel",
+      "Servicio adaptado a las características de cada raza"
+    ],
+    "rating": 4.9,
+    "numReviews": 55,
+    "placeId": "ChIJ9__JbyYwQg0RljCdnlCp4Ro",
+    "googleCategory": "Peluquero de mascotas",
+    "phone": "+34 675 21 42 21",
+    "website": "http://www.frenchieperbote.com/",
+    "lat": 40.4255005,
+    "lng": -3.5290595,
+    "image": "/images/negocios/peluqueria-canina-frenchieperbote.jpg",
+    "images": [
+      "/images/negocios/peluqueria-canina-frenchieperbote.jpg",
+      "/images/negocios/peluqueria-canina-frenchieperbote-2.jpg",
+      "/images/negocios/peluqueria-canina-frenchieperbote-3.jpg",
+      "/images/negocios/peluqueria-canina-frenchieperbote-4.jpg",
+      "/images/negocios/peluqueria-canina-frenchieperbote-5.jpg"
+    ]
+  },
+  {
+    "slug": "digitanimal",
+    "name": "digitanimal",
+    "description": "Oficinas de la empresa tecnológica digitanimal situadas en San Fernando de Henares, dedicadas al desarrollo de soluciones para el sector ganadero y el bienestar animal. Desde esta sede se gestionan los servicios corporativos, el desarrollo de software y la atención a clientes profesionales. Su presencia aporta valor tecnológico e innovación al tejido empresarial de la zona.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Av. de Castilla, 1, Oficina 7B, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Desarrollo de sistemas de localización para ganado",
+      "Soporte técnico y atención al cliente profesional",
+      "Gestión de proyectos de digitalización ganadera",
+      "Distribución de dispositivos de monitorización animal",
+      "Consultoría tecnológica para el sector agropecuario",
+      "Administración y servicios corporativos"
+    ],
+    "destacados": [
+      "Empresa innovadora en el sector agro tecnológico",
+      "Sede corporativa con capacidad de gestión nacional",
+      "Especialistas en monitorización y bienestar animal"
+    ],
+    "rating": 4.7,
+    "numReviews": 707,
+    "placeId": "ChIJm0MCCGyOQQ0R5ZvFkuxQSvs",
+    "googleCategory": "Oficinas de empresa",
+    "phone": "+34 914 12 66 57",
+    "website": "https://digitanimal.com/",
+    "lat": 40.4531895,
+    "lng": -3.5087952,
+    "image": "/images/negocios/digitanimal.jpg",
+    "images": [
+      "/images/negocios/digitanimal.jpg",
+      "/images/negocios/digitanimal-2.jpg",
+      "/images/negocios/digitanimal-3.jpg",
+      "/images/negocios/digitanimal-4.jpg",
+      "/images/negocios/digitanimal-5.jpg"
+    ]
+  },
+  {
+    "slug": "imd",
+    "name": "IMD",
+    "description": "Clínica dental ubicada en San Fernando de Henares que ofrece servicios odontológicos profesionales para el cuidado de la salud oral de los vecinos. Cuenta con un equipo multidisciplinar que cubre las diferentes áreas de la odontología moderna, desde la prevención hasta tratamientos complejos. Su enfoque se centra en proporcionar una atención de calidad en un ambiente cómodo y de confianza.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "Trav. de José Alix Alix, sn, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Revisiones y limpiezas dentales profesionales",
+      "Tratamientos de odontología conservadora (empastes)",
+      "Endodoncias y reconstrucciones",
+      "Tratamientos de ortodoncia y alineadores",
+      "Implantes dentales y rehabilitación oral",
+      "Estética dental y blanqueamiento"
+    ],
+    "destacados": [
+      "Equipo de profesionales cualificados en diversas áreas",
+      "Atención personalizada y presupuestos a medida",
+      "Tecnología de diagnóstico en la propia clínica"
+    ],
+    "rating": 4.4,
+    "numReviews": 58,
+    "placeId": "ChIJt29HCYUwQg0RrTRvQf50mzA",
+    "googleCategory": "Clínica dental",
+    "phone": "+34 916 72 62 75",
+    "website": "http://www.imdental.es/",
+    "lat": 40.4268408,
+    "lng": -3.5329362,
+    "image": "/images/negocios/imd.jpg",
+    "images": [
+      "/images/negocios/imd.jpg",
+      "/images/negocios/imd-2.jpg",
+      "/images/negocios/imd-3.jpg",
+      "/images/negocios/imd-4.jpg"
+    ]
+  },
+  {
+    "slug": "frutos-secos-gloria",
+    "name": "Frutos secos GLORIA",
+    "description": "Establecimiento local ubicado en San Fernando de Henares especializado en la venta de productos de alimentación recreativa y aperitivos. Es un punto de referencia en el barrio para adquirir una amplia variedad de dulces y frutos secos para cualquier ocasión. Ofrece una atención cercana y tradicional para los vecinos de la zona.",
+    "category": "fruterias",
+    "categoryName": "Fruterías",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C/Ventura de Argumosa s/n,esquina C/La Presa, 43, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de frutos secos a granel y envasados",
+      "Variedad de golosinas, gominolas y caramelos",
+      "Snacks, patatas fritas y aperitivos salados",
+      "Bebidas frías y refrescos",
+      "Preparación de bolsas de cumpleaños y detalles para eventos"
+    ],
+    "destacados": [
+      "Trato cercano y familiar",
+      "Variedad de productos para todas las edades"
+    ],
+    "rating": 4.6,
+    "numReviews": 46,
+    "placeId": "ChIJRYoKspowQg0R8TOYqyIWmi0",
+    "googleCategory": "Tienda de golosinas",
+    "phone": "+34 606 69 77 45",
+    "website": "https://mtouch.facebook.com/frutossecosgloria/?ref=bookmarks",
+    "lat": 40.4278602,
+    "lng": -3.5304492,
+    "image": "/images/negocios/frutos-secos-gloria.jpg",
+    "images": [
+      "/images/negocios/frutos-secos-gloria.jpg",
+      "/images/negocios/frutos-secos-gloria-2.jpg",
+      "/images/negocios/frutos-secos-gloria-3.jpg",
+      "/images/negocios/frutos-secos-gloria-4.jpg",
+      "/images/negocios/frutos-secos-gloria-5.jpg"
+    ]
+  },
+  {
+    "slug": "pets-eternity-sl-crematorio-tanatorio-de-mascotas",
+    "name": "Pets Eternity SL. Crematorio-tanatorio de mascotas",
+    "description": "Servicio funerario especializado para mascotas ubicado en el municipio de San Fernando de Henares. Ofrece un espacio de acompañamiento y gestión profesional para los propietarios de animales de compañía en los momentos de despedida. Brinda un soporte respetuoso y adaptado a las necesidades de las familias de la zona.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. del Mar Mediterráneo, 2, Nave 22, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de cremación individual y colectiva",
+      "Recogida y traslado de la mascota",
+      "Custodia y entrega de cenizas en urnas",
+      "Sala de despedida y velatorio para familias",
+      "Gestión de trámites y certificados de baja"
+    ],
+    "destacados": [
+      "Atención con alta sensibilidad y respeto",
+      "Instalaciones acondicionadas para la despedida"
+    ],
+    "rating": 5,
+    "numReviews": 130,
+    "placeId": "ChIJ6UajPO8xQg0RfyZu_YzY_y8",
+    "googleCategory": "Servicio de cremación",
+    "phone": "+34 676 81 01 33",
+    "website": "https://www.petseternity.es/",
+    "lat": 40.4545465,
+    "lng": -3.5033461,
+    "image": "/images/negocios/pets-eternity-sl-crematorio-tanatorio-de-mascotas.jpg",
+    "images": [
+      "/images/negocios/pets-eternity-sl-crematorio-tanatorio-de-mascotas.jpg",
+      "/images/negocios/pets-eternity-sl-crematorio-tanatorio-de-mascotas-2.jpg",
+      "/images/negocios/pets-eternity-sl-crematorio-tanatorio-de-mascotas-3.jpg",
+      "/images/negocios/pets-eternity-sl-crematorio-tanatorio-de-mascotas-4.jpg",
+      "/images/negocios/pets-eternity-sl-crematorio-tanatorio-de-mascotas-5.jpg"
+    ]
+  },
+  {
+    "slug": "rentokil-control-de-plagas",
+    "name": "Rentokil Control de Plagas",
+    "description": "Delegación de servicios de control de plagas y sanidad ambiental que opera en la zona de San Fernando de Henares y alrededores. Ofrece soluciones profesionales tanto para hogares particulares como para locales comerciales e industrias del municipio. Su actividad se centra en garantizar la higiene, la seguridad y la salud ambiental de los espacios.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. del Mar Mediterráneo, 1, 28830 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Desinsectación de insectos rastreros y voladores",
+      "Desratización y control de roedores",
+      "Tratamientos de desinfección ambiental",
+      "Control y prevención de plagas de la madera",
+      "Inspecciones técnicas y planes de prevención personalizados"
+    ],
+    "destacados": [
+      "Tratamientos profesionales con garantía de eficacia",
+      "Personal técnico cualificado y certificado"
+    ],
+    "rating": 4.8,
+    "numReviews": 1948,
+    "placeId": "ChIJSya4etQwQg0RSOF8vgBSQaQ",
+    "googleCategory": "Empresa de fumigación y control de plagas",
+    "phone": "+34 900 901 076",
+    "website": "https://www.rentokil.com/es/sobre-nosotros/equipo-local/control-de-plagas-en-madrid/?utm_source=google&utm_medium=gbp&utm_campaign=listing&utm_content=button_website_link&utm_term=madrid",
+    "lat": 40.4558276,
+    "lng": -3.5030302,
+    "image": "/images/negocios/rentokil-control-de-plagas.jpg",
+    "images": [
+      "/images/negocios/rentokil-control-de-plagas.jpg",
+      "/images/negocios/rentokil-control-de-plagas-2.jpg",
+      "/images/negocios/rentokil-control-de-plagas-3.jpg",
+      "/images/negocios/rentokil-control-de-plagas-4.jpg",
+      "/images/negocios/rentokil-control-de-plagas-5.jpg"
+    ]
+  },
+  {
+    "slug": "centro-comercial-valencia",
+    "name": "Centro Comercial Valencia",
+    "description": "Espacio comercial y de servicios situado en San Fernando de Henares que reúne diferentes opciones de compra y ocio para los residentes. Funciona como un punto de encuentro vecinal donde realizar gestiones cotidianas y compras del día a día. Su ubicación facilita el acceso a diversos establecimientos sin necesidad de realizar grandes desplazamientos.",
+    "category": "fruterias",
+    "categoryName": "Fruterías",
+    "zona": "san-fernando-de-henares",
+    "zonaName": "San Fernando de Henares",
+    "address": "C. Cáceres, s/n, 28830 San Fernando de Henares, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Locales comerciales de moda y complementos",
+      "Establecimientos de restauración y cafeterías",
+      "Tiendas de alimentación y supermercado",
+      "Servicios profesionales y de cuidado personal",
+      "Zonas comunes y aparcamiento para clientes"
+    ],
+    "destacados": [
+      "Concentración de servicios en una sola ubicación",
+      "Fácil acceso para los vecinos del municipio"
+    ],
+    "rating": 4.3,
+    "numReviews": 1072,
+    "placeId": "ChIJBwo064UwQg0REU9WX5BquIA",
+    "googleCategory": "Centro comercial",
+    "website": "https://facebook.com/pages/Centro-Comercial-Valencia/244160952603044",
+    "lat": 40.4271607,
+    "lng": -3.5336233,
+    "image": "/images/negocios/centro-comercial-valencia.jpg",
+    "images": [
+      "/images/negocios/centro-comercial-valencia.jpg",
+      "/images/negocios/centro-comercial-valencia-2.jpg",
+      "/images/negocios/centro-comercial-valencia-3.jpg",
+      "/images/negocios/centro-comercial-valencia-4.jpg",
+      "/images/negocios/centro-comercial-valencia-5.jpg"
+    ]
+  },
+  {
+    "slug": "silva-training-center",
+    "name": "Silva Training Center",
+    "description": "Centro deportivo y de entrenamiento ubicado en el barrio de El Cañaveral. Ofrece un espacio acondicionado para la mejora de la condición física y el bienestar de los vecinos de la zona. Cuenta con programas adaptados a diferentes niveles de forma física y objetivos personales.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Blas de Lezo, 287, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Entrenamiento funcional",
+      "Asesoramiento deportivo personalizado",
+      "Clases dirigidas en grupo",
+      "Rutinas de fuerza y cardio",
+      "Preparación física general"
+    ],
+    "destacados": [
+      "Instalaciones modernas en el barrio",
+      "Seguimiento adaptado al usuario"
+    ],
+    "rating": 5,
+    "numReviews": 114,
+    "placeId": "ChIJlR6H8AM7Qg0RpDaS8zOfHWA",
+    "googleCategory": "Gimnasio",
+    "phone": "+34 631 63 06 90",
+    "website": "https://silvatraining.es/",
+    "lat": 40.4084289,
+    "lng": -3.5523616,
+    "image": "/images/negocios/silva-training-center.jpg",
+    "images": [
+      "/images/negocios/silva-training-center.jpg",
+      "/images/negocios/silva-training-center-2.jpg",
+      "/images/negocios/silva-training-center-3.jpg",
+      "/images/negocios/silva-training-center-4.jpg",
+      "/images/negocios/silva-training-center-5.jpg"
+    ]
+  },
+  {
+    "slug": "nine-fitness-canaveral",
+    "name": "Nine Fitness Cañaveral",
+    "description": "Gimnasio y club de fitness situado en el área de El Cañaveral, diseñado para la práctica deportiva diaria. Dispone de una amplia variedad de maquinaria de musculación y cardiovascular para el entrenamiento libre o guiado. Es una opción idónea para los residentes que buscan mantener un estilo de vida activo sin salir del barrio.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Miguel Delibes, 15, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Zona de peso libre y musculación",
+      "Área de entrenamiento cardiovascular",
+      "Actividades colectivas programadas",
+      "Entrenamientos personales",
+      "Vestuarios y duchas equipados"
+    ],
+    "destacados": [
+      "Amplitud de horarios de apertura",
+      "Equipamiento deportivo completo"
+    ],
+    "rating": 4.5,
+    "numReviews": 155,
+    "placeId": "ChIJ9a5KB7M7Qg0RN--Z5grBC9M",
+    "googleCategory": "Gimnasio",
+    "phone": "+34 674 88 23 50",
+    "website": "https://9fcanaveral.com/",
+    "lat": 40.4069229,
+    "lng": -3.5628741,
+    "image": "/images/negocios/nine-fitness-canaveral.jpg",
+    "images": [
+      "/images/negocios/nine-fitness-canaveral.jpg",
+      "/images/negocios/nine-fitness-canaveral-2.jpg",
+      "/images/negocios/nine-fitness-canaveral-3.jpg",
+      "/images/negocios/nine-fitness-canaveral-4.jpg",
+      "/images/negocios/nine-fitness-canaveral-5.jpg"
+    ]
+  },
+  {
+    "slug": "topochitos",
+    "name": "Topochitos",
+    "description": "Centro de educación preescolar en El Cañaveral enfocado en el cuidado y desarrollo temprano de los más pequeños. Ofrece un entorno seguro y adaptado para el aprendizaje y la socialización infantil en sus primeros años de vida. Un recurso de conciliación familiar clave para las familias jóvenes del barrio.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Calle de Mario Moreno Cantinflas, 60, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Educación y estimulación temprana",
+      "Juegos educativos y psicomotricidad",
+      "Servicio de comedor y nutrición infantil",
+      "Talleres creativos y de socialización",
+      "Seguimiento pedagógico personalizado"
+    ],
+    "destacados": [
+      "Instalaciones adaptadas y seguras",
+      "Facilidad de conciliación familiar"
+    ],
+    "rating": 4.5,
+    "numReviews": 31,
+    "placeId": "ChIJYds_gYQ7Qg0RfmBoBjNyMNc",
+    "googleCategory": "Centro de educación preescolar",
+    "phone": "+34 652 31 95 67",
+    "lat": 40.4014398,
+    "lng": -3.56309,
+    "image": "/images/negocios/topochitos.jpg",
+    "images": [
+      "/images/negocios/topochitos.jpg",
+      "/images/negocios/topochitos-2.jpg",
+      "/images/negocios/topochitos-3.jpg",
+      "/images/negocios/topochitos-4.jpg",
+      "/images/negocios/topochitos-5.jpg"
+    ]
+  },
+  {
+    "slug": "centro-privado-de-educacion-infantil-munecos",
+    "name": "Centro Privado de Educación Infantil Muñecos",
+    "description": "Guardería y centro de educación infantil ubicado en el distrito de Vicálvaro. Proporciona un espacio de confianza para el cuidado diario de niños en edad preescolar, promoviendo su autonomía y desarrollo integral. Cuenta con profesionales cualificados para atender las necesidades de cada etapa del crecimiento.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "C. de Minerva, 25, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Cuidado diario y atención infantil",
+      "Iniciación al aprendizaje y lenguaje",
+      "Actividades lúdicas y recreativas al aire libre",
+      "Servicio de comedor escolar",
+      "Atención y tutorías con las familias"
+    ],
+    "destacados": [
+      "Experiencia en el sector educativo",
+      "Ambiente cálido y familiar"
+    ],
+    "rating": 4.8,
+    "numReviews": 38,
+    "placeId": "ChIJf06OEEIlQg0RAf7rB0_nD6s",
+    "googleCategory": "Guardería",
+    "phone": "+34 685 81 18 50",
+    "website": "http://escuelainfantilmunecos.es/",
+    "lat": 40.4022553,
+    "lng": -3.5996794,
+    "image": "/images/negocios/centro-privado-de-educacion-infantil-munecos.jpg",
+    "images": [
+      "/images/negocios/centro-privado-de-educacion-infantil-munecos.jpg",
+      "/images/negocios/centro-privado-de-educacion-infantil-munecos-2.jpg",
+      "/images/negocios/centro-privado-de-educacion-infantil-munecos-3.jpg",
+      "/images/negocios/centro-privado-de-educacion-infantil-munecos-4.jpg",
+      "/images/negocios/centro-privado-de-educacion-infantil-munecos-5.jpg"
+    ]
+  },
+  {
+    "slug": "farmacia-riera-de-la-vereda",
+    "name": "Farmacia Riera de la Vereda",
+    "description": "Establecimiento farmacéutico situado en el barrio de El Cañaveral, dedicado a la atención sanitaria y dispensación de medicamentos. Ofrece asesoramiento farmacéutico profesional para el cuidado de la salud y el bienestar de toda la familia. Dispone de una amplia gama de productos de parafarmacia e higiene.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. Ferenc Puskas, C. Vereda de la Cebolla, 203, Local Núm.4. Entrada por, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Dispensación de medicamentos con receta",
+      "Venta de productos de parafarmacia y cosmética",
+      "Asesoramiento en salud y nutrición",
+      "Control de tensión y parámetros básicos",
+      "Productos para el cuidado infantil"
+    ],
+    "destacados": [
+      "Atención profesional y cercana",
+      "Ubicación accesible en el barrio"
+    ],
+    "rating": 4.8,
+    "numReviews": 47,
+    "placeId": "ChIJWcH_QAA7Qg0RX8oHmVE30Ec",
+    "googleCategory": "Farmacia",
+    "phone": "+34 628 60 71 88",
+    "website": "https://farmaciarieradelavereda.com/",
+    "lat": 40.3995995,
+    "lng": -3.5477624,
+    "image": "/images/negocios/farmacia-riera-de-la-vereda.jpg",
+    "images": [
+      "/images/negocios/farmacia-riera-de-la-vereda.jpg",
+      "/images/negocios/farmacia-riera-de-la-vereda-2.jpg",
+      "/images/negocios/farmacia-riera-de-la-vereda-3.jpg",
+      "/images/negocios/farmacia-riera-de-la-vereda-4.jpg",
+      "/images/negocios/farmacia-riera-de-la-vereda-5.jpg"
+    ]
+  },
+  {
+    "slug": "street-grills",
+    "name": "Street Grills",
+    "description": "Restaurante ubicado en El Cañaveral que ofrece una propuesta gastronómica ideal para comidas y cenas en un ambiente distendido. Su carta cuenta con opciones variadas para compartir con amigos o en familia. Es un punto de encuentro cómodo para los vecinos que buscan disfrutar de una buena comida en el barrio.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. Cerro del Campo, 62, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de mesa en sala",
+      "Opciones de comida para llevar",
+      "Menú diario y de fin de semana",
+      "Reserva de mesas",
+      "Terraza exterior"
+    ],
+    "destacados": [
+      "Ambiente acogedor y moderno",
+      "Variedad de platos en carta"
+    ],
+    "rating": 4.8,
+    "numReviews": 162,
+    "placeId": "ChIJuXfUDjY7Qg0RM1zLhicjcw0",
+    "googleCategory": "Restaurante",
+    "phone": "+34 911 48 94 66",
+    "website": "https://streetgrills.es/",
+    "lat": 40.4051717,
+    "lng": -3.5503836,
+    "image": "/images/negocios/street-grills.jpg",
+    "images": [
+      "/images/negocios/street-grills.jpg",
+      "/images/negocios/street-grills-2.jpg",
+      "/images/negocios/street-grills-3.jpg",
+      "/images/negocios/street-grills-4.jpg",
+      "/images/negocios/street-grills-5.jpg"
+    ]
+  },
+  {
+    "slug": "cafe-damario",
+    "name": "Café DaMario",
+    "description": "Establecimiento de restauración en El Cañaveral que combina una variada oferta de platos con un servicio atento y cercano. Ideal tanto para un almuerzo informal como para una cena tranquila en la zona. Su espacio está adaptado para acoger a grupos y familias del barrio.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Blas de Lezo, 74, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de comidas y cenas",
+      "Raciones y platos para compartir",
+      "Servicio de cafetería y desayunos",
+      "Atención en terraza",
+      "Comida para llevar bajo pedido"
+    ],
+    "destacados": [
+      "Servicio rápido y eficiente",
+      "Localización cómoda en la zona"
+    ],
+    "rating": 4.3,
+    "numReviews": 330,
+    "placeId": "ChIJleYn-xI7Qg0RgHKm3l6PWbo",
+    "googleCategory": "Restaurante",
+    "phone": "+34 642 70 60 67",
+    "website": "https://cafedamario.deterrazas.com/",
+    "lat": 40.4077501,
+    "lng": -3.552325,
+    "image": "/images/negocios/cafe-damario.jpg",
+    "images": [
+      "/images/negocios/cafe-damario.jpg",
+      "/images/negocios/cafe-damario-2.jpg",
+      "/images/negocios/cafe-damario-3.jpg",
+      "/images/negocios/cafe-damario-4.jpg",
+      "/images/negocios/cafe-damario-5.jpg"
+    ]
+  },
+  {
+    "slug": "cafe-lave",
+    "name": "CAFE LAVÉ",
+    "description": "Cafetería situada en el barrio de El Cañaveral, perfecta para comenzar el día con un buen desayuno o disfrutar de una merienda. Ofrece una selección de cafés, infusiones y repostería en un ambiente tranquilo y agradable. Es un espacio idóneo para reuniones informales o para trabajar con comodidad.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de Enrique Urquijo, 90, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de cafetería y cafés especiales",
+      "Desayunos y meriendas variadas",
+      "Repostería y bollería del día",
+      "Opciones saladas y tostadas",
+      "Servicio de terraza"
+    ],
+    "destacados": [
+      "Ambiente tranquilo y acogedor",
+      "Ideal para el día a día"
+    ],
+    "rating": 4.7,
+    "numReviews": 79,
+    "placeId": "ChIJ2Ss1PwA7Qg0RPygS89De0RA",
+    "googleCategory": "Cafetería",
+    "phone": "+34 697 74 54 40",
+    "website": "https://www.instagram.com/cafelavelaundry?igsh=bzV3N3oxcWl2Y3F0",
+    "lat": 40.4006098,
+    "lng": -3.5594426,
+    "image": "/images/negocios/cafe-lave.jpg",
+    "images": [
+      "/images/negocios/cafe-lave.jpg",
+      "/images/negocios/cafe-lave-2.jpg",
+      "/images/negocios/cafe-lave-3.jpg",
+      "/images/negocios/cafe-lave-4.jpg",
+      "/images/negocios/cafe-lave-5.jpg"
+    ]
+  },
+  {
+    "slug": "dulce-ruah",
+    "name": "Dulce Ruah",
+    "description": "Panadería tradicional ubicada en Vicálvaro, especializada en la elaboración y venta de pan fresco y productos de repostería. Ofrece a los vecinos del distrito una amplia variedad de harinas y masas horneadas cada día. Un comercio de proximidad ideal para el consumo diario de productos de calidad.",
+    "category": "panaderias",
+    "categoryName": "Panaderías y Obradores",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "C. San Ciriaco, 7, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de pan fresco diario",
+      "Bollería artesanal y repostería",
+      "Encargos para celebraciones y eventos",
+      "Productos de panadería integral y especialidades",
+      "Servicio de cafetería para llevar"
+    ],
+    "destacados": [
+      "Elaboración diaria de productos",
+      "Trato cercano y de confianza"
+    ],
+    "rating": 4.9,
+    "numReviews": 61,
+    "placeId": "ChIJbbRxMgUlQg0Rywdq9R8WCRs",
+    "googleCategory": "Panadería",
+    "phone": "+34 690 29 26 46",
+    "lat": 40.4058743,
+    "lng": -3.604341,
+    "image": "/images/negocios/dulce-ruah.jpg",
+    "images": [
+      "/images/negocios/dulce-ruah.jpg",
+      "/images/negocios/dulce-ruah-2.jpg",
+      "/images/negocios/dulce-ruah-3.jpg",
+      "/images/negocios/dulce-ruah-4.jpg",
+      "/images/negocios/dulce-ruah-5.jpg"
+    ]
+  },
+  {
+    "slug": "tsinghe-cocina-fusion",
+    "name": "TSINGHE Cocina Fusión",
+    "description": "Restaurante de cocina fusión asiática ubicado en El Cañaveral, que propone un viaje gastronómico a través de sabores orientales adaptados. Su carta ofrece una cuidada selección de platos elaborados con ingredientes frescos. Un lugar idóneo para los amantes de la gastronomía internacional que residen en la zona.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de José Escobar y Saliente, 21, Vicálvaro, 28052 cañaveral Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de almuerzos y cenas en sala",
+      "Platos de cocina fusión asiática",
+      "Servicio de comida para llevar (Take Away)",
+      "Opciones vegetarianas en carta",
+      "Reserva de mesas online y telefónica"
+    ],
+    "destacados": [
+      "Propuesta gastronómica original",
+      "Excelente presentación de platos"
+    ],
+    "rating": 4.8,
+    "numReviews": 834,
+    "placeId": "ChIJ-fxRCQA7Qg0RWL_EEDfTFiM",
+    "googleCategory": "Restaurante asiático",
+    "phone": "+34 634 38 12 65",
+    "website": "http://buscarmenu.es/menu/cocinafusion/",
+    "lat": 40.4026898,
+    "lng": -3.5654614,
+    "image": "/images/negocios/tsinghe-cocina-fusion.jpg",
+    "images": [
+      "/images/negocios/tsinghe-cocina-fusion.jpg",
+      "/images/negocios/tsinghe-cocina-fusion-2.jpg",
+      "/images/negocios/tsinghe-cocina-fusion-3.jpg",
+      "/images/negocios/tsinghe-cocina-fusion-4.jpg",
+      "/images/negocios/tsinghe-cocina-fusion-5.jpg"
+    ]
+  },
+  {
+    "slug": "frutas-ocana",
+    "name": "Frutas Ocaña",
+    "description": "Frutería de barrio ubicada en Vicálvaro que ofrece una selección de productos frescos de temporada para el día a día. Un comercio local enfocado en dar servicio a los vecinos de la zona con atención cercana y personalizada.",
+    "category": "fruterias",
+    "categoryName": "Fruterías",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "Blvr. de Indalecio Prieto, 24, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de fruta fresca de temporada",
+      "Selección de verduras y hortalizas",
+      "Venta de legumbres y frutos secos",
+      "Servicio de preparación y pesado de producto",
+      "Atención al detalle y asesoramiento al cliente"
+    ],
+    "destacados": [
+      "Variedad de producto fresco diario",
+      "Ubicación accesible en Vicálvaro",
+      "Trato cercano y comercio de proximidad"
+    ],
+    "rating": 4.7,
+    "numReviews": 53,
+    "placeId": "ChIJE5ZNA3YlQg0R2aTMk_IvpBU",
+    "googleCategory": "Frutería",
+    "phone": "+34 913 05 04 05",
+    "lat": 40.4007055,
+    "lng": -3.6216687,
+    "image": "/images/negocios/frutas-ocana.jpg",
+    "images": [
+      "/images/negocios/frutas-ocana.jpg",
+      "/images/negocios/frutas-ocana-2.jpg",
+      "/images/negocios/frutas-ocana-3.jpg",
+      "/images/negocios/frutas-ocana-4.jpg",
+      "/images/negocios/frutas-ocana-5.jpg"
+    ]
+  },
+  {
+    "slug": "farmacia-covian",
+    "name": "Farmacia Covián",
+    "description": "Establecimiento farmacéutico situado en el barrio de El Cañaveral, dedicado a la atención sanitaria y dispensación de medicamentos. Ofrece un servicio esencial para el cuidado de la salud y el bienestar de las familias de esta zona en crecimiento.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de Francisco Grande Covián, 63, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Dispensación de medicamentos con receta",
+      "Venta de productos de parafarmacia y dermocosmética",
+      "Artículos de nutrición infantil y cuidado del bebé",
+      "Control y toma de tensión arterial",
+      "Asesoramiento farmacéutico personalizado"
+    ],
+    "destacados": [
+      "Servicio esencial en El Cañaveral",
+      "Atención profesional y farmacéutica",
+      "Amplio catálogo de parafarmacia"
+    ],
+    "rating": 4.8,
+    "numReviews": 47,
+    "placeId": "ChIJgbLrpX87Qg0RR-Th6EQYH54",
+    "googleCategory": "Farmacia",
+    "phone": "+34 912 81 41 90",
+    "lat": 40.4008166,
+    "lng": -3.5584428,
+    "image": "/images/negocios/farmacia-covian.jpg",
+    "images": [
+      "/images/negocios/farmacia-covian.jpg",
+      "/images/negocios/farmacia-covian-2.jpg",
+      "/images/negocios/farmacia-covian-3.jpg",
+      "/images/negocios/farmacia-covian-4.jpg",
+      "/images/negocios/farmacia-covian-5.jpg"
+    ]
+  },
+  {
+    "slug": "farmacia-diaz-nadela-canaveral",
+    "name": "Farmacia Díaz Nadela Cañaveral.",
+    "description": "Oficina de farmacia que presta servicios de salud y bienestar a los residentes del barrio de El Cañaveral. Un espacio de confianza donde encontrar asesoramiento profesional, medicamentos y productos para el cuidado diario.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Calle de la Igualdad 3, Av. de Miguel Delibes, 25, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Dispensación de recetas médicas y medicamentos",
+      "Productos de higiene personal y cuidado diario",
+      "Línea de dermocosmética y cuidado de la piel",
+      "Asesoramiento nutricional y suplementos",
+      "Medición de parámetros básicos de salud"
+    ],
+    "destacados": [
+      "Atención sanitaria de proximidad",
+      "Ubicación estratégica en El Cañaveral",
+      "Orientación y consejo profesional"
+    ],
+    "rating": 4.7,
+    "numReviews": 31,
+    "placeId": "ChIJZ-5hF0gvQg0RvfPzzN441IM",
+    "googleCategory": "Farmacia",
+    "phone": "+34 914 04 45 67",
+    "lat": 40.4062814,
+    "lng": -3.5616866,
+    "image": "/images/negocios/farmacia-diaz-nadela-canaveral.jpg",
+    "images": [
+      "/images/negocios/farmacia-diaz-nadela-canaveral.jpg",
+      "/images/negocios/farmacia-diaz-nadela-canaveral-2.jpg",
+      "/images/negocios/farmacia-diaz-nadela-canaveral-3.jpg"
+    ]
+  },
+  {
+    "slug": "haro-pilates-reformer",
+    "name": "Haro Pilates Reformer",
+    "description": "Centro especializado en el método Pilates con máquinas Reformer ubicado en El Cañaveral. Un espacio diseñado para mejorar la condición física, la postura y el bienestar general de los vecinos del barrio a través de clases guiadas.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. Cerro del Tesoro, 5, Local 1, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Clases de Pilates con máquinas Reformer",
+      "Sesiones adaptadas a diferentes niveles",
+      "Entrenamientos enfocados en la corrección postural",
+      "Ejercicios de flexibilidad y fortalecimiento muscular",
+      "Instrucción supervisada por profesionales"
+    ],
+    "destacados": [
+      "Equipamiento especializado de Pilates",
+      "Atención personalizada en grupos reducidos",
+      "Fomento de la salud y el bienestar físico"
+    ],
+    "rating": 5,
+    "numReviews": 31,
+    "placeId": "ChIJZTKZsdk7Qg0RlxRcxZwaD4U",
+    "googleCategory": "Centro de pilates",
+    "phone": "+34 684 73 34 12",
+    "website": "https://haropilates.com/",
+    "lat": 40.4065966,
+    "lng": -3.5510654,
+    "image": "/images/negocios/haro-pilates-reformer.jpg",
+    "images": [
+      "/images/negocios/haro-pilates-reformer.jpg",
+      "/images/negocios/haro-pilates-reformer-2.jpg",
+      "/images/negocios/haro-pilates-reformer-3.jpg",
+      "/images/negocios/haro-pilates-reformer-4.jpg",
+      "/images/negocios/haro-pilates-reformer-5.jpg"
+    ]
+  },
+  {
+    "slug": "sano-mad-canaveral",
+    "name": "Sano Mad Cañaveral",
+    "description": "Gimnasio y centro de entrenamiento situado en el barrio de El Cañaveral, enfocado en la actividad física y la salud. Ofrece un espacio moderno para que los vecinos puedan realizar sus rutinas de ejercicio y mejorar su calidad de vida.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Calle Ferenc Puskas, 203 Entrada por, C. Vereda de la Cebolla, local Núm.3, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Entrenamiento funcional y de fuerza",
+      "Clases colectivas dirigidas",
+      "Planes de entrenamiento adaptados",
+      "Asesoramiento por entrenadores cualificados",
+      "Uso de maquinaria y zona de peso libre"
+    ],
+    "destacados": [
+      "Instalaciones modernas en el barrio",
+      "Variedad de opciones de entrenamiento",
+      "Ambiente orientado a la salud y el bienestar"
+    ],
+    "rating": 5,
+    "numReviews": 54,
+    "placeId": "ChIJMUJUSc87Qg0RfBJPimKAFOs",
+    "googleCategory": "Gimnasio",
+    "phone": "+34 611 94 21 47",
+    "website": "https://www.sanocenter.es/madrid/sano-madrid-canaveral/",
+    "lat": 40.3996008,
+    "lng": -3.5475081,
+    "image": "/images/negocios/sano-mad-canaveral.jpg",
+    "images": [
+      "/images/negocios/sano-mad-canaveral.jpg",
+      "/images/negocios/sano-mad-canaveral-2.jpg",
+      "/images/negocios/sano-mad-canaveral-3.jpg",
+      "/images/negocios/sano-mad-canaveral-4.jpg",
+      "/images/negocios/sano-mad-canaveral-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-alineacion-dental",
+    "name": "Clínica Alineación Dental",
+    "description": "Clínica dental ubicada en El Cañaveral que ofrece servicios de odontología general y especializada para toda la familia. Un centro de salud bucodental enfocado en la prevención, el diagnóstico y el tratamiento de los vecinos de la zona.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. Humildad, 27, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Odontología general y revisiones preventivas",
+      "Tratamientos de ortodoncia y alineación dental",
+      "Limpieza bucal y profilaxis",
+      "Tratamientos de estética dental",
+      "Odontopediatría para los más jóvenes"
+    ],
+    "destacados": [
+      "Atención odontológica integral",
+      "Instalaciones equipadas en El Cañaveral",
+      "Enfoque en la salud y estética dental"
+    ],
+    "rating": 5,
+    "numReviews": 89,
+    "placeId": "ChIJ24B0coI7Qg0RbGyY3e5Qq8w",
+    "googleCategory": "Clínica dental",
+    "phone": "+34 919 42 11 62",
+    "website": "https://alineaciondental.es/",
+    "lat": 40.4064342,
+    "lng": -3.5591244,
+    "image": "/images/negocios/clinica-alineacion-dental.jpg",
+    "images": [
+      "/images/negocios/clinica-alineacion-dental.jpg",
+      "/images/negocios/clinica-alineacion-dental-2.jpg",
+      "/images/negocios/clinica-alineacion-dental-3.jpg",
+      "/images/negocios/clinica-alineacion-dental-4.jpg",
+      "/images/negocios/clinica-alineacion-dental-5.jpg"
+    ]
+  },
+  {
+    "slug": "bellmad-salon",
+    "name": "BellMad Salón",
+    "description": "Salón de peluquería y estética ubicado en El Cañaveral, especializado en el cuidado del cabello y la imagen personal. Un espacio cómodo y profesional pensado para ofrecer servicios de estilismo adaptados a las necesidades de cada cliente.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Miguel Delibes, 74, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo para mujer, hombre y niños",
+      "Servicios de coloración, tintes y mechas",
+      "Lavado, peinado y tratamientos capilares",
+      "Asesoramiento de imagen y estilismo",
+      "Tratamientos de hidratación y brillo"
+    ],
+    "destacados": [
+      "Servicio profesional de peluquería",
+      "Ubicación cómoda en El Cañaveral",
+      "Atención personalizada y detallista"
+    ],
+    "rating": 5,
+    "numReviews": 48,
+    "placeId": "ChIJodQLQA87Qg0RWjrTwbPW_QY",
+    "googleCategory": "Peluquería",
+    "phone": "+34 619 68 74 45",
+    "website": "https://www.bellmad.es/",
+    "lat": 40.4046995,
+    "lng": -3.5598791,
+    "image": "/images/negocios/bellmad-salon.jpg",
+    "images": [
+      "/images/negocios/bellmad-salon.jpg",
+      "/images/negocios/bellmad-salon-2.jpg",
+      "/images/negocios/bellmad-salon-3.jpg",
+      "/images/negocios/bellmad-salon-4.jpg",
+      "/images/negocios/bellmad-salon-5.jpg"
+    ]
+  },
+  {
+    "slug": "peluqueria-saludable-gala",
+    "name": "Peluquería Saludable Gala",
+    "description": "Peluquería situada en El Cañaveral que combina los servicios tradicionales de estilismo con un enfoque orientado al cuidado y la salud capilar. Ideal para quienes buscan mantener su imagen utilizando técnicas y productos respetuosos con el cabello.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Calle de Mario Moreno Cantinflas, 40, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Cortes de pelo adaptados a las tendencias",
+      "Coloración y técnicas de mechas",
+      "Tratamientos capilares de hidratación y nutrición",
+      "Peinados para eventos y diario",
+      "Asesoramiento para el cuidado del cabello en casa"
+    ],
+    "destacados": [
+      "Enfoque en la salud y cuidado capilar",
+      "Trato personalizado y cercano",
+      "Servicios de estilismo en El Cañaveral"
+    ],
+    "rating": 4.7,
+    "numReviews": 128,
+    "placeId": "ChIJN-eI0h87Qg0R49fPOjf4WB4",
+    "googleCategory": "Peluquería",
+    "phone": "+34 744 71 07 71",
+    "website": "https://www.peluqueriasaludablegala.com/",
+    "lat": 40.4024701,
+    "lng": -3.5617248,
+    "image": "/images/negocios/peluqueria-saludable-gala.jpg",
+    "images": [
+      "/images/negocios/peluqueria-saludable-gala.jpg",
+      "/images/negocios/peluqueria-saludable-gala-2.jpg",
+      "/images/negocios/peluqueria-saludable-gala-3.jpg",
+      "/images/negocios/peluqueria-saludable-gala-4.jpg",
+      "/images/negocios/peluqueria-saludable-gala-5.jpg"
+    ]
+  },
+  {
+    "slug": "di-classe-barbershop",
+    "name": "Di Classe Barbershop",
+    "description": "Barbería y peluquería masculina ubicada en el barrio de El Cañaveral. Un espacio dedicado al cuidado de la imagen del hombre, que ofrece desde cortes clásicos hasta las últimas tendencias en arreglo de barba y cabello.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de Francisco Grande Covián, 004, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Corte de pelo masculino y juvenil",
+      "Arreglo, perfilado y cuidado de la barba",
+      "Afeitado clásico a navaja",
+      "Lavado y peinado con productos específicos",
+      "Asesoramiento de estilo masculino"
+    ],
+    "destacados": [
+      "Especialización en barbería y corte masculino",
+      "Ambiente cómodo y profesional",
+      "Servicio de proximidad en El Cañaveral"
+    ],
+    "rating": 4.9,
+    "numReviews": 392,
+    "placeId": "ChIJUdo2Xv47Qg0RmRFNKgTHvEc",
+    "googleCategory": "Barbería",
+    "phone": "+34 911 94 09 90",
+    "website": "https://booksy.com/es-es/31131_di-classe-barbershop_barberia_53009_madrid",
+    "lat": 40.4041279,
+    "lng": -3.5650127,
+    "image": "/images/negocios/di-classe-barbershop.jpg",
+    "images": [
+      "/images/negocios/di-classe-barbershop.jpg",
+      "/images/negocios/di-classe-barbershop-2.jpg",
+      "/images/negocios/di-classe-barbershop-3.jpg",
+      "/images/negocios/di-classe-barbershop-4.jpg",
+      "/images/negocios/di-classe-barbershop-5.jpg"
+    ]
+  },
+  {
+    "slug": "ferreteria-ferrpelaez",
+    "name": "FERRETERIA FERRPELÁEZ",
+    "description": "Ferretería tradicional ubicada en Vicálvaro que ofrece una amplia variedad de herramientas y suministros para el hogar y profesionales. Un negocio de confianza donde encontrar soluciones prácticas para reformas, reparaciones y mantenimiento.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "Av. de Daroca, 319, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de herramientas de mano y eléctricas",
+      "Artículos de fontanería, electricidad y pintura",
+      "Tornillería, herrajes y material de fijación",
+      "Duplicado de llaves y mandos",
+      "Asesoramiento técnico para bricolaje y reformas"
+    ],
+    "destacados": [
+      "Amplio catálogo de productos de ferretería",
+      "Asesoramiento experto y cercano",
+      "Establecimiento de referencia en Vicálvaro"
+    ],
+    "rating": 4.4,
+    "numReviews": 107,
+    "placeId": "ChIJF7AL1rQlQg0RCqTyAiWV4kw",
+    "googleCategory": "Ferretería",
+    "phone": "+34 917 76 20 64",
+    "website": "https://herramientapro.com/",
+    "lat": 40.4066651,
+    "lng": -3.6132065,
+    "image": "/images/negocios/ferreteria-ferrpelaez.jpg",
+    "images": [
+      "/images/negocios/ferreteria-ferrpelaez.jpg",
+      "/images/negocios/ferreteria-ferrpelaez-2.jpg",
+      "/images/negocios/ferreteria-ferrpelaez-3.jpg",
+      "/images/negocios/ferreteria-ferrpelaez-4.jpg",
+      "/images/negocios/ferreteria-ferrpelaez-5.jpg"
+    ]
+  },
+  {
+    "slug": "talleres-iauto",
+    "name": "Talleres iauto",
+    "description": "Taller mecánico ubicado en el distrito de Vicálvaro que ofrece servicios de mantenimiento y reparación para todo tipo de vehículos. Cuenta con personal cualificado para dar solución a las averías mecánicas y eléctricas más comunes de los automóviles de la zona.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "C. San Ciriaco, 20, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Mecánica general y puesta a punto",
+      "Cambio de aceite y filtros",
+      "Revisión de frenos y amortiguadores",
+      "Diagnosis electrónica de vehículos",
+      "Preparación para la inspección ITV"
+    ],
+    "destacados": [
+      "Atención profesional y cercana",
+      "Ubicación accesible en Vicálvaro"
+    ],
+    "rating": 4.9,
+    "numReviews": 432,
+    "placeId": "ChIJUaj2eWglQg0RBHu62e4-zTE",
+    "googleCategory": "Taller de reparación de automóviles",
+    "phone": "+34 917 76 62 38",
+    "website": "http://talleresiauto.com/",
+    "lat": 40.4055406,
+    "lng": -3.6034785,
+    "image": "/images/negocios/talleres-iauto.jpg",
+    "images": [
+      "/images/negocios/talleres-iauto.jpg",
+      "/images/negocios/talleres-iauto-2.jpg",
+      "/images/negocios/talleres-iauto-3.jpg",
+      "/images/negocios/talleres-iauto-4.jpg",
+      "/images/negocios/talleres-iauto-5.jpg"
+    ]
+  },
+  {
+    "slug": "talleres-laen-expert-service-car",
+    "name": "Talleres Laen.-Expert Service Car",
+    "description": "Establecimiento especializado en la reparación y mantenimiento de automóviles situado en el barrio de El Cañaveral. Ofrece a los vecinos del nuevo desarrollo un servicio técnico de confianza para el cuidado diario de sus vehículos.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Pol. Ind, C. Fundiciones, 2, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Mantenimiento programado del automóvil",
+      "Sustitución de neumáticos y equilibrado",
+      "Reparación de sistemas de frenado",
+      "Revisión del sistema de climatización",
+      "Diagnosis de averías mecánicas"
+    ],
+    "destacados": [
+      "Servicio local en El Cañaveral",
+      "Equipamiento técnico adecuado"
+    ],
+    "rating": 4.7,
+    "numReviews": 147,
+    "placeId": "ChIJYU2oUQ0mQg0RJvI-oh45uvE",
+    "googleCategory": "Taller de reparación de automóviles",
+    "phone": "+34 915 01 38 49",
+    "website": "http://www.tallereslaen.com/",
+    "lat": 40.3962744,
+    "lng": -3.5840819,
+    "image": "/images/negocios/talleres-laen-expert-service-car.jpg",
+    "images": [
+      "/images/negocios/talleres-laen-expert-service-car.jpg",
+      "/images/negocios/talleres-laen-expert-service-car-2.jpg",
+      "/images/negocios/talleres-laen-expert-service-car-3.jpg",
+      "/images/negocios/talleres-laen-expert-service-car-4.jpg",
+      "/images/negocios/talleres-laen-expert-service-car-5.jpg"
+    ]
+  },
+  {
+    "slug": "taller-mecanico-l-alonso",
+    "name": "Taller Mecánico L Alonso",
+    "description": "Taller de reparación de automóviles que presta servicio en la zona de Vicálvaro. Se dedica a la resolución de problemas mecánicos y al mantenimiento preventivo para garantizar el correcto funcionamiento y la seguridad de los coches de sus clientes.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "C. Villardondiego, 1 y 3 posterior, local, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Reparaciones de motor y transmisión",
+      "Cambio de baterías y alternadores",
+      "Revisión de sistemas de suspensión",
+      "Mantenimiento básico y cambios de líquidos",
+      "Revisión pre-ITV completa"
+    ],
+    "destacados": [
+      "Experiencia en mecánica multimarca",
+      "Trato directo y asesoramiento técnico"
+    ],
+    "rating": 4.6,
+    "numReviews": 47,
+    "placeId": "ChIJa89qM2QlQg0R6DAVgITWti0",
+    "googleCategory": "Taller de reparación de automóviles",
+    "phone": "+34 912 23 55 12",
+    "website": "https://www.tallerlalonso.es/",
+    "lat": 40.4082328,
+    "lng": -3.6072951,
+    "image": "/images/negocios/taller-mecanico-l-alonso.jpg",
+    "images": [
+      "/images/negocios/taller-mecanico-l-alonso.jpg",
+      "/images/negocios/taller-mecanico-l-alonso-2.jpg",
+      "/images/negocios/taller-mecanico-l-alonso-3.jpg",
+      "/images/negocios/taller-mecanico-l-alonso-4.jpg",
+      "/images/negocios/taller-mecanico-l-alonso-5.jpg"
+    ]
+  },
+  {
+    "slug": "taller-mecanico-jesus-arredondo",
+    "name": "Taller mecanico jesús Arredondo",
+    "description": "Taller mecánico de carácter local situado en Vicálvaro, orientado a ofrecer soluciones rápidas y eficaces para el mantenimiento del automóvil. Es una opción de proximidad para los conductores del barrio que buscan un servicio de confianza.",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "C. de Calahorra, 11, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Mecánica rápida y mantenimiento general",
+      "Sustitución de pastillas y discos de freno",
+      "Cambio de correas de distribución",
+      "Reparación de sistemas de escape",
+      "Revisión de niveles y luces"
+    ],
+    "destacados": [
+      "Servicio de proximidad en el barrio",
+      "Atención personalizada"
+    ],
+    "rating": 4.8,
+    "numReviews": 37,
+    "placeId": "ChIJITcuRAQlQg0RaHdKUoCtxCU",
+    "googleCategory": "Taller mecánico",
+    "phone": "+34 917 76 33 72",
+    "lat": 40.4073644,
+    "lng": -3.6123732
+  },
+  {
+    "slug": "barcos-de-papel",
+    "name": "Barcos de Papel",
+    "description": "Centro de educación preescolar ubicado en el barrio de El Cañaveral, diseñado para el cuidado y desarrollo de los más pequeños en sus primeros años de vida. Ofrece un entorno seguro y adaptado a las necesidades de conciliación de las familias de la zona.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de José Escobar y Saliente, 41-43, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Primer ciclo de educación infantil",
+      "Actividades de estimulación temprana",
+      "Servicio de comedor y nutrición infantil",
+      "Talleres de juego y psicomotricidad",
+      "Escuela de padres y tutorías"
+    ],
+    "destacados": [
+      "Instalaciones modernas y seguras",
+      "Ubicación ideal para familias de El Cañaveral"
+    ],
+    "rating": 4.6,
+    "numReviews": 45,
+    "placeId": "ChIJTZR6Bng7Qg0Rx313cR-un_4",
+    "googleCategory": "Centro de educación preescolar",
+    "phone": "+34 644 52 73 27",
+    "website": "http://www.escuelainfantilbarcosdepapel.com/",
+    "lat": 40.4036539,
+    "lng": -3.564035,
+    "image": "/images/negocios/barcos-de-papel.jpg",
+    "images": [
+      "/images/negocios/barcos-de-papel.jpg",
+      "/images/negocios/barcos-de-papel-2.jpg",
+      "/images/negocios/barcos-de-papel-3.jpg",
+      "/images/negocios/barcos-de-papel-4.jpg",
+      "/images/negocios/barcos-de-papel-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-veterinaria-animalandia",
+    "name": "Clínica Veterinaria Animalandia",
+    "description": "Clínica veterinaria en Vicálvaro dedicada al cuidado de la salud y el bienestar de las mascotas del barrio. Ofrece asistencia médica general y servicios preventivos para asegurar la calidad de vida de los animales de compañía.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "C. de S. Cipriano, 23, C. Ambroz, 3, esq, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Consulta veterinaria general",
+      "Planes de vacunación y desparasitación",
+      "Identificación mediante microchip",
+      "Cirugía menor y de tejidos blandos",
+      "Asesoramiento nutricional para mascotas"
+    ],
+    "destacados": [
+      "Compromiso con el bienestar animal",
+      "Atención profesional y personalizada"
+    ],
+    "rating": 4.4,
+    "numReviews": 426,
+    "placeId": "ChIJxaBQyGglQg0Rm1Jh_MvJDYo",
+    "googleCategory": "Veterinario",
+    "phone": "+34 917 76 22 38",
+    "website": "http://www.animalandiamadrid.com/",
+    "lat": 40.4042351,
+    "lng": -3.6062045,
+    "image": "/images/negocios/clinica-veterinaria-animalandia.jpg",
+    "images": [
+      "/images/negocios/clinica-veterinaria-animalandia.jpg",
+      "/images/negocios/clinica-veterinaria-animalandia-2.jpg",
+      "/images/negocios/clinica-veterinaria-animalandia-3.jpg",
+      "/images/negocios/clinica-veterinaria-animalandia-4.jpg",
+      "/images/negocios/clinica-veterinaria-animalandia-5.jpg"
+    ]
+  },
+  {
+    "slug": "ferreteria-gogar-2",
+    "name": "ferretería gogar 2",
+    "description": "Ferretería de barrio situada en Vicálvaro que provee de herramientas, materiales y suministros para el hogar y profesionales de la zona. Es el comercio de referencia para encontrar soluciones rápidas de bricolaje, fontanería y electricidad.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "C. de Cordel de Pavones, 34C, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Venta de herramientas manuales y eléctricas",
+      "Duplicado de llaves y mandos",
+      "Artículos de fontanería y electricidad",
+      "Pinturas, adhesivos y material de bricolaje",
+      "Tornillería y herrajes de todo tipo"
+    ],
+    "destacados": [
+      "Amplio catálogo de productos de consumo",
+      "Asesoramiento técnico para reformas del hogar"
+    ],
+    "rating": 4.3,
+    "numReviews": 55,
+    "placeId": "ChIJe7EDyXUlQg0R4gYP2KbmfmY",
+    "googleCategory": "Ferretería",
+    "phone": "+34 913 71 07 64",
+    "lat": 40.3992133,
+    "lng": -3.6195557,
+    "image": "/images/negocios/ferreteria-gogar-2.jpg",
+    "images": [
+      "/images/negocios/ferreteria-gogar-2.jpg",
+      "/images/negocios/ferreteria-gogar-2-2.jpg",
+      "/images/negocios/ferreteria-gogar-2-3.jpg",
+      "/images/negocios/ferreteria-gogar-2-4.jpg",
+      "/images/negocios/ferreteria-gogar-2-5.jpg"
+    ]
+  },
+  {
+    "slug": "inmobiliaria-vicalvaro",
+    "name": "INMOBILIARIA VICÁLVARO",
+    "description": "Agencia inmobiliaria especializada en el mercado residencial de Vicálvaro y sus alrededores. Ofrece asesoramiento integral para la compra, venta y alquiler de viviendas, locales comerciales y plazas de garaje en la zona.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "CALLE VILLAJIMENA, 16 (POST, RAMPA, 2, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Intermediación en compraventa de inmuebles",
+      "Gestión de alquileres residenciales",
+      "Valoración y tasación comercial de propiedades",
+      "Asesoramiento financiero y tramitación de hipotecas",
+      "Gestión documental y de contratos"
+    ],
+    "destacados": [
+      "Conocimiento profundo del mercado local",
+      "Acompañamiento en todo el proceso de compraventa"
+    ],
+    "rating": 4.7,
+    "numReviews": 38,
+    "placeId": "ChIJs4fo4GUlQg0RnNySUwuzUGU",
+    "googleCategory": "Agencia inmobiliaria",
+    "phone": "+34 913 71 90 18",
+    "website": "https://www.inmobiliariavicalvaro.com/",
+    "lat": 40.4070293,
+    "lng": -3.6068506,
+    "image": "/images/negocios/inmobiliaria-vicalvaro.jpg",
+    "images": [
+      "/images/negocios/inmobiliaria-vicalvaro.jpg"
+    ]
+  },
+  {
+    "slug": "tecnocasa-vicalvaro-inmobiliaria",
+    "name": "Tecnocasa Vicalvaro inmobiliaria",
+    "description": "Oficina inmobiliaria que presta servicios de intermediación en el distrito de Vicálvaro. Su equipo de agentes ayuda a los vecinos a gestionar de forma eficaz la venta o el arrendamiento de sus propiedades con un servicio cercano y profesional.",
+    "category": "inmobiliarias",
+    "categoryName": "Inmobiliarias",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "C/ de los Galeote, 1, piso 0, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Valoración gratuita de inmuebles",
+      "Promoción y publicidad de viviendas en venta",
+      "Búsqueda activa de compradores y arrendatarios",
+      "Gestión de visitas y negociación",
+      "Asesoramiento jurídico y administrativo básico"
+    ],
+    "destacados": [
+      "Red de contactos a nivel local",
+      "Gestión profesional y transparente"
+    ],
+    "rating": 4.8,
+    "numReviews": 93,
+    "placeId": "ChIJXQn8XLclQg0R0WRkNPcCMKM",
+    "googleCategory": "Agencia inmobiliaria",
+    "phone": "+34 915 41 79 65",
+    "website": "https://madrid164.tecnocasa.es/madrid/vicalvaro/",
+    "lat": 40.4024066,
+    "lng": -3.6062804,
+    "image": "/images/negocios/tecnocasa-vicalvaro-inmobiliaria.jpg",
+    "images": [
+      "/images/negocios/tecnocasa-vicalvaro-inmobiliaria.jpg",
+      "/images/negocios/tecnocasa-vicalvaro-inmobiliaria-2.jpg",
+      "/images/negocios/tecnocasa-vicalvaro-inmobiliaria-3.jpg",
+      "/images/negocios/tecnocasa-vicalvaro-inmobiliaria-4.jpg",
+      "/images/negocios/tecnocasa-vicalvaro-inmobiliaria-5.jpg"
+    ]
+  },
+  {
+    "slug": "veterinaria-vicalvaro",
+    "name": "Veterinaria Vicalvaro",
+    "description": "Centro veterinario ubicado en Vicálvaro que ofrece servicios médicos y de prevención para el cuidado de perros, gatos y otros animales de compañía. Su objetivo es proporcionar una atención sanitaria de calidad para la tranquilidad de los propietarios.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "C. Villardondiego, 17, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Consultas médicas y revisiones periódicas",
+      "Vacunaciones y tratamientos preventivos",
+      "Análisis clínicos y diagnóstico por imagen",
+      "Cirugía general y anestesia",
+      "Venta de alimentación especializada"
+    ],
+    "destacados": [
+      "Instalaciones equipadas para el diagnóstico",
+      "Trato afectuoso y profesional con las mascotas"
+    ],
+    "rating": 4.7,
+    "numReviews": 319,
+    "placeId": "ChIJZyFuv2UlQg0RH9U-ZlPrSNc",
+    "googleCategory": "Veterinario",
+    "phone": "+34 917 76 54 43",
+    "lat": 40.406957,
+    "lng": -3.608143,
+    "image": "/images/negocios/veterinaria-vicalvaro.jpg",
+    "images": [
+      "/images/negocios/veterinaria-vicalvaro.jpg",
+      "/images/negocios/veterinaria-vicalvaro-2.jpg",
+      "/images/negocios/veterinaria-vicalvaro-3.jpg",
+      "/images/negocios/veterinaria-vicalvaro-4.jpg",
+      "/images/negocios/veterinaria-vicalvaro-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-veterinaria-calidad-sin-frontera-vicalvaro",
+    "name": "CLINICA VETERINARIA CALIDAD SIN FRONTERA - VICÁLVARO",
+    "description": "Clínica veterinaria ubicada en el distrito de Vicálvaro, dedicada al cuidado y bienestar de las mascotas del barrio. Ofrece una atención sanitaria completa que abarca desde consultas preventivas hasta tratamientos específicos para perros, gatos y otros animales de compañía. Su equipo de profesionales proporciona un servicio cercano y orientado a mantener la salud de los animales en todas las etapas de su vida.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "C. de Villacarlos, 9 Local posterior - Vicálvaro VILLACARLOS 9 JUSTO DETRÁS DEL PORTAL, C. de Villacarlos, 9, Local posterior, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Consulta veterinaria general",
+      "Vacunación y desparasitación",
+      "Cirugía general y de tejidos blandos",
+      "Análisis clínicos y diagnóstico por imagen",
+      "Identificación por microchip",
+      "Asesoramiento nutricional"
+    ],
+    "destacados": [
+      "Atención profesional y personalizada",
+      "Instalaciones equipadas para el diagnóstico",
+      "Ubicación accesible en el barrio de Vicálvaro"
+    ],
+    "rating": 4.9,
+    "numReviews": 103,
+    "placeId": "ChIJ1f-9B8slQg0RHQsferwZ7OI",
+    "googleCategory": "Veterinario",
+    "phone": "+34 919 35 78 94",
+    "lat": 40.4063681,
+    "lng": -3.6072005,
+    "image": "/images/negocios/clinica-veterinaria-calidad-sin-frontera-vicalvaro.jpg",
+    "images": [
+      "/images/negocios/clinica-veterinaria-calidad-sin-frontera-vicalvaro.jpg",
+      "/images/negocios/clinica-veterinaria-calidad-sin-frontera-vicalvaro-2.jpg",
+      "/images/negocios/clinica-veterinaria-calidad-sin-frontera-vicalvaro-3.jpg",
+      "/images/negocios/clinica-veterinaria-calidad-sin-frontera-vicalvaro-4.jpg",
+      "/images/negocios/clinica-veterinaria-calidad-sin-frontera-vicalvaro-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-veterinaria-omega",
+    "name": "Clínica Veterinaria Omega",
+    "description": "Centro veterinario situado en Vicálvaro que ofrece servicios médicos y asistenciales para animales de compañía. El centro se enfoca en la prevención de enfermedades y en el seguimiento continuo de la salud de las mascotas de los vecinos de la zona. Cuenta con personal cualificado para atender las necesidades sanitarias habituales de perros y gatos.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "C. de la Huerta del Convento, 20, posterior, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Medicina preventiva y chequeos de salud",
+      "Campaña de vacunación anual",
+      "Tratamientos antiparasitarios",
+      "Cirugía menor y esterilización",
+      "Limpieza e higiene dental",
+      "Expedición de pasaportes y cartillas sanitarias"
+    ],
+    "destacados": [
+      "Compromiso con el bienestar animal",
+      "Trato cercano y familiar con los propietarios",
+      "Servicios médicos esenciales para el día a día"
+    ],
+    "rating": 4.6,
+    "numReviews": 259,
+    "placeId": "ChIJnYyZLGolQg0RtUZYIfcfT8Y",
+    "googleCategory": "Veterinario",
+    "phone": "+34 911 30 20 13",
+    "website": "http://www.clinicaveterinariaomega.es/",
+    "lat": 40.400493,
+    "lng": -3.6039205,
+    "image": "/images/negocios/clinica-veterinaria-omega.jpg",
+    "images": [
+      "/images/negocios/clinica-veterinaria-omega.jpg",
+      "/images/negocios/clinica-veterinaria-omega-2.jpg",
+      "/images/negocios/clinica-veterinaria-omega-3.jpg",
+      "/images/negocios/clinica-veterinaria-omega-4.jpg",
+      "/images/negocios/clinica-veterinaria-omega-5.jpg"
+    ]
+  },
+  {
+    "slug": "clinica-veterinaria-habitat-vicalvaro",
+    "name": "Clínica Veterinaria Hábitat Vicálvaro",
+    "description": "Establecimiento veterinario de referencia en Vicálvaro que presta servicios de salud y cuidado para todo tipo de mascotas. Su actividad se centra en ofrecer un diagnóstico preciso y tratamientos adecuados para garantizar la calidad de vida de los animales del entorno. Dispone de un espacio adaptado para la atención cómoda y segura de los pacientes y sus dueños.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
+    "address": "P.º de los Artilleros, 2, Vicálvaro, 28032 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Consultas de medicina general",
+      "Planes de salud personalizados",
+      "Cirugía y anestesia monitorizada",
+      "Pruebas diagnósticas y laboratorio",
+      "Gestión de documentación obligatoria",
+      "Venta de alimentación especializada"
+    ],
+    "destacados": [
+      "Seguimiento integral de la salud de la mascota",
+      "Equipo con experiencia en medicina veterinaria",
+      "Fácil acceso para los residentes de Vicálvaro"
+    ],
+    "rating": 4.7,
+    "numReviews": 157,
+    "placeId": "ChIJfUcj7mQlQg0REAY7NGgq7Sk",
+    "googleCategory": "Veterinario",
+    "phone": "+34 917 76 58 12",
+    "website": "http://www.clinicaveterinariahabitat.com/",
+    "lat": 40.4085423,
+    "lng": -3.6100226,
+    "image": "/images/negocios/clinica-veterinaria-habitat-vicalvaro.jpg",
+    "images": [
+      "/images/negocios/clinica-veterinaria-habitat-vicalvaro.jpg",
+      "/images/negocios/clinica-veterinaria-habitat-vicalvaro-2.jpg",
+      "/images/negocios/clinica-veterinaria-habitat-vicalvaro-3.jpg",
+      "/images/negocios/clinica-veterinaria-habitat-vicalvaro-4.jpg",
+      "/images/negocios/clinica-veterinaria-habitat-vicalvaro-5.jpg"
+    ]
   }
 ]
