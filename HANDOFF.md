@@ -162,11 +162,16 @@ Refrescar todo: `python scripts/apify_enrich.py --mode enrich --write` (coste ~$
 4. **Legales Opción B** (si John factura en serio): añadir NIF + domicilio fiscal a aviso-legal y privacidad.
 5. **Documentar boilerplate** replicable (Sanchinarro, Valdebebas, Rivas…) — el motor de directorio+listicles+drip ya es bastante portable.
 
-## 💡 Ideas de contenido (de John, por hacer)
-- **Blog de actualidad** desde `/comunidad`: minar los grupos/cuentas de FB/IG/X del barrio para sacar temas de posts (de qué habla la gente).
-- **Guía de espacios públicos de El Cañaveral**: parques infantiles públicos, parques para perros (pipican), áreas de disfrute, canchas/pistas deportivas, caminerías… **con mapas de Google embebidos**. Muchos recién remodelados por el ayuntamiento, con tráfico de gente de otras zonas → búsquedas evergreen/familiares sin competencia local. NO son negocios (van aparte de `negocios.json`); descubribles con Apify/Maps y reutilizando el mapa con consentimiento (`CookieConsent.astro`).
-- **Guía de transporte/movilidad**: conexiones de El Cañaveral con Madrid, Coslada, San Fernando de Henares y Vicálvaro — autobuses (rutas de día y de noche/búhos), Metro y Cercanías cercanos, taxi/radio-taxi y VTC (Uber, Cabify, Bolt). Referencia evergreen muy buscada; datos de CRTM/EMT, curado con horarios/mapas.
-- **Optimizar imágenes a WebP** (Pack C): `public/images/negocios/` pesa ~207 MB; convertir reduciría mucho el peso y mejoraría el rendimiento móvil.
+## 💡 Ideas de contenido y roadmap → ver **`IDEAS-CONTENIDO.md`** (documento maestro)
+
+Estrategia: pasar de "directorio" a **EL hub de referencia de El Cañaveral**. Backlog completo, priorizado y con la **investigación de transporte ya hecha (datos reales con fuentes)** en `IDEAS-CONTENIDO.md`. Resumen:
+- 🚌 **Guía de transporte** — datos ya investigados (líneas 159/E5/290/N6 búho, Cercanías C2/C7, etc.), **lista para montar**.
+- 🌳 **Guía de espacios públicos** (parques, pipicanes, pistas, caminerías) con mapas.
+- 🔑 **"Vivir en El Cañaveral"** (guía recién llegados) = KEYSTONE SEO.
+- 🏛️ **Servicios públicos** = GAP: faltan **colegios/IES públicos** y **centro de salud público/farmacias 24h** (el directorio solo tiene privados).
+- 📰 **Blog de actualidad** desde `/comunidad`. · 🐶 **Hubs por afinidad** (perros, familias).
+- 🍽️ Listicles temáticos (terraza/delivery): datos infra-etiquetados → re-enriquecer con Apify primero.
+- 🖼️ **WebP** (Pack C): imágenes ~207 MB.
 
 ## ⚠️ Restricciones de trabajo (verano Madrid)
 - **CPU < 65 °C** — monitorizar con `istats cpu temp`; ralentizar si sube. **NO usar Playwright** (recalienta).
