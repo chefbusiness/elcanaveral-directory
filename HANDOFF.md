@@ -165,6 +165,7 @@ Refrescar todo: `python scripts/apify_enrich.py --mode enrich --write` (coste ~$
 ## 💡 Ideas de contenido (de John, por hacer)
 - **Blog de actualidad** desde `/comunidad`: minar los grupos/cuentas de FB/IG/X del barrio para sacar temas de posts (de qué habla la gente).
 - **Guía de espacios públicos de El Cañaveral**: parques infantiles públicos, parques para perros (pipican), áreas de disfrute, canchas/pistas deportivas, caminerías… **con mapas de Google embebidos**. Muchos recién remodelados por el ayuntamiento, con tráfico de gente de otras zonas → búsquedas evergreen/familiares sin competencia local. NO son negocios (van aparte de `negocios.json`); descubribles con Apify/Maps y reutilizando el mapa con consentimiento (`CookieConsent.astro`).
+- **Guía de transporte/movilidad**: conexiones de El Cañaveral con Madrid, Coslada, San Fernando de Henares y Vicálvaro — autobuses (rutas de día y de noche/búhos), Metro y Cercanías cercanos, taxi/radio-taxi y VTC (Uber, Cabify, Bolt). Referencia evergreen muy buscada; datos de CRTM/EMT, curado con horarios/mapas.
 - **Optimizar imágenes a WebP** (Pack C): `public/images/negocios/` pesa ~207 MB; convertir reduciría mucho el peso y mejoraría el rendimiento móvil.
 
 ## ⚠️ Restricciones de trabajo (verano Madrid)
