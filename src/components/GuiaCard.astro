@@ -1,0 +1,37 @@
+---
+import { getRankedNegocios } from "@/lib/listicles";
+import type { Listicle } from "@/lib/listicles";
+
+interface Props {
+  guia: Listicle;
+}
+const { guia } = Astro.props;
+const ranked = getRankedNegocios(guia.category, {
+  topN: guia.topN,
+  minRating: guia.minRating,
+  zona: guia.zona,
+  googleCategoryMatch: guia.googleCategoryMatch,
+});
+const cover = ranked[0]?.negocio.image;
+const count = ranked.length;
+---
+
+<a
+  href={`/blog/${guia.slug}`}
+  class="block bg-white rounded-xl border border-warm-200 overflow-hidden hover:shadow-lg hover:border-brand-200 transition-all group"
+>
+  {cover && (
+    <div class="relative">
+      <img src={cover} alt={guia.h1} class="w-full h-36 object-cover" loading="lazy" />
+      <span class="absolute bottom-2 left-2 text-[11px] font-semibold bg-brand-900/85 text-white px-2 py-0.5 rounded">
+        {count} negocios
+      </span>
+    </div>
+  )}
+  <div class="p-4">
+    <h3 class="font-bold text-base text-brand-900 group-hover:text-brand-600 transition-colors leading-snug line-clamp-2">
+      {guia.h1}
+    </h3>
+    <span class="inline-block mt-2 text-sm font-medium text-brand-600">Ver guía &rarr;</span>
+  </div>
+</a>

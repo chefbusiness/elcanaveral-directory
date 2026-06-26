@@ -3,7 +3,9 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
+import GuiaCard from "@/components/GuiaCard.astro";
 import { generateZonaPaths, loadCategorias, getNegociosByCategoriaYZona } from "@/lib/directory";
+import { loadPublishedListicles } from "@/lib/listicles";
 import type { Negocio, Zona } from "@/lib/directory";
 
 export function getStaticPaths() {
@@ -15,6 +17,7 @@ interface Props extends Zona {
 }
 
 const { name, description, slug, negocios, count } = Astro.props;
+const guiasZona = loadPublishedListicles().filter((l) => l.zona === slug);
 const categorias = loadCategorias();
 const categoriasEnZona = categorias
   .map((cat) => ({
@@ -76,6 +79,19 @@ const zonaSchema = {
         </div>
       )}
 
+      {guiasZona.length > 0 && (
+        <div class="mb-10">
+          <h2 class="text-xl font-bold text-brand-900 mb-1">Guías de {name}</h2>
+          <p class="text-sm text-gray-500 mb-5">Rankings de los mejores negocios de la zona por categoría</p>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {guiasZona.map((guia) => (
+              <GuiaCard guia={guia} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      <h2 class="text-xl font-bold text-brand-900 mb-5">Todos los negocios en {name}</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {negocios.map((negocio) => (
           <NegocioCard negocio={negocio} />

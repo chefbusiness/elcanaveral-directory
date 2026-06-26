@@ -4,12 +4,18 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import SearchBar from "@/components/SearchBar.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
+import GuiaCard from "@/components/GuiaCard.astro";
 import { loadCategorias, loadZonas, getFeaturedNegocios, loadNegocios } from "@/lib/directory";
+import { loadPublishedListicles } from "@/lib/listicles";
 
 const categorias = loadCategorias();
 const zonas = loadZonas();
 const featured = getFeaturedNegocios(6);
 const totalNegocios = loadNegocios().length;
+// Guías generales (de "y alrededores") primero, para la home
+const guias = loadPublishedListicles()
+  .sort((a, b) => (a.zona ? 1 : 0) - (b.zona ? 1 : 0))
+  .slice(0, 6);
 ---
 
 <BaseLayout
@@ -123,6 +129,26 @@ const totalNegocios = loadNegocios().length;
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {featured.map((negocio) => (
             <NegocioCard negocio={negocio} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Guías del barrio -->
+  {guias.length > 0 && (
+    <section class="py-16 px-4 bg-warm-50 border-t border-warm-200">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-end justify-between mb-8">
+          <div>
+            <h2 class="text-2xl font-bold text-brand-900">Guías del barrio</h2>
+            <p class="text-gray-500 mt-1">Los mejores de cada categoría, según las reseñas reales de Google</p>
+          </div>
+          <a href="/blog" class="text-sm font-medium text-brand-600 hover:text-brand-700 shrink-0">Ver todas &rarr;</a>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {guias.map((guia) => (
+            <GuiaCard guia={guia} />
           ))}
         </div>
       </div>
