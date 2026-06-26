@@ -4,7 +4,7 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import { generateZonaCategoriaPaths } from "@/lib/directory";
-import { getListicleByCategory } from "@/lib/listicles";
+import { getListicleByCategory, getListicleByCategoryZona } from "@/lib/listicles";
 import type { Negocio, Zona, Categoria } from "@/lib/directory";
 
 export function getStaticPaths() {
@@ -18,7 +18,8 @@ interface Props {
 }
 
 const { zona, categoria, negocios } = Astro.props;
-const guia = getListicleByCategory(categoria.slug);
+// Prefiere la guia especifica de esta zona; si no, la general de la categoria.
+const guia = getListicleByCategoryZona(categoria.slug, zona.slug) || getListicleByCategory(categoria.slug);
 
 const itemListSchema = {
   "@context": "https://schema.org",

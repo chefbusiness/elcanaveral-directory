@@ -20,6 +20,7 @@ export interface Listicle {
   intro: string;
   topN?: number;           // tope opcional de items
   minRating?: number;      // nota minima para entrar (def: sin filtro)
+  zona?: string;           // si se fija, la guia es de una sola zona (ej. "coslada")
   googleCategoryMatch?: string[]; // sub-filtro por categoria Google (ej. ["dental"])
   publishedDate: string;          // YYYY-MM-DD; si es futura, la guia no se publica aun
   updatedDate: string;
@@ -66,11 +67,14 @@ const norm = (s: string) =>
 
 export function getRankedNegocios(
   category: string,
-  opts: { topN?: number; minRating?: number; googleCategoryMatch?: string[] } = {}
+  opts: { topN?: number; minRating?: number; zona?: string; googleCategoryMatch?: string[] } = {}
 ): RankedNegocio[] {
   let rated = loadNegocios().filter(
     (n) => n.category === category && typeof n.rating === "number" && typeof n.numReviews === "number"
   );
+  if (opts.zona) {
+    rated = rated.filter((n) => n.zona === opts.zona);
+  }
   if (opts.googleCategoryMatch && opts.googleCategoryMatch.length > 0) {
     const needles = opts.googleCategoryMatch.map(norm);
     rated = rated.filter((n) => {
@@ -106,7 +110,12 @@ export function generateListiclePaths() {
   return loadPublishedListicles().map((l) => ({ params: { slug: l.slug }, props: l }));
 }
 
-/** Devuelve la guia ("mejores X") PUBLICADA asociada a una categoria, si existe. */
+/** Guia general (de "y alrededores", sin zona) de una categoria — para las paginas de categoria. */
 export function getListicleByCategory(category: string): Listicle | undefined {
-  return loadPublishedListicles().find((l) => l.category === category);
+  return loadPublishedListicles().find((l) => l.category === category && !l.zona);
+}
+
+/** Guia especifica de una zona+categoria — para las paginas de zona×categoria. */
+export function getListicleByCategoryZona(category: string, zona: string): Listicle | undefined {
+  return loadPublishedListicles().find((l) => l.category === category && l.zona === zona);
 }

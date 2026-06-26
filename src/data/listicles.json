@@ -34,7 +34,10 @@
   {
     "slug": "mejores-clinicas-dentales-el-canaveral",
     "category": "salud",
-    "googleCategoryMatch": ["dental", "dentista"],
+    "googleCategoryMatch": [
+      "dental",
+      "dentista"
+    ],
     "noun": "clínicas dentales",
     "breadcrumb": "Mejores dentistas",
     "ctaTitle": "¿Tienes una clínica dental en El Cañaveral?",
@@ -63,7 +66,10 @@
   {
     "slug": "mejores-gimnasios-el-canaveral",
     "category": "deporte",
-    "googleCategoryMatch": ["gimnasio", "deportivo"],
+    "googleCategoryMatch": [
+      "gimnasio",
+      "deportivo"
+    ],
     "noun": "gimnasios",
     "breadcrumb": "Mejores gimnasios",
     "ctaTitle": "¿Tienes un gimnasio o centro deportivo en El Cañaveral?",
@@ -92,7 +98,9 @@
   {
     "slug": "mejores-peluquerias-el-canaveral",
     "category": "belleza",
-    "googleCategoryMatch": ["peluqueria"],
+    "googleCategoryMatch": [
+      "peluqueria"
+    ],
     "noun": "peluquerías",
     "breadcrumb": "Mejores peluquerías",
     "ctaTitle": "¿Tienes una peluquería en El Cañaveral?",
@@ -193,7 +201,12 @@
   {
     "slug": "mejores-guarderias-el-canaveral",
     "category": "educacion",
-    "googleCategoryMatch": ["preescolar", "infancia", "infantil", "jardin"],
+    "googleCategoryMatch": [
+      "preescolar",
+      "infancia",
+      "infantil",
+      "jardin"
+    ],
     "noun": "guarderías y escuelas infantiles",
     "breadcrumb": "Mejores guarderías",
     "ctaTitle": "¿Tienes una guardería o escuela infantil en El Cañaveral?",
@@ -242,7 +255,11 @@
   {
     "slug": "mejores-talleres-mecanicos-el-canaveral",
     "category": "automocion",
-    "googleCategoryMatch": ["taller", "reparacion", "automovil"],
+    "googleCategoryMatch": [
+      "taller",
+      "reparacion",
+      "automovil"
+    ],
     "noun": "talleres mecánicos",
     "breadcrumb": "Mejores talleres",
     "ctaTitle": "¿Tienes un taller mecánico en El Cañaveral?",
@@ -285,6 +302,492 @@
       {
         "q": "¿Cómo se ordena este ranking de tiendas de ropa?",
         "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada tienda, en lugar de ordenar solo por nota o solo por número de opiniones."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-peluquerias-coslada",
+    "category": "belleza",
+    "zona": "coslada",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "peluqueria"
+    ],
+    "noun": "peluquerías",
+    "breadcrumb": "Mejores peluquerías",
+    "ctaTitle": "¿Tienes una peluquería en Coslada?",
+    "h1": "Las mejores peluquerías de Coslada",
+    "metaTitle": "Las mejores peluquerías de Coslada (2026)",
+    "metaDescription": "Las peluquerías mejor valoradas de Coslada, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores peluquerías de Coslada, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Coslada es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-06-26",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor peluquería de Coslada?",
+        "a": "Según las reseñas de Google, R&D Estilistas es la mejor valorada de Coslada, con 4.9 estrellas y 78 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-talleres-mecanicos-coslada",
+    "category": "automocion",
+    "zona": "coslada",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "taller",
+      "reparacion",
+      "automovil"
+    ],
+    "noun": "talleres mecánicos",
+    "breadcrumb": "Mejores talleres mecánicos",
+    "ctaTitle": "¿Tienes un taller mecánico en Coslada?",
+    "h1": "Las mejores talleres mecánicos de Coslada",
+    "metaTitle": "Las mejores talleres mecánicos de Coslada (2026)",
+    "metaDescription": "Las talleres mecánicos mejor valoradas de Coslada, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores talleres mecánicos de Coslada, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Coslada es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-06-28",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es el mejor taller mecánico de Coslada?",
+        "a": "Según las reseñas de Google, Masruedas First Stop Coslada es el mejor valorado de Coslada, con 4.9 estrellas y 116 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-restaurantes-san-fernando-de-henares",
+    "category": "restaurantes",
+    "zona": "san-fernando-de-henares",
+    "minRating": 4,
+    "noun": "restaurantes",
+    "breadcrumb": "Mejores restaurantes",
+    "ctaTitle": "¿Tienes un restaurante en San Fernando de Henares?",
+    "h1": "Las mejores restaurantes de San Fernando de Henares",
+    "metaTitle": "Las mejores restaurantes de San Fernando de Henares (2026)",
+    "metaDescription": "Las restaurantes mejor valoradas de San Fernando de Henares, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores restaurantes de San Fernando de Henares, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). San Fernando de Henares es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-06-30",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es el mejor restaurante de San Fernando de Henares?",
+        "a": "Según las reseñas de Google, Restaurante Asturias es el mejor valorado de San Fernando de Henares, con 4.8 estrellas y 701 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-restaurantes-coslada",
+    "category": "restaurantes",
+    "zona": "coslada",
+    "minRating": 4,
+    "noun": "restaurantes",
+    "breadcrumb": "Mejores restaurantes",
+    "ctaTitle": "¿Tienes un restaurante en Coslada?",
+    "h1": "Las mejores restaurantes de Coslada",
+    "metaTitle": "Las mejores restaurantes de Coslada (2026)",
+    "metaDescription": "Las restaurantes mejor valoradas de Coslada, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores restaurantes de Coslada, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Coslada es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-02",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es el mejor restaurante de Coslada?",
+        "a": "Según las reseñas de Google, La Mesa Escondida es el mejor valorado de Coslada, con 4.8 estrellas y 184 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-veterinarios-coslada",
+    "category": "mascotas",
+    "zona": "coslada",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "veterinari"
+    ],
+    "noun": "veterinarios",
+    "breadcrumb": "Mejores veterinarios",
+    "ctaTitle": "¿Tienes un veterinario en Coslada?",
+    "h1": "Las mejores veterinarios de Coslada",
+    "metaTitle": "Las mejores veterinarios de Coslada (2026)",
+    "metaDescription": "Las veterinarios mejor valoradas de Coslada, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores veterinarios de Coslada, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Coslada es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-04",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es el mejor veterinario de Coslada?",
+        "a": "Según las reseñas de Google, Clínica Veterinaria Méjico 17 es el mejor valorado de Coslada, con 4.9 estrellas y 209 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-inmobiliarias-coslada",
+    "category": "inmobiliarias",
+    "zona": "coslada",
+    "minRating": 4,
+    "noun": "inmobiliarias",
+    "breadcrumb": "Mejores inmobiliarias",
+    "ctaTitle": "¿Tienes una inmobiliaria en Coslada?",
+    "h1": "Las mejores inmobiliarias de Coslada",
+    "metaTitle": "Las mejores inmobiliarias de Coslada (2026)",
+    "metaDescription": "Las inmobiliarias mejor valoradas de Coslada, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores inmobiliarias de Coslada, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Coslada es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-06",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor inmobiliaria de Coslada?",
+        "a": "Según las reseñas de Google, Inmobiliaria SM Homes Coslada es la mejor valorada de Coslada, con 5 estrellas y 489 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-cafeterias-coslada",
+    "category": "cafeterias",
+    "zona": "coslada",
+    "minRating": 4,
+    "noun": "cafeterías",
+    "breadcrumb": "Mejores cafeterías",
+    "ctaTitle": "¿Tienes una cafetería en Coslada?",
+    "h1": "Las mejores cafeterías de Coslada",
+    "metaTitle": "Las mejores cafeterías de Coslada (2026)",
+    "metaDescription": "Las cafeterías mejor valoradas de Coslada, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores cafeterías de Coslada, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Coslada es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-08",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor cafetería de Coslada?",
+        "a": "Según las reseñas de Google, MOON Cafetería Restaurante es la mejor valorada de Coslada, con 4.5 estrellas y 171 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-ferreterias-coslada",
+    "category": "hogar",
+    "zona": "coslada",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "ferreteria"
+    ],
+    "noun": "ferreterías",
+    "breadcrumb": "Mejores ferreterías",
+    "ctaTitle": "¿Tienes una ferretería en Coslada?",
+    "h1": "Las mejores ferreterías de Coslada",
+    "metaTitle": "Las mejores ferreterías de Coslada (2026)",
+    "metaDescription": "Las ferreterías mejor valoradas de Coslada, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores ferreterías de Coslada, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Coslada es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-10",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor ferretería de Coslada?",
+        "a": "Según las reseñas de Google, FERRETERIA DATO en Coslada - Afilador - Copia de llaves - Arreglo de ollas (Expres y Super rápidas) - Rodamientos - Cremonas es la mejor valorada de Coslada, con 4.7 estrellas y 209 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-peluquerias-san-fernando-de-henares",
+    "category": "belleza",
+    "zona": "san-fernando-de-henares",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "peluqueria"
+    ],
+    "noun": "peluquerías",
+    "breadcrumb": "Mejores peluquerías",
+    "ctaTitle": "¿Tienes una peluquería en San Fernando de Henares?",
+    "h1": "Las mejores peluquerías de San Fernando de Henares",
+    "metaTitle": "Las mejores peluquerías de San Fernando de Henares (2026)",
+    "metaDescription": "Las peluquerías mejor valoradas de San Fernando de Henares, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores peluquerías de San Fernando de Henares, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). San Fernando de Henares es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-12",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor peluquería de San Fernando de Henares?",
+        "a": "Según las reseñas de Google, Alba Centro de Belleza es la mejor valorada de San Fernando de Henares, con 4.9 estrellas y 69 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-veterinarios-vicalvaro",
+    "category": "mascotas",
+    "zona": "vicalvaro",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "veterinari"
+    ],
+    "noun": "veterinarios",
+    "breadcrumb": "Mejores veterinarios",
+    "ctaTitle": "¿Tienes un veterinario en Vicálvaro?",
+    "h1": "Las mejores veterinarios de Vicálvaro",
+    "metaTitle": "Las mejores veterinarios de Vicálvaro (2026)",
+    "metaDescription": "Las veterinarios mejor valoradas de Vicálvaro, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores veterinarios de Vicálvaro, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Vicálvaro es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-14",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es el mejor veterinario de Vicálvaro?",
+        "a": "Según las reseñas de Google, CLINICA VETERINARIA CALIDAD SIN FRONTERA - VICÁLVARO es el mejor valorado de Vicálvaro, con 4.9 estrellas y 103 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-inmobiliarias-vicalvaro",
+    "category": "inmobiliarias",
+    "zona": "vicalvaro",
+    "minRating": 4,
+    "noun": "inmobiliarias",
+    "breadcrumb": "Mejores inmobiliarias",
+    "ctaTitle": "¿Tienes una inmobiliaria en Vicálvaro?",
+    "h1": "Las mejores inmobiliarias de Vicálvaro",
+    "metaTitle": "Las mejores inmobiliarias de Vicálvaro (2026)",
+    "metaDescription": "Las inmobiliarias mejor valoradas de Vicálvaro, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores inmobiliarias de Vicálvaro, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Vicálvaro es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-16",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor inmobiliaria de Vicálvaro?",
+        "a": "Según las reseñas de Google, Templo Consulting Inmobiliaria es la mejor valorada de Vicálvaro, con 4.8 estrellas y 671 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-clinicas-dentales-coslada",
+    "category": "salud",
+    "zona": "coslada",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "dental",
+      "dentista"
+    ],
+    "noun": "clínicas dentales",
+    "breadcrumb": "Mejores clínicas dentales",
+    "ctaTitle": "¿Tienes una clínica dental en Coslada?",
+    "h1": "Las mejores clínicas dentales de Coslada",
+    "metaTitle": "Las mejores clínicas dentales de Coslada (2026)",
+    "metaDescription": "Las clínicas dentales mejor valoradas de Coslada, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores clínicas dentales de Coslada, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Coslada es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-18",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor clínica dental de Coslada?",
+        "a": "Según las reseñas de Google, Clínica Dental Vitaldent es la mejor valorada de Coslada, con 5 estrellas y 72 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-panaderias-coslada",
+    "category": "panaderias",
+    "zona": "coslada",
+    "minRating": 4,
+    "noun": "panaderías",
+    "breadcrumb": "Mejores panaderías",
+    "ctaTitle": "¿Tienes una panadería en Coslada?",
+    "h1": "Las mejores panaderías de Coslada",
+    "metaTitle": "Las mejores panaderías de Coslada (2026)",
+    "metaDescription": "Las panaderías mejor valoradas de Coslada, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores panaderías de Coslada, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Coslada es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-20",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor panadería de Coslada?",
+        "a": "Según las reseñas de Google, Al Pan Pan es la mejor valorada de Coslada, con 4.6 estrellas y 97 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-talleres-mecanicos-san-fernando-de-henares",
+    "category": "automocion",
+    "zona": "san-fernando-de-henares",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "taller",
+      "reparacion",
+      "automovil"
+    ],
+    "noun": "talleres mecánicos",
+    "breadcrumb": "Mejores talleres mecánicos",
+    "ctaTitle": "¿Tienes un taller mecánico en San Fernando de Henares?",
+    "h1": "Las mejores talleres mecánicos de San Fernando de Henares",
+    "metaTitle": "Las mejores talleres mecánicos de San Fernando de Henares (2026)",
+    "metaDescription": "Las talleres mecánicos mejor valoradas de San Fernando de Henares, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores talleres mecánicos de San Fernando de Henares, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). San Fernando de Henares es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-22",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es el mejor taller mecánico de San Fernando de Henares?",
+        "a": "Según las reseñas de Google, Rallye Auto Sport s.l - Taller mecánico es el mejor valorado de San Fernando de Henares, con 4.8 estrellas y 189 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-restaurantes-vicalvaro",
+    "category": "restaurantes",
+    "zona": "vicalvaro",
+    "minRating": 4,
+    "noun": "restaurantes",
+    "breadcrumb": "Mejores restaurantes",
+    "ctaTitle": "¿Tienes un restaurante en Vicálvaro?",
+    "h1": "Las mejores restaurantes de Vicálvaro",
+    "metaTitle": "Las mejores restaurantes de Vicálvaro (2026)",
+    "metaDescription": "Las restaurantes mejor valoradas de Vicálvaro, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores restaurantes de Vicálvaro, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Vicálvaro es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-24",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es el mejor restaurante de Vicálvaro?",
+        "a": "Según las reseñas de Google, La Bajada Street Food Vicálvaro es el mejor valorado de Vicálvaro, con 4.6 estrellas y 1451 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-clinicas-dentales-san-fernando-de-henares",
+    "category": "salud",
+    "zona": "san-fernando-de-henares",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "dental",
+      "dentista"
+    ],
+    "noun": "clínicas dentales",
+    "breadcrumb": "Mejores clínicas dentales",
+    "ctaTitle": "¿Tienes una clínica dental en San Fernando de Henares?",
+    "h1": "Las mejores clínicas dentales de San Fernando de Henares",
+    "metaTitle": "Las mejores clínicas dentales de San Fernando de Henares (2026)",
+    "metaDescription": "Las clínicas dentales mejor valoradas de San Fernando de Henares, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores clínicas dentales de San Fernando de Henares, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). San Fernando de Henares es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-26",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor clínica dental de San Fernando de Henares?",
+        "a": "Según las reseñas de Google, Máxima Dental es la mejor valorada de San Fernando de Henares, con 5 estrellas y 613 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-tiendas-ropa-vicalvaro",
+    "category": "moda",
+    "zona": "vicalvaro",
+    "minRating": 4,
+    "noun": "tiendas de ropa",
+    "breadcrumb": "Mejores tiendas de ropa",
+    "ctaTitle": "¿Tienes una tienda de ropa en Vicálvaro?",
+    "h1": "Las mejores tiendas de ropa de Vicálvaro",
+    "metaTitle": "Las mejores tiendas de ropa de Vicálvaro (2026)",
+    "metaDescription": "Las tiendas de ropa mejor valoradas de Vicálvaro, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores tiendas de ropa de Vicálvaro, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Vicálvaro es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-28",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor tienda de ropa de Vicálvaro?",
+        "a": "Según las reseñas de Google, Aticomoda es la mejor valorada de Vicálvaro, con 4.9 estrellas y 63 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-ferreterias-vicalvaro",
+    "category": "hogar",
+    "zona": "vicalvaro",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "ferreteria"
+    ],
+    "noun": "ferreterías",
+    "breadcrumb": "Mejores ferreterías",
+    "ctaTitle": "¿Tienes una ferretería en Vicálvaro?",
+    "h1": "Las mejores ferreterías de Vicálvaro",
+    "metaTitle": "Las mejores ferreterías de Vicálvaro (2026)",
+    "metaDescription": "Las ferreterías mejor valoradas de Vicálvaro, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+    "intro": "Estas son las mejores ferreterías de Vicálvaro, ordenadas con una puntuación que combina la nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de opiniones). Vicálvaro es una de las zonas que cubre el directorio de El Cañaveral y alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a día. Solo aparecen las que mantienen 4 estrellas o más.",
+    "publishedDate": "2026-07-30",
+    "updatedDate": "2026-06-26",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor ferretería de Vicálvaro?",
+        "a": "Según las reseñas de Google, FERRETERIA FERRPELÁEZ es la mejor valorada de Vicálvaro, con 4.4 estrellas y 107 reseñas."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado."
       }
     ]
   }

@@ -13,6 +13,7 @@ const listicle = Astro.props as Listicle;
 const ranked = getRankedNegocios(listicle.category, {
   topN: listicle.topN,
   minRating: listicle.minRating,
+  zona: listicle.zona,
   googleCategoryMatch: listicle.googleCategoryMatch,
 });
 
