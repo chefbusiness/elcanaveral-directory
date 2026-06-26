@@ -945,7 +945,7 @@
       "Brunches completos y deliciosos"
     ],
     "horario": "L-V 8:30-20:00, S-D 9:00-20:30",
-    "terraza": true,
+    "terraza": false,
     "wifi": true,
     "images": [
       "/images/negocios/mimarutxa.jpg",
@@ -958,7 +958,8 @@
     "placeId": "ChIJl-Jfo8g7Qg0RI9ECrsgotcI",
     "googleCategory": "Establecimiento de comida preparada",
     "lat": 40.404164,
-    "lng": -3.558898
+    "lng": -3.558898,
+    "delivery": true
   },
   {
     "slug": "le-petit-cafe-de-cryss",
@@ -1238,12 +1239,13 @@
       "/images/negocios/arturos-el-canaveral-5.jpg"
     ],
     "rating": 3.5,
-    "numReviews": 2163,
+    "numReviews": 2164,
     "phone": "+34 911 27 14 71",
     "placeId": "ChIJHaFX3j87Qg0RX5kGbN5EEj0",
     "googleCategory": "Restaurante",
     "lat": 40.4063304,
-    "lng": -3.5630458
+    "lng": -3.5630458,
+    "delivery": true
   },
   {
     "slug": "los-fogones-canaveral",
@@ -1295,7 +1297,8 @@
     "placeId": "ChIJTbvciAY7Qg0RESUMGBViZoU",
     "googleCategory": "Restaurante",
     "lat": 40.4022755,
-    "lng": -3.5579137
+    "lng": -3.5579137,
+    "delivery": false
   },
   {
     "slug": "con-sazon-el-canaveral",
@@ -1333,7 +1336,7 @@
       "Colombiana"
     ],
     "menuDelDia": true,
-    "terraza": true,
+    "terraza": false,
     "delivery": true,
     "precioRango": "€€",
     "image": "/images/negocios/con-sazon-el-canaveral.jpg",
@@ -1346,7 +1349,7 @@
       "/images/negocios/con-sazon-el-canaveral-5.jpg"
     ],
     "rating": 4.8,
-    "numReviews": 6722,
+    "numReviews": 6724,
     "phone": "+34 615 62 50 86",
     "website": "https://consazon.es/",
     "placeId": "ChIJL11szugtQg0RBq4vMbgVkZc",
@@ -2386,12 +2389,13 @@
       "/images/negocios/beefcious-el-canaveral-5.jpg"
     ],
     "rating": 4.5,
-    "numReviews": 1979,
+    "numReviews": 1983,
     "website": "http://www.beefcious.com/",
     "placeId": "ChIJ87yYRps7Qg0Rj3px8lzK9Og",
     "googleCategory": "Restaurante",
     "lat": 40.4024875,
-    "lng": -3.5651233
+    "lng": -3.5651233,
+    "terraza": false
   },
   {
     "slug": "cerveceria-la-galerna",
@@ -2443,7 +2447,8 @@
     "placeId": "ChIJ03tn2247Qg0R9dGfbfzMKWg",
     "googleCategory": "Restaurante",
     "lat": 40.4065364,
-    "lng": -3.5621905
+    "lng": -3.5621905,
+    "delivery": false
   },
   {
     "slug": "churreria-bernis",
@@ -3537,7 +3542,8 @@
     "website": "https://www.instagram.com/mrkebab_el_canaveral?igsh=MXN5ZjMzbzhmbzg2cg%3D%3D&utm_source=qr",
     "placeId": "ChIJi1s5K_c7Qg0RpAGRIOMFO8Q",
     "lat": 40.4085461,
-    "lng": -3.55308
+    "lng": -3.55308,
+    "terraza": false
   },
   {
     "slug": "telepizza-canaveral",
@@ -3884,7 +3890,7 @@
       "auto-king"
     ],
     "delivery": true,
-    "terraza": true,
+    "terraza": false,
     "aparcamiento": true,
     "featured": false,
     "servicios": [
@@ -3914,7 +3920,7 @@
       "/images/negocios/burger-king-canaveral-5.jpg"
     ],
     "rating": 3.5,
-    "numReviews": 923,
+    "numReviews": 922,
     "phone": "+34 660 96 57 99",
     "website": "https://www.burgerking.es/",
     "placeId": "ChIJj1y_t1g7Qg0RvZ7cznDFPKo",
@@ -4299,7 +4305,7 @@
     "zonaName": "El Cañaveral",
     "address": "Calle Ferenc Puskas, 193, 28052 Madrid",
     "website": "https://vietnamrestaurante.com/",
-    "rating": 4.8,
+    "rating": 4.7,
     "tags": [
       "vietnamita",
       "pho",
@@ -4333,12 +4339,14 @@
       "/images/negocios/vietnam-2013-canaveral-4.jpg",
       "/images/negocios/vietnam-2013-canaveral-5.jpg"
     ],
-    "numReviews": 120,
+    "numReviews": 122,
     "phone": "+34 910 26 18 10",
     "placeId": "ChIJ16ByZgA7Qg0RUKLZvdovxtQ",
     "googleCategory": "Restaurante vietnamita",
     "lat": 40.3985434,
-    "lng": -3.5469724
+    "lng": -3.5469724,
+    "terraza": false,
+    "delivery": true
   },
   {
     "slug": "seven-canaveral",
@@ -4379,12 +4387,14 @@
       "/images/negocios/seven-canaveral-4.jpg",
       "/images/negocios/seven-canaveral-5.jpg"
     ],
-    "rating": 4.1,
-    "numReviews": 51,
-    "placeId": "ChIJz-YevH87Qg0R0mECXs_jcts",
-    "googleCategory": "Restaurante",
-    "lat": 40.4063304,
-    "lng": -3.5630458
+    "rating": 4.2,
+    "numReviews": 189,
+    "placeId": "ChIJIRuBGQAxQg0RXfKo5xuyQzA",
+    "googleCategory": "Bar restaurante",
+    "lat": 40.4282468,
+    "lng": -3.5618414,
+    "website": "https://barsevencoslada.com/",
+    "delivery": false
   },
   {
     "slug": "havana-madrid-canaveral",
@@ -4435,7 +4445,8 @@
     "placeId": "ChIJpepqbgAvQg0Ryib_REEDZ9g",
     "googleCategory": "Pub",
     "lat": 40.4378837,
-    "lng": -3.634704
+    "lng": -3.634704,
+    "terraza": false
   },
   {
     "slug": "guasacaca-madrid-canaveral",
@@ -4480,13 +4491,15 @@
       "/images/negocios/guasacaca-madrid-canaveral-5.jpg"
     ],
     "rating": 4.8,
-    "numReviews": 774,
+    "numReviews": 780,
     "phone": "+34 910 94 52 64",
     "website": "https://guasacaca.metro.bar/?lang=es",
     "placeId": "ChIJdeuOYNc7Qg0RqIw8k92He_g",
     "googleCategory": "Restaurante venezolano",
     "lat": 40.4086578,
-    "lng": -3.5523544
+    "lng": -3.5523544,
+    "terraza": false,
+    "delivery": true
   },
   {
     "slug": "chinawok-express-canaveral",
@@ -4534,12 +4547,13 @@
       "/images/negocios/chinawok-express-canaveral-5.jpg"
     ],
     "rating": 4.7,
-    "numReviews": 3191,
+    "numReviews": 3195,
     "phone": "+34 912 90 82 93",
     "placeId": "ChIJiRwnZwA7Qg0R0GgZ_nSkBag",
     "googleCategory": "Restaurante chino",
     "lat": 40.4075622,
-    "lng": -3.5530804
+    "lng": -3.5530804,
+    "terraza": false
   },
   {
     "slug": "la-bajada-street-food-vicalvaro",
@@ -4824,7 +4838,8 @@
     "placeId": "ChIJwSUL2Wc7Qg0R2RyYy80AOx4",
     "googleCategory": "Restaurante familiar",
     "lat": 40.40523,
-    "lng": -3.5502325
+    "lng": -3.5502325,
+    "delivery": false
   },
   {
     "slug": "estanco-el-canaveral",
@@ -9914,7 +9929,9 @@
       "/images/negocios/cafe-damario-3.jpg",
       "/images/negocios/cafe-damario-4.jpg",
       "/images/negocios/cafe-damario-5.jpg"
-    ]
+    ],
+    "terraza": true,
+    "delivery": true
   },
   {
     "slug": "cafe-lave",
@@ -9953,7 +9970,9 @@
       "/images/negocios/cafe-lave-3.jpg",
       "/images/negocios/cafe-lave-4.jpg",
       "/images/negocios/cafe-lave-5.jpg"
-    ]
+    ],
+    "terraza": false,
+    "delivery": false
   },
   {
     "slug": "dulce-ruah",
@@ -10030,7 +10049,9 @@
       "/images/negocios/tsinghe-cocina-fusion-3.jpg",
       "/images/negocios/tsinghe-cocina-fusion-4.jpg",
       "/images/negocios/tsinghe-cocina-fusion-5.jpg"
-    ]
+    ],
+    "terraza": true,
+    "delivery": false
   },
   {
     "slug": "frutas-ocana",

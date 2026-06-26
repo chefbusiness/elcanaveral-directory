@@ -136,6 +136,8 @@ def select_targets(negocios, args):
     targets = negocios
     if args.category:
         targets = [n for n in targets if n.get("category") == args.category]
+    if args.zona:
+        targets = [n for n in targets if n.get("zona") == args.zona]
     if args.only_missing:
         targets = [n for n in targets if not n.get("rating") or not n.get("numReviews")]
     if args.limit:
@@ -168,6 +170,13 @@ def build_diff(n: dict, place: dict, refresh_horario: bool,
     loc = place.get("location") or {}
     setif("lat", loc.get("lat"))
     setif("lng", loc.get("lng"))
+    # Amenities reales de Google (additionalInfo > Opciones de servicio)
+    so = {}
+    for item in ((place.get("additionalInfo") or {}).get("Opciones de servicio") or []):
+        so.update(item)
+    if so:
+        setif("terraza", bool(so.get("Asientos al aire libre")))
+        setif("delivery", bool(so.get("Entrega a domicilio")))
     if refresh_horario:
         h = fmt_hours(place.get("openingHours"))
         setif("horario", h)
@@ -308,6 +317,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--mode", choices=["enrich", "discover"], default="enrich")
     p.add_argument("--category", help="(enrich) filtra por category del sitio")
+    p.add_argument("--zona", help="(enrich) filtra por zona (ej. el-canaveral)")
     p.add_argument("--slug", help="(enrich) un solo negocio")
     p.add_argument("--slugs", help="(enrich) lista de slugs separados por coma")
     p.add_argument("--location-bias", action="store_true",
