@@ -1,0 +1,59 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import escapadasData from "@/data/escapadas.json";
+
+const data = escapadasData as any;
+const regiones = data.regiones.map((r: any) => ({
+  ...r,
+  count: data.sitios.filter((s: any) => s.region === r.id).length,
+}));
+---
+
+<BaseLayout
+  title="Planes y escapadas desde El Cañaveral"
+  description="Qué hacer y a dónde ir desde El Cañaveral: escapadas por el sureste, centro y resto de Madrid. Pueblos, parques, museos y naturaleza, filtrando por con niños, con perro o gratis."
+>
+  <Header />
+
+  <section class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <header class="mb-10">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900">Planes y escapadas desde El Cañaveral</h1>
+        <p class="text-gray-600 mt-3 text-lg">
+          ¿Un finde sin saber a dónde ir con los niños o el perro? Aquí tienes ideas de planes y escapadas por
+          todo Madrid, organizadas por zonas y pensadas <strong>desde El Cañaveral</strong>: pueblos con encanto,
+          parques, naturaleza, museos y mucho más, con cómo llegar y filtros para encontrar tu plan.
+        </p>
+      </header>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        {regiones.map((r: any) => (
+          r.activa ? (
+            <a href={`/escapadas/${r.id}`} class="block bg-white rounded-xl border border-warm-200 p-6 hover:shadow-lg hover:border-brand-200 transition-all group">
+              <div class="text-4xl mb-2">{r.icon}</div>
+              <h2 class="font-bold text-lg text-brand-900 group-hover:text-brand-600 transition-colors">{r.name}</h2>
+              <p class="text-gray-500 text-sm mt-1">{r.desc}</p>
+              <span class="inline-block mt-3 text-sm font-medium text-brand-600">{r.count} planes &rarr;</span>
+            </a>
+          ) : (
+            <div class="bg-warm-50 rounded-xl border border-warm-100 p-6 opacity-70">
+              <div class="text-4xl mb-2 grayscale">{r.icon}</div>
+              <h2 class="font-bold text-lg text-gray-500">{r.name}</h2>
+              <p class="text-gray-400 text-sm mt-1">{r.desc}</p>
+              <span class="inline-block mt-3 text-xs font-semibold text-gray-400 uppercase tracking-wide">Próximamente</span>
+            </div>
+          )
+        ))}
+      </div>
+
+      <p class="text-sm text-gray-400 mt-8">
+        ¿Tienes un plan o rincón favorito para recomendar? Escríbenos a
+        <a href="mailto:local@elcanaveral.info" class="text-brand-600">local@elcanaveral.info</a>.
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

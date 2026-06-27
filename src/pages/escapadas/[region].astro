@@ -1,0 +1,94 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import AfinidadFilter from "@/components/AfinidadFilter.astro";
+import escapadasData from "@/data/escapadas.json";
+
+export function getStaticPaths() {
+  const { regiones } = escapadasData as any;
+  return regiones.filter((r: any) => r.activa).map((r: any) => ({ params: { region: r.id }, props: { region: r } }));
+}
+
+const { region } = Astro.props as any;
+const data = escapadasData as any;
+const lugares = data.sitios.filter((s: any) => s.region === region.id);
+const ICON: Record<string, string> = { naturaleza: "🌳", ocio: "🎢", cultura: "🏛️", pueblo: "🏘️", deporte: "🐴", museo: "🖼️" };
+const mapsLink = (s: any) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.mapsQuery || s.name)}`;
+
+const base = "https://www.elcanaveral.info";
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "Planes y escapadas", item: `${base}/escapadas/` },
+    { "@type": "ListItem", position: 3, name: region.name, item: `${base}/escapadas/${region.id}/` },
+  ],
+};
+---
+
+<BaseLayout
+  title={`Qué hacer en el ${region.name} desde El Cañaveral`}
+  description={`Planes y escapadas en el ${region.name} a un paso de El Cañaveral: ${lugares.slice(0, 4).map((l: any) => l.name).join(", ")} y más. Filtra por con niños, con perro, gratis, naturaleza o cultura.`}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <a href="/escapadas" class="hover:text-brand-600">Escapadas</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">{region.name}</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          Planes y escapadas en el {region.name}
+        </h1>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          {region.desc} Todo pensado <strong>desde El Cañaveral</strong>: te decimos qué es cada sitio y cómo
+          llegar. Usa los filtros para encontrar el plan perfecto —con los niños, con el perro o las dos cosas a la vez.
+        </p>
+      </header>
+
+      <AfinidadFilter tags={data.afinidades} />
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        {lugares.map((s: any) => (
+          <div data-afinidad={s.afinidad.join(" ")} class="bg-white rounded-xl border border-warm-200 overflow-hidden flex flex-col">
+            <div class="h-28 bg-gradient-to-br from-brand-50 to-brand-100 flex items-center justify-center text-5xl">
+              {ICON[s.tipo] || "📍"}
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <h2 class="font-bold text-brand-900 leading-snug">{s.name}</h2>
+              <div class="flex flex-wrap gap-1.5 mt-2">
+                {s.afinidad.map((a: string) => {
+                  const t = data.afinidades.find((x: any) => x.id === a);
+                  return t ? <span class="text-[11px] bg-warm-100 text-gray-600 px-2 py-0.5 rounded">{t.icon} {t.label}</span> : null;
+                })}
+              </div>
+              <p class="text-gray-600 text-sm mt-3 leading-snug flex-1">{s.resumen}</p>
+              <p class="text-xs text-gray-500 mt-3">🚗 {s.comoLlegar}</p>
+              <a href={mapsLink(s)} target="_blank" rel="noopener" class="mt-2 text-sm font-medium text-brand-600 hover:text-brand-700">
+                Ver en el mapa &rarr;
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-center mt-10">
+        <a href="/escapadas" class="text-sm font-medium text-brand-600 hover:text-brand-700">&larr; Todas las regiones</a>
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,56 @@
+---
+// Filtro de afinidad (con niños / con perro / gratis…). Multi-selección con
+// lógica AND: muestra los [data-afinidad] que tienen TODAS las etiquetas activas.
+interface Props {
+  tags: { id: string; label: string; icon: string }[];
+}
+const { tags } = Astro.props;
+---
+
+<div class="flex flex-wrap items-center gap-2 mb-6" data-afin-bar>
+  <span class="text-xs uppercase tracking-wider font-semibold text-gray-500 mr-1">¿Para quién?</span>
+  {tags.map((t) => (
+    <button type="button" data-afin={t.id} class="text-sm font-medium px-3 py-1.5 rounded-full bg-white border border-warm-200 text-gray-700 hover:bg-warm-50 transition-colors">
+      {t.icon} {t.label}
+    </button>
+  ))}
+</div>
+<p data-afin-empty class="hidden text-gray-500 text-center py-10">Ningún plan combina todos esos filtros a la vez. Prueba con menos.</p>
+
+<script is:inline>
+  (function () {
+    var bar = document.querySelector("[data-afin-bar]");
+    if (!bar) return;
+    var active = new Set();
+    var btns = bar.querySelectorAll("[data-afin]");
+    var empty = document.querySelector("[data-afin-empty]");
+    function paint(b, on) {
+      b.classList.toggle("bg-brand-600", on);
+      b.classList.toggle("text-white", on);
+      b.classList.toggle("bg-white", !on);
+      b.classList.toggle("border", !on);
+      b.classList.toggle("border-warm-200", !on);
+      b.classList.toggle("text-gray-700", !on);
+    }
+    function apply() {
+      var vis = 0;
+      document.querySelectorAll("[data-afinidad]").forEach(function (c) {
+        var tags = (c.getAttribute("data-afinidad") || "").split(" ");
+        var show = true;
+        active.forEach(function (a) { if (tags.indexOf(a) < 0) show = false; });
+        c.style.display = show ? "" : "none";
+        if (show) vis++;
+      });
+      btns.forEach(function (b) { paint(b, active.has(b.getAttribute("data-afin"))); });
+      if (empty) empty.classList.toggle("hidden", vis > 0);
+    }
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var v = b.getAttribute("data-afin");
+        active.has(v) ? active.delete(v) : active.add(v);
+        apply();
+      });
+    });
+    apply();
+  })();
+</script>

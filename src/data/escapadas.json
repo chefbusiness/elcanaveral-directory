@@ -1,0 +1,108 @@
+{
+  "regiones": [
+    { "id": "sureste", "name": "Sureste de Madrid", "icon": "🧭", "desc": "Lo más cercano a El Cañaveral: naturaleza, pueblos con encanto y planes en familia a un paso por la A-3.", "activa": true },
+    { "id": "centro", "name": "Centro de Madrid", "icon": "🏛️", "desc": "El corazón de la capital: museos, parques históricos y cultura.", "activa": false },
+    { "id": "noreste", "name": "Noreste de Madrid", "icon": "🌄", "desc": "Sierra, embalses y pueblos del Henares y el Jarama.", "activa": false },
+    { "id": "norte", "name": "Norte de Madrid", "icon": "⛰️", "desc": "Sierra de Guadarrama, naturaleza y montaña.", "activa": false },
+    { "id": "oeste", "name": "Oeste de Madrid", "icon": "🌲", "desc": "El Pardo, Pozuelo, El Escorial y los embalses del oeste.", "activa": false }
+  ],
+  "afinidades": [
+    { "id": "con-ninos", "label": "Con niños", "icon": "👧" },
+    { "id": "con-perro", "label": "Con perro", "icon": "🐶" },
+    { "id": "gratis", "label": "Gratis", "icon": "🆓" },
+    { "id": "naturaleza", "label": "Naturaleza", "icon": "🌳" },
+    { "id": "cultura", "label": "Cultura", "icon": "🏛️" }
+  ],
+  "sitios": [
+    {
+      "slug": "parque-regional-sureste",
+      "name": "Parque Regional del Sureste",
+      "region": "sureste",
+      "tipo": "naturaleza",
+      "afinidad": ["naturaleza", "con-perro", "gratis"],
+      "resumen": "Un gran espacio natural protegido entre el Manzanares y el Jarama, con lagunas (las Madres, El Campillo), miradores y rutas para andar o ir en bici. Ideal para pasear con el perro y observar aves.",
+      "comoLlegar": "~15-20 min en coche por la A-3 / M-50 (Rivas y San Martín de la Vega)",
+      "mapsQuery": "Parque Regional del Sureste"
+    },
+    {
+      "slug": "parque-warner-madrid",
+      "name": "Parque Warner Madrid",
+      "region": "sureste",
+      "tipo": "ocio",
+      "afinidad": ["con-ninos"],
+      "resumen": "Parque temático con atracciones, espectáculos y zonas para todas las edades en San Martín de la Vega. El gran plan de día con niños del sureste.",
+      "comoLlegar": "~25 min en coche por la A-4 / M-301, o Cercanías C-3 hasta Pinto + lanzadera",
+      "mapsQuery": "Parque Warner Madrid"
+    },
+    {
+      "slug": "aranjuez",
+      "name": "Aranjuez: Palacio Real y Jardines",
+      "region": "sureste",
+      "tipo": "cultura",
+      "afinidad": ["con-ninos", "cultura", "con-perro"],
+      "resumen": "Conjunto Patrimonio de la Humanidad: el Palacio Real, los Jardines del Príncipe y de la Isla, y el famoso 'Tren de la Fresa' en temporada. Los jardines son perfectos para pasear, también con perro.",
+      "comoLlegar": "~40 min en coche por la A-4, o Cercanías C-3",
+      "mapsQuery": "Palacio Real de Aranjuez"
+    },
+    {
+      "slug": "chinchon",
+      "name": "Chinchón",
+      "region": "sureste",
+      "tipo": "pueblo",
+      "afinidad": ["cultura", "con-perro"],
+      "resumen": "Uno de los pueblos más bonitos cerca de Madrid, con su espectacular Plaza Mayor porticada, mesones tradicionales y el anís de Chinchón. Un paseo y una buena comida, perro incluido.",
+      "comoLlegar": "~40 min en coche por la A-3 + M-311",
+      "mapsQuery": "Plaza Mayor de Chinchón"
+    },
+    {
+      "slug": "alcala-de-henares",
+      "name": "Alcalá de Henares",
+      "region": "sureste",
+      "tipo": "cultura",
+      "afinidad": ["con-ninos", "cultura", "con-perro"],
+      "resumen": "Ciudad Patrimonio de la Humanidad y cuna de Cervantes: la Universidad, la calle Mayor porticada, el Corral de Comedias y las cigüeñas que encantan a los peques.",
+      "comoLlegar": "~25-30 min en coche por la A-2, o Cercanías C-2 / C-7 desde Vicálvaro",
+      "mapsQuery": "Plaza de Cervantes, Alcalá de Henares"
+    },
+    {
+      "slug": "laguna-de-san-juan",
+      "name": "Laguna de San Juan",
+      "region": "sureste",
+      "tipo": "naturaleza",
+      "afinidad": ["naturaleza", "con-perro", "gratis"],
+      "resumen": "Refugio de fauna junto al Tajuña, cerca de Chinchón, con observatorios de aves y una ruta tranquila. Un plan de naturaleza poco conocido y gratuito.",
+      "comoLlegar": "~40 min en coche por la A-3 (Titulcia)",
+      "mapsQuery": "Laguna de San Juan Titulcia"
+    },
+    {
+      "slug": "rivas-vaciamadrid",
+      "name": "Rivas-Vaciamadrid: parques y ocio",
+      "region": "sureste",
+      "tipo": "ocio",
+      "afinidad": ["con-ninos", "con-perro", "gratis", "naturaleza"],
+      "resumen": "El municipio vecino más cercano, con grandes parques, zonas verdes, lago y mucho espacio al aire libre para ir con niños y perros sin moverte casi del barrio.",
+      "comoLlegar": "~12-15 min en coche por la A-3",
+      "mapsQuery": "Parque Lineal Rivas-Vaciamadrid"
+    },
+    {
+      "slug": "nuevo-baztan",
+      "name": "Nuevo Baztán",
+      "region": "sureste",
+      "tipo": "cultura",
+      "afinidad": ["cultura", "gratis"],
+      "resumen": "Conjunto histórico del siglo XVIII diseñado por Churriguera, con su palacio y la iglesia. Una escapada cultural tranquila y poco masificada.",
+      "comoLlegar": "~35 min en coche por la A-3 + M-204",
+      "mapsQuery": "Palacio de Goyeneche Nuevo Baztán"
+    },
+    {
+      "slug": "hipica-sureste",
+      "name": "Rutas y clases de hípica (equino)",
+      "region": "sureste",
+      "tipo": "deporte",
+      "afinidad": ["con-ninos", "naturaleza"],
+      "resumen": "En el entorno de Rivas y el Parque del Sureste hay clubes hípicos donde montar a caballo, dar clases o hacer rutas — un plan diferente y muy especial para los niños.",
+      "comoLlegar": "~15-20 min en coche (zona Rivas / Parque del Sureste)",
+      "mapsQuery": "hípica Rivas Vaciamadrid"
+    }
+  ]
+}
