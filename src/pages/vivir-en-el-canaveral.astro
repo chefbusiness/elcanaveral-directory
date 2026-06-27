@@ -1,0 +1,150 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { loadNegocios } from "@/lib/directory";
+
+const totalNegocios = loadNegocios().length;
+
+const secciones = [
+  { icon: "🏘️", titulo: "Vivienda y obra nueva", texto: "Promociones nuevas con terrazas y zonas verdes, e inmobiliarias de la zona para comprar o alquilar.", href: "/inmobiliarias", cta: "Ver inmobiliarias" },
+  { icon: "🚌", titulo: "Cómo llegar y transporte", texto: "Autobuses (159, E5 exprés, 290), búho nocturno, Cercanías y taxi/VTC.", href: "/transporte", cta: "Ver transporte" },
+  { icon: "🏪", titulo: "Comercio y servicios", texto: `${totalNegocios} negocios del barrio y alrededores: supermercados, farmacias, peluquerías, talleres y mucho más.`, href: "/directorio", cta: "Ver directorio" },
+  { icon: "🍽️", titulo: "Dónde comer", texto: "Los mejores restaurantes, cafeterías y panaderías según las reseñas reales de Google.", href: "/blog", cta: "Ver guías" },
+  { icon: "🌳", titulo: "Parques y espacios públicos", texto: "Parques infantiles, pipicanes, pistas deportivas y zonas verdes del barrio.", href: "/espacios-publicos", cta: "Ver parques" },
+  { icon: "🗺️", titulo: "Qué hacer y escapadas", texto: "Planes por todo Madrid desde El Cañaveral, con filtros para ir con niños o con perro.", href: "/escapadas", cta: "Ver escapadas" },
+  { icon: "🏫", titulo: "Educación", texto: "Guarderías, escuelas infantiles y academias de la zona.", href: "/educacion", cta: "Ver educación" },
+  { icon: "🏥", titulo: "Salud", texto: "Clínicas dentales, fisioterapeutas, farmacias y centros médicos.", href: "/salud", cta: "Ver salud" },
+  { icon: "🎉", titulo: "Fiestas y comunidad", texto: "Ferias y fiestas locales, y las cuentas y grupos del barrio en redes.", href: "/fiestas", cta: "Ver fiestas" },
+];
+
+const faq = [
+  { q: "¿Dónde está El Cañaveral?", a: "El Cañaveral es un barrio del distrito de Vicálvaro, al sureste de Madrid, junto a Coslada y San Fernando de Henares. Es uno de los desarrollos urbanísticos más recientes y de mayor crecimiento de la ciudad." },
+  { q: "¿Es un buen barrio para vivir, sobre todo en familia?", a: "Sí. El Cañaveral es un barrio muy familiar y joven, con avenidas amplias, viviendas nuevas con terraza, parques y zonas verdes. Atrae sobre todo a parejas jóvenes que compran su primera vivienda." },
+  { q: "¿Cuánto cuesta una vivienda en El Cañaveral?", a: "Según los portales inmobiliarios, la obra nueva ronda los 2.900 €/m², uno de los precios más moderados de Madrid capital, lo que explica buena parte de su tirón. Los precios cambian; conviene consultar datos actualizados con las inmobiliarias de la zona." },
+  { q: "¿Cómo está comunicado? ¿Tiene metro?", a: "Todavía no hay Metro dentro del barrio (hay un apeadero de Cercanías previsto). Se llega en autobús —incluida la línea exprés E5 al centro y el búho nocturno N6— y por las Cercanías de Vicálvaro y Coslada. En coche, por la A-3, M-45 y M-50." },
+  { q: "¿Qué servicios y comercios tiene El Cañaveral?", a: `El barrio cuenta con supermercados, farmacias, clínicas, colegios, gimnasios, restaurantes y todo tipo de comercio. En este directorio recogemos ${totalNegocios} negocios de El Cañaveral y las localidades de alrededor.` },
+];
+
+const base = "https://www.elcanaveral.info";
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+  { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+  { "@type": "ListItem", position: 2, name: "Vivir en El Cañaveral", item: `${base}/vivir-en-el-canaveral/` },
+] };
+---
+
+<BaseLayout
+  title="Vivir en El Cañaveral: la guía completa del barrio (Madrid)"
+  description="Todo sobre vivir en El Cañaveral (Madrid): cómo es el barrio, vivienda y precios, transporte, colegios, parques, comercios y qué hacer. La guía completa para vecinos y para quien se plantea mudarse."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">Vivir en El Cañaveral</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          Vivir en El Cañaveral: la guía completa del barrio
+        </h1>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          El Cañaveral es uno de los barrios más nuevos y de mayor crecimiento de Madrid, en el distrito de
+          Vicálvaro. Con más de 17.000 vecinos y subiendo, atrae a familias jóvenes por su obra nueva con
+          terrazas, sus zonas verdes y unos precios más moderados que el resto de la capital. Si vives aquí
+          —o te lo estás planteando— en esta guía tienes todo lo que necesitas saber.
+        </p>
+      </header>
+
+      <!-- Cifras -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
+        <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+          <p class="text-2xl font-bold text-brand-600">+17.000</p>
+          <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">Vecinos (2023)</p>
+        </div>
+        <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+          <p class="text-2xl font-bold text-brand-600">{totalNegocios}</p>
+          <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">Negocios en la guía</p>
+        </div>
+        <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+          <p class="text-2xl font-bold text-brand-600">~2.900 €</p>
+          <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">€/m² obra nueva</p>
+        </div>
+        <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+          <p class="text-2xl font-bold text-brand-600">25-40</p>
+          <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">Edad media compra</p>
+        </div>
+      </div>
+
+      <!-- Por qué vivir aquí -->
+      <section class="bg-brand-50 border border-brand-100 rounded-xl p-6 mb-10">
+        <h2 class="text-xl font-bold text-brand-900 mb-3">¿Por qué vivir en El Cañaveral?</h2>
+        <ul class="grid sm:grid-cols-2 gap-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Obra nueva con terrazas y mucha luz</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Precios más asequibles que en el centro</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Barrio joven y muy familiar</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Avenidas amplias y zonas verdes</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> A 30-40 min del centro con la E5 exprés</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Comercio y servicios en plena expansión</li>
+        </ul>
+      </section>
+
+      <!-- Hub: todo lo que necesitas saber -->
+      <h2 class="text-2xl font-bold text-brand-900 mb-1">Todo sobre el barrio</h2>
+      <p class="text-gray-500 text-sm mb-6">Explora cada tema con su guía completa.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+        {secciones.map((s) => (
+          <a href={s.href} class="block bg-white rounded-xl border border-warm-200 p-5 hover:shadow-lg hover:border-brand-200 transition-all group">
+            <div class="text-3xl mb-2">{s.icon}</div>
+            <h3 class="font-bold text-brand-900 group-hover:text-brand-600 transition-colors">{s.titulo}</h3>
+            <p class="text-gray-500 text-sm mt-1 leading-snug">{s.texto}</p>
+            <span class="inline-block mt-3 text-sm font-medium text-brand-600">{s.cta} &rarr;</span>
+          </a>
+        ))}
+      </div>
+
+      <!-- FAQ -->
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes</h2>
+        <div class="space-y-3">
+          {faq.map((f) => (
+            <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+              <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                {f.q}
+                <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+              </summary>
+              <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <!-- CTA inmobiliarias -->
+      <div class="bg-gradient-to-r from-brand-900 to-brand-700 rounded-2xl p-6 sm:p-8 text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-white">¿Buscas casa en El Cañaveral?</h2>
+        <p class="text-brand-200 mt-2 max-w-xl mx-auto text-sm sm:text-base">
+          Mira las inmobiliarias mejor valoradas del barrio y alrededores para comprar, vender o alquilar.
+        </p>
+        <a href="/inmobiliarias" class="inline-block mt-5 bg-accent-500 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
+          Ver inmobiliarias
+        </a>
+      </div>
+
+      <p class="text-xs text-gray-400 mt-8">
+        Datos del barrio a partir de fuentes públicas (censo municipal, portales inmobiliarios). Las cifras de
+        población y precios cambian con el tiempo; consulta datos actualizados antes de tomar decisiones.
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>
