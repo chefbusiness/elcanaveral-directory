@@ -5,6 +5,20 @@
 > Contenido de utilidad pura, evergreen, **sin competencia local**. Capturado el 2026-06-26.
 > Las guías nuevas se publican en **DRIP** (ver HANDOFF.md). Construir con SEO-first.
 
+## 🧱 Arquitectura de contenido (pilares del sitio)
+
+Visión: de "directorio de negocios" a **hub de vivir + disfrutar El Cañaveral** (dónde comer, dónde ir, qué hacer, cuándo — todo desde el barrio).
+
+| Pilar | Qué es | Estado |
+|---|---|---|
+| 🏪 **Directorio** | 256 negocios locales, 4 zonas, filtro de zona | ✅ |
+| ⭐ **Guías "mejores X"** | rankings de negocios por categoría/zona (drip) | ✅ (29 guías) |
+| 🧭 **Utilidad del barrio** | transporte ✅, espacios públicos ✅, servicios públicos, "Vivir en El Cañaveral" (keystone) | 🟡 en curso |
+| 🗺️ **Planes y escapadas** | qué hacer / a dónde ir por regiones de Madrid, con filtros (con niños/perro…) | 🔵 nuevo (pilar 9) |
+| 🎉 **Fiestas y días especiales** | ferias y fiestas locales, cada una su guía | 🔵 nuevo (pilar 10) |
+| 👥 **Comunidad** | cuentas/redes del barrio | ✅ |
+| 📰 **Blog de actualidad** | posts temáticos (de /comunidad) | ⬜ pendiente |
+
 ## 🗺️ Pilares / ideas (priorizadas)
 
 ### 1. 🚌 Guía de transporte y movilidad — **DATOS YA INVESTIGADOS (abajo)**
@@ -45,6 +59,22 @@ con amenities: terraza, delivery, accesibilidad…) y mapear esos campos.
 
 ### 8. 🖼️ Técnico — optimizar imágenes a WebP (Pack C)
 `public/images/negocios/` pesa ~207 MB (1.174 fotos). Convertir a WebP mejora mucho el rendimiento móvil.
+
+### 9. 🗺️ Planes y escapadas DESDE El Cañaveral (idea de John, 2026-06-27) — PILAR NUEVO
+Qué hacer y a dónde ir un finde/día, organizado por **regiones de Madrid relativas al barrio**:
+**Guía del sureste / noreste / norte / oeste / centro de Madrid**. Dentro, cualquier tipo de sitio
+(pueblo, parque, museo, complejo, hípica/equino, embalse, ruta…), siempre con el marco **"desde El Cañaveral"**
+(distancia / cómo llegar). Caso de uso real de John: finde con su mujer, su hija y su perrita pomerania, sin
+saber a dónde ir. → Clave: **filtros de afinidad** transversales: **con niños · con perro · gratis · naturaleza ·
+cultura · plan de un día**. Estructura: hub `/escapadas` (o `/que-hacer`) → guía por región → fichas de sitio con mapa.
+Contenido editorial + algunos descubribles por Apify/Maps (parques, museos). Imán de tráfico amplio (no solo barrio).
+
+### 10. 🎉 Fiestas y días especiales del barrio y alrededores (idea de John, 2026-06-27) — PILAR NUEVO
+Ferias y fiestas locales, **cada una en su propia guía** (no un feed mezclado): **Ferias de Vicálvaro**
+(¡ahora mismo!), **Ferias de Coslada**, **Día de la Comunidad de Madrid** (2 may), San Isidro, día/fiestas de
+cada localidad, y **Día del Cañaveral** si existe. Contenido evergreen (se repiten cada año) + se actualiza con
+fechas; conecta con el **blog de actualidad** (cuando una feria está en marcha). Hub `/fiestas` (o `/agenda`).
+**Timely:** las Ferias de Vicálvaro están ahora → primera ficha con tráfico inmediato.
 
 ---
 
