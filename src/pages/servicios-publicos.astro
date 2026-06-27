@@ -1,0 +1,148 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+
+const maps = (q: string) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+
+const telefonos = [
+  { n: "112", d: "Emergencias (todas)" },
+  { n: "061", d: "Urgencias sanitarias · SUMMA" },
+  { n: "091", d: "Policía Nacional" },
+  { n: "092", d: "Policía Municipal de Madrid" },
+  { n: "080", d: "Bomberos (Madrid)" },
+  { n: "010", d: "Ayuntamiento de Madrid (info y trámites)" },
+  { n: "012", d: "Comunidad de Madrid (info)" },
+];
+
+const faq = [
+  { q: "¿El Cañaveral tiene colegio público?", a: "Sí. El CEIPSO Rudyard Kipling, el primer colegio público del barrio, abrió en septiembre de 2025. Es un centro de nueva construcción que integra Infantil, Primaria y 1.º y 2.º de ESO." },
+  { q: "¿El Cañaveral tiene centro de salud?", a: "Todavía no hay un centro de salud propio en el barrio (su construcción está en la agenda de la Comunidad de Madrid, sin fecha por ahora). La atención primaria asignada se presta en el Centro de Salud de la calle Villablanca, 81 (Vicálvaro), y las especialidades en el Centro de Especialidades Periférico de Moratalaz." },
+  { q: "¿Dónde está la urgencia hospitalaria más cercana?", a: "El Hospital Universitario del Henares, en Coslada (av. de Marie Curie), es el hospital de referencia de la zona para urgencias. Para emergencias, llama siempre al 112." },
+];
+
+const base = "https://www.elcanaveral.info";
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+  { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+  { "@type": "ListItem", position: 2, name: "Servicios públicos", item: `${base}/servicios-publicos/` },
+] };
+---
+
+<BaseLayout
+  title="Servicios públicos de El Cañaveral: colegio, salud y teléfonos útiles"
+  description="Servicios públicos de El Cañaveral (Madrid): el colegio público CEIPSO Rudyard Kipling, dónde está el centro de salud y las urgencias, farmacias de guardia y teléfonos útiles del barrio."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">Servicios públicos</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          Servicios públicos de El Cañaveral
+        </h1>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          El Cañaveral es un barrio muy joven y sus servicios públicos todavía están llegando. Aquí te
+          contamos, sin rodeos, qué hay ya y a dónde acudir mientras tanto: el colegio público, dónde está
+          el centro de salud y las urgencias, las farmacias de guardia y los teléfonos útiles.
+        </p>
+      </header>
+
+      <!-- Educación pública -->
+      <section class="bg-white rounded-xl border border-warm-200 p-5 mb-6">
+        <h2 class="text-lg font-bold text-brand-900 mb-2 flex items-center gap-2">🏫 Educación pública</h2>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          <strong>CEIPSO Rudyard Kipling</strong> — el primer colegio público de El Cañaveral, abierto en
+          septiembre de 2025. Es de nueva construcción e integra Infantil, Primaria y 1.º y 2.º de ESO.
+        </p>
+        <p class="text-xs text-gray-500 mt-2">📍 C. de José Escobar y Saliente, 50 · 28052 Madrid · ☎ 911 717 085</p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <a href={maps("CEIPSO Rudyard Kipling El Cañaveral")} target="_blank" rel="noopener" class="text-sm font-medium text-brand-600 hover:text-brand-700">Cómo llegar &rarr;</a>
+          <span class="text-gray-300">·</span>
+          <a href="/educacion" class="text-sm font-medium text-brand-600 hover:text-brand-700">Guarderías y academias del barrio &rarr;</a>
+        </div>
+      </section>
+
+      <!-- Salud pública -->
+      <section class="bg-white rounded-xl border border-warm-200 p-5 mb-6">
+        <h2 class="text-lg font-bold text-brand-900 mb-2 flex items-center gap-2">🏥 Salud pública y urgencias</h2>
+        <p class="text-gray-700 text-sm leading-relaxed mb-3">
+          El barrio <strong>todavía no tiene centro de salud propio</strong> (su construcción está en la agenda
+          de la Comunidad de Madrid). Mientras tanto:
+        </p>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li>🩺 <strong>Atención primaria:</strong> Centro de Salud de la calle Villablanca, 81 (Vicálvaro).
+            <a href={maps("Centro de Salud Villablanca 81 Madrid")} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">Mapa</a></li>
+          <li>🔬 <strong>Especialidades:</strong> Centro de Especialidades Periférico de Moratalaz (c. Hacienda de Pavones, 348).</li>
+          <li>🚑 <strong>Urgencias hospitalarias:</strong> Hospital Universitario del Henares, Coslada.
+            <a href={maps("Hospital Universitario del Henares Coslada")} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">Mapa</a></li>
+          <li>📞 <strong>Urgencias y emergencias:</strong> 112 · SUMMA 061.</li>
+        </ul>
+        <p class="text-xs text-gray-500 mt-3">
+          Consulta tu centro asignado en el <a href="https://www.comunidad.madrid/salud/buscador-centros-sanitarios" target="_blank" rel="noopener" class="text-brand-600">buscador oficial de la Comunidad de Madrid</a>.
+        </p>
+      </section>
+
+      <!-- Farmacias de guardia -->
+      <section class="bg-white rounded-xl border border-warm-200 p-5 mb-6">
+        <h2 class="text-lg font-bold text-brand-900 mb-2 flex items-center gap-2">💊 Farmacias de guardia (24 h)</h2>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Las farmacias de guardia rotan cada día. Consulta cuál está de guardia ahora mismo en el
+          buscador oficial del Colegio de Farmacéuticos de Madrid o de la Comunidad de Madrid.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <a href="https://www.cofm.es/es/farmacias-de-guardia.html" target="_blank" rel="noopener" class="text-sm font-medium bg-brand-50 text-brand-700 px-3 py-1.5 rounded-lg hover:bg-brand-100">Farmacias de guardia (COFM) &rarr;</a>
+          <a href="/salud" class="text-sm font-medium text-brand-600 hover:text-brand-700 self-center">Farmacias del barrio &rarr;</a>
+        </div>
+      </section>
+
+      <!-- Teléfonos útiles -->
+      <section class="bg-brand-50 border border-brand-100 rounded-xl p-5 mb-8">
+        <h2 class="text-lg font-bold text-brand-900 mb-3 flex items-center gap-2">☎️ Teléfonos útiles</h2>
+        <div class="grid sm:grid-cols-2 gap-2">
+          {telefonos.map((t) => (
+            <div class="flex items-center gap-3 bg-white rounded-lg px-3 py-2">
+              <a href={`tel:${t.n}`} class="text-lg font-bold text-brand-700">{t.n}</a>
+              <span class="text-sm text-gray-600">{t.d}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes</h2>
+        <div class="space-y-3">
+          {faq.map((f) => (
+            <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+              <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                {f.q}
+                <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+              </summary>
+              <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <p class="text-xs text-gray-400">
+        Información elaborada a partir de fuentes oficiales (Comunidad de Madrid, Ayuntamiento). Los servicios
+        públicos del barrio están en expansión: si ves algún dato desactualizado o falta algo, escríbenos a
+        <a href="mailto:local@elcanaveral.info" class="text-brand-600">local@elcanaveral.info</a>.
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>
