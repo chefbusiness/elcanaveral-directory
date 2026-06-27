@@ -13,7 +13,7 @@ Visión: de "directorio de negocios" a **hub de vivir + disfrutar El Cañaveral*
 |---|---|---|
 | 🏪 **Directorio** | 256 negocios locales, 4 zonas, filtro de zona | ✅ |
 | ⭐ **Guías "mejores X"** | rankings de negocios por categoría/zona (drip) | ✅ (29 guías) |
-| 🧭 **Utilidad del barrio** | `/transporte` ✅, `/espacios-publicos` ✅, servicios públicos ⬜, "Vivir en El Cañaveral" (keystone) ⬜ | 🟡 |
+| 🧭 **Utilidad del barrio** | `/transporte` ✅, `/espacios-publicos` ✅, **`/vivir-en-el-canaveral` (keystone) ✅**, servicios públicos ⬜ | 🟡 |
 | 🗺️ **Planes y escapadas** | hub `/escapadas` + filtro afinidad ✅. Piloto **sureste** live; faltan centro/noreste/norte/oeste | 🟡 piloto |
 | 🎉 **Fiestas y días especiales** | hub `/fiestas` ✅ (Vicálvaro, Dos de Mayo, San Isidro). Ampliar con más | 🟡 |
 | 👥 **Comunidad** | cuentas/redes del barrio | ✅ |
