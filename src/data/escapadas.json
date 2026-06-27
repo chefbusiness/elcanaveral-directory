@@ -1,10 +1,10 @@
 {
   "regiones": [
     { "id": "sureste", "name": "Sureste de Madrid", "icon": "🧭", "desc": "Lo más cercano a El Cañaveral: naturaleza, pueblos con encanto y planes en familia a un paso por la A-3.", "activa": true },
-    { "id": "centro", "name": "Centro de Madrid", "icon": "🏛️", "desc": "El corazón de la capital: museos, parques históricos y cultura.", "activa": false },
-    { "id": "noreste", "name": "Noreste de Madrid", "icon": "🌄", "desc": "Sierra, embalses y pueblos del Henares y el Jarama.", "activa": false },
-    { "id": "norte", "name": "Norte de Madrid", "icon": "⛰️", "desc": "Sierra de Guadarrama, naturaleza y montaña.", "activa": false },
-    { "id": "oeste", "name": "Oeste de Madrid", "icon": "🌲", "desc": "El Pardo, Pozuelo, El Escorial y los embalses del oeste.", "activa": false }
+    { "id": "centro", "name": "Centro de Madrid", "icon": "🏛️", "desc": "El corazón de la capital: museos, grandes parques y cultura, a un viaje en la línea exprés E5.", "activa": true },
+    { "id": "noreste", "name": "Noreste de Madrid", "icon": "🌄", "desc": "El valle del Jarama y la Sierra Norte: pueblos negros, embalses y murallas medievales.", "activa": true },
+    { "id": "norte", "name": "Norte de Madrid", "icon": "⛰️", "desc": "La Sierra de Guadarrama: castillos, cascadas, montaña y naturaleza pura.", "activa": true },
+    { "id": "oeste", "name": "Oeste de Madrid", "icon": "🌲", "desc": "El Escorial, el Monte de El Pardo y los embalses con 'playa' del oeste.", "activa": true }
   ],
   "afinidades": [
     { "id": "con-ninos", "label": "Con niños", "icon": "👧" },
@@ -14,95 +14,40 @@
     { "id": "cultura", "label": "Cultura", "icon": "🏛️" }
   ],
   "sitios": [
-    {
-      "slug": "parque-regional-sureste",
-      "name": "Parque Regional del Sureste",
-      "region": "sureste",
-      "tipo": "naturaleza",
-      "afinidad": ["naturaleza", "con-perro", "gratis"],
-      "resumen": "Un gran espacio natural protegido entre el Manzanares y el Jarama, con lagunas (las Madres, El Campillo), miradores y rutas para andar o ir en bici. Ideal para pasear con el perro y observar aves.",
-      "comoLlegar": "~15-20 min en coche por la A-3 / M-50 (Rivas y San Martín de la Vega)",
-      "mapsQuery": "Parque Regional del Sureste"
-    },
-    {
-      "slug": "parque-warner-madrid",
-      "name": "Parque Warner Madrid",
-      "region": "sureste",
-      "tipo": "ocio",
-      "afinidad": ["con-ninos"],
-      "resumen": "Parque temático con atracciones, espectáculos y zonas para todas las edades en San Martín de la Vega. El gran plan de día con niños del sureste.",
-      "comoLlegar": "~25 min en coche por la A-4 / M-301, o Cercanías C-3 hasta Pinto + lanzadera",
-      "mapsQuery": "Parque Warner Madrid"
-    },
-    {
-      "slug": "aranjuez",
-      "name": "Aranjuez: Palacio Real y Jardines",
-      "region": "sureste",
-      "tipo": "cultura",
-      "afinidad": ["con-ninos", "cultura", "con-perro"],
-      "resumen": "Conjunto Patrimonio de la Humanidad: el Palacio Real, los Jardines del Príncipe y de la Isla, y el famoso 'Tren de la Fresa' en temporada. Los jardines son perfectos para pasear, también con perro.",
-      "comoLlegar": "~40 min en coche por la A-4, o Cercanías C-3",
-      "mapsQuery": "Palacio Real de Aranjuez"
-    },
-    {
-      "slug": "chinchon",
-      "name": "Chinchón",
-      "region": "sureste",
-      "tipo": "pueblo",
-      "afinidad": ["cultura", "con-perro"],
-      "resumen": "Uno de los pueblos más bonitos cerca de Madrid, con su espectacular Plaza Mayor porticada, mesones tradicionales y el anís de Chinchón. Un paseo y una buena comida, perro incluido.",
-      "comoLlegar": "~40 min en coche por la A-3 + M-311",
-      "mapsQuery": "Plaza Mayor de Chinchón"
-    },
-    {
-      "slug": "alcala-de-henares",
-      "name": "Alcalá de Henares",
-      "region": "sureste",
-      "tipo": "cultura",
-      "afinidad": ["con-ninos", "cultura", "con-perro"],
-      "resumen": "Ciudad Patrimonio de la Humanidad y cuna de Cervantes: la Universidad, la calle Mayor porticada, el Corral de Comedias y las cigüeñas que encantan a los peques.",
-      "comoLlegar": "~25-30 min en coche por la A-2, o Cercanías C-2 / C-7 desde Vicálvaro",
-      "mapsQuery": "Plaza de Cervantes, Alcalá de Henares"
-    },
-    {
-      "slug": "laguna-de-san-juan",
-      "name": "Laguna de San Juan",
-      "region": "sureste",
-      "tipo": "naturaleza",
-      "afinidad": ["naturaleza", "con-perro", "gratis"],
-      "resumen": "Refugio de fauna junto al Tajuña, cerca de Chinchón, con observatorios de aves y una ruta tranquila. Un plan de naturaleza poco conocido y gratuito.",
-      "comoLlegar": "~40 min en coche por la A-3 (Titulcia)",
-      "mapsQuery": "Laguna de San Juan Titulcia"
-    },
-    {
-      "slug": "rivas-vaciamadrid",
-      "name": "Rivas-Vaciamadrid: parques y ocio",
-      "region": "sureste",
-      "tipo": "ocio",
-      "afinidad": ["con-ninos", "con-perro", "gratis", "naturaleza"],
-      "resumen": "El municipio vecino más cercano, con grandes parques, zonas verdes, lago y mucho espacio al aire libre para ir con niños y perros sin moverte casi del barrio.",
-      "comoLlegar": "~12-15 min en coche por la A-3",
-      "mapsQuery": "Parque Lineal Rivas-Vaciamadrid"
-    },
-    {
-      "slug": "nuevo-baztan",
-      "name": "Nuevo Baztán",
-      "region": "sureste",
-      "tipo": "cultura",
-      "afinidad": ["cultura", "gratis"],
-      "resumen": "Conjunto histórico del siglo XVIII diseñado por Churriguera, con su palacio y la iglesia. Una escapada cultural tranquila y poco masificada.",
-      "comoLlegar": "~35 min en coche por la A-3 + M-204",
-      "mapsQuery": "Palacio de Goyeneche Nuevo Baztán"
-    },
-    {
-      "slug": "hipica-sureste",
-      "name": "Rutas y clases de hípica (equino)",
-      "region": "sureste",
-      "tipo": "deporte",
-      "afinidad": ["con-ninos", "naturaleza"],
-      "resumen": "En el entorno de Rivas y el Parque del Sureste hay clubes hípicos donde montar a caballo, dar clases o hacer rutas — un plan diferente y muy especial para los niños.",
-      "comoLlegar": "~15-20 min en coche (zona Rivas / Parque del Sureste)",
-      "mapsQuery": "hípica Rivas Vaciamadrid"
-    }
+    { "slug": "parque-regional-sureste", "name": "Parque Regional del Sureste", "region": "sureste", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-perro", "gratis"], "resumen": "Gran espacio natural protegido entre el Manzanares y el Jarama, con lagunas (las Madres, El Campillo), miradores y rutas para andar o ir en bici. Ideal para pasear con el perro y ver aves.", "comoLlegar": "~15-20 min en coche por la A-3 / M-50", "mapsQuery": "Parque Regional del Sureste" },
+    { "slug": "parque-warner-madrid", "name": "Parque Warner Madrid", "region": "sureste", "tipo": "ocio", "afinidad": ["con-ninos"], "resumen": "Parque temático con atracciones, espectáculos y zonas para todas las edades en San Martín de la Vega. El gran plan de día con niños del sureste.", "comoLlegar": "~25 min en coche por la A-4 / M-301", "mapsQuery": "Parque Warner Madrid" },
+    { "slug": "aranjuez", "name": "Aranjuez: Palacio Real y Jardines", "region": "sureste", "tipo": "cultura", "afinidad": ["con-ninos", "cultura", "con-perro"], "resumen": "Conjunto Patrimonio de la Humanidad: el Palacio Real, los Jardines del Príncipe y de la Isla y el 'Tren de la Fresa' en temporada. Los jardines son perfectos para pasear, también con perro.", "comoLlegar": "~40 min en coche por la A-4, o Cercanías C-3", "mapsQuery": "Palacio Real de Aranjuez" },
+    { "slug": "chinchon", "name": "Chinchón", "region": "sureste", "tipo": "pueblo", "afinidad": ["cultura", "con-perro"], "resumen": "Uno de los pueblos más bonitos cerca de Madrid, con su espectacular Plaza Mayor porticada, mesones tradicionales y el anís de Chinchón.", "comoLlegar": "~40 min en coche por la A-3 + M-311", "mapsQuery": "Plaza Mayor de Chinchón" },
+    { "slug": "alcala-de-henares", "name": "Alcalá de Henares", "region": "sureste", "tipo": "cultura", "afinidad": ["con-ninos", "cultura", "con-perro"], "resumen": "Ciudad Patrimonio y cuna de Cervantes: la Universidad, la calle Mayor porticada, el Corral de Comedias y las cigüeñas que encantan a los peques.", "comoLlegar": "~25-30 min en coche por la A-2, o Cercanías C-2/C-7 desde Vicálvaro", "mapsQuery": "Plaza de Cervantes, Alcalá de Henares" },
+    { "slug": "laguna-de-san-juan", "name": "Laguna de San Juan", "region": "sureste", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-perro", "gratis"], "resumen": "Refugio de fauna junto al Tajuña, cerca de Chinchón, con observatorios de aves y una ruta tranquila. Plan de naturaleza poco conocido y gratuito.", "comoLlegar": "~40 min en coche por la A-3 (Titulcia)", "mapsQuery": "Laguna de San Juan Titulcia" },
+    { "slug": "rivas-vaciamadrid", "name": "Rivas-Vaciamadrid: parques y ocio", "region": "sureste", "tipo": "ocio", "afinidad": ["con-ninos", "con-perro", "gratis", "naturaleza"], "resumen": "El municipio vecino más cercano, con grandes parques, zonas verdes y mucho espacio al aire libre para ir con niños y perros casi sin moverte del barrio.", "comoLlegar": "~12-15 min en coche por la A-3", "mapsQuery": "Parque Lineal Rivas-Vaciamadrid" },
+    { "slug": "nuevo-baztan", "name": "Nuevo Baztán", "region": "sureste", "tipo": "cultura", "afinidad": ["cultura", "gratis"], "resumen": "Conjunto histórico del siglo XVIII diseñado por Churriguera, con su palacio y la iglesia. Una escapada cultural tranquila y poco masificada.", "comoLlegar": "~35 min en coche por la A-3 + M-204", "mapsQuery": "Palacio de Goyeneche Nuevo Baztán" },
+    { "slug": "hipica-sureste", "name": "Rutas y clases de hípica (equino)", "region": "sureste", "tipo": "deporte", "afinidad": ["con-ninos", "naturaleza"], "resumen": "En el entorno de Rivas y el Parque del Sureste hay clubes hípicos donde montar a caballo, dar clases o hacer rutas: un plan diferente y muy especial para los niños.", "comoLlegar": "~15-20 min en coche (zona Rivas / Parque del Sureste)", "mapsQuery": "hípica Rivas Vaciamadrid" },
+
+    { "slug": "parque-del-retiro", "name": "Parque de El Retiro", "region": "centro", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-ninos", "con-perro", "gratis"], "resumen": "El gran parque histórico de Madrid: el estanque con barcas, el Palacio de Cristal, marionetas los fines de semana y mucho verde para pasear con perro (con correa).", "comoLlegar": "~30 min en bus E5 + Metro, o ~25 min en coche", "mapsQuery": "Parque del Retiro Madrid" },
+    { "slug": "madrid-rio", "name": "Madrid Río", "region": "centro", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-ninos", "con-perro", "gratis"], "resumen": "Larga zona verde junto al Manzanares con áreas infantiles, fuentes, carril bici y la playa urbana. Perfecto para ir con niños y perro sin pagar nada.", "comoLlegar": "~25-30 min en coche, o Metro", "mapsQuery": "Madrid Río" },
+    { "slug": "museo-del-prado", "name": "Museo del Prado", "region": "centro", "tipo": "museo", "afinidad": ["cultura"], "resumen": "Una de las grandes pinacotecas del mundo (Velázquez, Goya, El Bosco). Entrada gratuita en franja de tarde. Plan cultural imprescindible.", "comoLlegar": "~30 min en bus E5 + paseo", "mapsQuery": "Museo del Prado" },
+    { "slug": "templo-de-debod", "name": "Templo de Debod", "region": "centro", "tipo": "cultura", "afinidad": ["cultura", "gratis", "con-perro"], "resumen": "Un templo egipcio auténtico en el centro de Madrid, con uno de los mejores atardeceres de la ciudad y entrada gratuita. Se puede pasear por su entorno con perro.", "comoLlegar": "~30 min (centro)", "mapsQuery": "Templo de Debod" },
+    { "slug": "palacio-real-madrid", "name": "Palacio Real y jardines de Sabatini", "region": "centro", "tipo": "cultura", "afinidad": ["cultura", "con-ninos"], "resumen": "El palacio más grande de Europa Occidental, con el cambio de guardia, la Almudena al lado y los jardines de Sabatini para pasear.", "comoLlegar": "~30 min (centro)", "mapsQuery": "Palacio Real de Madrid" },
+    { "slug": "teleferico-casa-de-campo", "name": "Teleférico de Madrid y Casa de Campo", "region": "centro", "tipo": "ocio", "afinidad": ["con-ninos", "con-perro", "naturaleza"], "resumen": "El teleférico vuela sobre la Casa de Campo, el mayor parque de Madrid, con lago, zoo y parque de atracciones. Mucho espacio verde para niños y perros.", "comoLlegar": "~25-30 min en coche", "mapsQuery": "Teleférico de Madrid" },
+    { "slug": "plaza-mayor-san-miguel", "name": "Plaza Mayor y Mercado de San Miguel", "region": "centro", "tipo": "cultura", "afinidad": ["cultura"], "resumen": "El Madrid de los Austrias: la Plaza Mayor, el Mercado de San Miguel para tapear y el casco histórico para perderse.", "comoLlegar": "~30 min (centro)", "mapsQuery": "Plaza Mayor de Madrid" },
+
+    { "slug": "patones-de-arriba", "name": "Patones de Arriba", "region": "noreste", "tipo": "pueblo", "afinidad": ["cultura", "con-perro"], "resumen": "El célebre 'pueblo negro' de arquitectura de pizarra, restaurado y precioso para pasear y comer. Muy fotogénico y perfecto para ir con perro.", "comoLlegar": "~50 min en coche por la A-1 + M-102", "mapsQuery": "Patones de Arriba" },
+    { "slug": "buitrago-del-lozoya", "name": "Buitrago del Lozoya", "region": "noreste", "tipo": "pueblo", "afinidad": ["cultura", "con-ninos", "con-perro"], "resumen": "Villa medieval amurallada junto al embalse, con su castillo y un casco histórico que encanta a grandes y pequeños.", "comoLlegar": "~1 h en coche por la A-1", "mapsQuery": "Buitrago del Lozoya" },
+    { "slug": "embalse-el-atazar", "name": "Embalse de El Atazar", "region": "noreste", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-perro", "gratis"], "resumen": "El mayor embalse de la Comunidad, con miradores espectaculares y rutas de senderismo entre montañas. Naturaleza pura y gratuita.", "comoLlegar": "~1 h en coche por la A-1", "mapsQuery": "Embalse de El Atazar" },
+    { "slug": "torrelaguna", "name": "Torrelaguna", "region": "noreste", "tipo": "pueblo", "afinidad": ["cultura"], "resumen": "Conjunto histórico-artístico con una plaza Mayor preciosa y la imponente iglesia de Santa María Magdalena. Parada perfecta de camino a la sierra.", "comoLlegar": "~45 min en coche por la A-1", "mapsQuery": "Torrelaguna" },
+    { "slug": "la-cabrera", "name": "La Cabrera y el Cancho Gordo", "region": "noreste", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-perro", "gratis"], "resumen": "Pueblo a los pies de la Sierra de la Cabrera, con rutas de senderismo entre formaciones graníticas y el antiguo convento de San Antonio.", "comoLlegar": "~50 min en coche por la A-1", "mapsQuery": "La Cabrera Madrid" },
+
+    { "slug": "manzanares-el-real", "name": "Manzanares el Real: Castillo y La Pedriza", "region": "norte", "tipo": "naturaleza", "afinidad": ["con-ninos", "cultura", "con-perro", "naturaleza"], "resumen": "El castillo medieval mejor conservado de Madrid, junto al embalse de Santillana y la entrada a La Pedriza, un paraíso granítico para senderismo con perro.", "comoLlegar": "~50 min en coche por la A-1 / M-607", "mapsQuery": "Castillo de Manzanares el Real" },
+    { "slug": "cercedilla", "name": "Cercedilla y el valle de la Fuenfría", "region": "norte", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-perro", "gratis"], "resumen": "Punto de partida de las mejores rutas de la Sierra de Guadarrama, con pinares, la calzada romana y aire de montaña. Ideal para caminar con perro.", "comoLlegar": "~1 h 10 en coche, o Cercanías C-8", "mapsQuery": "Cercedilla" },
+    { "slug": "rascafria-paular", "name": "Rascafría, el Paular y la Cascada del Purgatorio", "region": "norte", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-perro", "con-ninos", "cultura"], "resumen": "El Monasterio de El Paular, el Puente del Perdón y rutas como la Cascada del Purgatorio o el Bosque Finlandés, entre robledales y el río Lozoya.", "comoLlegar": "~1 h 10 en coche por la A-1 + M-604", "mapsQuery": "Rascafría" },
+    { "slug": "embalse-santillana", "name": "Embalse de Santillana", "region": "norte", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-perro", "gratis"], "resumen": "Gran lámina de agua a los pies de La Pedriza, con vistas al castillo de Manzanares y zonas para pasear. Estampa de postal de la sierra.", "comoLlegar": "~50 min en coche por la M-607", "mapsQuery": "Embalse de Santillana Manzanares el Real" },
+    { "slug": "miraflores-de-la-sierra", "name": "Miraflores de la Sierra", "region": "norte", "tipo": "pueblo", "afinidad": ["naturaleza", "con-perro"], "resumen": "Pueblo serrano con buen ambiente, rutas sencillas y la zona recreativa de Las Presillas para refrescarse en verano.", "comoLlegar": "~55 min en coche por la M-607 / M-611", "mapsQuery": "Miraflores de la Sierra" },
+
+    { "slug": "san-lorenzo-escorial", "name": "San Lorenzo de El Escorial", "region": "oeste", "tipo": "cultura", "afinidad": ["cultura", "con-ninos", "con-perro"], "resumen": "El imponente Monasterio de El Escorial (Patrimonio de la Humanidad), su casco histórico y rutas cercanas como la Silla de Felipe II, con vistas espectaculares.", "comoLlegar": "~1 h en coche por la A-6, o Cercanías C-3/C-8", "mapsQuery": "Monasterio de El Escorial" },
+    { "slug": "monte-de-el-pardo", "name": "Monte de El Pardo", "region": "oeste", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-perro", "gratis"], "resumen": "Uno de los mejores bosques mediterráneos conservados de Europa, con encinas, ciervos y rutas tranquilas a las puertas de Madrid. Perfecto con perro.", "comoLlegar": "~30-35 min en coche", "mapsQuery": "Monte de El Pardo" },
+    { "slug": "embalse-de-san-juan", "name": "Embalse de San Juan (las 'playas' de Madrid)", "region": "oeste", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-ninos", "con-perro", "gratis"], "resumen": "El único embalse de Madrid donde está permitido el baño y los deportes náuticos: las 'playas' de la Comunidad, un planazo de verano en familia.", "comoLlegar": "~1 h en coche por la A-5 / M-501", "mapsQuery": "Embalse de San Juan San Martín de Valdeiglesias" },
+    { "slug": "bola-del-mundo-navacerrada", "name": "Puerto de Navacerrada", "region": "oeste", "tipo": "naturaleza", "afinidad": ["naturaleza", "con-perro", "con-ninos"], "resumen": "El puerto de montaña clásico de la sierra madrileña: nieve en invierno, rutas y vistas el resto del año, en el límite con Segovia.", "comoLlegar": "~1 h 10 en coche por la A-6 / M-601", "mapsQuery": "Puerto de Navacerrada" },
+    { "slug": "robledo-de-chavela", "name": "Robledo de Chavela", "region": "oeste", "tipo": "pueblo", "afinidad": ["naturaleza", "con-perro"], "resumen": "Pueblo tranquilo del oeste con dehesas, rutas y la curiosa estación de espacio profundo de la NASA en sus alrededores.", "comoLlegar": "~1 h en coche por la A-5 / M-501", "mapsQuery": "Robledo de Chavela" }
   ]
 }
