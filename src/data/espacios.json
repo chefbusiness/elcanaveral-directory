@@ -20,7 +20,7 @@
     "lng": -3.5602436,
     "rating": 2.5,
     "numReviews": 2,
-    "image": "/images/espacios/area-canina-2.jpg"
+    "image": "/images/espacios/area-canina-2.webp"
   },
   {
     "slug": "pistas-deportivas",
@@ -32,7 +32,7 @@
     "lng": -3.5633579,
     "rating": 3.2,
     "numReviews": 5,
-    "image": "/images/espacios/pistas-deportivas.jpg"
+    "image": "/images/espacios/pistas-deportivas.webp"
   },
   {
     "slug": "parque-de-las-hadas-del-bosque",
@@ -55,7 +55,7 @@
     "lng": -3.5626518,
     "rating": 4,
     "numReviews": 5,
-    "image": "/images/espacios/area-infantil-19061.jpg"
+    "image": "/images/espacios/area-infantil-19061.webp"
   },
   {
     "slug": "parque-lineal-canaveral",
@@ -89,7 +89,7 @@
     "lng": -3.5592875,
     "rating": 3.5,
     "numReviews": 6,
-    "image": "/images/espacios/area-de-juegos-infantiles-2.jpg"
+    "image": "/images/espacios/area-de-juegos-infantiles-2.webp"
   },
   {
     "slug": "area-de-juegos-infantiles-3",
@@ -101,7 +101,7 @@
     "lng": -3.5570779,
     "rating": 3.9,
     "numReviews": 12,
-    "image": "/images/espacios/area-de-juegos-infantiles-3.jpg"
+    "image": "/images/espacios/area-de-juegos-infantiles-3.webp"
   },
   {
     "slug": "area-infantil-19068",
@@ -113,7 +113,7 @@
     "lng": -3.5663739,
     "rating": 4,
     "numReviews": 2,
-    "image": "/images/espacios/area-infantil-19068.jpg"
+    "image": "/images/espacios/area-infantil-19068.webp"
   },
   {
     "slug": "area-de-juegos-infantiles-4",
@@ -180,7 +180,7 @@
     "lng": -3.5227514,
     "rating": 3,
     "numReviews": 2,
-    "image": "/images/espacios/casa-montero.jpg"
+    "image": "/images/espacios/casa-montero.webp"
   },
   {
     "slug": "area-de-entrenamiento-fisico",
@@ -192,6 +192,6 @@
     "lng": -3.5647221,
     "rating": 3.8,
     "numReviews": 4,
-    "image": "/images/espacios/area-de-entrenamiento-fisico.jpg"
+    "image": "/images/espacios/area-de-entrenamiento-fisico.webp"
   }
 ]

@@ -62,7 +62,7 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
 <BaseLayout
   title={listicle.metaTitle}
   description={listicle.metaDescription}
-  image={ranked[0]?.negocio.image || "/images/og-default.jpg"}
+  image={ranked[0]?.negocio.image || "/images/og-default.webp"}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />

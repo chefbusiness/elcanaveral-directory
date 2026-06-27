@@ -10,7 +10,7 @@ interface Props {
   noindex?: boolean;
 }
 
-const { title, description, image = "/images/og-default.jpg", noindex = false } = Astro.props;
+const { title, description, image = "/images/og-default.webp", noindex = false } = Astro.props;
 const siteName = "elcanaveral.info";
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const fullTitle = `${title} | ${siteName}`;
