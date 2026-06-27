@@ -57,8 +57,9 @@ posts (de qué habla la gente). Sale en drip.
 poblados → saldrían incompletos. **Antes hay que re-enriquecer con Apify** (el actor trae `additionalInfo`
 con amenities: terraza, delivery, accesibilidad…) y mapear esos campos.
 
-### 8. 🖼️ Técnico — optimizar imágenes a WebP (Pack C)
-`public/images/negocios/` pesa ~207 MB (1.174 fotos). Convertir a WebP mejora mucho el rendimiento móvil.
+### 8. 🖼️ Técnico — optimizar imágenes a WebP (Pack C) ✅ HECHO (2026-06-27)
+Las 1.195 imágenes migradas de JPG a WebP (q80): **215 MB → 135 MB (-37%)**. Refs actualizadas en
+negocios.json/espacios.json/og/hero, JPG eliminados, verificado visualmente. Mejora LCP en móvil.
 
 ### 9. 🗺️ Planes y escapadas DESDE El Cañaveral (idea de John, 2026-06-27) — PILAR NUEVO
 Qué hacer y a dónde ir un finde/día, organizado por **regiones de Madrid relativas al barrio**:
