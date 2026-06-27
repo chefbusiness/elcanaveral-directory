@@ -1,0 +1,92 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import fiestasData from "@/data/fiestas.json";
+
+export function getStaticPaths() {
+  return (fiestasData as any[]).map((f) => ({ params: { slug: f.slug }, props: f }));
+}
+
+const f = Astro.props as any;
+const base = "https://www.elcanaveral.info";
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "Fiestas y días especiales", item: `${base}/fiestas/` },
+    { "@type": "ListItem", position: 3, name: f.name, item: `${base}/fiestas/${f.slug}/` },
+  ],
+};
+---
+
+<BaseLayout title={`${f.name} — fiestas cerca de El Cañaveral`} description={f.metaDescription}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <a href="/fiestas" class="hover:text-brand-600">Fiestas</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">{f.name}</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">{f.name}</h1>
+        <div class="flex flex-wrap items-center gap-2 mt-3">
+          <span class="text-sm bg-brand-50 text-brand-700 px-3 py-1 rounded-full font-medium">📍 {f.localidad}</span>
+          <span class="text-sm bg-warm-100 text-gray-600 px-3 py-1 rounded-full font-medium">🗓️ {f.cuando}</span>
+          {f.gratis && <span class="text-sm bg-green-50 text-green-700 px-3 py-1 rounded-full font-medium">Entrada gratis</span>}
+        </div>
+        {f.edicion && <p class="text-sm text-accent-600 font-semibold mt-3">{f.edicion}</p>}
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">{f.resumen}</p>
+      </header>
+
+      {f.bloques && f.bloques.map((b: any) => (
+        <section class="mb-6 bg-white rounded-xl border border-warm-200 p-5">
+          <h2 class="text-lg font-bold text-brand-900 mb-2">{b.titulo}</h2>
+          {b.texto && <p class="text-gray-700 leading-relaxed text-sm sm:text-base">{b.texto}</p>}
+          {b.items && (
+            <ul class="grid sm:grid-cols-2 gap-1.5 mt-1">
+              {b.items.map((it: string) => (
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                  <span class="text-accent-500 mt-0.5">•</span><span>{it}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+      ))}
+
+      {f.oficial && (
+        <div class="bg-warm-100 rounded-xl p-5 mb-8">
+          <p class="text-sm text-gray-600 mb-3">El programa y los horarios cambian cada año. Consulta siempre la información oficial actualizada:</p>
+          <a href={f.oficial} target="_blank" rel="noopener" class="inline-block text-sm font-semibold bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700">
+            Programa oficial &rarr;
+          </a>
+        </div>
+      )}
+
+      <div class="text-center bg-brand-50 border border-brand-100 rounded-xl p-6">
+        <p class="text-brand-900 font-semibold">¿Buscas dónde comer o tomar algo cerca?</p>
+        <p class="text-gray-600 text-sm mt-1 mb-4">Mira los restaurantes y bares del barrio y alrededores.</p>
+        <a href="/restaurantes" class="inline-block bg-accent-500 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
+          Ver restaurantes
+        </a>
+      </div>
+
+      <p class="text-center mt-8">
+        <a href="/fiestas" class="text-sm font-medium text-brand-600 hover:text-brand-700">&larr; Todas las fiestas y días especiales</a>
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "fiestas-vicalvaro",
+    "name": "Fiestas de Vicálvaro",
+    "localidad": "Vicálvaro (Madrid)",
+    "cuando": "Finales de junio",
+    "edicion": "Edición 2026: del 25 al 28 de junio",
+    "destacada": true,
+    "gratis": true,
+    "resumen": "El distrito de Vicálvaro, junto a El Cañaveral, celebra sus fiestas a finales de junio con conciertos, actividades para todos los públicos y concursos tradicionales repartidos por todo el distrito. Es la cita festiva más cercana para los vecinos de El Cañaveral, con actos también dentro del propio barrio.",
+    "bloques": [
+      {
+        "titulo": "Cuándo y dónde",
+        "texto": "En 2026 se celebran del 25 al 28 de junio (jueves a domingo). El Recinto Ferial acoge los conciertos principales cada noche, y hay actos repartidos por El Cañaveral, la plaza Rosa Chacel, la plaza Juan Carlos Onetti, la Rampa I de la calle Villajimena, la plaza de Don Antonio de Andrés y los centros culturales del distrito."
+      },
+      {
+        "titulo": "Conciertos destacados (2026)",
+        "items": ["La Frontera", "Javier Ojeda (Danza Invisible)", "Bombai", "DJ Nano"]
+      },
+      {
+        "titulo": "Concursos tradicionales",
+        "items": [
+          "Lanzamiento de hueso de aceituna",
+          "Lanzamiento de zapatilla",
+          "Concurso de beber en bota",
+          "Concurso de tortilla española",
+          "Concurso de baile de salón"
+        ]
+      },
+      {
+        "titulo": "Planes en familia",
+        "texto": "Además de los conciertos, hay actividades infantiles, teatro, pasacalles con charangas y fuegos artificiales. La entrada a todos los espectáculos es gratuita hasta completar aforo."
+      }
+    ],
+    "oficial": "https://diario.madrid.es/blog/2026/06/23/fiestas-vicalvaro-2026-programa-conciertos/",
+    "metaDescription": "Fiestas de Vicálvaro 2026 (del 25 al 28 de junio): conciertos gratis (La Frontera, Javier Ojeda, Bombai, DJ Nano), concursos tradicionales y actividades para toda la familia, con actos también en El Cañaveral."
+  },
+  {
+    "slug": "dia-de-la-comunidad-de-madrid",
+    "name": "Día de la Comunidad de Madrid (Dos de Mayo)",
+    "localidad": "Comunidad de Madrid",
+    "cuando": "2 de mayo",
+    "edicion": "Festivo regional · cada 2 de mayo",
+    "destacada": false,
+    "gratis": true,
+    "resumen": "El 2 de mayo es el día festivo de la Comunidad de Madrid, que conmemora el levantamiento del pueblo madrileño de 1808. Es festivo en toda la región —también en El Cañaveral— y la ciudad se llena de actividades culturales, conciertos y actos populares, sobre todo en el centro.",
+    "bloques": [
+      {
+        "titulo": "Qué se celebra",
+        "texto": "Conmemora el levantamiento del 2 de mayo de 1808 contra la ocupación francesa. Es fiesta oficial en toda la Comunidad de Madrid."
+      },
+      {
+        "titulo": "Qué hacer",
+        "texto": "Conciertos gratuitos, mercados, exposiciones y actos populares por la ciudad, con epicentro en el barrio de Malasaña y la plaza del Dos de Mayo. Un buen plan de día desde El Cañaveral usando la línea exprés E5."
+      }
+    ],
+    "oficial": "https://www.comunidad.madrid",
+    "metaDescription": "Día de la Comunidad de Madrid (2 de mayo): qué se celebra y qué hacer. Festivo regional con conciertos y actos populares, a un paso de El Cañaveral."
+  },
+  {
+    "slug": "san-isidro",
+    "name": "San Isidro, patrón de Madrid",
+    "localidad": "Madrid ciudad",
+    "cuando": "15 de mayo",
+    "edicion": "Cada 15 de mayo (y días alrededor)",
+    "destacada": false,
+    "gratis": true,
+    "resumen": "San Isidro Labrador es el patrón de Madrid y se celebra el 15 de mayo. La ciudad se viste de chulapos y chulapas, con verbenas, conciertos gratuitos y la tradicional romería en la pradera de San Isidro. Es la gran fiesta de la capital y un plan redondo para una escapada desde El Cañaveral.",
+    "bloques": [
+      {
+        "titulo": "La tradición",
+        "texto": "Romería en la Pradera de San Isidro, trajes de chulapo y chulapa, rosquillas 'del santo', mantón de Manila y agua de la fuente del santo."
+      },
+      {
+        "titulo": "Qué hacer",
+        "texto": "Conciertos gratuitos en distintos escenarios de la ciudad, verbenas, actividades en las Vistillas y un amplio programa cultural durante los días alrededor del 15 de mayo."
+      }
+    ],
+    "oficial": "https://www.madrid.es",
+    "metaDescription": "San Isidro, patrón de Madrid (15 de mayo): romería, chulapos, verbenas y conciertos gratuitos. La gran fiesta de la capital, cerca de El Cañaveral."
+  }
+]

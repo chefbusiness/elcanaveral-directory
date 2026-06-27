@@ -1,0 +1,52 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import fiestasData from "@/data/fiestas.json";
+
+const fiestas = (fiestasData as any[]).slice().sort((a, b) => (b.destacada ? 1 : 0) - (a.destacada ? 1 : 0));
+---
+
+<BaseLayout
+  title="Fiestas y días especiales de El Cañaveral y alrededores"
+  description="Ferias y fiestas locales cerca de El Cañaveral: Fiestas de Vicálvaro, Día de la Comunidad de Madrid, San Isidro y más. Fechas, programa y qué hacer."
+>
+  <Header />
+
+  <section class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <header class="mb-10">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900">Fiestas y días especiales</h1>
+        <p class="text-gray-600 mt-3 text-lg">
+          Las ferias, fiestas y días señalados de El Cañaveral, Vicálvaro y el resto de Madrid: cuándo son,
+          qué se celebra y qué hacer. Para no perderte ningún plan del barrio y alrededores.
+        </p>
+      </header>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        {fiestas.map((f) => (
+          <a
+            href={`/fiestas/${f.slug}`}
+            class="block bg-white rounded-xl border border-warm-200 p-5 hover:shadow-lg hover:border-brand-200 transition-all group"
+          >
+            <div class="flex items-center gap-2 mb-2">
+              {f.destacada && <span class="text-[11px] font-bold bg-accent-500 text-white px-2 py-0.5 rounded uppercase tracking-wide">Ahora</span>}
+              <span class="text-xs text-gray-400">{f.cuando}</span>
+            </div>
+            <h2 class="font-bold text-lg text-brand-900 group-hover:text-brand-600 transition-colors leading-snug">{f.name}</h2>
+            <p class="text-xs text-gray-500 mt-1">📍 {f.localidad}</p>
+            <p class="text-gray-500 text-sm mt-2 line-clamp-3">{f.resumen}</p>
+            <span class="inline-block mt-3 text-sm font-medium text-brand-600">Ver detalles &rarr;</span>
+          </a>
+        ))}
+      </div>
+
+      <p class="text-sm text-gray-400 mt-8">
+        ¿Falta alguna fiesta o feria del barrio? Escríbenos a
+        <a href="mailto:local@elcanaveral.info" class="text-brand-600">local@elcanaveral.info</a> y la añadimos.
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
