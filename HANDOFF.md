@@ -1,6 +1,6 @@
 # HANDOFF — elcanaveral.info
 
-> Backup de contexto en el repo. Última actualización: **2026-06-25** (sesión en la VM de Abacus).
+> Backup de contexto en el repo. Última actualización: **2026-06-27** (sesión en la VM de Abacus).
 > Si retomas: lee este archivo. La memoria del agente con el setup de Abacus (SSH, build, drip, pipelines)
 > está en `memory/elcanaveral-directory-abacus.md`.
 
@@ -14,7 +14,7 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `028fbc1` — 180 páginas, 107 negocios enriquecidos, blog con 11 guías, monetización cerrada (2026-06-25) |
+| **HEAD ref** | `0512666` — 371 páginas, 256 negocios, 29 guías, pilares de contenido en vivo, imágenes WebP (2026-06-27) |
 
 ## ✅ Sesión 2026-06-25 (Abacus) — COMPLETADO
 
@@ -27,6 +27,24 @@ Migrado el trabajo a la VM de Abacus (SSH propio; ver `memory/elcanaveral-direct
 5. **Quick-wins SEO**: cross-linking categoría↔guía (banners en `[categoria]` y zona×categoría), `seo-overrides.json` reescrito (+inmobiliarias), descripciones de zona×categoría diferenciadas (anti-canibalización).
 6. **Capa de leads** — `scripts/leads_prospecting.py`, salida en `prospecting/` (**GITIGNORED, privado**): 12 calientes, 35 GastroSEO (sin web), 37 GastroLocal (GBP flojo), 28 ChefBusiness. Informe markdown para visitar puerta a puerta.
 7. **Monetización CERRADA**: legales = **Opción A** (sin NIF, igual nivel que miselup.pro — John lo decidió así de momento). Netlify Forms detectados (vía `public/__forms.html`) + notificaciones email activas + **test de los 4 forms OK**. Cobro **manual por transferencia/Bizum** (términos 3.2 y `/planes` alineados). **Banner de cookies RGPD** (`src/components/CookieConsent.astro`): los mapas de Google solo cargan con consentimiento.
+
+## ✅ Sesión 2026-06-26/27 (Abacus) — DE DIRECTORIO A HUB DEL BARRIO
+
+Transformación de "directorio" a **EL hub de vivir y disfrutar El Cañaveral**. Todo commiteado y en vivo.
+
+1. **Directorio 107 → 256 negocios** (4 zonas: Cañaveral 90 · Coslada 76 · S.Fernando 48 · Vicálvaro 42). Apify discover + `scripts/add_discovered.py` (umbral ≥4.3★/≥30 reseñas, categoría/zona por código postal, descripciones LLM Abacus `gemini-3.5-flash`, fotos por placeId). Coste Apify disciplinado (~$0.05–0.48/run).
+2. **29 guías "mejores X"** (eran 11): 11 generales "El Cañaveral y alrededores" + 18 por zona, en **drip** escalonado (2026-06-26→07-30).
+3. **Filtro de zonas** en el directorio (multi-select, semántica OR) + filtro de afinidad (semántica AND) reutilizables — `ZonaFilter.astro`, `AfinidadFilter.astro`.
+4. **Pilar "Utilidad del barrio" COMPLETO y EN VIVO:**
+   - `/transporte` — autobuses (159, E5 exprés, 290), búho N6, Cercanías, taxi/VTC (datos reales con fuentes).
+   - `/espacios-publicos` — 17 espacios (parques infantiles, pipicanes, deportivos, senderismo) con mapas consent-gated. Datos en `src/data/espacios.json`.
+   - `/servicios-publicos` — colegio público CEIPSO Rudyard Kipling (abrió sept 2025), salud/urgencias (no hay centro de salud propio aún; atención en C.S. Villablanca, urgencias Hospital del Henares), farmacias de guardia (COFM), teléfonos útiles. Honesta sobre el GAP.
+   - `/vivir-en-el-canaveral` — **KEYSTONE** que enlaza todo el barrio (hub de 10 secciones + FAQ).
+5. **Pilar "Disfrutar":** `/escapadas` (5 regiones de Madrid sureste/centro/noreste/norte/oeste, 31 sitios, filtros con-niños/con-perro/gratis/naturaleza/cultura — `src/data/escapadas.json`) + `/fiestas` (hub + Vicálvaro/Dos de Mayo/San Isidro — `src/data/fiestas.json`).
+6. **Optimización WebP (Pack C):** las 1.195 imágenes migradas JPG→WebP (q80), **215→135 MB (-37%)**, refs actualizadas, JPG borrados, verificado visualmente. Mejor LCP móvil.
+7. **Fixes responsive:** menú hamburguesa móvil (`Header.astro`), `overflow-x: clip`, banner cookies con safe-area, cards `/comunidad` sin desbordar. Categoría "ocio" vacía (0 negocios) ya no se enlaza (filtro `count>0` en home).
+
+**Backlog/roadmap maestro en `IDEAS-CONTENIDO.md`** (committeado, actualizado). **Terrazas PARKED**: John aporta datos de terrazas a medida que visita locales en persona.
 
 ## 🎯 Reenfoque estratégico — LO MÁS IMPORTANTE (sigue vigente)
 
@@ -123,11 +141,15 @@ Refrescar todo: `python scripts/apify_enrich.py --mode enrich --write` (coste ~$
 ## 📁 Estado actual del sitio
 
 - **256 negocios** (eran 107) · 16 categorías · 4 zonas (Cañaveral 90 · Coslada 76 · San Fernando 48 · Vicálvaro 42). Zonas pobladas con Apify discover + `add_discovered.py` el 2026-06-26.
-- **356 páginas:** `/`, `/[categoria]`, `/[categoria]/[slug]`, `/zona/[zona]`, `/zona/[zona]/[categoria]`,
-  `/zonas`, `/directorio`, `/comunidad`, **`/blog` + 11 guías "mejores X"**, comerciales (`/planes`, `/alta`,
-  `/anunciate`, `/sponsor`, `/contacto`), legales (`/aviso-legal`, `/terminos`, `/privacidad`, `/cookies`).
-- **Blog (NUEVO):** `/blog` con 11 listicles (motor `src/lib/listicles.ts` + `src/data/listicles.json`),
+- **371 páginas:** `/`, `/[categoria]`, `/[categoria]/[slug]`, `/zona/[zona]`, `/zona/[zona]/[categoria]`,
+  `/zonas`, `/directorio` (con **filtro de zonas** multi-select), `/comunidad`, **`/blog` + 29 guías "mejores X"**,
+  **pilares de contenido** (`/vivir-en-el-canaveral` keystone, `/transporte`, `/espacios-publicos`,
+  `/servicios-publicos`, `/escapadas` + `/escapadas/[region]`, `/fiestas` + `/fiestas/[slug]`),
+  comerciales (`/planes`, `/alta`, `/anunciate`, `/sponsor`, `/contacto`), legales (`/aviso-legal`,
+  `/terminos`, `/privacidad`, `/cookies`).
+- **Blog:** `/blog` con 29 listicles (motor `src/lib/listicles.ts` + `src/data/listicles.json`),
   ranking bayesiano, fotos por placeId, drip-publishing para futuros. Categoría↔guía cross-enlazadas.
+- **Imágenes:** todo en **WebP** (q80, ~135 MB) — migrado el 2026-06-27, `<img>` con `loading=lazy`.
 - **Monetización CERRADA:** 4 tiers en `/planes` (Básico gratis · Verificado 19€/mes · Destacado 49€/mes ·
   Sponsor desde 800€/mes) · 4 forms Netlify detectados + notificación email a `local@elcanaveral.info` ·
   cobro **manual por transferencia/Bizum** · kit DOCX sponsor SM Homes en `sponsorship-kit/`.
@@ -155,23 +177,28 @@ Refrescar todo: `python scripts/apify_enrich.py --mode enrich --write` (coste ~$
 - ✅ ~~Cerrar go-live monetización~~ (forms+email+test+cobro+cookies; legales = Opción A sin NIF)
 - ✅ ~~Capa de leads~~ (`prospecting/`)
 
+- ✅ ~~Pilar utilidad (transporte, espacios, servicios públicos, keystone)~~ (en vivo 2026-06-27)
+- ✅ ~~Pilar disfrutar (escapadas, fiestas)~~ · ✅ ~~Directorio 107→256 + filtro zonas~~ · ✅ ~~29 guías~~
+- ✅ ~~Optimización WebP (Pack C)~~ (2026-06-27, -37%)
+
 **Queda:**
-1. **Auditoría GSC post-soak** — requiere acceso a Search Console (que John lo comparta/conecte). Medir efecto de las guías y los nuevos titles; ver qué category/zona seguir apretando.
-2. **Más guías** cuando crezca la masa: cafeterías y mascotas/veterinarios tienen pocas fichas ≥4; descubrir negocios que faltan con `apify_enrich.py --mode discover`. El contenido nuevo sale en **drip** (no todo de golpe).
-3. **Verificar in situ** (`VERIFICAR-EN-PERSONA.md`): Obramat (¿existe/otro rótulo?) y Mediadores (¿= SM Homes?).
-4. **Legales Opción B** (si John factura en serio): añadir NIF + domicilio fiscal a aviso-legal y privacidad.
-5. **Documentar boilerplate** replicable (Sanchinarro, Valdebebas, Rivas…) — el motor de directorio+listicles+drip ya es bastante portable.
+1. **📰 Blog de actualidad** (último pilar de contenido, desde `/comunidad`). **NECESITA input local de John / hechos reales — NO inventar noticias del barrio.** Plan: yo monto la infraestructura (sección, plantilla, RSS), John aporta temas/hechos. Mejor en sesión dedicada.
+2. **Auditoría GSC post-soak** — **~mediados de julio 2026** (John comparte Search Console en ~2 semanas). Medir efecto de guías+pilares; ver qué category/zona/pilar apretar.
+3. **🍹 Guía de terrazas — PARKED**: John aporta datos a medida que visita locales en persona. No enfocarse hasta que él lo pida. (Campos `terraza`/`delivery` ya se capturan en `apify_enrich.py` desde `additionalInfo`.)
+4. **Ampliar fiestas** (opcional): más ferias reales de la zona cuando toque.
+5. **Verificar in situ** (`VERIFICAR-EN-PERSONA.md`): Obramat (¿existe/otro rótulo?) y Mediadores (¿= SM Homes?).
+6. **Legales Opción B** (si John factura en serio): añadir NIF + domicilio fiscal a aviso-legal y privacidad.
+7. **Documentar boilerplate** replicable (Sanchinarro, Valdebebas, Rivas…) — el motor directorio+listicles+drip+pilares ya es bastante portable.
 
 ## 💡 Ideas de contenido y roadmap → ver **`IDEAS-CONTENIDO.md`** (documento maestro)
 
-Estrategia: pasar de "directorio" a **EL hub de referencia de El Cañaveral**. Backlog completo, priorizado y con la **investigación de transporte ya hecha (datos reales con fuentes)** en `IDEAS-CONTENIDO.md`. Resumen:
-- 🚌 **Guía de transporte** — datos ya investigados (líneas 159/E5/290/N6 búho, Cercanías C2/C7, etc.), **lista para montar**.
-- 🌳 **Guía de espacios públicos** (parques, pipicanes, pistas, caminerías) con mapas.
-- 🔑 **"Vivir en El Cañaveral"** (guía recién llegados) = KEYSTONE SEO.
-- 🏛️ **Servicios públicos** = GAP: faltan **colegios/IES públicos** y **centro de salud público/farmacias 24h** (el directorio solo tiene privados).
-- 📰 **Blog de actualidad** desde `/comunidad`. · 🐶 **Hubs por afinidad** (perros, familias).
-- 🍽️ Listicles temáticos (terraza/delivery): datos infra-etiquetados → re-enriquecer con Apify primero.
-- 🖼️ **WebP** (Pack C): imágenes ~207 MB.
+Estrategia: pasar de "directorio" a **EL hub de referencia de El Cañaveral** — **YA LOGRADO en su mayor parte**. Estado de los pilares (detalle en `IDEAS-CONTENIDO.md`):
+- ✅ 🚌 **Transporte** (`/transporte`) · ✅ 🌳 **Espacios públicos** (`/espacios-publicos`) · ✅ 🔑 **Keystone "Vivir en El Cañaveral"** (`/vivir-en-el-canaveral`) · ✅ 🏛️ **Servicios públicos** (`/servicios-publicos`).
+- ✅ 🗺️ **Escapadas** (`/escapadas`, 5 regiones + afinidades) · ✅ 🎉 **Fiestas** (`/fiestas`).
+- ✅ 🖼️ **WebP** (Pack C) — hecho 2026-06-27 (-37%).
+- ⬜ 📰 **Blog de actualidad** desde `/comunidad` — ÚLTIMO pilar; necesita input real de John (no inventar noticias).
+- ⬜ 🍽️ Listicles temáticos (terraza/delivery): datos infra-etiquetados → guía de terrazas PARKED (John aporta in situ).
+- 💡 🐶 Hubs por afinidad (perros, familias) — el motor de afinidad ya existe (`AfinidadFilter`), ampliable.
 
 ## ⚠️ Restricciones de trabajo (verano Madrid)
 - **CPU < 65 °C** — monitorizar con `istats cpu temp`; ralentizar si sube. **NO usar Playwright** (recalienta).
