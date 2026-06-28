@@ -14,7 +14,7 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `d8613e1` — 377 páginas, 256 negocios, 29 guías + frentes nuevos (escapadas verano, /compras, /comida-a-domicilio, /actualidad, /con-perro), WebP (2026-06-28) |
+| **HEAD ref** | `bf8fabb` — 380 páginas, 256 negocios, 29 guías + frentes nuevos (escapadas verano, /compras, /comida-a-domicilio, /actualidad, /con-perro, /mercadillos), WebP (2026-06-28) |
 
 ## ✅ Sesión 2026-06-25 (Abacus) — COMPLETADO
 
@@ -144,7 +144,7 @@ Refrescar todo: `python scripts/apify_enrich.py --mode enrich --write` (coste ~$
 - **376 páginas:** `/`, `/[categoria]`, `/[categoria]/[slug]`, `/zona/[zona]`, `/zona/[zona]/[categoria]`,
   `/zonas`, `/directorio` (con **filtro de zonas** multi-select), `/comunidad`, **`/blog` + 29 guías "mejores X"**,
   **`/actualidad` + `/actualidad/[slug]` (blog de noticias)**, **`/compras`** (outlets y centros comerciales),
-  **`/comida-a-domicilio`** (ranking delivery), **`/con-perro`** (hub dog-friendly), **pilares de contenido** (`/vivir-en-el-canaveral` keystone,
+  **`/comida-a-domicilio`** (ranking delivery), **`/con-perro`** (hub dog-friendly), **`/mercadillos`** (mercados), **pilares de contenido** (`/vivir-en-el-canaveral` keystone,
   `/transporte`, `/espacios-publicos`, `/servicios-publicos`, `/escapadas` + `/escapadas/[region]` con afinidad
   💦 piscinas, `/fiestas` + `/fiestas/[slug]`),
   comerciales (`/planes`, `/alta`, `/anunciate`, `/sponsor`, `/contacto`), legales (`/aviso-legal`,
