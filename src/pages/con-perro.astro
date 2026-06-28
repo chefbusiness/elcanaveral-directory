@@ -1,0 +1,178 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { loadNegocios } from "@/lib/directory";
+import espaciosData from "@/data/espacios.json";
+import escapadasData from "@/data/escapadas.json";
+
+// 1) Áreas caninas / pipicanes del barrio (de espacios.json)
+const caninos = (espaciosData as any[]).filter((e) => e.tipo === "canino");
+
+// 2) Veterinarios, tiendas y peluquerías de mascotas (directorio, filtrando el ruido)
+const PET_OK = ["veterinari", "tienda de productos para mascotas", "peluquero de mascotas", "adiestr", "residencia"];
+const pets = loadNegocios().filter((n: any) => {
+  if (n.category !== "mascotas" || !n.rating || !n.numReviews) return false;
+  const g = (n.googleCategory || "").toLowerCase();
+  return PET_OK.some((k) => g.includes(k));
+});
+const C = pets.reduce((s: number, n: any) => s + n.rating, 0) / (pets.length || 1);
+const reviews = pets.map((n: any) => n.numReviews).sort((a: number, b: number) => a - b);
+const mid = Math.floor(reviews.length / 2);
+const m = reviews.length % 2 ? reviews[mid] : (reviews[mid - 1] + reviews[mid]) / 2;
+const petScore = (n: any) => (n.numReviews / (n.numReviews + m)) * n.rating + (m / (n.numReviews + m)) * C;
+const petsRanked = pets.sort((a: any, b: any) => petScore(b) - petScore(a)).slice(0, 8);
+
+// 3) Escapadas con perro (de escapadas.json)
+const escapadasPerro = (escapadasData as any).sitios.filter((s: any) => s.afinidad.includes("con-perro")).slice(0, 6);
+const regionName: Record<string, string> = Object.fromEntries((escapadasData as any).regiones.map((r: any) => [r.id, r.name]));
+
+const maps = (q: string) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+
+const faq = [
+  {
+    q: "¿Hay parques para perros (pipican) en El Cañaveral?",
+    a: "Sí. En el entorno de El Cañaveral y Vicálvaro hay áreas caninas valladas donde los perros pueden soltarse. Las recogemos en esta guía con su ubicación; el barrio sigue creciendo y se van habilitando más.",
+  },
+  {
+    q: "¿Dónde puedo pasear con mi perro cerca?",
+    a: "Además de las calles y zonas verdes del propio barrio, muy cerca tienes grandes espacios naturales para pasear con perro (con correa): el Parque Regional del Sureste, los parques de Rivas-Vaciamadrid y, un poco más lejos, el Monte de El Pardo o el Retiro.",
+  },
+  {
+    q: "¿Qué normas hay para llevar al perro por Madrid?",
+    a: "Con carácter general hay que llevar al perro con correa en la vía pública, recoger sus excrementos y tenerlo censado e identificado con microchip. Las razas consideradas potencialmente peligrosas necesitan licencia, bozal y seguro. Consulta la ordenanza municipal de tu localidad para los detalles.",
+  },
+];
+
+const base = "https://www.elcanaveral.info";
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+  { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+  { "@type": "ListItem", position: 2, name: "El Cañaveral con perro", item: `${base}/con-perro/` },
+] };
+---
+
+<BaseLayout
+  title="El Cañaveral con perro: pipicanes, planes y veterinarios"
+  description="Guía de El Cañaveral con perro: áreas caninas y pipicanes, dónde pasear, escapadas dog-friendly cerca y los veterinarios, tiendas y peluquerías de mascotas mejor valorados del barrio."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">El Cañaveral con perro</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          El Cañaveral con perro 🐶
+        </h1>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          El Cañaveral es un barrio joven y muy <em>perruno</em>. Aquí tienes todo para el día a día con tu perro:
+          dónde soltarlo, dónde pasear, escapadas a las que llevarlo y los veterinarios, tiendas y peluquerías
+          de mascotas mejor valorados del barrio y alrededores.
+        </p>
+      </header>
+
+      <!-- Áreas caninas -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🦴 Áreas caninas y pipicanes</h2>
+        <p class="text-gray-500 text-sm mb-5">Zonas valladas donde tu perro puede soltarse y socializar.</p>
+        <div class="grid sm:grid-cols-2 gap-5">
+          {caninos.map((e: any) => (
+            <div class="bg-white rounded-xl border border-warm-200 p-5 flex flex-col">
+              <h3 class="font-bold text-brand-900 leading-snug">{e.name}</h3>
+              <p class="text-xs text-gray-500 mt-1">📍 {e.address}</p>
+              <a href={maps(`${e.name} ${e.address}`)} target="_blank" rel="noopener" class="mt-3 text-sm font-medium text-brand-600 hover:text-brand-700">
+                Ver en el mapa &rarr;
+              </a>
+            </div>
+          ))}
+        </div>
+        <div class="bg-warm-50 border border-warm-100 rounded-xl p-4 mt-5 text-sm text-gray-600">
+          ¿Conoces otra área canina del barrio que falte aquí? Escríbenos a
+          <a href="mailto:local@elcanaveral.info" class="text-brand-600 font-medium">local@elcanaveral.info</a>
+          y la añadimos. Mira también todos los <a href="/espacios-publicos" class="text-brand-600 font-medium">parques y espacios públicos</a>.
+        </div>
+      </section>
+
+      <!-- Escapadas con perro -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🌳 Escapadas y planes con perro</h2>
+        <p class="text-gray-500 text-sm mb-5">Sitios dog-friendly cerca de El Cañaveral para un finde con tu perro.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {escapadasPerro.map((s: any) => (
+            <a href={`/escapadas/${s.region}`} class="block bg-white rounded-xl border border-warm-200 p-5 hover:shadow-md hover:border-brand-200 transition-all group">
+              <h3 class="font-bold text-brand-900 leading-snug group-hover:text-brand-600 transition-colors">{s.name}</h3>
+              <p class="text-xs text-gray-500 mt-1">📍 {regionName[s.region]} · 🚗 {s.comoLlegar}</p>
+              <p class="text-gray-600 text-sm mt-2 leading-snug line-clamp-2">{s.resumen}</p>
+            </a>
+          ))}
+        </div>
+        <p class="mt-5">
+          <a href="/escapadas" class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver todas las escapadas (filtra por 🐶 con perro) &rarr;</a>
+        </p>
+      </section>
+
+      <!-- Veterinarios y servicios -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🐾 Veterinarios, tiendas y peluquerías</h2>
+        <p class="text-gray-500 text-sm mb-5">Los mejor valorados del barrio y alrededores, según las reseñas de Google.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {petsRanked.map((n: any) => (
+            <div class="bg-white rounded-xl border border-warm-200 p-5 flex flex-col">
+              <div class="flex items-start justify-between gap-2">
+                <h3 class="font-bold text-brand-900 leading-snug">
+                  <a href={`/${n.category}/${n.slug}`} class="hover:text-brand-600">{n.name}</a>
+                </h3>
+                <span class="shrink-0 flex items-center gap-1 text-sm">
+                  <span class="text-yellow-400">&#9733;</span>
+                  <span class="font-semibold text-gray-700">{n.rating}</span>
+                </span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">{n.googleCategory} · {n.zonaName} · {n.numReviews} reseñas</p>
+              <div class="flex items-center gap-4 mt-3 text-sm">
+                <a href={`/${n.category}/${n.slug}`} class="font-medium text-brand-600 hover:text-brand-700">Ver ficha &rarr;</a>
+                {n.phone && <a href={`tel:${n.phone}`} class="text-gray-500 hover:text-brand-600">Llamar</a>}
+              </div>
+            </div>
+          ))}
+        </div>
+        <p class="mt-5">
+          <a href="/mascotas" class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver todos los servicios de mascotas &rarr;</a>
+        </p>
+      </section>
+
+      <!-- FAQ -->
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes</h2>
+        <div class="space-y-3">
+          {faq.map((f) => (
+            <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+              <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                {f.q}
+                <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+              </summary>
+              <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <p class="text-xs text-gray-400 mt-8">
+        Notas y reseñas obtenidas de Google. Las normas de tenencia de animales dependen de cada ayuntamiento;
+        consulta la ordenanza municipal vigente. Si falta tu sitio perruno favorito, cuéntanoslo.
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>
