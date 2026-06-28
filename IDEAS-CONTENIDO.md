@@ -98,3 +98,28 @@ planificado** por el Consorcio). Más cercanos: **Coslada Central (L7)** ~23 min
 
 **Fuentes:** madrid.es (EMT prolonga búhos N6), comunidad.madrid / crtm.es (línea exprés E5, mejoras de transporte),
 emtmadrid.es, moovitapp.com (líneas y paradas). Para horarios en vivo enlazar a CRTM y Moovit en la propia guía.
+
+---
+
+## 🆕 Frentes "desde/cerca del Cañaveral" (idea de John, 2026-06-28)
+
+Patrón potente de intención hiperlocal: contenido sobre salir/comprar/disfrutar **desde** El Cañaveral.
+
+**✅ HECHOS (2026-06-28):**
+- **☀️ Escapadas de verano y niños** → `/escapadas`: nueva afinidad 💦 *Piscinas y baño* + sitios reales
+  (Faunia en Vicálvaro, Parque Europa Torrejón gratis, piscinas municipales Margot Moles / San Blas /
+  San Fernando, Warner Beach, embalse de San Juan, Las Presillas).
+- **🛍️ `/compras`** → outlets (Getafe Style Outlets/Nassica, Las Rozas Village, Las Rozas Style Outlets,
+  SS Reyes) + centros comerciales cercanos (Plenilunio, Parque Corredor, La Gavia, Gran Plaza 2).
+- **🛵 `/comida-a-domicilio`** → ranking bayesiano de restaurantes que reparten (datos reales Google;
+  re-enriquecidos con Apify para flags `delivery` precisos) + editorial de apps (Glovo/Uber/Just Eat) +
+  bloque de marcas virtuales a validar.
+- **📰 `/actualidad`** (blog de noticias estrenado) → primer post: el mayor parque comercial de Madrid en
+  El Cañaveral (77.000 m², Mercadona/Lidl/McDonald's, 13 pistas pádel, finales 2027, OMO Retail).
+  **Regla: solo hechos reales con fuente.**
+
+**⬜ Ideas guardadas del mismo patrón (para cuando toque):**
+- 🛒 **Mercados y mercadillos** cercanos (rastros, mercados municipales de Vicálvaro/Coslada).
+- 🎢 **Más planes con niños** (Bosque Encantado, Atlantis/Xanadú, Zoo, parque de atracciones) como sitios de escapadas.
+- 📰 **Alimentar `/actualidad`**: aperturas del barrio, eventos, obras, nuevas líneas de transporte — John aporta, se redacta con fuente.
+- 🐶 Hub por afinidad **con perro** (ya existe el motor `AfinidadFilter`): pipicanes + escapadas con-perro + bares dog-friendly.
