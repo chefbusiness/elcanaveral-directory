@@ -1,0 +1,193 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+
+// Outlets cerca de El Cañaveral (compras de marca con descuento)
+const outlets = [
+  {
+    name: "Getafe The Style Outlets",
+    zona: "Getafe (sur)",
+    distancia: "~25-30 min en coche por la M-45 / A-4",
+    texto: "El outlet más completo del sur de Madrid: más de 70 marcas de moda con descuento, dentro del complejo de ocio y restauración Nassica. Plan redondo de compras + comida + cine en el mismo sitio.",
+    maps: "Getafe The Style Outlets",
+  },
+  {
+    name: "Las Rozas Village",
+    zona: "Las Rozas (noroeste)",
+    distancia: "~40 min en coche por la M-40 / A-6",
+    texto: "El outlet de lujo de Madrid: más de 100 boutiques de primeras marcas nacionales e internacionales con rebajas de hasta el 60%. El más exclusivo, ideal si buscas marcas premium.",
+    maps: "Las Rozas Village",
+  },
+  {
+    name: "Las Rozas The Style Outlets",
+    zona: "Las Rozas (noroeste)",
+    distancia: "~40 min en coche por la M-40 / A-6",
+    texto: "El primer outlet que abrió en España (1996), con tiendas de moda, complementos, hogar y belleza de marcas como Adolfo Domínguez, Mango o Pepe Jeans. Justo al lado de Las Rozas Village.",
+    maps: "Las Rozas The Style Outlets",
+  },
+  {
+    name: "The Style Outlets San Sebastián de los Reyes",
+    zona: "San Sebastián de los Reyes (norte)",
+    distancia: "~30-35 min en coche por la M-50 / A-1",
+    texto: "Gran outlet al norte de Madrid con decenas de marcas de moda, deporte y complementos con descuento todo el año. Buena opción si te pilla la zona norte.",
+    maps: "The Style Outlets San Sebastián de los Reyes",
+  },
+];
+
+// Centros comerciales cercanos
+const centros = [
+  {
+    name: "Centro Comercial Plenilunio",
+    zona: "San Blas (Madrid)",
+    distancia: "~10 min en coche",
+    texto: "El centro comercial grande más cercano al barrio: moda, restauración, hipermercado y cines, a un paso por la A-2. El plan de compras de toda la vida sin alejarte.",
+    maps: "Centro Comercial Plenilunio Madrid",
+  },
+  {
+    name: "Parque Corredor",
+    zona: "Torrejón de Ardoz",
+    distancia: "~12-15 min en coche por la A-2",
+    texto: "Uno de los centros comerciales más grandes de la Comunidad, con cientos de tiendas, hipermercado, restauración y ocio. Mucha variedad y aparcamiento de sobra.",
+    maps: "Parque Corredor Torrejón de Ardoz",
+  },
+  {
+    name: "Centro Comercial La Gavia",
+    zona: "Ensanche de Vallecas (Madrid)",
+    distancia: "~15 min en coche por la M-45",
+    texto: "Centro comercial moderno al sur, con moda, hipermercado, restauración y cines. Buena alternativa por el lado de Vallecas.",
+    maps: "Centro Comercial La Gavia Madrid",
+  },
+  {
+    name: "Gran Plaza 2 (Alcalá de Henares)",
+    zona: "Alcalá de Henares",
+    distancia: "~20-25 min en coche por la A-2",
+    texto: "El gran centro comercial del Corredor del Henares: moda, hipermercado, restauración y ocio. Cae de camino si vas hacia Alcalá.",
+    maps: "Gran Plaza 2 Alcalá de Henares",
+  },
+];
+
+const faq = [
+  {
+    q: "¿Cuál es el outlet más cercano a El Cañaveral?",
+    a: "Por carretera, el más práctico desde El Cañaveral suele ser Getafe The Style Outlets (~25-30 min por la M-45/A-4), que además está dentro del complejo de ocio Nassica. Para marcas de lujo, Las Rozas Village (~40 min, al noroeste).",
+  },
+  {
+    q: "¿Y el centro comercial grande más cercano?",
+    a: "El Centro Comercial Plenilunio (San Blas), a unos 10 minutos en coche por la A-2, es el centro comercial grande más cercano al barrio. Parque Corredor, en Torrejón de Ardoz, queda también muy cerca (~12-15 min) y es de los más grandes de Madrid.",
+  },
+  {
+    q: "¿El Cañaveral tendrá su propio centro comercial?",
+    a: "Sí. Está proyectado en El Cañaveral el que será uno de los mayores parques comerciales de Madrid (en torno a 77.000 m² y más de 50 operadores, con zona de restauración, ocio y pistas de pádel). Su apertura está prevista para los próximos años; mientras tanto, las opciones de arriba son las más cómodas desde el barrio.",
+  },
+];
+
+const base = "https://www.elcanaveral.info";
+const maps = (q: string) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+  { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+  { "@type": "ListItem", position: 2, name: "Compras: outlets y centros comerciales", item: `${base}/compras/` },
+] };
+---
+
+<BaseLayout
+  title="Outlets y centros comerciales cerca de El Cañaveral"
+  description="Guía de compras desde El Cañaveral: los mejores outlets (Getafe, Las Rozas Village, San Sebastián de los Reyes) y centros comerciales cercanos (Plenilunio, Parque Corredor, La Gavia), con distancia y cómo llegar."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">Compras: outlets y centros comerciales</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          Outlets y centros comerciales cerca de El Cañaveral
+        </h1>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          ¿Día de compras desde El Cañaveral? Aunque el barrio tendrá su propio gran parque comercial en los
+          próximos años, hoy tienes outlets y centros comerciales muy bien comunicados a pocos minutos. Aquí los
+          tienes ordenados, con <strong>distancia y cómo llegar</strong> desde el barrio.
+        </p>
+      </header>
+
+      <!-- Outlets -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🛍️ Outlets (marcas con descuento)</h2>
+        <p class="text-gray-500 text-sm mb-5">Tiendas de marca a precio rebajado, perfectas para una mañana de compras.</p>
+        <div class="grid sm:grid-cols-2 gap-5">
+          {outlets.map((o) => (
+            <div class="bg-white rounded-xl border border-warm-200 p-5 flex flex-col">
+              <h3 class="font-bold text-brand-900 leading-snug">{o.name}</h3>
+              <p class="text-xs text-gray-500 mt-1">📍 {o.zona}</p>
+              <p class="text-gray-600 text-sm mt-3 leading-snug flex-1">{o.texto}</p>
+              <p class="text-xs text-gray-500 mt-3">🚗 {o.distancia}</p>
+              <a href={maps(o.maps)} target="_blank" rel="noopener" class="mt-2 text-sm font-medium text-brand-600 hover:text-brand-700">
+                Ver en el mapa &rarr;
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Centros comerciales -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🏬 Centros comerciales cercanos</h2>
+        <p class="text-gray-500 text-sm mb-5">Moda, hipermercado, restauración y ocio bajo un mismo techo, a un paso del barrio.</p>
+        <div class="grid sm:grid-cols-2 gap-5">
+          {centros.map((c) => (
+            <div class="bg-white rounded-xl border border-warm-200 p-5 flex flex-col">
+              <h3 class="font-bold text-brand-900 leading-snug">{c.name}</h3>
+              <p class="text-xs text-gray-500 mt-1">📍 {c.zona}</p>
+              <p class="text-gray-600 text-sm mt-3 leading-snug flex-1">{c.texto}</p>
+              <p class="text-xs text-gray-500 mt-3">🚗 {c.distancia}</p>
+              <a href={maps(c.maps)} target="_blank" rel="noopener" class="mt-2 text-sm font-medium text-brand-600 hover:text-brand-700">
+                Ver en el mapa &rarr;
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Nota local -->
+      <div class="bg-brand-50 border border-brand-100 rounded-xl p-5 mb-12 text-sm text-gray-700">
+        <span class="font-semibold text-brand-700">¿Y comprar en el propio barrio?</span>
+        Para el día a día, en el directorio tienes los <a href="/directorio" class="text-brand-600 font-medium">comercios y tiendas de El Cañaveral</a>
+        y alrededores: supermercados, moda, farmacias, ferreterías y mucho más, sin coger el coche.
+      </div>
+
+      <!-- FAQ -->
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes</h2>
+        <div class="space-y-3">
+          {faq.map((f) => (
+            <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+              <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                {f.q}
+                <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+              </summary>
+              <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <p class="text-xs text-gray-400 mt-8">
+        Distancias y tiempos orientativos en coche desde El Cañaveral; varían según el tráfico. Confirma horarios
+        y marcas en la web de cada centro antes de ir.
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>
