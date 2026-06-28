@@ -122,4 +122,6 @@ Patrón potente de intención hiperlocal: contenido sobre salir/comprar/disfruta
 - 🛒 **Mercados y mercadillos** cercanos (rastros, mercados municipales de Vicálvaro/Coslada).
 - 🎢 **Más planes con niños** (Bosque Encantado, Atlantis/Xanadú, Zoo, parque de atracciones) como sitios de escapadas.
 - 📰 **Alimentar `/actualidad`**: aperturas del barrio, eventos, obras, nuevas líneas de transporte — John aporta, se redacta con fuente.
-- 🐶 Hub por afinidad **con perro** (ya existe el motor `AfinidadFilter`): pipicanes + escapadas con-perro + bares dog-friendly.
+- ✅ 🐶 Hub **con perro** (`/con-perro`, HECHO 2026-06-28): áreas caninas + escapadas con-perro + veterinarios/tiendas/peluquerías del directorio (filtrando ruido). Pendiente: flag dog-friendly real en bares/terrazas (no existe aún).
+
+**🧹 Calidad de datos pendiente:** la categoría `mascotas` del directorio tiene entradas mal clasificadas (Rentokil = control de plagas; digitanimal = oficinas/GPS ganado). Recategorizar a `hogar`/`servicios-profesionales` mejoraría la página `/mascotas` (el hub `/con-perro` ya las filtra).
