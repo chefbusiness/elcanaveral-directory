@@ -1,0 +1,47 @@
+{
+  "posts": [
+    {
+      "slug": "parque-comercial-el-canaveral-mayor-de-madrid",
+      "title": "El Cañaveral tendrá el mayor parque comercial de Madrid: 77.000 m², Mercadona, Lidl y 13 pistas de pádel",
+      "date": "2026-06-28",
+      "updated": "2026-06-28",
+      "excerpt": "Las obras del que será el mayor parque de medianas superficies de la capital ya han arrancado en El Cañaveral. Abrirá a finales de 2027 con más de 50 locales, supermercados, ocio y restauración.",
+      "tags": ["Urbanismo", "Comercio"],
+      "lead": "El Cañaveral va a estrenar uno de los mayores espacios comerciales de Madrid. Las obras del Parque Comercial El Cañaveral, impulsado por OMO Retail, ya están en marcha y, según informan elEconomista e idealista, su apertura está prevista para finales de 2027. Será el mayor parque de medianas superficies de la capital, con 77.000 m² y más de 50 locales a pocos minutos de casa.",
+      "datosClave": [
+        "77.000 m² de superficie comercial (SBA) y más de 50 locales",
+        "Apertura prevista para finales de 2027; las obras ya han comenzado",
+        "Inversión superior a 100 millones de euros y más de 1.500 empleos directos e indirectos",
+        "Promotor: OMO Retail · Comercialización: Savills · Obras: ASCH · Financiación: CaixaBank",
+        "Ubicación: barrio de El Cañaveral, distrito de Vicálvaro (sureste de Madrid)"
+      ],
+      "secciones": [
+        {
+          "h2": "Cómo será: cinco grandes áreas",
+          "parrafos": [
+            "Según la información publicada por la prensa especializada, el complejo se organizará en cinco zonas diferenciadas: alimentación; bricolaje y taller; moda, deportes y mascotas; hogar y restauración (esta última en formato de doble altura); y una zona de ocio y pádel con 13 pistas.",
+            "El proyecto contempla además amplias zonas de aparcamiento (más de 2.200 plazas previstas), pensado para dar servicio tanto al propio barrio como al conjunto del corredor del sureste."
+          ]
+        },
+        {
+          "h2": "Marcas ya confirmadas",
+          "parrafos": [
+            "Entre los operadores confirmados hasta ahora figuran Mercadona, Lidl y Ahorramás en alimentación, junto a McDonald's, Kiabi, Planet Fitness, Urban Planet e Ilusiona, entre otros. La oferta combinará compra del día a día, moda, hogar, deporte, restauración y ocio en familia."
+          ]
+        },
+        {
+          "h2": "Qué significa para el barrio",
+          "parrafos": [
+            "Para un barrio tan joven y en plena expansión como El Cañaveral, la llegada de este parque comercial supone más comercio, más empleo y más servicios sin tener que salir de la zona. Hasta su apertura, los vecinos siguen teniendo cerca varias opciones: los comercios del propio barrio y los outlets y centros comerciales de alrededor.",
+            "Iremos actualizando esta noticia a medida que se confirmen nuevas marcas y fechas."
+          ]
+        }
+      ],
+      "fuentes": [
+        { "name": "elEconomista", "url": "https://www.eleconomista.es/vivienda-inmobiliario/noticias/13889162/04/26/asi-sera-el-mayor-parque-comercial-de-madrid-77000-m2-mas-de-50-operadores-13-pistas-de-padel-y-se-ubicara-en-el-canaveral.html" },
+        { "name": "idealista", "url": "https://www.idealista.com/news/inmobiliario/retail/2026/04/28/895012-arrancan-las-obras-del-parque-comercial-el-canaveral-que-abrira-en-2027-tras-100" },
+        { "name": "Capital", "url": "https://capital.es/empresas/economia-el-parque-comercial-el-canaveral-preve-abrir-a-finales-de-2027-tras-una-inversion-de-mas-de-100-millones/180371/" }
+      ]
+    }
+  ]
+}

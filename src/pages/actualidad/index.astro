@@ -1,0 +1,59 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import actualidadData from "@/data/actualidad.json";
+
+const today = new Date();
+const posts = (actualidadData as any).posts
+  .filter((p: any) => new Date(p.date) <= today)
+  .sort((a: any, b: any) => +new Date(b.date) - +new Date(a.date));
+
+const fmt = (iso: string) => new Date(iso).toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" });
+---
+
+<BaseLayout
+  title="Actualidad de El Cañaveral: noticias del barrio"
+  description="Noticias y actualidad de El Cañaveral (Vicálvaro, Madrid): nuevas aperturas, urbanismo, comercio, transporte y novedades del barrio."
+>
+  <Header />
+
+  <section class="pt-24 pb-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <header class="mb-10">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900">Actualidad de El Cañaveral</h1>
+        <p class="text-gray-600 mt-3 text-lg">
+          Lo que pasa en el barrio: nuevas aperturas, urbanismo, comercio, transporte y novedades que afectan al
+          día a día de El Cañaveral y alrededores.
+        </p>
+      </header>
+
+      {posts.length > 0 ? (
+        <div class="space-y-5">
+          {posts.map((p: any) => (
+            <a href={`/actualidad/${p.slug}`} class="block bg-white rounded-xl border border-warm-200 p-6 hover:shadow-lg hover:border-brand-200 transition-all group">
+              <div class="flex flex-wrap items-center gap-2 mb-2">
+                <span class="text-xs text-gray-400">{fmt(p.date)}</span>
+                {(p.tags || []).map((t: string) => (
+                  <span class="text-[11px] bg-brand-50 text-brand-700 px-2 py-0.5 rounded">{t}</span>
+                ))}
+              </div>
+              <h2 class="font-bold text-lg sm:text-xl text-brand-900 group-hover:text-brand-600 transition-colors leading-snug">{p.title}</h2>
+              <p class="text-gray-500 text-sm mt-2 leading-snug">{p.excerpt}</p>
+              <span class="inline-block mt-3 text-sm font-medium text-brand-600">Leer más &rarr;</span>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <p class="text-gray-500">Aún no hay noticias publicadas. Vuelve pronto.</p>
+      )}
+
+      <p class="text-sm text-gray-400 mt-10">
+        ¿Tienes una novedad del barrio que contar (una apertura, un evento, una obra)? Escríbenos a
+        <a href="mailto:local@elcanaveral.info" class="text-brand-600">local@elcanaveral.info</a>.
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
