@@ -1223,7 +1223,7 @@
       "Arroz con bogavante exquisito",
       "Ambiente familiar y agradable"
     ],
-    "horario": "M-S 13:30-16:00 y 20:30-23:30, D 13:30-16:30, L Cerrado",
+    "horario": "do 9 AM to 11 PM · lu 6 AM to 11 PM · ma 6 AM to 11 PM · mi 6 AM to 11 PM · ju 6 AM to 11 PM · vi 9 AM to 11 PM · sá 9 AM to 11 PM",
     "tiposCocina": [
       "Asturiana",
       "Tradicional Española"
@@ -1274,7 +1274,7 @@
       "Cocina casera de calidad",
       "Ideal para el día a día"
     ],
-    "horario": "L-V 7:00-19:00, S 8:00-15:00, D Cerrado",
+    "horario": "do 9 AM to 12 a.m. · lu 6:30 AM to 12 a.m. · ma 6:30 AM to 12 a.m. · mi 6:30 AM to 12 a.m. · ju 6:30 AM to 12 a.m. · vi 6:30 AM to 12 a.m. · sá 9 AM to 12 a.m.",
     "tiposCocina": [
       "Casera",
       "Mediterránea"
@@ -1328,7 +1328,7 @@
       "Excelente relación calidad-precio",
       "Variedad de platos latinos"
     ],
-    "horario": "M-S 13:00-16:00, 20:00-23:00, D 13:00-16:00",
+    "horario": "do 10 AM to 5 PM, 7 PM to 12 AM · lu 9 AM to 5 PM, 8 PM to 12 AM · ma 9 AM to 5 PM, 8 PM to 12 AM · mi 9 AM to 5 PM, 8 PM to 12 AM · ju 9 AM to 5 PM, 8 PM to 12 AM · vi 9 AM to 5 PM, 8 PM to 12 AM · sá 10 AM to 5 PM, 7 PM to 12 AM",
     "tiposCocina": [
       "Latina",
       "Casera",
@@ -1349,7 +1349,7 @@
       "/images/negocios/con-sazon-el-canaveral-5.webp"
     ],
     "rating": 4.8,
-    "numReviews": 6724,
+    "numReviews": 6735,
     "phone": "+34 615 62 50 86",
     "website": "https://consazon.es/",
     "placeId": "ChIJL11szugtQg0RBq4vMbgVkZc",
@@ -2371,7 +2371,7 @@
       "Ambiente moderno y acogedor",
       "Ideal para cenas informales"
     ],
-    "horario": "M-D 13:00-16:00, 20:00-23:00",
+    "horario": "do 1 to 11 PM · lu 1 to 11 PM · ma 1 to 11 PM · mi 1 to 11:30 PM · ju 1 to 11:30 PM · vi 1 to 11:30 PM · sá 1 to 11:30 PM",
     "tiposCocina": [
       "Americana",
       "Gourmet"
@@ -2389,7 +2389,7 @@
       "/images/negocios/beefcious-el-canaveral-5.webp"
     ],
     "rating": 4.5,
-    "numReviews": 1983,
+    "numReviews": 1985,
     "website": "http://www.beefcious.com/",
     "placeId": "ChIJ87yYRps7Qg0Rj3px8lzK9Og",
     "googleCategory": "Restaurante",
@@ -2427,7 +2427,7 @@
       "Ambiente animado y familiar",
       "Ideal para el aperitivo o afterwork"
     ],
-    "horario": "L-D 9:00-00:00",
+    "horario": "do 11:30 AM to 11:30 PM · lu 11:30 AM to 11:30 PM · ma 11:30 AM to 11:30 PM · mi 11:30 AM to 11:30 PM · ju 11:30 AM to 11:30 PM · vi 11:30 AM to 12 a.m. · sá 11:30 AM to 12 a.m.",
     "tiposCocina": [
       "Española",
       "Tapas"
@@ -2478,7 +2478,7 @@
       "Ambiente familiar y de barrio",
       "Ideal para desayunos y meriendas"
     ],
-    "horario": "L-D 7:00-13:00, V-D 17:00-20:00",
+    "horario": "do 7 AM to 1 PM, 5 to 10 PM · lu Cerrado · ma 7 AM to 1 PM, 5 to 10 PM · mi 7 AM to 1 PM, 5 to 10 PM · ju 7 AM to 1 PM, 5 to 10 PM · vi 7 AM to 1 PM, 5 to 10 PM · sá 7 AM to 1 PM, 5 to 10 PM",
     "tiposCocina": [
       "Dulces",
       "Desayunos"
@@ -2495,12 +2495,14 @@
       "/images/negocios/churreria-bernis-5.webp"
     ],
     "rating": 4.5,
-    "numReviews": 1110,
+    "numReviews": 1111,
     "website": "https://cafeteriachurreria3.wixsite.com/chocolateriabernis",
     "placeId": "ChIJS_aER2klQg0Ra0-gUeuATK4",
     "googleCategory": "Churrería",
     "lat": 40.40191,
-    "lng": -3.605833
+    "lng": -3.605833,
+    "terraza": false,
+    "delivery": false
   },
   {
     "slug": "casa-botija",
@@ -2530,7 +2532,7 @@
       "Ambiente familiar y tradicional",
       "Excelente relación calidad-precio"
     ],
-    "horario": "L-S 13:00-16:00, 20:00-23:00, D 13:00-16:00",
+    "horario": "do Cerrado · lu 8 AM to 12 a.m. · ma 8 AM to 12 a.m. · mi 8 AM to 12 a.m. · ju 8 AM to 12 a.m. · vi 8 AM to 12 a.m. · sá 8 AM to 12 a.m.",
     "tiposCocina": [
       "Española",
       "Madrileña"
@@ -2548,12 +2550,14 @@
       "/images/negocios/casa-botija-5.webp"
     ],
     "rating": 4.5,
-    "numReviews": 559,
+    "numReviews": 560,
     "website": "https://www.facebook.com/Casa-Botija-869041903213133/",
     "placeId": "ChIJbWA3Gm8lQg0R-QYsZVaLsM0",
     "googleCategory": "Bar",
     "lat": 40.4036626,
-    "lng": -3.6082415
+    "lng": -3.6082415,
+    "terraza": false,
+    "delivery": false
   },
   {
     "slug": "el-rincon-de-carla",
@@ -2583,7 +2587,7 @@
       "Ambiente acogedor y de barrio",
       "Ideal para comer a diario"
     ],
-    "horario": "L-V 7:00-17:00, S 8:00-14:00",
+    "horario": "do 7:30 AM to 1 a.m. · lu Cerrado · ma 7:30 AM to 1 a.m. · mi 7:30 AM to 1 a.m. · ju 7:30 AM to 1 a.m. · vi 7:30 AM to 1 a.m. · sá 7:30 AM to 1 a.m.",
     "tiposCocina": [
       "Casera",
       "Mediterránea"
@@ -2601,12 +2605,13 @@
       "/images/negocios/el-rincon-de-carla-5.webp"
     ],
     "rating": 4.2,
-    "numReviews": 963,
+    "numReviews": 964,
     "website": "https://elrincondecarla.shop/",
     "placeId": "ChIJH2QkCmUlQg0RPH4ew1DKV6Q",
     "googleCategory": "Bar de tapas",
     "lat": 40.4072181,
-    "lng": -3.6088858
+    "lng": -3.6088858,
+    "delivery": false
   },
   {
     "slug": "rechupete-vicalvaro",
@@ -2635,7 +2640,7 @@
       "Ambiente elegante y moderno",
       "Ideal para celebraciones y ocasiones especiales"
     ],
-    "horario": "M-S 13:30-16:00, 20:30-23:30",
+    "horario": "do Cerrado · lu 8:30 AM to 2 PM, 5 to 9 PM · ma 8:30 AM to 2 PM, 5 to 9 PM · mi 8:30 AM to 2 PM, 5 to 9 PM · ju 8:30 AM to 2 PM, 5 to 9 PM · vi 8:30 AM to 2 PM, 5 to 9 PM · sá 8:30 AM to 2 PM",
     "tiposCocina": [
       "De Autor",
       "Mediterránea Moderna"
@@ -2656,7 +2661,9 @@
     "placeId": "ChIJ4S6VpkIlQg0RN7vmS4_ZDX4",
     "googleCategory": "Cafetería",
     "lat": 40.4044585,
-    "lng": -3.6086581
+    "lng": -3.6086581,
+    "terraza": false,
+    "delivery": false
   },
   {
     "slug": "clinica-muv-canaveral",
@@ -3528,7 +3535,7 @@
       "Servicio de entrega a domicilio rápido",
       "Ideal para una comida rápida y sabrosa"
     ],
-    "horario": "L-D 12:00-00:00",
+    "horario": "do 12:30 to 5 PM, 7 PM to 12 AM · lu 7 PM to 12 AM · ma 12:30 to 5 PM, 7 PM to 12 AM · mi 12:30 to 5 PM, 7 PM to 12 AM · ju 12:30 to 5 PM, 7 PM to 12 AM · vi 12:30 PM to 1 AM · sá 12:30 PM to 1 AM",
     "image": "/images/negocios/mr-kebab-canaveral.webp",
     "images": [
       "/images/negocios/mr-kebab-canaveral.webp",
@@ -3576,7 +3583,7 @@
       "Ofertas y promociones constantes",
       "Ideal para compartir en familia o con amigos"
     ],
-    "horario": "L-D 13:00-23:30",
+    "horario": "do 1 to 4 PM, 7:30 to 11:30 PM · lu 7:30 to 11:30 PM · ma 7:30 to 11:30 PM · mi 7:30 to 11:30 PM · ju 7:30 to 11:30 PM · vi 1 to 4 PM, 7:30 PM to 12 AM · sá 1 to 4 PM, 7:30 PM to 12 AM",
     "address": "Avenida de Miguel Delibes, 50, 28052 Madrid",
     "phone": "+34 910 01 14 66",
     "image": "/images/negocios/telepizza-canaveral.webp",
@@ -3593,7 +3600,8 @@
     "placeId": "ChIJ4Y66gTQ7Qg0RrJ6k512wcDQ",
     "googleCategory": "Pizzería a domicilio",
     "lat": 40.4025832,
-    "lng": -3.5619474
+    "lng": -3.5619474,
+    "terraza": false
   },
   {
     "slug": "kebabish-vicalvaro",
@@ -3626,7 +3634,7 @@
       "Precios muy asequibles",
       "Ideal para probar diferentes especialidades"
     ],
-    "horario": "L-D 12:00-00:00",
+    "horario": "do 12 PM to 12 AM · lu 12 PM to 12 AM · ma 12 PM to 12 AM · mi 12 PM to 12 AM · ju 12 PM to 12 AM · vi 12 PM to 12 AM · sá 12 PM to 12 AM",
     "address": "Calle de San Cipriano, 10, 28032 Madrid",
     "phone": "+34 663 87 72 77",
     "image": "/images/negocios/kebabish-vicalvaro.webp",
@@ -3642,7 +3650,9 @@
     "placeId": "ChIJ7eYapwQlQg0RCY55BJfwyC4",
     "googleCategory": "Restaurante",
     "lat": 40.4033771,
-    "lng": -3.6087027
+    "lng": -3.6087027,
+    "terraza": false,
+    "delivery": true
   },
   {
     "slug": "lidl-canaveral",
@@ -3909,7 +3919,7 @@
       "Pedido rápido en quioscos digitales",
       "Ideal para familias y comidas rápidas"
     ],
-    "horario": "L-J y D 12:30-00:30, V-S 12:30-01:00",
+    "horario": "do 12:30 PM to 12:30 AM · lu 12:30 PM to 12:30 AM · ma 12:30 PM to 12:30 AM · mi 12:30 PM to 12:30 AM · ju 12:30 PM to 12:30 AM · vi 12:30 PM to 1 AM · sá 12:30 PM to 1 AM",
     "address": "Avenida de Miguel Delibes, 80, 28052 Madrid",
     "image": "/images/negocios/burger-king-canaveral.webp",
     "images": [
@@ -3920,7 +3930,7 @@
       "/images/negocios/burger-king-canaveral-5.webp"
     ],
     "rating": 3.5,
-    "numReviews": 922,
+    "numReviews": 923,
     "phone": "+34 660 96 57 99",
     "website": "https://www.burgerking.es/",
     "placeId": "ChIJj1y_t1g7Qg0RvZ7cznDFPKo",
@@ -4330,7 +4340,7 @@
       "Platos tradicionales y frescos",
       "Excelente valoración en TheFork"
     ],
-    "horario": "L-D 13:00-16:00 y 20:00-23:00",
+    "horario": "do 12:30 to 11:30 PM · lu 6 to 11:30 PM · ma 6 to 11:30 PM · mi 6 to 11:30 PM · ju 6 to 11:30 PM · vi 12:30 to 11:30 PM · sá 12:30 to 11:30 PM",
     "image": "/images/negocios/vietnam-2013-canaveral.webp",
     "images": [
       "/images/negocios/vietnam-2013-canaveral.webp",
@@ -4339,7 +4349,7 @@
       "/images/negocios/vietnam-2013-canaveral-4.webp",
       "/images/negocios/vietnam-2013-canaveral-5.webp"
     ],
-    "numReviews": 122,
+    "numReviews": 121,
     "phone": "+34 910 26 18 10",
     "placeId": "ChIJ16ByZgA7Qg0RUKLZvdovxtQ",
     "googleCategory": "Restaurante vietnamita",
@@ -4363,7 +4373,7 @@
       "terraza",
       "cocina-variada"
     ],
-    "terraza": true,
+    "terraza": false,
     "horario": "L-J 07:00-00:00, V 07:00-01:00, S-D 09:00-01:00",
     "featured": false,
     "servicios": [
@@ -4387,12 +4397,12 @@
       "/images/negocios/seven-canaveral-4.webp",
       "/images/negocios/seven-canaveral-5.webp"
     ],
-    "rating": 4.2,
-    "numReviews": 189,
-    "placeId": "ChIJIRuBGQAxQg0RXfKo5xuyQzA",
-    "googleCategory": "Bar restaurante",
-    "lat": 40.4282468,
-    "lng": -3.5618414,
+    "rating": 4.1,
+    "numReviews": 51,
+    "placeId": "ChIJz-YevH87Qg0R0mECXs_jcts",
+    "googleCategory": "Restaurante",
+    "lat": 40.4063304,
+    "lng": -3.5630458,
     "website": "https://barsevencoslada.com/",
     "delivery": false
   },
@@ -4415,7 +4425,7 @@
       "cubana",
       "latina"
     ],
-    "horario": "Ma-D 10:00-16:00, 20:00-23:30",
+    "horario": "do 8 PM to 2:30 AM · lu Cerrado · ma 8 PM to 12 AM · mi 12 AM to 5 PM, 8 PM to 2:30 AM · ju 8 PM to 2:30 AM · vi 8 PM to 2:30 AM · sá 8 PM to 2:30 AM",
     "delivery": false,
     "featured": false,
     "servicios": [
@@ -4481,7 +4491,7 @@
       "Amplia variedad de arepas",
       "Nuevo local con ambiente moderno"
     ],
-    "horario": "Ma-D 12:30-16:00 y 19:30-23:00",
+    "horario": "do 9 AM to 5 PM, 7 to 11 PM · lu 10 AM to 4 PM, 7 to 11 PM · ma 10 AM to 4 PM, 7 to 11 PM · mi 10 AM to 4 PM, 7 to 11 PM · ju 10 AM to 4 PM, 7 to 11 PM · vi 10 AM to 4 PM, 7 PM to 12 AM · sá 9 AM to 5 PM, 7 PM to 12 AM",
     "image": "/images/negocios/guasacaca-madrid-canaveral.webp",
     "images": [
       "/images/negocios/guasacaca-madrid-canaveral.webp",
@@ -4491,7 +4501,7 @@
       "/images/negocios/guasacaca-madrid-canaveral-5.webp"
     ],
     "rating": 4.8,
-    "numReviews": 780,
+    "numReviews": 781,
     "phone": "+34 910 94 52 64",
     "website": "https://guasacaca.metro.bar/?lang=es",
     "placeId": "ChIJdeuOYNc7Qg0RqIw8k92He_g",
@@ -4537,7 +4547,7 @@
       "Platos frescos y sabrosos",
       "Excelente relación calidad-precio"
     ],
-    "horario": "Lunes a Domingo: 13:00-16:00 y 20:00-23:00",
+    "horario": "do 12 PM to 12 AM · lu 12 PM to 12 AM · ma 12 PM to 12 AM · mi 12 PM to 12 AM · ju 12 PM to 12 AM · vi 12 PM to 12 AM · sá 12 PM to 12 AM",
     "image": "/images/negocios/chinawok-express-canaveral.webp",
     "images": [
       "/images/negocios/chinawok-express-canaveral.webp",
@@ -4547,7 +4557,7 @@
       "/images/negocios/chinawok-express-canaveral-5.webp"
     ],
     "rating": 4.7,
-    "numReviews": 3195,
+    "numReviews": 3199,
     "phone": "+34 912 90 82 93",
     "placeId": "ChIJiRwnZwA7Qg0R0GgZ_nSkBag",
     "googleCategory": "Restaurante chino",
@@ -4588,11 +4598,11 @@
       "Ambiente moderno y juvenil",
       "Excelente valoración en TheFork"
     ],
-    "horario": "Martes a Jueves: 13:30-16:00 y 20:30-23:00, Viernes y Sábado: 13:30-16:00 y 20:30-00:00, Domingo: 13:30-16:00",
+    "horario": "do 1 to 11 PM · lu 1 to 11 PM · ma 1 to 11 PM · mi 1 to 11 PM · ju 1 to 11 PM · vi 1 PM to 12 AM · sá 1 PM to 12 AM",
     "address": "C. de San Cipriano, 67, Vicálvaro, 28032 Madrid",
     "phone": "+34 915 50 14 34",
     "website": "https://restaurantelabajada.com/carta-vicalvaro/",
-    "terraza": true,
+    "terraza": false,
     "image": "/images/negocios/la-bajada-street-food-vicalvaro.webp",
     "images": [
       "/images/negocios/la-bajada-street-food-vicalvaro.webp",
@@ -4601,11 +4611,12 @@
       "/images/negocios/la-bajada-street-food-vicalvaro-4.webp",
       "/images/negocios/la-bajada-street-food-vicalvaro-5.webp"
     ],
-    "numReviews": 1451,
+    "numReviews": 1453,
     "placeId": "ChIJY0IYaZwlQg0RTajZjLv1Jc8",
     "googleCategory": "Restaurante peruano",
     "lat": 40.4027506,
-    "lng": -3.5974406
+    "lng": -3.5974406,
+    "delivery": true
   },
   {
     "slug": "farmacia-central-canaveral",
@@ -6356,7 +6367,10 @@
       "/images/negocios/bar-restaurante-tierra-de-barros-3.webp",
       "/images/negocios/bar-restaurante-tierra-de-barros-4.webp",
       "/images/negocios/bar-restaurante-tierra-de-barros-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": false,
+    "horario": "do Cerrado · lu 6 AM to 10 PM · ma 6 AM to 10 PM · mi 6 AM to 10 PM · ju 6 AM to 10 PM · vi 6 AM to 10 PM · sá Cerrado"
   },
   {
     "slug": "la-mesa-escondida",
@@ -6381,7 +6395,7 @@
       "Ambiente acogedor y familiar"
     ],
     "rating": 4.8,
-    "numReviews": 184,
+    "numReviews": 185,
     "placeId": "ChIJ45phAEcxQg0RLV2jqUd-U6M",
     "googleCategory": "Restaurante",
     "phone": "+34 639 10 88 70",
@@ -6395,7 +6409,10 @@
       "/images/negocios/la-mesa-escondida-3.webp",
       "/images/negocios/la-mesa-escondida-4.webp",
       "/images/negocios/la-mesa-escondida-5.webp"
-    ]
+    ],
+    "terraza": false,
+    "delivery": false,
+    "horario": "do 12 to 11 PM · lu Cerrado · ma 12 to 11 PM · mi 12 to 11 PM · ju 12 to 11 PM · vi 12 PM to 12 AM · sá 12 PM to 12 AM"
   },
   {
     "slug": "restaurante-hermanos-poveda-s-l",
@@ -6433,7 +6450,10 @@
       "/images/negocios/restaurante-hermanos-poveda-s-l-3.webp",
       "/images/negocios/restaurante-hermanos-poveda-s-l-4.webp",
       "/images/negocios/restaurante-hermanos-poveda-s-l-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": false,
+    "horario": "do 9 AM to 12 a.m. · lu 9 AM to 12 a.m. · ma 9 AM to 12 a.m. · mi 9 AM to 12 a.m. · ju 9 AM to 12 a.m. · vi 9 AM to 12 a.m. · sá 9 AM to 12 a.m."
   },
   {
     "slug": "bar-restaurante-el-rincon-de-cristian",
@@ -6458,7 +6478,7 @@
       "Excelente relación calidad-precio"
     ],
     "rating": 4.7,
-    "numReviews": 120,
+    "numReviews": 121,
     "placeId": "ChIJjXc7H4IxQg0Rlsy_kBBl6kU",
     "googleCategory": "Bar restaurante",
     "phone": "+34 615 69 58 22",
@@ -6471,7 +6491,10 @@
       "/images/negocios/bar-restaurante-el-rincon-de-cristian-3.webp",
       "/images/negocios/bar-restaurante-el-rincon-de-cristian-4.webp",
       "/images/negocios/bar-restaurante-el-rincon-de-cristian-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": false,
+    "horario": "do Cerrado · lu 6:30 AM to 8 PM · ma 6:30 AM to 8 PM · mi 6:30 AM to 8 PM · ju 6:30 AM to 8 PM · vi 6:30 AM to 8 PM · sá 7 AM to 5 PM"
   },
   {
     "slug": "restaurante-las-americas",
@@ -6510,7 +6533,10 @@
       "/images/negocios/restaurante-las-americas-3.webp",
       "/images/negocios/restaurante-las-americas-4.webp",
       "/images/negocios/restaurante-las-americas-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": false,
+    "horario": "do 9 AM to 2 PM · lu 7 AM to 11 PM · ma 7 AM to 11 PM · mi 7 AM to 11 PM · ju 7 AM to 11 PM · vi 7 AM to 11 PM · sá 9 AM to 2 PM"
   },
   {
     "slug": "bar-caballero",
@@ -6535,9 +6561,9 @@
       "Cocina tradicional de confianza"
     ],
     "rating": 4.5,
-    "numReviews": 730,
+    "numReviews": 731,
     "placeId": "ChIJ-TbWVIAwQg0RfoqxSTfntuc",
-    "googleCategory": "Restaurante",
+    "googleCategory": "Bar",
     "phone": "+34 697 79 83 70",
     "lat": 40.4204099,
     "lng": -3.53829,
@@ -6548,7 +6574,10 @@
       "/images/negocios/bar-caballero-3.webp",
       "/images/negocios/bar-caballero-4.webp",
       "/images/negocios/bar-caballero-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": true,
+    "horario": "do 12 to 6 PM · lu Cerrado · ma Cerrado · mi 8 AM to 12 a.m. · ju 8 AM to 12 a.m. · vi 8 AM to 1:30 a.m. · sá 12 PM to 2 AM"
   },
   {
     "slug": "greenway-grill-station",
@@ -6586,7 +6615,10 @@
       "/images/negocios/greenway-grill-station-3.webp",
       "/images/negocios/greenway-grill-station-4.webp",
       "/images/negocios/greenway-grill-station-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": false,
+    "horario": "do Cerrado · lu 7 AM to 10:30 PM · ma 7 AM to 11 PM · mi 7 AM to 10:30 PM · ju 7 AM to 11 PM · vi 7 AM to 11 PM · sá 8:30 AM to 11 PM"
   },
   {
     "slug": "inmobiliaria-sm-homes-coslada",
@@ -8107,7 +8139,10 @@
       "/images/negocios/restaurante-asturias-3.webp",
       "/images/negocios/restaurante-asturias-4.webp",
       "/images/negocios/restaurante-asturias-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": false,
+    "horario": "do Cerrado · lu 6 AM to 6 PM · ma 6 AM to 6 PM · mi 6 AM to 6 PM · ju 6 AM to 6 PM · vi 6 AM to 6 PM · sá 7 AM to 4 PM"
   },
   {
     "slug": "fogon-de-ramona",
@@ -8133,7 +8168,7 @@
       "Ambiente de barrio muy acogedor"
     ],
     "rating": 4.5,
-    "numReviews": 344,
+    "numReviews": 346,
     "placeId": "ChIJoU_opQY3Qg0RRz0GzPfBRWk",
     "googleCategory": "Restaurante",
     "phone": "+34 919 12 72 04",
@@ -8146,7 +8181,10 @@
       "/images/negocios/fogon-de-ramona-3.webp",
       "/images/negocios/fogon-de-ramona-4.webp",
       "/images/negocios/fogon-de-ramona-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": true,
+    "horario": "do Cerrado · lu 6 AM to 9 PM · ma 6 AM to 9 PM · mi 6 AM to 9 PM · ju 6 AM to 9 PM · vi 6 AM to 9 PM · sá 7 AM to 2 PM"
   },
   {
     "slug": "restaurante-phoenix",
@@ -8185,7 +8223,10 @@
       "/images/negocios/restaurante-phoenix-3.webp",
       "/images/negocios/restaurante-phoenix-4.webp",
       "/images/negocios/restaurante-phoenix-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": false,
+    "horario": "do Cerrado · lu 7 AM to 7 PM · ma 7 AM to 7 PM · mi 7 AM to 7 PM · ju 7 AM to 7 PM · vi 7 AM to 7 PM · sá Cerrado"
   },
   {
     "slug": "frutas-narcea",
@@ -8304,7 +8345,10 @@
       "/images/negocios/arroceria-los-amigos-3.webp",
       "/images/negocios/arroceria-los-amigos-4.webp",
       "/images/negocios/arroceria-los-amigos-5.webp"
-    ]
+    ],
+    "terraza": false,
+    "delivery": false,
+    "horario": "do 9 AM to 4 PM · lu Cerrado · ma 8 AM to 4 PM · mi 8 AM to 4 PM · ju 8 AM to 4 PM · vi 8 AM to 4 PM · sá 9 AM to 4 PM"
   },
   {
     "slug": "cafeteria-toy",
@@ -8536,7 +8580,10 @@
       "/images/negocios/restaurante-toledano-ii-3.webp",
       "/images/negocios/restaurante-toledano-ii-4.webp",
       "/images/negocios/restaurante-toledano-ii-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": false,
+    "horario": "do Cerrado · lu 5 AM to 11 PM · ma 5 AM to 11 PM · mi 5 AM to 11 PM · ju 5 AM to 11 PM · vi 5 AM to 11 PM · sá 5 AM to 4 PM"
   },
   {
     "slug": "btk-motorsport",
@@ -8614,7 +8661,10 @@
       "/images/negocios/restaurante-albarracin-3.webp",
       "/images/negocios/restaurante-albarracin-4.webp",
       "/images/negocios/restaurante-albarracin-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": false,
+    "horario": "do Cerrado · lu 7 AM to 7 PM · ma 7 AM to 7 PM · mi 7 AM to 7 PM · ju 7 AM to 7 PM · vi 7 AM to 7 PM · sá Cerrado"
   },
   {
     "slug": "peinad-s",
@@ -8847,7 +8897,10 @@
       "/images/negocios/la-choco-2-3.webp",
       "/images/negocios/la-choco-2-4.webp",
       "/images/negocios/la-choco-2-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": true,
+    "horario": "do Cerrado · lu 7 AM to 6 PM · ma 7 AM to 6 PM · mi 7 AM to 6 PM · ju 7 AM to 6 PM · vi 7 AM to 6 PM · sá Cerrado"
   },
   {
     "slug": "restaurante-naciones",
@@ -8885,7 +8938,10 @@
       "/images/negocios/restaurante-naciones-3.webp",
       "/images/negocios/restaurante-naciones-4.webp",
       "/images/negocios/restaurante-naciones-5.webp"
-    ]
+    ],
+    "terraza": true,
+    "delivery": false,
+    "horario": "do Cerrado · lu 7 AM to 6 PM · ma 7 AM to 6 PM · mi 7 AM to 6 PM · ju 7 AM to 6 PM · vi 7 AM to 6 PM · sá Cerrado"
   },
   {
     "slug": "productos-de-peluqueria-rubio-professional",
@@ -10035,7 +10091,7 @@
       "Excelente presentación de platos"
     ],
     "rating": 4.8,
-    "numReviews": 834,
+    "numReviews": 836,
     "placeId": "ChIJ-fxRCQA7Qg0RWL_EEDfTFiM",
     "googleCategory": "Restaurante asiático",
     "phone": "+34 634 38 12 65",
@@ -10051,7 +10107,8 @@
       "/images/negocios/tsinghe-cocina-fusion-5.webp"
     ],
     "terraza": true,
-    "delivery": false
+    "delivery": false,
+    "horario": "do 12:30 to 4:30 PM, 7:30 to 11:30 PM · lu Cerrado · ma 12:30 to 4:30 PM, 7:30 to 11:30 PM · mi 12:30 to 4:30 PM, 7:30 to 11:30 PM · ju 12:30 to 4:30 PM, 7:30 to 11:30 PM · vi 12:30 to 4:30 PM, 7:30 to 11:30 PM · sá 12:30 to 4:30 PM, 7:30 to 11:30 PM"
   },
   {
     "slug": "frutas-ocana",

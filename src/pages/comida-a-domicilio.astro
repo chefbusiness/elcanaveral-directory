@@ -1,0 +1,212 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { loadNegocios } from "@/lib/directory";
+
+// Restaurantes del directorio que reparten a domicilio (dato real de Google),
+// ordenados con el mismo ranking ponderado bayesiano que el resto del sitio.
+const MIN_RATING = 4.0;
+const rest = loadNegocios().filter(
+  (n: any) => n.category === "restaurantes" && n.delivery && n.rating && n.numReviews && n.rating >= MIN_RATING
+);
+const C = rest.reduce((s: number, n: any) => s + n.rating, 0) / (rest.length || 1);
+const reviews = rest.map((n: any) => n.numReviews).sort((a: number, b: number) => a - b);
+const mid = Math.floor(reviews.length / 2);
+const m = reviews.length % 2 ? reviews[mid] : (reviews[mid - 1] + reviews[mid]) / 2;
+const score = (n: any) => (n.numReviews / (n.numReviews + m)) * n.rating + (m / (n.numReviews + m)) * C;
+const ranked = rest
+  .map((n: any) => ({ n, score: score(n) }))
+  .sort((a: any, b: any) => b.score - a.score)
+  .map((r: any, i: number) => ({ rank: i + 1, ...r }));
+
+const apps = [
+  { name: "Glovo", color: "bg-yellow-50 text-yellow-700", nota: "Una de las apps con más cobertura en la zona; reparte comida y también supermercado y farmacia." },
+  { name: "Uber Eats", color: "bg-gray-100 text-gray-700", nota: "Gran catálogo de restaurantes y cadenas, con seguimiento del pedido en tiempo real." },
+  { name: "Just Eat", color: "bg-orange-50 text-orange-700", nota: "Histórica en España, fuerte en pizzerías, kebabs y comida asiática del barrio." },
+];
+
+const faq = [
+  {
+    q: "¿Qué apps de comida a domicilio funcionan en El Cañaveral?",
+    a: "En El Cañaveral reparten principalmente Glovo, Uber Eats y Just Eat. La cobertura y el tiempo de entrega dependen de tu dirección exacta y del restaurante; merece la pena comparar las tres porque no todos los locales están en todas.",
+  },
+  {
+    q: "¿Cómo está ordenada esta lista?",
+    a: "Por un ranking ponderado que combina la nota media de Google con el número de reseñas reales de cada restaurante (no solo la nota), y mostramos únicamente restaurantes del directorio que reparten a domicilio con valoración de 4 estrellas o más.",
+  },
+  {
+    q: "¿Hay 'marcas virtuales' o dark kitchens que solo están en las apps?",
+    a: "Sí. Además de los restaurantes con local, en las apps existen marcas que solo operan a domicilio (cocinas fantasma). Las vamos añadiendo según las verificamos; si conoces alguna buena que reparta en El Cañaveral, escríbenos a local@elcanaveral.info.",
+  },
+];
+
+const base = "https://www.elcanaveral.info";
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Mejores restaurantes a domicilio en El Cañaveral",
+  numberOfItems: ranked.length,
+  itemListElement: ranked.map((r: any) => ({
+    "@type": "ListItem",
+    position: r.rank,
+    url: `${base}/${r.n.category}/${r.n.slug}/`,
+    name: r.n.name,
+  })),
+};
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+  { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+  { "@type": "ListItem", position: 2, name: "Comida a domicilio", item: `${base}/comida-a-domicilio/` },
+] };
+---
+
+<BaseLayout
+  title="Los mejores restaurantes a domicilio en El Cañaveral"
+  description="Guía de comida a domicilio en El Cañaveral: los restaurantes mejor valorados que reparten (Glovo, Uber Eats, Just Eat), ordenados por nota y reseñas reales de Google. Pide con acierto."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">Comida a domicilio</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          Los mejores restaurantes a domicilio en El Cañaveral
+        </h1>
+        <p class="text-sm text-gray-400 mt-3">{ranked.length} restaurantes que reparten · ordenados por nota y reseñas reales</p>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          En El Cañaveral se pide muchísima comida a domicilio. Para que aciertes, aquí tienes los restaurantes
+          del barrio y alrededores <strong>que reparten</strong>, ordenados por las reseñas reales de Google. Más
+          abajo te contamos con qué apps pedir.
+        </p>
+      </header>
+
+      <!-- Metodología -->
+      <div class="bg-brand-50 border border-brand-100 rounded-xl p-4 mb-10 text-sm text-gray-600">
+        <span class="font-semibold text-brand-700">¿Cómo se ordena esta lista?</span>
+        Por una puntuación que combina la <strong>nota media</strong> de Google y el <strong>número de reseñas</strong>
+        reales (ranking ponderado), mostrando solo restaurantes que reparten a domicilio con 4★ o más.
+      </div>
+
+      <!-- Ranking -->
+      <div class="space-y-6">
+        {ranked.map((r: any) => {
+          const n = r.n;
+          return (
+            <div class="bg-white rounded-xl border border-warm-200 overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition-shadow">
+              <a href={`/${n.category}/${n.slug}`} class="relative sm:w-56 shrink-0 block">
+                <span class="absolute top-3 left-3 z-10 w-9 h-9 rounded-full bg-brand-900/90 text-white font-bold flex items-center justify-center text-sm shadow">
+                  {r.rank}
+                </span>
+                {n.image ? (
+                  <img src={n.image} alt={n.name} class="w-full h-44 sm:h-full object-cover" loading="lazy" />
+                ) : (
+                  <div class="w-full h-44 sm:h-full bg-gradient-to-br from-brand-50 to-brand-100 flex items-center justify-center text-4xl">🍽️</div>
+                )}
+              </a>
+
+              <div class="p-5 flex-1 min-w-0">
+                <div class="flex items-start justify-between gap-3">
+                  <h2 class="text-lg font-bold text-brand-900 leading-snug">
+                    <a href={`/${n.category}/${n.slug}`} class="hover:text-brand-600">{n.name}</a>
+                  </h2>
+                  {n.precioRango && (
+                    <span class="shrink-0 text-xs text-gray-500 bg-warm-100 px-2 py-0.5 rounded font-medium">{n.precioRango}</span>
+                  )}
+                </div>
+
+                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1.5">
+                  <span class="flex items-center gap-1">
+                    <span class="flex">
+                      {[1, 2, 3, 4, 5].map((s) => (
+                        <span class={`text-sm ${s <= Math.round(n.rating) ? "text-yellow-400" : "text-gray-200"}`}>&#9733;</span>
+                      ))}
+                    </span>
+                    <span class="text-sm font-semibold text-gray-700">{n.rating}</span>
+                    <span class="text-xs text-gray-400">({n.numReviews} reseñas)</span>
+                  </span>
+                  {n.googleCategory && <span class="text-xs text-gray-400">{n.googleCategory}</span>}
+                  <span class="text-xs text-gray-400">· {n.zonaName}</span>
+                </div>
+
+                <p class="text-gray-600 text-sm mt-3 line-clamp-2">{n.description}</p>
+
+                <div class="flex flex-wrap gap-1.5 mt-3">
+                  <span class="text-[11px] bg-orange-50 text-orange-700 px-2 py-0.5 rounded">A domicilio</span>
+                  {n.terraza && <span class="text-[11px] bg-green-50 text-green-700 px-2 py-0.5 rounded">Terraza</span>}
+                </div>
+
+                <div class="flex items-center gap-4 mt-4 text-sm">
+                  <a href={`/${n.category}/${n.slug}`} class="font-medium text-brand-600 hover:text-brand-700">Ver ficha &rarr;</a>
+                  {n.phone && <a href={`tel:${n.phone}`} class="text-gray-500 hover:text-brand-600">Llamar</a>}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <!-- Cómo pedir: apps -->
+      <section class="mt-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">¿Con qué app pedir en El Cañaveral?</h2>
+        <p class="text-gray-500 text-sm mb-5">Las tres grandes operan en el barrio. Compara, porque no todos los restaurantes están en todas.</p>
+        <div class="grid sm:grid-cols-3 gap-4">
+          {apps.map((a) => (
+            <div class="bg-white rounded-xl border border-warm-200 p-5">
+              <span class={`inline-block text-sm font-bold px-3 py-1 rounded-full ${a.color}`}>{a.name}</span>
+              <p class="text-gray-600 text-sm mt-3 leading-snug">{a.nota}</p>
+            </div>
+          ))}
+        </div>
+        <div class="bg-warm-50 border border-warm-100 rounded-xl p-4 mt-5 text-sm text-gray-600">
+          <span class="font-semibold text-gray-700">Truco:</span> la cobertura y el tiempo de entrega dependen de tu
+          dirección exacta dentro del barrio. Si un restaurante no te aparece en una app, prueba en otra: muchos
+          locales solo están en una o dos.
+        </div>
+      </section>
+
+      <!-- Enlace al directorio -->
+      <div class="mt-8 text-center">
+        <a href="/restaurantes" class="text-sm font-medium text-brand-600 hover:text-brand-700">
+          Ver todos los restaurantes del directorio &rarr;
+        </a>
+      </div>
+
+      <!-- FAQ -->
+      <section class="mt-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes</h2>
+        <div class="space-y-3">
+          {faq.map((f) => (
+            <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+              <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                {f.q}
+                <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+              </summary>
+              <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <p class="text-xs text-gray-400 mt-10">
+        Notas y número de reseñas obtenidos de Google; el dato de "reparto a domicilio" procede de la ficha de
+        Google de cada local. Las valoraciones y la disponibilidad cambian con el tiempo; esta guía se actualiza
+        periódicamente.
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>
