@@ -13,7 +13,7 @@ export function getStaticPaths() {
 const { region } = Astro.props as any;
 const data = escapadasData as any;
 const lugares = data.sitios.filter((s: any) => s.region === region.id);
-const ICON: Record<string, string> = { naturaleza: "🌳", ocio: "🎢", cultura: "🏛️", pueblo: "🏘️", deporte: "🐴", museo: "🖼️" };
+const ICON: Record<string, string> = { naturaleza: "🌳", ocio: "🎢", cultura: "🏛️", pueblo: "🏘️", deporte: "🐴", museo: "🖼️", piscina: "💦" };
 const mapsLink = (s: any) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.mapsQuery || s.name)}`;
 
 const base = "https://www.elcanaveral.info";
