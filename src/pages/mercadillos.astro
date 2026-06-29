@@ -3,16 +3,25 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 
-// Mercadillos semanales cerca de El Cañaveral (datos orientativos: confirmar en el ayuntamiento)
+// Mercadillos del barrio y alrededores (datos orientativos: confirmar fecha/horario antes de ir)
 const mercadillos = [
+  {
+    name: "Mercadillo de El Cañaveral — «La Muestra»",
+    dia: "Domingo (2º de cada mes)",
+    horario: "10:00–18:00",
+    lugar: "Avenida Provisional Gran Vía de Vicálvaro (junto a Los Ahijones), El Cañaveral",
+    nota: "El mercadillo del propio barrio: alrededor de 40 puestos con productos gourmet, artesanía y segunda mano, música en vivo y actividades para toda la familia. Organizado por GESCOMER con la Junta Municipal de Vicálvaro.",
+    maps: "Mercadillo La Muestra El Cañaveral Gran Vía de Vicálvaro",
+    badge: "En el barrio",
+  },
   {
     name: "Mercadillo de Vicálvaro",
     dia: "Jueves",
     horario: "9:00–14:00",
     lugar: "Calle Villablanca (Vicálvaro)",
-    nota: "El más cercano a El Cañaveral, en el mismo distrito. Ropa, calzado, menaje del hogar, y puestos de fruta y verdura.",
+    nota: "En el mismo distrito, a pocos minutos. Ropa, calzado, menaje del hogar, y puestos de fruta y verdura.",
     maps: "Mercadillo de Vicálvaro calle Villablanca Madrid",
-    cerca: true,
+    badge: null,
   },
   {
     name: "Mercadillo de Coslada",
@@ -21,7 +30,7 @@ const mercadillos = [
     lugar: "Recinto ferial de Coslada",
     nota: "Uno de los mercadillos más grandes de la zona: textil, calzado, hogar, alimentación y mucha variedad a buen precio.",
     maps: "Mercadillo de Coslada recinto ferial",
-    cerca: false,
+    badge: null,
   },
   {
     name: "Mercadillo de San Fernando de Henares",
@@ -30,18 +39,18 @@ const mercadillos = [
     lugar: "Aparcamiento junto a la estación de Metro Jarama",
     nota: "Mercadillo semanal junto al Metro Jarama, con gran variedad de productos frescos, ropa y artículos para el hogar a precios asequibles.",
     maps: "Mercadillo San Fernando de Henares Jarama",
-    cerca: false,
+    badge: null,
   },
 ];
 
 const faq = [
   {
     q: "¿Hay mercadillo en El Cañaveral?",
-    a: "El Cañaveral todavía no tiene un mercadillo semanal propio. El más cercano es el mercadillo de Vicálvaro, en el mismo distrito, que se celebra los jueves por la mañana en la calle Villablanca.",
+    a: "Sí. El Cañaveral tiene su propio mercadillo, «La Muestra», el segundo domingo de cada mes (de 10:00 a 18:00), en la Avenida Provisional Gran Vía de Vicálvaro: unos 40 puestos de productos gourmet, artesanía y segunda mano, con música en vivo y actividades familiares. Entre semana, además, tienes los mercadillos de Vicálvaro (jueves), Coslada y San Fernando de Henares (viernes).",
   },
   {
     q: "¿Qué día es cada mercadillo cerca de El Cañaveral?",
-    a: "Vicálvaro, los jueves de 9:00 a 14:00. Coslada, los viernes de 9:00 a 14:00 en el recinto ferial. San Fernando de Henares, los viernes de 8:00 a 14:30 junto al Metro Jarama. Los horarios pueden variar; conviene confirmarlos con cada ayuntamiento.",
+    a: "El Cañaveral (La Muestra), el segundo domingo de cada mes de 10:00 a 18:00. Vicálvaro, los jueves de 9:00 a 14:00. Coslada, los viernes de 9:00 a 14:00 en el recinto ferial. San Fernando de Henares, los viernes de 8:00 a 14:30 junto al Metro Jarama. Las fechas y horarios pueden variar; conviene confirmarlos antes de ir.",
   },
   {
     q: "¿Y mercados cubiertos o mercados especiales?",
@@ -60,7 +69,7 @@ const breadcrumbSchema = { "@context": "https://schema.org", "@type": "Breadcrum
 
 <BaseLayout
   title="Mercadillos y mercados cerca de El Cañaveral: días y horarios"
-  description="Guía de mercadillos cerca de El Cañaveral: el mercadillo de Vicálvaro (jueves), Coslada y San Fernando de Henares (viernes), con días, horarios y ubicación. Más mercados y mercados especiales de la zona."
+  description="Guía de mercadillos en El Cañaveral y alrededores: el mercadillo del barrio «La Muestra» (2º domingo de cada mes), más Vicálvaro (jueves), Coslada y San Fernando de Henares (viernes), con días, horarios y ubicación."
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -82,22 +91,22 @@ const breadcrumbSchema = { "@context": "https://schema.org", "@type": "Breadcrum
           Mercadillos y mercados cerca de El Cañaveral
         </h1>
         <p class="text-gray-600 leading-relaxed mt-4 text-lg">
-          ¿Buscas el mercadillo de la semana para comprar ropa, menaje o fruta y verdura a buen precio? El Cañaveral
-          aún no tiene mercadillo propio, pero a pocos minutos tienes varios. Aquí los tienes con su
-          <strong>día, horario y ubicación</strong>.
+          ¿Buscas el mercadillo para comprar ropa, menaje, artesanía o fruta y verdura a buen precio? El Cañaveral
+          tiene su propio mercadillo mensual, «La Muestra», y a pocos minutos hay varios más cada semana. Aquí los
+          tienes con su <strong>día, horario y ubicación</strong>.
         </p>
       </header>
 
       <!-- Mercadillos semanales -->
       <section class="mb-12">
-        <h2 class="text-2xl font-bold text-brand-900 mb-1">🧺 Mercadillos semanales</h2>
-        <p class="text-gray-500 text-sm mb-5">Mercados al aire libre, por las mañanas. El de Vicálvaro es el más cercano al barrio.</p>
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🧺 Mercadillos del barrio y la zona</h2>
+        <p class="text-gray-500 text-sm mb-5">El de El Cañaveral es mensual (2º domingo); los de alrededor, cada semana por la mañana.</p>
         <div class="grid sm:grid-cols-2 gap-5">
           {mercadillos.map((m) => (
             <div class="bg-white rounded-xl border border-warm-200 p-5 flex flex-col">
               <div class="flex items-start justify-between gap-2">
                 <h3 class="font-bold text-brand-900 leading-snug">{m.name}</h3>
-                {m.cerca && <span class="shrink-0 text-[11px] bg-brand-50 text-brand-700 px-2 py-0.5 rounded">El más cercano</span>}
+                {m.badge && <span class="shrink-0 text-[11px] bg-accent-50 text-accent-700 px-2 py-0.5 rounded font-medium">{m.badge}</span>}
               </div>
               <div class="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-sm">
                 <span class="font-semibold text-brand-700">🗓️ {m.dia}</span>
