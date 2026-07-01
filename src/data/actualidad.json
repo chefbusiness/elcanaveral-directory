@@ -1,6 +1,48 @@
 {
   "posts": [
     {
+      "slug": "verano-2026-el-canaveral-cine-al-aire-libre",
+      "title": "Verano 2026 en El Cañaveral: cine gratis al aire libre, teatro infantil y deporte",
+      "date": "2026-07-01",
+      "updated": "2026-07-01",
+      "excerpt": "El programa municipal «Verano en Vicálvaro» llega a El Cañaveral con cine de verano gratuito al aire libre, teatro y títeres para los peques y actividades deportivas durante julio y agosto.",
+      "tags": ["Ocio", "Verano"],
+      "lead": "Llega el verano al barrio con planes gratis para toda la familia. Dentro del programa municipal «Verano en Vicálvaro 2026», El Cañaveral acoge cine de verano al aire libre, teatro infantil y títeres, y actividades deportivas durante julio y agosto, según la información publicada por medios locales del distrito.",
+      "datosClave": [
+        "Cine de verano gratuito al aire libre en El Cañaveral durante julio y agosto",
+        "Ubicación del cine: zona del IDB El Cañaveral II (calle Tolerancia, 22)",
+        "Entre las películas previstas: Wicked, Mufasa: El Rey León, Del Revés 2 y Lilo & Stitch",
+        "Además: teatro infantil, títeres y actividades deportivas al aire libre",
+        "Organiza la Junta Municipal de Vicálvaro dentro de «Verano en Vicálvaro 2026»"
+      ],
+      "secciones": [
+        {
+          "h2": "Cine de verano gratis para toda la familia",
+          "parrafos": [
+            "El plato fuerte es el cine de verano al aire libre, con proyecciones gratuitas durante julio y agosto en la zona del IDB El Cañaveral II (calle Tolerancia, 22). La programación apuesta por títulos recientes y muy familiares como Wicked, Mufasa: El Rey León, Del Revés 2 o Lilo & Stitch.",
+            "Como los días y horarios concretos de cada sesión pueden ajustarse, conviene confirmarlos en la agenda de la Junta Municipal de Vicálvaro antes de acercarse."
+          ]
+        },
+        {
+          "h2": "Teatro, títeres y deporte al aire libre",
+          "parrafos": [
+            "Además del cine, el programa de verano incluye teatro infantil y títeres para los más pequeños, junto con actividades deportivas al aire libre. Una buena excusa para disfrutar del barrio las tardes-noches de verano sin gastar."
+          ]
+        },
+        {
+          "h2": "Y de fondo, el barrio sigue creciendo",
+          "parrafos": [
+            "Más allá del verano, El Cañaveral avanza en equipamientos: está previsto un centro cultural con biblioteca y auditorio, cuyas obras arrancarían entre julio y septiembre con el objetivo de estar terminado en 2027. El Ayuntamiento y el Consorcio Regional de Transportes también han hablado de reforzar los autobuses del barrio cuando concluyan las obras del intercambiador de Conde de Casal.",
+            "Y no olvides que cada segundo domingo de mes el barrio celebra su propio mercadillo, «La Muestra» (la próxima cita, el domingo 12 de julio)."
+          ]
+        }
+      ],
+      "fuentes": [
+        { "name": "Nuevo Sureste", "url": "https://nuevosureste.es/verano-vicalvaro-2026-el-canaveral/" },
+        { "name": "AV El Cañaveral", "url": "https://avelcanaveral.es/category/noticias/" }
+      ]
+    },
+    {
       "slug": "parque-comercial-el-canaveral-mayor-de-madrid",
       "title": "El Cañaveral tendrá el mayor parque comercial de Madrid: 77.000 m², Mercadona, Lidl y 13 pistas de pádel",
       "date": "2026-06-28",
