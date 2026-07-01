@@ -120,8 +120,8 @@ Patrón potente de intención hiperlocal: contenido sobre salir/comprar/disfruta
 
 **⬜ Ideas guardadas del mismo patrón (para cuando toque):**
 - ✅ 🛒 **Mercados y mercadillos** (`/mercadillos`, HECHO 2026-06-28): mercadillos semanales de Vicálvaro (jue), Coslada y San Fernando (vie) + mercado municipal + temáticos.
-- 🎢 **Más planes con niños** (Bosque Encantado, Atlantis/Xanadú, Zoo, parque de atracciones) como sitios de escapadas.
-- 📰 **Alimentar `/actualidad`**: aperturas del barrio, eventos, obras, nuevas líneas de transporte — John aporta, se redacta con fuente.
+- ✅ 🎢 **Más planes con niños** (HECHO 2026-07-01): Zoo Aquarium, Parque de Atracciones, El Bosque Encantado y Atlantis Aquarium (Xanadú) añadidos a escapadas (40 sitios, 24 con-niños).
+- 📰 **Alimentar `/actualidad`** (2 posts ya: parque comercial + verano/cine 2026): aperturas, eventos, obras, transporte — John aporta, se redacta con fuente. Fuentes locales útiles: nuevosureste.es, avelcanaveral.es, vibecanaveral.es, diario.madrid.es (Vicálvaro).
 - ✅ 🐶 Hub **con perro** (`/con-perro`, HECHO 2026-06-28): áreas caninas + escapadas con-perro + veterinarios/tiendas/peluquerías del directorio (filtrando ruido). Pendiente: flag dog-friendly real en bares/terrazas (no existe aún).
 
 **✅ 🧹 Calidad de datos (HECHO 2026-06-28):** recategorizadas las entradas mal clasificadas de `mascotas` → Rentokil a `hogar`, digitanimal a `servicios-profesionales`. La categoría `mascotas` queda limpia (18).

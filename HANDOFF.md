@@ -14,7 +14,7 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `bf8fabb` — 380 páginas, 256 negocios, 29 guías + frentes nuevos (escapadas verano, /compras, /comida-a-domicilio, /actualidad, /con-perro, /mercadillos), WebP (2026-06-28) |
+| **HEAD ref** | `11e4aa1` — 382 páginas, 256 negocios, 29 guías + frentes nuevos (escapadas verano+niños, /compras, /comida-a-domicilio, /actualidad ×2 posts, /con-perro, /mercadillos), WebP (2026-07-01) |
 
 ## ✅ Sesión 2026-06-25 (Abacus) — COMPLETADO
 
