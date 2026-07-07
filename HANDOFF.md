@@ -14,7 +14,7 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `11e4aa1` — 382 páginas, 256 negocios, 29 guías + frentes nuevos (escapadas verano+niños, /compras, /comida-a-domicilio, /actualidad ×2 posts, /con-perro, /mercadillos), WebP (2026-07-01) |
+| **HEAD ref** | `76af15a` — 398 páginas, 267 negocios, 29 guías + pilares (escapadas, /compras, /comida-a-domicilio, /actualidad ×4 posts, /con-perro, /mercadillos), menú superior con desplegable, WebP (2026-07-07) |
 
 ## ✅ Sesión 2026-06-25 (Abacus) — COMPLETADO
 
@@ -140,7 +140,9 @@ Refrescar todo: `python scripts/apify_enrich.py --mode enrich --write` (coste ~$
 
 ## 📁 Estado actual del sitio
 
-- **256 negocios** (eran 107) · 16 categorías · 4 zonas (Cañaveral 90 · Coslada 76 · San Fernando 48 · Vicálvaro 42). Zonas pobladas con Apify discover + `add_discovered.py` el 2026-06-26.
+- **267 negocios** (eran 107) · 16 categorías · 4 zonas. Poblado con Apify discover + `add_discovered.py` (rondas 2026-06-26 y 2026-07-07). Rutina repetible: `apify_enrich.py --mode discover` → `add_discovered.py --write` → `fetch_photos_by_placeid.py --only-missing --write` → convertir nuevas fotos a WebP.
+- **📰 Blog de actualidad con ritmo** (`/actualidad`, 4 posts): parque comercial, verano/cine 2026, +15 M€ equipamientos, primer instituto (IES). **Rutina "día como hoy": buscar novedades reales (nuevosureste.es, avelcanaveral.es, vibecanaveral.es, diario.madrid.es) → publicar con fuente + actualizar posts antiguos.** REGLA: solo hechos reales con fuente.
+- **Menú superior** con desplegable "Guías del barrio" (todos los pilares) + Actualidad — antes solo estaban en el footer.
 - **376 páginas:** `/`, `/[categoria]`, `/[categoria]/[slug]`, `/zona/[zona]`, `/zona/[zona]/[categoria]`,
   `/zonas`, `/directorio` (con **filtro de zonas** multi-select), `/comunidad`, **`/blog` + 29 guías "mejores X"**,
   **`/actualidad` + `/actualidad/[slug]` (blog de noticias)**, **`/compras`** (outlets y centros comerciales),
