@@ -1,4 +1,18 @@
 ---
+const guias = [
+  { href: "/vivir-en-el-canaveral", label: "Vivir en El Cañaveral" },
+  { href: "/blog", label: "Guías «mejores X»" },
+  { href: "/transporte", label: "Cómo llegar y transporte" },
+  { href: "/espacios-publicos", label: "Parques y espacios públicos" },
+  { href: "/servicios-publicos", label: "Servicios públicos" },
+  { href: "/escapadas", label: "Planes y escapadas" },
+  { href: "/con-perro", label: "El Cañaveral con perro" },
+  { href: "/comida-a-domicilio", label: "Comida a domicilio" },
+  { href: "/compras", label: "Outlets y centros comerciales" },
+  { href: "/mercadillos", label: "Mercados y mercadillos" },
+  { href: "/fiestas", label: "Fiestas y días especiales" },
+  { href: "/zonas", label: "Por zonas" },
+];
 ---
 
 <header class="sticky top-0 w-full bg-white/90 backdrop-blur-lg border-b border-warm-200 z-50">
@@ -11,9 +25,24 @@
     <!-- Navegación escritorio -->
     <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-gray-600">
       <a href="/directorio" class="hover:text-brand-600 transition-colors">Directorio</a>
+
+      <!-- Desplegable: Guías del barrio -->
+      <div class="relative group">
+        <button type="button" class="inline-flex items-center gap-1 hover:text-brand-600 transition-colors">
+          Guías del barrio
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 group-hover:rotate-180 transition-transform"><polyline points="6 9 12 15 18 9" /></svg>
+        </button>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full hidden group-hover:block pt-3">
+          <div class="bg-white border border-warm-200 rounded-xl shadow-lg py-2 w-64">
+            {guias.map((g) => (
+              <a href={g.href} class="block px-4 py-2 text-gray-700 hover:bg-warm-50 hover:text-brand-600 transition-colors">{g.label}</a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <a href="/actualidad" class="hover:text-brand-600 transition-colors">Actualidad</a>
       <a href="/comunidad" class="hover:text-brand-600 transition-colors">Comunidad</a>
-      <a href="/zonas" class="hover:text-brand-600 transition-colors">Zonas</a>
-      <a href="/blog" class="hover:text-brand-600 transition-colors">Blog</a>
     </nav>
     <a
       href="/alta"
@@ -42,13 +71,16 @@
   <!-- Menú desplegable móvil -->
   <nav
     id="nav-menu"
-    class="hidden sm:hidden absolute top-full inset-x-0 bg-white border-t border-warm-200 shadow-lg px-4 py-3 space-y-1 text-sm font-medium text-gray-700"
+    class="hidden sm:hidden absolute top-full inset-x-0 bg-white border-t border-warm-200 shadow-lg px-4 py-3 text-sm font-medium text-gray-700 max-h-[80vh] overflow-y-auto"
   >
     <a href="/directorio" class="block py-2.5 hover:text-brand-600">Directorio</a>
+    <a href="/actualidad" class="block py-2.5 hover:text-brand-600">Actualidad</a>
     <a href="/comunidad" class="block py-2.5 hover:text-brand-600">Comunidad</a>
-    <a href="/zonas" class="block py-2.5 hover:text-brand-600">Zonas</a>
-    <a href="/blog" class="block py-2.5 hover:text-brand-600">Blog</a>
-    <a href="/alta" class="block mt-2 text-center font-semibold bg-accent-500 text-white px-4 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
+    <p class="mt-3 mb-1 text-xs font-semibold uppercase tracking-wide text-gray-400">Guías del barrio</p>
+    {guias.map((g) => (
+      <a href={g.href} class="block py-2 pl-3 text-gray-600 hover:text-brand-600">{g.label}</a>
+    ))}
+    <a href="/alta" class="block mt-3 text-center font-semibold bg-accent-500 text-white px-4 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
       Registra tu negocio
     </a>
   </nav>
