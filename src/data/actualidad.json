@@ -1,16 +1,93 @@
 {
   "posts": [
     {
+      "slug": "el-canaveral-primer-instituto-publico-ies",
+      "title": "El Cañaveral tendrá por fin instituto público: 1.000 plazas para el curso 2027-2028",
+      "date": "2026-07-07",
+      "updated": "2026-07-07",
+      "excerpt": "Ya están en marcha las obras del primer instituto de Educación Secundaria (IES) de El Cañaveral, con capacidad para 1.000 alumnos. Está previsto que abra al inicio del curso 2027-2028.",
+      "tags": ["Educación"],
+      "lead": "El barrio da un paso de gigante en educación pública: la Comunidad de Madrid ha puesto en marcha la construcción del primer instituto (IES) de El Cañaveral, con capacidad para unos 1.000 alumnos, según la información publicada por medios locales y del Gobierno regional.",
+      "datosClave": [
+        "Primer instituto público (IES) de El Cañaveral, para unos 1.000 alumnos",
+        "24 aulas de Secundaria y 8 de Bachillerato, más aulas de informática, laboratorio, música y dibujo",
+        "Presupuesto de unos 12 millones de euros (obras adjudicadas a Ejuca, S.A.)",
+        "Obras previstas para terminar a finales de 2026",
+        "Podría estar operativo al inicio del curso 2027-2028"
+      ],
+      "secciones": [
+        {
+          "h2": "Un instituto que hacía mucha falta",
+          "parrafos": [
+            "Hasta ahora, los adolescentes de El Cañaveral tenían que desplazarse a otros barrios para cursar la ESO y el Bachillerato. El nuevo instituto, con capacidad para unos 1.000 alumnos, cambiará eso.",
+            "El centro tendrá 24 aulas de Secundaria y 8 de Bachillerato, además de aulas específicas de informática, tecnología, laboratorio, dibujo y música, biblioteca, gimnasio y pistas deportivas."
+          ]
+        },
+        {
+          "h2": "Plazos y contexto",
+          "parrafos": [
+            "Las obras, adjudicadas por unos 12 millones de euros, están previstas para finalizar a finales de 2026, por lo que el instituto podría abrir sus puertas al inicio del curso 2027-2028.",
+            "Se sumará así al colegio público CEIPSO Rudyard Kipling, el primer centro educativo público del barrio. Puedes ver el resto de servicios públicos en nuestra guía."
+          ]
+        }
+      ],
+      "fuentes": [
+        { "name": "Comunidad de Madrid", "url": "https://www.comunidad.madrid/noticias/2025/07/02/comunidad-madrid-adjudica-obras-construir-institutos-vallecas-canaveral-valdebebas-3000-nuevas-plazas-publicas" },
+        { "name": "Nuevo Sureste", "url": "https://nuevosureste.es/comienzo-obras-ies-el-canaveral/" }
+      ]
+    },
+    {
+      "slug": "el-canaveral-15-millones-equipamientos-2026",
+      "title": "El Cañaveral tendrá centro cultural, nueva escuela infantil y más deporte: 15 millones en 2026",
+      "date": "2026-07-07",
+      "updated": "2026-07-07",
+      "excerpt": "El Ayuntamiento destina más de 15 millones de euros al barrio en 2026 para nuevos equipamientos: un centro cultural con biblioteca y auditorio, una tercera escuela infantil, más instalaciones deportivas y un centro de acogida.",
+      "tags": ["Urbanismo", "Servicios"],
+      "lead": "El Cañaveral, uno de los barrios que más rápido crece de Madrid, recibirá más de 15 millones de euros del Ayuntamiento en 2026 para reforzar sus equipamientos sociales, culturales, deportivos y educativos, según la información publicada por medios locales del distrito.",
+      "datosClave": [
+        "Más de 15 millones de euros del Ayuntamiento para El Cañaveral en 2026",
+        "Centro cultural con biblioteca, auditorio y ludoteca (~8,5 M€; obras ya adjudicadas)",
+        "Centro de acogida para personas sin hogar (~4 M€)",
+        "Tercera pista deportiva básica (~1 M€) y una tercera escuela infantil",
+        "Reforma del campo de fútbol y mejoras de alumbrado (~360.000 €)"
+      ],
+      "secciones": [
+        {
+          "h2": "Un centro cultural con biblioteca y auditorio",
+          "parrafos": [
+            "La inversión estrella es el nuevo centro cultural, que contará con biblioteca, auditorio y ludoteca, con una partida en torno a los 8,5 millones de euros y las obras ya adjudicadas. Es uno de los grandes equipamientos que el barrio venía reclamando.",
+            "Su construcción arrancaría este año con el objetivo de estar terminado en 2027."
+          ]
+        },
+        {
+          "h2": "Más deporte, educación y servicios sociales",
+          "parrafos": [
+            "El presupuesto contempla también una tercera pista deportiva básica (en torno a 1 millón de euros), una tercera escuela infantil, la reforma del actual campo de fútbol y mejoras de alumbrado por unos 360.000 euros.",
+            "A ello se suma un centro de acogida para personas sin hogar, dotado con unos 4 millones de euros."
+          ]
+        },
+        {
+          "h2": "Un barrio que se pone al día",
+          "parrafos": [
+            "El Cañaveral ha crecido más rápido que sus servicios públicos, así que este paquete de equipamientos es una buena noticia para los vecinos. Iremos contando aquí cómo avanzan las obras."
+          ]
+        }
+      ],
+      "fuentes": [
+        { "name": "Nuevo Sureste", "url": "https://nuevosureste.es/presupuestos-2026-el-canaveral/" }
+      ]
+    },
+    {
       "slug": "verano-2026-el-canaveral-cine-al-aire-libre",
       "title": "Verano 2026 en El Cañaveral: cine gratis al aire libre, teatro infantil y deporte",
       "date": "2026-07-01",
-      "updated": "2026-07-01",
-      "excerpt": "El programa municipal «Verano en Vicálvaro» llega a El Cañaveral con cine de verano gratuito al aire libre, teatro y títeres para los peques y actividades deportivas durante julio y agosto.",
+      "updated": "2026-07-07",
+      "excerpt": "El programa municipal «Verano en Vicálvaro» llega a El Cañaveral con cine de verano gratuito al aire libre (viernes y sábados), teatro y títeres para los peques y actividades deportivas durante julio y agosto.",
       "tags": ["Ocio", "Verano"],
       "lead": "Llega el verano al barrio con planes gratis para toda la familia. Dentro del programa municipal «Verano en Vicálvaro 2026», El Cañaveral acoge cine de verano al aire libre, teatro infantil y títeres, y actividades deportivas durante julio y agosto, según la información publicada por medios locales del distrito.",
       "datosClave": [
-        "Cine de verano gratuito al aire libre en El Cañaveral durante julio y agosto",
-        "Ubicación del cine: zona del IDB El Cañaveral II (calle Tolerancia, 22)",
+        "Cine de verano gratuito al aire libre todos los viernes y sábados de julio y agosto",
+        "Ubicación del cine: recintos Ferial e IDB II (esquina C/ Diálogo con C/ Tolerancia)",
         "Entre las películas previstas: Wicked, Mufasa: El Rey León, Del Revés 2 y Lilo & Stitch",
         "Además: teatro infantil, títeres y actividades deportivas al aire libre",
         "Organiza la Junta Municipal de Vicálvaro dentro de «Verano en Vicálvaro 2026»"
@@ -19,7 +96,7 @@
         {
           "h2": "Cine de verano gratis para toda la familia",
           "parrafos": [
-            "El plato fuerte es el cine de verano al aire libre, con proyecciones gratuitas durante julio y agosto en la zona del IDB El Cañaveral II (calle Tolerancia, 22). La programación apuesta por títulos recientes y muy familiares como Wicked, Mufasa: El Rey León, Del Revés 2 o Lilo & Stitch.",
+            "El plato fuerte es el cine de verano al aire libre, con proyecciones gratuitas todos los viernes y sábados de julio y agosto en los recintos Ferial e IDB II (esquina de la calle Diálogo con la calle Tolerancia). La programación apuesta por títulos recientes y muy familiares como Wicked, Mufasa: El Rey León, Del Revés 2 o Lilo & Stitch.",
             "Como los días y horarios concretos de cada sesión pueden ajustarse, conviene confirmarlos en la agenda de la Junta Municipal de Vicálvaro antes de acercarse."
           ]
         },
@@ -46,13 +123,13 @@
       "slug": "parque-comercial-el-canaveral-mayor-de-madrid",
       "title": "El Cañaveral tendrá el mayor parque comercial de Madrid: 77.000 m², Mercadona, Lidl y 13 pistas de pádel",
       "date": "2026-06-28",
-      "updated": "2026-06-28",
+      "updated": "2026-07-07",
       "excerpt": "Las obras del que será el mayor parque de medianas superficies de la capital ya han arrancado en El Cañaveral. Abrirá a finales de 2027 con más de 50 locales, supermercados, ocio y restauración.",
       "tags": ["Urbanismo", "Comercio"],
-      "lead": "El Cañaveral va a estrenar uno de los mayores espacios comerciales de Madrid. Las obras del Parque Comercial El Cañaveral, impulsado por OMO Retail, ya están en marcha y, según informan elEconomista e idealista, su apertura está prevista para finales de 2027. Será el mayor parque de medianas superficies de la capital, con 77.000 m² y más de 50 locales a pocos minutos de casa.",
+      "lead": "El Cañaveral va a estrenar uno de los mayores espacios comerciales de Madrid. Las obras del Parque Comercial El Cañaveral, impulsado por OMO Retail, ya están en marcha y, según informan elEconomista, idealista y medios locales, su apertura está prevista para 2028. Será el mayor parque de medianas superficies de la capital, con unos 70.000-77.000 m² y más de 50 locales a pocos minutos de casa.",
       "datosClave": [
         "77.000 m² de superficie comercial (SBA) y más de 50 locales",
-        "Apertura prevista para finales de 2027; las obras ya han comenzado",
+        "Apertura prevista para 2028; las obras ya han comenzado",
         "Inversión superior a 100 millones de euros y más de 1.500 empleos directos e indirectos",
         "Promotor: OMO Retail · Comercialización: Savills · Obras: ASCH · Financiación: CaixaBank",
         "Ubicación: barrio de El Cañaveral, distrito de Vicálvaro (sureste de Madrid)"
@@ -62,13 +139,13 @@
           "h2": "Cómo será: cinco grandes áreas",
           "parrafos": [
             "Según la información publicada por la prensa especializada, el complejo se organizará en cinco zonas diferenciadas: alimentación; bricolaje y taller; moda, deportes y mascotas; hogar y restauración (esta última en formato de doble altura); y una zona de ocio y pádel con 13 pistas.",
-            "El proyecto contempla además amplias zonas de aparcamiento (más de 2.200 plazas previstas), pensado para dar servicio tanto al propio barrio como al conjunto del corredor del sureste."
+            "El proyecto contempla además amplias zonas de aparcamiento (unas 2.850 plazas previstas), pensado para dar servicio tanto al propio barrio como al conjunto del corredor del sureste."
           ]
         },
         {
           "h2": "Marcas ya confirmadas",
           "parrafos": [
-            "Entre los operadores confirmados hasta ahora figuran Mercadona, Lidl y Ahorramás en alimentación, junto a McDonald's, Kiabi, Planet Fitness, Urban Planet e Ilusiona, entre otros. La oferta combinará compra del día a día, moda, hogar, deporte, restauración y ocio en familia."
+            "Entre los operadores confirmados hasta ahora figuran Mercadona, Lidl y Ahorramás en alimentación, junto a Obramat (bricolaje), McDonald's, Kiabi, Planet Fitness, Urban Planet e Ilusiona, entre otros. La oferta combinará compra del día a día, bricolaje, moda, hogar, deporte, restauración y ocio en familia."
           ]
         },
         {
