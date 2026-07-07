@@ -9196,7 +9196,15 @@
     "phone": "+34 919 93 15 38",
     "website": "https://www.caelumpets.com/",
     "lat": 40.4532919,
-    "lng": -3.4961753
+    "lng": -3.4961753,
+    "image": "/images/negocios/caelum-pets-tanatorio-y-crematorio-de-mascotas-en-madri.webp",
+    "images": [
+      "/images/negocios/caelum-pets-tanatorio-y-crematorio-de-mascotas-en-madri.webp",
+      "/images/negocios/caelum-pets-tanatorio-y-crematorio-de-mascotas-en-madri-2.webp",
+      "/images/negocios/caelum-pets-tanatorio-y-crematorio-de-mascotas-en-madri-3.webp",
+      "/images/negocios/caelum-pets-tanatorio-y-crematorio-de-mascotas-en-madri-4.webp",
+      "/images/negocios/caelum-pets-tanatorio-y-crematorio-de-mascotas-en-madri-5.webp"
+    ]
   },
   {
     "slug": "salvavidas-cardioproteccion-y-formacion-en-emergencias",
@@ -11000,6 +11008,434 @@
       "/images/negocios/clinica-veterinaria-habitat-vicalvaro-3.webp",
       "/images/negocios/clinica-veterinaria-habitat-vicalvaro-4.webp",
       "/images/negocios/clinica-veterinaria-habitat-vicalvaro-5.webp"
+    ]
+  },
+  {
+    "slug": "one-more",
+    "name": "One more",
+    "description": "Gimnasio ubicado en el barrio de El Cañaveral, diseñado para facilitar el entrenamiento físico y el cuidado de la salud de los vecinos de la zona. Cuenta con instalaciones equipadas para la práctica de ejercicio cardiovascular, musculación y actividades dirigidas. Es una opción idónea para quienes buscan mantener una rutina activa sin salir del barrio.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Calle del Alto del Esparragal, 204, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Zona de musculación y peso libre",
+      "Área de entrenamiento cardiovascular",
+      "Clases colectivas dirigidas",
+      "Asesoramiento deportivo básico",
+      "Vestuarios y duchas"
+    ],
+    "destacados": [
+      "Instalaciones modernas en el barrio",
+      "Variedad de equipamiento deportivo"
+    ],
+    "rating": 4.8,
+    "numReviews": 56,
+    "placeId": "ChIJ364fjVk7Qg0RIp5CjNoJeK4",
+    "googleCategory": "Gimnasio",
+    "phone": "+34 667 80 51 07",
+    "website": "https://onemorecanaveral.wodbuster.com/",
+    "lat": 40.4031616,
+    "lng": -3.5663393,
+    "image": "/images/negocios/one-more.webp",
+    "images": [
+      "/images/negocios/one-more.webp",
+      "/images/negocios/one-more-2.webp",
+      "/images/negocios/one-more-3.webp",
+      "/images/negocios/one-more-4.webp",
+      "/images/negocios/one-more-5.webp"
+    ]
+  },
+  {
+    "slug": "sapporo-ramen-bar-canaveral",
+    "name": "Sapporo Ramen Bar Cañaveral",
+    "description": "Restaurante japonés situado en El Cañaveral que acerca las especialidades de la cocina nipona a los residentes de la zona. Su propuesta se centra en platos tradicionales como el ramen y otras opciones de la gastronomía asiática en un ambiente acogedor. Un punto de encuentro ideal para comidas y cenas en el propio barrio.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Miguel Delibes, 30, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de mesa en comedor",
+      "Platos de ramen y cocina japonesa",
+      "Opciones de comida para llevar",
+      "Servicio de bebidas y postres"
+    ],
+    "destacados": [
+      "Especialización en gastronomía japonesa",
+      "Ubicación cómoda en El Cañaveral"
+    ],
+    "rating": 4.8,
+    "numReviews": 237,
+    "placeId": "ChIJt4yxHns7Qg0RsZ66GucHD2o",
+    "googleCategory": "Restaurante japonés",
+    "phone": "+34 919 59 87 53",
+    "website": "https://ramensapporo.com/",
+    "lat": 40.4064025,
+    "lng": -3.5631764,
+    "image": "/images/negocios/sapporo-ramen-bar-canaveral.webp",
+    "images": [
+      "/images/negocios/sapporo-ramen-bar-canaveral.webp",
+      "/images/negocios/sapporo-ramen-bar-canaveral-2.webp",
+      "/images/negocios/sapporo-ramen-bar-canaveral-3.webp",
+      "/images/negocios/sapporo-ramen-bar-canaveral-4.webp",
+      "/images/negocios/sapporo-ramen-bar-canaveral-5.webp"
+    ]
+  },
+  {
+    "slug": "brasa-tia-mariama",
+    "name": "Brasa Tía Mariama",
+    "description": "Restaurante ubicado en el nuevo desarrollo de El Cañaveral, especializado en cocina a la brasa y platos tradicionales. Ofrece un espacio confortable para disfrutar de almuerzos y cenas en familia o con amigos. Su carta se basa en productos de calidad cocinados con técnicas tradicionales.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de Francisco Grande Covián, 3, Loc 5, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Especialidades de cocina a la brasa",
+      "Servicio de comidas y cenas",
+      "Reserva de mesas",
+      "Menú del día y carta",
+      "Servicio de bar y cafetería"
+    ],
+    "destacados": [
+      "Especialistas en cocina a la brasa",
+      "Ambiente familiar y acogedor"
+    ],
+    "rating": 4.5,
+    "numReviews": 165,
+    "placeId": "ChIJY7Z4YV87Qg0Rmi9skGmn6Xc",
+    "googleCategory": "Restaurante",
+    "phone": "+34 910 24 82 50",
+    "lat": 40.4042093,
+    "lng": -3.5650806,
+    "image": "/images/negocios/brasa-tia-mariama.webp",
+    "images": [
+      "/images/negocios/brasa-tia-mariama.webp",
+      "/images/negocios/brasa-tia-mariama-2.webp",
+      "/images/negocios/brasa-tia-mariama-3.webp",
+      "/images/negocios/brasa-tia-mariama-4.webp",
+      "/images/negocios/brasa-tia-mariama-5.webp"
+    ]
+  },
+  {
+    "slug": "kau-koi-restaurante-fusion-el-canaveral",
+    "name": "Kau Koi - Restaurante Fusión El Cañaveral",
+    "description": "Restaurante de cocina fusión situado en El Cañaveral, que combina diferentes tradiciones culinarias para ofrecer una propuesta gastronómica variada y contemporánea. Es un lugar idóneo para los vecinos que buscan probar sabores diferentes y creativos en un entorno moderno. Cuenta con una carta diversa adaptada a distintos gustos.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Esquina con, C. Victoria Kent, Calle de Mario Moreno Cantinflas, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Platos de cocina fusión",
+      "Servicio de almuerzos y cenas",
+      "Atención en mesa y barra",
+      "Opciones para llevar",
+      "Carta de bebidas y cócteles"
+    ],
+    "destacados": [
+      "Propuesta gastronómica innovadora",
+      "Espacio moderno y agradable"
+    ],
+    "rating": 4.6,
+    "numReviews": 258,
+    "placeId": "ChIJRWWCygk7Qg0RD0makovE2Qo",
+    "googleCategory": "Restaurante",
+    "phone": "+34 912 90 45 41",
+    "website": "https://www.kaukoi.es/index",
+    "lat": 40.4016463,
+    "lng": -3.5634267,
+    "image": "/images/negocios/kau-koi-restaurante-fusion-el-canaveral.webp",
+    "images": [
+      "/images/negocios/kau-koi-restaurante-fusion-el-canaveral.webp",
+      "/images/negocios/kau-koi-restaurante-fusion-el-canaveral-2.webp",
+      "/images/negocios/kau-koi-restaurante-fusion-el-canaveral-3.webp",
+      "/images/negocios/kau-koi-restaurante-fusion-el-canaveral-4.webp",
+      "/images/negocios/kau-koi-restaurante-fusion-el-canaveral-5.webp"
+    ]
+  },
+  {
+    "slug": "la-pecora-nera-canaveral-pizzeria",
+    "name": "La Pecora Nera Cañaveral - Pizzería",
+    "description": "Restaurante italiano y pizzería ubicado en El Cañaveral, que ofrece una selección de platos clásicos de la cocina italiana. Su propuesta incluye pizzas elaboradas con ingredientes tradicionales y otras especialidades de pasta para disfrutar en el local o en casa. Una alternativa perfecta para comidas familiares o reuniones informales.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "esquina con Francisco Grande Covián, Calle Francisco Grande Covian, 16 L1, Vicálvaro, C. Victoria Kent, 9, Entrada por, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Elaboración de pizzas artesanas",
+      "Platos de pasta y cocina italiana",
+      "Servicio de comida a domicilio",
+      "Comida para llevar (Take Away)",
+      "Servicio de mesa y terraza"
+    ],
+    "destacados": [
+      "Sabor tradicional italiano",
+      "Servicio rápido y cómodo para el barrio"
+    ],
+    "rating": 4.5,
+    "numReviews": 769,
+    "placeId": "ChIJKxDkOwA7Qg0RKce4qw2Pulo",
+    "googleCategory": "Restaurante italiano",
+    "phone": "+34 911 62 62 95",
+    "website": "https://www.pecoranerarestaurante.com/",
+    "lat": 40.402304,
+    "lng": -3.5646805,
+    "image": "/images/negocios/la-pecora-nera-canaveral-pizzeria.webp",
+    "images": [
+      "/images/negocios/la-pecora-nera-canaveral-pizzeria.webp",
+      "/images/negocios/la-pecora-nera-canaveral-pizzeria-2.webp",
+      "/images/negocios/la-pecora-nera-canaveral-pizzeria-3.webp",
+      "/images/negocios/la-pecora-nera-canaveral-pizzeria-4.webp",
+      "/images/negocios/la-pecora-nera-canaveral-pizzeria-5.webp"
+    ]
+  },
+  {
+    "slug": "mr-kebab-canaveral-2",
+    "name": "Mr kebab (Cañaveral 2)",
+    "description": "Bar restaurante situado en El Cañaveral que ofrece una alternativa de comida rápida y platos populares en un ambiente sencillo y cercano. Es una opción práctica para quienes buscan una comida rápida, sabrosa y a precios accesibles dentro del barrio. Dispone de servicio tanto para consumir en el local como para llevar.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Entrada por Victoria KENT, C. de Francisco Grande Covián, 16b, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Preparación de kebabs y raciones",
+      "Servicio de bar y cafetería",
+      "Comida para llevar",
+      "Servicio de reparto a domicilio",
+      "Bebidas y refrescos"
+    ],
+    "destacados": [
+      "Servicio rápido y eficiente",
+      "Precios competitivos para el día a día"
+    ],
+    "rating": 4.8,
+    "numReviews": 63,
+    "placeId": "ChIJt8RAJQY7Qg0RxGOoWd5nz6Y",
+    "googleCategory": "Bar restaurante",
+    "phone": "+34 910 42 17 70",
+    "website": "https://wa.me/34651619957",
+    "lat": 40.4020715,
+    "lng": -3.5642437,
+    "image": "/images/negocios/mr-kebab-canaveral-2.webp",
+    "images": [
+      "/images/negocios/mr-kebab-canaveral-2.webp",
+      "/images/negocios/mr-kebab-canaveral-2-2.webp",
+      "/images/negocios/mr-kebab-canaveral-2-3.webp",
+      "/images/negocios/mr-kebab-canaveral-2-4.webp",
+      "/images/negocios/mr-kebab-canaveral-2-5.webp"
+    ]
+  },
+  {
+    "slug": "maclaren-s-irish-sport-bar-canaveral",
+    "name": "MacLaren's Irish & Sport Bar - Cañaveral",
+    "description": "Restaurante y bar de estilo irlandés en El Cañaveral, ideal para los aficionados al deporte y las reuniones sociales. Ofrece una carta de comida de estilo pub, una amplia selección de bebidas y pantallas para la retransmisión de eventos deportivos. Un lugar con ambiente animado para desconectar después de la jornada laboral.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Entrada por Victoria KENT, C. de Francisco Grande Covián, 16, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Retransmisión de eventos deportivos",
+      "Variedad de cervezas y bebidas",
+      "Comida de estilo pub y raciones",
+      "Servicio de mesa y barra",
+      "Terraza exterior"
+    ],
+    "destacados": [
+      "Excelente ambiente deportivo y social",
+      "Amplia selección de bebidas"
+    ],
+    "rating": 4.4,
+    "numReviews": 1474,
+    "placeId": "ChIJuZFIzf47Qg0RIHHBY_hTsRQ",
+    "googleCategory": "Restaurante",
+    "phone": "+34 678 55 49 55",
+    "website": "http://www.maclarens.es/",
+    "lat": 40.4021512,
+    "lng": -3.5643483,
+    "image": "/images/negocios/maclaren-s-irish-sport-bar-canaveral.webp",
+    "images": [
+      "/images/negocios/maclaren-s-irish-sport-bar-canaveral.webp",
+      "/images/negocios/maclaren-s-irish-sport-bar-canaveral-2.webp",
+      "/images/negocios/maclaren-s-irish-sport-bar-canaveral-3.webp",
+      "/images/negocios/maclaren-s-irish-sport-bar-canaveral-4.webp",
+      "/images/negocios/maclaren-s-irish-sport-bar-canaveral-5.webp"
+    ]
+  },
+  {
+    "slug": "skull-barber-shop-madrid-el-canaveral",
+    "name": "Skull Barber Shop Madrid (El Cañaveral)",
+    "description": "Barbería especializada ubicada en El Cañaveral, orientada al cuidado de la imagen masculina, el cabello y la barba. Ofrece un servicio personalizado que combina técnicas tradicionales de barbería con las últimas tendencias en corte y estilismo. Un espacio cómodo y profesional pensado para el bienestar del cliente.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de Francisco Grande Covián, 111, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Cortes de pelo masculinos y modernos",
+      "Arreglo y perfilado de barba",
+      "Afeitado tradicional a navaja",
+      "Asesoramiento de imagen capilar",
+      "Venta de productos para el cuidado del cabello y barba"
+    ],
+    "destacados": [
+      "Atención personalizada y detallista",
+      "Especialistas en barbería clásica y moderna"
+    ],
+    "rating": 4.5,
+    "numReviews": 46,
+    "placeId": "ChIJZXO8hWc7Qg0R5FM6CwVqNgk",
+    "googleCategory": "Barbería",
+    "phone": "+34 912 57 37 25",
+    "website": "https://skullbarber.es/skull-barber-shop-madrid/",
+    "lat": 40.4021136,
+    "lng": -3.5610436,
+    "image": "/images/negocios/skull-barber-shop-madrid-el-canaveral.webp",
+    "images": [
+      "/images/negocios/skull-barber-shop-madrid-el-canaveral.webp",
+      "/images/negocios/skull-barber-shop-madrid-el-canaveral-2.webp",
+      "/images/negocios/skull-barber-shop-madrid-el-canaveral-3.webp",
+      "/images/negocios/skull-barber-shop-madrid-el-canaveral-4.webp",
+      "/images/negocios/skull-barber-shop-madrid-el-canaveral-5.webp"
+    ]
+  },
+  {
+    "slug": "bellavida",
+    "name": "Bellavida",
+    "description": "Centro de estética situado en El Cañaveral, dedicado al cuidado personal, la belleza y el bienestar de sus clientes. Ofrece una amplia gama de tratamientos faciales y corporales realizados por profesionales del sector en un ambiente relajante. Es el lugar ideal en el barrio para dedicarse un momento de autocuidado.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de Francisco Grande Covián, 3, Loc 5, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Tratamientos faciales y corporales",
+      "Servicios de manicura y pedicura",
+      "Depilación con diferentes técnicas",
+      "Masajes relajantes y estéticos",
+      "Asesoramiento estético personalizado"
+    ],
+    "destacados": [
+      "Variedad de tratamientos de belleza",
+      "Ambiente tranquilo y profesional"
+    ],
+    "rating": 5,
+    "numReviews": 189,
+    "placeId": "ChIJc81VFP87Qg0Rriob-q_olnI",
+    "googleCategory": "Centro de estética",
+    "phone": "+34 744 66 71 60",
+    "website": "http://www.xn--bellavida-caaveral-y0b.es/",
+    "lat": 40.4042539,
+    "lng": -3.5652052,
+    "image": "/images/negocios/bellavida.webp",
+    "images": [
+      "/images/negocios/bellavida.webp",
+      "/images/negocios/bellavida-2.webp",
+      "/images/negocios/bellavida-3.webp",
+      "/images/negocios/bellavida-4.webp",
+      "/images/negocios/bellavida-5.webp"
+    ]
+  },
+  {
+    "slug": "nails-boutique-el-canaveral",
+    "name": "Nails Boutique El Cañaveral",
+    "description": "Salón especializado en el cuidado de manos y pies ubicado en el barrio de El Cañaveral. Ofrece una amplia gama de tratamientos estéticos para uñas en un espacio moderno y confortable para los vecinos de la zona. Es una opción ideal para quienes buscan servicios de manicura y pedicura sin salir del barrio.",
+    "category": "belleza",
+    "categoryName": "Belleza y Peluquerías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de Francisco Grande Covián, 3, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Manicura semipermanente",
+      "Pedicura completa",
+      "Uñas de gel y acrílico",
+      "Tratamientos de hidratación para manos y pies",
+      "Decoración y diseño de uñas"
+    ],
+    "destacados": [
+      "Ubicación conveniente en El Cañaveral",
+      "Atención personalizada con cita previa",
+      "Variedad de técnicas y colores de tendencia"
+    ],
+    "rating": 4.9,
+    "numReviews": 184,
+    "placeId": "ChIJ48i7tUk7Qg0RqB1hi56aSB8",
+    "googleCategory": "Salón de manicura y pedicura",
+    "phone": "+34 625 85 10 93",
+    "lat": 40.4042539,
+    "lng": -3.5652052,
+    "image": "/images/negocios/nails-boutique-el-canaveral.webp",
+    "images": [
+      "/images/negocios/nails-boutique-el-canaveral.webp",
+      "/images/negocios/nails-boutique-el-canaveral-2.webp",
+      "/images/negocios/nails-boutique-el-canaveral-3.webp",
+      "/images/negocios/nails-boutique-el-canaveral-4.webp",
+      "/images/negocios/nails-boutique-el-canaveral-5.webp"
+    ]
+  },
+  {
+    "slug": "kora-balance",
+    "name": "Kora Balance",
+    "description": "Centro dedicado a la salud y el bienestar integral situado en el nuevo desarrollo de El Cañaveral. Este espacio ofrece diferentes disciplinas y terapias orientadas a mejorar la condición física y el equilibrio mental de sus usuarios. Un lugar de referencia en el barrio para el cuidado personal y la desconexión diaria.",
+    "category": "deporte",
+    "categoryName": "Deporte y Fitness",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Miguel Delibes, 47, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Clases de pilates y yoga",
+      "Masajes relajantes y descontracturantes",
+      "Terapias de bienestar corporal",
+      "Asesoramiento en hábitos saludables",
+      "Talleres de relajación y mindfulness"
+    ],
+    "destacados": [
+      "Enfoque integral para la salud física y mental",
+      "Instalaciones preparadas para el bienestar",
+      "Actividades adaptadas a diferentes niveles"
+    ],
+    "rating": 5,
+    "numReviews": 136,
+    "placeId": "ChIJkZkCGlM7Qg0Rxof2VhnLOQc",
+    "googleCategory": "Centro de salud y bienestar",
+    "phone": "+34 654 82 14 57",
+    "website": "http://www.korabalance.com/",
+    "lat": 40.4056538,
+    "lng": -3.5604715,
+    "image": "/images/negocios/kora-balance.webp",
+    "images": [
+      "/images/negocios/kora-balance.webp",
+      "/images/negocios/kora-balance-2.webp",
+      "/images/negocios/kora-balance-3.webp",
+      "/images/negocios/kora-balance-4.webp",
+      "/images/negocios/kora-balance-5.webp"
     ]
   }
 ]
