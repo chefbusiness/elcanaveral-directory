@@ -11437,5 +11437,283 @@
       "/images/negocios/kora-balance-4.webp",
       "/images/negocios/kora-balance-5.webp"
     ]
+  },
+  {
+    "slug": "larry-and-andy-language-academy",
+    "name": "Larry and Andy Language Academy",
+    "description": "Academia de idiomas ubicada en el barrio de El Cañaveral, orientada a la formación lingüística de los residentes de la zona. El centro ofrece programas adaptados a diferentes edades y niveles, facilitando el aprendizaje de lenguas extranjeras sin salir del barrio. Sus cursos están diseñados tanto para el desarrollo académico como para la mejora profesional.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Calle de Mario Moreno Cantinflas, 40, Loc 5B, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Clases de idiomas para niños y jóvenes",
+      "Cursos de idiomas para adultos",
+      "Preparación de exámenes oficiales",
+      "Clases de conversación",
+      "Apoyo escolar en lenguas extranjeras"
+    ],
+    "destacados": [
+      "Ubicación accesible en El Cañaveral",
+      "Programas adaptados a diferentes niveles",
+      "Enfoque práctico del aprendizaje"
+    ],
+    "rating": 5,
+    "numReviews": 50,
+    "placeId": "ChIJpdHsaV47Qg0RBMMV4734tIE",
+    "googleCategory": "Academia de idiomas",
+    "phone": "+34 664 53 07 25",
+    "website": "http://www.academialarryandandy.com/",
+    "lat": 40.4023978,
+    "lng": -3.5616225,
+    "image": "/images/negocios/larry-and-andy-language-academy.webp",
+    "images": [
+      "/images/negocios/larry-and-andy-language-academy.webp",
+      "/images/negocios/larry-and-andy-language-academy-2.webp",
+      "/images/negocios/larry-and-andy-language-academy-3.webp",
+      "/images/negocios/larry-and-andy-language-academy-4.webp",
+      "/images/negocios/larry-and-andy-language-academy-5.webp"
+    ]
+  },
+  {
+    "slug": "kids-us-el-canaveral",
+    "name": "Kids & Us El Cañaveral",
+    "description": "Centro especializado en la enseñanza de inglés para niños y jóvenes en el nuevo desarrollo de El Cañaveral. Su propuesta se centra en el aprendizaje del idioma desde edades tempranas mediante una metodología adaptada al crecimiento de los alumnos. Es una opción idónea para las familias del barrio que buscan una formación continua en inglés para sus hijos.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Francisco Grande Covian, C. Victoria Kent, 16, Entrada por, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Cursos de inglés para bebés y niños",
+      "Clases de inglés para adolescentes",
+      "Actividades y talleres temáticos",
+      "Seguimiento pedagógico personalizado",
+      "Material didáctico propio"
+    ],
+    "destacados": [
+      "Especialización en público infantil y juvenil",
+      "Metodología adaptada por edades",
+      "Instalaciones modernas en el barrio"
+    ],
+    "rating": 4.8,
+    "numReviews": 21,
+    "placeId": "ChIJKR1cOHw7Qg0RXxdOi-feODo",
+    "googleCategory": "Academia de inglés",
+    "phone": "+34 664 75 67 04",
+    "website": "https://www.kidsandus.es/es/academias-ingles/canaveral",
+    "lat": 40.4022104,
+    "lng": -3.5645441,
+    "image": "/images/negocios/kids-us-el-canaveral.webp",
+    "images": [
+      "/images/negocios/kids-us-el-canaveral.webp",
+      "/images/negocios/kids-us-el-canaveral-2.webp",
+      "/images/negocios/kids-us-el-canaveral-3.webp",
+      "/images/negocios/kids-us-el-canaveral-4.webp",
+      "/images/negocios/kids-us-el-canaveral-5.webp"
+    ]
+  },
+  {
+    "slug": "ms-mr-language-el-canaveral",
+    "name": "Ms&Mr Language - El Cañaveral",
+    "description": "Academia de inglés situada en El Cañaveral que ofrece soluciones formativas para vecinos de todas las edades. El centro se enfoca en la enseñanza del idioma inglés a través de cursos estructurados que cubren desde la iniciación hasta el perfeccionamiento. Su presencia en el barrio facilita la conciliación de las actividades extraescolares y formativas de las familias.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. Aloe Vera, 42, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Clases de inglés general para todas las edades",
+      "Preparación para certificaciones oficiales",
+      "Cursos intensivos de inglés",
+      "Refuerzo escolar de inglés",
+      "Clases de expresión oral y conversación"
+    ],
+    "destacados": [
+      "Oferta formativa para todas las edades",
+      "Preparación de títulos reconocidos",
+      "Servicio cercano y local en El Cañaveral"
+    ],
+    "rating": 4.8,
+    "numReviews": 26,
+    "placeId": "ChIJWwaVXPg7Qg0R2kfbnL4L-CY",
+    "googleCategory": "Academia de inglés",
+    "phone": "+34 672 94 64 02",
+    "website": "https://www.msmrlanguage.com/",
+    "lat": 40.4083695,
+    "lng": -3.5544662,
+    "image": "/images/negocios/ms-mr-language-el-canaveral.webp",
+    "images": [
+      "/images/negocios/ms-mr-language-el-canaveral.webp",
+      "/images/negocios/ms-mr-language-el-canaveral-2.webp",
+      "/images/negocios/ms-mr-language-el-canaveral-3.webp",
+      "/images/negocios/ms-mr-language-el-canaveral-4.webp",
+      "/images/negocios/ms-mr-language-el-canaveral-5.webp"
+    ]
+  },
+  {
+    "slug": "churreria-canaveral",
+    "name": "Churrería Cañaveral",
+    "description": "Cafetería local en el barrio de El Cañaveral, ideal para los desayunos y meriendas de los vecinos de la zona. El establecimiento ofrece un punto de encuentro diario con una propuesta tradicional de cafetería y productos de churrería. Su servicio está orientado tanto al consumo en el local como para llevar a casa.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Calle de la Casa de Tilly, 12, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de cafetería y desayunos",
+      "Venta de churros y porras tradicionales",
+      "Chocolate a la taza",
+      "Meriendas y bollería",
+      "Servicio de productos para llevar"
+    ],
+    "destacados": [
+      "Especialidades tradicionales de churrería",
+      "Ambiente familiar y cercano",
+      "Ideal para desayunos en el barrio"
+    ],
+    "rating": 4,
+    "numReviews": 58,
+    "placeId": "ChIJszJ0OwA7Qg0RcbeUxTlGNYc",
+    "googleCategory": "Cafetería",
+    "phone": "+34 722 36 26 15",
+    "lat": 40.4009803,
+    "lng": -3.5476438,
+    "image": "/images/negocios/churreria-canaveral.webp",
+    "images": [
+      "/images/negocios/churreria-canaveral.webp",
+      "/images/negocios/churreria-canaveral-2.webp",
+      "/images/negocios/churreria-canaveral-3.webp",
+      "/images/negocios/churreria-canaveral-4.webp",
+      "/images/negocios/churreria-canaveral-5.webp"
+    ]
+  },
+  {
+    "slug": "trius-gastrobar",
+    "name": "TRIUS Gastrobar",
+    "description": "Bar restaurante ubicado en El Cañaveral que ofrece una propuesta gastronómica para almuerzos, cenas y momentos de ocio en el barrio. El local combina el ambiente de un bar de diario con opciones de restauración más elaboradas para compartir con familia o amigos. Es un punto de referencia para el vecindario que busca comer fuera sin desplazarse de la zona.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Calle Ferenc Puskas, 245, Vicálvaro, 28052 Vicálvaro, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de comidas y cenas",
+      "Raciones y tapas para compartir",
+      "Menú del día y opciones de carta",
+      "Servicio de bar y cafetería",
+      "Terraza exterior"
+    ],
+    "destacados": [
+      "Espacio versátil para comidas y cenas",
+      "Ubicación clave en El Cañaveral",
+      "Ambiente acogedor y servicio local"
+    ],
+    "rating": 4.1,
+    "numReviews": 192,
+    "placeId": "ChIJb0ztGi87Qg0R5cOZcN33K9I",
+    "googleCategory": "Bar restaurante",
+    "phone": "+34 622 87 92 90",
+    "lat": 40.4009334,
+    "lng": -3.5469457,
+    "image": "/images/negocios/trius-gastrobar.webp",
+    "images": [
+      "/images/negocios/trius-gastrobar.webp",
+      "/images/negocios/trius-gastrobar-2.webp",
+      "/images/negocios/trius-gastrobar-3.webp",
+      "/images/negocios/trius-gastrobar-4.webp",
+      "/images/negocios/trius-gastrobar-5.webp"
+    ]
+  },
+  {
+    "slug": "o-oy",
+    "name": "O&OY",
+    "description": "Restaurante asiático situado en el barrio de El Cañaveral, que acerca la gastronomía oriental a los residentes de la zona. Su carta incluye platos típicos de la cocina asiática preparados para disfrutar en el propio establecimiento o en el domicilio. Una opción cómoda y variada para los amantes de la comida internacional en el vecindario.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Blas de Lezo, 22, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Servicio de restaurante en sala",
+      "Comida para llevar (Take Away)",
+      "Servicio de reparto a domicilio",
+      "Platos tradicionales de cocina asiática",
+      "Opciones de menú y carta"
+    ],
+    "destacados": [
+      "Variedad de platos de la cocina asiática",
+      "Servicio a domicilio en el barrio",
+      "Alternativa de restauración internacional en la zona"
+    ],
+    "rating": 4.2,
+    "numReviews": 707,
+    "placeId": "ChIJv1TixpU7Qg0RcslILsTxIJc",
+    "googleCategory": "Restaurante asiático",
+    "phone": "+34 691 60 28 80",
+    "website": "https://www.restauranteooy.es/",
+    "lat": 40.4069066,
+    "lng": -3.5523515,
+    "image": "/images/negocios/o-oy.webp",
+    "images": [
+      "/images/negocios/o-oy.webp",
+      "/images/negocios/o-oy-2.webp",
+      "/images/negocios/o-oy-3.webp",
+      "/images/negocios/o-oy-4.webp",
+      "/images/negocios/o-oy-5.webp"
+    ]
+  },
+  {
+    "slug": "poyoquese",
+    "name": "POYOQUESE",
+    "description": "Establecimiento especializado en comida a domicilio y para llevar en El Cañaveral, diseñado para ofrecer soluciones de alimentación rápidas y sencillas a los vecinos. Su propuesta se centra en platos listos para consumir, ideales para comidas diarias o cenas informales en casa. Facilita el día a día de las familias y profesionales del barrio gracias a su servicio ágil.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de Francisco Grande Covián, 111, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Preparación de comida para llevar",
+      "Servicio de entrega a domicilio",
+      "Platos preparados y menús rápidos",
+      "Opciones para comidas familiares",
+      "Pedidos online o telefónicos"
+    ],
+    "destacados": [
+      "Servicio rápido y cómodo para el hogar",
+      "Ideal para comidas del día a día",
+      "Atención directa en el barrio de El Cañaveral"
+    ],
+    "rating": 4.5,
+    "numReviews": 165,
+    "placeId": "ChIJ74Z-nr07Qg0RgUSl__kn9jc",
+    "googleCategory": "Comida a domicilio",
+    "phone": "+34 671 97 63 07",
+    "website": "https://poyoquese.es/",
+    "lat": 40.4021136,
+    "lng": -3.5610436,
+    "image": "/images/negocios/poyoquese.webp",
+    "images": [
+      "/images/negocios/poyoquese.webp",
+      "/images/negocios/poyoquese-2.webp",
+      "/images/negocios/poyoquese-3.webp",
+      "/images/negocios/poyoquese-4.webp",
+      "/images/negocios/poyoquese-5.webp"
+    ]
   }
 ]
