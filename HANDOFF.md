@@ -205,6 +205,13 @@ Estrategia: pasar de "directorio" a **EL hub de referencia de El Cañaveral** �
 - ⬜ 🍽️ Listicles temáticos (terraza/delivery): datos infra-etiquetados → guía de terrazas PARKED (John aporta in situ).
 - 💡 🐶 Hubs por afinidad (perros, familias) — el motor de afinidad ya existe (`AfinidadFilter`), ampliable.
 
+## 📊 Auditoría GSC #1 — 2026-07-15 (export "Performance on Search", datos reales desde 16-abr)
+CSVs guardados en `~/gsc-elcanaveral-2026-07-15/`. **Baseline: 17 clics · 2.752 impr · CTR 0,62% · pos media ~11-12.**
+- **Historia:** impresiones creciendo bien (indexación OK), pero casi todo en página 2 (pos 6-12) y queries de marca hiperlocal → el pack de Maps se come el clic. Motor de impresiones = páginas de categoría (`/fruterias/` 338, `/cafeterias/` 286).
+- **✅ Fix desplegado (commit 1d325ae):** URLs viejas de WordPress daban 404 pese a rankear — `/directory/family-mini-market-2/` rankeaba **#1 y era 404** → 301 en `public/_redirects` a destinos vivos. (non-www→www y trailing-slash ya redirigían bien.)
+- **✅ Contenido sobre demanda GSC (commit 7645785):** creadas `mejores-cafeterias-el-canaveral` y `mejores-veterinarios-el-canaveral` (huecos con demanda), reforzada guarderías con ángulo inglés/bilingüe. Palanca "optimizar categorías": ya estaba hecha en `seo-overrides.json`.
+- **Oportunidades abiertas:** guarderías/gimnasios rankean pág. 5 (demanda de padres/deporte) — guías reforzadas, falta ganar autoridad. **Re-auditar GSC en ~4-6 semanas.**
+
 ## ⚠️ Restricciones de trabajo (verano Madrid)
 - **CPU < 65 °C** — monitorizar con `istats cpu temp`; ralentizar si sube. **NO usar Playwright** (recalienta).
 - Builds: preferir nube; evitar `astro build` local en calor.
