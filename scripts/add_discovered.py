@@ -33,6 +33,7 @@ TERM_CAT = {
     "peluquería": "belleza", "gimnasio": "deporte", "clínica dental": "salud",
     "ferretería": "hogar", "taller mecánico": "automocion", "guardería": "educacion",
     "veterinario": "mascotas", "inmobiliaria": "inmobiliarias", "tienda de ropa": "moda",
+    "academia": "educacion", "heladería": "cafeterias",
 }
 
 
