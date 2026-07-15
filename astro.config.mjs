@@ -8,6 +8,8 @@ export default defineConfig({
     sitemap({
       // Fuera del sitemap las páginas noindex (legales): no enviar señales contradictorias a Google.
       filter: (page) => !/\/(aviso-legal|terminos|privacidad|cookies)\/?$/.test(page),
+      // Hoja de estilo XSL: hace legible el sitemap en el navegador (los buscadores usan el XML crudo).
+      xslURL: "/sitemap.xsl",
     }),
   ],
   vite: {

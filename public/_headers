@@ -1,0 +1,3 @@
+# El navegador solo aplica la hoja XSL si el .xsl se sirve con un content-type XML.
+/sitemap.xsl
+  Content-Type: text/xsl; charset=utf-8
