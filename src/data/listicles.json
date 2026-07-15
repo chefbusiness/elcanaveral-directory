@@ -213,10 +213,10 @@
     "minRating": 4,
     "h1": "Las mejores guarderías y escuelas infantiles de El Cañaveral",
     "metaTitle": "Las mejores guarderías y escuelas infantiles de El Cañaveral (2026)",
-    "metaDescription": "Las guarderías y escuelas infantiles mejor valoradas de El Cañaveral, públicas y privadas, ordenadas por las reseñas reales de Google.",
-    "intro": "El Cañaveral es un barrio joven, con muchas familias y, por tanto, una demanda fuerte de plazas de 0 a 3 años. Hemos ordenado las guarderías y escuelas infantiles de la zona con una puntuación que combina la nota media de Google con el número de reseñas, para que una valoración alta con muchas opiniones pese más que un 5 con muy pocas. Solo aparecen las que mantienen 4 estrellas o más.",
+    "metaDescription": "Las guarderías y escuelas infantiles mejor valoradas de El Cañaveral (0-3 años), públicas, privadas y con inglés, ordenadas por las reseñas reales de las familias.",
+    "intro": "El Cañaveral es un barrio joven, con muchas familias y, por tanto, una demanda fuerte de plazas de 0 a 3 años. Muchos padres buscan además guardería con inglés o proyecto bilingüe, algo cada vez más habitual en los centros de la zona. Hemos ordenado las guarderías y escuelas infantiles de El Cañaveral con una puntuación que combina la nota media de Google con el número de reseñas, para que una valoración alta con muchas opiniones pese más que una nota perfecta con pocas. Así ves las mejor valoradas por las familias del barrio, públicas y privadas.",
     "publishedDate": "2026-06-25",
-    "updatedDate": "2026-06-25",
+    "updatedDate": "2026-07-15",
     "faq": [
       {
         "q": "¿Cuál es la escuela infantil mejor valorada de El Cañaveral?",
@@ -225,6 +225,10 @@
       {
         "q": "¿Hay escuelas infantiles públicas y privadas?",
         "a": "Sí. En la zona conviven escuelas infantiles privadas con centros de gestión pública o municipal, como la Escuela Infantil Municipal Muñeco de Nieve."
+      },
+      {
+        "q": "¿Hay guarderías con inglés o bilingües en El Cañaveral?",
+        "a": "Sí. Varias escuelas infantiles del barrio incorporan inglés en su día a día o un proyecto bilingüe, una de las búsquedas más frecuentes entre las familias de El Cañaveral. En la ficha de cada centro puedes ver su propuesta educativa y las reseñas de otros padres."
       }
     ]
   },
@@ -302,6 +306,69 @@
       {
         "q": "¿Cómo se ordena este ranking de tiendas de ropa?",
         "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada tienda, en lugar de ordenar solo por nota o solo por número de opiniones."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-cafeterias-el-canaveral",
+    "category": "cafeterias",
+    "noun": "cafeterías",
+    "breadcrumb": "Mejores cafeterías",
+    "ctaTitle": "¿Tienes una cafetería en El Cañaveral?",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "cafe",
+      "pasteleria"
+    ],
+    "h1": "Las mejores cafeterías de El Cañaveral y alrededores",
+    "metaTitle": "Las mejores cafeterías de El Cañaveral (2026)",
+    "metaDescription": "Las cafeterías mejor valoradas de El Cañaveral y alrededores para desayunar, tomar café de especialidad o hacer brunch, ordenadas por las reseñas reales de Google.",
+    "intro": "¿Buscas dónde desayunar o tomar un buen café en El Cañaveral? El barrio y su entorno reúnen desde cafeterías de toda la vida hasta locales de café de especialidad, brunch y repostería casera. Hemos ordenado las de la zona con una puntuación que combina la nota media de Google con el número de reseñas, para que una valoración alta con muchas opiniones pese más que un 5 con tres reseñas sueltas. Así ves de un vistazo las mejor valoradas por los vecinos, no solo las más nuevas.",
+    "publishedDate": "2026-07-15",
+    "updatedDate": "2026-07-15",
+    "faq": [
+      {
+        "q": "¿Cuál es la mejor cafetería de El Cañaveral?",
+        "a": "Según las reseñas de Google, CAFE LAVÉ es la cafetería mejor valorada de El Cañaveral propiamente dicho (4,7 estrellas), por delante de otras de la zona como Le Petit Café de Cryss. En el conjunto del entorno (Coslada, San Fernando) también destacan Café JP y MOON Cafetería."
+      },
+      {
+        "q": "¿Dónde desayunar o hacer brunch en El Cañaveral?",
+        "a": "Varias cafeterías del barrio ofrecen desayunos completos, tostadas, repostería y opciones de brunch los fines de semana. En la ficha de cada una tienes horarios, dirección y las reseñas de los clientes para elegir según lo que busques."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada negocio, no por la nota a secas ni por el número de opiniones por separado. Se actualiza con los datos más recientes."
+      }
+    ]
+  },
+  {
+    "slug": "mejores-veterinarios-el-canaveral",
+    "category": "mascotas",
+    "noun": "veterinarios",
+    "breadcrumb": "Mejores veterinarios",
+    "ctaTitle": "¿Tienes una clínica veterinaria cerca de El Cañaveral?",
+    "minRating": 4,
+    "googleCategoryMatch": [
+      "veterinari"
+    ],
+    "h1": "Las mejores clínicas veterinarias de El Cañaveral y alrededores",
+    "metaTitle": "Los mejores veterinarios de El Cañaveral (2026)",
+    "metaDescription": "Las clínicas veterinarias mejor valoradas de El Cañaveral, Vicálvaro y Coslada, ordenadas por las reseñas reales de Google. Urgencias, vacunación y consulta para tu mascota.",
+    "intro": "Encontrar un buen veterinario cerca de casa es clave cuando tienes mascota en El Cañaveral. Como el barrio aún tiene pocas clínicas propias, muchos vecinos acuden a las de Vicálvaro y Coslada, a pocos minutos. Hemos ordenado las clínicas veterinarias de la zona con una puntuación que combina la nota media de Google con el número de reseñas, para que una valoración alta con muchas opiniones pese más que una nota perfecta con pocas. Así ves las mejor valoradas del entorno de un vistazo.",
+    "publishedDate": "2026-07-15",
+    "updatedDate": "2026-07-15",
+    "faq": [
+      {
+        "q": "¿Cuál es la clínica veterinaria mejor valorada cerca de El Cañaveral?",
+        "a": "En el conjunto del entorno, la Clínica Veterinaria Méjico 17 (Coslada) encabeza el ranking con 4,9 estrellas. La referencia más cercana a El Cañaveral y Vicálvaro es Vicalcan Clínica Veterinaria, con una nota de 4,6 y más de 940 reseñas, una de las de mayor volumen de la zona."
+      },
+      {
+        "q": "¿Hay veterinario en El Cañaveral mismo?",
+        "a": "El Cañaveral es un barrio joven y todavía cuenta con pocas clínicas dentro de sus límites, por lo que la mayoría de vecinos acude a las clínicas de Vicálvaro y Coslada, que están a pocos minutos en coche. En el directorio tienes la dirección y el mapa de cada una."
+      },
+      {
+        "q": "¿Cómo se ordena este ranking?",
+        "a": "Con una puntuación ponderada que combina la nota media de Google y el número de reseñas reales de cada clínica, no por la nota a secas ni por el número de opiniones por separado."
       }
     ]
   },
