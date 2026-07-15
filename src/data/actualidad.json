@@ -1,12 +1,66 @@
 {
   "posts": [
     {
+      "slug": "el-canaveral-centro-acogida-sin-hogar-176-plazas",
+      "title": "El Cañaveral tendrá un centro de acogida para 176 personas sin hogar: las obras terminan este otoño",
+      "date": "2026-07-15",
+      "updated": "2026-07-15",
+      "excerpt": "El nuevo centro de acogida municipal para personas sin hogar de El Cañaveral, en la calle Batalla de Salamina, tendrá capacidad para 176 personas con una inversión de 9 millones de euros. Las obras finalizarán en otoño de 2026.",
+      "tags": [
+        "Urbanismo",
+        "Servicios"
+      ],
+      "lead": "El Cañaveral sumará un nuevo equipamiento social de referencia: un centro de acogida municipal para personas sin hogar con capacidad para 176 personas, cuyas obras finalizarán en otoño de 2026 según la información facilitada por el Área de Obras y Equipamientos del Ayuntamiento de Madrid.",
+      "datosClave": [
+        "Capacidad para 176 personas, en 12 módulos habitacionales (dos adaptados a movilidad reducida)",
+        "Inversión de 9 millones de euros",
+        "Ubicación: calle Batalla de Salamina, 21 (zona industrial de El Cañaveral, Vicálvaro)",
+        "3.619 m² construidos sobre una parcela de 14.745 m²",
+        "Finalización de las obras prevista para el otoño de 2026"
+      ],
+      "secciones": [
+        {
+          "h2": "Un centro de acogida moderno en el sureste de Madrid",
+          "parrafos": [
+            "El nuevo centro se levanta en la calle Batalla de Salamina, 21, en la zona industrial de El Cañaveral, dentro del distrito de Vicálvaro. Con 3.619 metros cuadrados construidos sobre una parcela de casi 14.745 metros cuadrados, será uno de los recursos de acogida más completos de esta parte de la ciudad.",
+            "La delegada del Área de Obras y Equipamientos cifró la inversión en 9 millones de euros, y las obras deberían quedar terminadas en otoño de 2026. Una vez finalizado, la gestión pasará al Área de Políticas Sociales, Familia e Igualdad."
+          ]
+        },
+        {
+          "h2": "Cómo será por dentro",
+          "parrafos": [
+            "El centro se organiza en 12 módulos habitacionales con cuatro habitaciones cada uno —dos de esos módulos estarán adaptados para personas con movilidad reducida—, hasta sumar plazas para 176 personas. Cada habitación contará con aseo, duchas, taquillas y puertas con cerradura electrónica, buscando privacidad y dignidad para quienes lo usen.",
+            "Además de las zonas de descanso, el edificio incluirá un módulo de admisión, cocina, comedor, lavandería, ropero, consigna y una zona ajardinada de descanso."
+          ]
+        },
+        {
+          "h2": "Otra pieza del plan de equipamientos del barrio",
+          "parrafos": [
+            "La acogida se suma al paquete de más de 15 millones de euros que el Ayuntamiento destina a El Cañaveral en 2026, junto al centro cultural con biblioteca y auditorio, la nueva escuela infantil y las instalaciones deportivas que ya están en marcha. Un barrio que ha crecido muy rápido sigue, poco a poco, completando sus servicios públicos.",
+            "Seguiremos contando en El Cañaveral Info cómo avanzan estas obras."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "Gacetín Madrid",
+          "url": "https://gacetinmadrid.com/2026/06/29/obras-acogida-sin-hogar-canaveral-finalizaran-otono/"
+        },
+        {
+          "name": "Nuevo Sureste",
+          "url": "https://nuevosureste.es/junta-gobierno-inversiones-canaveral/"
+        }
+      ]
+    },
+    {
       "slug": "el-canaveral-primer-instituto-publico-ies",
       "title": "El Cañaveral tendrá por fin instituto público: 1.000 plazas para el curso 2027-2028",
       "date": "2026-07-07",
       "updated": "2026-07-07",
       "excerpt": "Ya están en marcha las obras del primer instituto de Educación Secundaria (IES) de El Cañaveral, con capacidad para 1.000 alumnos. Está previsto que abra al inicio del curso 2027-2028.",
-      "tags": ["Educación"],
+      "tags": [
+        "Educación"
+      ],
       "lead": "El barrio da un paso de gigante en educación pública: la Comunidad de Madrid ha puesto en marcha la construcción del primer instituto (IES) de El Cañaveral, con capacidad para unos 1.000 alumnos, según la información publicada por medios locales y del Gobierno regional.",
       "datosClave": [
         "Primer instituto público (IES) de El Cañaveral, para unos 1.000 alumnos",
@@ -32,22 +86,31 @@
         }
       ],
       "fuentes": [
-        { "name": "Comunidad de Madrid", "url": "https://www.comunidad.madrid/noticias/2025/07/02/comunidad-madrid-adjudica-obras-construir-institutos-vallecas-canaveral-valdebebas-3000-nuevas-plazas-publicas" },
-        { "name": "Nuevo Sureste", "url": "https://nuevosureste.es/comienzo-obras-ies-el-canaveral/" }
+        {
+          "name": "Comunidad de Madrid",
+          "url": "https://www.comunidad.madrid/noticias/2025/07/02/comunidad-madrid-adjudica-obras-construir-institutos-vallecas-canaveral-valdebebas-3000-nuevas-plazas-publicas"
+        },
+        {
+          "name": "Nuevo Sureste",
+          "url": "https://nuevosureste.es/comienzo-obras-ies-el-canaveral/"
+        }
       ]
     },
     {
       "slug": "el-canaveral-15-millones-equipamientos-2026",
       "title": "El Cañaveral tendrá centro cultural, nueva escuela infantil y más deporte: 15 millones en 2026",
       "date": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-15",
       "excerpt": "El Ayuntamiento destina más de 15 millones de euros al barrio en 2026 para nuevos equipamientos: un centro cultural con biblioteca y auditorio, una tercera escuela infantil, más instalaciones deportivas y un centro de acogida.",
-      "tags": ["Urbanismo", "Servicios"],
+      "tags": [
+        "Urbanismo",
+        "Servicios"
+      ],
       "lead": "El Cañaveral, uno de los barrios que más rápido crece de Madrid, recibirá más de 15 millones de euros del Ayuntamiento en 2026 para reforzar sus equipamientos sociales, culturales, deportivos y educativos, según la información publicada por medios locales del distrito.",
       "datosClave": [
         "Más de 15 millones de euros del Ayuntamiento para El Cañaveral en 2026",
         "Centro cultural con biblioteca, auditorio y ludoteca (~8,5 M€; obras ya adjudicadas)",
-        "Centro de acogida para personas sin hogar (~4 M€)",
+        "Centro de acogida para personas sin hogar: 176 plazas y 9 M€ (obras terminan en otoño de 2026)",
         "Tercera pista deportiva básica (~1 M€) y una tercera escuela infantil",
         "Reforma del campo de fútbol y mejoras de alumbrado (~360.000 €)"
       ],
@@ -63,7 +126,7 @@
           "h2": "Más deporte, educación y servicios sociales",
           "parrafos": [
             "El presupuesto contempla también una tercera pista deportiva básica (en torno a 1 millón de euros), una tercera escuela infantil, la reforma del actual campo de fútbol y mejoras de alumbrado por unos 360.000 euros.",
-            "A ello se suma un centro de acogida para personas sin hogar, dotado con unos 4 millones de euros."
+            "A ello se suma un centro de acogida para personas sin hogar con capacidad para 176 personas y una inversión de 9 millones de euros, cuyas obras terminarán en otoño de 2026."
           ]
         },
         {
@@ -74,7 +137,10 @@
         }
       ],
       "fuentes": [
-        { "name": "Nuevo Sureste", "url": "https://nuevosureste.es/presupuestos-2026-el-canaveral/" }
+        {
+          "name": "Nuevo Sureste",
+          "url": "https://nuevosureste.es/presupuestos-2026-el-canaveral/"
+        }
       ]
     },
     {
@@ -83,7 +149,10 @@
       "date": "2026-07-01",
       "updated": "2026-07-07",
       "excerpt": "El programa municipal «Verano en Vicálvaro» llega a El Cañaveral con cine de verano gratuito al aire libre (viernes y sábados), teatro y títeres para los peques y actividades deportivas durante julio y agosto.",
-      "tags": ["Ocio", "Verano"],
+      "tags": [
+        "Ocio",
+        "Verano"
+      ],
       "lead": "Llega el verano al barrio con planes gratis para toda la familia. Dentro del programa municipal «Verano en Vicálvaro 2026», El Cañaveral acoge cine de verano al aire libre, teatro infantil y títeres, y actividades deportivas durante julio y agosto, según la información publicada por medios locales del distrito.",
       "datosClave": [
         "Cine de verano gratuito al aire libre todos los viernes y sábados de julio y agosto",
@@ -115,8 +184,14 @@
         }
       ],
       "fuentes": [
-        { "name": "Nuevo Sureste", "url": "https://nuevosureste.es/verano-vicalvaro-2026-el-canaveral/" },
-        { "name": "AV El Cañaveral", "url": "https://avelcanaveral.es/category/noticias/" }
+        {
+          "name": "Nuevo Sureste",
+          "url": "https://nuevosureste.es/verano-vicalvaro-2026-el-canaveral/"
+        },
+        {
+          "name": "AV El Cañaveral",
+          "url": "https://avelcanaveral.es/category/noticias/"
+        }
       ]
     },
     {
@@ -125,7 +200,10 @@
       "date": "2026-06-28",
       "updated": "2026-07-07",
       "excerpt": "Las obras del que será el mayor parque de medianas superficies de la capital ya han arrancado en El Cañaveral. Abrirá a finales de 2027 con más de 50 locales, supermercados, ocio y restauración.",
-      "tags": ["Urbanismo", "Comercio"],
+      "tags": [
+        "Urbanismo",
+        "Comercio"
+      ],
       "lead": "El Cañaveral va a estrenar uno de los mayores espacios comerciales de Madrid. Las obras del Parque Comercial El Cañaveral, impulsado por OMO Retail, ya están en marcha y, según informan elEconomista, idealista y medios locales, su apertura está prevista para 2028. Será el mayor parque de medianas superficies de la capital, con unos 70.000-77.000 m² y más de 50 locales a pocos minutos de casa.",
       "datosClave": [
         "77.000 m² de superficie comercial (SBA) y más de 50 locales",
@@ -157,9 +235,18 @@
         }
       ],
       "fuentes": [
-        { "name": "elEconomista", "url": "https://www.eleconomista.es/vivienda-inmobiliario/noticias/13889162/04/26/asi-sera-el-mayor-parque-comercial-de-madrid-77000-m2-mas-de-50-operadores-13-pistas-de-padel-y-se-ubicara-en-el-canaveral.html" },
-        { "name": "idealista", "url": "https://www.idealista.com/news/inmobiliario/retail/2026/04/28/895012-arrancan-las-obras-del-parque-comercial-el-canaveral-que-abrira-en-2027-tras-100" },
-        { "name": "Capital", "url": "https://capital.es/empresas/economia-el-parque-comercial-el-canaveral-preve-abrir-a-finales-de-2027-tras-una-inversion-de-mas-de-100-millones/180371/" }
+        {
+          "name": "elEconomista",
+          "url": "https://www.eleconomista.es/vivienda-inmobiliario/noticias/13889162/04/26/asi-sera-el-mayor-parque-comercial-de-madrid-77000-m2-mas-de-50-operadores-13-pistas-de-padel-y-se-ubicara-en-el-canaveral.html"
+        },
+        {
+          "name": "idealista",
+          "url": "https://www.idealista.com/news/inmobiliario/retail/2026/04/28/895012-arrancan-las-obras-del-parque-comercial-el-canaveral-que-abrira-en-2027-tras-100"
+        },
+        {
+          "name": "Capital",
+          "url": "https://capital.es/empresas/economia-el-parque-comercial-el-canaveral-preve-abrir-a-finales-de-2027-tras-una-inversion-de-mas-de-100-millones/180371/"
+        }
       ]
     }
   ]
