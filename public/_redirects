@@ -1,2 +1,15 @@
 # 301: la ficha de Av. Miguel Delibes 80 era Burger King, no McDonald's
 /restaurantes/mcdonalds-canaveral   /restaurantes/burger-king-canaveral   301
+
+# --- 301 URLs heredadas del antiguo WordPress (daban 404 pese a tener rankings/impresiones en GSC, jul-2026) ---
+# Rankeaba #1 en Google pero devolvía 404 → recuperamos el clic a la ficha viva
+/directory/family-mini-market-2   /tiendas-alimentacion/family-mini-market/   301
+# Antiguo artículo de novedades del barrio → nuevo hub de actualidad
+/novedades-urbanas-en-el-canaveral-comercios-servicios-y-espacios-publicos-que-transforman-el-barrio   /actualidad/   301
+# Páginas del tema-directorio de WordPress
+/add-listing    /contacto/     301
+/all-listings   /directorio/   301
+/about-us       /contacto/     301
+# Cualquier otra ficha o archivo viejo bajo /directory/ y /category/ → destino sensato (reglas específicas van arriba)
+/directory/*    /directorio/   301
+/category/*     /blog/         301
