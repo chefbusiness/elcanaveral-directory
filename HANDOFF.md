@@ -212,6 +212,14 @@ CSVs guardados en `~/gsc-elcanaveral-2026-07-15/`. **Baseline: 17 clics · 2.752
 - **✅ Contenido sobre demanda GSC (commit 7645785):** creadas `mejores-cafeterias-el-canaveral` y `mejores-veterinarios-el-canaveral` (huecos con demanda), reforzada guarderías con ángulo inglés/bilingüe. Palanca "optimizar categorías": ya estaba hecha en `seo-overrides.json`.
 - **Oportunidades abiertas:** guarderías/gimnasios rankean pág. 5 (demanda de padres/deporte) — guías reforzadas, falta ganar autoridad. **Re-auditar GSC en ~4-6 semanas.**
 
+## 🎓 Pack "vuelta al cole" — 2026-07-20
+Jugada estacional: el cluster de inglés/guarderías de GSC (~70 impresiones en posiciones 22-65) se ataca **ahora** para que madure antes del pico de septiembre.
+- **Nueva guía** `mejores-academias-ingles-el-canaveral` — 4 academias del barrio, todas ⭐4,8-5 (lidera Larry and Andy ⭐5/50; English Connection ⭐4,9/74 es la de más reseñas).
+- **Limpieza de `/educacion/`:** 3 negocios caninos movidos a `mascotas` (+301 de sus URLs). Ares Baby se queda (la categoría es "Educación e Infantil").
+- **Actualidad (6º post):** ampliación del CEIPSO Rudyard Kipling (**12,4 M€**, 42+6+6+4 aulas; 1.000 plazas públicas con el IES). Post del IES corregido: fin de obras → **principios de 2027**.
+- **`/transporte`:** añadido el **BRT (línea BR2)** a plaza de Felipe II. Iba a ser noticia, pero la fuente era de abril → contenido evergreen, no post.
+- ⚠️ **Regla:** comprobar la FECHA de la fuente antes de tratar algo como actualidad, y no publicar cifras que solo salen en el resumen del buscador sin confirmarlas en la fuente.
+
 ## ⚠️ Restricciones de trabajo (verano Madrid)
 - **CPU < 65 °C** — monitorizar con `istats cpu temp`; ralentizar si sube. **NO usar Playwright** (recalienta).
 - Builds: preferir nube; evitar `astro build` local en calor.

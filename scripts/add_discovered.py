@@ -34,6 +34,9 @@ TERM_CAT = {
     "ferretería": "hogar", "taller mecánico": "automocion", "guardería": "educacion",
     "veterinario": "mascotas", "inmobiliaria": "inmobiliarias", "tienda de ropa": "moda",
     "academia": "educacion", "heladería": "cafeterias",
+    "fisioterapia": "salud", "óptica": "salud", "lavandería": "hogar",
+    "asesoría": "servicios-profesionales", "gestoría": "servicios-profesionales",
+    "autoescuela": "educacion",
 }
 
 
