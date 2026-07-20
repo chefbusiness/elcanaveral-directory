@@ -13,3 +13,8 @@
 # Cualquier otra ficha o archivo viejo bajo /directory/ y /category/ → destino sensato (reglas específicas van arriba)
 /directory/*    /directorio/   301
 /category/*     /blog/         301
+
+# --- 301 por recategorización (jul-2026): negocios caninos que estaban mal en /educacion/ ---
+/educacion/educacion-canina-es                /mascotas/educacion-canina-es/                301
+/educacion/afijo-de-sierra-dormida            /mascotas/afijo-de-sierra-dormida/            301
+/educacion/peluqueria-canina-frenchieperbote  /mascotas/peluqueria-canina-frenchieperbote/  301
