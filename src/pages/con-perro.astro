@@ -126,6 +126,12 @@ const breadcrumbSchema = { "@context": "https://schema.org", "@type": "Breadcrum
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-brand-900 mb-1">🐾 Veterinarios, tiendas y peluquerías</h2>
         <p class="text-gray-500 text-sm mb-5">Los mejor valorados del barrio y alrededores, según las reseñas de Google.</p>
+
+        <div class="bg-red-50 border border-red-200 rounded-xl p-4 mb-5 text-sm text-gray-700">
+          <strong class="text-red-800">🚨 Urgencias 24 h en el barrio:</strong>
+          El Cañaveral cuenta con <a href="/mascotas/mascotiti-hospital-veterinario-canaveral-urgencias-24h" class="text-brand-600 font-medium">Mascotiti Hospital Veterinario</a>,
+          en la avenida de Miguel Delibes, con atención de urgencias las 24 horas. Un dato que conviene tener guardado antes de necesitarlo.
+        </div>
         <div class="grid sm:grid-cols-2 gap-4">
           {petsRanked.map((n: any) => (
             <div class="bg-white rounded-xl border border-warm-200 p-5 flex flex-col">

@@ -36,7 +36,7 @@ TERM_CAT = {
     "academia": "educacion", "heladería": "cafeterias",
     "fisioterapia": "salud", "óptica": "salud", "lavandería": "hogar",
     "asesoría": "servicios-profesionales", "gestoría": "servicios-profesionales",
-    "autoescuela": "educacion",
+    "autoescuela": "educacion", "logopeda": "salud",
 }
 
 

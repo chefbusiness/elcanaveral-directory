@@ -11715,5 +11715,394 @@
       "/images/negocios/poyoquese-4.webp",
       "/images/negocios/poyoquese-5.webp"
     ]
+  },
+  {
+    "slug": "optica-canaveral",
+    "name": "Óptica Cañaveral",
+    "description": "Establecimiento especializado en el cuidado de la salud visual ubicado en el barrio de El Cañaveral. Ofrece atención personalizada para vecinos de la zona que buscan soluciones ópticas y revisión de la vista sin salir del barrio. Cuenta con un catálogo de monturas y lentes adaptadas a diferentes necesidades y edades.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. Concejal Victorino Granizo, 69, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Graduación de la vista y examen optométrico",
+      "Adaptación de lentes de contacto",
+      "Venta de gafas graduadas y de sol",
+      "Asesoramiento en salud visual",
+      "Mantenimiento y reparación de monturas"
+    ],
+    "destacados": [
+      "Atención profesional y personalizada",
+      "Ubicación accesible en El Cañaveral",
+      "Variedad de soluciones ópticas"
+    ],
+    "rating": 5,
+    "numReviews": 125,
+    "placeId": "ChIJiUIwvCI7Qg0RH6AASjTnBSw",
+    "googleCategory": "Óptica",
+    "phone": "+34 613 03 22 71",
+    "website": "http://www.instagram.com/opticanaveral",
+    "lat": 40.4008103,
+    "lng": -3.5618731,
+    "image": "/images/negocios/optica-canaveral.webp",
+    "images": [
+      "/images/negocios/optica-canaveral.webp",
+      "/images/negocios/optica-canaveral-2.webp",
+      "/images/negocios/optica-canaveral-3.webp",
+      "/images/negocios/optica-canaveral-4.webp",
+      "/images/negocios/optica-canaveral-5.webp"
+    ]
+  },
+  {
+    "slug": "lavanderia-autoservicio-openblue24h-canaveral",
+    "name": "Lavandería autoservicio OpenBlue24h Cañaveral",
+    "description": "Servicio de lavandería de autoservicio situado en el nuevo desarrollo de El Cañaveral. Ofrece a los residentes una opción rápida y eficiente para el lavado y secado de prendas de vestir y textiles del hogar de gran volumen. Un espacio funcional diseñado para facilitar las tareas domésticas diarias de forma autónoma.",
+    "category": "hogar",
+    "categoryName": "Hogar y Reformas",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Blas de Lezo, 39, Vicálvaro, 28052 Vicalvaro, Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Lavado de ropa de diario",
+      "Secado rápido de prendas",
+      "Lavado de textiles de gran tamaño como edredones",
+      "Dosificación automática de detergente y suavizante",
+      "Zona de espera para clientes"
+    ],
+    "destacados": [
+      "Maquinaria moderna y eficiente",
+      "Horario amplio para mayor comodidad",
+      "Proceso rápido de lavado y secado"
+    ],
+    "rating": 4.5,
+    "numReviews": 18,
+    "placeId": "ChIJs_vE07w7Qg0RPmeJZkmyjtU",
+    "googleCategory": "Lavandería de autoservicio",
+    "lat": 40.4077654,
+    "lng": -3.5530946,
+    "image": "/images/negocios/lavanderia-autoservicio-openblue24h-canaveral.webp",
+    "images": [
+      "/images/negocios/lavanderia-autoservicio-openblue24h-canaveral.webp",
+      "/images/negocios/lavanderia-autoservicio-openblue24h-canaveral-2.webp",
+      "/images/negocios/lavanderia-autoservicio-openblue24h-canaveral-3.webp",
+      "/images/negocios/lavanderia-autoservicio-openblue24h-canaveral-4.webp",
+      "/images/negocios/lavanderia-autoservicio-openblue24h-canaveral-5.webp"
+    ]
+  },
+  {
+    "slug": "canaveral-gala-autoescuela",
+    "name": "Cañaveral | GALA Autoescuela",
+    "description": "Centro de formación vial ubicado en El Cañaveral, orientado a preparar a los futuros conductores del barrio. Ofrece clases teóricas y prácticas con un equipo de profesionales dedicados a la enseñanza de la conducción segura. Una opción idónea para los jóvenes y vecinos de la zona que buscan obtener su permiso de conducir.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Miguel Delibes, 74, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Clases teóricas presenciales y online",
+      "Clases prácticas de conducción",
+      "Preparación para el examen de conducir común",
+      "Material didáctico y test de examen",
+      "Tramitación de expedientes de tráfico"
+    ],
+    "destacados": [
+      "Formación adaptada al ritmo del alumno",
+      "Profesores de conducción cualificados",
+      "Ubicación idónea en el propio barrio"
+    ],
+    "rating": 5,
+    "numReviews": 220,
+    "placeId": "ChIJGzR4f0M7Qg0RVIVE9xqivxk",
+    "googleCategory": "Autoescuela",
+    "phone": "+34 663 97 51 60",
+    "website": "https://autoescuelagala.com/autoescuela-canaveral/",
+    "lat": 40.404586,
+    "lng": -3.559665,
+    "image": "/images/negocios/canaveral-gala-autoescuela.webp",
+    "images": [
+      "/images/negocios/canaveral-gala-autoescuela.webp",
+      "/images/negocios/canaveral-gala-autoescuela-2.webp",
+      "/images/negocios/canaveral-gala-autoescuela-3.webp"
+    ]
+  },
+  {
+    "slug": "clinica-impulso-fisioterapia-y-psicologia-en-el-canaver",
+    "name": "Clínica Impulso | Fisioterapia y psicología en El Cañaveral",
+    "description": "Centro de salud multidisciplinar en El Cañaveral que combina los servicios de fisioterapia y psicología para ofrecer un bienestar integral. El espacio está diseñado para atender tanto dolencias físicas como el cuidado de la salud mental de los vecinos del barrio. Cuenta con profesionales titulados que realizan tratamientos personalizados según las necesidades de cada paciente.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de Francisco Grande Covián, 5, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Sesiones de fisioterapia traumatológica y deportiva",
+      "Terapia psicológica para adultos y jóvenes",
+      "Rehabilitación física y recuperación de lesiones",
+      "Evaluación y diagnóstico personalizado",
+      "Técnicas de relajación y manejo del estrés"
+    ],
+    "destacados": [
+      "Enfoque integral de salud física y mental",
+      "Profesionales sanitarios colegiados",
+      "Atención personalizada con cita previa"
+    ],
+    "rating": 5,
+    "numReviews": 184,
+    "placeId": "ChIJR1g7Rj07Qg0RpkhA8jLpTtc",
+    "googleCategory": "Clínica de fisioterapia",
+    "phone": "+34 668 54 99 75",
+    "website": "https://www.impulsocanaveral.com/",
+    "lat": 40.4038795,
+    "lng": -3.5644519,
+    "image": "/images/negocios/clinica-impulso-fisioterapia-y-psicologia-en-el-canaver.webp",
+    "images": [
+      "/images/negocios/clinica-impulso-fisioterapia-y-psicologia-en-el-canaver.webp",
+      "/images/negocios/clinica-impulso-fisioterapia-y-psicologia-en-el-canaver-2.webp",
+      "/images/negocios/clinica-impulso-fisioterapia-y-psicologia-en-el-canaver-3.webp",
+      "/images/negocios/clinica-impulso-fisioterapia-y-psicologia-en-el-canaver-4.webp",
+      "/images/negocios/clinica-impulso-fisioterapia-y-psicologia-en-el-canaver-5.webp"
+    ]
+  },
+  {
+    "slug": "fisioterapia-con-mario",
+    "name": "Fisioterapia con Mario",
+    "description": "Consulta de fisioterapia en el barrio de El Cañaveral enfocada en la recuperación física y el alivio del dolor. Ofrece tratamientos manuales y terapéuticos adaptados a las patologías y necesidades específicas de cada paciente. Un servicio cercano y profesional para mejorar la movilidad y la calidad de vida de los residentes de la zona.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Calle de Mario Moreno Cantinflas, 48, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Tratamiento de dolores musculares y articulares",
+      "Fisioterapia deportiva y preventiva",
+      "Rehabilitación tras lesiones o cirugías",
+      "Masajes terapéuticos y descontracturantes",
+      "Valoración del estado físico general"
+    ],
+    "destacados": [
+      "Tratamiento individual y personalizado",
+      "Fisioterapeuta profesional colegiado",
+      "Ubicación cómoda en El Cañaveral"
+    ],
+    "rating": 5,
+    "numReviews": 15,
+    "placeId": "ChIJseGXkUs7Qg0RXdFbgutKWno",
+    "googleCategory": "Clínica de fisioterapia",
+    "phone": "+34 636 60 99 34",
+    "website": "https://instagram.com/fisioterapiaconmario?igshid=YTQwZjQ0NmI0OA==",
+    "lat": 40.4031775,
+    "lng": -3.5615315,
+    "image": "/images/negocios/fisioterapia-con-mario.webp",
+    "images": [
+      "/images/negocios/fisioterapia-con-mario.webp",
+      "/images/negocios/fisioterapia-con-mario-2.webp",
+      "/images/negocios/fisioterapia-con-mario-3.webp"
+    ]
+  },
+  {
+    "slug": "gema-fernandez-fisioterapia",
+    "name": "Gema Fernández | Fisioterapia",
+    "description": "Servicio profesional de fisioterapia en El Cañaveral dedicado al cuidado de la salud musculoesquelética de los vecinos. A través de técnicas manuales y personalizadas, se abordan diferentes dolencias físicas para favorecer una recuperación óptima. Una opción de confianza en el barrio para el tratamiento de lesiones y el mantenimiento del bienestar corporal.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Ubicado dentro de Focus Clinic, C. Anna Frank, 8, Loc 3, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Fisioterapia manual y de rehabilitación",
+      "Tratamiento de lesiones musculares",
+      "Atención a dolores crónicos y agudos",
+      "Estiramientos y ejercicios terapéuticos",
+      "Asesoramiento para la prevención de lesiones"
+    ],
+    "destacados": [
+      "Atención directa y personalizada",
+      "Compromiso con la recuperación del paciente",
+      "Servicio profesional en el barrio"
+    ],
+    "rating": 5,
+    "numReviews": 23,
+    "placeId": "ChIJzUupkDA7Qg0RAAEwOLnGgaQ",
+    "googleCategory": "Fisioterapeuta",
+    "phone": "+34 614 78 35 25",
+    "website": "https://fisiogem.es/",
+    "lat": 40.3973104,
+    "lng": -3.5532869,
+    "image": "/images/negocios/gema-fernandez-fisioterapia.webp",
+    "images": [
+      "/images/negocios/gema-fernandez-fisioterapia.webp"
+    ]
+  },
+  {
+    "slug": "lavapeludos",
+    "name": "Lavapeludos",
+    "description": "Establecimiento de peluquería e higiene para mascotas situado en El Cañaveral. Ofrece servicios especializados para el cuidado del pelo y la piel de perros y gatos, ayudando a mantener su bienestar y salud estética. Un espacio adaptado para que las mascotas del barrio reciban un trato cómodo y profesional.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. Cerro del Tesoro, 5, Local 1, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Baño e higiene completa para mascotas",
+      "Corte de pelo según la raza y necesidad",
+      "Corte de uñas y limpieza de oídos",
+      "Cepillado y eliminación de pelo muerto",
+      "Uso de productos específicos para la piel animal"
+    ],
+    "destacados": [
+      "Trato cercano y respetuoso con los animales",
+      "Especialistas en estética canina y felina",
+      "Servicio esencial para las mascotas del barrio"
+    ],
+    "rating": 5,
+    "numReviews": 26,
+    "placeId": "ChIJ54miUdk7Qg0RvSRnLRHhMJY",
+    "googleCategory": "Peluquero de mascotas",
+    "phone": "+34 611 61 14 15",
+    "lat": 40.4064496,
+    "lng": -3.5507532,
+    "image": "/images/negocios/lavapeludos.webp",
+    "images": [
+      "/images/negocios/lavapeludos.webp",
+      "/images/negocios/lavapeludos-2.webp",
+      "/images/negocios/lavapeludos-3.webp",
+      "/images/negocios/lavapeludos-4.webp",
+      "/images/negocios/lavapeludos-5.webp"
+    ]
+  },
+  {
+    "slug": "logopedas-y-psicologos-canaveral-anda-conmigo",
+    "name": "Logopedas y Psicologos Cañaveral | anda Conmigo",
+    "description": "Centro especializado en el desarrollo y la salud infantil ubicado en El Cañaveral. Ofrece servicios de logopedia y psicología infantil orientados a apoyar a los niños y a sus familias en sus etapas de crecimiento y aprendizaje. Un equipo multidisciplinar trabaja de manera coordinada para dar respuesta a las necesidades de atención temprana y desarrollo en el barrio.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Calle Ferenc Puskas, 193, Loc 5, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Terapia de logopedia para dificultades del habla",
+      "Intervención psicológica infantil y juvenil",
+      "Apoyo en el desarrollo cognitivo y psicomotriz",
+      "Orientación y asesoramiento a familias",
+      "Evaluación de dificultades de aprendizaje"
+    ],
+    "destacados": [
+      "Especialización en infancia y adolescencia",
+      "Equipo multidisciplinar coordinado",
+      "Instalaciones adaptadas para los más pequeños"
+    ],
+    "rating": 5,
+    "numReviews": 13,
+    "placeId": "ChIJKyR5HJE7Qg0RGlca1aAchnk",
+    "googleCategory": "Centro de salud infantil",
+    "phone": "+34 633 34 12 76",
+    "website": "https://andaconmigo.com/centros/anda-conmigo-canaveral/?utm_source=google&utm_medium=gbp&utm_campaign=ficha-ca%C3%B1averal",
+    "lat": 40.3986559,
+    "lng": -3.5469092,
+    "image": "/images/negocios/logopedas-y-psicologos-canaveral-anda-conmigo.webp",
+    "images": [
+      "/images/negocios/logopedas-y-psicologos-canaveral-anda-conmigo.webp",
+      "/images/negocios/logopedas-y-psicologos-canaveral-anda-conmigo-2.webp",
+      "/images/negocios/logopedas-y-psicologos-canaveral-anda-conmigo-3.webp",
+      "/images/negocios/logopedas-y-psicologos-canaveral-anda-conmigo-4.webp",
+      "/images/negocios/logopedas-y-psicologos-canaveral-anda-conmigo-5.webp"
+    ]
+  },
+  {
+    "slug": "fisen",
+    "name": "Fisen",
+    "description": "Consulta de fisioterapia que ofrece servicios de recuperación y bienestar físico en el barrio de El Cañaveral. Centrada en el diagnóstico y tratamiento de diversas afecciones físicas, proporciona a los vecinos una atención sanitaria de calidad para mejorar su movilidad diaria. El centro cuenta con profesionales preparados para abordar desde molestias cotidianas hasta lesiones deportivas.",
+    "category": "salud",
+    "categoryName": "Salud y Bienestar",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. Concejal Victorino Granizo, 109, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Fisioterapia traumatológica y reumatológica",
+      "Tratamiento de contracturas y sobrecargas",
+      "Rehabilitación de lesiones del aparato locomotor",
+      "Terapia manual y masoterapia",
+      "Pautas de ejercicio terapéutico"
+    ],
+    "destacados": [
+      "Atención sanitaria profesional",
+      "Tratamientos adaptados a cada patología",
+      "Ubicación accesible en la zona"
+    ],
+    "rating": 4.9,
+    "numReviews": 82,
+    "placeId": "ChIJJ_jyPc47Qg0R78Nc2AmGYtw",
+    "googleCategory": "Fisioterapeuta",
+    "phone": "+34 660 07 45 16",
+    "website": "https://fisenelcanaveral.es/",
+    "lat": 40.4019838,
+    "lng": -3.560828,
+    "image": "/images/negocios/fisen.webp",
+    "images": [
+      "/images/negocios/fisen.webp",
+      "/images/negocios/fisen-2.webp",
+      "/images/negocios/fisen-3.webp",
+      "/images/negocios/fisen-4.webp",
+      "/images/negocios/fisen-5.webp"
+    ]
+  },
+  {
+    "slug": "mascotiti-hospital-veterinario-canaveral-urgencias-24h",
+    "name": "Mascotiti Hospital Veterinario Cañaveral – Urgencias 24h",
+    "description": "Centro hospitalario veterinario de referencia en El Cañaveral que ofrece atención médica completa para mascotas, incluyendo servicio de urgencias las 24 horas. Equipado para atender tanto consultas rutinarias como situaciones de emergencia médica que requieran intervención inmediata. Un servicio esencial para la tranquilidad de los propietarios de animales en el barrio y sus alrededores.",
+    "category": "mascotas",
+    "categoryName": "Mascotas",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Miguel Delibes, 25, Vicálvaro, 28052 Madrid, España",
+    "tags": [],
+    "featured": false,
+    "servicios": [
+      "Atención de urgencias veterinarias 24 horas",
+      "Consultas de medicina general y preventiva",
+      "Cirugía y hospitalización veterinaria",
+      "Diagnóstico por imagen y análisis clínicos",
+      "Vacunación e identificación con microchip"
+    ],
+    "destacados": [
+      "Disponibilidad de urgencias las 24 horas",
+      "Equipamiento médico completo",
+      "Atención profesional para todo tipo de mascotas"
+    ],
+    "rating": 4.1,
+    "numReviews": 673,
+    "placeId": "ChIJW5zy3oA7Qg0RXo7BhbMG9RY",
+    "googleCategory": "Hospital veterinario",
+    "phone": "+34 912 40 41 50",
+    "website": "https://www.mascotiti.es/",
+    "lat": 40.4063469,
+    "lng": -3.5620167,
+    "image": "/images/negocios/mascotiti-hospital-veterinario-canaveral-urgencias-24h.webp",
+    "images": [
+      "/images/negocios/mascotiti-hospital-veterinario-canaveral-urgencias-24h.webp",
+      "/images/negocios/mascotiti-hospital-veterinario-canaveral-urgencias-24h-2.webp",
+      "/images/negocios/mascotiti-hospital-veterinario-canaveral-urgencias-24h-3.webp",
+      "/images/negocios/mascotiti-hospital-veterinario-canaveral-urgencias-24h-4.webp",
+      "/images/negocios/mascotiti-hospital-veterinario-canaveral-urgencias-24h-5.webp"
+    ]
   }
 ]
