@@ -1,6 +1,6 @@
 # HANDOFF — elcanaveral.info
 
-> Backup de contexto en el repo. Última actualización: **2026-06-27** (sesión en la VM de Abacus).
+> Backup de contexto en el repo. Última actualización: **2026-07-20** (sesión en la VM de Abacus).
 > Si retomas: lee este archivo. La memoria del agente con el setup de Abacus (SSH, build, drip, pipelines)
 > está en `memory/elcanaveral-directory-abacus.md`.
 
@@ -14,7 +14,7 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `76af15a` — 398 páginas, 267 negocios, 29 guías + pilares (escapadas, /compras, /comida-a-domicilio, /actualidad ×4 posts, /con-perro, /mercadillos), menú superior con desplegable, WebP (2026-07-07) |
+| **HEAD ref** | `b1bc480` — **427 páginas, 284 negocios, 32 guías, 6 posts de actualidad**, sitemap 423 URLs con hoja XSL legible, WebP (2026-07-20) |
 
 ## ✅ Sesión 2026-06-25 (Abacus) — COMPLETADO
 
@@ -186,8 +186,8 @@ Refrescar todo: `python scripts/apify_enrich.py --mode enrich --write` (coste ~$
 - ✅ ~~Optimización WebP (Pack C)~~ (2026-06-27, -37%)
 
 **Queda:**
-1. **📰 Blog de actualidad** — ✅ ESTRENADO (2026-06-28): `/actualidad` + `/actualidad/[slug]`, datos en `src/data/actualidad.json` (drip-aware, schema NewsArticle), primer post = parque comercial de El Cañaveral. **REGLA: solo hechos reales con fuente, NO inventar noticias.** Queda ALIMENTARLO: John aporta temas locales (aperturas, eventos, obras) y se redactan con fuentes.
-2. **Auditoría GSC post-soak** — **~mediados de julio 2026** (John comparte Search Console en ~2 semanas). Medir efecto de guías+pilares; ver qué category/zona/pilar apretar.
+1. **📰 Blog de actualidad** — ✅ ESTRENADO (2026-06-28) y con **6 posts** a 20-jul. `/actualidad` + `/actualidad/[slug]`, datos en `src/data/actualidad.json` (drip-aware, schema NewsArticle). **REGLA: solo hechos reales con fuente, NO inventar noticias; comprobar la FECHA de la fuente y confirmar las cifras en la fuente (no en el resumen del buscador).** Rutina repetible: buscar novedades → publicar con fuente → refrescar posts antiguos.
+2. **Auditoría GSC** — ✅ #1 (15-jul) y ✅ #2 (20-jul) hechas, ver secciones abajo. **Próxima: finales de agosto 2026** (cambios madurados + vuelta del tráfico + pico de vuelta al cole). John exporta el CSV; el agente no tiene acceso a Search Console.
 3. **🍹 Guía de terrazas — PARKED**: John aporta datos a medida que visita locales en persona. No enfocarse hasta que él lo pida. (Campos `terraza`/`delivery` ya se capturan en `apify_enrich.py` desde `additionalInfo`.)
 4. **Ampliar fiestas** (opcional): más ferias reales de la zona cuando toque.
 5. **Verificar in situ** (`VERIFICAR-EN-PERSONA.md`): Obramat (¿existe/otro rótulo?) y Mediadores (¿= SM Homes?).
@@ -219,6 +219,28 @@ Jugada estacional: el cluster de inglés/guarderías de GSC (~70 impresiones en 
 - **Actualidad (6º post):** ampliación del CEIPSO Rudyard Kipling (**12,4 M€**, 42+6+6+4 aulas; 1.000 plazas públicas con el IES). Post del IES corregido: fin de obras → **principios de 2027**.
 - **`/transporte`:** añadido el **BRT (línea BR2)** a plaza de Felipe II. Iba a ser noticia, pero la fuente era de abril → contenido evergreen, no post.
 - ⚠️ **Regla:** comprobar la FECHA de la fuente antes de tratar algo como actualidad, y no publicar cifras que solo salen en el resumen del buscador sin confirmarlas en la fuente.
+
+### Discovery del 20-jul (+10 negocios → 284)
+Ángulos nuevos (fisioterapia, óptica, lavandería, asesoría, gestoría, autoescuela), coste $0,09.
+Altas: Óptica Cañaveral ⭐5/125 · GALA Autoescuela ⭐5/220 · Clínica Impulso ⭐5/184 · Fisen ⭐4,9 · 2 fisios pequeños · **Mascotiti Hospital Veterinario urgencias 24 h** ⭐4,1/673 · Lavandería OpenBlue24h · Logopedas «anda Conmigo» · Lavapeludos.
+Descartados: Academia Arcana (es consultoría de RRHH), Excom (proveedor de internet), Locker SEUR (2,3★).
+- ⚠️ **El término de búsqueda NO dice qué es el negocio**: "asesoría" trajo un hospital veterinario y "lavandería" una peluquería canina → inspeccionar `categoryName` antes de dar de alta.
+- ⚠️ **Efecto dominó**: al entrar Mascotiti hubo que corregir la FAQ de la guía de veterinarios (decía que el barrio apenas tenía clínicas propias) y añadir un aviso de urgencias 24 h en `/con-perro` (por nota no entraba en el top-8, pero es información crítica). **Cuando entra un negocio importante, revisar qué contenido queda desactualizado.**
+
+## 🐛 Bug UX resuelto — buscador de la home (2026-07-20, commit `b1bc480`)
+El desplegable de resultados quedaba **oculto tras las tarjetas de zonas** y recortado.
+**Causa:** la `<section>` del hero tenía `overflow-hidden isolate` → `isolate` creaba un stacking context que atrapaba el `z-[100]` del desplegable (hacia fuera el hero valía `z-auto` y las tarjetas `relative z-10`, posteriores en el DOM, lo tapaban); `overflow-hidden` además lo recortaba al salir.
+**Fix:** recorte y aislamiento movidos a un envoltorio solo para el fondo decorativo (`absolute inset-0 -z-10 overflow-hidden isolate`) y contenido del hero a `relative z-20`. Verificado con capturas antes/después en escritorio (1200px), móvil (390px) y sobre producción; fondo del hero sin cambios.
+- 💡 **Patrón a recordar:** `isolate` / `overflow-hidden` en secciones contenedoras rompen cualquier dropdown, tooltip o menú que deba salirse de su caja.
+
+## 📊 Auditoría GSC #2 — 2026-07-20 (`~/gsc-elcanaveral-2026-07-20/`)
+17 clics · 2.941 impr · CTR 0,58% (91 días). **Los 5 días nuevos: 0 clics, +201 impresiones** → demasiado pronto para ver el efecto de los 301 y las guías (necesitan 4-6 semanas); ninguna página nueva asoma aún.
+- ✅ **Señal buena:** la **posición media mejora sostenidamente** — sem 21-22 ≈ 13,6/11,3 → sem 27-29 ≈ **8,8-9,2**. De página 2 baja al borde de página 1.
+- 🔑 **Diagnóstico central:** CTR 0,58% con posición ~9 es anormalmente bajo (lo normal: 1,5-2,5%). No es falta de visibilidad, es que **las queries son de marca hiperlocal y el pack de Maps se lleva el clic**. → La vía NO es pelear esas búsquedas, sino el contenido comparativo/informativo donde Maps no compite ("mejores X" + guías del barrio). Es el pilar que ya estamos construyendo.
+- Julio baja vs junio (36,4 vs 47,1 impr/día): probable estacionalidad de verano en Madrid.
+- Schema **ya cubierto** (fichas con LocalBusiness/MedicalBusiness + AggregateRating; categorías con ItemList) → no es la palanca.
+- 🗓️ **Próxima auditoría: finales de agosto** (cambios madurados + vuelta del tráfico + pico de vuelta al cole).
+- ℹ️ El sitemap **no se reenvía** a GSC: Google re-rastrea solo `sitemap-index.xml`. John exporta el CSV (el agente no tiene acceso a Search Console).
 
 ## ⚠️ Restricciones de trabajo (verano Madrid)
 - **CPU < 65 °C** — monitorizar con `istats cpu temp`; ralentizar si sube. **NO usar Playwright** (recalienta).
