@@ -25,10 +25,15 @@ const guias = loadPublishedListicles()
   <Header />
 
   <!-- Hero -->
-  <section class="pt-24 pb-28 px-4 relative overflow-hidden isolate">
+  <!-- OJO: nada de `overflow-hidden`/`isolate` en la <section>: atrapaban y recortaban el
+       desplegable del buscador (quedaba detrás de las tarjetas de zonas). El recorte y el
+       aislamiento viven ahora en el envoltorio del fondo, que es lo único que los necesita. -->
+  <section class="pt-24 pb-28 px-4 relative">
+    <!-- Fondo decorativo: aislado y recortado aparte del contenido -->
+    <div class="absolute inset-0 -z-10 overflow-hidden isolate">
     <!-- Capa 1: imagen aerea El Canaveral con fade-out blanco hacia abajo (mask) -->
     <div
-      class="absolute inset-0 -z-10"
+      class="absolute inset-0"
       style="
         -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 55%, rgba(0,0,0,0.55) 80%, rgba(0,0,0,0) 100%);
                 mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 55%, rgba(0,0,0,0.55) 80%, rgba(0,0,0,0) 100%);
@@ -46,19 +51,21 @@ const guias = loadPublishedListicles()
     </div>
     <!-- Capa 2: tinte azul/cream translucido (deja respirar la imagen sin tapar el detalle) -->
     <div
-      class="absolute inset-0 -z-10"
+      class="absolute inset-0"
       style="background: linear-gradient(180deg, rgba(238,242,255,0.68) 0%, rgba(241,245,255,0.62) 35%, rgba(255,255,255,0.62) 60%, rgba(255,255,255,0.97) 90%, rgba(255,255,255,1) 100%);"
     ></div>
     <!-- Capa 3: patron de cruces (tambien con fade-out abajo para no cortar) -->
     <div
-      class="absolute inset-0 opacity-[0.06] -z-10"
+      class="absolute inset-0 opacity-[0.06]"
       style="
         background-image: url('data:image/svg+xml,<svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;><g fill=&quot;%231e3a8a&quot;><path d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/></g></g></svg>');
         -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
                 mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
       "
     ></div>
-    <div class="max-w-4xl mx-auto text-center relative">
+    </div><!-- /fondo decorativo -->
+    <!-- z-20: por encima de las tarjetas de zonas (z-10), para que el desplegable del buscador se vea entero -->
+    <div class="max-w-4xl mx-auto text-center relative z-20">
       <div class="inline-flex items-center gap-2 bg-white/85 backdrop-blur-sm text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6 shadow-sm border border-brand-100">
         <span class="w-2 h-2 bg-brand-500 rounded-full animate-pulse"></span>
         {totalNegocios} negocios registrados
