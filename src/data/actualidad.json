@@ -1,6 +1,56 @@
 {
   "posts": [
     {
+      "slug": "ampliacion-ceipso-rudyard-kipling-el-canaveral",
+      "title": "El colegio público de El Cañaveral se completa: 12,4 millones de euros para 58 aulas",
+      "date": "2026-07-20",
+      "updated": "2026-07-20",
+      "excerpt": "La Comunidad de Madrid ha adjudicado las obras para completar el CEIPSO Rudyard Kipling de El Cañaveral, con una inversión de 12,4 millones de euros. Entre el colegio y el nuevo instituto, el barrio sumará 1.000 plazas escolares públicas.",
+      "tags": [
+        "Educación"
+      ],
+      "lead": "El colegio público del barrio, el CEIPSO Rudyard Kipling, tendrá por fin todas sus aulas: la Comunidad de Madrid ha adjudicado las obras para completarlo con una inversión de 12,4 millones de euros. Sumadas a las del nuevo instituto, El Cañaveral contará con 1.000 plazas escolares públicas.",
+      "datosClave": [
+        "Inversión de 12,4 millones de euros para completar el CEIPSO Rudyard Kipling",
+        "Las obras permitirán incorporar 42 aulas de grupo, 6 de desdoble, 6 de apoyo y 4 específicas",
+        "Entre el colegio y el nuevo instituto se crean 1.000 plazas escolares públicas en el barrio",
+        "La consejera de Educación, Mercedes Zarzalejo, visitó las obras el 17 de julio de 2026"
+      ],
+      "secciones": [
+        {
+          "h2": "El colegio del barrio, por fin al completo",
+          "parrafos": [
+            "El CEIPSO Rudyard Kipling fue el primer centro educativo público de El Cañaveral y abrió sin estar terminado, con una parte de sus aulas en funcionamiento. La Comunidad de Madrid ha adjudicado ahora las obras que lo completan, con una inversión de 12,4 millones de euros.",
+            "Según la información facilitada por el Gobierno regional, la actuación permitirá incorporar 42 aulas de grupo, seis de desdoble, seis de apoyo y cuatro aulas específicas, hasta redondear un centro capaz de absorber la fuerte demanda de un barrio con miles de niños en edad escolar."
+          ]
+        },
+        {
+          "h2": "1.000 plazas públicas contando el instituto",
+          "parrafos": [
+            "La ampliación del colegio se suma a la construcción del primer instituto público del barrio, que tendrá 24 aulas de ESO y ocho de Bachillerato. Entre ambos centros, la Comunidad de Madrid cifra en 1.000 las plazas escolares públicas que se crean en El Cañaveral.",
+            "La consejera de Educación, Ciencia y Universidades, Mercedes Zarzalejo, visitó las obras del nuevo instituto el viernes 17 de julio y confirmó que estará listo para el curso 2027-2028."
+          ]
+        },
+        {
+          "h2": "Lo que significa para las familias",
+          "parrafos": [
+            "El Cañaveral ha crecido mucho más rápido que sus equipamientos públicos, y la escolarización ha sido uno de los puntos de mayor tensión para las familias del barrio. Completar el colegio y levantar el instituto son las dos piezas que faltaban para que los niños y adolescentes puedan estudiar sin salir del barrio.",
+            "Si estás buscando plaza o alternativas mientras llegan estos centros, en El Cañaveral Info tienes el listado de guarderías y escuelas infantiles y la guía de las academias de idiomas del barrio."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "Telemadrid",
+          "url": "https://www.telemadrid.es/programas/telenoticias-1/El-nuevo-instituto-de-El-Canaveral-estara-listo-para-el-curso-20272028-2-2907929194--20260717030724.html"
+        },
+        {
+          "name": "Comunidad de Madrid",
+          "url": "https://www.comunidad.madrid/notas-prensa/2026/07/17/comunidad-madrid-creara-1000-plazas-escolares-publicas-barrio-canaveral-distrito-madrileno-vicalvaro"
+        }
+      ]
+    },
+    {
       "slug": "el-canaveral-centro-acogida-sin-hogar-176-plazas",
       "title": "El Cañaveral tendrá un centro de acogida para 176 personas sin hogar: las obras terminan este otoño",
       "date": "2026-07-15",
@@ -56,7 +106,7 @@
       "slug": "el-canaveral-primer-instituto-publico-ies",
       "title": "El Cañaveral tendrá por fin instituto público: 1.000 plazas para el curso 2027-2028",
       "date": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-20",
       "excerpt": "Ya están en marcha las obras del primer instituto de Educación Secundaria (IES) de El Cañaveral, con capacidad para 1.000 alumnos. Está previsto que abra al inicio del curso 2027-2028.",
       "tags": [
         "Educación"
@@ -66,7 +116,7 @@
         "Primer instituto público (IES) de El Cañaveral, para unos 1.000 alumnos",
         "24 aulas de Secundaria y 8 de Bachillerato, más aulas de informática, laboratorio, música y dibujo",
         "Presupuesto de unos 12 millones de euros (obras adjudicadas a Ejuca, S.A.)",
-        "Obras previstas para terminar a finales de 2026",
+        "Obras previstas para terminar a principios de 2027 (confirmado por la Comunidad de Madrid en julio de 2026)",
         "Podría estar operativo al inicio del curso 2027-2028"
       ],
       "secciones": [
@@ -80,7 +130,7 @@
         {
           "h2": "Plazos y contexto",
           "parrafos": [
-            "Las obras, adjudicadas por unos 12 millones de euros, están previstas para finalizar a finales de 2026, por lo que el instituto podría abrir sus puertas al inicio del curso 2027-2028.",
+            "Las obras, adjudicadas por unos 12 millones de euros, terminarán a principios de 2027: la consejera de Educación, Mercedes Zarzalejo, visitó el centro el 17 de julio de 2026 y confirmó que el instituto abrirá en el curso 2027-2028.",
             "Se sumará así al colegio público CEIPSO Rudyard Kipling, el primer centro educativo público del barrio. Puedes ver el resto de servicios públicos en nuestra guía."
           ]
         }
@@ -93,6 +143,10 @@
         {
           "name": "Nuevo Sureste",
           "url": "https://nuevosureste.es/comienzo-obras-ies-el-canaveral/"
+        },
+        {
+          "name": "Telemadrid (jul-2026)",
+          "url": "https://www.telemadrid.es/programas/telenoticias-1/El-nuevo-instituto-de-El-Canaveral-estara-listo-para-el-curso-20272028-2-2907929194--20260717030724.html"
         }
       ]
     },
