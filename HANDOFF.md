@@ -1,6 +1,6 @@
 # HANDOFF — elcanaveral.info
 
-> Backup de contexto en el repo. Última actualización: **2026-07-20** (sesión en la VM de Abacus).
+> Backup de contexto en el repo. Última actualización: **2026-08-21** (sesión en local).
 > Si retomas: lee este archivo. La memoria del agente con el setup de Abacus (SSH, build, drip, pipelines)
 > está en `memory/elcanaveral-directory-abacus.md`.
 
@@ -14,7 +14,45 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `b1bc480` — **427 páginas, 284 negocios, 32 guías, 6 posts de actualidad**, sitemap 423 URLs con hoja XSL legible, WebP (2026-07-20) |
+| **HEAD ref** | (ver abajo, sesión 2026-08-21) · anterior `b1bc480` — **427 páginas, 284 negocios, 32 guías, 6 posts de actualidad**, sitemap 423 URLs con hoja XSL legible, WebP (2026-07-20) |
+
+## ✅ Sesión 2026-08-21 (local) — 2 aperturas nuevas + estado `proxima-apertura`
+
+⚠️ **CAMBIO DE ENTORNO:** la VM de **Abacus ya NO se usa**. El trabajo continuado pasa a la **VPS propia de
+Hostinger** (Claude Code instalado allí, varios proyectos) y el **Mac local** se usa para sesiones puntuales.
+**GitHub es SIEMPRE la última versión:** toda sesión empieza con `git pull --ff-only` y termina con `push`.
+Recordatorio: el repo se mueve solo — la Action `publish-scheduled.yml` pushea a diario (06:15 UTC).
+
+1. **Dos negocios anunciados en el barrio, dados de alta antes de abrir** (fuente: @hug0nES en X, 20-21 ago):
+   - **BunBun — Açaí, Brunch & Bakery** (`/cafeterias/bunbun-canaveral/`), Av. de Miguel Delibes esq. calle
+     Elías. Cadena real (bunbun.es) con locales en Moratalaz, Sanse y Metropolitano (este abrió el 7-ago-2026).
+     ⚠️ El Cañaveral **no figura aún en su web** ni en Google Maps: sin fecha de apertura confirmada.
+   - **Música de los Ríos** (`/educacion/musica-de-los-rios-canaveral/`), Av. de Blas de Lezo esq. calle
+     Diálogo. Cartel de próxima apertura: curso 2026/2027, música para bebés, música y movimiento, canto,
+     piano, violín, guitarra y percusión, QR con 50 % dto. de matrícula. Sería la **primera escuela de música
+     del barrio**. ⚠️ Hay una escuela homónima en Chamberí (Fernández de los Ríos, 30) pero **NO está
+     confirmado** que sea la misma marca — no afirmarlo hasta verificarlo.
+2. **Nuevo estado `estado: "proxima-apertura"`** en el esquema de negocio (`src/lib/directory.ts`) + badge azul
+   en `NegocioCard.astro` y en la ficha. Un negocio sin `rating`/`numReviews` **ya quedaba fuera de las guías**
+   por el filtro de `src/lib/listicles.ts:72` → no contamina el ranking bayesiano. No hizo falta tocar el motor.
+3. **Post de actualidad (7º)** `nuevas-aperturas-el-canaveral-agosto-2026`, con enlaces contextuales a las dos
+   fichas, a `/cafeterias/` y a `/educacion/`. Para que los enlaces funcionen, los párrafos de
+   `actualidad/[slug].astro` pasan a renderizarse con `set:html` (y se escapó el `&` de "Lilo &amp; Stitch" del
+   post del cine). **Al escribir párrafos nuevos: escapar `&`, `<` y `>`.**
+4. 🐛 **Bug corregido en `NegocioCard.astro`:** el emoji de respaldo (fichas sin foto) se elegía comparando
+   `categoryName` **escrito sin tildes** (`"Educacion e Infantil"`, `"Belleza y Peluquerias"`) contra unos datos
+   que **sí las llevan** → nunca coincidía, y `Cafeterías` ni estaba en el mapa. **7 de las 9 fichas sin foto
+   mostraban el 🏪 genérico.** Ahora el mapa se indexa por **slug de categoría** (estable y sin tildes) y cubre
+   las 16. 💡 Patrón: no usar nunca un nombre visible con acentos como clave de comparación.
+5. **GSC (28 d, vía MCP `gscServer` — el agente YA tiene acceso, no hacen falta CSVs):** 14 clics · 1.098 impr ·
+   **CTR 1,28 %** (era 0,58 % el 20-jul, más que dobla) · pos. media 9,6. Mejor página `/cafeterias/`
+   (212 impr, 2,83 % CTR); peor conversión `/fruterias/` (262 impr, 0,38 %, queries de marca de Megafruta).
+   Las 32 guías aún no asoman. `brunch cañaveral` ya recibe impresiones → BunBun encaja en el hueco.
+
+### Pendiente de VERIFICAR EN PERSONA (ver `VERIFICAR-EN-PERSONA.md`)
+- **BunBun:** número exacto de Miguel Delibes y qué calle es "Elías"; fecha de apertura.
+- **Música de los Ríos:** escanear el QR del cartel para confirmar si es la escuela de Chamberí; dirección
+  exacta, teléfono y fecha de apertura.
 
 ## ✅ Sesión 2026-06-25 (Abacus) — COMPLETADO
 

@@ -72,6 +72,11 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
           <div>
             <div class="flex items-start gap-3 mb-2">
               <h1 class="text-3xl font-bold text-brand-900">{negocio.name}</h1>
+              {negocio.estado === "proxima-apertura" && (
+                <span class="shrink-0 text-xs font-semibold bg-brand-600 text-white px-3 py-1 rounded-md mt-1.5">
+                  Próxima apertura
+                </span>
+              )}
               {negocio.featured && (
                 <span class="shrink-0 text-xs font-semibold bg-accent-500 text-white px-3 py-1 rounded-md mt-1.5">
                   Destacado

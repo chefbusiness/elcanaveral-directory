@@ -82,7 +82,7 @@ const breadcrumbSchema = {
           <section>
             {s.h2 && <h2 class="text-xl sm:text-2xl font-bold text-brand-900 mb-3">{s.h2}</h2>}
             {s.parrafos.map((p: string) => (
-              <p class="text-gray-700 leading-relaxed mb-3">{p}</p>
+              <p class="text-gray-700 leading-relaxed mb-3 [&_a]:text-brand-600 [&_a:hover]:text-brand-700 [&_a]:underline [&_a]:underline-offset-2" set:html={p} />
             ))}
           </section>
         ))}

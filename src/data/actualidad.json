@@ -1,6 +1,59 @@
 {
   "posts": [
     {
+      "slug": "nuevas-aperturas-el-canaveral-agosto-2026",
+      "title": "Dos nuevas aperturas en El Cañaveral: BunBun y Música de los Ríos",
+      "date": "2026-08-21",
+      "updated": "2026-08-21",
+      "excerpt": "El barrio se prepara para recibir su primer local de açaí y brunch, BunBun, y una escuela de música en Blas de Lezo. Te contamos lo que sabemos hasta ahora.",
+      "tags": [
+        "Comercio",
+        "Educación"
+      ],
+      "lead": "Agosto nos trae dos movimientos que muchos vecinos llevaban tiempo esperando: la llegada de una cadena de açaí y brunch y el cartel de una escuela de música. Aunque ninguna de las dos ha confirmado fecha de apertura, lo que hay sobre la mesa son un cartel de obra y el aviso de los vecinos.",
+      "datosClave": [
+        "BunBun abrirá en la avenida de Miguel Delibes, esquina con la calle Elías.",
+        "La escuela Música de los Ríos anuncia el curso 2026/2027 con un 50 % de descuento en la matrícula.",
+        "BunBun ya cuenta con tres locales en Madrid; el último abrió el 7 de agosto en Metropolitano.",
+        "No hay fecha de apertura confirmada para ninguno de los dos negocios.",
+        "Serían la primera propuesta de açaí y brunch y la primera escuela de música del barrio."
+      ],
+      "secciones": [
+        {
+          "h2": "BunBun: açaí, brunch y bakery en Miguel Delibes",
+          "parrafos": [
+            "Según han adelantado vecinos en la red social X, la cadena <a href=\"/cafeterias/bunbun-canaveral/\">BunBun</a> prepara su llegada a la avenida de Miguel Delibes, esquina con la calle Elías. De momento, El Cañaveral no aparece en su web oficial ni tiene ficha en Google Maps, por lo que la información hay que tomarla con la cautela de quien comparte una ilusión.",
+            "BunBun se define por sus bowls de açaí preparados al día con fruta, granola y una barra de toppings, además de bollería horneada en el local, café de especialidad y matcha. Todo sin colorantes ni conservantes artificiales. En sus otros locales es pet-friendly y reparte con Glovo y Uber Eats, aunque aún no sabemos si estos servicios estarán disponibles desde el primer día en El Cañaveral.",
+            "A diferencia de las <a href=\"/cafeterias/\">cafeterías que ya conocemos en el barrio</a>, esta sería la primera apuesta por el açaí y el brunch, un formato que hasta ahora nos obligaba a salir fuera."
+          ]
+        },
+        {
+          "h2": "Música de los Ríos: una escuela de música en Blas de Lezo",
+          "parrafos": [
+            "El cartel de <a href=\"/educacion/musica-de-los-rios-canaveral/\">Música de los Ríos</a> ya luce en un local de la avenida de Blas de Lezo, esquina con la calle Diálogo. Anuncia el curso 2026/2027 con actividades para todas las edades: música para bebés, música y movimiento, canto, piano, violín, guitarra y percusión. Incluye un código QR que ofrece un 50 % de descuento en la matrícula.",
+            "Existe una escuela con el mismo nombre en el barrio de Chamberí (calle Fernández de los Ríos, 30), pero no hemos podido confirmar si se trata de la misma empresa. Lo que sí es seguro es que, de concretarse, cubriría un vacío evidente. Hasta ahora, la <a href=\"/educacion/\">oferta educativa del barrio</a> se limitaba a escuelas infantiles, academias de inglés y una autoescuela, por lo que esta apertura supondría la primera escuela de música de El Cañaveral."
+          ]
+        },
+        {
+          "h2": "Dos proyectos que hablan de un barrio que crece",
+          "parrafos": [
+            "Que una cadena con tres locales en Madrid apueste por El Cañaveral y que aparezca una escuela de música en un local comercial de Blas de Lezo no es casualidad. Refleja el aumento de población, la demanda de servicios más especializados y la confianza en que el barrio puede sostener negocios que antes solo encontrábamos en zonas más consolidadas.",
+            "Si tienes información sobre estas u otras aperturas, compártela con nosotros. Este blog se nutre de los ojos y los oídos de los vecinos, y cada pista ayuda a que todos estemos al día de lo que se cuece en El Cañaveral."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "BunBun (web oficial)",
+          "url": "https://bunbun.es/"
+        },
+        {
+          "name": "@hug0nES en X",
+          "url": "https://x.com/hug0nES"
+        }
+      ]
+    },
+    {
       "slug": "ampliacion-ceipso-rudyard-kipling-el-canaveral",
       "title": "El colegio público de El Cañaveral se completa: 12,4 millones de euros para 58 aulas",
       "date": "2026-07-20",
@@ -219,7 +272,7 @@
         {
           "h2": "Cine de verano gratis para toda la familia",
           "parrafos": [
-            "El plato fuerte es el cine de verano al aire libre, con proyecciones gratuitas todos los viernes y sábados de julio y agosto en los recintos Ferial e IDB II (esquina de la calle Diálogo con la calle Tolerancia). La programación apuesta por títulos recientes y muy familiares como Wicked, Mufasa: El Rey León, Del Revés 2 o Lilo & Stitch.",
+            "El plato fuerte es el cine de verano al aire libre, con proyecciones gratuitas todos los viernes y sábados de julio y agosto en los recintos Ferial e IDB II (esquina de la calle Diálogo con la calle Tolerancia). La programación apuesta por títulos recientes y muy familiares como Wicked, Mufasa: El Rey León, Del Revés 2 o Lilo &amp; Stitch.",
             "Como los días y horarios concretos de cada sesión pueden ajustarse, conviene confirmarlos en la agenda de la Junta Municipal de Vicálvaro antes de acercarse."
           ]
         },

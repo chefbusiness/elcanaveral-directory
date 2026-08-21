@@ -12104,5 +12104,76 @@
       "/images/negocios/mascotiti-hospital-veterinario-canaveral-urgencias-24h-4.webp",
       "/images/negocios/mascotiti-hospital-veterinario-canaveral-urgencias-24h-5.webp"
     ]
+  },
+  {
+    "slug": "bunbun-canaveral",
+    "name": "BunBun — Açaí, Brunch & Bakery",
+    "description": "BunBun prepara su llegada a El Cañaveral con sus bowls de açaí, brunch y bollería artesana. Primera propuesta de açaí del barrio, en Av. Miguel Delibes.",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Miguel Delibes (esquina con calle Elías), Vicálvaro, 28052 Madrid",
+    "website": "https://bunbun.es",
+    "tags": [
+      "brunch",
+      "açaí",
+      "bakery",
+      "próxima-apertura"
+    ],
+    "featured": false,
+    "estado": "proxima-apertura",
+    "servicios": [
+      "Bowls de açaí con fruta y granola",
+      "Barra de toppings personalizable",
+      "Bollería artesana horneada a diario",
+      "Café de especialidad",
+      "Matcha",
+      "Brunch",
+      "Reparto a domicilio con Glovo y Uber Eats (en sus locales ya abiertos)",
+      "Espacio pet-friendly"
+    ],
+    "destacados": [
+      "Primera propuesta de açaí y brunch en El Cañaveral",
+      "Sin colorantes ni conservantes artificiales",
+      "Bollería horneada en el propio local",
+      "Cadena con experiencia en Madrid (Moratalaz, Sanse, Metropolitano)"
+    ],
+    "redesSociales": {
+      "instagram": "https://www.instagram.com/bunbun_brunch/"
+    }
+  },
+  {
+    "slug": "musica-de-los-rios-canaveral",
+    "name": "Música de los Ríos",
+    "description": "Primera escuela de música del barrio. Abrirá en Av. Blas de Lezo esquina Diálogo para el curso 2026/2027 con clases de piano, violín, guitarra, canto, percusión y música para bebés.",
+    "category": "educacion",
+    "categoryName": "Educación e Infantil",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "Av. de Blas de Lezo (esquina con calle Diálogo), Vicálvaro, 28052 Madrid",
+    "tags": [
+      "música",
+      "academia",
+      "extraescolares",
+      "próxima-apertura"
+    ],
+    "featured": false,
+    "estado": "proxima-apertura",
+    "servicios": [
+      "Música para bebés",
+      "Música y movimiento",
+      "Canto",
+      "Piano",
+      "Violín",
+      "Guitarra",
+      "Percusión"
+    ],
+    "destacados": [
+      "Primera escuela de música en El Cañaveral",
+      "50 % de descuento en la matrícula (código QR en el cartel)",
+      "Disciplinas desde bebés: música y movimiento, instrumentos y canto",
+      "Apertura prevista para el curso 2026/2027"
+    ]
   }
 ]

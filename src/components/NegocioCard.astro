@@ -7,6 +7,16 @@ interface Props {
 
 const { negocio } = Astro.props;
 const servicios = (negocio.servicios as string[] | undefined) || [];
+
+// Emoji de respaldo cuando la ficha no tiene foto. Se indexa por SLUG de categoria
+// (estable y sin tildes); usar categoryName fallaba en las que llevan acento.
+const EMOJI_CATEGORIA: Record<string, string> = {
+  restaurantes: "🍽️", cafeterias: "☕", panaderias: "🥐", fruterias: "🍎",
+  supermercados: "🛒", "tiendas-alimentacion": "🥫", salud: "🏥", deporte: "🏋️",
+  belleza: "💇", educacion: "📚", mascotas: "🐾", hogar: "🔧",
+  inmobiliarias: "🏠", automocion: "🚗", moda: "👗", "servicios-profesionales": "💼",
+};
+const emoji = EMOJI_CATEGORIA[negocio.category] || "🏪";
 ---
 
 <a
@@ -22,7 +32,11 @@ const servicios = (negocio.servicios as string[] | undefined) || [];
         class="w-full h-44 object-cover"
         loading="lazy"
       />
-      {negocio.featured && (
+      {negocio.estado === "proxima-apertura" ? (
+        <span class="absolute top-3 left-3 text-xs font-semibold bg-brand-600 text-white px-2.5 py-1 rounded-md shadow-sm">
+          Próxima apertura
+        </span>
+      ) : negocio.featured && (
         <span class="absolute top-3 left-3 text-xs font-semibold bg-accent-500 text-white px-2.5 py-1 rounded-md shadow-sm">
           Destacado
         </span>
@@ -35,8 +49,12 @@ const servicios = (negocio.servicios as string[] | undefined) || [];
     </div>
   ) : (
     <div class="relative w-full h-44 bg-gradient-to-br from-brand-50 to-brand-100 flex items-center justify-center">
-      <span class="text-4xl opacity-60">{negocio.categoryName === "Restaurantes" ? "🍽️" : negocio.categoryName === "Salud y Bienestar" ? "🏥" : negocio.categoryName === "Educacion e Infantil" ? "📚" : negocio.categoryName === "Belleza y Peluquerias" ? "💇" : negocio.categoryName === "Deporte y Fitness" ? "🏋️" : negocio.categoryName === "Mascotas" ? "🐾" : negocio.categoryName === "Hogar y Reformas" ? "🔧" : negocio.categoryName === "Servicios Profesionales" ? "💼" : "🏪"}</span>
-      {negocio.featured && (
+      <span class="text-4xl opacity-60">{emoji}</span>
+      {negocio.estado === "proxima-apertura" ? (
+        <span class="absolute top-3 left-3 text-xs font-semibold bg-brand-600 text-white px-2.5 py-1 rounded-md shadow-sm">
+          Próxima apertura
+        </span>
+      ) : negocio.featured && (
         <span class="absolute top-3 left-3 text-xs font-semibold bg-accent-500 text-white px-2.5 py-1 rounded-md shadow-sm">
           Destacado
         </span>

@@ -25,6 +25,7 @@ export interface Negocio {
   // Clasificacion
   tags?: string[];
   featured?: boolean;
+  estado?: "proxima-apertura";   // negocio anunciado que aun no ha abierto
   // Campos enriquecidos (comunes a todos)
   servicios?: string[];
   destacados?: string[];    // puntos fuertes / highlights
