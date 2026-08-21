@@ -14,7 +14,7 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | (ver abajo, sesión 2026-08-21) · anterior `b1bc480` — **427 páginas, 284 negocios, 32 guías, 6 posts de actualidad**, sitemap 423 URLs con hoja XSL legible, WebP (2026-07-20) |
+| **HEAD ref** | `e51a880` — **286 negocios, 32 guías, 7 posts de actualidad**, sitemap **431 URLs**, WebP (2026-08-21) |
 
 ## ✅ Sesión 2026-08-21 (local) — 2 aperturas nuevas + estado `proxima-apertura`
 
@@ -48,6 +48,12 @@ Recordatorio: el repo se mueve solo — la Action `publish-scheduled.yml` pushea
    **CTR 1,28 %** (era 0,58 % el 20-jul, más que dobla) · pos. media 9,6. Mejor página `/cafeterias/`
    (212 impr, 2,83 % CTR); peor conversión `/fruterias/` (262 impr, 0,38 %, queries de marca de Megafruta).
    Las 32 guías aún no asoman. `brunch cañaveral` ya recibe impresiones → BunBun encaja en el hueco.
+
+### ✅ Verificación en producción (2026-08-21, sin build local por la regla térmica)
+Deploy de Netlify **verde**, comprobado contra la web en vivo: las 3 URLs nuevas responden 200 · badge
+"Próxima apertura" presente en ambas fichas · los 4 enlaces internos del post renderizados por `set:html` ·
+`Lilo &amp; Stitch` bien escapado en el post del cine · emoji correcto en las tarjetas sin foto (☕ y 📚) ·
+BunBun **no** aparece en la guía de cafeterías (correcto: sin nota) · sitemap 428 → **431 URLs**.
 
 ### Pendiente de VERIFICAR EN PERSONA (ver `VERIFICAR-EN-PERSONA.md`)
 - **BunBun:** número exacto de Miguel Delibes y qué calle es "Elías"; fecha de apertura.
