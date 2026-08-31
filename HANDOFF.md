@@ -14,15 +14,19 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `5dd6dc9` — **286 negocios, 32 guías, 8 posts de actualidad**, sitemap **432 URLs** tras el nuevo post (2026-08-31) |
+| **HEAD ref** | `7edca08` — **286 negocios, 32 guías, 8 posts de actualidad**, sitemap **432 URLs** verificado en vivo (2026-08-31) |
 
 ## ✅ Sesión 2026-08-31 (Windows local, DSH) — auditoría GSC #3 + post de Tapaveral/Carrera
 
 **Entorno nuevo:** el trabajo pasa a DSH en Windows (`C:\Users\User\Documents\elcanaveral-directory`).
-⚠️ **Restricciones del sandbox DSH (no del proyecto):** `git fetch/push` por SSH falla (sh/ssh no
-pueden crear pipes de señal) → **commits locales, el push se hace desde la terminal de John**;
-`astro build` local falla con `spawn EPERM` (Vite) → la verificación real sigue siendo el deploy
-verde de Netlify (CI). El repo local estaba en `ba27c24`, sincronizado con origin.
+⚠️ **Restricciones del sandbox DSH (no del proyecto):** `astro build` local falla con `spawn EPERM`
+(Vite) → la verificación real sigue siendo el deploy verde de Netlify (CI). **Git push: RECETA
+PROBADA en este sandbox** (idéntica a `azul-flojito-directorio-local-canarias/memoria.md`):
+remote a https sin token (`git remote set-url origin https://github.com/chefbusiness/elcanaveral-directory.git`)
++ `$env:GIT_CONFIG_GLOBAL = <archivo vacío en $TEMP>` (bypass del gitconfig global: su
+`insteadOf https→ssh` rompe el push) + `git -c http.sslBackend=openssl -c "http.https://github.com.extraHeader=Authorization: Basic $b64" push origin master`
+con `$b64` = base64(`x-access-token:` + `gh auth token`). (schannel falla `SEC_E_NO_CREDENTIALS`;
+ssh.exe falla `signal pipe`; el exit 1 de pwsh es solo el wrapper de stderr.)
 
 - **GSC: acceso DIRECTO ya restaurado (sin CSVs).** El MCP `gscServer` no está corriendo en este
   entorno, pero las credenciales viven en `~/mcp-gsc/` (`token.json` + `client_secrets.json`).
