@@ -46,12 +46,12 @@ ssh.exe falla `signal pipe`; el exit 1 de pwsh es solo el wrapper de stderr.)
    (CEIPSO 2º curso, IES curso 27/28, academias de inglés ⭐4,8+, Música de los Ríos, 3ª escuela
    infantil). Fuentes verificadas: madridinforma + gacetinmadrid (26-ago). ⚠️ Los medios difieren en
    los rangos exactos de Navidad/Semana Santa → el post solo afirma los datos coincidentes.
-3. **Acciones CTR de la auditoría DESPLEGADAS (commit `c62a5e0`, verificado en vivo):** nuevo bloque
-   `fichas` en `seo-overrides.json` + soporte en `[categoria]/[slug].astro` → title/meta propios para las
-   7 fichas con impresiones y 0 % CTR (obrador-de-goya, sanitas-dental, churreria-bernis, la-belle-vie,
-   mr-kebab, levaduramadre, supermercado-el-canaveral). Y en `[categoria]/index.astro` soporte
-   `intro` + `faq` por categoría → intro con cross-links + FAQPage (4 preguntas) en `/fruterias/`.
-   **Ojo:** no se tocó el title de `/fruterias/`; el cambio está en description + contenido.
+3. **Acciones CTR de la auditoría DESPLEGADAS (commits `c62a5e0` y `6c3b949`, verificado en vivo):**
+   nuevo bloque `fichas` en `seo-overrides.json` + soporte en `[categoria]/[slug].astro` → title/meta
+   propios para **10 fichas** con impresiones y 0 % CTR (obrador-de-goya, sanitas-dental, churreria-bernis,
+   la-belle-vie, mr-kebab, levaduramadre, supermercado-el-canaveral, **panaderia-bulevar, masruedas-coslada,
+   dreamfit-valdebernardo**). Y en `[categoria]/index.astro` soporte `intro` + `faq` por categoría →
+   intro con cross-links + FAQPage en `/fruterias/` (4 preguntas) y en `/tiendas-alimentacion/` (3 preguntas).
 4. **Único build fallido esperado:** el sandbox impide build local; sin cambios de código, el
    commit siguiente lo verifica Netlify por push de John.
 5. **Pendiente accionable de la auditoría (próxima sesión):** re-evaluar en GSC tras 4-6 semanas
