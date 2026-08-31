@@ -14,7 +14,7 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `e51a880` — **286 negocios, 32 guías, 7 posts de actualidad**, sitemap **431 URLs**, WebP (2026-08-21) |
+| **HEAD ref** | `5dd6dc9` — **286 negocios, 32 guías, 8 posts de actualidad**, sitemap **432 URLs** tras el nuevo post (2026-08-31) |
 
 ## ✅ Sesión 2026-08-31 (Windows local, DSH) — auditoría GSC #3 + post de Tapaveral/Carrera
 
