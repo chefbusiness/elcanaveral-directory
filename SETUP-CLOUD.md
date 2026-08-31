@@ -39,6 +39,6 @@ pnpm build
   `APIFY_TOKEN` del `.env`. Mejor para enriquecer las 107 fichas de forma repetible.
 
 ## Retomar el contexto del proyecto
-Lee **`HANDOFF.md`** y, si tienes acceso, `memory/elcanaveral-directory.md`.
+Lee **`handoff.md`** y si tienes acceso, `memory/elcanaveral-directory.md` (el setup de Abacus ya NO se usa — el trabajo va en local/DSH; ver `memoria.md`).
 **Plan en curso:** Apify enrich + fill → listicles "mejores X cañaveral" (motor del blog) → blog.
 Actor previsto: `compass/crawler-google-places`. Ranking de listicles: ponderado bayesiano (nota × volumen).

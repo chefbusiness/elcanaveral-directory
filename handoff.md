@@ -1,8 +1,9 @@
 # HANDOFF — elcanaveral.info
 
-> Backup de contexto en el repo. Última actualización: **2026-08-21** (sesión en local).
-> Si retomas: lee este archivo. La memoria del agente con el setup de Abacus (SSH, build, drip, pipelines)
-> está en `memory/elcanaveral-directory-abacus.md`.
+> Hoja de arranque y estado del proyecto. Última actualización: **2026-08-31** (cierre de sesión DSH).
+> 👉 Trilogía de contexto: `handoff.md` (estado/sesiones) · `memoria.md` (contexto, entorno y límites — leer
+> antes de retomar) · `roadmap.md` (hecho/pendiente priorizado). La receta de push del sandbox y el acceso
+> GSC por API están en `memoria.md`.
 
 ## Identidad del proyecto
 

@@ -3,7 +3,7 @@
 > Backlog para convertir el sitio en **EL hub de referencia de El Cañaveral**: no solo un
 > directorio de negocios, sino todo lo que un vecino (o quien se plantea mudarse) necesita saber.
 > Contenido de utilidad pura, evergreen, **sin competencia local**. Capturado el 2026-06-26.
-> Las guías nuevas se publican en **DRIP** (ver HANDOFF.md). Construir con SEO-first.
+> Las guías nuevas se publican en **DRIP** (ver handoff.md). Construir con SEO-first.
 
 ## 🧱 Arquitectura de contenido (pilares del sitio)
 
@@ -11,13 +11,13 @@ Visión: de "directorio de negocios" a **hub de vivir + disfrutar El Cañaveral*
 
 | Pilar | Qué es | Estado |
 |---|---|---|
-| 🏪 **Directorio** | 256 negocios locales, 4 zonas, filtro de zona | ✅ |
-| ⭐ **Guías "mejores X"** | rankings de negocios por categoría/zona (drip) | ✅ (29 guías) |
+| 🏪 **Directorio** | 286 negocios locales, 4 zonas, filtros zona/afinidad + zona×categoría | ✅ |
+| ⭐ **Guías "mejores X"** | rankings de negocios por categoría/zona (drip) | ✅ (32 guías) |
 | 🧭 **Utilidad del barrio** | `/transporte` ✅ · `/espacios-publicos` ✅ · `/servicios-publicos` ✅ · keystone `/vivir-en-el-canaveral` ✅ | ✅ |
-| 🗺️ **Planes y escapadas** | hub `/escapadas` + filtro afinidad ✅. Piloto **sureste** live; faltan centro/noreste/norte/oeste | 🟡 piloto |
-| 🎉 **Fiestas y días especiales** | hub `/fiestas` ✅ (Vicálvaro, Dos de Mayo, San Isidro). Ampliar con más | 🟡 |
+| 🗺️ **Planes y escapadas** | hub `/escapadas` + filtros de afinidad (5 regiones: sureste/centro/noreste/norte/oeste) | ✅ |
+| 🎉 **Fiestas y días especiales** | hub `/fiestas` ✅ (Vicálvaro, Dos de Mayo, San Isidro) — ampliar con más ferias | 🟡 |
 | 👥 **Comunidad** | cuentas/redes del barrio | ✅ |
-| 📰 **Blog de actualidad** | posts temáticos (de /comunidad) | ⬜ pendiente |
+| 📰 **Blog de actualidad** | `/actualidad` + posts (9) con fuente y fecha verificada — rutina repetible | ✅ |
 
 ## 🗺️ Pilares / ideas (priorizadas)
 
