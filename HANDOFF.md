@@ -14,7 +14,7 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `7edca08` — **286 negocios, 32 guías, 8 posts de actualidad**, sitemap **432 URLs** verificado en vivo (2026-08-31) |
+| **HEAD ref** | **9 posts de actualidad** — 286 negocios, 32 guías, sitemap 433 URLs en el próximo build (2026-08-31) |
 
 ## ✅ Sesión 2026-08-31 (Windows local, DSH) — auditoría GSC #3 + post de Tapaveral/Carrera
 
@@ -41,6 +41,11 @@ ssh.exe falla `signal pipe`; el exit 1 de pwsh es solo el wrapper de stderr.)
    (2-4 oct; inscripción de locales hasta 6-sep 23:59) + V Carrera Popular «Corre para Dar Vida»
    (4 oct, 10K/5K/infantiles, 12 €). Fuentes: vibecanaveral.es (2 páginas verificadas hoy).
    Enlaces internos a `/restaurantes/`, `/cafeterias/`, `/deporte/`, `/comunidad/`.
+2b. **Post de actualidad (9º)** `vuelta-al-cole-2026-2027-el-canaveral` (31-ago): calendario oficial
+   BOCM — 7-sep Infantil/Primaria/EE, 8-sep ESO/Bach/FP, fin 18-jun-2027 — + contexto local
+   (CEIPSO 2º curso, IES curso 27/28, academias de inglés ⭐4,8+, Música de los Ríos, 3ª escuela
+   infantil). Fuentes verificadas: madridinforma + gacetinmadrid (26-ago). ⚠️ Los medios difieren en
+   los rangos exactos de Navidad/Semana Santa → el post solo afirma los datos coincidentes.
 3. **Acciones CTR de la auditoría DESPLEGADAS (commit `c62a5e0`, verificado en vivo):** nuevo bloque
    `fichas` en `seo-overrides.json` + soporte en `[categoria]/[slug].astro` → title/meta propios para las
    7 fichas con impresiones y 0 % CTR (obrador-de-goya, sanitas-dental, churreria-bernis, la-belle-vie,
