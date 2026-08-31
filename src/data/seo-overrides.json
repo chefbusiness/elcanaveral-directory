@@ -95,7 +95,25 @@
     "tiendas-alimentacion": {
       "title": "Tiendas de alimentación en El Cañaveral",
       "description": "Tiendas de alimentación y mini markets en El Cañaveral con horario extendido y productos básicos. Direcciones, horarios y reseñas de proximidad.",
-      "h1": "Tiendas de Alimentación en El Cañaveral"
+      "h1": "Tiendas de Alimentación en El Cañaveral",
+      "intro": [
+        "Tres tiendas de barrio cubren la compra básica diaria en El Cañaveral: <a href=\"/tiendas-alimentacion/family-mini-market/\">Family Mini Market</a>, abierta todos los días hasta las 23:00, <a href=\"/tiendas-alimentacion/alimentacion-canaveral/\">Alimentación Cañaveral</a> (calle Blas de Lezo, 10) y <a href=\"/tiendas-alimentacion/alimentacion-y-bazar/\">Alimentación y Bazar</a> (avenida Miguel Delibes, 15). Sus valoraciones en Google van de 4,4 a 5.",
+        "Para la compra grande o el género que estas tiendas no tienen, el <a href=\"/supermercados/\">directorio de supermercados</a> recoge las opciones de la zona con sus horarios y valoraciones."
+      ],
+      "faq": [
+        {
+          "q": "¿Qué tiendas de alimentación hay en El Cañaveral?",
+          "a": "El directorio recoge tres: Family Mini Market, Alimentación Cañaveral y Alimentación y Bazar, todas de barrio y con horarios de mañana y tarde. Sus valoraciones reales de Google van de 4,4 a 5 sobre 5."
+        },
+        {
+          "q": "¿Alguna tienda de alimentación abre los domingos en El Cañaveral?",
+          "a": "Sí: Family Mini Market (calle Mario Moreno Cantinflas, 3) abre todos los días de 9:00 a 23:00, también domingos y festivos."
+        },
+        {
+          "q": "¿Tienen fruta y verdura fresca las tiendas de alimentación del barrio?",
+          "a": "Para fruta y verdura fresca las opciones más completas son las fruterías del barrio: Megafruta, Frutas y Verduras Vida Sana y Frutería Charcutería El Cañaveral, todas en el <a href=\"/fruterias/\">directorio de fruterías</a>."
+        }
+      ]
     },
     "inmobiliarias": {
       "title": "Inmobiliarias en El Cañaveral, Vicálvaro y Coslada",
@@ -131,6 +149,18 @@
     "supermercado-el-canaveral": {
       "title": "Supermercado El Cañaveral — Súper de barrio en Ferenc Puskas",
       "description": "Supermercado de proximidad en el corazón de El Cañaveral (calle Ferenc Puskas, 245) para la compra diaria. 5 de 5 (15 reseñas). L-S 9:30-14:30 y 17:00-20:30."
+    },
+    "panaderia-bulevar": {
+      "title": "Panadería Bulevar — Pan de barrio, bollería y empanadas",
+      "description": "Panadería de barrio en el Bulevar de Indalecio Prieto: pan diario, bollería y empanadas. 4,4 de 5 con 128 reseñas. L-S 7:00-15:00 y 17:00-20:00; domingos 8:00-14:00."
+    },
+    "masruedas-coslada": {
+      "title": "Masruedas First Stop Coslada — Neumáticos y mecánica rápida",
+      "description": "Neumáticos, mecánica rápida y revisiones pre-ITV en Coslada, a un paso de El Cañaveral. 4,9 de 5 (116 reseñas). L-V 8:30-19:00 y sábados 9:00-13:00."
+    },
+    "dreamfit-valdebernardo": {
+      "title": "Dreamfit Valdebernardo — Gimnasio 24 horas cerca de El Cañaveral",
+      "description": "Gimnasio completo abierto las 24 horas con acceso por huella: musculación, cardio y clases. 4 de 5 con 1.508 reseñas. Cerca de El Cañaveral (calle de los Pinillas, 1)."
     }
   }
 }
