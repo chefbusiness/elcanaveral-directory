@@ -6,12 +6,14 @@ import NegocioCard from "@/components/NegocioCard.astro";
 import Galeria from "@/components/Galeria.astro";
 import { generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona } from "@/lib/directory";
 import type { Negocio } from "@/lib/directory";
+import seoOverrides from "@/data/seo-overrides.json";
 
 export function getStaticPaths() {
   return generateNegocioPaths();
 }
 
 const negocio = Astro.props as Negocio;
+const fichaSeo = (seoOverrides as any).fichas?.[negocio.slug] || {};
 const schema = generateLocalBusinessSchema(negocio);
 const servicios = (negocio.servicios as string[] | undefined) || [];
 const destacados = (negocio.destacados as string[] | undefined) || [];
@@ -31,7 +33,10 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
   .slice(0, 4);
 ---
 
-<BaseLayout title={`${negocio.name} — ${negocio.zonaName}`} description={negocio.description}>
+<BaseLayout
+  title={fichaSeo.title || `${negocio.name} — ${negocio.zonaName}`}
+  description={fichaSeo.description || negocio.description}
+>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </Fragment>

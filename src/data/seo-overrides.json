@@ -62,8 +62,30 @@
     },
     "fruterias": {
       "title": "Fruterías en El Cañaveral — fruta fresca y horarios",
-      "description": "Fruterías y verdulerías con producto de temporada en El Cañaveral. Direcciones, horarios y reseñas, más la guía de las fruterías mejor valoradas del barrio.",
-      "h1": "Fruterías en El Cañaveral"
+      "description": "Fruterías y verdulerías con producto de temporada en El Cañaveral: direcciones, horarios (incluidos los domingos de Megafruta) y reseñas reales. Más la guía de las mejor valoradas.",
+      "h1": "Fruterías en El Cañaveral",
+      "intro": [
+        "El Cañaveral ya tiene frutería de barrio para la compra diaria: desde la clásica <a href=\"/fruterias/megafruta-canaveral/\">Megafruta</a>, que además abre los domingos por la mañana, hasta verdulerías de proximidad como <a href=\"/fruterias/frutas-y-verduras-vida-sana/\">Frutas y Verduras Vida Sana</a>. La mejor valorada de la zona es <a href=\"/fruterias/la-fruteria-de-mama/\">La Frutería de Mamá</a> (calle Ana Frank), con 5 sobre 5 en Google.",
+        "Abajo tienes las 9 fruterías y verdulerías del directorio, ordenadas por valoraciones reales de Google. También puedes filtrar por zona o ir directamente a la <a href=\"/blog/mejores-fruterias-el-canaveral/\">guía de las mejores fruterías de El Cañaveral</a>."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es la mejor frutería de El Cañaveral?",
+          "a": "Según las valoraciones de Google encabezan el directorio La Frutería de Mamá (5 sobre 5, 96 reseñas), Frutas y Verduras Vida Sana (4,7) y Frutería Charcutería El Cañaveral (4,5). La guía «Las mejores fruterías de El Cañaveral» las ordena combinando nota y volumen de reseñas."
+        },
+        {
+          "q": "¿Qué fruterías abren los domingos en El Cañaveral?",
+          "a": "Megafruta (avenida Miguel Delibes, 25) abre los domingos de 9:30 a 14:00. El resto de fruterías del barrio abre de lunes a sábado; consulta el horario exacto en cada ficha del directorio."
+        },
+        {
+          "q": "¿Hay fruterías dentro del barrio o hay que salir a otra zona?",
+          "a": "Sí, hay cuatro fruterías dentro de El Cañaveral: Megafruta, Frutas y Verduras Vida Sana, Frutería Charcutería El Cañaveral y La Frutería de Mamá, todas a pocos minutos a pie del centro. El directorio suma 9 fruterías incluyendo las de Vicálvaro, Coslada y San Fernando de Henares."
+        },
+        {
+          "q": "¿Dónde puedo comparar precios de fruta cerca de El Cañaveral?",
+          "a": "Los precios cambian cada semana, así que además de las fruterías del barrio merece la pena comparar con los supermercados de la zona: Mercadona, Lidl y Ahorramás están en el <a href=\"/supermercados/\">directorio de supermercados</a> con su dirección, horario y valoraciones."
+        }
+      ]
     },
     "panaderias": {
       "title": "Panaderías y obradores en El Cañaveral",
@@ -79,6 +101,36 @@
       "title": "Inmobiliarias en El Cañaveral, Vicálvaro y Coslada",
       "description": "Agencias inmobiliarias en El Cañaveral, Vicálvaro y Coslada para comprar, vender o alquilar vivienda. Contacto y reseñas, más la guía de las mejor valoradas.",
       "h1": "Inmobiliarias en El Cañaveral y alrededores"
+    }
+  },
+  "fichas": {
+    "obrador-de-goya": {
+      "title": "Obrador de Goya — Pan de leña en El Cañaveral",
+      "description": "Pan de leña y recetas clásicas en la avenida Miguel Delibes, 80 (El Cañaveral). 3,8 de 5 en Google con 357 reseñas. Horarios y dirección en la ficha."
+    },
+    "sanitas-dental-el-canaveral": {
+      "title": "Sanitas Dental El Cañaveral — Dentista en Miguel Delibes",
+      "description": "Clínica dental Sanitas en El Cañaveral (Av. Miguel Delibes, 18): tecnología avanzada y financiación. 3,8 de 5 (79 reseñas). L-V 9:00-21:00 y sábados 10:00-14:00."
+    },
+    "churreria-bernis": {
+      "title": "Churrería Bernís — Churros y porras cerca de El Cañaveral",
+      "description": "Churros y porras artesanales al momento en Vicálvaro, a pocos minutos de El Cañaveral. 4,5 de 5 con más de 1.100 reseñas de Google. Horarios y dirección."
+    },
+    "la-belle-vie-canaveral": {
+      "title": "La Belle Vie — Peluquería y estética en El Cañaveral",
+      "description": "Salón de belleza integral en El Cañaveral (calle Victoria Kent, 7): corte, color y tratamientos estéticos. 4,7 de 5 (120 reseñas). M-V 10:00-20:00 y sábados 9:00-15:00."
+    },
+    "mr-kebab-canaveral": {
+      "title": "Mr Kebab El Cañaveral — Kebab turco y a domicilio",
+      "description": "Cocina turca con raciones generosas en El Cañaveral: kebab, falafel y opciones para llevar y a domicilio. 4,7 de 5 (423 reseñas). Horarios y ubicación."
+    },
+    "levaduramadre": {
+      "title": "Levadura Madre — Pan de masa madre en El Cañaveral",
+      "description": "Panadería artesanal de masa madre y larga fermentación en la avenida Blas de Lezo. 3,8 de 5 (74 reseñas). L-V 8:00-14:30 y 17:00-20:00; sábados 8:00-14:30."
+    },
+    "supermercado-el-canaveral": {
+      "title": "Supermercado El Cañaveral — Súper de barrio en Ferenc Puskas",
+      "description": "Supermercado de proximidad en el corazón de El Cañaveral (calle Ferenc Puskas, 245) para la compra diaria. 5 de 5 (15 reseñas). L-S 9:30-14:30 y 17:00-20:30."
     }
   }
 }

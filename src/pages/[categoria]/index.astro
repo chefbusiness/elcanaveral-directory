@@ -31,6 +31,20 @@ const seo = (seoOverrides.categorias as Record<string, any>)[slug!] || {};
 const seoTitle = seo.title || `${name} en El Cañaveral y alrededores`;
 const seoDesc = seo.description || description;
 const seoH1 = seo.h1 || name;
+const seoIntro: string[] = seo.intro || [];
+const seoFaq: { q: string; a: string }[] = seo.faq || [];
+
+const faqSchema = seoFaq.length > 0
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: seoFaq.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    }
+  : null;
 
 const itemListSchema = {
   "@context": "https://schema.org",
@@ -53,6 +67,7 @@ const itemListSchema = {
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   </Fragment>
 
   <Header />
@@ -74,6 +89,14 @@ const itemListSchema = {
         <p class="text-gray-600 mt-2">{seoDesc}</p>
         <p class="text-sm text-gray-400 mt-1">{count} negocios</p>
       </div>
+
+      {seoIntro.length > 0 && (
+        <div class="prose-custom space-y-3 mb-8 max-w-3xl">
+          {seoIntro.map((p) => (
+            <p class="text-gray-700 leading-relaxed [&_a]:text-brand-600 [&_a:hover]:text-brand-700 [&_a]:underline [&_a]:underline-offset-2" set:html={p} />
+          ))}
+        </div>
+      )}
 
       {zonasConNegocios.length > 1 && (
         <ZonaFilter zonas={zonasConNegocios} total={negocios.length} />
@@ -103,6 +126,23 @@ const itemListSchema = {
 
       {negocios.length === 0 && (
         <p class="text-gray-500 text-center py-12">No hay negocios en esta categoria aun.</p>
+      )}
+
+      {seoFaq.length > 0 && (
+        <section class="mt-12 max-w-3xl">
+          <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes</h2>
+          <div class="space-y-3">
+            {seoFaq.map((f) => (
+              <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+                <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                  {f.q}
+                  <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+                </summary>
+                <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
       )}
     </div>
   </section>
