@@ -41,12 +41,16 @@ ssh.exe falla `signal pipe`; el exit 1 de pwsh es solo el wrapper de stderr.)
    (2-4 oct; inscripción de locales hasta 6-sep 23:59) + V Carrera Popular «Corre para Dar Vida»
    (4 oct, 10K/5K/infantiles, 12 €). Fuentes: vibecanaveral.es (2 páginas verificadas hoy).
    Enlaces internos a `/restaurantes/`, `/cafeterias/`, `/deporte/`, `/comunidad/`.
-3. **Único build fallido esperado:** el sandbox impide build local; sin cambios de código, el
+3. **Acciones CTR de la auditoría DESPLEGADAS (commit `c62a5e0`, verificado en vivo):** nuevo bloque
+   `fichas` en `seo-overrides.json` + soporte en `[categoria]/[slug].astro` → title/meta propios para las
+   7 fichas con impresiones y 0 % CTR (obrador-de-goya, sanitas-dental, churreria-bernis, la-belle-vie,
+   mr-kebab, levaduramadre, supermercado-el-canaveral). Y en `[categoria]/index.astro` soporte
+   `intro` + `faq` por categoría → intro con cross-links + FAQPage (4 preguntas) en `/fruterias/`.
+   **Ojo:** no se tocó el title de `/fruterias/`; el cambio está en description + contenido.
+4. **Único build fallido esperado:** el sandbox impide build local; sin cambios de código, el
    commit siguiente lo verifica Netlify por push de John.
-4. **Pendiente accionable de la auditoría (próxima sesión):** CTR de ~7 fichas con ≥30 impr y
-   0 % (obrador-de-goya 121, sanitas-dental 89, churreria-bernis 49, la-belle-vie 48, mr-kebab 41,
-   levaduramadre 38, supermercado-el-canaveral 36) y `/fruterias/` (342 impr, CTR 0,29 % —
-   queries de marca «megafruta»). URLs legacy con impresiones ya tienen 301 → no hay 301 urgentes.
+5. **Pendiente accionable de la auditoría (próxima sesión):** re-evaluar en GSC tras 4-6 semanas
+   si las 7 fichas y `/fruterias/` ganan CTR; seguir con el resto de fichas con >30 impr si funcionó.
 
 
 ## ✅ Sesión 2026-08-21 (local) — 2 aperturas nuevas + estado `proxima-apertura`
