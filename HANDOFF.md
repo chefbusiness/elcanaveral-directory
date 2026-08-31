@@ -16,6 +16,35 @@
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
 | **HEAD ref** | `e51a880` — **286 negocios, 32 guías, 7 posts de actualidad**, sitemap **431 URLs**, WebP (2026-08-21) |
 
+## ✅ Sesión 2026-08-31 (Windows local, DSH) — auditoría GSC #3 + post de Tapaveral/Carrera
+
+**Entorno nuevo:** el trabajo pasa a DSH en Windows (`C:\Users\User\Documents\elcanaveral-directory`).
+⚠️ **Restricciones del sandbox DSH (no del proyecto):** `git fetch/push` por SSH falla (sh/ssh no
+pueden crear pipes de señal) → **commits locales, el push se hace desde la terminal de John**;
+`astro build` local falla con `spawn EPERM` (Vite) → la verificación real sigue siendo el deploy
+verde de Netlify (CI). El repo local estaba en `ba27c24`, sincronizado con origin.
+
+- **GSC: acceso DIRECTO ya restaurado (sin CSVs).** El MCP `gscServer` no está corriendo en este
+  entorno, pero las credenciales viven en `~/mcp-gsc/` (`token.json` + `client_secrets.json`).
+  Con ellas se llama a la **Search Console API v3** (webmasters) desde Node y se extrae todo el
+  rendimiento: helper `.tmp/gsc-query.mjs` + raws en `.tmp/gsc-raw/` (gitignored). Propiedad:
+  `sc-domain:elcanaveral.info` (¡ojo: la URL property `https://elcanaveral.info/` del mismo
+  cuenta está vacía; hay que usar la de dominio).
+1. **Auditoría GSC #3** (sección abajo): 35 clics · 4.965 impr · CTR 0,70 % · pos 10,5
+   (16-abr→31-ago). Ventana nueva (20-jul→31-ago): 17 clics · 1.698 impr · **CTR 1,00 %**.
+   El CTR casi se dobla vs #2 (0,58 %) — la apuesta por contenido comparativo/informativo paga.
+2. **Post de actualidad (8º)** `tapaveral-2026-y-v-carrera-popular-el-canaveral`: Tapaveral 2026
+   (2-4 oct; inscripción de locales hasta 6-sep 23:59) + V Carrera Popular «Corre para Dar Vida»
+   (4 oct, 10K/5K/infantiles, 12 €). Fuentes: vibecanaveral.es (2 páginas verificadas hoy).
+   Enlaces internos a `/restaurantes/`, `/cafeterias/`, `/deporte/`, `/comunidad/`.
+3. **Único build fallido esperado:** el sandbox impide build local; sin cambios de código, el
+   commit siguiente lo verifica Netlify por push de John.
+4. **Pendiente accionable de la auditoría (próxima sesión):** CTR de ~7 fichas con ≥30 impr y
+   0 % (obrador-de-goya 121, sanitas-dental 89, churreria-bernis 49, la-belle-vie 48, mr-kebab 41,
+   levaduramadre 38, supermercado-el-canaveral 36) y `/fruterias/` (342 impr, CTR 0,29 % —
+   queries de marca «megafruta»). URLs legacy con impresiones ya tienen 301 → no hay 301 urgentes.
+
+
 ## ✅ Sesión 2026-08-21 (local) — 2 aperturas nuevas + estado `proxima-apertura`
 
 ⚠️ **CAMBIO DE ENTORNO:** la VM de **Abacus ya NO se usa**. El trabajo continuado pasa a la **VPS propia de
@@ -231,7 +260,9 @@ Refrescar todo: `python scripts/apify_enrich.py --mode enrich --write` (coste ~$
 
 **Queda:**
 1. **📰 Blog de actualidad** — ✅ ESTRENADO (2026-06-28) y con **6 posts** a 20-jul. `/actualidad` + `/actualidad/[slug]`, datos en `src/data/actualidad.json` (drip-aware, schema NewsArticle). **REGLA: solo hechos reales con fuente, NO inventar noticias; comprobar la FECHA de la fuente y confirmar las cifras en la fuente (no en el resumen del buscador).** Rutina repetible: buscar novedades → publicar con fuente → refrescar posts antiguos.
-2. **Auditoría GSC** — ✅ #1 (15-jul) y ✅ #2 (20-jul) hechas, ver secciones abajo. **Próxima: finales de agosto 2026** (cambios madurados + vuelta del tráfico + pico de vuelta al cole). John exporta el CSV; el agente no tiene acceso a Search Console.
+2. **Auditoría GSC** — ✅ #1 (15-jul) · ✅ #2 (20-jul) · ✅ **#3 (31-ago, sección abajo)**.
+   Método nuevo: API v3 directa con credenciales de `~/mcp-gsc/` (sin CSV). **Próxima: ~finales de
+   septiembre** (maduracion de guías + actualidad + vuelta al cole).
 3. **🍹 Guía de terrazas — PARKED**: John aporta datos a medida que visita locales en persona. No enfocarse hasta que él lo pida. (Campos `terraza`/`delivery` ya se capturan en `apify_enrich.py` desde `additionalInfo`.)
 4. **Ampliar fiestas** (opcional): más ferias reales de la zona cuando toque.
 5. **Verificar in situ** (`VERIFICAR-EN-PERSONA.md`): Obramat (¿existe/otro rótulo?) y Mediadores (¿= SM Homes?).
@@ -285,6 +316,41 @@ El desplegable de resultados quedaba **oculto tras las tarjetas de zonas** y rec
 - Schema **ya cubierto** (fichas con LocalBusiness/MedicalBusiness + AggregateRating; categorías con ItemList) → no es la palanca.
 - 🗓️ **Próxima auditoría: finales de agosto** (cambios madurados + vuelta del tráfico + pico de vuelta al cole).
 - ℹ️ El sitemap **no se reenvía** a GSC: Google re-rastrea solo `sitemap-index.xml`. John exporta el CSV (el agente no tiene acceso a Search Console).
+
+## 📊 Auditoría GSC #3 — 2026-08-31 (Search Console API v3, propiedad `sc-domain:elcanaveral.info`)
+
+**Método nuevo:** ya no hace falta CSV — credenciales en `~/mcp-gsc/` (`token.json`) + API v3
+`webmasters` desde Node. Raws en `.tmp/gsc-raw/` (gitignored). Recordar: en propiedades de dominio
+la dimensión `query` devuelve datos parciales; usar `page` como fuente fiable.
+
+| Métrica | #2 (16-abr→20-jul) | #3 (16-abr→31-ago) | Lectura |
+|---|---|---|---|
+| Clicks | 17 | **35** | ×2 en 6 semanas |
+| Impresiones | 2.941 | **4.965** | +69 % |
+| CTR | 0,58 % | **0,70 %** | hacia el rango normal (1,5-2,5 %) |
+| Posición media | ~11-12 | **10,5** | borde de página 1 |
+
+**Últimos 42 días (20-jul→31-ago):** 17 clics · 1.698 impr · **CTR 1,00 %** · pos 11,4.
+Semanas mejores: 27-jul (4 clics, 1,67 %) y 24-ago (3 clics, 1,21 %). Sin caída estival:
+~250-310 impr/semana estable. Mejor página: `/cafeterias/` (326 impr, 7 clics, **CTR 2,15 %**, pos 9,7).
+Peor: `/fruterias/` (342 impr, 1 clic, CTR 0,29 % — queries de marca «megafruta cañaveral»
+79 impr pos 7,6 y «megafruta» 74 impr pos 11,5). Queries (parciales en dominio): hiperlocal de
+marca otra vez (panaderia bulevar 31 impr, la fruteria de mama 22, levadura madre 11…);
+«el cañaveral» genérico a pos 86 (43 impr) — no es nuestro mercado, bien ignorarlo.
+
+**Señales nuevas:** `/actualidad/` (44 impr, pos 87) y `/blog/` (9 impr) ya asoman — el contenido
+informativo empieza a indexarse; las 29 guías aún no suman (maduracion 4-6 semanas, normal).
+**URLs no-canónicas con impresiones** (non-www, slashless, `/directory/…`, `/novedades-urbanas…`):
+todas tienen 301 (o los datos son pre-redirect) → **no hay 301 urgentes nuevos**.
+
+**Acciones propuestas (próxima sesión):**
+1. **CTR de fichas con impresiones y 0 %** — ~7 fichas con ≥30 impr en 42 días (obrador-de-goya 121,
+   sanitas-dental 89, churreria-bernis 49, la-belle-vie 48, mr-kebab 41, levaduramadre 38,
+   supermercado-el-canaveral 36): revisar title/meta de ficha (¿incluyen zona/barrio?) y valorar
+   FAQPage en las de mayor demanda (salud/dental 89 impr).
+2. **`/fruterias/`** — añadir intro + FAQ anti-marca (es la página con más impresiones del sitio y
+   peor CTR; queries «megafruta» no van a convertirse, pero la genérica «fruteria cañaveral» sí).
+3. Confirmar en la próxima auditoría si guías + actualidad empiezan a clicar (ahí está la apuesta).
 
 ## ⚠️ Restricciones de trabajo (verano Madrid)
 - **CPU < 65 °C** — monitorizar con `istats cpu temp`; ralentizar si sube. **NO usar Playwright** (recalienta).

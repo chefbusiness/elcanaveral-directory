@@ -1,6 +1,61 @@
 {
   "posts": [
     {
+      "slug": "tapaveral-2026-y-v-carrera-popular-el-canaveral",
+      "title": "Tapaveral 2026 y la V Carrera Popular: el gran fin de semana de octubre en El Cañaveral",
+      "date": "2026-08-31",
+      "updated": "2026-08-31",
+      "excerpt": "La V Ruta de la Tapa vuelve del 2 al 4 de octubre y la V Carrera Popular «Corre para Dar Vida» el domingo 4. Los locales del barrio pueden inscribirse en Tapaveral hasta el 6 de septiembre.",
+      "tags": [
+        "Eventos",
+        "Gastronomía",
+        "Deporte"
+      ],
+      "lead": "El primer fin de semana de octubre El Cañaveral se convierte en escaparate de su hostelería y de su lado más solidario. Por un lado, Tapaveral 2026, la V Ruta de la Tapa del barrio, se celebrará del 2 al 4 de octubre. Por otro, la V Carrera Popular «Corre para Dar Vida» vuelve el domingo 4 con 10K, 5K y pruebas infantiles. Y el plazo para que los locales se apunten a la ruta de la tapa acaba el 6 de septiembre.",
+      "datosClave": [
+        "Tapaveral 2026 (V Ruta de la Tapa de El Cañaveral) se celebrará del 2 al 4 de octubre.",
+        "Los bares, restaurantes y cafeterías del barrio pueden inscribirse hasta el 6 de septiembre a las 23:59.",
+        "La V Carrera Popular «Corre para Dar Vida» será el domingo 4 de octubre, con 10K, 5K y pruebas infantiles.",
+        "La inscripción a la carrera cuesta 12 € y las pruebas infantiles son para niños de 2 a 11 años.",
+        "Ambos eventos los organiza ViBe El Cañaveral con el apoyo de la Junta Municipal de Vicálvaro."
+      ],
+      "secciones": [
+        {
+          "h2": "Tapaveral 2026: la ruta de la tapa cumple cinco años",
+          "parrafos": [
+            "ViBe El Cañaveral, con el apoyo de la Junta Municipal de Vicálvaro, ha abierto el plazo para que los <a href=\"/restaurantes/\">restaurantes</a> y <a href=\"/cafeterias/\">cafeterías del barrio</a> se inscriban en la quinta edición de Tapaveral, la ruta de la tapa de El Cañaveral. El formulario oficial estará abierto hasta el 6 de septiembre a las 23:59.",
+            "El evento se celebrará del 2 al 4 de octubre. Durante ese fin de semana, vecinos y visitantes podrán recorrer los establecimientos participantes, degustar sus tapas, votar sus favoritas y participar en sorteos. Cada local debe garantizar la disponibilidad de su tapa durante las franjas horarias del evento.",
+            "Las mejores propuestas se llevan premio: una cena para dos en uno de los locales participantes (importe máximo de 60 € por cena) y una cesta gourmet valorada en más de 100 €. La tapa debe ser única, innovadora y creativa: se valorarán la originalidad, el sabor y la presentación, con la idea de que las propuestas puedan incorporarse después a la carta habitual del establecimiento."
+          ]
+        },
+        {
+          "h2": "V Carrera Popular: 10K, 5K y pruebas infantiles el domingo 4",
+          "parrafos": [
+            "La V Carrera Popular El Cañaveral – «Corre para Dar Vida» vuelve el domingo 4 de octubre. Ofrece carreras de 10K para quienes quieren competir o mejorar marca, 5K para iniciarse o correr sin presión y pruebas infantiles para niños de 2 a 11 años. La inscripción cuesta 12 €.",
+            "El recorrido discurre por las calles de El Cañaveral, con un circuito rápido que combina zonas llanas con repechos. La organización gestiona la logística desde su sede de la calle Alto del Esparragal 204, y el ambiente de las anteriores ediciones la ha consolidado como una de las carreras populares más esperadas de Vicálvaro.",
+            "Si te apetece calentar antes de la carrera, en el <a href=\"/deporte/\">directorio deportivo</a> tienes gimnasios y centros de entrenamiento del barrio. Y para no perderte nada de lo que se cuece en la zona, las <a href=\"/comunidad/\">cuentas del barrio</a> publican convocatorias y novedades cada semana."
+          ]
+        },
+        {
+          "h2": "Un fin de semana para ver el barrio en su mejor versión",
+          "parrafos": [
+            "Tapa y carrera en el mismo fin de semana: el 2, 3 y 4 de octubre se dan cita la hospitalidad de los locales de siempre y la marea de corredores que vuelve a recorrer las calles. Para los negocios es una oportunidad de verse en el mapa; para los vecinos, un recordatorio de que el barrio ya organiza sus propias tradiciones.",
+            "Si tienes información sobre estos u otros eventos de El Cañaveral, compártela con nosotros. Este blog se nutre de los ojos y los oídos de los vecinos, y cada pista ayuda a que todos estemos al día."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "ViBe El Cañaveral — Inscripción abierta Tapaveral 2026",
+          "url": "https://vibecanaveral.es/noticias/Inscripci%C3%B3n-abierta-Tapaveral-2026/pi4I487CgoFrxwsXtURr"
+        },
+        {
+          "name": "ViBe El Cañaveral — V Carrera Popular El Cañaveral 2026",
+          "url": "https://vibecanaveral.es/eventos/V-Carrera-Popular-El-Ca%C3%B1averal-2026-en-Madrid/2THDpTlpWyBApXOdARtU"
+        }
+      ]
+    },
+    {
       "slug": "nuevas-aperturas-el-canaveral-agosto-2026",
       "title": "Dos nuevas aperturas en El Cañaveral: BunBun y Música de los Ríos",
       "date": "2026-08-21",
