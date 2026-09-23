@@ -1,6 +1,6 @@
 # HANDOFF — elcanaveral.info
 
-> Hoja de arranque y estado del proyecto. Última actualización: **2026-08-31** (cierre de sesión DSH).
+> Hoja de arranque y estado del proyecto. Última actualización: **2026-09-23** (sesión DSH — GSC #4).
 > 👉 Trilogía de contexto: `handoff.md` (estado/sesiones) · `memoria.md` (contexto, entorno y límites — leer
 > antes de retomar) · `roadmap.md` (hecho/pendiente priorizado). La receta de push del sandbox y el acceso
 > GSC por API están en `memoria.md`.
@@ -11,11 +11,41 @@
 |---|---|
 | **Qué** | Directorio hiperlocal del barrio El Cañaveral (Vicálvaro, Madrid) |
 | **Live** | https://www.elcanaveral.info/ (canonical `www`, apex 301 → www) |
-| **Local** | `/Users/johnguerrero/elcanaveral-directory/` |
+| **Local (Windows/DSH)** | `C:\Users\User\Documents\elcanaveral-directory` |
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | **9 posts de actualidad** — 286 negocios, 32 guías, sitemap 433 URLs en el próximo build (2026-08-31) |
+| **HEAD ref** | `2eb2b17` — 286 negocios, 32 guías, 9 posts, sitemap 433 URLs (2026-09-23) |
+
+## ✅ Sesión 2026-09-23 (Windows local, DSH) — auditoría GSC #4 + clusters nuevos
+
+1. **GSC #4 (API directa, ventanas de 28 días).** PRE (29-jul→25-ago): 12 clics · 1.162 impr · CTR 1,03 % ·
+   pos 10,6. POST (26-ago→23-sep): **19 clics · 1.823 impr · CTR 1,04 % · pos 12,2**. Acumulado desde
+   16-abr: **53 clics · 6.609 impr · CTR 0,80 % · pos 10,7**.
+   → **Lectura clave: el sitio crece por AMPLITUD** (+58 % clics, +57 % impresiones; 110 queries con
+   impresiones en POST vs 54 en PRE), **no por CTR**. Los overrides de title/meta del 31-ago **no movieron
+   el CTR** de las fichas objetivo (siguen ~0 %; alguna incluso perdió impresiones) y la posición media baja
+   al entrar queries nuevas más lejanas.
+   → **Lo que SÍ convierte**: páginas de **categoría/zona** (`/cafeterias/` 2,02 %, `/tiendas-alimentacion/`
+   4,55 %, `/zona/el-canaveral/supermercados/` 2,99 %) frente al **~0 % de las fichas de marca** (el Map
+   Pack se lleva el clic). El ROI está en listados/comparativas, no en fichas de marca.
+2. **Clusters nuevos detectados (buena posición, 0 clics):** `estanco el cañaveral` (88 impr pos 6),
+   `alcampo / ahorramas / mi alcampo cañaveral` (~150 impr pos 6-7), `escuela infantil aupa` (39 impr),
+   `farmacia sonrisas del cañaveral` (34 impr), `panaderia bulevar` (16 impr).
+3. **Acciones desplegadas (commit `2eb2b17`, verificadas en vivo):**
+   - **`/supermercados/`** — intro + FAQPage (4 preguntas) con el dato de **los 6 supermercados que abren
+     los domingos** (Ahorramas, Lidl, Mi Alcampo, Hiper Cañaveral, Covirán Plus, Casa Elías) + title/description
+     nuevos con el gancho «domingos». Ataca el cluster de mayor volumen detectado.
+   - **`/educacion/`** — intro + FAQPage (4 preguntas: escuelas infantiles 0-3, la mejor valorada,
+     academias de inglés, escuela de música).
+   - **6 fichas nuevas con overrides** (ya son 16): estanco-el-canaveral, mi-alcampo, ahorramas,
+     escuela-infantil-aupa, farmacia-sonrisas-canaveral, vicalcan-veterinario.
+   - 🐛 **Bug corregido en producción:** las respuestas de FAQ con enlaces internos se mostraban como
+     **HTML escapado** (`&lt;a href=…`, visible en `/fruterias/` desde el 31-ago) y metían HTML crudo en el
+     JSON-LD. Ahora: respuesta con `set:html` (enlace clicable) y schema con **texto plano** (`stripHtml`).
+4. **Pendiente (GSC #5, ~mediados de octubre):** medir si el patrón «categoría/zona + FAQ» mueve el CTR;
+   si funciona, replicarlo en las categorías con más impresiones (`/salud/`, `/mascotas/`, `/panaderias/`)
+   y no seguir invirtiendo en fichas de marca.
 
 ## ✅ Sesión 2026-08-31 (Windows local, DSH) — auditoría GSC #3 + post de Tapaveral/Carrera
 
