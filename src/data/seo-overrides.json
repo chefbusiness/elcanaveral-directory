@@ -37,7 +37,7 @@
       "description": "Educación en El Cañaveral: escuelas infantiles y guarderías 0-3 años (públicas y privadas), academias de inglés y autoescuela. Plazas, edades, horarios y reseñas de las familias.",
       "h1": "Educación en El Cañaveral: guarderías, escuelas y academias",
       "intro": [
-        "El Cañaveral ya tiene una oferta educativa completa para los primeros años: siete escuelas infantiles de 0 a 3 años en el barrio —<a href=\"/educacion/escuela-infantil-los-minons/\">Los Minons</a> (la mejor valorada, 5 sobre 5), <a href=\"/educacion/escuela-infantil-aupa/\">AUPA</a>, <a href=\"/educacion/escuela-infantil-nemomarlin-canaveral/\">Nemomarlin</a>, Barcos de Papel, Topochitos, la municipal Muñeco de Nieve y la autonómica Conde Niño—, además de academias de idiomas y una autoescuela.",
+        "El Cañaveral ya tiene una oferta educativa completa para los primeros años: siete escuelas infantiles de 0 a 3 años en el barrio —<a href=\"/educacion/escuela-infantil-los-minons/\">Los Minons</a> (la mejor valorada, 5 sobre 5), <a href=\"/educacion/escuela-infantil-aupa/\">AUPA</a>, <a href=\"/educacion/nemomarlin-canaveral/\">Nemomarlin</a>, Barcos de Papel, Topochitos, la municipal Muñeco de Nieve y la autonómica Conde Niño—, además de academias de idiomas y una autoescuela.",
         "Para quien busca inglés, el barrio tiene cuatro academias con notas muy altas: <a href=\"/educacion/english-connection-canaveral/\">English Connection</a> (4,9 con 74 reseñas), Larry and Andy (5), Kids &amp; Us (4,8) y Ms&amp;Mr Language (4,8). Tienes el detalle en la <a href=\"/blog/mejores-academias-ingles-el-canaveral/\">guía de academias de inglés</a> y el ranking de guarderías en la <a href=\"/blog/mejores-guarderias-el-canaveral/\">guía de guarderías</a>."
       ],
       "faq": [
@@ -61,8 +61,30 @@
     },
     "salud": {
       "title": "Dentistas, fisios y farmacias en El Cañaveral",
-      "description": "Clínicas dentales, fisioterapeutas, farmacias y centros médicos en El Cañaveral y Vicálvaro. Especialidades, horarios y contacto, más la guía de las mejores clínicas dentales.",
-      "h1": "Salud y Bienestar en El Cañaveral"
+      "description": "Clínicas dentales, fisioterapeutas, farmacias y centros médicos en El Cañaveral y Vicálvaro. Especialidades, horarios (farmacias hasta las 22:00) y reseñas, más la guía de las mejores clínicas dentales.",
+      "h1": "Salud y Bienestar en El Cañaveral",
+      "intro": [
+        "El Cañaveral tiene ya una veintena de servicios de salud dentro del barrio: <strong>seis clínicas dentales</strong>, <strong>seis centros de fisioterapia</strong> —casi todos con 5 sobre 5 en Google—, <strong>siete farmacias</strong>, un centro médico y una óptica. Las mejor valoradas: <a href=\"/salud/ikigai-dental-canaveral-v2/\">Ikigai Dental</a> (4,8 con 448 reseñas), <a href=\"/salud/mardones-y-martinez-dental/\">Mardones y Martínez</a> (4,9 con 270) y <a href=\"/salud/soul-fisioterapia/\">Soul Fisioterapia</a> (5 con 377).",
+        "Para urgencias y trámites, lo práctico: la farmacia que más horas abre es <a href=\"/salud/farmacia-central-canaveral/\">Farmacia Central Cañaveral</a> (lunes a viernes de 9:00 a 22:00), y el hospital de referencia sigue siendo el del Henares (Coslada) — tienes los teléfonos y las farmacias de guardia en la <a href=\"/servicios-publicos/\">guía de servicios públicos</a>."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuántas farmacias hay en El Cañaveral?",
+          "a": "Siete dentro del barrio: Farmacia Central Cañaveral, Farmacia Sonrisas del Cañaveral (4,8), Farmacia Riera de la Vereda (4,8), Farmacia Covián (4,8), Farmacia Díaz Nadela (4,7), Farmacia El Cañaveral y Farmacia La Botica de Mar. Las farmacias de guardia se consultan en la guía de servicios públicos."
+        },
+        {
+          "q": "¿Qué farmacia abre más horas en El Cañaveral?",
+          "a": "Farmacia Central Cañaveral, en horario de lunes a viernes de 9:00 a 22:00 (sábados por la mañana). El resto de farmacias del barrio abre en horario partido de mañana y tarde; los domingos solo hay servicio a través de las farmacias de guardia."
+        },
+        {
+          "q": "¿Dónde hay dentistas en El Cañaveral?",
+          "a": "Hay seis clínicas dentales en el barrio. Las mejor valoradas en Google: Mardones y Martínez (4,9 con 270 reseñas), Clínica Dental Siglo XXI (4,9 con 241) e Ikigai Dental (4,8 con 448), la que más reseñas acumula. La guía de clínicas dentales las ordena combinando nota y volumen."
+        },
+        {
+          "q": "¿Hay fisioterapia en el barrio?",
+          "a": "Sí, seis centros de fisioterapia en El Cañaveral: Soul Fisioterapia (5 con 377 reseñas), Clínica MUV (5 con 295), Fisioterapia Escalante (5 con 275), Clínica Impulso (5 con 184), Focus Clinic (5 con 92) y Fisen (4,9 con 82)."
+        }
+      ]
     },
     "belleza": {
       "title": "Peluquerías y estética en El Cañaveral y Vicálvaro",
@@ -76,8 +98,30 @@
     },
     "mascotas": {
       "title": "Veterinarios y peluquería canina en El Cañaveral",
-      "description": "Clínicas veterinarias y peluquerías caninas en El Cañaveral y Vicálvaro: vacunas, urgencias y cuidado de tu mascota. Direcciones, horarios y reseñas.",
-      "h1": "Veterinarios y Mascotas en El Cañaveral"
+      "description": "Clínicas veterinarias y peluquerías caninas en El Cañaveral y alrededores: urgencias 24 horas, vacunas y cuidado de tu mascota. Direcciones, horarios y reseñas reales.",
+      "h1": "Veterinarios y Mascotas en El Cañaveral",
+      "intro": [
+        "Para las mascotas, El Cañaveral tiene tres servicios en el propio barrio: <a href=\"/mascotas/mascotiti-hospital-veterinario-canaveral-urgencias-24h/\">Mascotiti Hospital Veterinario</a>, con <strong>urgencias 24 horas</strong> (4,1 con 673 reseñas), y dos peluquerías caninas: <a href=\"/mascotas/peludos-del-canaveral/\">Peludos del Cañaveral</a> (4,8 con 228) y <a href=\"/mascotas/lavapeludos/\">Lavapeludos</a> (5 con 26).",
+        "A pocos minutos hay clínicas con notas muy altas: Méjico 17 en Coslada (4,9 con 209), Calidad Sin Frontera en Vicálvaro (4,9), Valleaguado (4,8 con 239) y WECAN La Colina (4,7 con más de 1.100 reseñas), la que más volumen tiene de la zona. Y si buscas planes para salir con tu perro, el <a href=\"/con-perro/\">hub dog-friendly del barrio</a> reúne pipicanes, escapadas y servicios."
+      ],
+      "faq": [
+        {
+          "q": "¿Hay veterinario en El Cañaveral?",
+          "a": "Sí: Mascotiti Hospital Veterinario Cañaveral, con servicio de urgencias 24 horas y 4,1 sobre 5 con 673 reseñas en Google. El resto de clínicas de la zona están a pocos minutos, en Vicálvaro y Coslada."
+        },
+        {
+          "q": "¿Dónde hay urgencias veterinarias 24 horas cerca de El Cañaveral?",
+          "a": "En el propio barrio, Mascotiti Hospital Veterinario (urgencias 24 h). Como alternativa cercana, WECAN La Colina en Coslada (4,7 con más de 1.100 reseñas) y el Centro Veterinario Los Delfines, también en Coslada. Conviene llamar antes: los horarios de urgencias cambian."
+        },
+        {
+          "q": "¿Qué clínica veterinaria está mejor valorada?",
+          "a": "En los alrededores destacan Clínica Veterinaria Méjico 17 (Coslada, 4,9 con 209 reseñas), Calidad Sin Frontera (Vicálvaro, 4,9) y Clínica Veterinaria Valleaguado (Coslada, 4,8 con 239). En El Cañaveral, Mascotiti es la única con urgencias 24 h. La guía de veterinarios las ordena por nota y volumen de reseñas."
+        },
+        {
+          "q": "¿Dónde puedo peluquear a mi perro en El Cañaveral?",
+          "a": "Hay dos peluquerías caninas en el barrio: Peludos del Cañaveral (4,8 con 228 reseñas, de lunes a viernes de 10:00 a 14:00 y de 17:00 a 20:00, sábados por la mañana) y Lavapeludos (5 con 26 reseñas). Para comida y accesorios, la tienda mejor valorada cerca es Nutri-Pets (San Fernando de Henares, 4,9)."
+        }
+      ]
     },
     "hogar": {
       "title": "Ferreterías y servicios del hogar en El Cañaveral",
@@ -133,8 +177,30 @@
     },
     "panaderias": {
       "title": "Panaderías y obradores en El Cañaveral",
-      "description": "Panaderías, obradores y cafeterías con bollería propia en El Cañaveral. Pan del día, horarios y reseñas, más la guía de las panaderías mejor valoradas.",
-      "h1": "Panaderías y Obradores en El Cañaveral"
+      "description": "Panaderías, obradores y cafeterías con bollería propia en El Cañaveral. Pan del día, masa madre, horarios (cuatro abren los domingos) y reseñas, más la guía de las mejor valoradas.",
+      "h1": "Panaderías y Obradores en El Cañaveral",
+      "intro": [
+        "Seis panaderías cubren el pan del día en El Cañaveral: <a href=\"/panaderias/panaderia-bulevar/\">Panadería Bulevar</a> (la mejor valorada del barrio, 4,4 con 128 reseñas), <a href=\"/panaderias/el-horno-de-izan-iii/\">El Horno de Izan III</a> (la de más horas y más reseñas, con 523), <a href=\"/panaderias/caprichos-coffee-bakery/\">Caprichos Coffee &amp; Bakery</a>, <a href=\"/panaderias/obrador-de-goya/\">Obrador de Goya</a>, <a href=\"/panaderias/levaduramadre/\">Levadura Madre</a> y Fabricación y Distribución de Panadería.",
+        "Para el domingo, cuatro siguen abiertas por la mañana: El Horno de Izan III (8:00-15:00), Panadería Bulevar (8:00-14:00), Obrador de Goya (8:00-14:00) y Caprichos (8:30-14:30). Si buscas algo concreto, hay <strong>pan de leña</strong> en Obrador de Goya y <strong>masa madre</strong> en Levadura Madre. El ranking completo está en la <a href=\"/blog/mejores-panaderias-el-canaveral/\">guía de las mejores panaderías</a>."
+      ],
+      "faq": [
+        {
+          "q": "¿Qué panaderías hay en El Cañaveral?",
+          "a": "Seis en el barrio: Panadería Bulevar, El Horno de Izan III, Caprichos Coffee &amp; Bakery, Obrador de Goya, Levadura Madre y Fabricación y Distribución de Panadería. A pocos minutos hay más opciones en Vicálvaro (Dulce Ruah, 4,9) y Coslada (Al Pan Pan, 4,6; Baki Pan, 4,3 con más de 900 reseñas)."
+        },
+        {
+          "q": "¿Qué panaderías abren los domingos en El Cañaveral?",
+          "a": "Cuatro: El Horno de Izan III (8:00-15:00), Panadería Bulevar (8:00-14:00), Obrador de Goya (8:00-14:00) y Caprichos Coffee &amp; Bakery (8:30-14:30). Levadura Madre y Fabricación y Distribución cierran los domingos."
+        },
+        {
+          "q": "¿Cuál es la panadería mejor valorada de El Cañaveral?",
+          "a": "Panadería Bulevar lidera el barrio con 4,4 sobre 5 y 128 reseñas, por delante de Caprichos (4,2 con 304) y El Horno de Izan III (4,1 con 523). La guía de panaderías las ordena combinando nota y número de reseñas."
+        },
+        {
+          "q": "¿Dónde comprar pan de masa madre o de leña?",
+          "a": "Para pan de leña, Obrador de Goya (avenida Miguel Delibes, 80). Para masa madre de larga fermentación, Levadura Madre (avenida Blas de Lezo), que abre de lunes a sábado y cierra los domingos."
+        }
+      ]
     },
     "tiendas-alimentacion": {
       "title": "Tiendas de alimentación en El Cañaveral",

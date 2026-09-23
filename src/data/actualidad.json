@@ -1,6 +1,59 @@
 {
   "posts": [
     {
+      "slug": "canaveral-11-45-viviendas-publicas-alquiler-asequible",
+      "title": "Cañaveral 11: 45 nuevas viviendas públicas de alquiler asequible y sorteo a principios de 2027",
+      "date": "2026-09-23",
+      "updated": "2026-09-23",
+      "excerpt": "El Ayuntamiento ha terminado las obras de Cañaveral 11: 45 viviendas, 64 plazas de garaje y 45 trasteros. La adjudicación se resolverá con un sorteo previsto para principios de 2027.",
+      "tags": [
+        "Vivienda"
+      ],
+      "lead": "El Cañaveral suma 45 nuevas viviendas públicas de alquiler asequible. El Ayuntamiento de Madrid ha dado por finalizadas las obras de la promoción Cañaveral 11, que se adjudicará mediante sorteo a principios de 2027. Es una pieza más de un plan municipal que prevé 1.212 pisos de alquiler asequible en el barrio.",
+      "datosClave": [
+        "Cañaveral 11: 45 viviendas, 64 plazas de garaje y 45 trasteros (cada piso con el suyo).",
+        "Tipologías: 17 viviendas de dos dormitorios, 24 de tres y 4 de cuatro dormitorios.",
+        "El sorteo de adjudicación está previsto para principios de 2027.",
+        "Inversión de 12.016.025 euros: 9.838.516 euros del Ayuntamiento y 2,1 millones de fondos europeos Next Generation.",
+        "Requisito de ingresos de hasta 3,5 veces el IPREM; la renta nunca superará el 30 % de los ingresos de la familia.",
+        "Certificación energética A: aerotermia, suelo radiante refrescante, ventilación cruzada y placas fotovoltaicas en cubierta.",
+        "Es una de las 13 promociones de EMVS Madrid en El Cañaveral, que sumarán 1.212 viviendas públicas de alquiler asequible."
+      ],
+      "secciones": [
+        {
+          "h2": "Qué es Cañaveral 11",
+          "parrafos": [
+            "El Ayuntamiento de Madrid ha finalizado las obras de Cañaveral 11, una nueva promoción de vivienda pública de alquiler asequible en El Cañaveral (distrito de Vicálvaro). Incorpora 45 viviendas, 64 plazas de garaje y 45 trasteros, uno por piso. Por tipologías: 17 viviendas de dos dormitorios, 24 de tres dormitorios y cuatro de cuatro dormitorios.",
+            "En la planta baja se han proyectado los espacios comunes: aparcamiento para bicicletas, zona de juegos infantiles y áreas ajardinadas. El edificio cuenta con certificación energética A y las viviendas incorporan aerotermia (calefacción, refrigeración y agua caliente a partir de la energía del aire), suelo radiante refrescante y ventilación cruzada. Las zonas comunes suman placas fotovoltaicas en cubierta e iluminación LED con detección y control temporizado."
+          ]
+        },
+        {
+          "h2": "Quién puede optar y cuándo: sorteo a principios de 2027",
+          "parrafos": [
+            "Las viviendas están destinadas principalmente a jóvenes y familias con hijos menores. El requisito de ingresos es de hasta 3,5 veces el IPREM y la renta que paguen los adjudicatarios se calculará según su situación económica: nunca superará el 30 % de los ingresos de la unidad familiar. Como referencia, el Ayuntamiento calcula que una pareja con dos hijos podría acceder con unos ingresos brutos anuales máximos de aproximadamente 44.000 euros.",
+            "El siguiente paso es la adjudicación, con sorteo previsto para principios de 2027 según la información facilitada por el Ayuntamiento. Si te interesa el proceso, conviene seguir las convocatorias de EMVS Madrid y tener la documentación lista con antelación."
+          ]
+        },
+        {
+          "h2": "El barrio va camino de 1.212 viviendas públicas",
+          "parrafos": [
+            "Cañaveral 11 forma parte de las 13 promociones que EMVS Madrid desarrolla en El Cañaveral, un plan que sumará 1.212 viviendas públicas de alquiler asequible. En junio, la empresa municipal entregó las llaves de la promoción Cañaveral 9 y el barrio alcanzó las 770 familias con vivienda pública de alquiler asequible; más del 80 % de los pisos del plan se destinan a jóvenes y familias.",
+            "Si te estás planteando mudarte al barrio, en la <a href=\"/vivir-en-el-canaveral/\">guía para vivir en El Cañaveral</a> tienes colegios, transporte, servicios y vivienda, y en el <a href=\"/inmobiliarias/\">directorio de inmobiliarias</a> las agencias que operan en la zona."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "Nuevo Sureste — El Cañaveral suma 45 nuevas viviendas públicas de alquiler asequible",
+          "url": "https://nuevosureste.es/finalizacion-canaveral-11/"
+        },
+        {
+          "name": "Diario de Madrid — 770 familias en viviendas de alquiler asequible de EMVS",
+          "url": "https://diario.madrid.es/blog/notas-de-prensa/el-canaveral-ya-cuenta-con-770-familias-madrilenas-en-viviendas-de-alquiler-asequible-de-emvs-madrid/"
+        }
+      ]
+    },
+    {
       "slug": "vuelta-al-cole-2026-2027-el-canaveral",
       "title": "Vuelta al cole 2026/27 en El Cañaveral: fechas oficiales y qué espera al barrio este curso",
       "date": "2026-08-31",
@@ -66,28 +119,30 @@
       "slug": "tapaveral-2026-y-v-carrera-popular-el-canaveral",
       "title": "Tapaveral 2026 y la V Carrera Popular: el gran fin de semana de octubre en El Cañaveral",
       "date": "2026-08-31",
-      "updated": "2026-08-31",
-      "excerpt": "La V Ruta de la Tapa vuelve del 2 al 4 de octubre y la V Carrera Popular «Corre para Dar Vida» el domingo 4. Los locales del barrio pueden inscribirse en Tapaveral hasta el 6 de septiembre.",
+      "updated": "2026-09-23",
+      "excerpt": "La V Feria de la Tapa (Tapaveral) vuelve del 2 al 4 de octubre con tapa y bebida a precio especial, y la V Carrera Popular «Corre para Dar Vida» se corre el domingo 4. Ya están en marcha las inscripciones de los locales.",
       "tags": [
         "Eventos",
         "Gastronomía",
         "Deporte"
       ],
-      "lead": "El primer fin de semana de octubre El Cañaveral se convierte en escaparate de su hostelería y de su lado más solidario. Por un lado, Tapaveral 2026, la V Ruta de la Tapa del barrio, se celebrará del 2 al 4 de octubre. Por otro, la V Carrera Popular «Corre para Dar Vida» vuelve el domingo 4 con 10K, 5K y pruebas infantiles. Y el plazo para que los locales se apunten a la ruta de la tapa acaba el 6 de septiembre.",
+      "lead": "El primer fin de semana de octubre El Cañaveral se convierte en escaparate de su hostelería y de su lado más solidario. Por un lado, Tapaveral 2026, la V Feria de la Tapa del barrio, se celebrará del 2 al 4 de octubre con tapa y bebida a precio especial. Por otro, la V Carrera Popular «Corre para Dar Vida» vuelve el domingo 4 con 10K, 5K y pruebas infantiles.",
       "datosClave": [
-        "Tapaveral 2026 (V Ruta de la Tapa de El Cañaveral) se celebrará del 2 al 4 de octubre.",
-        "Los bares, restaurantes y cafeterías del barrio pueden inscribirse hasta el 6 de septiembre a las 23:59.",
+        "Tapaveral 2026 – V Feria de la Tapa de El Cañaveral se celebrará del 2 al 4 de octubre.",
+        "Durante los tres días: tapa + bebida a precio especial en los locales participantes, votación de la mejor tapa y sorteos.",
+        "Premios para el público: dos cenas para dos personas en locales participantes y una cesta gourmet valorada en más de 100 €.",
+        "Los locales podían inscribirse hasta el 6 de septiembre a las 23:59 (plazo ya cerrado).",
         "La V Carrera Popular «Corre para Dar Vida» será el domingo 4 de octubre, con 10K, 5K y pruebas infantiles.",
         "La inscripción a la carrera cuesta 12 € y las pruebas infantiles son para niños de 2 a 11 años.",
         "Ambos eventos los organiza ViBe El Cañaveral con el apoyo de la Junta Municipal de Vicálvaro."
       ],
       "secciones": [
         {
-          "h2": "Tapaveral 2026: la ruta de la tapa cumple cinco años",
+          "h2": "Tapaveral 2026: la feria de la tapa cumple cinco años",
           "parrafos": [
-            "ViBe El Cañaveral, con el apoyo de la Junta Municipal de Vicálvaro, ha abierto el plazo para que los <a href=\"/restaurantes/\">restaurantes</a> y <a href=\"/cafeterias/\">cafeterías del barrio</a> se inscriban en la quinta edición de Tapaveral, la ruta de la tapa de El Cañaveral. El formulario oficial estará abierto hasta el 6 de septiembre a las 23:59.",
-            "El evento se celebrará del 2 al 4 de octubre. Durante ese fin de semana, vecinos y visitantes podrán recorrer los establecimientos participantes, degustar sus tapas, votar sus favoritas y participar en sorteos. Cada local debe garantizar la disponibilidad de su tapa durante las franjas horarias del evento.",
-            "Las mejores propuestas se llevan premio: una cena para dos en uno de los locales participantes (importe máximo de 60 € por cena) y una cesta gourmet valorada en más de 100 €. La tapa debe ser única, innovadora y creativa: se valorarán la originalidad, el sabor y la presentación, con la idea de que las propuestas puedan incorporarse después a la carta habitual del establecimiento."
+            "ViBe El Cañaveral, con el apoyo de la Junta Municipal de Vicálvaro, organiza la quinta edición de Tapaveral, la V Feria de la Tapa de El Cañaveral. Los <a href=\"/restaurantes/\">restaurantes</a> y <a href=\"/cafeterias/\">cafeterías del barrio</a> tuvieron de plazo hasta el 6 de septiembre para inscribirse; ahora el protagonismo es del público.",
+            "El recorrido gastronómico se celebra del 2 al 4 de octubre: durante esos tres días, vecinos y visitantes pueden recorrer los establecimientos participantes, disfrutar de <strong>tapas originales con bebida a un precio especial</strong>, votar sus favoritas y participar en el sorteo de premios. Cada local garantiza la disponibilidad de su tapa durante las franjas horarias del evento.",
+            "Los premios para el público son dos cenas para dos personas en los establecimientos participantes y una cesta gourmet valorada en más de 100 €. Los locales también compiten: la tapa debe ser única, innovadora y creativa, y se valoran la originalidad, el sabor y la presentación, con la idea de que las mejores propuestas puedan incorporarse después a la carta habitual del establecimiento."
           ]
         },
         {
@@ -107,6 +162,10 @@
         }
       ],
       "fuentes": [
+        {
+          "name": "ViBe El Cañaveral — Tapaveral 2026, V Feria de la Tapa",
+          "url": "https://vibecanaveral.es/eventos/Tapaveral-2026-%E2%80%93-V-Feria-de-la-Tapa/HtRg5qAvDLH4Vpkp0Z36"
+        },
         {
           "name": "ViBe El Cañaveral — Inscripción abierta Tapaveral 2026",
           "url": "https://vibecanaveral.es/noticias/Inscripci%C3%B3n-abierta-Tapaveral-2026/pi4I487CgoFrxwsXtURr"
