@@ -33,6 +33,9 @@ const seoDesc = seo.description || description;
 const seoH1 = seo.h1 || name;
 const seoIntro: string[] = seo.intro || [];
 const seoFaq: { q: string; a: string }[] = seo.faq || [];
+// Las respuestas pueden llevar enlaces internos (se renderizan con set:html);
+// para el JSON-LD se envía texto plano (schema.org no espera HTML en las respuestas).
+const stripHtml = (s: string) => s.replace(/<[^>]+>/g, "");
 
 const faqSchema = seoFaq.length > 0
   ? {
@@ -41,7 +44,7 @@ const faqSchema = seoFaq.length > 0
       mainEntity: seoFaq.map((f) => ({
         "@type": "Question",
         name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
+        acceptedAnswer: { "@type": "Answer", text: stripHtml(f.a) },
       })),
     }
   : null;
@@ -138,7 +141,7 @@ const itemListSchema = {
                   {f.q}
                   <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
                 </summary>
-                <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+                <p class="text-gray-600 text-sm mt-3 leading-relaxed [&_a]:text-brand-600 [&_a:hover]:text-brand-700 [&_a]:underline [&_a]:underline-offset-2" set:html={f.a} />
               </details>
             ))}
           </div>

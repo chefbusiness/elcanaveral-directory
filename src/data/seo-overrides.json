@@ -1,9 +1,31 @@
 {
   "categorias": {
     "supermercados": {
-      "title": "Supermercados en El Cañaveral: horarios y direcciones",
-      "description": "Todos los supermercados de El Cañaveral y alrededores: Mercadona, Lidl, Aldi, Ahorramás y súpers de barrio. Horarios, direcciones y reseñas, más la guía de los mejores.",
-      "h1": "Supermercados en El Cañaveral y alrededores"
+      "title": "Supermercados en El Cañaveral: horarios, direcciones y domingos",
+      "description": "Todos los supermercados de El Cañaveral y alrededores: Lidl, Alcampo, Ahorramás, Mercadona y súpers de barrio. Horarios (seis abren los domingos), direcciones y reseñas, más la guía de los mejores.",
+      "h1": "Supermercados en El Cañaveral y alrededores",
+      "intro": [
+        "El Cañaveral tiene siete supermercados dentro del barrio: <a href=\"/supermercados/lidl-canaveral/\">Lidl</a> (el mejor valorado, con más de 800 reseñas), <a href=\"/supermercados/ahorramas/\">Ahorramas</a>, <a href=\"/supermercados/mi-alcampo/\">Mi Alcampo</a> —el formato compacto de Alcampo—, <a href=\"/supermercados/hiper-canaveral/\">Hiper Cañaveral</a>, <a href=\"/supermercados/coviran-plus/\">Covirán Plus</a>, <a href=\"/supermercados/casa-elias/\">Supermercado Casa Elías</a> y <a href=\"/supermercados/supermercado-el-canaveral/\">Supermercado El Cañaveral</a>. A pocos minutos están además Mercadona y Aldi (Coslada y San Fernando de Henares).",
+        "Dato práctico para el finde: <strong>seis de ellos abren los domingos</strong> —Ahorramas, Lidl, Mi Alcampo, Hiper Cañaveral, Covirán Plus y Casa Elías—, con horarios de mañana. Abajo tienes la lista completa con horarios, direcciones y las valoraciones reales de Google, más la <a href=\"/blog/mejores-supermercados-el-canaveral/\">guía de los mejores supermercados</a>."
+      ],
+      "faq": [
+        {
+          "q": "¿Qué supermercados hay en El Cañaveral?",
+          "a": "Dentro del barrio hay siete: Lidl (avenida Miguel Delibes, 100), Ahorramas (Miguel Delibes, 20), Mi Alcampo (calle Anna Frank, 8), Hiper Cañaveral (Miguel Delibes, 10), Covirán Plus (Victoria Kent, 12), Supermercado Casa Elías y Supermercado El Cañaveral (Ferenc Puskas, 245)."
+        },
+        {
+          "q": "¿Qué supermercados abren los domingos en El Cañaveral?",
+          "a": "Abren los domingos: Ahorramas (9:00-15:00), Lidl (10:00-15:00), Mi Alcampo (10:00-15:00), Hiper Cañaveral (10:00-14:00), Covirán Plus (9:30-14:30) y Supermercado Casa Elías (9:30-14:00). El único que cierra los domingos es Supermercado El Cañaveral."
+        },
+        {
+          "q": "¿Cuál es el supermercado mejor valorado de El Cañaveral?",
+          "a": "Lidl El Cañaveral lidera las valoraciones con 4,3 sobre 5 y más de 800 reseñas en Google. Le siguen Covirán Plus (4,2), Ahorramas (4,0) e Hiper Cañaveral (3,6). La guía de los mejores supermercados los ordena combinando nota y número de reseñas."
+        },
+        {
+          "q": "¿Dónde está Alcampo en El Cañaveral?",
+          "a": "En El Cañaveral, Alcampo está representado por su formato compacto Mi Alcampo, en la calle Anna Frank, 8, abierto de lunes a sábado de 9:00 a 21:00 y domingos de 10:00 a 15:00."
+        }
+      ]
     },
     "restaurantes": {
       "title": "Restaurantes en El Cañaveral y Vicálvaro — Directorio",
@@ -12,8 +34,30 @@
     },
     "educacion": {
       "title": "Guarderías, escuelas infantiles y academias en El Cañaveral",
-      "description": "Educación en El Cañaveral: guarderías y escuelas infantiles (públicas y privadas) y academias de idiomas e inglés. Plazas, edades, contacto y reseñas de las familias.",
-      "h1": "Educación en El Cañaveral: guarderías, escuelas y academias"
+      "description": "Educación en El Cañaveral: escuelas infantiles y guarderías 0-3 años (públicas y privadas), academias de inglés y autoescuela. Plazas, edades, horarios y reseñas de las familias.",
+      "h1": "Educación en El Cañaveral: guarderías, escuelas y academias",
+      "intro": [
+        "El Cañaveral ya tiene una oferta educativa completa para los primeros años: siete escuelas infantiles de 0 a 3 años en el barrio —<a href=\"/educacion/escuela-infantil-los-minons/\">Los Minons</a> (la mejor valorada, 5 sobre 5), <a href=\"/educacion/escuela-infantil-aupa/\">AUPA</a>, <a href=\"/educacion/escuela-infantil-nemomarlin-canaveral/\">Nemomarlin</a>, Barcos de Papel, Topochitos, la municipal Muñeco de Nieve y la autonómica Conde Niño—, además de academias de idiomas y una autoescuela.",
+        "Para quien busca inglés, el barrio tiene cuatro academias con notas muy altas: <a href=\"/educacion/english-connection-canaveral/\">English Connection</a> (4,9 con 74 reseñas), Larry and Andy (5), Kids &amp; Us (4,8) y Ms&amp;Mr Language (4,8). Tienes el detalle en la <a href=\"/blog/mejores-academias-ingles-el-canaveral/\">guía de academias de inglés</a> y el ranking de guarderías en la <a href=\"/blog/mejores-guarderias-el-canaveral/\">guía de guarderías</a>."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuántas escuelas infantiles hay en El Cañaveral?",
+          "a": "Siete escuelas infantiles (0 a 3 años) en el barrio: Los Minons, AUPA, Nemomarlin, Barcos de Papel, Topochitos, la Escuela Infantil Municipal Muñeco de Nieve y la Escuela Infantil Autonómica Conde Niño. Todas con horarios de mañana temprano (desde las 7:30 en varias) para conciliar."
+        },
+        {
+          "q": "¿Cuál es la guardería mejor valorada de El Cañaveral?",
+          "a": "Por valoraciones de Google, Los Minons encabeza con 5 sobre 5 (36 reseñas), seguida de AUPA (4,7), Nemomarlin (4,6), Barcos de Papel (4,6), Topochitos (4,5) y la Municipal Muñeco de Nieve (4,4). La guía de guarderías las ordena combinando nota y volumen de reseñas."
+        },
+        {
+          "q": "¿Hay academias de inglés en El Cañaveral para niños?",
+          "a": "Sí, cuatro: English Connection (4,9 con 74 reseñas, desde los 3 años hasta adultos), Larry and Andy Language Academy (5), Kids &amp; Us (4,8) y Ms&amp;Mr Language (4,8). English Connection y Larry and Andy son las que más reseñas acumulan."
+        },
+        {
+          "q": "¿Y la escuela de música del barrio?",
+          "a": "Música de los Ríos anunció su cartel para el curso 2026/2027 en la avenida de Blas de Lezo (música para bebés, canto, piano, violín, guitarra y percusión), aunque todavía no hay fecha de apertura confirmada. En el directorio tienes su ficha con lo que se sabe."
+        }
+      ]
     },
     "salud": {
       "title": "Dentistas, fisios y farmacias en El Cañaveral",
@@ -161,6 +205,30 @@
     "dreamfit-valdebernardo": {
       "title": "Dreamfit Valdebernardo — Gimnasio 24 horas cerca de El Cañaveral",
       "description": "Gimnasio completo abierto las 24 horas con acceso por huella: musculación, cardio y clases. 4 de 5 con 1.508 reseñas. Cerca de El Cañaveral (calle de los Pinillas, 1)."
+    },
+    "estanco-el-canaveral": {
+      "title": "Estanco El Cañaveral — Tabaco, lotería y prensa en Blas de Lezo",
+      "description": "El estanco del barrio en la avenida de Blas de Lezo, 74: tabaco y timbre del Estado, lotería, recargas y prensa. 4,1 de 5 con 55 reseñas. L-V 9:00-14:00 y 17:00-20:00; sábados 9:30-14:00."
+    },
+    "mi-alcampo": {
+      "title": "Mi Alcampo El Cañaveral — Supermercado en calle Anna Frank",
+      "description": "El formato compacto de Alcampo en El Cañaveral (calle Anna Frank, 8) para la compra rápida y diaria. Abierto de lunes a sábado 9:00-21:00 y domingos 10:00-15:00. 146 reseñas en Google."
+    },
+    "ahorramas": {
+      "title": "Ahorramas El Cañaveral — Supermercado en Miguel Delibes",
+      "description": "Supermercado madrileño de precio ajustado y buenos frescos en la avenida Miguel Delibes, 20. Abierto de lunes a sábado 9:00-21:30 y domingos 9:00-15:00. 4 de 5 con 252 reseñas."
+    },
+    "escuela-infantil-aupa": {
+      "title": "Escuela Infantil AUPA — Guardería 0-3 años en El Cañaveral",
+      "description": "Escuela infantil de pedagogía activa en Blas de Lezo, 15 (El Cañaveral), para niños de 0 a 3 años. 4,7 de 5 con 43 reseñas. Abierta de lunes a viernes, de 8:00 a 17:00."
+    },
+    "farmacia-sonrisas-canaveral": {
+      "title": "Farmacia Sonrisas del Cañaveral — Farmacia en Anna Frank",
+      "description": "Farmacia de barrio en la calle Anna Frank, 10: atención cercana, cosmética natural y productos infantiles. 4,8 de 5 (59 reseñas). L-V 9:30-14:00 y 17:00-20:30; sábados 10:00-14:00."
+    },
+    "vicalcan-veterinario": {
+      "title": "Vicalcan — Clínica veterinaria en Vicálvaro",
+      "description": "Clínica veterinaria de referencia cerca de El Cañaveral (calle Jose Prat, 15, Vicálvaro): consulta, vacunas y cuidado de tu mascota. 4,6 de 5 con 942 reseñas. L-V 10:00-14:00 y 17:00-20:30; sábados 10:00-14:00."
     }
   }
 }
