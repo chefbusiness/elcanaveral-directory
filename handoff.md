@@ -43,9 +43,24 @@
    - 🐛 **Bug corregido en producción:** las respuestas de FAQ con enlaces internos se mostraban como
      **HTML escapado** (`&lt;a href=…`, visible en `/fruterias/` desde el 31-ago) y metían HTML crudo en el
      JSON-LD. Ahora: respuesta con `set:html` (enlace clicable) y schema con **texto plano** (`stripHtml`).
-4. **Pendiente (GSC #5, ~mediados de octubre):** medir si el patrón «categoría/zona + FAQ» mueve el CTR;
-   si funciona, replicarlo en las categorías con más impresiones (`/salud/`, `/mascotas/`, `/panaderias/`)
-   y no seguir invirtiendo en fichas de marca.
+4. **Segunda tanda de la sesión (commits `3b859fc`, verificado en vivo):**
+   - **Post #10** `canaveral-11-45-viviendas-publicas-alquiler-asequible` — obras terminadas de **Cañaveral 11**
+     (45 viviendas, 64 garajes, 45 trasteros; sorteo **principios de 2027**; 12,02 M€ con 2,1 M€ de fondos
+     Next Generation; requisitos 3,5 × IPREM y renta ≤ 30 % de los ingresos). Fuente: **Nuevo Sureste
+     (21-sep-2026)** + Diario de Madrid para el contexto de EMVS (1.212 viviendas en 13 promociones).
+   - **Post de Tapaveral refrescado**: el evento se anuncia oficialmente como **«V Feria de la Tapa»** y ya
+     con la información de público (tapa + bebida a precio especial, votación y premios: 2 cenas para dos +
+     cesta gourmet). Se añadió la página del evento a las fuentes.
+   - **3 categorías más con intro + FAQPage** → ya son **7** con FAQ: `/supermercados/`, `/educacion/`,
+     `/salud/` (7 farmacias, 6 dentales, 6 de fisio), `/mascotas/` (urgencias 24 h, peluquerías caninas),
+     `/panaderias/` (4 abren domingos, pan de leña y masa madre), `/fruterias/`, `/tiendas-alimentacion/`.
+   - 🐛 **Enlace roto corregido**: `/educacion/escuela-infantil-nemomarlin-canaveral/` → `/educacion/nemomarlin-canaveral/`
+     (detectado por el nuevo validador de enlaces internos de `.tmp/validate-links.mjs`).
+   - ✅ **BunBun sigue sin confirmar**: su web oficial no incluye El Cañaveral (solo Moratalaz, Sanse y
+     Metropolitano) → la ficha se mantiene en `estado: proxima-apertura`.
+5. **Pendiente (GSC #5, ~mediados de octubre):** medir si el patrón «categoría/zona + FAQ» mueve el CTR;
+   si funciona, replicarlo en las categorías con más impresiones (`/restaurantes/`, `/belleza/`, `/deporte/`)
+   y no seguir invirtiendo en fichas de marca. Balance post-evento de Tapaveral/Carrera (después del 4-oct).
 
 ## ✅ Sesión 2026-08-31 (Windows local, DSH) — auditoría GSC #3 + post de Tapaveral/Carrera
 
