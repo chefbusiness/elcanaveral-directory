@@ -33,9 +33,12 @@ resuelva, **la ficha no debe llevar ningún enlace a una web**.
    (`src/lib/directory.ts`) y en `scripts/copy-data.mjs` → el dominio bloqueado no puede publicarse ni en
    HTML/JSON-LD ni en `/data/negocios.json`, aunque vuelva a entrar en el JSON fuente.
 3. `public/data/negocios.json` regenerado (diff de 1 línea: copia byte a byte cuando la fuente ya está limpia).
-4. ⚠️ **Verificación:** el build local sigue sin correr en este sandbox (`spawn EPERM` de Vite, ya documentado)
-   → verificar en **deploy de Netlify** que la ficha ya no muestra web y solicitar la reindexación en GSC.
-5. **Pendiente:** confirmar por email a la titular cuando esté desplegado y verificado en vivo.
+4. ✅ **Verificado en vivo (27-sep, tras deploy):** ficha 200 **sin** enlace, sin botón «Visitar web» y sin `url`
+   en el JSON-LD; `/data/negocios.json` limpio; teléfono/dirección/horario intactos. (El build local sigue sin
+   correr en este sandbox — `spawn EPERM` de Vite — así que la verificación es contra producción.)
+5. **Alcance:** lo nuestro termina en el sitio (no enlazar el dominio). Que Google lo siga asociando por
+   **páginas externas de terceros** no es competencia nuestra; si la titular quiere, ella misma pide la
+   reindexación en Search Console. Nada pendiente por nuestra parte.
 
 ## ✅ Sesión 2026-09-23 (Windows local, DSH) — auditoría GSC #4 + clusters nuevos
 
