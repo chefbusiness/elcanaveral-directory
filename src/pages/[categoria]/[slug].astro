@@ -4,7 +4,7 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import Galeria from "@/components/Galeria.astro";
-import { generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona } from "@/lib/directory";
+import { generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona, socialProfileUrl } from "@/lib/directory";
 import type { Negocio } from "@/lib/directory";
 import seoOverrides from "@/data/seo-overrides.json";
 
@@ -313,10 +313,10 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
             {(redes.instagram || redes.facebook) && (
               <div class="border-t border-warm-200 mt-4 pt-3 flex gap-3">
                 {redes.instagram && (
-                  <a href={`https://instagram.com/${redes.instagram.replace('@', '')}`} target="_blank" rel="noopener" class="text-sm text-gray-500 hover:text-brand-600">Instagram</a>
+                  <a href={socialProfileUrl("instagram", redes.instagram)} target="_blank" rel="noopener" class="text-sm text-gray-500 hover:text-brand-600">Instagram</a>
                 )}
                 {redes.facebook && (
-                  <a href={redes.facebook} target="_blank" rel="noopener" class="text-sm text-gray-500 hover:text-brand-600">Facebook</a>
+                  <a href={socialProfileUrl("facebook", redes.facebook)} target="_blank" rel="noopener" class="text-sm text-gray-500 hover:text-brand-600">Facebook</a>
                 )}
               </div>
             )}

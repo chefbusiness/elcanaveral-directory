@@ -23,6 +23,11 @@ export interface Negocio {
   // Reputacion
   rating?: number;
   numReviews?: number;
+  // Geolocalizacion (Google Places) — 283/286 fichas la traen
+  lat?: number;
+  lng?: number;
+  placeId?: string;
+  googleCategory?: string;
   // Clasificacion
   tags?: string[];
   featured?: boolean;
@@ -69,6 +74,44 @@ export interface Zona {
 }
 
 const DATA_DIR = path.resolve("src/data");
+const SITE_URL = "https://www.elcanaveral.info";
+
+// Zonas sin contadores: para el schema solo hacen falta municipio y CP, y
+// loadZonas() recalcula counts recorriendo los 286 negocios en cada llamada.
+let zonasRawCache: Zona[] | null = null;
+function getZonasRaw(): Zona[] {
+  if (zonasRawCache) return zonasRawCache;
+  const filePath = path.join(DATA_DIR, "zonas.json");
+  zonasRawCache = fs.existsSync(filePath)
+    ? (JSON.parse(fs.readFileSync(filePath, "utf-8")) as Zona[])
+    : [];
+  return zonasRawCache;
+}
+
+// Perfil social -> URL absoluta. Acepta handle ("@bunbun_brunch"), handle sin @
+// o URL completa ya pegada en los datos (caso real: bunbun-canaveral).
+const SOCIAL_BASE: Record<string, string> = {
+  instagram: "https://instagram.com/",
+  facebook: "https://facebook.com/",
+  tiktok: "https://tiktok.com/@",
+};
+
+export function socialProfileUrl(network: string, value?: string): string | undefined {
+  const raw = (value || "").trim();
+  if (!raw) return undefined;
+  if (/^https?:\/\//i.test(raw)) return raw;
+  const base = SOCIAL_BASE[network];
+  const handle = raw.replace(/^@/, "").replace(/^\/+/, "");
+  if (!base || !handle) return undefined;
+  return base + handle;
+}
+
+export function normalizeSocialUrls(redes?: Record<string, string>): string[] {
+  if (!redes || typeof redes !== "object") return [];
+  return Object.keys(redes)
+    .map((network) => socialProfileUrl(network, redes[network]))
+    .filter((url): url is string => !!url);
+}
 
 export function loadNegocios(): Negocio[] {
   const filePath = path.join(DATA_DIR, "negocios.json");
@@ -200,50 +243,92 @@ const SCHEMA_TYPE_MAP: Record<string, string> = {
 export function generateLocalBusinessSchema(negocio: Negocio) {
   const schemaType = SCHEMA_TYPE_MAP[negocio.category] || "LocalBusiness";
   const servicios = (negocio.servicios as string[] | undefined) || [];
+  const zona = getZonasRaw().find((z) => z.slug === negocio.zona);
+
+  const fichaUrl = `${SITE_URL}/${negocio.category}/${negocio.slug}/`;
+  const lat = Number(negocio.lat);
+  const lng = Number(negocio.lng);
+  const tieneGeo = Number.isFinite(lat) && Number.isFinite(lng) && lat !== 0 && lng !== 0;
+  const municipio = zona?.municipality || negocio.zonaName;
+
+  // Mapa: place_id es el identificador estable del negocio en Google (mejor que
+  // buscar por dirección, que puede resolver a otro local del mismo edificio).
+  const mapsUrl = negocio.placeId
+    ? `https://www.google.com/maps/place/?q=place_id:${negocio.placeId}`
+    : negocio.address
+      ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(negocio.address)}`
+      : undefined;
+
+  // sameAs: URLs que identifican al MISMO negocio en otros sitios (perfiles y
+  // ficha de Google Maps). La web propia va en `url`, por eso no se repite aqui.
+  const sameAs = [
+    ...normalizeSocialUrls(negocio.redesSociales as Record<string, string> | undefined),
+    ...(mapsUrl ? [mapsUrl] : []),
+  ];
 
   return {
     "@context": "https://schema.org",
     "@type": schemaType,
+    // Identificador estable de la entidad tal como se documenta en esta ficha.
+    "@id": `${fichaUrl}#localbusiness`,
     name: negocio.name,
     description: negocio.description,
+    // url = web oficial del negocio; si no tiene, la ficha es su referencia publica.
+    url: negocio.website || fichaUrl,
     ...(negocio.address && {
       address: {
         "@type": "PostalAddress",
         streetAddress: negocio.address,
-        addressLocality: negocio.zonaName,
+        // addressLocality es el MUNICIPIO (no el barrio): Google y los LLM
+        // resuelven la direccion contra municipios, no contra barrios.
+        addressLocality: municipio,
         addressRegion: "Comunidad de Madrid",
+        ...(zona?.postalCodes?.[0] && { postalCode: zona.postalCodes[0] }),
         addressCountry: "ES",
       },
     }),
+    ...(tieneGeo && {
+      geo: { "@type": "GeoCoordinates", latitude: lat, longitude: lng },
+    }),
+    ...(mapsUrl && { hasMap: mapsUrl }),
+    ...(sameAs.length > 0 && { sameAs }),
     ...(negocio.phone && { telephone: negocio.phone }),
     ...(negocio.email && { email: negocio.email }),
-    ...(negocio.website && { url: negocio.website }),
     ...((negocio.images && negocio.images.length > 0)
       ? { image: negocio.images.map((img) => `https://www.elcanaveral.info${img}`) }
       : negocio.image && { image: `https://www.elcanaveral.info${negocio.image}` }),
-    ...(negocio.rating && {
+    // aggregateRating exige al menos 1 resena: sin numReviews el markup es invalido.
+    ...(negocio.rating && (negocio.numReviews || 0) > 0 && {
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: negocio.rating,
         bestRating: 5,
-        reviewCount: negocio.numReviews || 0,
+        reviewCount: negocio.numReviews,
       },
     }),
+    // OJO: `horario` es texto libre en español ("L-S 9:00-21:00, D 10:00-14:00").
+    // Schema.org espera formato ISO ("Mo-Sa 09:00-21:00"). Se mantiene el texto
+    // tal cual a proposito: traducirlo automaticamente podria publicar un horario
+    // equivocado, que en un directorio local es peor que un campo ignorado.
     ...(negocio.horario && { openingHours: negocio.horario }),
     ...(negocio.precioRango && { priceRange: negocio.precioRango }),
     ...(servicios.length > 0 && {
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Servicios",
-        itemListElement: servicios.map((s, i) => ({
+        itemListElement: servicios.map((s) => ({
           "@type": "Offer",
           itemOffered: { "@type": "Service", name: s },
         })),
       },
     }),
-    areaServed: {
-      "@type": "City",
-      name: "Madrid",
-    },
+    // Ciudad + barrio cuando son distintos: en Coslada y San Fernando el nombre
+    // de la zona ya ES el municipio, y repetirlo solo añade ruido.
+    areaServed: [
+      { "@type": "City", name: municipio },
+      ...(negocio.zonaName && negocio.zonaName !== municipio
+        ? [{ "@type": "Place", name: negocio.zonaName }]
+        : []),
+    ],
   };
 }
