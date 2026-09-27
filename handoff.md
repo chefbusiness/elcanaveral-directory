@@ -1,6 +1,6 @@
 # HANDOFF — elcanaveral.info
 
-> Hoja de arranque y estado del proyecto. Última actualización: **2026-09-27** (sesión DSH — retirada de la web de una ficha a petición del titular).
+> Hoja de arranque y estado del proyecto. Última actualización: **2026-09-27 (sesión b — bloque GEO)**.
 > 👉 Trilogía de contexto: `handoff.md` (estado/sesiones) · `memoria.md` (contexto, entorno y límites — leer
 > antes de retomar) · `roadmap.md` (hecho/pendiente priorizado). La receta de push del sandbox y el acceso
 > GSC por API están en `memoria.md`.
@@ -15,7 +15,64 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `056646b` — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** (verificado en vivo 2026-09-27) |
+| **HEAD ref** | `5f7a8eb` — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** · JSON-LD Organization/WebSite en home · `/llms.txt` generado en build |
+
+## ✅ Sesión 2026-09-27b (Windows local, DSH) — bloque GEO: entidad, fichas y llms.txt
+
+**Punto de partida:** pregunta de John — «además del sitemap, ¿tenemos todo preparado para GEO, llms.txt, etc.?».
+Auditoría del repo: los cimientos estaban (robots con `GPTBot`/`ClaudeBot`/`PerplexityBot`/`Google-Extended`/
+`Applebot-Extended`, llms.txt, schema por tipo de página) pero con **4 huecos de peso** para citación por LLM.
+
+**El hallazgo que más dolía:** el `public/llms.txt` **estático** se había desincronizado → citaba
+`info@localseads.com` cuando el email real es **`local@elcanaveral.info`** (verificado en 18 sitios del código),
+omitía la categoría **inmobiliarias**, estaba en ASCII sin eñes («El Canaveral») y **no incluía ni un enlace**,
+cuando el estándar llms.txt es precisamente un índice de enlaces.
+
+**Desplegado (commits `2fcf6ee` · `ec96751` · `5f7a8eb`):**
+
+1. **Home sin ningún JSON-LD** → `Organization` + `WebSite` (`src/pages/index.astro`): nombre + `alternateName`
+   sin eñe, logo, email, `areaServed` (Madrid · Coslada · San Fernando de Henares), `knowsAbout` con las 17
+   categorías, `parentOrganization` LocalSEOAds y `publisher` cruzado por `@id`. **Sin `SearchAction` a
+   propósito**: la búsqueda es client-side (Fuse.js sobre `/data/negocios.json`) y no existe URL de resultados
+   con parámetro → declararla sería una señal falsa.
+2. **Fichas** (`generateLocalBusinessSchema`, `src/lib/directory.ts`): `@id` estable por ficha · `url` = web
+   oficial (o la ficha si el negocio no tiene web) · **`addressLocality` = MUNICIPIO** (antes ponía el barrio,
+   que Google no resuelve) + `postalCode` desde `zonas.json` · **`geo`** (283 fichas) · **`hasMap` por
+   `place_id`** (286) · **`sameAs`** (Maps + redes normalizadas) · `areaServed` [City + barrio cuando difieren]
+   · guard de `aggregateRating` sin reseñas (markup inválido).
+3. **`/llms.txt` generado en build** (`src/pages/llms.txt.ts`; se borró el estático): 87 enlaces (hubs, 16
+   categorías, 4 zonas, 32 guías, 10 noticias, dataset y contacto), UTF-8 con tildes, fecha real del contenido
+   más reciente y **cobertura de campos declarada con números reales** (dirección 286 · teléfono 260 · web 206 ·
+   horario 123 · valoración 280 · coordenadas 283, sobre 286) — prometer los cinco campos para las 286 fichas
+   era un dato falso que un LLM podía repetir.
+4. **`public/_headers`**: `text/plain; charset=utf-8` + caché de 1 h para `/llms.txt`.
+
+**Bug colateral corregido:** el enlace de Instagram de la ficha incrustaba el dato tal cual
+(`https://instagram.com/${valor}`) y una ficha trae URL completa (`bunbun-canaveral`) → **enlace roto en
+producción**. Nuevo `socialProfileUrl()` en `src/lib/directory.ts` normaliza handle/`@`/URL y lo comparten el
+HTML y el `sameAs` del schema.
+
+**Verificación:** el build local **sí corre** en el sandbox si se concede el retry con acceso total
+(ver `memoria.md`: `spawn EPERM` de Vite es del modo confinado, no del proyecto) → **438 páginas en 12 s**.
+Validaciones propias en `.tmp/` (scratch, gitignored): `validate-geo.mjs` (571 bloques JSON-LD, **0 errores de
+parseo**; geo 283 · hasMap 286 · sameAs 286 · postalCode 286 · municipio 286 · 0 `aggregateRating` sin reseñas),
+`validate-llms-links.mjs` (**87 enlaces, 0 rotos** contra `dist/`) y `gate.mjs` (canonical, h1, lang, title,
+robots/sitemap/llms, secretos → **438 páginas, 0 blockers, 0 avisos**).
+
+**Deuda consciente detectada y NO tocada (candidata a próxima sesión):**
+
+- **Concordancia rota en 7 guías de zona**: «Las mejores **restaurantes** de Coslada», «Las mejores
+  **veterinarios**…», «Las mejores **talleres mecánicos**…» → afecta a `h1`, `metaTitle` e `intro` (7 + 7 + 7
+  campos). Nace del prefijo fijo `"Las mejores {pl}"` de `scripts/generate_zone_listicles.py` (líneas 67-70) →
+  arreglar en el **generador + datos**, no a mano (la próxima regeneración lo revertiría).
+- **`openingHours` sigue en texto libre español** («L-S 9:00-21:00, D 10:00-14:00»); schema.org espera ISO
+  («Mo-Sa 09:00-21:00»). Se deja tal cual **a propósito**: traducirlo automáticamente puede publicar un horario
+  equivocado, y en un directorio local eso es peor que un campo que Google ignora. Requiere mapeo revisado.
+- **`Organization` sin `sameAs`**: el sitio no tiene perfiles sociales propios verificados (las cuentas de
+  `comunidad.json` son de terceros del barrio) → no se inventan.
+- **Bloque GEO pendiente**: `llms-full.txt` (no pedido en esta sesión) y replicar `Organization` en todas las
+  páginas en vez de solo la home.
+
 
 ## ✅ Sesión 2026-09-27 (Windows local, DSH) — retirada de la web de una ficha (solicitud del titular)
 

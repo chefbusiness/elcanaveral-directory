@@ -16,7 +16,8 @@
 1. **Stack**: **Astro 5 + pnpm** + Tailwind 4 + fuse.js (búsqueda client-side) + sharp + `@astrojs/sitemap`. 100 % estático, deploy **Netlify** en CI (push a `master`).
 2. **Data-driven**: todo el contenido en `src/data/*.json` leído con `fs` (`src/lib/directory.ts`, `src/lib/listicles.ts`). Sin content collections.
 3. **Guías**: motor de **ranking bayesiano** (IMDb-style: nota × volumen de reseñas) en `src/lib/listicles.ts` + `src/data/listicles.json`; **drip publishing** con `publishedDate` futura (la fecha oculta la página) + GitHub Action diaria (06:15 UTC) que publica.
-4. **SEO por capas**: `src/data/seo-overrides.json` — `categorias` (title/meta/h1 + `intro`/`faq` → FAQPage) y `fichas` (title/meta por slug). Schema: LocalBusiness/AggregateRating por ficha · ItemList (categoría/zona/guías) · FAQPage · NewsArticle · BreadcrumbList.
+4. **SEO por capas**: `src/data/seo-overrides.json` — `categorias` (title/meta/h1 + `intro`/`faq` → FAQPage) y `fichas` (title/meta por slug). Schema: LocalBusiness/AggregateRating por ficha · ItemList (categoría/zona/guías) · FAQPage · NewsArticle · BreadcrumbList · **Organization + WebSite en la home** (entidad para GEO/LLM).
+   - **GEO**: `robots.txt` permite explícitamente los crawlers de IA · **`/llms.txt` se GENERA en build** (`src/pages/llms.txt.ts`, no hay fichero estático en `public/`; el estático se desincronizó una vez y citaba un email equivocado) · en las fichas el `addressLocality` del schema es el **municipio** (de `zonas.json`), no el barrio, y llevan `geo`/`hasMap` (place_id)/`sameAs`.
 5. **Fichas**: fuente de datos = Apify (`compass/crawler-google-places`, API REST, idempotente por `placeId`) + fotos por `placeId` autoritativo (`fetch_photos_by_placeid.py`; **NO** usar `fetch_places_photos.py`, busca por texto y puede casar el local equivocado). Imágenes WebP q80.
 6. **Monetización cerrada**: 4 tiers en `/planes` (Básico gratis · Verificado 19 €/mes · Destacado 49 €/mes · Sponsor 800 €/mes), forms Netlify → `local@elcanaveral.info`, cobro manual (Bizum/transferencia), legales = Opción A (sin NIF, decisión de John), cookies RGPD con mapas consent-gated.
 7. **Sitio en producción**: `https://www.elcanaveral.info/` (canonical www; apex 301 → www), sitemap **434 URLs** (verificado 2026-09-27); verificación real de cada cambio = deploy de Netlify en vivo (fetch con Node).
@@ -41,8 +42,8 @@
 
 ### Red y procesos
 - **TLS schannel falla** (`SEC_E_NO_CREDENTIALS`) → `Invoke-WebRequest`/`curl.exe` NO sirven para HTTPS. Usar **Node fetch** (OpenSSL) para la web, sitemaps y fuentes externas.
-- **`astro build` local falla** (`spawn EPERM` de vite, sandbox) → la verificación real es el deploy de Netlify tras push.
-- Child-process con stdout piped: bloqueado (EPERM).
+- **`astro build` local falla** (`spawn EPERM` de vite) **en el modo confinado**, pero **SÍ corre si se aprueba el retry con acceso total al sandbox** (probado 2026-09-27b: `pnpm build` → 438 páginas en ~12 s). La verificación de referencia sigue siendo el deploy de Netlify tras push, pero para validar `dist/` (JSON-LD, canonical, llms.txt) vale el build local escalado.
+- Child-process con stdout piped: bloqueado (EPERM) en modo confinado.
 
 ### Search Console — acceso DIRECTO (ya no hacen falta CSVs)
 - Credenciales OAuth en `C:\Users\User\mcp-gsc\` (`token.json` + `client_secrets.json`); el servidor `gsc-mcp` no está instalado, pero la **Search Console API v3** se llama directo con Node (refresh en `oauth2.googleapis.com/token` → `searchconsole.googleapis.com/webmasters/v3/sites/{site}/searchAnalytics/query`).
