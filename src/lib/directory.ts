@@ -1,6 +1,7 @@
 // Directory engine — El Canaveral Info
 import fs from "node:fs";
 import path from "node:path";
+import { stripBlockedWebsites, warnStripped } from "./website-guard.js";
 
 export interface Negocio {
   slug: string;
@@ -72,7 +73,12 @@ const DATA_DIR = path.resolve("src/data");
 export function loadNegocios(): Negocio[] {
   const filePath = path.join(DATA_DIR, "negocios.json");
   if (!fs.existsSync(filePath)) return [];
-  return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  const raw: Negocio[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  // Guard: webs bloqueadas por el titular nunca llegan a HTML/json-ld
+  // (ver src/data/website-blocklist.json).
+  const { negocios, stripped } = stripBlockedWebsites(raw);
+  warnStripped(stripped, "website-guard");
+  return negocios as Negocio[];
 }
 
 export function loadCategorias(): Categoria[] {

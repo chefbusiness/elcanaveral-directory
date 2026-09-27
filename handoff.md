@@ -1,6 +1,6 @@
 # HANDOFF — elcanaveral.info
 
-> Hoja de arranque y estado del proyecto. Última actualización: **2026-09-23** (sesión DSH — GSC #4).
+> Hoja de arranque y estado del proyecto. Última actualización: **2026-09-27** (sesión DSH — retirada de la web de una ficha a petición del titular).
 > 👉 Trilogía de contexto: `handoff.md` (estado/sesiones) · `memoria.md` (contexto, entorno y límites — leer
 > antes de retomar) · `roadmap.md` (hecho/pendiente priorizado). La receta de push del sandbox y el acceso
 > GSC por API están en `memoria.md`.
@@ -16,6 +16,26 @@
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
 | **HEAD ref** | `2eb2b17` — 286 negocios, 32 guías, 9 posts, sitemap 433 URLs (2026-09-23) |
+
+## ✅ Sesión 2026-09-27 (Windows local, DSH) — retirada de la web de una ficha (solicitud del titular)
+
+**Petición recibida** (email a LocalSEOAds/elcanaveral.info): **Mª Lourdes Pulido López, titular de Farmacia
+Sonrisas del Cañaveral** (C/ Anna Frank, 10 — `farmacia-sonrisas-canaveral`), pide **eliminar cualquier
+referencia a `farmaciasonrisascanaveral.com`** como web de la farmacia: el dominio caducó, lo registró un
+tercero y ya no está bajo su control (Google sigue asociándolo por páginas externas). Mientras no se
+resuelva, **la ficha no debe llevar ningún enlace a una web**.
+
+1. **Dato retirado:** campo `website` eliminado de la ficha en `src/data/negocios.json`. Con eso la ficha se
+   renderiza sin enlace (`{negocio.website && …}` en `[categoria]/[slug].astro`) y sin `url` en el JSON-LD
+   `LocalBusiness` (`generateLocalBusinessSchema`). Eran las dos únicas apariciones en el sitio.
+2. **Guard anti-reaparición** (el enriquecimiento de Google/Apify repone webs): nuevo
+   `src/data/website-blocklist.json` + `src/lib/website-guard.js`, aplicado en `loadNegocios()`
+   (`src/lib/directory.ts`) y en `scripts/copy-data.mjs` → el dominio bloqueado no puede publicarse ni en
+   HTML/JSON-LD ni en `/data/negocios.json`, aunque vuelva a entrar en el JSON fuente.
+3. `public/data/negocios.json` regenerado (diff de 1 línea: copia byte a byte cuando la fuente ya está limpia).
+4. ⚠️ **Verificación:** el build local sigue sin correr en este sandbox (`spawn EPERM` de Vite, ya documentado)
+   → verificar en **deploy de Netlify** que la ficha ya no muestra web y solicitar la reindexación en GSC.
+5. **Pendiente:** confirmar por email a la titular cuando esté desplegado y verificado en vivo.
 
 ## ✅ Sesión 2026-09-23 (Windows local, DSH) — auditoría GSC #4 + clusters nuevos
 

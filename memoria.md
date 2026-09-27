@@ -61,6 +61,7 @@
 - Párrafos de posts se renderizan con `set:html` → **escapar `&`, `<` y `>`** (mín. `&amp;`).
 - No usar nombres visibles con acentos como claves de comparación (patrón del bug del emoji); usar slugs.
 - Imágenes WebP q80 + `loading=lazy`; sin secretos en repo; commits por hito.
+- **Retirada de web a petición de un titular:** no basta con borrar el campo `website` de su ficha (un enriquecimiento posterior de Google/Apify lo repone) → añadir además el dominio a `src/data/website-blocklist.json`. El guard (`src/lib/website-guard.js`) lo retira en `loadNegocios()` y en `scripts/copy-data.mjs`, así que no se publica ni en HTML/JSON-LD ni en `/data/negocios.json`.
 
 ## Disciplina del grupo (NATIVA)
 - Skills globales en `~/.dsh/skills/` y preset `~/.dsh/agent-presets/chefbusiness-workflow/`: **ultracode · ultra-review · model-routing** (L0 base DeepSeek → L1/L2 vía `model-routing.mjs` en tareas pesadas).

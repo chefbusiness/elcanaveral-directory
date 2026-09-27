@@ -1,0 +1,11 @@
+{
+  "_nota": "Dominios que NO deben publicarse como web de ningun negocio (solicitud del titular, dominio caducado o no controlado por el negocio). Se aplica en loadNegocios() (src/lib/directory.ts) y en scripts/copy-data.mjs: si una web bloqueada reaparece en src/data/negocios.json (p. ej. al re-ejecutar un enriquecimiento de Google/Apify), se retira automaticamente antes de renderizar y antes de publicar /data/negocios.json.",
+  "_como_anadir": "Una entrada por dominio (sin www, en minusculas) con motivo y fecha. No basta con borrar el campo website de la ficha: el enriquecimiento puede volver a ponerlo.",
+  "dominios_bloqueados": {
+    "farmaciasonrisascanaveral.com": {
+      "motivo": "Solicitud del titular de Farmacia Sonrisas del Cañaveral (C/ Anna Frank, 10), 2026-09-27: el dominio caduco y fue registrado por un tercero, ya no esta bajo su control. Piden no enlazar ninguna web en la ficha hasta nuevo aviso.",
+      "slug": "farmacia-sonrisas-canaveral",
+      "desde": "2026-09-27"
+    }
+  }
+}
