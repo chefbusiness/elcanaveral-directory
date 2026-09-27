@@ -1,6 +1,6 @@
 # ROADMAP — elcanaveral.info
 
-> Actualizado: **SESIÓN 2026-09-23** — auditoría **GSC #4** (crecimiento por amplitud: +58 % clics, +57 % impr; el CTR de fichas de marca sigue a 0 % → el ROI está en categorías/zonas/FAQ), acciones sobre los clusters nuevos (`/supermercados/` y `/educacion/` con intro+FAQPage, 6 fichas más con overrides) y **bug de render del FAQ corregido**. Próxima: **GSC #5 (~mediados de octubre)** y verificación in situ (John).
+> Actualizado: **SESIÓN 2026-09-27** — retirada de la web de la ficha de Farmacia Sonrisas del Cañaveral a petición de su titular + **guard de webs bloqueadas** (`website-blocklist.json`). Sesión anterior (23-sep): auditoría **GSC #4** (crecimiento por amplitud: +58 % clics, +57 % impr; el CTR de fichas de marca sigue a 0 % → el ROI está en categorías/zonas/FAQ), acciones sobre los clusters nuevos (`/supermercados/` y `/educacion/` con intro+FAQPage, 6 fichas más con overrides) y **bug de render del FAQ corregido**. Próxima: **GSC #5 (~mediados de octubre)** y verificación in situ (John).
 
 ## Hecho ✅
 

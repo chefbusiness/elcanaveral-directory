@@ -1,6 +1,6 @@
 # MEMORIA — elcanaveral.info
 
-> Fuente de verdad del proyecto. Leer ANTES de cualquier sesión. Última actualización: **CIERRE DE SESIÓN 2026-08-31** (auditoría GSC #3, 2 posts, acciones CTR, trilogía de docs + push).
+> Fuente de verdad del proyecto. Leer ANTES de cualquier sesión. Última actualización: **CIERRE DE SESIÓN 2026-09-27** (retirada de la web de una ficha a petición de su titular + guard de webs bloqueadas).
 > Compañera de `handoff.md` (estado y sesiones) y `roadmap.md` (hecho/pendiente).
 
 ## Qué es (y qué NO es)
@@ -19,7 +19,7 @@
 4. **SEO por capas**: `src/data/seo-overrides.json` — `categorias` (title/meta/h1 + `intro`/`faq` → FAQPage) y `fichas` (title/meta por slug). Schema: LocalBusiness/AggregateRating por ficha · ItemList (categoría/zona/guías) · FAQPage · NewsArticle · BreadcrumbList.
 5. **Fichas**: fuente de datos = Apify (`compass/crawler-google-places`, API REST, idempotente por `placeId`) + fotos por `placeId` autoritativo (`fetch_photos_by_placeid.py`; **NO** usar `fetch_places_photos.py`, busca por texto y puede casar el local equivocado). Imágenes WebP q80.
 6. **Monetización cerrada**: 4 tiers en `/planes` (Básico gratis · Verificado 19 €/mes · Destacado 49 €/mes · Sponsor 800 €/mes), forms Netlify → `local@elcanaveral.info`, cobro manual (Bizum/transferencia), legales = Opción A (sin NIF, decisión de John), cookies RGPD con mapas consent-gated.
-7. **Sitio en producción**: `https://www.elcanaveral.info/` (canonical www; apex 301 → www), sitemap 433 URLs; verificación real de cada cambio = deploy de Netlify en vivo (fetch con Node).
+7. **Sitio en producción**: `https://www.elcanaveral.info/` (canonical www; apex 301 → www), sitemap **434 URLs** (verificado 2026-09-27); verificación real de cada cambio = deploy de Netlify en vivo (fetch con Node).
 
 ## ENTORNO / LÍMITES (Windows + DSH — lo más importante)
 

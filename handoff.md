@@ -15,7 +15,7 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `2eb2b17` — 286 negocios, 32 guías, 9 posts, sitemap 433 URLs (2026-09-23) |
+| **HEAD ref** | `056646b` — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** (verificado en vivo 2026-09-27) |
 
 ## ✅ Sesión 2026-09-27 (Windows local, DSH) — retirada de la web de una ficha (solicitud del titular)
 
@@ -39,6 +39,8 @@ resuelva, **la ficha no debe llevar ningún enlace a una web**.
 5. **Alcance:** lo nuestro termina en el sitio (no enlazar el dominio). Que Google lo siga asociando por
    **páginas externas de terceros** no es competencia nuestra; si la titular quiere, ella misma pide la
    reindexación en Search Console. Nada pendiente por nuestra parte.
+6. **Cierre:** commits `eb57149` (datos + guard) y `056646b` (alcance en docs), pusheados a `master`; repo
+   limpio y sincronizado. Sitemap en vivo: 434 URLs · ficha 200.
 
 ## ✅ Sesión 2026-09-23 (Windows local, DSH) — auditoría GSC #4 + clusters nuevos
 
