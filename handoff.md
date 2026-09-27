@@ -15,7 +15,7 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `5f7a8eb` — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** · JSON-LD Organization/WebSite en home · `/llms.txt` generado en build |
+| **HEAD ref** | `2880e93` (código del bloque GEO) · docs de cierre en `39c4463` — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** · JSON-LD Organization/WebSite en home · `/llms.txt` generado en build |
 
 ## ✅ Sesión 2026-09-27b (Windows local, DSH) — bloque GEO: entidad, fichas y llms.txt
 
@@ -61,7 +61,7 @@ robots/sitemap/llms, secretos → **438 páginas, 0 blockers, 0 avisos**).
 
 **Deuda consciente detectada y NO tocada (candidata a próxima sesión):**
 
-- **Revisión adversarial (subagente) antes de cerrar → 1 bloqueante y 1 grave, YA CORREGIDOS** (commit `1bd4d0a`):
+- **Revisión adversarial (subagente) antes de cerrar → 1 bloqueante y 1 grave, YA CORREGIDOS** (commit `2880e93`):
   1. *Bloqueante*: yo tomaba el `postalCode` del genérico de la zona y **contradecía el CP que ya lleva la
      propia dirección en 60 fichas** (58 de Coslada: se emitía 28822 a direcciones 28820/28821/28823) → ahora el
      CP sale de `streetAddress` (lo traen las 286) y el de `zonas.json` queda solo como fallback. **0 contradicciones.**
