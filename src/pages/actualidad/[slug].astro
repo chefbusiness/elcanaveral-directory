@@ -14,6 +14,18 @@ export function getStaticPaths() {
 const { post } = Astro.props as any;
 const fmt = (iso: string) => new Date(iso).toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" });
 const base = "https://www.elcanaveral.info";
+// Misma entidad que la Organization de la home (src/pages/index.astro): sin el
+// @id, cada noticia declaraba una Organization distinta del mismo editor y un
+// LLM veia dos marcas donde hay una. Se mantienen name+logo inline porque el
+// rich result de Article exige publisher con nombre y logo.
+const orgId = `${base}/#organization`;
+const publisher = {
+  "@id": orgId,
+  "@type": "Organization",
+  name: "El Cañaveral Info",
+  url: `${base}/`,
+  logo: { "@type": "ImageObject", url: `${base}/favicon-512.png`, width: 512, height: 512 },
+};
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -22,8 +34,8 @@ const articleSchema = {
   description: post.excerpt,
   datePublished: post.date,
   dateModified: post.updated || post.date,
-  author: { "@type": "Organization", name: "elcanaveral.info" },
-  publisher: { "@type": "Organization", name: "elcanaveral.info" },
+  author: publisher,
+  publisher,
   mainEntityOfPage: `${base}/actualidad/${post.slug}/`,
 };
 const breadcrumbSchema = {

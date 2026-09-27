@@ -61,6 +61,19 @@ robots/sitemap/llms, secretos → **438 páginas, 0 blockers, 0 avisos**).
 
 **Deuda consciente detectada y NO tocada (candidata a próxima sesión):**
 
+- **Revisión adversarial (subagente) antes de cerrar → 1 bloqueante y 1 grave, YA CORREGIDOS** (commit `1bd4d0a`):
+  1. *Bloqueante*: yo tomaba el `postalCode` del genérico de la zona y **contradecía el CP que ya lleva la
+     propia dirección en 60 fichas** (58 de Coslada: se emitía 28822 a direcciones 28820/28821/28823) → ahora el
+     CP sale de `streetAddress` (lo traen las 286) y el de `zonas.json` queda solo como fallback. **0 contradicciones.**
+  2. *Grave*: `geo` con coordenadas imposibles en **4 fichas** (Alemania, Venezuela, Bogotá, Cádiz) del mismo
+     scrape → nueva caja de cordura del área (lat 40.2-40.6 / lng −3,95 a −3,2): sin `geo` fuera de ella y,
+     en esas fichas, `hasMap` se resuelve **por dirección** en vez de por un `placeId` del que ya no nos fiamos.
+     Detectado y anotado en `VERIFICAR-EN-PERSONA.md` para re-enriquecer. `geo`: 283 → **279** (los 4 corruptos).
+  3. Menores corregidos: `sameAs` ya no duplica la URL de `hasMap` · el `publisher`/`author` de las 10 noticias
+     apunta por `@id` a la misma `Organization` de la home (antes eran dos organizaciones distintas; se conserva
+     `name`+`logo` porque el rich result de Article los exige) · la cifra de «web propia» de `llms.txt` ya no
+     cuenta los 16 perfiles sociales como web (190 reales) · fallback de `municipio` para que `areaServed` nunca
+     emita una `City` sin `name`.
 - **Concordancia rota en 7 guías de zona**: «Las mejores **restaurantes** de Coslada», «Las mejores
   **veterinarios**…», «Las mejores **talleres mecánicos**…» → afecta a `h1`, `metaTitle` e `intro` (7 + 7 + 7
   campos). Nace del prefijo fijo `"Las mejores {pl}"` de `scripts/generate_zone_listicles.py` (líneas 67-70) →
@@ -68,6 +81,9 @@ robots/sitemap/llms, secretos → **438 páginas, 0 blockers, 0 avisos**).
 - **`openingHours` sigue en texto libre español** («L-S 9:00-21:00, D 10:00-14:00»); schema.org espera ISO
   («Mo-Sa 09:00-21:00»). Se deja tal cual **a propósito**: traducirlo automáticamente puede publicar un horario
   equivocado, y en un directorio local eso es peor que un campo que Google ignora. Requiere mapeo revisado.
+- **16 fichas guardan un perfil social en `website`** y el HTML lo rotula «Visitar web»: el `url` del schema
+  apunta al perfil (como antes), pero la etiqueta engaña. Arreglo = mover ese dato a `redesSociales` (migración
+  de datos + `sameAs` con cobertura de 1/286 → 17/286).
 - **`Organization` sin `sameAs`**: el sitio no tiene perfiles sociales propios verificados (las cuentas de
   `comunidad.json` son de terceros del barrio) → no se inventan.
 - **Bloque GEO pendiente**: `llms-full.txt` (no pedido en esta sesión) y replicar `Organization` en todas las

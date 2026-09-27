@@ -88,6 +88,13 @@ function getZonasRaw(): Zona[] {
   return zonasRawCache;
 }
 
+// Caja del area cubierta (este de Madrid + Corredor del Henares). Sirve de
+// filtro de cordura para las coordenadas de Google Places.
+const AREA = { latMin: 40.2, latMax: 40.6, lngMin: -3.95, lngMax: -3.2 };
+function dentroDelArea(lat: number, lng: number): boolean {
+  return lat >= AREA.latMin && lat <= AREA.latMax && lng >= AREA.lngMin && lng <= AREA.lngMax;
+}
+
 // Perfil social -> URL absoluta. Acepta handle ("@bunbun_brunch"), handle sin @
 // o URL completa ya pegada en los datos (caso real: bunbun-canaveral).
 const SOCIAL_BASE: Record<string, string> = {
@@ -248,23 +255,33 @@ export function generateLocalBusinessSchema(negocio: Negocio) {
   const fichaUrl = `${SITE_URL}/${negocio.category}/${negocio.slug}/`;
   const lat = Number(negocio.lat);
   const lng = Number(negocio.lng);
-  const tieneGeo = Number.isFinite(lat) && Number.isFinite(lng) && lat !== 0 && lng !== 0;
-  const municipio = zona?.municipality || negocio.zonaName;
+  // `geo` solo si las coordenadas caen dentro del area cubierta. Hay fichas con
+  // lat/lng de otro pais (Alemania, Venezuela, Colombia, Cadiz) del mismo scrape
+  // de Google Places: publicar ese geo es peor que no publicar ninguno.
+  const tieneGeo =
+    Number.isFinite(lat) && Number.isFinite(lng) && lat !== 0 && lng !== 0 && dentroDelArea(lat, lng);
+  const municipio = zona?.municipality || negocio.zonaName || "Madrid";
 
-  // Mapa: place_id es el identificador estable del negocio en Google (mejor que
-  // buscar por dirección, que puede resolver a otro local del mismo edificio).
-  const mapsUrl = negocio.placeId
+  // CP: manda el que ya viene dentro de la direccion (lo traen las 286 fichas);
+  // el de zonas.json solo es el fallback. Usar el generico de la zona producia
+  // 60 direcciones autocontradictorias (streetAddress "…28820 Coslada" con
+  // postalCode 28822).
+  const cpEnDireccion = (negocio.address || "").match(/\b(28\d{3})\b/)?.[1];
+  const postalCode = cpEnDireccion || zona?.postalCodes?.[0];
+
+  // Mapa: place_id es el identificador estable del negocio en Google, pero si las
+  // coordenadas de la misma ficha estan fuera del area, el scrape no es fiable y
+  // se prefiere buscar por direccion antes que enlazar a un local equivocado.
+  const mapsUrl = negocio.placeId && tieneGeo
     ? `https://www.google.com/maps/place/?q=place_id:${negocio.placeId}`
     : negocio.address
       ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(negocio.address)}`
       : undefined;
 
-  // sameAs: URLs que identifican al MISMO negocio en otros sitios (perfiles y
-  // ficha de Google Maps). La web propia va en `url`, por eso no se repite aqui.
-  const sameAs = [
-    ...normalizeSocialUrls(negocio.redesSociales as Record<string, string> | undefined),
-    ...(mapsUrl ? [mapsUrl] : []),
-  ];
+  // sameAs: URLs que identifican al MISMO negocio en otros sitios (perfiles
+  // sociales). La web propia va en `url` y el mapa en `hasMap`, asi que ninguno
+  // de los dos se repite aqui.
+  const sameAs = normalizeSocialUrls(negocio.redesSociales as Record<string, string> | undefined);
 
   return {
     "@context": "https://schema.org",
@@ -283,7 +300,7 @@ export function generateLocalBusinessSchema(negocio: Negocio) {
         // resuelven la direccion contra municipios, no contra barrios.
         addressLocality: municipio,
         addressRegion: "Comunidad de Madrid",
-        ...(zona?.postalCodes?.[0] && { postalCode: zona.postalCodes[0] }),
+        ...(postalCode && { postalCode }),
         addressCountry: "ES",
       },
     }),

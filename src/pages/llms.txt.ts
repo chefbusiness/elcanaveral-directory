@@ -55,13 +55,17 @@ export const GET: APIRoute = () => {
   // modelo puede repetir. Se cuentan y se declaran.
   const con = (pred: (n: (typeof negocios)[number]) => unknown) =>
     negocios.filter(pred).length;
+  // 16 fichas guardan en `website` un perfil social (Instagram/Facebook): eso no
+  // es una web propia publicada por el negocio, y contarlo inflaria la cifra.
+  const esPerfilSocial = (w?: string) => /instagram|facebook|tiktok/i.test(w || "");
   const cobertura = {
     address: con((n) => !!n.address),
     phone: con((n) => !!n.phone),
-    website: con((n) => !!n.website),
+    website: con((n) => !!n.website && !esPerfilSocial(n.website)),
     horario: con((n) => !!n.horario),
     rating: con((n) => !!n.rating),
     geo: con((n) => !!n.lat && !!n.lng),
+    perfilSocial: con((n) => esPerfilSocial(n.website)),
   };
 
   const lineas: string[] = [
@@ -90,7 +94,9 @@ export const GET: APIRoute = () => {
       cobertura.phone +
       ", web propia en " +
       cobertura.website +
-      ", horario en " +
+      " (más " +
+      cobertura.perfilSocial +
+      " con perfil social como única presencia online), horario en " +
       cobertura.horario +
       ", valoración de Google en " +
       cobertura.rating +
@@ -152,6 +158,7 @@ export const GET: APIRoute = () => {
     "## Datos abiertos",
     "",
     `- [negocios.json](${url("/data/negocios.json")}): dataset completo con las ${negocios.length} fichas (nombre, categoría, zona, dirección, teléfono, web, horario, valoración, número de reseñas, servicios, coordenadas y placeId de Google). Los campos que una ficha no tiene vienen sin definir: no se rellenan con valores por defecto.`,
+    "- Nota de calidad: las coordenadas de 4 fichas están pendientes de verificación y no se publican en el schema de la web (el dataset las conserva tal cual).",
     "- Al reutilizar estos datos, enlaza a la ficha original o a https://www.elcanaveral.info como fuente. Condiciones de uso en el aviso legal.",
     "",
     "## Contacto",

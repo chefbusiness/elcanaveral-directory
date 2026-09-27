@@ -7,6 +7,22 @@ Negocios con datos dudosos que conviene confirmar in situ (John vive en el barri
 | **Obramat El Cañaveral** | `obramat-canaveral` | No aparece en Google Maps ni con sesgo de barrio; John no recuerda haberlo visto. Puede estar cerrado o tener otro rótulo a pie de calle. Dirección en datos: Av. de Miguel Delibes, 150. | Verificar si existe y con qué nombre. Si no existe → eliminar del directorio. |
 | **Mediadores Inmobiliarios El Cañaveral** | `mediadores-inmobiliarios-canaveral` | La búsqueda en Google lo cruzó con **SM Homes** (mismo teléfono que `sm-homes-el-canaveral`). Sin ficha propia en Google. | Confirmar si es un negocio distinto de SM Homes o un duplicado. Si es duplicado → fusionar/eliminar. |
 
+## Datos geográficos corruptos (detectado 2026-09-27 al montar el JSON-LD)
+
+Cuatro fichas traen **coordenadas de otro país/ciudad** (mismo scrape de Google Places → el `placeId` de esas
+fichas tampoco es fiable). El schema ya no publica `geo` en ellas y busca el mapa **por dirección**, pero el
+dato de origen sigue mal: conviene confirmar el local real y, si toca, re-enriquecer la ficha.
+
+| Ficha | slug | Coordenadas guardadas | Qué son en realidad |
+|---|---|---|---|
+| Lidl El Cañaveral | `lidl-canaveral` | 50.71708, 10.46791 | Alemania |
+| Family Mini Market | `family-mini-market` | 10.9912, −63.8208 | Venezuela |
+| García y Asociados Asesoría | `garcia-asociados-asesoria` | 4.6070, −74.0739 | Bogotá (Colombia) |
+| Mercadona San Fernando | `mercadona-san-fernando` | 36.4758, −6.2006 | Cádiz |
+
+> Regla añadida al código: `generateLocalBusinessSchema` (`src/lib/directory.ts`) descarta `geo` fuera de la
+> caja del área cubierta (lat 40.2-40.6 / lng −3.95 a −3.2) y, en esas fichas, deja de fiarse del `placeId`.
+
 > Resuelto el 2026-06-25: la ficha "McDonald's El Cañaveral" (Av. Miguel Delibes 80) era en realidad **Burger King** → renombrada a `burger-king-canaveral` con redirect 301.
 
 ## Aperturas anunciadas (alta 2026-08-21, sin abrir todavía)
