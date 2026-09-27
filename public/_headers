@@ -1,3 +1,11 @@
 # El navegador solo aplica la hoja XSL si el .xsl se sirve con un content-type XML.
 /sitemap.xsl
   Content-Type: text/xsl; charset=utf-8
+
+# llms.txt: UTF-8 explícito (tiene tildes y eñes) y caché corta para que un
+# cambio de datos no tarde en verse. El fichero ya se genera con ese content-type
+# en el build; esto lo fija también en el borde.
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600, must-revalidate
+
