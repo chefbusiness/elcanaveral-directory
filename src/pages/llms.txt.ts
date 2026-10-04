@@ -130,7 +130,7 @@ export const GET: APIRoute = () => {
     "- [Mercados y mercadillos](" + url("/mercadillos/") + ").",
     "- [Comida a domicilio](" + url("/comida-a-domicilio/") + ").",
     "- [El Cañaveral con perro](" + url("/con-perro/") + ").",
-    "- [Vivir en El Cañaveral](" + url("/vivir-en-el-canaveral/") + ").",
+    "- [Vivir en El Cañaveral](" + url("/el-canaveral/") + ").",
     "- [Vivienda](" + url("/vivienda/") + "): precios de compra y alquiler con fuente y fecha, obra nueva en marcha, vivienda asequible de EMVS y sus sorteos, impuestos y trámites.",
     "- [Bares y tapas](" + url("/bares-y-tapas/") + "): dónde tapear y tomar algo en el barrio y su entorno, con terraza.",
     "- [Farmacias de guardia y urgencias](" + url("/farmacias-de-guardia/") + "): cómo encontrar la farmacia de guardia por canales oficiales, las farmacias del barrio con horario y el veterinario con urgencias 24 h.",

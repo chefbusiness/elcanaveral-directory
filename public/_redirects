@@ -18,3 +18,9 @@
 /educacion/educacion-canina-es                /mascotas/educacion-canina-es/                301
 /educacion/afijo-de-sierra-dormida            /mascotas/afijo-de-sierra-dormida/            301
 /educacion/peluqueria-canina-frenchieperbote  /mascotas/peluqueria-canina-frenchieperbote/  301
+
+# --- 301 al hub definitivo del barrio (oct-2026) ---
+# La página keystone se consolida en /el-canaveral/, que apunta al nombre del barrio (el head term
+# más buscado del sitio). Una sola URL canónica para la entidad, en vez de dos compitiendo.
+/vivir-en-el-canaveral      /el-canaveral/   301
+/vivir-en-el-canaveral/     /el-canaveral/   301

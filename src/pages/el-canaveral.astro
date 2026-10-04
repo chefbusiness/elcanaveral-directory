@@ -1,0 +1,313 @@
+---
+// P3 · Hub definitivo del barrio, apuntando al head term «el cañaveral» (40.500/mes medidos con
+// DataForSEO en oct-2026) + «el cañaveral madrid» (6.600/mes), donde hoy estamos en posición 88.
+// Sustituye a /vivir-en-el-canaveral/ (que ahora responde 301 aquí, ver public/_redirects): una sola
+// página canónica para la entidad «El Cañaveral (Vicálvaro, Madrid)» en vez de dos compitiendo.
+//
+// Todas las cifras están verificadas con fuente (investigación del 2026-10-05; el detalle y las fuentes
+// están en /vivienda/ y en IDEAS-CONTENIDO.md). Las coordenadas del centro del barrio se calculan con la
+// mediana de las 283 fichas que traen lat/lng, no se escriben a mano.
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { loadCategorias, loadNegocios, loadZonas } from "@/lib/directory";
+
+const base = "https://www.elcanaveral.info";
+const negocios = loadNegocios();
+const categorias = loadCategorias().filter((c) => (c.count ?? 0) > 0);
+const zonas = loadZonas();
+
+const mediana = (xs: number[]) => {
+  const s = [...xs].sort((a, b) => a - b);
+  const m = Math.floor(s.length / 2);
+  return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+};
+const conCoords = negocios.filter((n) => Number.isFinite(Number(n.lat)) && Number.isFinite(Number(n.lng)));
+const lat = mediana(conCoords.map((n) => Number(n.lat)));
+const lng = mediana(conCoords.map((n) => Number(n.lng)));
+
+// Conteos de las categorías que se citan en el texto: se calculan, no se escriben a mano.
+const porCategoria = (slug: string) => negocios.filter((n) => n.category === slug).length;
+const nRestaurantes = porCategoria("restaurantes");
+const nCafeterias = porCategoria("cafeterias");
+
+const secciones = [
+  { icon: "🏘️", titulo: "Vivienda y precios", texto: "Cuánto cuesta comprar y alquilar, obra nueva en marcha y las 1.212 viviendas asequibles de EMVS, con fuentes y fechas.", href: "/vivienda", cta: "Ver precios de vivienda" },
+  { icon: "🚌", titulo: "Cómo llegar y transporte", texto: "Buses 159, E5 exprés y búho N6, interurbano 290, Cercanías en Vicálvaro y accesos por A-3, M-45 y M-50. Metro: no hay.", href: "/transporte", cta: "Ver transporte" },
+  { icon: "🏪", titulo: "Comercio y servicios", texto: `${negocios.length} negocios en ${categorias.length} categorías y 4 zonas: supermercados, farmacias, peluquerías, talleres, clínicas…`, href: "/directorio", cta: "Ver el directorio" },
+  { icon: "🍽️", titulo: "Dónde comer", texto: `${nRestaurantes} restaurantes, ${nCafeterias} cafeterías, bares de tapas y panaderías, con las mejor valoradas de Google.`, href: "/restaurantes", cta: "Ver dónde comer" },
+  { icon: "🛒", titulo: "Qué abre el domingo", texto: "Supermercados, panaderías, fruterías y bazares abiertos en domingo, con su horario real.", href: "/abiertos-los-domingos", cta: "Ver abiertos en domingo" },
+  { icon: "🌳", titulo: "Parques y espacios públicos", texto: "Parques infantiles, pipicanes, pistas deportivas y zonas verdes del barrio.", href: "/espacios-publicos", cta: "Ver parques" },
+  { icon: "🏫", titulo: "Educación", texto: "Guarderías y escuelas infantiles, academias de inglés y autoescuelas de la zona.", href: "/educacion", cta: "Ver educación" },
+  { icon: "🏥", titulo: "Salud y farmacias", texto: "Centros de salud, dentistas, fisioterapia, farmacias de guardia y urgencias 24 h.", href: "/farmacias-de-guardia", cta: "Ver farmacias y urgencias" },
+  { icon: "🏛️", titulo: "Servicios públicos", texto: "Colegio público, centro de salud, instituto en marcha y trámites (empadronamiento, Junta Municipal).", href: "/servicios-publicos", cta: "Ver servicios públicos" },
+  { icon: "🎉", titulo: "Fiestas y agenda", texto: "Fiestas de Vicálvaro, Tapaveral, carrera popular y días señalados del barrio.", href: "/fiestas", cta: "Ver fiestas" },
+  { icon: "🗺️", titulo: "Planes y escapadas", texto: "Qué hacer desde El Cañaveral: planes por Madrid con filtros para ir con niños o con perro.", href: "/escapadas", cta: "Ver planes" },
+  { icon: "📰", titulo: "Actualidad del barrio", texto: "Aperturas, urbanismo, transporte y todo lo que cambia en el barrio, con fuente y fecha.", href: "/actualidad", cta: "Ver actualidad" },
+];
+
+const cifras = [
+  { valor: "27.014", etiqueta: "vecinos empadronados", nota: "agosto de 2026" },
+  { valor: "538 ha", etiqueta: "de barrio", nota: "100 ha de zonas verdes" },
+  { valor: "14.000", etiqueta: "viviendas previstas", nota: "+53 % con protección" },
+  { valor: negocios.length.toString(), etiqueta: "negocios en la guía", nota: `${categorias.length} categorías` },
+];
+
+const faq = [
+  {
+    q: "¿Dónde está El Cañaveral?",
+    a: "El Cañaveral es un barrio del distrito de Vicálvaro, al este de Madrid, entre Vicálvaro, Coslada y San Fernando de Henares. Es uno de los desarrollos urbanísticos más nuevos de la capital (barrio administrativo desde 2017, sobre un ámbito de 538 hectáreas) y está a unos 30-40 minutos del centro con la línea exprés E5. Código postal principal: 28052.",
+  },
+  {
+    q: "¿Cuántos habitantes tiene El Cañaveral?",
+    a: "27.014 personas empadronadas en agosto de 2026. Es un barrio en pleno crecimiento: el plan parcial prevé 14.000 viviendas (más de la mitad con algún régimen de protección) y a mediados de 2025 había 142 promociones entregadas, 19 en construcción y 9 en comercialización.",
+  },
+  {
+    q: "¿Tiene metro El Cañaveral?",
+    a: "No. No hay ninguna estación de Metro dentro del barrio (la Comunidad apuesta por buses rápidos en los desarrollos del sureste). Se llega con los autobuses 159, E5 exprés y el búho nocturno N6, con el interurbano 290 (Coslada Central y Plenilunio) y con las Cercanías C2/C7 en la estación de Vicálvaro, a unos 17-19 minutos andando desde la parte antigua del barrio. Hay un apeadero de Cercanías previsto en el propio El Cañaveral, sin fecha.",
+  },
+  {
+    q: "¿Es un buen barrio para vivir en familia?",
+    a: "Es un barrio joven y muy familiar: avenidas amplias, viviendas nuevas con terraza, parques y zonas verdes (100 de las 538 hectáreas). La oferta educativa está creciendo: la Comunidad de Madrid va a crear 1.000 plazas escolares públicas en el barrio, con un instituto de 24 aulas de ESO y 8 de Bachillerato, además del CEIPSO Rudyard Kipling y varias escuelas infantiles de 0-3 años. Lo que todavía falta es la estación de metro y algo más de comercio consolidado.",
+  },
+  {
+    q: "¿Cuánto cuesta vivir en El Cañaveral?",
+    a: "La obra nueva libre está en 4.112 €/m² de media y 427.000 € de precio medio de vivienda nueva (enero de 2026): es el barrio más caro del sureste de Madrid, aunque sigue por debajo del centro. El alquiler medio del distrito de Vicálvaro es de 1.709 €/mes (septiembre de 2026). Hay además 1.212 viviendas de alquiler asequible de EMVS en el barrio, con rentas de 300 a 800 €/mes y sorteos pendientes en 2027. Tienes todos los datos con sus fuentes en la guía de vivienda.",
+  },
+  {
+    q: "¿Qué se puede hacer en El Cañaveral?",
+    a: `Para el día a día: el directorio con ${negocios.length} negocios (supermercados, panaderías, farmacias, gimnasios…), parques y espacios públicos y los mercadillos de la zona. Para salir: ${nRestaurantes} restaurantes, ${nCafeterias} cafeterías y una decena de bares y tabernas de tapas, además de Tapaveral (la feria de la tapa del barrio, en octubre) y las fiestas de Vicálvaro. Y para el finde, la sección de planes y escapadas con filtros por niños o perro.`,
+  },
+];
+
+const placeSchema = {
+  "@context": "https://schema.org",
+  "@type": "Place",
+  name: "El Cañaveral",
+  alternateName: ["El Cañaveral (Vicálvaro)", "El Cañaveral, Madrid"],
+  description:
+    "Barrio del distrito de Vicálvaro (Madrid), en el sureste de la capital, junto a Coslada y San Fernando de Henares. Barrio administrativo desde 2017.",
+  url: `${base}/el-canaveral/`,
+  sameAs: ["https://es.wikipedia.org/wiki/El_Ca%C3%B1averal"],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Madrid",
+    addressRegion: "Comunidad de Madrid",
+    postalCode: "28052",
+    addressCountry: "ES",
+  },
+  // Centro aproximado del barrio: mediana de las coordenadas de las 283 fichas del directorio.
+  geo: { "@type": "GeoCoordinates", latitude: Number(lat.toFixed(6)), longitude: Number(lng.toFixed(6)) },
+  containedInPlace: { "@type": "AdministrativeArea", name: "Vicálvaro, Madrid" },
+};
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "El Cañaveral", item: `${base}/el-canaveral/` },
+  ],
+};
+---
+
+<BaseLayout
+  title="El Cañaveral (Madrid): guía completa del barrio de Vicálvaro"
+  description="Todo sobre El Cañaveral, el barrio de Vicálvaro (Madrid): dónde está, cuántos vecinos tiene (27.014), cómo llegar sin metro, vivienda y precios, colegios, comercios y qué hacer. Con datos y fuentes."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(placeSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">El Cañaveral</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          El Cañaveral (Madrid): la guía del barrio
+        </h1>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          El Cañaveral es un barrio del <strong>distrito de Vicálvaro</strong>, en el este de Madrid, entre Vicálvaro,
+          Coslada y San Fernando de Henares. Es uno de los desarrollos más nuevos de la capital —barrio
+          administrativo desde 2017, sobre 538 hectáreas— y hoy viven aquí <strong>27.014 personas</strong>
+          (agosto de 2026). Esta es la guía del barrio: dónde está, cómo se llega, qué hay y qué está por llegar.
+        </p>
+      </header>
+
+      <!-- Cifras -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
+        {cifras.map((c) => (
+          <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+            <p class="text-2xl font-bold text-brand-600">{c.valor}</p>
+            <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">{c.etiqueta}</p>
+            <p class="text-[11px] text-gray-400 mt-1">{c.nota}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Dónde está y cómo llegar -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-3">📍 Dónde está y cómo llegar</h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl border border-warm-200 p-5 text-sm text-gray-700 leading-relaxed">
+            <p class="font-semibold text-brand-900 mb-2">En transporte público</p>
+            <ul class="space-y-1.5 list-disc list-inside">
+              <li><strong>Bus 159</strong> — conecta con Metro Alsacia (L2) y pasa por Vicálvaro (Cercanías y L9).</li>
+              <li><strong>E5 exprés</strong> — Manuel Becerra ↔ El Cañaveral en unos 30-40 minutos.</li>
+              <li><strong>Búho N6</strong> — Plaza de Cibeles ↔ El Cañaveral (ampliado al barrio en abril de 2023).</li>
+              <li><strong>Interurbano 290</strong> — a Coslada Central (Metro L7 y Cercanías) y al centro comercial Plenilunio.</li>
+              <li><strong>Cercanías C2 y C7</strong> — estación de Vicálvaro, a 17-19 minutos andando.</li>
+              <li><strong>Metro: no hay</strong> en el barrio (hay un apeadero de Cercanías previsto, sin fecha).</li>
+            </ul>
+            <a href="/transporte" class="inline-block mt-3 text-sm font-medium text-brand-600 hover:text-brand-700">Guía de transporte completa &rarr;</a>
+          </div>
+          <div class="bg-white rounded-xl border border-warm-200 p-5 text-sm text-gray-700 leading-relaxed">
+            <p class="font-semibold text-brand-900 mb-2">En coche y en bici</p>
+            <ul class="space-y-1.5 list-disc list-inside">
+              <li>Accesos por la <strong>A-3</strong>, la <strong>M-45</strong> y la <strong>M-50</strong>.</li>
+              <li>Aparcamiento en superficie en las promociones nuevas (muchas con garaje propio).</li>
+              <li><strong>Bicimad</strong>: 4 estaciones y 92 anclajes en el barrio (marzo de 2026).</li>
+              <li>Taxi y VTC operan en la zona (radio-taxi de Coslada y San Fernando).</li>
+            </ul>
+            <p class="text-xs text-gray-400 mt-3">
+              Centro aproximado del barrio según las coordenadas de los negocios del directorio:
+              {lat.toFixed(4)}, {lng.toFixed(4)}.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historia -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-3">🏗️ Cómo nació El Cañaveral</h2>
+        <div class="bg-white rounded-xl border border-warm-200 p-5 text-sm text-gray-700 leading-relaxed space-y-3">
+          <p>
+            El Cañaveral es un <strong>PAU (Programa de Actuación Urbanística)</strong> del sureste de Madrid: las
+            primeras obras empezaron en <strong>2013</strong> y los primeros vecinos llegaron en el
+            <strong>primer trimestre de 2016</strong>. En <strong>2017</strong> se constituyó como barrio
+            administrativo, dentro del distrito de Vicálvaro.
+          </p>
+          <p>
+            El plan parcial prevé <strong>14.000 viviendas</strong>, de las que <strong>más de la mitad (53 %)</strong>
+            tienen algún régimen de protección: es, con diferencia, el barrio de Madrid con más vivienda pública
+            nueva en marcha. A mediados de 2025 había 142 promociones entregadas, 19 en construcción y 9 en
+            comercialización.
+          </p>
+          <p>
+            Del total de 538 hectáreas, <strong>100 son zonas verdes</strong>: de ahí las avenidas amplias, los
+            parques infantiles y las áreas caninas que recorren el barrio.
+          </p>
+          <a href="/actualidad" class="inline-block text-sm font-medium text-brand-600 hover:text-brand-700">Seguir la actualidad del barrio &rarr;</a>
+        </div>
+      </section>
+
+      <!-- Qué está por llegar -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-3">🚧 Qué está por llegar</h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl border border-warm-200 p-5 text-sm text-gray-700">
+            <p class="font-semibold text-brand-900 mb-1">🏫 Educación</p>
+            <p>1.000 plazas escolares públicas nuevas, con un <strong>instituto de 24 aulas de ESO y 8 de Bachillerato</strong> (más de 12 M€) cuya finalización se sitúa en el curso 2026/27 según la Comunidad de Madrid y a principios de 2027 según Europa Press. También el CEIPSO Rudyard Kipling.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-warm-200 p-5 text-sm text-gray-700">
+            <p class="font-semibold text-brand-900 mb-1">🛍️ Parque comercial</p>
+            <p><strong>77.000 m²</strong> con más de 50 locales, 2.200 plazas de aparcamiento y 13 pistas de pádel cubiertas, con Mercadona, Lidl, Ahorramás, McDonald's o Planet Fitness. Apertura objetivo: <strong>Navidad de 2027</strong>.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-warm-200 p-5 text-sm text-gray-700">
+            <p class="font-semibold text-brand-900 mb-1">🏠 Vivienda asequible</p>
+            <p>EMVS suma <strong>1.212 viviendas</strong> de alquiler asequible en 13 promociones; los sorteos de <strong>Cañaveral 10 y Cañaveral 11</strong> están previstos para principios de 2027. <a href="/vivienda" class="text-brand-600 font-medium">Ver requisitos y precios</a>.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-warm-200 p-5 text-sm text-gray-700">
+            <p class="font-semibold text-brand-900 mb-1">🚉 Transporte</p>
+            <p>El apeadero de <strong>Cercanías en El Cañaveral</strong> sigue previsto por el Consorcio, sin fecha confirmada. Mientras tanto, la apuesta de la Comunidad para el sureste son los buses rápidos.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hub -->
+      <h2 class="text-2xl font-bold text-brand-900 mb-1">Todo sobre el barrio</h2>
+      <p class="text-gray-500 text-sm mb-6">Explora cada tema con su guía completa.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+        {secciones.map((s) => (
+          <a href={s.href} class="block bg-white rounded-xl border border-warm-200 p-5 hover:shadow-lg hover:border-brand-200 transition-all group">
+            <div class="text-3xl mb-2">{s.icon}</div>
+            <h3 class="font-bold text-brand-900 group-hover:text-brand-600 transition-colors">{s.titulo}</h3>
+            <p class="text-gray-500 text-sm mt-1 leading-snug">{s.texto}</p>
+            <span class="inline-block mt-3 text-sm font-medium text-brand-600">{s.cta} &rarr;</span>
+          </a>
+        ))}
+      </div>
+
+      <!-- Desambiguación -->
+      <section class="mb-12 bg-warm-50 border border-warm-200 rounded-xl p-5 text-sm text-gray-600">
+        <h2 class="text-lg font-bold text-brand-900 mb-2">⚠️ Ojo, no es este El Cañaveral</h2>
+        <p>
+          Este <strong>El Cañaveral</strong> es el barrio de <strong>Vicálvaro, en Madrid</strong>. Existen otros
+          sitios y comercios con el mismo nombre por España —el Cañaveral de <strong>Las Gabias</strong> (Granada) o
+          comercios como el <strong>Bazar El Cañaveral</strong> de Albacete— con los que no tenemos ninguna relación.
+          Si buscabas uno de esos, esta no es su página: aquí solo cubrimos el barrio madrileño y su entorno
+          (Vicálvaro, Coslada y San Fernando de Henares).
+        </p>
+      </section>
+
+      <!-- Zonas -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-3">🗺️ El barrio y su entorno</h2>
+        <p class="text-gray-500 text-sm mb-4">El directorio cubre cuatro zonas: {zonas.map((z) => z.name).join(", ")}.</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {zonas.map((z) => (
+            <a href={`/zona/${z.slug}/`} class="bg-white rounded-xl border border-warm-200 p-4 hover:border-brand-300 transition-colors">
+              <p class="font-bold text-brand-900">{z.name}</p>
+              <p class="text-xs text-gray-500 mt-1">{z.count} fichas en el directorio</p>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes sobre El Cañaveral</h2>
+        <div class="space-y-3">
+          {faq.map((f) => (
+            <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+              <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                {f.q}
+                <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+              </summary>
+              <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <div class="bg-gradient-to-r from-brand-900 to-brand-700 rounded-2xl p-6 text-center">
+        <h2 class="text-xl font-bold text-white">¿Acabas de llegar al barrio?</h2>
+        <p class="text-brand-200 mt-2 text-sm max-w-xl mx-auto">
+          Empieza por el directorio de negocios, mira lo que abre el domingo y, si estás buscando casa, la guía de
+          vivienda con precios y trámites.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center mt-5">
+          <a href="/directorio" class="bg-accent-500 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">Ver el directorio</a>
+          <a href="/vivienda" class="bg-white/10 text-white border border-white/25 font-semibold px-5 py-2.5 rounded-lg hover:bg-white/20 transition-colors">Guía de vivienda</a>
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-400 mt-8">
+        Datos del barrio a partir de fuentes públicas (censo municipal, Comunidad de Madrid, EMVS y portales
+        inmobiliarios) con su fecha. Las cifras de población, vivienda y equipamientos cambian: consulta la fecha de
+        cada dato antes de tomar decisiones.
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>

@@ -199,7 +199,7 @@ export const GET: APIRoute = () => {
     `- ${url("/vivienda/")} — precios de compra y alquiler con fuente y fecha, obra nueva, vivienda asequible de EMVS (1.212 viviendas y sorteos), impuestos y trámites.`,
     `- ${url("/bares-y-tapas/")} — bares y tabernas de tapas del barrio y su entorno, con terraza.`,
     `- ${url("/farmacias-de-guardia/")} — cómo encontrar la farmacia de guardia (canales oficiales), farmacias del barrio con horario y urgencias veterinarias 24 h.`,
-    `- ${url("/vivir-en-el-canaveral/")} — guía de vivir en el barrio (vivienda, servicios, transporte).`,
+    `- ${url("/el-canaveral/")} — guía de vivir en el barrio (vivienda, servicios, transporte).`,
     `- ${url("/transporte/")} — cómo llegar: metro, bus, cercanías y accesos.`,
     `- ${url("/servicios-publicos/")} — sanidad, educación y administración.`,
     `- ${url("/espacios-publicos/")} — parques y espacios públicos.`,
