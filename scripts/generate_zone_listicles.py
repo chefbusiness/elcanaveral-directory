@@ -58,20 +58,27 @@ def ranked(d, zona, cat, gm, minr=4.0):
 def build(cfg, zslug, zname, top):
     pl, sg, el = cfg["pl"], cfg["sg"], cfg["el"]
     suf = "o" if el == "el" else "a"
+    # El artículo concuerda con el sustantivo: sin esto salía "Las mejores
+    # restaurantes de Coslada" / "Las mejores talleres mecánicos…" (corregido
+    # 2026-09-27b, junto con los datos ya generados de listicles.json).
+    art = "Los" if el == "el" else "Las"
+    art_min = "los" if el == "el" else "las"
+    dem = "Estos" if el == "el" else "Estas"
     return {
         "slug": f"mejores-{cfg['slugn']}-{zslug}",
         "category": cfg["cat"], "zona": zslug, "minRating": 4,
         **({"googleCategoryMatch": cfg["gm"]} if cfg["gm"] else {}),
         "noun": pl, "breadcrumb": f"Mejores {pl}",
         "ctaTitle": f"¿Tienes {cfg['un']} {sg} en {zname}?",
-        "h1": f"Las mejores {pl} de {zname}",
-        "metaTitle": f"Las mejores {pl} de {zname} (2026)",
-        "metaDescription": f"Las {pl} mejor valoradas de {zname}, ordenadas por valoración y número de reseñas reales de Google. Actualizado en 2026.",
-        "intro": (f"Estas son las mejores {pl} de {zname}, ordenadas con una puntuación que combina la "
+        "h1": f"{art} mejores {pl} de {zname}",
+        "metaTitle": f"{art} mejores {pl} de {zname} (2026)",
+        "metaDescription": f"{art} {pl} mejor valorad{suf}s de {zname}, ordenad{suf}s por valoración y número de reseñas reales de Google. Actualizado en 2026.",
+        "intro": (f"{dem} son {art_min} mejores {pl} de {zname}, ordenad{suf}s con una puntuación que combina la "
                   f"nota media de Google con el número de reseñas (no solo la nota ni solo el volumen de "
                   f"opiniones). {zname} es una de las zonas que cubre el directorio de El Cañaveral y "
                   f"alrededores, adonde muchos vecinos del barrio se desplazan para sus servicios del día a "
-                  f"día. Solo aparecen las que mantienen 4 estrellas o más."),
+                  # Genérico a propósito: evita el "las que" con sustantivos masculinos.
+                  f"día. Solo aparecen los negocios que mantienen 4 estrellas o más."),
         "publishedDate": None,  # se rellena al asignar el calendario
         "updatedDate": "2026-06-26",
         "faq": [
