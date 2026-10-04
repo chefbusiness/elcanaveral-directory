@@ -95,6 +95,48 @@ Cervecería La Galerna, Seven) + 9 tabernas de tapas de Vicálvaro, Coslada y Sa
 valoración real y teléfono. Incluye Tapaveral (V Feria de la Tapa, 2-4 oct-2026) y **declara que no es
 publicidad**: ningún local paga por aparecer.
 
+### ✅ P3 · Hub definitivo del barrio: `/el-canaveral/` (commit `ad96b25`) — el head term, 40.500/mes
+
+«el cañaveral» tiene **40.500 búsquedas/mes** (+ «el cañaveral madrid» 6.600) y estábamos en **posición 88**;
+la keystone `/vivir-en-el-canaveral/` tenía ~0 impresiones. En vez de mantener dos páginas compitiendo por la
+misma entidad, se consolida **una sola URL canónica** y la vieja responde **301** (`public/_redirects`).
+
+Contenido (todo con dato verificado): qué es y dónde está (distrito de Vicálvaro, barrio administrativo desde
+2017, 538 ha con 100 de zonas verdes), **27.014 empadronados** (ago-2026), cómo llegar (159, E5 exprés, búho N6,
+interurbano 290, Cercanías de Vicálvaro, **no hay metro**, A-3/M-45/M-50, Bicimad con 4 estaciones), cómo nació
+el PAU (obras en 2013, primeros vecinos en 2016, 14.000 viviendas previstas con más de la mitad protegidas),
+qué está por llegar (IES de 24 aulas de ESO + 8 de Bachillerato, 1.000 plazas escolares, parque comercial de
+77.000 m² para la Navidad de 2027, apeadero de Cercanías previsto, sorteos de EMVS en 2027), los 12 hubs del
+barrio y las 4 zonas. Incluye **sección de desambiguación** (Las Gabias en Granada y Bazar El Cañaveral de
+Albacete — dos ruidos que aparecen en nuestras propias queries de GSC).
+
+Schema: **`Place`** con `geo` calculado con la **mediana de las 283 fichas con coordenadas** (no a mano),
+`sameAs` a la Wikipedia del barrio y `containedInPlace` Vicálvaro/Madrid, + FAQPage de 6 + BreadcrumbList.
+Migración limpia: 9 ficheros con la URL vieja reescritos (Header, Footer, home, actualidad, vivienda, llms.txt y
+llms-full.txt). **301 comprobado en vivo** (con y sin barra final → 200 en el destino) y sitemap con 438 URLs
+sin rastro de la vieja.
+
+### ✅ P2 · Las 32 guías, con datos (commit `7438a88`)
+
+La medición dejó claro que **«mejores X» tiene 0 búsquedas/mes**, así que **no se retitulan a ciegas**: las guías
+pasan a ser la **comparativa de apoyo** de su categoría (que es la que tiene demanda) aportando el dato que sí se
+busca. Cada guía muestra ahora:
+
+- Un **bloque calculado en build** con lo que dice su lista: «13 de 39 abren el domingo · 16 con terraza · 10 con
+  reparto a domicilio» (y en las que no hay esos datos, una frase útil en vez de ceros).
+- El badge **«Abre domingo»** en cada negocio que lo cumple, con el helper `abreDomingo()` ya existente.
+- Enlace a `/abiertos-los-domingos/` **solo cuando hay algo que enlazar**.
+
+32/32 guías con el bloque, verificado en vivo.
+
+### 🧰 Herramienta promovida: `scripts/validate-links.mjs`
+
+El validador de enlaces internos vivía en `.tmp/` (gitignored) con una **lista de rutas escrita a mano**: al
+añadir `/vivienda/`, `/el-canaveral/` y las informativas, marcaba como rotos enlaces que funcionaban. Se reescribe
+para que la verdad sea **el build real** (`dist/`): recorre las 442 páginas HTML y valida cada enlace interno.
+Resultado: **0 enlaces rotos** tras la migración del hub.
+
+
 ### ✅ Correcciones de datos en esta ronda
 
 - `/vivir-en-el-canaveral/` decía que la obra nueva rondaba **2.900 €/m²** → ahora **4.112 €/m²** con fecha y
