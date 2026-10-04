@@ -4,6 +4,7 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import { generateListiclePaths, getRankedNegocios } from "@/lib/listicles";
 import type { Listicle } from "@/lib/listicles";
+import { abreDomingo } from "@/lib/directory";
 
 export function getStaticPaths() {
   return generateListiclePaths();
@@ -16,6 +17,22 @@ const ranked = getRankedNegocios(listicle.category, {
   zona: listicle.zona,
   googleCategoryMatch: listicle.googleCategoryMatch,
 });
+
+// Resumen de datos de la propia lista: es lo que convierte una guía en algo útil más allá del ranking
+// («¿cuáles abren el domingo?», «¿cuáles tienen terraza?»), que es la intención que sí se busca.
+// Solo se muestra lo que aporta: un «0 abren el domingo» no informa de nada.
+const datosRanking = (() => {
+  const total = ranked.length;
+  const domingo = ranked.filter((r) => abreDomingo(r.negocio)).length;
+  const terraza = ranked.filter((r) => r.negocio.terraza).length;
+  const delivery = ranked.filter((r) => r.negocio.delivery).length;
+  const partes = [
+    domingo > 0 ? `${domingo} de ${total} abren el domingo` : null,
+    terraza > 0 ? `${terraza} con terraza` : null,
+    delivery > 0 ? `${delivery} con reparto a domicilio` : null,
+  ].filter((p): p is string => !!p);
+  return { total, domingo, terraza, delivery, partes };
+})();
 
 const fmtDate = (iso: string) =>
   new Date(iso).toLocaleDateString("es-ES", { month: "long", year: "numeric" });
@@ -100,6 +117,17 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
         no por simple nota ni por número de opiniones a secas.
       </div>
 
+      <!-- Lo que dicen los datos de esta lista (calculado, no escrito a mano) -->
+      <div class="bg-brand-50 border border-brand-100 rounded-xl p-4 mb-6 text-sm text-gray-700">
+        <strong class="text-brand-700">Los datos de estas {datosRanking.total} fichas:</strong>{" "}
+        {datosRanking.partes.length > 0
+          ? datosRanking.partes.join(" · ") + "."
+          : "ordenadas por nota media ponderada por número de reseñas; en cada ficha tienes el horario, el teléfono y el mapa."}{" "}
+        {datosRanking.domingo > 0 && (
+          <a href="/abiertos-los-domingos/" class="text-brand-600 font-medium">Ver todo lo que abre el domingo &rarr;</a>
+        )}
+      </div>
+
       <!-- Ranking -->
       <div class="space-y-6">
         {ranked.map((r) => {
@@ -153,6 +181,8 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
                   {n.terraza && <span class="text-[11px] bg-green-50 text-green-700 px-2 py-0.5 rounded">Terraza</span>}
                   {n.delivery && <span class="text-[11px] bg-orange-50 text-orange-700 px-2 py-0.5 rounded">A domicilio</span>}
                   {n.menuDelDia && <span class="text-[11px] bg-amber-50 text-amber-700 px-2 py-0.5 rounded">Menú del día</span>}
+                  {/* Dato medido: la intención «¿abre el domingo?» es la que el Map Pack no responde. */}
+                  {abreDomingo(n) && <span class="text-[11px] bg-brand-50 text-brand-700 px-2 py-0.5 rounded font-medium">Abre domingo</span>}
                 </div>
 
                 <div class="flex items-center gap-4 mt-4 text-sm">
