@@ -129,12 +129,52 @@ busca. Cada guía muestra ahora:
 
 32/32 guías con el bloque, verificado en vivo.
 
+### 🔍 Revisión adversarial de cierre (commit `71682eb`) — 1 bloqueante, 7 graves y 7 menores
+
+Se pasó un revisor adversarial sobre todo el plan (páginas nuevas, migración del hub, guías y datos). Encontró y
+se corrigió:
+
+- **BLOQUEANTE — `abreDomingo()` perdía 6 fichas con domingo abierto.** Dos bugs del parser: (a) no troceaba por
+  el **punto medio «·»** con que Google separa los días, de modo que un solo «Cerrado» invalidaba el fragmento
+  entero y con él el domingo (El Rincón de Carla, Bar Caballero, Havana, La Mesa Escondida, Arrocería Los Amigos);
+  y (b) los dos puntos finales impedían reconocer «Martes a Domingo: 9:00-21:00» (El Jardín). Ahora salen **43
+  fichas y 24 restaurantes** (antes 37 y 18) y los controles siguen bien (Mercadona no abre domingo; Covirán sí).
+- **Consecuencias**: el `ItemList` declaraba 12 elementos con 43 visibles; las 5 fichas de deporte y hogar con
+  domingo se quedaban sin sección (ahora hay secciones dinámicas para cualquier categoría con domingo abierto);
+  `horaDomingo()` mostraba la semana entera en 10 de 32 tarjetas; `/restaurantes/` y su FAQ decían «18 de los 45»
+  (ahora formulaciones estables); y el bloque de datos de las guías tenía una frase rota sin datos.
+- **Publicidad no declarada (LSSI/E-E-A-T)**: la home presentaba los «Negocios destacados» —que son **espacios del
+  plan Destacado (49 €/mes)**— como «los mejor valorados por los vecinos» → ahora lo dice y enlaza a `/planes`; y
+  `/bares-y-tapas/`, que afirmaba «ningún local paga por aparecer aquí», declara que alguno de los listados
+  (Cervecería La Galerna) tiene además el plan Destacado, sin que eso influya en la selección.
+- **Autocontradicción en `/vivienda/`**: decía que El Cañaveral era «el más caro del sureste» mientras su propia
+  tabla ponía al Ensanche de Vallecas por delante → ahora «el segundo», con la atribución correcta (Foro
+  Consultores vía idealista/news, 9-feb-2026), el matiz de que **Cañaveral 11 está terminado a falta del sorteo**
+  y la aclaración de la cédula de habitabilidad.
+- **Farmacias/urgencias**: el detector de 24 h bastaba con la palabra «urgencias» y pintaba «Abierto 24 horas» en
+  una clínica de Coslada → restringido a 24 h reales; se dejan de coronar a una sola farmacia cuando hay **tres
+  empatadas a 4,8** y «todas cierran los domingos» pasa a «de las que publican horario».
+- **Técnico**: los enlaces internos llevaban sin barra final (31.627 apariciones con un 301 intermedio cada una)
+  → **0** tras el barrido a 38 ficheros de plantilla y datos, validado contra las 442 páginas.
+
+**Lo que el revisor confirmó sin hallazgo**: la migración del hub está limpia (301 único con y sin barra, 200 en
+destino, sin restos del slug viejo en sitemap/llms/header/footer/breadcrumbs), 0 enlaces internos rotos y 589
+bloques JSON-LD válidos sin `FAQPage` vacías ni duplicadas.
+
+### 📌 Decisiones tomadas por la medición (no ejecutadas a propósito)
+
+- **P1c · terrazas y brunch: DESCARTADA como pieza propia.** La demanda medida es de **~50/mes** entre
+  «terrazas cañaveral / vicálvaro / coslada» y «brunch cañaveral»: por debajo de lo que justifica una página.
+  El dato de terraza sí se aprovecha: **badge por negocio en las 32 guías** y mención en la pieza de bares.
+- **P2 · retitular las 32 guías: DESCARTADO.** «mejores cafeterías/restaurantes cañaveral» = **0/mes**. Se hizo la
+  parte que aportaba (datos y badges) en lugar de cambiar titulares para una demanda que no existe.
 ### 🧰 Herramienta promovida: `scripts/validate-links.mjs`
 
 El validador de enlaces internos vivía en `.tmp/` (gitignored) con una **lista de rutas escrita a mano**: al
 añadir `/vivienda/`, `/el-canaveral/` y las informativas, marcaba como rotos enlaces que funcionaban. Se reescribe
 para que la verdad sea **el build real** (`dist/`): recorre las 442 páginas HTML y valida cada enlace interno.
-Resultado: **0 enlaces rotos** tras la migración del hub.
+Resultado: **0 enlaces rotos** tras la migración del hub. Se ejecuta con `node scripts/validate-links.mjs` después
+de `pnpm build`.
 
 
 ### ✅ Correcciones de datos en esta ronda
