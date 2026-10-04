@@ -23,7 +23,7 @@ const secciones = [
 const faq = [
   { q: "¿Dónde está El Cañaveral?", a: "El Cañaveral es un barrio del distrito de Vicálvaro, al sureste de Madrid, junto a Coslada y San Fernando de Henares. Es uno de los desarrollos urbanísticos más recientes y de mayor crecimiento de la ciudad." },
   { q: "¿Es un buen barrio para vivir, sobre todo en familia?", a: "Sí. El Cañaveral es un barrio muy familiar y joven, con avenidas amplias, viviendas nuevas con terraza, parques y zonas verdes. Atrae sobre todo a parejas jóvenes que compran su primera vivienda." },
-  { q: "¿Cuánto cuesta una vivienda en El Cañaveral?", a: "Según los portales inmobiliarios, la obra nueva ronda los 2.900 €/m², uno de los precios más moderados de Madrid capital, lo que explica buena parte de su tirón. Los precios cambian; conviene consultar datos actualizados con las inmobiliarias de la zona." },
+  { q: "¿Cuánto cuesta una vivienda en El Cañaveral?", a: "La referencia pública más sólida es la de obra nueva libre: 4.112 €/m² de media y 427.000 € de precio medio de vivienda nueva (Foro Consultores, enero de 2026), que convierte a El Cañaveral en el barrio más caro del sureste de Madrid (aunque sigue por debajo del centro). El alquiler medio del distrito de Vicálvaro está en 1.709 €/mes (septiembre de 2026). Tienes todos los datos, con fuentes y fechas, en la guía de vivienda en El Cañaveral." },
   { q: "¿Cómo está comunicado? ¿Tiene metro?", a: "Todavía no hay Metro dentro del barrio (hay un apeadero de Cercanías previsto). Se llega en autobús —incluida la línea exprés E5 al centro y el búho nocturno N6— y por las Cercanías de Vicálvaro y Coslada. En coche, por la A-3, M-45 y M-50." },
   { q: "¿Qué servicios y comercios tiene El Cañaveral?", a: `El barrio cuenta con supermercados, farmacias, clínicas, colegios, gimnasios, restaurantes y todo tipo de comercio. En este directorio recogemos ${totalNegocios} negocios de El Cañaveral y las localidades de alrededor.` },
 ];
@@ -79,8 +79,8 @@ const breadcrumbSchema = { "@context": "https://schema.org", "@type": "Breadcrum
           <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">Negocios en la guía</p>
         </div>
         <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
-          <p class="text-2xl font-bold text-brand-600">~2.900 €</p>
-          <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">€/m² obra nueva</p>
+          <p class="text-2xl font-bold text-brand-600">4.112 €</p>
+          <p class="text-xs text-gray-500 mt-0.5 uppercase tracking-wide">€/m² obra nueva (ene-2026)</p>
         </div>
         <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
           <p class="text-2xl font-bold text-brand-600">25-40</p>
@@ -135,11 +135,17 @@ const breadcrumbSchema = { "@context": "https://schema.org", "@type": "Breadcrum
       <div class="bg-gradient-to-r from-brand-900 to-brand-700 rounded-2xl p-6 sm:p-8 text-center">
         <h2 class="text-xl sm:text-2xl font-bold text-white">¿Buscas casa en El Cañaveral?</h2>
         <p class="text-brand-200 mt-2 max-w-xl mx-auto text-sm sm:text-base">
-          Mira las inmobiliarias mejor valoradas del barrio y alrededores para comprar, vender o alquilar.
+          Mira las inmobiliarias mejor valoradas del barrio y alrededores para comprar, vender o alquilar, o
+          empieza por los datos: precios de obra nueva y segunda mano, vivienda asequible de EMVS y trámites.
         </p>
-        <a href="/inmobiliarias" class="inline-block mt-5 bg-accent-500 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
-          Ver inmobiliarias
-        </a>
+        <div class="flex flex-wrap gap-3 justify-center mt-5">
+          <a href="/inmobiliarias" class="bg-accent-500 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
+            Ver inmobiliarias
+          </a>
+          <a href="/vivienda" class="bg-white/10 text-white border border-white/25 font-semibold px-5 py-2.5 rounded-lg hover:bg-white/20 transition-colors">
+            Guía de vivienda: precios y trámites
+          </a>
+        </div>
       </div>
 
       <p class="text-xs text-gray-400 mt-8">

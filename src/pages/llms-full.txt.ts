@@ -196,6 +196,7 @@ export const GET: APIRoute = () => {
     `- ${url("/directorio/")} — listado completo de negocios con buscador.`,
     `- ${url("/zonas/")} — las cuatro zonas cubiertas.`,
     `- ${url("/abiertos-los-domingos/")} — qué comercios abren en domingo, con horario real.`,
+    `- ${url("/vivienda/")} — precios de compra y alquiler con fuente y fecha, obra nueva, vivienda asequible de EMVS (1.212 viviendas y sorteos), impuestos y trámites.`,
     `- ${url("/vivir-en-el-canaveral/")} — guía de vivir en el barrio (vivienda, servicios, transporte).`,
     `- ${url("/transporte/")} — cómo llegar: metro, bus, cercanías y accesos.`,
     `- ${url("/servicios-publicos/")} — sanidad, educación y administración.`,

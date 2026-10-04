@@ -131,6 +131,7 @@ export const GET: APIRoute = () => {
     "- [Comida a domicilio](" + url("/comida-a-domicilio/") + ").",
     "- [El Cañaveral con perro](" + url("/con-perro/") + ").",
     "- [Vivir en El Cañaveral](" + url("/vivir-en-el-canaveral/") + ").",
+    "- [Vivienda](" + url("/vivienda/") + "): precios de compra y alquiler con fuente y fecha, obra nueva en marcha, vivienda asequible de EMVS y sus sorteos, impuestos y trámites.",
     "",
     "## Categorías",
     "",

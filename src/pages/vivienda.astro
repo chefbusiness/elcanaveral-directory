@@ -1,0 +1,405 @@
+---
+// Guía de vivienda (P4). Demanda medida (DataForSEO, oct-2026): «pisos en el cañaveral» 1.600/mes +
+// «obra nueva el cañaveral» 260 + «alquiler el cañaveral» 170 + «pisos cañaveral madrid» 170 +
+// «comprar piso el cañaveral» 140 ≈ 2.340/mes de intención, con CPC alto y sin ninguna página que la cubriera.
+//
+// REGLA DE LA CASA: solo hechos con fuente y fecha. Todas las cifras de esta página vienen de la
+// investigación del 2026-10-05 (fuentes listadas al pie) y del propio directorio. Lo que NO se puede
+// afirmar con fuente no está: no hay precio medio de un 2-3 dormitorios del barrio (no existe dato
+// público) y los 4.666 €/m² de segunda mano son de la zona estadística que agrega Los Berrocales.
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { loadNegocios, type Negocio } from "@/lib/directory";
+
+const base = "https://www.elcanaveral.info";
+const inmobiliarias = loadNegocios()
+  .filter((n) => n.category === "inmobiliarias")
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0) || (b.numReviews || 0) - (a.numReviews || 0));
+const enElBarrio = inmobiliarias.filter((n) => n.zona === "el-canaveral");
+
+const faq = [
+  {
+    q: "¿Cuánto cuesta comprar un piso en El Cañaveral?",
+    a: "La referencia pública más sólida es la de obra nueva libre: 4.112 €/m² de media y 427.000 € de precio medio de vivienda nueva (Foro Consultores, enero de 2026), que convierte a El Cañaveral en el barrio más caro del sureste de Madrid. Para segunda mano, el dato disponible es de la zona estadística «El Cañaveral-Los Berrocales» (4.666 €/m², agosto de 2026), que agrega Los Berrocales: no es un dato solo del barrio. No existe un precio medio público de un piso concreto de 2-3 dormitorios en El Cañaveral.",
+  },
+  {
+    q: "¿Cuánto se paga de alquiler en El Cañaveral?",
+    a: "No hay precio medio publicado del barrio. La referencia más cercana es el distrito de Vicálvaro: 1.709 €/mes de media en septiembre de 2026 (muestra de 82 viviendas), frente a los 2.443 €/mes de Madrid capital. En el propio barrio, un ejemplo real de oferta de septiembre de 2026: piso de 2 dormitorios y 53 m² construidos por 1.021 €/mes (19 €/m²), de protección pública (VPPL) con garaje y trastero incluidos.",
+  },
+  {
+    q: "¿Hay vivienda pública o asequible en El Cañaveral?",
+    a: "Es uno de los barrios de Madrid con más vivienda pública nueva: EMVS Madrid suma 1.212 viviendas de alquiler asequible en 13 promociones dentro del barrio, con 868 sorteadas hasta mayo de 2026 y 1.078 ya finalizadas. Los sorteos de las promociones Cañaveral 10 y 11 están previstos para principios de 2027. Las rentas se mueven entre los 300 y los 800 €/mes según promoción y nunca superan el 30 % de los ingresos de la familia.",
+  },
+  {
+    q: "¿Qué requisitos piden para esas viviendas?",
+    a: "Para las de EMVS (alquiler asequible): ingresos de la unidad familiar de hasta 3,5 veces el IPREM (como referencia, una pareja con dos hijos hasta unos 44.000 € brutos al año) y que la renta no supere el 30 % de los ingresos. El 80 % de las 1.212 viviendas se reserva a jóvenes y familias con hijos menores. Para las VPPL de alquiler (Decreto 74/2009) el límite de ingresos es de 7,5 veces el IPREM y no se puede ser titular de otra vivienda en España. En Plan Vive de la Comunidad de Madrid los umbrales van de 1,5 a 5,5 veces el IPREM (precio básico) y de 1,5 a 7,5 (precio limitado), con preferencia para quien lleva 5 años empadronado en el municipio.",
+  },
+  {
+    q: "¿Dónde me tengo que inscribir para pedir una vivienda asequible?",
+    a: "En el registro permanente de solicitantes de vivienda del Ayuntamiento de Madrid y en los registros de la Comunidad de Madrid (Plan Vive). Para cualquier trámite presencial del distrito, la Junta Municipal de Vicálvaro está en la plaza de Don Antonio de Andrés, s/n.",
+  },
+  {
+    q: "¿Qué impuestos y gastos tiene comprar aquí?",
+    a: "Si la vivienda es de obra nueva se paga IVA del 10 % (4 % si es VPO de régimen especial o de promoción pública). Si es de segunda mano, se paga ITP del 6 % en la Comunidad de Madrid (4 % para familias numerosas y un tipo efectivo del 5,4 % para menores de 35 años en compras de hasta 250.000 €) más el AJD del 0,75 %; el plazo para presentar el modelo 600 es de 30 días hábiles. En la Comunidad de Madrid no se emite la cédula de habitabilidad con carácter general: lo que se exige es la licencia (o declaración responsable) municipal de primera ocupación.",
+  },
+  {
+    q: "¿Merece la pena comprar en El Cañaveral?",
+    a: "Depende de lo que busques. A favor: es un barrio nuevo (barrio administrativo desde 2017, 538 hectáreas con 100 de zonas verdes), con equipamientos en marcha (1.000 plazas escolares públicas, un instituto con 24 aulas de ESO y 8 de Bachillerato, el parque comercial de 77.000 m² previsto para la Navidad de 2027) y con más de la mitad de las 14.000 viviendas previstas en algún régimen de protección. En contra: no hay metro en el barrio (se llega en bus 159, E5, el búho N6 y el interurbano 290, o por Cercanías desde Vicálvaro) y el precio de obra nueva ya es el más alto del sureste.",
+  },
+];
+
+const gastos = [
+  { concepto: "IVA · vivienda nueva libre", tipo: "10 %", nota: "4 % si es VPO de régimen especial o de promoción pública (Agencia Tributaria, mar-2026)." },
+  { concepto: "ITP · vivienda de segunda mano", tipo: "6 %", nota: "4 % para familia numerosa; tipo efectivo 5,4 % para menores de 35 años hasta 250.000 € (Comunidad de Madrid)." },
+  { concepto: "AJD · actos jurídicos documentados", tipo: "0,75 %", nota: "0,2 % en VPO de hasta 90 m². Modelo 600, 30 días hábiles." },
+];
+
+const preciosComparativa = [
+  { zona: "El Cañaveral (obra nueva libre)", precio: "4.112 €/m²", detalle: "Media de vivienda nueva: 427.000 €. El barrio más caro del sureste (ene-2026)." },
+  { zona: "Ensanche de Vallecas", precio: "4.638 €/m²", detalle: "El más caro del sureste, por delante del Cañaveral." },
+  { zona: "Los Ahijones", precio: "4.232 €/m²", detalle: "Desarrollo colindante en construcción." },
+  { zona: "Los Berrocales", precio: "4.061 €/m²", detalle: "Desarrollo colindante en construcción." },
+  { zona: "Valdecarros", precio: "~3.900 €/m²", detalle: "Precio medio de vivienda nueva ~425.000 €." },
+];
+
+const fuentes = [
+  { t: "Precios de obra nueva en el sureste (4.112 €/m² y 427.000 €)", u: "https://www.idealista.com/news/inmobiliario/vivienda/2026/02/09/883453-comprar-una-casa-nueva-en-el-sureste-de-madrid-ya-cuesta-mas-de-4-000-euros-m2", f: "idealista/news · 9-feb-2026" },
+  { t: "Segunda mano en la zona estadística El Cañaveral-Los Berrocales (4.666 €/m²) y precios del distrito", u: "https://idilicorealty.com/mercado-inmobiliario/madrid/vicalvaro/el-canaveral-los-berrocales", f: "Idílico Realty (base Idealista) · ago-2026" },
+  { t: "Alquiler en el distrito de Vicálvaro (1.709 €/mes)", u: "https://www.enalquiler.com/precios/precio-alquiler-vivienda-vicalvaro_31-30-27745-29.html", f: "Enalquiler · sep-2026" },
+  { t: "Oferta real de alquiler protegido en el barrio (1.021 €/mes, Tectum Cañaveral I)", u: "https://www.pisos.com/alquilar/piso-el_canaveral-6424011518_109700/", f: "pisos.com · sep-2026" },
+  { t: "Promoción Elion de AEDAS Homes (90 viviendas, vendida)", u: "https://www.aedashomes.com/pl/viviendas-obra-nueva/madrid/canaveral/elion", f: "AEDAS Homes · consulta oct-2026" },
+  { t: "Grupo Avintia: 689 viviendas en la Comunidad, con promociones en El Cañaveral", u: "https://observatorioinmobiliario.es/noticias/residencial/grupo-avintia-desarrolla-casi-700-viviendas-en-la-comunidad-de-madrid/", f: "Observatorio Inmobiliario · 3-oct-2025" },
+  { t: "EMVS en El Cañaveral: 1.212 viviendas y 868 adjudicadas", u: "https://observatorioinmobiliario.es/noticias/residencial/emvs-madrid-adjudica-cerca-de-900-viviendas-en-el-ca%C3%B1averal/", f: "Observatorio Inmobiliario · 6-may-2026" },
+  { t: "Cañaveral 11 finalizado: sorteo a principios de 2027 y requisitos", u: "https://nuevosureste.es/finalizacion-canaveral-11/", f: "Nuevo Sureste · 21-sep-2026" },
+  { t: "Rentas de 300-800 €/mes y 770 familias alojadas", u: "https://www.cronicamadrid.com/noticia/1305989/capital/", f: "Crónica Madrid · 24-jun-2026" },
+  { t: "Plan Vive: nuevos umbrales de ingresos y 5 años de empadronamiento", u: "https://www.comunidad.madrid/noticias/2026/04/08/reforzado-plan-vive-flexibilizar-requisitos-acceso-agilizar-adjudicacion-viviendas-alquiler-asequible", f: "Comunidad de Madrid · 8-abr-2026" },
+  { t: "IVA de la vivienda (10 % / 4 %)", u: "https://administracion.gob.es/tu-espacio-europeo/derechos-obligaciones/ciudadanos/residencia/compraventa-bienes-inmuebles/impuestos", f: "Punto de Acceso General · 20-mar-2026" },
+  { t: "ITP y AJD en la Comunidad de Madrid", u: "https://www.comunidad.madrid/servicios/atencion-contribuyente/transmisiones-patrimoniales-onerosas", f: "Comunidad de Madrid · 23-abr-2026" },
+  { t: "Cédula de habitabilidad: no se emite con carácter general en la Comunidad de Madrid", u: "https://www.comunidad.madrid/docs/assets/2019/09/24/dictamen%20103-18%20des.pdf", f: "Dictamen 103-18, Comunidad de Madrid" },
+  { t: "1.000 plazas escolares públicas y nuevo instituto", u: "https://www.comunidad.madrid/noticias/2026/07/17/comunidad-madrid-creara-1000-plazas-escolares-publicas-barrio-canaveral-distrito-madrileno-vicalvaro", f: "Comunidad de Madrid · 17-jul-2026" },
+  { t: "Parque comercial de 77.000 m² (OMO Retail), apertura Navidad 2027", u: "https://www.ejeprime.com/comercial/el-mayor-parque-comercial-de-madrid-inicia-obras-para-abrir-en-2027", f: "EjePrime · 27-abr-2026" },
+  { t: "Refuerzo de las líneas 159 y E5 y ampliación del búho N6 al barrio", u: "https://crtm.es/comunicacion/actualidad-del-servicio/novedades/10042023-la-comunidad-de-madrid-incrementa-la-oferta-de-las-lineas-159-y-e5-de-emt-y-amplia-n6-al-barrio-de-el-canaveral", f: "CRTM · 10-abr-2023" },
+];
+
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "Vivienda en El Cañaveral", item: `${base}/vivienda/` },
+  ],
+};
+const agenciasSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Inmobiliarias que operan en El Cañaveral y alrededores",
+  itemListElement: inmobiliarias.slice(0, 10).map((n, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: n.name,
+    url: `${base}/inmobiliarias/${n.slug}/`,
+  })),
+};
+const top = inmobiliarias.slice(0, 6);
+const estrella = (n: Negocio) => (n.rating ? `★ ${n.rating}${n.numReviews ? ` (${n.numReviews})` : ""}` : null);
+---
+
+<BaseLayout
+  title="Vivienda en El Cañaveral: precios, obra nueva y cómo comprar o alquilar"
+  description="Cuánto cuesta comprar y alquilar en El Cañaveral (Madrid) en 2026: 4.112 €/m² de obra nueva, alquiler de Vicálvaro, las 1.212 viviendas asequibles de EMVS y sus sorteos, impuestos y trámites, y las agencias del barrio. Con fuentes y fechas."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(agenciasSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <a href="/vivir-en-el-canaveral" class="hover:text-brand-600">Vivir en El Cañaveral</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">Vivienda</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          Vivienda en El Cañaveral: precios, obra nueva y cómo comprar o alquilar
+        </h1>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          El Cañaveral es el barrio con <strong>más vivienda pública nueva de Madrid</strong> y, a la vez, el más
+          caro de todo el sureste en obra nueva libre. Aquí tienes <strong>cuánto cuesta comprar y alquilar</strong>
+          (con la fecha de cada dato), cuántas promociones hay en marcha, qué requisitos piden las viviendas
+          asequibles y a qué agencias puedes acudir en el propio barrio.
+        </p>
+        <p class="text-xs text-gray-400 mt-3">Datos a <strong>octubre de 2026</strong>. Cada cifra lleva su fuente al pie de la página.</p>
+      </header>
+
+      <!-- Respuesta rápida -->
+      <div class="grid sm:grid-cols-3 gap-3 mb-10">
+        <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+          <p class="text-2xl font-bold text-brand-600">4.112 €/m²</p>
+          <p class="text-xs text-gray-500 mt-1">Obra nueva libre (media, ene-2026)</p>
+        </div>
+        <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+          <p class="text-2xl font-bold text-brand-600">1.709 €/mes</p>
+          <p class="text-xs text-gray-500 mt-1">Alquiler en el distrito (sep-2026)</p>
+        </div>
+        <div class="bg-white rounded-xl border border-warm-200 p-4 text-center">
+          <p class="text-2xl font-bold text-brand-600">1.212</p>
+          <p class="text-xs text-gray-500 mt-1">Viviendas asequibles de EMVS</p>
+        </div>
+      </div>
+
+      <!-- Comprar -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">💶 Cuánto cuesta comprar en El Cañaveral</h2>
+        <p class="text-gray-500 text-sm mb-5">La referencia pública más sólida es la de obra nueva libre (Foro Consultores, enero de 2026).</p>
+        <div class="bg-white rounded-xl border border-warm-200 p-5 mb-5">
+          <p class="text-gray-700 leading-relaxed">
+            <strong>Obra nueva libre: 4.112 €/m²</strong> de media y <strong>427.000 €</strong> de precio medio de
+            vivienda nueva (+18,4 % en un año). Con esos números, El Cañaveral es <strong>el barrio más caro del
+            sureste de Madrid</strong>, por delante de Los Ahijones, Los Berrocales y Valdecarros.
+          </p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm bg-white rounded-xl border border-warm-200 overflow-hidden">
+            <thead class="bg-warm-50 text-left">
+              <tr>
+                <th class="px-4 py-3 font-semibold text-gray-700">Zona (obra nueva libre)</th>
+                <th class="px-4 py-3 font-semibold text-gray-700">Precio</th>
+                <th class="px-4 py-3 font-semibold text-gray-700">Detalle</th>
+              </tr>
+            </thead>
+            <tbody>
+              {preciosComparativa.map((p) => (
+                <tr class="border-t border-warm-100">
+                  <td class="px-4 py-3 font-medium text-gray-800">{p.zona}</td>
+                  <td class="px-4 py-3 font-semibold text-brand-700 whitespace-nowrap">{p.precio}</td>
+                  <td class="px-4 py-3 text-gray-600">{p.detalle}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed mt-5">
+          <strong>Segunda mano:</strong> el único dato público disponible es el de la zona estadística
+          «El Cañaveral-Los Berrocales», con <strong>4.666 €/m²</strong> en agosto de 2026 (+8,5 % en doce meses).
+          Ojo: esa zona <strong>agrega Los Berrocales</strong>, así que no sirve como precio del barrio. Solo para
+          el distrito de Vicálvaro, Idealista sitúa Ambroz en 3.667 €/m², el Casco Histórico en 3.606 €/m² y
+          Valdebernardo-Valderribas en 4.120 €/m².
+        </p>
+        <p class="text-gray-600 text-sm leading-relaxed mt-3">
+          <strong>Lo que no existe:</strong> un precio medio público de un piso concreto de 2-3 dormitorios en El
+          Cañaveral. Cualquier cifra cerrada que veas de ese tipo no tiene fuente verificable.
+        </p>
+      </section>
+
+      <!-- Alquilar -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🔑 Cuánto cuesta alquilar</h2>
+        <p class="text-gray-500 text-sm mb-5">En el barrio no hay media publicada: las referencias son el distrito y las ofertas reales.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl border border-warm-200 p-5">
+            <p class="font-bold text-brand-900">Distrito de Vicálvaro</p>
+            <p class="text-3xl font-bold text-brand-600 mt-2">1.709 €/mes</p>
+            <p class="text-sm text-gray-600 mt-2">Media de septiembre de 2026 (muestra de 82 viviendas). En Madrid capital, la media es de 2.443 €/mes: el distrito está un 30 % por debajo.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-warm-200 p-5">
+            <p class="font-bold text-brand-900">Oferta real en el barrio</p>
+            <p class="text-3xl font-bold text-brand-600 mt-2">1.021 €/mes</p>
+            <p class="text-sm text-gray-600 mt-2">Piso de 2 dormitorios y 53 m² construidos (19 €/m²) de protección pública (VPPL) con garaje y trastero, en la promoción Tectum Cañaveral I (210 viviendas VPPL de 1-3 dormitorios). Anuncio de septiembre de 2026.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pública -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🏛️ Vivienda pública y asequible: el diferencial del barrio</h2>
+        <p class="text-gray-500 text-sm mb-5">El plan parcial reserva más de la mitad de las 14.000 viviendas previstas a algún régimen de protección.</p>
+        <div class="bg-white rounded-xl border border-warm-200 p-5 mb-5">
+          <ul class="space-y-3 text-gray-700 text-sm leading-relaxed">
+            <li>🏗️ <strong>1.212 viviendas de alquiler asequible de EMVS Madrid</strong> en 13 promociones dentro del barrio.</li>
+            <li>✅ <strong>868 sorteadas</strong> hasta mayo de 2026 y <strong>1.078 finalizadas</strong>; a septiembre de 2026 había 8 promociones entregadas (Cañaveral 1, 2, 3, 4, 5, 6, 9 y 12) y la 7 en fase final.</li>
+            <li>🎲 Los sorteos de <strong>Cañaveral 10 y Cañaveral 11</strong> están previstos para <strong>principios de 2027</strong>.</li>
+            <li>💶 Rentas entre <strong>300 y 800 €/mes</strong> según promoción (media de 590 €/mes en la promoción 5) y nunca por encima del 30 % de los ingresos de la familia.</li>
+            <li>👨‍👩‍👧 <strong>El 80 % de las viviendas</strong> se reserva a jóvenes y familias con hijos menores.</li>
+          </ul>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div class="bg-white rounded-xl border border-warm-200 p-4">
+            <p class="font-semibold text-brand-900 text-sm">EMVS · alquiler asequible</p>
+            <p class="text-xs text-gray-600 mt-2">Ingresos hasta <strong>3,5 veces el IPREM</strong> (referencia: pareja con dos hijos, hasta ~44.000 € brutos/año). Renta ≤30 % de los ingresos.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-warm-200 p-4">
+            <p class="font-semibold text-brand-900 text-sm">VPPL · alquiler protegido</p>
+            <p class="text-xs text-gray-600 mt-2">Ingresos hasta <strong>7,5 veces el IPREM</strong> y ningún miembro titular de otra vivienda en España (Decreto 74/2009).</p>
+          </div>
+          <div class="bg-white rounded-xl border border-warm-200 p-4">
+            <p class="font-semibold text-brand-900 text-sm">Plan Vive (Comunidad)</p>
+            <p class="text-xs text-gray-600 mt-2">Entre <strong>1,5 y 5,5 veces el IPREM</strong> (precio básico) o hasta 7,5 (limitado). Preferencia con 5 años empadronado en el municipio.</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mt-4">
+          La inscripción se hace en el <strong>registro permanente de solicitantes de vivienda</strong> del
+          Ayuntamiento de Madrid y en los registros de la Comunidad para el Plan Vive. Para trámites presenciales,
+          la <a href="https://sede.madrid.es/portal/site/tramites/menuitem.1f3361415fda829be152e15284f1a5a0/?vgnextchannel=557d5d53be9a0210VgnVCM100000171f5a0aRCRD" target="_blank" rel="noopener" class="text-brand-600 font-medium">Junta Municipal de Vicálvaro</a>
+          está en la plaza de Don Antonio de Andrés, s/n.
+        </p>
+      </section>
+
+      <!-- Obra nueva -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🏗️ Obra nueva: quién está construyendo</h2>
+        <p class="text-gray-500 text-sm mb-5">El sureste es la zona con más grúa de Madrid: 2.414 viviendas iniciadas en 2025 (+37 %) y 1.136 en stock.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl border border-warm-200 p-5">
+            <p class="font-bold text-brand-900">AEDAS Homes</p>
+            <p class="text-sm text-gray-600 mt-2">Su promoción <strong>Elion</strong>, de 90 viviendas de 2, 3 y 4 dormitorios (86 m² útiles en el modelo publicado), está <strong>vendida</strong>, igual que Freya. Es el termómetro de la demanda del barrio: se vende antes de terminarse.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-warm-200 p-5">
+            <p class="font-bold text-brand-900">Grupo Avintia</p>
+            <p class="text-sm text-gray-600 mt-2">Desarrolla 9 promociones con 689 viviendas en la Comunidad de Madrid, con promociones en Vicálvaro, <strong>El Cañaveral</strong> y Los Ahijones; entregas entre finales de 2026 y mediados de 2027.</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mt-4">
+          Para seguirlo con detalle, en Actualidad publicamos los movimientos del barrio con fuente y fecha; el
+          más relevante ahora mismo es la
+          <a href="/actualidad/canaveral-11-45-viviendas-publicas-alquiler-asequible/" class="text-brand-600 font-medium">finalización de Cañaveral 11</a>.
+        </p>
+      </section>
+
+      <!-- Gastos y trámites -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🧾 Gastos e impuestos al comprar</h2>
+        <p class="text-gray-500 text-sm mb-5">Tipos vigentes en la Comunidad de Madrid en 2026.</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm bg-white rounded-xl border border-warm-200 overflow-hidden">
+            <thead class="bg-warm-50 text-left">
+              <tr>
+                <th class="px-4 py-3 font-semibold text-gray-700">Concepto</th>
+                <th class="px-4 py-3 font-semibold text-gray-700">Tipo</th>
+                <th class="px-4 py-3 font-semibold text-gray-700">Notas</th>
+              </tr>
+            </thead>
+            <tbody>
+              {gastos.map((g) => (
+                <tr class="border-t border-warm-100">
+                  <td class="px-4 py-3 font-medium text-gray-800">{g.concepto}</td>
+                  <td class="px-4 py-3 font-semibold text-brand-700 whitespace-nowrap">{g.tipo}</td>
+                  <td class="px-4 py-3 text-gray-600">{g.nota}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4 mt-5">
+          <div class="bg-brand-50 border border-brand-100 rounded-xl p-4 text-sm text-gray-700">
+            <p class="font-semibold text-brand-700 mb-1">📑 Empadronamiento</p>
+            Se solicita en la Junta Municipal del Distrito de Vicálvaro (plaza de Don Antonio de Andrés, s/n) o por sede electrónica. Ten en cuenta que el certificado caduca: pide uno reciente para cada trámite que lo requiera.
+          </div>
+          <div class="bg-brand-50 border border-brand-100 rounded-xl p-4 text-sm text-gray-700">
+            <p class="font-semibold text-brand-700 mb-1">🏠 Cédula de habitabilidad</p>
+            En la Comunidad de Madrid no se emite con carácter general desde 2019: lo que se exige es la licencia (o declaración responsable) municipal de primera ocupación. Si un vendedor te pide «cédula», pregunta por ese documento.
+          </div>
+        </div>
+      </section>
+
+      <!-- Agencias -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🤝 Agencias para buscar piso en el barrio</h2>
+        <p class="text-gray-500 text-sm mb-5">
+          {inmobiliarias.length} agencias operan en El Cañaveral y alrededores ({enElBarrio.length} con oficina en el propio barrio). Estas son las mejor valoradas por volumen de reseñas:
+        </p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {top.map((n) => (
+            <a href={`/inmobiliarias/${n.slug}/`} class="bg-white rounded-xl border border-warm-200 p-4 hover:border-brand-300 transition-colors">
+              <div class="flex items-start justify-between gap-2">
+                <p class="font-bold text-brand-900 leading-snug">{n.name}</p>
+                {estrella(n) && <span class="shrink-0 text-xs font-semibold text-yellow-600">{estrella(n)}</span>}
+              </div>
+              <p class="text-xs text-gray-500 mt-1">📍 {n.zonaName}{n.phone ? ` · ${n.phone}` : ""}</p>
+            </a>
+          ))}
+        </div>
+        <a href="/inmobiliarias" class="inline-block mt-4 text-sm font-medium text-brand-600 hover:text-brand-700">Ver las {inmobiliarias.length} agencias del directorio &rarr;</a>
+      </section>
+
+      <!-- Vivir aquí -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🏘️ Cómo es vivir en El Cañaveral</h2>
+        <p class="text-gray-500 text-sm mb-5">Lo que hay que saber antes de decidir (y lo que todavía falta).</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl border border-warm-200 p-5">
+            <p class="font-semibold text-brand-900 text-sm mb-2">A favor</p>
+            <ul class="space-y-1.5 text-sm text-gray-600 list-disc list-inside">
+              <li>Barrio nuevo: administrativo desde 2017, 538 hectáreas con 100 de zonas verdes.</li>
+              <li>{`27.014`} vecinos empadronados (agosto de 2026) y en crecimiento.</li>
+              <li>1.000 plazas escolares públicas en marcha, con un instituto de 24 aulas de ESO y 8 de Bachillerato.</li>
+              <li>Parque comercial de 77.000 m² previsto para la Navidad de 2027 (2.200 plazas de aparcamiento, 13 pistas de pádel).</li>
+              <li>Más de la mitad de las 14.000 viviendas previstas, con algún régimen de protección.</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl border border-warm-200 p-5">
+            <p class="font-semibold text-brand-900 text-sm mb-2">A tener en cuenta</p>
+            <ul class="space-y-1.5 text-sm text-gray-600 list-disc list-inside">
+              <li><strong>No hay metro</strong> en el barrio: se llega con los buses 159, E5 y el búho N6, el interurbano 290 y el Cercanías desde Vicálvaro.</li>
+              <li>El precio de obra nueva ya es <strong>el más alto del sureste</strong>.</li>
+              <li>El barrio sigue en obras: comercios y equipamientos llegan por fases.</li>
+              <li>Las distancias a servicios consolidados (hospital, juzgados, ocio) se resuelven en Coslada o Vicálvaro.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-brand-50 border border-brand-100 rounded-xl p-5 mt-5 text-sm text-gray-700">
+          <span class="font-semibold text-brand-700">Para el día a día:</span>
+          <a href="/vivir-en-el-canaveral" class="text-brand-600 font-medium">guía de vivir en el barrio</a> ·
+          <a href="/transporte" class="text-brand-600 font-medium">cómo llegar y transporte</a> ·
+          <a href="/servicios-publicos" class="text-brand-600 font-medium">colegios, sanidad y trámites</a> ·
+          <a href="/directorio" class="text-brand-600 font-medium">todos los negocios</a>.
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes sobre vivienda en El Cañaveral</h2>
+        <div class="space-y-3">
+          {faq.map((f) => (
+            <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+              <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                {f.q}
+                <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+              </summary>
+              <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <!-- Fuentes -->
+      <section class="mb-10">
+        <h2 class="text-xl font-bold text-brand-900 mb-3">Fuentes</h2>
+        <ul class="space-y-2 text-xs text-gray-500">
+          {fuentes.map((s) => (
+            <li>
+              <a href={s.u} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{s.t}</a>
+              {" — "}{s.f}
+            </li>
+          ))}
+        </ul>
+        <p class="text-xs text-gray-400 mt-6">
+          Página informativa, no asesoramiento financiero ni legal. Los precios son medias de mercado publicadas
+          por terceros en la fecha indicada y varían por promoción, orientación y estado. Verifica siempre las
+          condiciones (renta máxima, requisitos de acceso, plazos) en la convocatoria oficial antes de inscribirte.
+        </p>
+      </section>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>
