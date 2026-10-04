@@ -15,7 +15,7 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `a5e91cf` (llms-full.txt) · `e34fcd6`/`2a6e35f` (concordancia) · docs de cierre — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** · JSON-LD Organization/WebSite en home · `/llms.txt` + `/llms-full.txt` generados en build |
+| **HEAD ref** | `02272ed` (fixes del review de llms-full) · `a5e91cf` (llms-full) · `e34fcd6`/`2a6e35f` (concordancia) — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** · JSON-LD Organization/WebSite en home · `/llms.txt` + `/llms-full.txt` generados en build |
 
 ## ✅ Sesión 2026-09-27c (Windows local, DSH) — concordancia de las guías + `llms-full.txt`
 
@@ -54,7 +54,7 @@ Endpoint `src/pages/llms-full.txt.ts` (generado en build, imposible de desincron
   `llms.txt` enlaza la versión extendida (**88 enlaces**) y `public/_headers` sirve ambas como
   `text/plain; charset=utf-8` con caché de 1 h.
 
-**Revisión adversarial de cierre (subagente) → 1 grave + 5 menores, TODOS corregidos** (commit `ce1b45a`):
+**Revisión adversarial de cierre (subagente) → 1 grave + 5 menores, TODOS corregidos** (commit `02272ed`):
 
 1. *Grave*: las fichas con `estado: "proxima-apertura"` (BunBun y Música de los Ríos) salían como negocios
    operativos → un LLM las citaría como abiertas. Ahora llevan `Estado: PRÓXIMA APERTURA (anunciado, todavía sin
