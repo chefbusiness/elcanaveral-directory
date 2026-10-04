@@ -88,7 +88,7 @@ export const GET: APIRoute = () => {
     "- Cobertura: " +
       zonas.map((z) => z.name).join(", ") +
       ".",
-    "- El barrio de El Cañaveral (distrito de Vicálvaro, Madrid) tiene más de 30.000 habitantes y está en pleno crecimiento. Código postal principal: " +
+    "- El barrio de El Cañaveral (distrito de Vicálvaro, Madrid) tiene 27.014 habitantes empadronados (agosto de 2026) y está en pleno crecimiento: el plan parcial prevé 14.000 viviendas, más de la mitad con algún régimen de protección. Código postal principal: " +
       (zonaPrincipal?.postalCodes?.[0] ?? "28052") +
       ".",
     "- URL de cada ficha: /{categoria}/{slug}/ · URL de cada guía: /blog/{slug}/ · Cada zona tiene su hub en /zona/{zona}/.",

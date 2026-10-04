@@ -28,9 +28,31 @@
       ]
     },
     "restaurantes": {
-      "title": "Restaurantes en El Cañaveral y Vicálvaro — Directorio",
-      "description": "Todos los restaurantes de El Cañaveral y Vicálvaro: cocina venezolana, peruana, china, parrillas y tapas. Horarios, precios y reseñas, más la guía de los mejores.",
-      "h1": "Restaurantes en El Cañaveral y Vicálvaro"
+      "title": "Restaurantes en El Cañaveral y alrededores: dónde comer (45 locales)",
+      "description": "45 restaurantes en El Cañaveral, Vicálvaro, Coslada y San Fernando: 19 con terraza, 14 con reparto a domicilio y 18 que abren los domingos. Horarios, teléfonos y notas reales de Google.",
+      "h1": "Restaurantes en El Cañaveral y alrededores",
+      "intro": [
+        "El Cañaveral tiene <strong>23 restaurantes dentro del barrio</strong> y otros 22 a pocos minutos (Vicálvaro, Coslada y San Fernando de Henares). Los mejor valorados por volumen de reseñas son <a href=\"/restaurantes/con-sazon-el-canaveral/\">Con Sazón</a> (4,8 con más de 6.700 reseñas), <a href=\"/restaurantes/chinawok-express-canaveral/\">ChinaWok Express</a> (4,7 con 3.199), <a href=\"/restaurantes/tsinghe-cocina-fusion/\">TSINGHE Cocina Fusión</a> (4,8 con 836) y <a href=\"/restaurantes/guasacaca-madrid-canaveral/\">Guasacaca</a> (4,8 con 781). En cocina hay de todo: casera, mediterránea, española, latina y venezolana, brasa y china.",
+        "Para elegir rápido: <strong>19 tienen terraza</strong>, <strong>14 reparten a domicilio</strong> y <strong>18 abren los domingos</strong> (los tienes con su hora exacta en el <a href=\"/abiertos-los-domingos/\">listado de lo que abre el domingo</a>). Abajo están los 45 con horarios, teléfono y valoraciones reales de Google."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es el mejor restaurante de El Cañaveral?",
+          "a": "Con el ranking que usamos —nota media ponderada por número de reseñas, para que una nota alta con pocas opiniones no adelante a una con cientos— encabeza la lista Con Sazón El Cañaveral (4,8 con más de 6.700 reseñas), seguido de ChinaWok Express (4,7 con 3.199) y TSINGHE Cocina Fusión (4,8 con 836)."
+        },
+        {
+          "q": "¿Qué restaurantes abren los domingos en El Cañaveral?",
+          "a": "18 de los 45 tienen horario de domingo confirmado en Google. Tienes la lista completa, con la hora exacta de cada uno, en el listado de comercios abiertos los domingos. Si buscas comer el domingo, conviene reservar: son los días de más demanda."
+        },
+        {
+          "q": "¿Dónde se puede comer con terraza?",
+          "a": "19 locales tienen terraza confirmada, entre ellos Cervecería La Galerna (4,2 con 896 reseñas) o El Rincón de Carla. En cada ficha aparece el distintivo de terraza cuando el negocio lo declara en Google; en primavera y verano, reserva."
+        },
+        {
+          "q": "¿Cuáles reparten a domicilio?",
+          "a": "14 restaurantes del directorio tienen servicio de reparto a domicilio confirmado. Puedes ver las opciones, incluido lo que reparten las apps en el barrio, en la guía de comida a domicilio."
+        }
+      ]
     },
     "educacion": {
       "title": "Guarderías, escuelas infantiles y academias en El Cañaveral",
@@ -87,14 +109,50 @@
       ]
     },
     "belleza": {
-      "title": "Peluquerías y estética en El Cañaveral y Vicálvaro",
-      "description": "Peluquerías, barberías y centros de estética en El Cañaveral y Vicálvaro. Servicios, horarios y reseñas, más la guía de las peluquerías mejor valoradas del barrio.",
-      "h1": "Peluquerías y Estética en El Cañaveral"
+      "title": "Peluquerías y centros de belleza en El Cañaveral (27 centros)",
+      "description": "27 peluquerías, barberías y centros de estética en El Cañaveral y alrededores, con las mejor valoradas de Google (Bellavida, Di Classe Barbershop, Nails Boutique), horarios y contacto.",
+      "h1": "Peluquerías y centros de belleza en El Cañaveral",
+      "intro": [
+        "Entre El Cañaveral, Vicálvaro, Coslada y San Fernando hay <strong>27 peluquerías, barberías y centros de estética</strong>; 10 de ellos están dentro del barrio. Los mejor valorados son <a href=\"/belleza/bellavida/\">Bellavida</a> (5 con 189 reseñas), <a href=\"/belleza/di-classe-barbershop/\">Di Classe Barbershop</a> (4,9 con 392), <a href=\"/belleza/nails-boutique-el-canaveral/\">Nails Boutique El Cañaveral</a> (4,9 con 184) y <a href=\"/belleza/laura-vivar-estilistas/\">Laura Vivar Estilistas</a> (4,9 con 115).",
+        "Lo que más ofrecen estos centros: peinados y recogidos, corte de pelo (mujer, hombre y niño), asesoramiento de imagen personalizado y tratamientos de hidratación y brillo. Abajo tienes los 27 con horario, dirección y teléfono para pedir cita directamente."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es la peluquería mejor valorada de El Cañaveral?",
+          "a": "Bellavida tiene un 5 sobre 5 con 189 reseñas y Di Classe Barbershop un 4,9 con 392 opiniones: son los dos centros de referencia del barrio, uno de estética y otro de barbería. Para manos y pies, Nails Boutique El Cañaveral acumula un 4,9 con 184 reseñas."
+        },
+        {
+          "q": "¿Hay barbería en El Cañaveral?",
+          "a": "Sí. Di Classe Barbershop, en el barrio, es la barbería con más reseñas de la zona (4,9 con 392). En la categoría de belleza tienes también peluquerías unisex y centros especializados en color y tratamientos."
+        },
+        {
+          "q": "¿Alguna abre los domingos o los lunes?",
+          "a": "Ninguna de las 27 tiene horario de domingo confirmado en Google: en la zona el descanso habitual es domingo (y muchas también lunes). Si necesitas un peinado para un evento en fin de semana, pide cita el sábado con antelación."
+        }
+      ]
     },
     "deporte": {
-      "title": "Gimnasios y centros deportivos en El Cañaveral",
-      "description": "Gimnasios, CrossFit, fitboxing y pádel en El Cañaveral y Vicálvaro. Horarios, tarifas y reseñas, más la guía de los gimnasios mejor valorados de la zona.",
-      "h1": "Gimnasios y Deporte en El Cañaveral"
+      "title": "Gimnasios y centros deportivos en El Cañaveral (20 centros)",
+      "description": "20 gimnasios, centros de entrenamiento y pádel en El Cañaveral y alrededores: los mejor valorados de Google (Kora Balance, Silva Training Center, Pádel El Cañaveral), servicios y horarios.",
+      "h1": "Gimnasios y centros deportivos en El Cañaveral",
+      "intro": [
+        "El Cañaveral tiene <strong>11 centros deportivos dentro del barrio</strong> y 9 más en Vicálvaro, Coslada y San Fernando. Los mejor valorados son <a href=\"/deporte/kora-balance/\">Kora Balance</a> (5 con 136 reseñas), <a href=\"/deporte/silva-training-center/\">Silva Training Center</a> (5 con 114) y <a href=\"/deporte/winfit-canaveral/\">Winfit Gimnasio Cañaveral</a> (5 con 78); para pádel, <a href=\"/deporte/padel-el-canaveral/\">Pádel El Cañaveral</a> (4,9 con 143).",
+        "Los servicios que más se repiten en el barrio: vestuarios y duchas, sala de musculación y peso libre, clases colectivas dirigidas, entrenamiento personal y asesoramiento nutricional. Hay <strong>tres centros con horario de domingo</strong> (Pádel El Cañaveral, Energie Fitness y Dreamfit Valdebernardo)."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es el mejor gimnasio de El Cañaveral?",
+          "a": "Cinco centros del barrio tienen un 5 sobre 5 en Google: Kora Balance (136 reseñas), Silva Training Center (114), Winfit Gimnasio Cañaveral (78), Club Deportivo Jose Arturo Blanco (77) y Sano Mad Cañaveral (54). Con volumen de opiniones alto, Pádel El Cañaveral mantiene un 4,9 con 143 reseñas."
+        },
+        {
+          "q": "¿Dónde se puede jugar al pádel?",
+          "a": "Pádel El Cañaveral (4,9 con 143 reseñas) es la referencia en el barrio y abre todos los días de 9:00 a 23:00, domingo incluido. En la categoría de deporte tienes el resto de instalaciones de la zona."
+        },
+        {
+          "q": "¿Qué gimnasios abren los domingos?",
+          "a": "Tres centros de la zona tienen horario de domingo confirmado: Pádel El Cañaveral, Energie Fitness El Cañaveral y Dreamfit Valdebernardo. El resto cierra el domingo; el listado completo está en qué abre el domingo."
+        }
+      ]
     },
     "mascotas": {
       "title": "Veterinarios y peluquería canina en El Cañaveral",
@@ -144,9 +202,27 @@
       "h1": "Moda y Complementos en El Cañaveral"
     },
     "cafeterias": {
-      "title": "Cafeterías en El Cañaveral — café y brunch",
-      "description": "Cafeterías y coffee shops en El Cañaveral: café de especialidad, brunch y repostería casera. Direcciones, horarios y reseñas de los vecinos.",
-      "h1": "Cafeterías en El Cañaveral"
+      "title": "Cafeterías en El Cañaveral: dónde desayunar y tomar café",
+      "description": "15 cafeterías en El Cañaveral y alrededores: café de especialidad, churrerías y repostería casera, con las mejor valoradas de Google, horarios y direcciones.",
+      "h1": "Cafeterías en El Cañaveral y alrededores",
+      "intro": [
+        "El Cañaveral tiene <strong>7 cafeterías dentro del barrio</strong> (y otras 8 en Coslada y San Fernando a pocos minutos). Las mejor valoradas son <a href=\"/cafeterias/street-grills/\">Street Grills</a> (4,8 con 162 reseñas), <a href=\"/cafeterias/cafe-lave/\">CAFE LAVÉ</a> (4,7 con 79) y <a href=\"/cafeterias/cafe-jp/\">Café JP</a> (4,6 con 50); en Coslada destacan <a href=\"/cafeterias/moon-cafeteria-restaurante/\">MOON Cafetería Restaurante</a> (4,5 con 171) y la tradicional <a href=\"/cafeterias/churreria-cafeteria-jh-i/\">Churrería-Cafetería Jh-I</a> (4,4 con 415).",
+        "Aquí tienes las 15 con su horario, teléfono y nota real de Google. Ojo con el domingo: <strong>solo una tiene horario de domingo confirmado</strong> — la mayoría cierra. Si buscas planes de mañana, mira también el <a href=\"/abiertos-los-domingos/\">listado de lo que abre el domingo</a> y la <a href=\"/blog/mejores-cafeterias-el-canaveral/\">comparativa de cafeterías</a>."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es la mejor cafetería de El Cañaveral?",
+          "a": "Street Grills (4,8 con 162 reseñas) es la mejor valorada del barrio, seguida de CAFE LAVÉ (4,7 con 79) y Café JP (4,6 con 50). Como referencia, la cafetería más reseñada de la zona es la Churrería-Cafetería Jh-I de Coslada, con 415 opiniones y un 4,4."
+        },
+        {
+          "q": "¿Hay churrerías en el barrio o cerca?",
+          "a": "Sí. En la zona hay churrerías tradicionales, entre ellas la Churrería-Cafetería Jh-I (Coslada) y Churrería Bernis, en El Cañaveral. Es el desayuno de fin de semana más típico del barrio."
+        },
+        {
+          "q": "¿Qué cafeterías abren los domingos?",
+          "a": "De las 15 cafeterías del directorio, solo una tiene horario de domingo confirmado en Google. El resto cierra el domingo, así que para ese día mira el listado de lo que abre el domingo (pastelerías y panaderías suelen ser la alternativa)."
+        }
+      ]
     },
     "fruterias": {
       "title": "Fruterías en El Cañaveral — fruta fresca y horarios",
@@ -227,8 +303,26 @@
     },
     "inmobiliarias": {
       "title": "Inmobiliarias en El Cañaveral, Vicálvaro y Coslada",
-      "description": "Agencias inmobiliarias en El Cañaveral, Vicálvaro y Coslada para comprar, vender o alquilar vivienda. Contacto y reseñas, más la guía de las mejor valoradas.",
-      "h1": "Inmobiliarias en El Cañaveral y alrededores"
+      "description": "17 agencias inmobiliarias que operan en El Cañaveral y alrededores, con las mejor valoradas de Google, teléfono y web, y claves para comprar o alquilar en el barrio.",
+      "h1": "Inmobiliarias en El Cañaveral y alrededores",
+      "intro": [
+        "En El Cañaveral y su entorno operan <strong>17 agencias inmobiliarias</strong> (3 con oficina en el propio barrio y el resto en Vicálvaro, Coslada y San Fernando de Henares). Las mejor valoradas son <a href=\"/inmobiliarias/inmobiliaria-sm-homes-coslada/\">SM Homes Coslada</a> (5 con 489 reseñas), <a href=\"/inmobiliarias/la-inmobiliaria-de-cris/\">La inmobiliaria de Cris</a> (5 con 114), <a href=\"/inmobiliarias/sm-homes-el-canaveral/\">SM Homes El Cañaveral</a> (5 con 99) y <a href=\"/inmobiliarias/redpiso-el-canaveral/\">Redpiso El Cañaveral</a> (4,9 con 97).",
+        "Todas las fichas traen teléfono y web para pedir información sin intermediarios. Y un dato útil antes de llamar: en el barrio <strong>hay 1.212 viviendas de alquiler asequible de EMVS</strong> repartidas en 13 promociones, con sorteos pendientes de las promociones Cañaveral 10 y 11 a principios de 2027."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es la inmobiliaria mejor valorada de la zona?",
+          "a": "Inmobiliaria SM Homes Coslada encabeza la lista con un 5 sobre 5 y 489 reseñas, seguida de La inmobiliaria de Cris (5 con 114) y SM Homes El Cañaveral (5 con 99). Redpiso El Cañaveral, con 97 reseñas y un 4,9, es otra de las oficinas del propio barrio."
+        },
+        {
+          "q": "¿Cuántas inmobiliarias hay en El Cañaveral?",
+          "a": "Tres tienen oficina en el barrio (SM Homes El Cañaveral, Redpiso El Cañaveral y Mediadores Inmobiliarios) y otras 14 cubren la zona desde Vicálvaro, Coslada y San Fernando de Henares. Todas trabajan el mercado de obra nueva y segunda mano del barrio."
+        },
+        {
+          "q": "¿Hay vivienda pública o asequible en El Cañaveral?",
+          "a": "Sí, es uno de los barrios de Madrid con más vivienda pública nueva: EMVS Madrid tiene 1.212 viviendas de alquiler asequible en 13 promociones dentro del barrio (868 sorteadas hasta mayo de 2026) y los sorteos de Cañaveral 10 y 11 están previstos para principios de 2027. El plan parcial reserva más de la mitad de las 14.000 viviendas previstas a algún régimen de protección."
+        }
+      ]
     }
   },
   "fichas": {
