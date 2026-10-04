@@ -1,0 +1,204 @@
+---
+// Farmacias de guardia y urgencias (P1b). Demanda medida (DataForSEO, oct-2026):
+// «farmacia de guardia coslada» 210/mes + «farmacia 24 horas coslada» 170 + «farmacia de guardia vicalvaro» 110
+// ≈ 490/mes, más «veterinario cañaveral» 90/mes (CPC 1,31).
+//
+// DECISIÓN EDITORIAL: esta página NO publica una lista de guardias (rotan a diario y quedaría desactualizada
+// al día siguiente, que en salud es inaceptable). Explica cómo encontrarlas por los canales oficiales y
+// publica lo que sí es estable: nuestras farmacias con su horario habitual y los servicios de urgencias
+// (veterinario 24 h) que hay en el barrio.
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { loadNegocios, type Negocio } from "@/lib/directory";
+
+const base = "https://www.elcanaveral.info";
+const negocios = loadNegocios();
+
+const farmacias = negocios
+  .filter((n) => n.category === "salud" && /farmac/i.test(`${n.name} ${n.googleCategory || ""}`))
+  .sort((a, b) => (b.rating || 0) - (a.rating || 0));
+const enElBarrio = farmacias.filter((n) => n.zona === "el-canaveral");
+const veterinarios24 = negocios.filter(
+  (n) => n.category === "mascotas" && /24\s?h|24 horas|urgencias/i.test(`${n.name} ${(n.servicios || []).join(" ")} ${n.description || ""}`),
+);
+const veterinariosTop = negocios
+  .filter((n) => n.category === "mascotas" && /veterin/i.test(`${n.name} ${n.googleCategory || ""}`))
+  .sort((a, b) => (b.numReviews || 0) - (a.numReviews || 0))
+  .slice(0, 6);
+
+const estrella = (n: Negocio) => (n.rating ? `★ ${n.rating}${n.numReviews ? ` (${n.numReviews})` : ""}` : "sin valoración");
+
+const faq = [
+  {
+    q: "¿Cómo sé qué farmacia está de guardia hoy en El Cañaveral o Vicálvaro?",
+    a: "La guardia rota a diario y no se puede publicar una lista fija sin que caduque, así que lo mejor es consultar el buscador oficial: el Ayuntamiento de Madrid publica las farmacias de guardia del día (con distrito y horario) y el Colegio Oficial de Farmacéuticos de Madrid mantiene su propio servicio de consulta. También puedes llamar al 010 (información municipal) indicando tu calle, o al 112 en una urgencia sanitaria.",
+  },
+  {
+    q: "¿Cuántas farmacias hay en El Cañaveral?",
+    a: `En el barrio hay ${enElBarrio.length} farmacias (${enElBarrio.map((f) => f.name).join(", ")}), y otras más en Coslada y San Fernando de Henares. Las del barrio cierran los domingos, así que ese día hay que tirar de guardia. La más valorada es Farmacia Sonrisas del Cañaveral (4,8) y la de horario más amplio, Farmacia Central Cañaveral (hasta las 22:00 de lunes a viernes).`,
+  },
+  {
+    q: "¿Hay alguna farmacia abierta 24 horas o los 365 días?",
+    a: `En el directorio hay una farmacia de la zona que se anuncia como abierta los 365 días del año: Farmacia Méjico 23 (Coslada), con teléfono ${(farmacias.find((f) => /Méjico 23/.test(f.name)) || { phone: "+34 628 90 87 40" }).phone}. Para el día a día, en el barrio la de horario más amplio es Farmacia Central Cañaveral (09:00-22:00 de lunes a viernes).`,
+  },
+  {
+    q: "¿Dónde llevo a mi perro o gato de urgencia por la noche?",
+    a: `En el propio barrio está Mascotiti Hospital Veterinario Cañaveral, que trabaja con urgencias 24 horas (${(veterinarios24[0] || { phone: "+34 912 40 41 50" }).phone}). Es el único servicio veterinario con urgencias 24 h dentro de El Cañaveral; si necesitas una segunda opinión o tu veterinario habitual está en Coslada o Vicálvaro, tienes el listado completo en la categoría de mascotas.`,
+  },
+  {
+    q: "¿Y urgencias médicas (personas)?",
+    a: "Para urgencias sanitarias llama al 112 o acude al centro de salud de referencia: el Centro de Salud Cano (Vicálvaro) cubre El Cañaveral hasta la apertura del centro de salud propio del barrio, que está en trámite. En la categoría de salud tienes también clínicas dentales, fisioterapia y podología con su horario real.",
+  },
+];
+
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Farmacias en El Cañaveral y alrededores",
+  itemListElement: farmacias.map((f, i) => ({ "@type": "ListItem", position: i + 1, name: f.name, url: `${base}/salud/${f.slug}/` })),
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "Farmacias de guardia y urgencias", item: `${base}/farmacias-de-guardia/` },
+  ],
+};
+---
+
+<BaseLayout
+  title="Farmacias de guardia y urgencias cerca de El Cañaveral"
+  description={`Cómo encontrar la farmacia de guardia hoy en El Cañaveral, Vicálvaro y Coslada (canales oficiales), las ${farmacias.length} farmacias del directorio con su horario y el veterinario con urgencias 24 horas del barrio.`}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <a href="/salud" class="hover:text-brand-600">Salud</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">Farmacias de guardia y urgencias</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          Farmacias de guardia y urgencias cerca de El Cañaveral
+        </h1>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          Son las once y media de la noche y necesitas una farmacia. Aquí tienes <strong>cómo encontrar la que está
+          de guardia hoy</strong> (por los canales oficiales, porque la guardia rota cada día) y lo que sí es fijo:
+          las <strong>{farmacias.length} farmacias del directorio</strong> con su horario, y el
+          <strong>veterinario con urgencias 24 horas</strong> del barrio.
+        </p>
+      </header>
+
+      <section class="mb-12 bg-brand-50 border border-brand-100 rounded-xl p-6">
+        <h2 class="text-xl font-bold text-brand-900 mb-3">🚨 La farmacia de guardia, hoy</h2>
+        <p class="text-gray-700 text-sm leading-relaxed mb-4">
+          La guardia cambia a diario, así que no publicamos una lista que caduque en 24 horas. Consulta la del día
+          en los canales oficiales:
+        </p>
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li>
+            🏛️ <a href="https://www.madrid.es/portales/munimadrid/es/Farmacias-de-Guardia/Farmacias-de-guardia/?vgnextfmt=default&vgnextoid=715e418844017310VgnVCM1000000b205a0aRCRD&vgnextchannel=5a8224e15c7f3410VgnVCM1000000b205a0aRCRD" target="_blank" rel="noopener" class="text-brand-600 font-medium">Farmacias de guardia del Ayuntamiento de Madrid</a> — buscador oficial por distrito, con la guardia del día y su horario.
+          </li>
+          <li>
+            💊 <a href="https://www.cofm.es/" target="_blank" rel="noopener" class="text-brand-600 font-medium">Colegio Oficial de Farmacéuticos de Madrid</a> — información colegial y teléfonos de interés de las farmacias.
+          </li>
+          <li>📞 <strong>010</strong> (información municipal de Madrid): te dicen la farmacia de guardia más cercana a tu calle.</li>
+          <li>🚑 <strong>112</strong>: urgencias sanitarias. Y para urgencias veterinarias, el hospital 24 h del barrio (abajo).</li>
+        </ul>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">💊 Farmacias en El Cañaveral y alrededores</h2>
+        <p class="text-gray-500 text-sm mb-5">
+          {enElBarrio.length} de ellas están en el propio barrio. Todas cierran los domingos salvo guardia; la de horario más amplio abre hasta las 22:00.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {farmacias.map((f) => (
+            <a href={`/salud/${f.slug}/`} class="bg-white rounded-xl border border-warm-200 p-4 hover:border-brand-300 transition-colors">
+              <div class="flex items-start justify-between gap-2">
+                <p class="font-bold text-brand-900 leading-snug">{f.name}</p>
+                <span class="shrink-0 text-xs font-semibold text-yellow-600">{estrella(f)}</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">📍 {f.zonaName}{f.address ? ` · ${f.address}` : ""}</p>
+              {f.horario && <p class="text-xs text-gray-600 mt-2 whitespace-pre-line">🕘 {f.horario}</p>}
+              {f.phone && <p class="text-xs text-gray-500 mt-2">📞 {f.phone}</p>}
+            </a>
+          ))}
+        </div>
+        <a href="/salud" class="inline-block mt-4 text-sm font-medium text-brand-600 hover:text-brand-700">Ver toda la categoría de salud &rarr;</a>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🐾 Urgencias veterinarias 24 horas</h2>
+        <p class="text-gray-500 text-sm mb-5">El único servicio veterinario con urgencias 24 h dentro de El Cañaveral.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {(veterinarios24.length ? veterinarios24 : veterinariosTop.slice(0, 1)).map((v) => (
+            <a href={`/mascotas/${v.slug}/`} class="bg-white rounded-xl border border-brand-200 p-5 hover:border-brand-300 transition-colors">
+              <p class="font-bold text-brand-900">{v.name}</p>
+              <p class="text-xs text-gray-500 mt-1">📍 {v.zonaName}{v.address ? ` · ${v.address}` : ""}</p>
+              <p class="text-sm text-brand-700 font-semibold mt-2">🚑 Abierto 24 horas · {v.phone}</p>
+              <p class="text-xs text-gray-500 mt-2">{estrella(v)}</p>
+            </a>
+          ))}
+          <div class="bg-warm-50 border border-warm-200 rounded-xl p-5">
+            <p class="font-semibold text-brand-900 text-sm">Otras clínicas de referencia</p>
+            <ul class="mt-2 space-y-1.5 text-xs text-gray-600">
+              {veterinariosTop
+                .filter((v) => !veterinarios24.some((x) => x.slug === v.slug))
+                .slice(0, 4)
+                .map((v) => (
+                  <li>
+                    <a href={`/mascotas/${v.slug}/`} class="text-brand-600">{v.name}</a> — {v.zonaName} · {estrella(v)}
+                  </li>
+                ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes</h2>
+        <div class="space-y-3">
+          {faq.map((f) => (
+            <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+              <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                {f.q}
+                <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+              </summary>
+              <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <div class="bg-white border border-warm-200 rounded-xl p-5 mb-8 text-sm text-gray-700">
+        <span class="font-semibold text-brand-700">También te puede servir:</span>
+        <a href="/salud" class="text-brand-600 font-medium">clínicas y centros de salud del barrio</a> ·
+        <a href="/mascotas" class="text-brand-600 font-medium">veterinarios y tiendas de mascotas</a> ·
+        <a href="/servicios-publicos" class="text-brand-600 font-medium">servicios públicos y trámites</a>.
+      </div>
+
+      <p class="text-xs text-gray-400 mt-8">
+        Página informativa. Los horarios son los que cada negocio publica en Google y se actualizan con el
+        directorio; en festivos y guardias conviene confirmar por teléfono o en los canales oficiales antes de
+        desplazarse. No sustituye al consejo sanitario profesional: ante una urgencia, llama al 112.
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>

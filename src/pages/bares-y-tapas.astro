@@ -1,0 +1,218 @@
+---
+// Bares y tapas (demanda medida: «bares cañaveral» 590/mes, sin ninguna página que lo cubriera).
+// La selección es CURADA y explícita (lista de slugs revisada a mano) porque el filtro automático
+// por palabras mezclaba churrerías, kebabs y ramen: se incluyen solo locales cuya ficha de Google
+// los define como bar, cervecería, taberna, gastrobar o bar de tapas.
+// Los datos (valoración, reseñas, terraza, horario, dirección) salen del directorio, no se escriben a mano.
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { loadNegocios, type Negocio } from "@/lib/directory";
+
+const base = "https://www.elcanaveral.info";
+
+// En el barrio (El Cañaveral)
+const enElBarrioSlugs = [
+  "maclaren-s-irish-sport-bar-canaveral",
+  "trius-gastrobar",
+  "cerveceria-la-galerna",
+  "seven-canaveral",
+];
+// En el entorno (Vicálvaro, Coslada, San Fernando): bares y tabernas de tapas y raciones
+const zonaSlugs = [
+  "bar-restaurante-el-rincon-de-cristian",
+  "bar-caballero",
+  "bar-restaurante-tierra-de-barros",
+  "cafeteria-miky-tapas-sin-fin",
+  "bar-cafeteria-luis",
+  "la-choco-2",
+  "fogon-de-ramona",
+  "el-rincon-de-carla",
+  "casa-botija",
+];
+
+const negocios = loadNegocios();
+const porSlug = new Map(negocios.map((n) => [n.slug, n]));
+const faltan: string[] = [];
+const recoge = (slugs: string[]) =>
+  slugs
+    .map((s) => {
+      const n = porSlug.get(s);
+      if (!n) faltan.push(s);
+      return n;
+    })
+    .filter((n): n is Negocio => !!n)
+    .sort((a, b) => (b.rating || 0) - (a.rating || 0) || (b.numReviews || 0) - (a.numReviews || 0));
+
+const barrio = recoge(enElBarrioSlugs);
+const zona = recoge(zonaSlugs);
+if (faltan.length) console.warn("[bares] slugs no encontrados:", faltan.join(", "));
+
+const estrella = (n: Negocio) => (n.rating ? `★ ${n.rating}${n.numReviews ? ` (${n.numReviews} reseñas)` : ""}` : "sin valoración");
+const tarjeta = (n: Negocio) => ({
+  nombre: n.name,
+  href: `/${n.category}/${n.slug}/`,
+  rating: estrella(n),
+  zona: n.zonaName,
+  direccion: n.address,
+  telefono: n.phone,
+  terraza: !!n.terraza,
+  horario: n.horario,
+});
+
+const listaBarrio = barrio.map(tarjeta);
+const listaZona = zona.map(tarjeta);
+
+const faq = [
+  {
+    q: "¿Dónde se puede tapear en El Cañaveral?",
+    a: `En el propio barrio funcionan varios bares y cervecerías: ${listaBarrio.map((b) => b.nombre).join(", ")}. Para tapear de forma más tradicional, en Coslada y San Fernando tienes bares de barrio con raciones, tapas y platos combinados (${listaZona.filter((b) => /Coslada|San Fernando/.test(b.zona)).slice(0, 3).map((b) => b.nombre).join(", ")}).`,
+  },
+  {
+    q: "¿Cuáles tienen terraza?",
+    a: `De esta selección tienen terraza confirmada en Google: ${[...listaBarrio, ...listaZona].filter((b) => b.terraza).map((b) => b.nombre).join(", ")}. En verano conviene ir temprano: las terrazas del barrio se llenan a partir de las 20:30.`,
+  },
+  {
+    q: "¿Hay bares para ver el fútbol o deporte?",
+    a: "MacLaren's Irish & Sport Bar, en El Cañaveral, es el local de referencia para deporte: es un pub irlandés con pantallas para retransmisiones y una de las fichas con más reseñas del barrio (más de 1.400).",
+  },
+  {
+    q: "¿Qué es Tapaveral y cuándo se celebra?",
+    a: "Tapaveral es la feria de la tapa del barrio: los locales participantes ofrecen una tapa con bebida a precio especial, los vecinos votan sus favoritas y se sortean premios. La edición de 2026 (V Feria de la Tapa) se celebró del 2 al 4 de octubre, el mismo fin de semana que la V Carrera Popular. Se repite cada año en esas fechas.",
+  },
+  {
+    q: "¿Dónde tomar cerveza artesanal?",
+    a: "Cervecería La Galerna, en la Avenida Miguel Delibes, es una cervecería de barrio con selección de cervezas artesanales y una de las más valoradas del barrio (4,2 con casi 900 reseñas).",
+  },
+];
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Bares y tabernas de tapas en El Cañaveral y alrededores",
+  itemListElement: [...listaBarrio, ...listaZona].map((b, i) => ({ "@type": "ListItem", position: i + 1, name: b.nombre, url: `${base}${b.href}` })),
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "Bares y tapas", item: `${base}/bares-y-tapas/` },
+  ],
+};
+---
+
+<BaseLayout
+  title="Bares y tapas en El Cañaveral: dónde tapear y tomar algo"
+  description={`Bares, cervecerías y tabernas de tapas en El Cañaveral y alrededores: ${listaBarrio.length} en el barrio y ${listaZona.length} de tapeo tradicional en Vicálvaro, Coslada y San Fernando, con terraza, valoraciones reales y teléfono.`}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">Bares y tapas</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          Bares y tapas en El Cañaveral: dónde tapear y tomar algo
+        </h1>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          El Cañaveral es un barrio joven, y eso se nota en los bares: <strong>{listaBarrio.length} locales para
+          tomar algo</strong> dentro del barrio y una veintena de tabernas de tapeo a pocos minutos, en Vicálvaro,
+          Coslada y San Fernando de Henares. Aquí tienes los que merecen el desplazamiento, con
+          <strong>terraza, valoración real y teléfono</strong>.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🍻 Bares para tomar algo en El Cañaveral</h2>
+        <p class="text-gray-500 text-sm mb-5">En el propio barrio: cervecería, gastrobar, pub irlandés y un bar con horario amplio todos los días.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {listaBarrio.map((b) => (
+            <a href={b.href} class="bg-white rounded-xl border border-warm-200 p-4 hover:border-brand-300 transition-colors flex flex-col">
+              <div class="flex items-start justify-between gap-2">
+                <p class="font-bold text-brand-900 leading-snug">{b.nombre}</p>
+                <span class="shrink-0 text-xs font-semibold text-yellow-600">{b.rating}</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">📍 {b.zona}{b.direccion ? ` · ${b.direccion}` : ""}</p>
+              <p class="text-xs text-gray-500 mt-1">{b.terraza ? "☀️ Terraza · " : ""}{b.telefono ?? ""}</p>
+              {b.horario && <p class="text-xs text-gray-400 mt-2">🕘 {b.horario.split("\n")[0]}</p>}
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🥘 Tabernas y bares de tapas cerca</h2>
+        <p class="text-gray-500 text-sm mb-5">Para tapear de verdad (tapas, raciones y platos combinados): en Vicálvaro, Coslada y San Fernando de Henares.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {listaZona.map((b) => (
+            <a href={b.href} class="bg-white rounded-xl border border-warm-200 p-4 hover:border-brand-300 transition-colors flex flex-col">
+              <div class="flex items-start justify-between gap-2">
+                <p class="font-bold text-brand-900 leading-snug">{b.nombre}</p>
+                <span class="shrink-0 text-xs font-semibold text-yellow-600">{b.rating}</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">📍 {b.zona}{b.direccion ? ` · ${b.direccion}` : ""}</p>
+              <p class="text-xs text-gray-500 mt-1">{b.terraza ? "☀️ Terraza · " : ""}{b.telefono ?? ""}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="mb-12 bg-brand-50 border border-brand-100 rounded-xl p-6">
+        <h2 class="text-xl font-bold text-brand-900 mb-2">🎉 La ruta de la tapa del barrio: Tapaveral</h2>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          El barrio tiene su propia feria de la tapa: <strong>Tapaveral</strong>. Los locales participantes ofrecen
+          una tapa con bebida a precio especial durante tres días, los vecinos votan sus favoritas y hay sorteo de
+          premios. La edición de 2026 (V Feria de la Tapa) se celebró del 2 al 4 de octubre, el mismo fin de semana
+          que la V Carrera Popular.
+        </p>
+        <a href="/actualidad/tapaveral-2026-y-v-carrera-popular-el-canaveral/" class="inline-block mt-3 text-sm font-medium text-brand-600 hover:text-brand-700">
+          Leer el resumen de Tapaveral 2026 &rarr;
+        </a>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes</h2>
+        <div class="space-y-3">
+          {faq.map((f) => (
+            <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+              <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                {f.q}
+                <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+              </summary>
+              <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <div class="bg-white border border-warm-200 rounded-xl p-5 mb-8 text-sm text-gray-700">
+        <span class="font-semibold text-brand-700">También te puede servir:</span>
+        <a href="/restaurantes" class="text-brand-600 font-medium">los 45 restaurantes</a> ·
+        <a href="/cafeterias" class="text-brand-600 font-medium">cafeterías para desayunar</a> ·
+        <a href="/abiertos-los-domingos" class="text-brand-600 font-medium">qué abre el domingo</a> ·
+        <a href="/comida-a-domicilio" class="text-brand-600 font-medium">lo que reparte a domicilio</a>.
+      </div>
+
+      <p class="text-xs text-gray-400 mt-8">
+        Selección curada de locales cuya ficha pública (Google) los define como bar, cervecería, taberna, gastrobar
+        o bar de tapas; los datos de valoración, reseñas y terraza se actualizan con el directorio. No es publicidad:
+        ningún local paga por aparecer en esta lista. Si regentas un bar del barrio y quieres aparecer, escríbenos a
+        local@elcanaveral.info.
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>
