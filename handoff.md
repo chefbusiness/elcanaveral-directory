@@ -54,6 +54,25 @@ Endpoint `src/pages/llms-full.txt.ts` (generado en build, imposible de desincron
   `llms.txt` enlaza la versión extendida (**88 enlaces**) y `public/_headers` sirve ambas como
   `text/plain; charset=utf-8` con caché de 1 h.
 
+**Revisión adversarial de cierre (subagente) → 1 grave + 5 menores, TODOS corregidos** (commit `ce1b45a`):
+
+1. *Grave*: las fichas con `estado: "proxima-apertura"` (BunBun y Música de los Ríos) salían como negocios
+   operativos → un LLM las citaría como abiertas. Ahora llevan `Estado: PRÓXIMA APERTURA (anunciado, todavía sin
+   abrir)`.
+2. Menores: faltaban las **fuentes** de las 10 noticias (22 URLs externas, ya volcadas) · la frase «el dataset
+   tiene el mismo contenido que este fichero» era falsa (añade coordenadas, `placeId`, imágenes…) · la cifra de
+   coordenadas de `llms.txt` (283) parecía contradecir la nota de las 4 descartadas → ahora «283 en el dataset,
+   **279 publicadas** en el schema» (el guard de coordenadas se expone como `coordenadasPlausibles()` para no
+   duplicar constantes) · las secciones de categoría y de zona compartían el patrón `### Nombre (N fichas)`, lo
+   que hacía que un parser contase 20 categorías y sumase las 286 fichas dos veces → ahora `### Categoría: …` /
+   `### Zona: …` · la descripción del ranking citaba «nota media × volumen» cuando la fórmula es
+   `score = (v/(v+m))·R + (m/(v+m))·C` con C/m por categoría (ya se explica así, con los filtros de cada guía).
+
+**Lo que el reviewer confirmó sin hallazgo**: el ranking de `llms-full.txt` es **idéntico** (orden, nombres,
+notas y nº de reseñas) al que renderizan las 32 páginas de guía · 286/286 fichas y 32/32 guías volcadas ·
+**376/376 URLs responden 200** en vivo · sin emails de terceros, `placeId`, coordenadas ni el dominio
+`farmaciasonrisascanaveral.com` (blocklist) · 0 concordancias de género pendientes en 32 guías y 439 páginas.
+
 
 ## ✅ Sesión 2026-09-27b (Windows local, DSH) — bloque GEO: entidad, fichas y llms.txt
 

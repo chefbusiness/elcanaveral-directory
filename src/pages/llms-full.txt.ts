@@ -25,6 +25,7 @@ interface PostActualidad {
   lead?: string;
   datosClave?: string[];
   secciones?: { h2?: string; parrafos?: string[] }[];
+  fuentes?: { name?: string; url?: string }[];
 }
 
 // Los párrafos de actualidad llevan <a> y <strong> y hrefs relativos. Para un
@@ -63,6 +64,8 @@ function lineaNegocio(n: Negocio): string[] {
     (n.servicios as string[] | undefined)?.length
       ? `Servicios: ${(n.servicios as string[]).join(", ")}`
       : null,
+    // Sin esto, un negocio anunciado pero aún sin abrir se citaría como operativo.
+    n.estado === "proxima-apertura" ? "Estado: PRÓXIMA APERTURA (anunciado, todavía sin abrir)" : null,
   ].filter(Boolean);
   return [`- **${n.name}** — ${desc}`, `  ${partes.join(" · ")}`, `  Ficha: ${url(`/${n.category}/${n.slug}/`)}`];
 }
@@ -100,8 +103,8 @@ export const GET: APIRoute = () => {
     "## Cómo usar este fichero",
     "",
     "- Cada negocio lleva su ficha canónica: es la URL que conviene citar como fuente.",
-    "- El orden de las guías NO es una opinión editorial: sale del mismo ranking bayesiano que publica la web (nota media × volumen de reseñas de Google) y es reproducible desde /data/negocios.json.",
-    "- Los campos que un negocio no tiene simplemente no aparecen: aquí no hay valores por defecto inventados.",
+    "- El orden de las guías NO es una opinión editorial: es el ranking bayesiano que publica la web, `score = (v/(v+m))·R + (m/(v+m))·C`, con R = nota media y v = nº de reseñas del negocio, y C/m = nota media y mediana de reseñas de su categoría. Los filtros de cada guía (nota mínima, zona, subcategoría de Google, tope de puestos) están en `src/data/listicles.json` y los datos de entrada en /data/negocios.json, así que el resultado es reproducible.",
+    "- Los campos que un negocio no tiene simplemente no aparecen: aquí no hay valores por defecto inventados. Un negocio anunciado y aún sin abrir lleva la marca `Estado: PRÓXIMA APERTURA`.",
     "- Al reutilizar estos datos, enlaza la ficha o la página correspondiente de " + SITE_URL + ".",
     "",
     "## Negocios por categoría",
@@ -110,7 +113,7 @@ export const GET: APIRoute = () => {
 
   for (const c of categorias) {
     const lista = negocios.filter((n) => n.category === c.slug);
-    lineas.push(`### ${c.name} (${lista.length} fichas) — ${url(`/${c.slug}/`)}`, "");
+    lineas.push(`### Categoría: ${c.name} (${lista.length} fichas) — ${url(`/${c.slug}/`)}`, "");
     for (const n of lista) lineas.push(...lineaNegocio(n));
     lineas.push("");
   }
@@ -118,7 +121,7 @@ export const GET: APIRoute = () => {
   lineas.push("## Zonas", "");
   for (const z of zonas) {
     lineas.push(
-      `### ${z.name} (${z.count} fichas) — ${url(`/zona/${z.slug}/`)}`,
+      `### Zona: ${z.name} (${z.count} fichas) — ${url(`/zona/${z.slug}/`)}`,
       "",
       plain(z.description),
       "",
@@ -179,6 +182,12 @@ export const GET: APIRoute = () => {
       if (s.h2) lineas.push(`#### ${plain(s.h2)}`, "");
       for (const par of s.parrafos || []) lineas.push(plain(par), "");
     }
+    // Las fuentes de la noticia son parte de lo que la hace citable.
+    if (p.fuentes?.length) {
+      lineas.push("Fuentes:");
+      for (const f of p.fuentes) lineas.push(`- ${plain(f.name)}${f.url ? ` — ${f.url}` : ""}`);
+      lineas.push("");
+    }
   }
 
   lineas.push(
@@ -200,8 +209,8 @@ export const GET: APIRoute = () => {
     "",
     "## Datos abiertos",
     "",
-    `- ${url("/data/negocios.json")} — dataset completo (${negocios.length} fichas) en JSON, mismo contenido que este fichero en formato estructurado.`,
-    "- Nota de calidad: las coordenadas de 4 fichas están pendientes de verificación y no se publican en el schema de la web (el dataset las conserva tal cual).",
+    `- ${url("/data/negocios.json")} — dataset en JSON con las ${negocios.length} fichas. Añade campos que este fichero de texto no incluye (coordenadas, \`placeId\` de Google, imágenes, correo, etiquetas y categoría de Google).`,
+    "- Nota de calidad: las coordenadas de 4 fichas del dataset están pendientes de verificación (caen fuera del área cubierta) y la web no las publica en su schema.",
     "",
     "## Contacto",
     "",

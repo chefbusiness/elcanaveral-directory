@@ -7,7 +7,7 @@
 // desincronizarse.
 import type { APIRoute } from "astro";
 import actualidadData from "@/data/actualidad.json";
-import { loadCategorias, loadNegocios, loadZonas } from "@/lib/directory";
+import { coordenadasPlausibles, loadCategorias, loadNegocios, loadZonas } from "@/lib/directory";
 import { loadPublishedListicles } from "@/lib/listicles";
 
 const SITE_URL = "https://www.elcanaveral.info";
@@ -65,6 +65,12 @@ export const GET: APIRoute = () => {
     horario: con((n) => !!n.horario),
     rating: con((n) => !!n.rating),
     geo: con((n) => !!n.lat && !!n.lng),
+    // Coordenadas que superan el filtro de cordura y por tanto se publican en el
+    // schema: si solo se diera la cifra bruta (283), la nota de al lado sobre las
+    // 4 fichas descartadas parecia una contradiccion.
+    geoPublicable: con(
+      (n) => !!n.lat && !!n.lng && coordenadasPlausibles(Number(n.lat), Number(n.lng)),
+    ),
     perfilSocial: con((n) => esPerfilSocial(n.website)),
   };
 
@@ -102,7 +108,9 @@ export const GET: APIRoute = () => {
       cobertura.rating +
       " y coordenadas en " +
       cobertura.geo +
-      ".",
+      " fichas (se publican en el schema " +
+      cobertura.geoPublicable +
+      ": las 4 fichas con coordenadas fuera del área se descartan).",
     "- Los datos de cada ficha se publican también en abierto como JSON (ver «Datos abiertos»).",
     "",
     "## Directorio y hubs",

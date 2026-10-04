@@ -88,10 +88,12 @@ function getZonasRaw(): Zona[] {
   return zonasRawCache;
 }
 
-// Caja del area cubierta (este de Madrid + Corredor del Henares). Sirve de
-// filtro de cordura para las coordenadas de Google Places.
+// Caja del area cubierta (este de Madrid + Corredor del Henares). Filtro de
+// cordura para las coordenadas de Google Places (hay fichas con lat/lng de otro
+// pais). Exportada para que los endpoints que publican datos (llms.txt,
+// llms-full.txt) informen exactamente de lo mismo que publica el schema.
 const AREA = { latMin: 40.2, latMax: 40.6, lngMin: -3.95, lngMax: -3.2 };
-function dentroDelArea(lat: number, lng: number): boolean {
+export function coordenadasPlausibles(lat: number, lng: number): boolean {
   return lat >= AREA.latMin && lat <= AREA.latMax && lng >= AREA.lngMin && lng <= AREA.lngMax;
 }
 
@@ -259,7 +261,7 @@ export function generateLocalBusinessSchema(negocio: Negocio) {
   // lat/lng de otro pais (Alemania, Venezuela, Colombia, Cadiz) del mismo scrape
   // de Google Places: publicar ese geo es peor que no publicar ninguno.
   const tieneGeo =
-    Number.isFinite(lat) && Number.isFinite(lng) && lat !== 0 && lng !== 0 && dentroDelArea(lat, lng);
+    Number.isFinite(lat) && Number.isFinite(lng) && lat !== 0 && lng !== 0 && coordenadasPlausibles(lat, lng);
   const municipio = zona?.municipality || negocio.zonaName || "Madrid";
 
   // CP: manda el que ya viene dentro de la direccion (lo traen las 286 fichas);
