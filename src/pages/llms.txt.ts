@@ -169,6 +169,7 @@ export const GET: APIRoute = () => {
     "",
     "## Optional",
     "",
+    `- [Versión extendida (llms-full.txt)](${url("/llms-full.txt")}): catálogo completo de las ${negocios.length} fichas, el ranking de las ${guias.length} guías y las ${posts.length} noticias en texto plano, para citar sin rastrear el sitio.`,
     "- [Aviso legal](" + url("/aviso-legal/") + "), [Términos](" + url("/terminos/") + "), [Privacidad](" + url("/privacidad/") + "), [Cookies](" + url("/cookies/") + ").",
     "",
   ];
