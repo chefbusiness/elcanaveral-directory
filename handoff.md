@@ -1,6 +1,6 @@
 # HANDOFF — elcanaveral.info
 
-> Hoja de arranque y estado del proyecto. Última actualización: **2026-09-27 (sesión c — concordancia de guías + llms-full.txt)**.
+> Hoja de arranque y estado del proyecto. Última actualización: **2026-10-05 (auditoría GSC #5 — crecimiento y oportunidades de contenido)**.
 > 👉 Trilogía de contexto: `handoff.md` (estado/sesiones) · `memoria.md` (contexto, entorno y límites — leer
 > antes de retomar) · `roadmap.md` (hecho/pendiente priorizado). La receta de push del sandbox y el acceso
 > GSC por API están en `memoria.md`.
@@ -15,7 +15,77 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `02272ed` (fixes del review de llms-full) · `a5e91cf` (llms-full) · `e34fcd6`/`2a6e35f` (concordancia) — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** · JSON-LD Organization/WebSite en home · `/llms.txt` + `/llms-full.txt` generados en build |
+| **HEAD ref** | `9023ae3` (bloque GEO + llms-full) · docs de cierre — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** · JSON-LD Organization/WebSite en home · `/llms.txt` + `/llms-full.txt` generados en build |
+
+## 📊 Auditoría GSC #5 (2026-10-05) — **crecimiento confirmado** + oportunidades de contenido
+
+Ventanas por API directa v3 (propiedad `sc-domain:elcanaveral.info`; raws en `.tmp/gsc-raw/*-{pre5,post5,90}.json`,
+minería en `.tmp/gsc-opportunities.mjs`). ⚠️ En propiedad de dominio Google **oculta parte de las queries**: las
+179 visibles cubren ~23 % de las impresiones → el análisis de fondo va por **dimensión `page`**.
+
+### 1. Está funcionando (28 d contra 28 d)
+
+| Ventana | Clics | Impresiones | Pos. media |
+|---|---|---|---|
+| PRE 11-ago→07-sep | 14 | 1.209 | 14,9 |
+| POST 08-sep→04-oct | **30** | **2.440** | **8,6** |
+| 90 d 07-jul→04-oct | 55 | 5.104 | 10,4 |
+
+**+102 % impresiones, +114 % clics, +6,3 puestos.** Móvil = 45 de 53 clics (81 %, pos 8,0) frente a escritorio
+(10 clics, pos 21,6) · España = 94 % de las impresiones · `searchAppearance` = 0 filas (Google retiró los rich
+results de FAQ en 2023: el schema FAQPage sigue valiendo para GEO, no para CTR).
+
+### 2. Dónde está el dinero (por tipo de página, 90 d)
+
+| Tipo | Impresiones | Clics | CTR |
+|---|---|---|---|
+| **Fichas** (69 URLs) | 2.928 | 23 | 0,79 % |
+| **Categorías/hubs** (12) | 1.632 | 23 | **1,41 %** |
+| Home | 225 | 5 | 2,22 % |
+| Zona×categoría (11) | 184 | 3 | **1,63 %** |
+| Actualidad | 108 | 1 | pos 79,9 |
+| **Guías `/blog/`** | **11** | 0 | **— (32 guías sin una sola impresión)** |
+
+De las 438 páginas, solo **96** tienen alguna impresión; de 286 fichas, **69**.
+
+### 3. Hallazgos duros
+
+1. **Las 32 guías no cogen aire** (0 impresiones). No es un problema de enlazado —comprobado: **0 huérfanas, 122
+   enlaces internos**, el hub `/blog/` enlaza las 32 y las categorías a las suyas— sino de **demanda**: nadie
+   busca «las mejores fruterías de El Cañaveral». La demanda medida es **marca** («ahorramas cañaveral» 182i,
+   «megafruta» 265i, «estanco el cañaveral» 199i, «obrador de goya» 129i, «alcampo/mi alcampo» 158i), **categoría
+   + barrio** («supermercado cañaveral» 54i, «fruteria cañaveral» 41i, «cafeteria cañaveral» 26i) y **cerca de mí**.
+2. **Las fichas de marca no convierten: 250-286 impresiones con 0-2 clics a posición 6** (`mi-alcampo` 250i/0c,
+   `ahorramas` 286i/2c, `panaderia-bulevar` 190i/0c, `obrador-de-goya` 158i/0c, `escuela-infantil-aupa` 144i/0c).
+   Es el **Map Pack**: confirma la lección de GSC #4 → **dejar de invertir en title/meta de fichas de marca**.
+3. **El head term está a 88**: «el cañaveral» 88 impresiones en posición 88 (más «cañaveral tiendas» pos 3,
+   «cañaveral cerca de mi»). Ninguna página nuestra rankea por el nombre del barrio.
+4. **Ruido de desambiguación**: «cañaveral las gabias» (Granada), «meson cañaveral las gabias», «bazar el
+   cañaveral de albacete» → conviene declarar «El Cañaveral (Vicálvaro, Madrid)» en los hubs y en `llms.txt`.
+5. **Intención de vivienda ya convirtiendo**: «pisos cañaveral alquiler» y «pisos de alquiler en el cañaveral»
+   **clic a posición 3**, y «compra de casas con acompañamiento profesional en coslada» pos 3. **No hay página
+   que lo cubra** (solo 17 fichas de inmobiliarias) = hueco claro.
+6. **Striking distance**: `/fruterias/` 576i/1c pos 8,9 (CTR 0,17 % — impresiones de marca) y `/cafeterias/`
+   746i/17c (el mejor hub, CTR 2,28 %) · `/educacion/` 147i **pos 19,4** · `/zona/el-canaveral/supermercados/`
+   120i/3c (CTR 2,50 %).
+7. **Categorías sin intro+FAQ** (patrón que sí funciona): **`/cafeterias/`** (¡el hub más fuerte!), `/restaurantes/`
+   (45 fichas y 2 impresiones), `/belleza/`, `/deporte/`, `/hogar/`, `/moda/`, `/automocion/`,
+   `/servicios-profesionales/`, `/inmobiliarias/`.
+8. **Datos ya disponibles para la capa informativa**: 35 fichas con horario de domingo, 39 con terraza, 39 con
+   delivery, 4 con menú del día, 2 con servicio 24 h.
+
+### 4. Acciones propuestas (priorizadas) → detalle en `IDEAS-CONTENIDO.md` y `roadmap.md`
+
+- **P1 · Capa informativa «lo que el Map Pack no responde»**: supermercados que abren los domingos · veterinarios
+  y farmacias 24 h/guardia · terrazas y brunch. Se ataca la intención por la que el usuario *sí* necesita una web.
+- **P2 · Retitular/enriquecer las 32 guías** a la formulación que se busca + columnas de horario/domingo/terraza.
+- **P3 · Hub del barrio**: reforzar `/vivir-en-el-canaveral/` como «El Cañaveral (Vicálvaro, Madrid): guía
+  completa» + nota de desambiguación (head term a 88).
+- **P4 · Guía de vivienda**: «Comprar o alquilar en El Cañaveral: precios, promociones y qué mirar».
+- **P5 · Intro+FAQ en `/cafeterias/` y `/restaurantes/`** (y el resto por orden de impresiones).
+- **P6 · Zona×categoría**: `/zona/el-canaveral/` no enlaza ninguna guía; replicar el patrón donde ya convierte.
+- **P7 · Ahorro de esfuerzo**: no más overrides de title/meta en fichas de marca (Map Pack).
+
 
 ## ✅ Sesión 2026-09-27c (Windows local, DSH) — concordancia de las guías + `llms-full.txt`
 

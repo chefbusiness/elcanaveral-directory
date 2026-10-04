@@ -4,6 +4,9 @@
 > directorio de negocios, sino todo lo que un vecino (o quien se plantea mudarse) necesita saber.
 > Contenido de utilidad pura, evergreen, **sin competencia local**. Capturado el 2026-06-26.
 > Las guías nuevas se publican en **DRIP** (ver handoff.md). Construir con SEO-first.
+> **Actualizado 2026-10-05 tras GSC #5**: la demanda medida (sección «Demanda REAL medida» más abajo) reordena
+> este backlog — primero lo que la gente ya busca (domingos/horarios, urgencias, vivienda, «El Cañaveral»), y las
+> guías «mejores X» pasan a ser capa de apoyo de la categoría, no la apuesta principal.
 
 ## 🧱 Arquitectura de contenido (pilares del sitio)
 
@@ -79,7 +82,57 @@ fechas; conecta con el **blog de actualidad** (cuando una feria está en marcha)
 
 ---
 
-## 📦 DATOS YA INVESTIGADOS — Transporte de El Cañaveral
+## 📊 Demanda REAL medida en GSC #5 (2026-10-05) — construir sobre esto, no sobre intuición
+
+Base: 90 días (07-jul→04-oct), 179 queries visibles (⚠️ Google oculta ~77 % de las impresiones en propiedades de
+dominio, así que esto es el mínimo, no el total) + dimensiones de página. **Conclusión estructural: la gente
+busca MARCA y CATEGORÍA+barrio, no «los mejores X»** — por eso las 32 guías tienen 0 impresiones.
+
+### Clúster 1 · «¿Abre los domingos / a qué hora?» (el más rentable: el Map Pack no lo responde)
+Evidencia: «ahorramas cañaveral» 182i · «alcampo/mi alcampo» 158i · «supermercado cañaveral» 54i · «hiper
+cañaveral» 72i · «panaderia bulevar» 43i · «fruteria cañaveral» 41i — **todos con 0-2 clics a posición 6**.
+Datos disponibles: **35 fichas con horario de domingo**; 39 con `terraza`; 39 con `delivery`.
+→ **Piezas**: «Qué supermercados abren los domingos en El Cañaveral (2026)» · «Panaderías abiertas el domingo» ·
+«Fruterías y mercados: horarios y días de mercado». Formato: respuesta directa arriba + tabla con nombre, horario
+y teléfono + enlace a la ficha.
+
+### Clúster 2 · Urgencias y servicios fuera de horario
+Evidencia: 179 queries visibles incluyen «clinica veterinaria vicalvaro villardondiego 17», «farmacia sonrisas
+del cañaveral» (61i, único con clic de salud) y «estanco cerca de mi» (pos 1).
+Datos: 2 fichas con 24 h (Mascotiti veterinario urgencias 24 h; Dreamfit).
+→ **Piezas**: «Veterinarios con urgencias 24 h cerca de El Cañaveral» · «Farmacias de guardia en El Cañaveral y
+Vicálvaro» (gap ya anotado en el punto 4 de arriba) · «Dónde comprar tabaco y sellos: estancos».
+
+### Clúster 3 · Vivienda (intención de alto valor, YA convierte y NO hay página)
+Evidencia: «pisos cañaveral alquiler» y «pisos de alquiler en el cañaveral» → **clic en posición 3** ·
+«compra de casas con acompañamiento profesional en coslada» pos 3.
+Datos: 17 inmobiliarias (todas con teléfono y web) + posts de Cañaveral 11 (45 viviendas públicas) y del parque
+comercial. → **Pieza**: «Comprar o alquilar en El Cañaveral: precios, promociones y qué mirar (2026)» (hub que
+alimenta a las inmobiliarias del directorio).
+
+### Clúster 4 · «El Cañaveral» como barrio (head term a 88 → cero visibilidad)
+Evidencia: «el cañaveral» 88i **pos 88** · «cañaveral tiendas» pos 3 · «cañaveral cerca de mi» · ruido de
+desambiguación («cañaveral las gabias» Granada, «meson cañaveral las gabias», «bazar el cañaveral de albacete»).
+→ **Pieza**: reforzar `/vivir-en-el-canaveral/` como «El Cañaveral (Vicálvaro, Madrid): guía completa del barrio»
++ nota de desambiguación + enlaces fuertes desde home/hubs y desde `llms.txt`.
+
+### Clúster 5 · Familias (guarderías, inglés, extraescolares)
+Evidencia: «escuela infantil aupa» 51i · «mejor guarderia cañaveral» 12i **pos 25** · «escuela infantil ingles
+cañaveral» 7i **pos 28** · «escuela infantil el cañaveral» 4i pos 25 · `/educacion/` 147i **pos 19,4**.
+→ **Pieza**: retitular la guía de guarderías a «Guarderías y escuelas infantiles en El Cañaveral (0-3 años):
+plazas, inglés y cuál elegir» y reforzar `/educacion/` (hoy a 19,4).
+
+### Clúster 6 · Bares, tapas y ocio (sin página que lo cubra)
+Evidencia: «bares en el cañaveral madrid» (pos 56) · «bar - cañaveral tapas» · Tapaveral es un evento anual con
+tráfico propio. Datos: 24 restaurantes + 12 cafeterías con señales de bar/tapas.
+→ **Pieza**: «Bares y tapas en El Cañaveral: dónde tapear» (se refuerza con el post-evento de Tapaveral).
+
+### Lo que NO hay que hacer (aprendizaje GSC #4 + #5 confirmado)
+**No invertir más en title/meta de fichas de marca**: `mi-alcampo` 250i/0 clics, `ahorramas` 286i/2c,
+`panaderia-bulevar` 190i/0c, `obrador-de-goya` 158i/0c, `escuela-infantil-aupa` 144i/0c — todas a posición 6 y
+todas ignoradas porque el Map Pack se lleva el clic. El CTR de una ficha de marca no se arregla con un title.
+
+
 *(2026-06-26, fuentes oficiales. Horarios sujetos a cambios → verificar en CRTM/EMT antes de publicar; John confirma in situ.)*
 
 **Autobuses (EMT / interurbanos):**
