@@ -82,6 +82,62 @@ fechas; conecta con el **blog de actualidad** (cuando una feria está en marcha)
 
 ---
 
+---
+
+## 🏠 DATOS VERIFICADOS DE VIVIENDA (investigación 2026-10-05) — base para la guía P4
+
+Todo con fuente y fecha. **Ojo con la población: son 27.014 empadronados (ago-2026), no «más de 30.000»** — el
+sitio ya está corregido.
+
+**Precio de compra** · Obra nueva libre en El Cañaveral: **4.112 €/m²** (+11,3 % anual) y media de vivienda nueva
+**427.000 €** (+18,4 %); es el barrio más caro del sureste (Foro Consultores vía idealista/news, 9-feb-2026).
+Comparativa: Ensanche de Vallecas 4.638 €/m², Los Ahijones 4.232, Los Berrocales 4.061, Valdecarros ~3.900.
+Segunda mano en la zona estadística «El Cañaveral-Los Berrocales»: 4.666 €/m² (ago-2026) — **agrega Los
+Berrocales, no atribuir solo al barrio** (Idílico Realty/Idealista). Solo distrito Vicálvaro: Ambroz 3.667 €/m²,
+Casco Histórico 3.606, Valdebernardo-Valderribas 4.120. ⚠️ **No existe dato público de precio medio de un piso
+concreto de 2-3 dormitorios en el barrio.**
+
+**Alquiler** · Distrito de Vicálvaro: **1.709 €/mes** (sep-2026, muestra de 82 viviendas; Madrid capital
+2.443 €/mes) — Enalquiler. En el barrio no hay media publicada: oferta real de 2 dorm. y 53 m² construidos
+**1.021 €/mes** (19 €/m²), VPPL con garaje y trastero, promoción Tectum Cañaveral I (210 viviendas VPPL de 1-3
+dorm., comercializa Alkira Living; anuncio de sep-2026 en pisos.com).
+
+**Obra nueva** · AEDAS Homes: promoción **Elion** (90 viviendas de 2-4 dorm., ya vendida) y Freya (vendida)
+(aedashomes.com, oct-2026). Grupo Avintia: 9 promociones / 689 viviendas en la Comunidad con promociones en
+Vicálvaro, El Cañaveral y Los Ahijones (3-oct-2025). Sureste: 2.414 viviendas iniciadas en 2025 (+37 %) y 1.136
+en stock (Foro Consultores, ene-2026).
+
+**Vivienda pública (el gran diferencial del barrio)** · EMVS Madrid: **1.212 viviendas de alquiler asequible en
+13 promociones** en El Cañaveral; 868 sorteadas (may-2026), 1.078 finalizadas y 8 promociones entregadas a
+sep-2026; los sorteos de **Cañaveral 10 y 11** son a principios de **2027** (Observatorio Inmobiliario 6-may-2026 ·
+Nuevo Sureste 21-sep-2026). Renta media 590 €/mes (Cañaveral 5) y horquilla 300-800 €/mes (Cañaveral 9), nunca
+más del 30 % de los ingresos. Requisitos EMVS: ingresos ≤3,5 veces el IPREM (referencia: pareja con 2 hijos hasta
+~44.000 € brutos/año); 80 % de las viviendas para jóvenes y familias con hijos. Requisitos VPPL (Decreto
+74/2009): ingresos ≤7,5 × IPREM y no ser titular de otra vivienda en España. Plan Vive (Decreto 84/2020
+modificado el 8-abr-2026): 1,5-5,5 × IPREM (precio básico) y 1,5-7,5 (limitado), con preferencia por 5 años de
+empadronamiento en el municipio.
+
+**Trámites** · Empadronamiento: Junta Municipal de Vicálvaro (plaza de Don Antonio de Andrés, s/n). **Cédula de
+habitabilidad: en la Comunidad de Madrid no se emite con carácter general** — el control final es la licencia o
+declaración responsable de primera ocupación. **IVA obra nueva: 10 %** (4 % para VPO de régimen especial o
+promoción pública). **ITP vivienda usada: 6 %** (4 % familia numerosa; 5,4 % efectivo para menores de 35 años
+hasta 250.000 €) y AJD 0,75 %; plazo de 30 días hábiles, modelo 600.
+
+**Contexto** · PAU: barrio administrativo desde 2017, ámbito de **538 ha** (100 de zonas verdes); el plan parcial
+prevé **14.000 viviendas, 53 % con algún régimen de protección**; primeros vecinos en el 1T de 2016. A 1-jun-2025:
+142 promociones entregadas, 19 en construcción, 9 en comercialización. **Población: 27.014 (ago-2026)**. Educación:
+la Comunidad creará 1.000 plazas escolares públicas en el barrio; IES con 24 aulas de ESO + 8 de Bachillerato (fin
+previsto curso 2026/27 o principios de 2027 según la fuente). Parque comercial OMO Retail: 77.000 m², >50 locales,
+2.200 plazas de aparcamiento, 13 pistas de pádel cubiertas, apertura objetivo Navidad 2027.
+
+**A EVITAR al escribir (evita repetir el error de los 30.000)** · No presentar 427.000 € como precio de un 2-3
+dormitorios. No atribuir los 4.666 €/m² solo a El Cañaveral (incluye Los Berrocales). No dar una única fecha
+cerrada para el instituto. No publicar «futura estación de metro» (solo es reclamo comercial de una promotora,
+sin fuente oficial). No citar promotoras sin promoción verificada en el barrio. Las páginas de sede.madrid.es y
+madrid.es bloquean el acceso automatizado: sus URLs se citan como ubicación oficial, sin verificar contenido.
+
+---
+
 ## 📏 VOLUMEN REAL medido con DataForSEO (2026-10-05) — esto reordena el backlog
 
 51 keywords medidas (Google Ads vía DataForSEO, España/español, **$0,09**; raw en `.tmp/kw-measured.json`).

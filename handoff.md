@@ -17,6 +17,49 @@
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
 | **HEAD ref** | `9023ae3` (bloque GEO + llms-full) · docs de cierre — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** · JSON-LD Organization/WebSite en home · `/llms.txt` + `/llms-full.txt` generados en build |
 
+## 🚀 Sesión 2026-10-05b (DSH) — ejecución del plan GSC #5: P1a y P5 desplegados
+
+Tras medir la demanda real (DataForSEO, 51 keywords, $0,09 — tabla completa en `IDEAS-CONTENIDO.md`), se ejecutan
+los dos frentes de mejor relación valor/esfuerzo. **Todo verificado en vivo.**
+
+### ✅ P1a · `/abiertos-los-domingos/` (commit `01a3294`)
+
+Demanda medida: «que supermercados abren los domingos» **320/mes** + «supermercados abiertos los domingos»
+**210/mes** (CPC 2,20) → intención que el Map Pack no responde y que sí puede capturar una página.
+
+- Nuevo helper **`abreDomingo()`** en `src/lib/directory.ts`, que entiende los dos formatos de horario de Google
+  («L-S 9:00-21:30, D 10:00-15:00» y «do 10 AM to 5 PM…») **y los rangos que incluyen el domingo** («S-D», «L-D»).
+  Primera versión fallaba con los rangos y con el formato inglés: detectados y corregidos antes de publicar
+  (comprobado contra las 4 panaderías que ya documentaba `/panaderias/`).
+- Página generada en build desde los datos: **7 supermercados · 4 panaderías · 1 frutería · 1 tienda de
+  alimentación · 1 cafetería · 18 restaurantes** (de 123 fichas con horario detallado), cada uno con su hora de
+  domingo, dirección, teléfono y enlace a la ficha. ItemList + FAQPage + BreadcrumbList.
+- Enlazada desde las intros de `/supermercados/`, `/panaderias/`, `/fruterias/` y `/tiendas-alimentacion/`, desde
+  `llms.txt` (89 enlaces) y `llms-full.txt`. Sitemap: **435 URLs**.
+
+### ✅ P5 · Intro+FAQ en las 5 categorías con demanda y sin override (commit `0a819db`)
+
+| Página | Demanda medida | Qué se añadió |
+|---|---|---|
+| `/restaurantes/` | **1.900/mes** (¡2 impresiones en GSC!) | title/h1/description + intro (23 locales en el barrio, mejor valorado por volumen, 19 con terraza, 14 con reparto, 18 abren domingo) + 4 FAQ |
+| `/cafeterias/` | el hub más fuerte (746i/17c) y sin override | intro (7 en el barrio, mejor valoradas, aviso de domingo) + 3 FAQ |
+| `/belleza/` | peluquerías 320/mes | intro (27 centros, Bellavida, Di Classe, Nails Boutique) + 3 FAQ |
+| `/deporte/` | gimnasios 210/mes | intro (20 centros, cinco con 5/5, pádel) + 3 FAQ |
+| `/inmobiliarias/` | 40/mes + intención de vivienda | intro (17 agencias) + 3 FAQ, incluida la de vivienda pública (1.212 de EMVS) |
+
+### ✅ Corrección de dato: población
+
+El sitio publicaba **«más de 30.000 habitantes»** (`zonas.json`, `llms.txt`) y **«más de 17.000 vecinos»**
+(`/vivir-en-el-canaveral/`). Dato verificado: **27.014 empadronados (agosto de 2026)**. Unificado en los tres
+sitios con el contexto del plan parcial (14.000 viviendas previstas, >50 % con protección).
+
+### 📋 Pendiente de esta ejecución (siguiente ronda)
+
+- **P4 · Guía de vivienda** (~2.340/mes): **datos y fuentes ya investigados y guardados** en
+  `IDEAS-CONTENIDO.md` (sección «DATOS VERIFICADOS DE VIVIENDA»), con la lista de afirmaciones «a evitar».
+- **P3 · Hub «El Cañaveral»** (40.500/mes, hoy pos 88) + desambiguación.
+- **P1b · Farmacias de guardia/24 h** (~490/mes) · **Bares y tapas** (590/mes) · **P2 · badges de datos en las guías**.
+
 ## 📊 Auditoría GSC #5 (2026-10-05) — **crecimiento confirmado** + oportunidades de contenido
 
 Ventanas por API directa v3 (propiedad `sc-domain:elcanaveral.info`; raws en `.tmp/gsc-raw/*-{pre5,post5,90}.json`,
