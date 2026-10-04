@@ -55,10 +55,50 @@ sitios con el contexto del plan parcial (14.000 viviendas previstas, >50 % con p
 
 ### 📋 Pendiente de esta ejecución (siguiente ronda)
 
-- **P4 · Guía de vivienda** (~2.340/mes): **datos y fuentes ya investigados y guardados** en
-  `IDEAS-CONTENIDO.md` (sección «DATOS VERIFICADOS DE VIVIENDA»), con la lista de afirmaciones «a evitar».
-- **P3 · Hub «El Cañaveral»** (40.500/mes, hoy pos 88) + desambiguación.
-- **P1b · Farmacias de guardia/24 h** (~490/mes) · **Bares y tapas** (590/mes) · **P2 · badges de datos en las guías**.
+- **P3 · Hub «El Cañaveral»** (40.500/mes, hoy pos 88) + desambiguación — la pieza de mayor volumen del sitio.
+- **P2 · badges de datos en las guías** (medido: «mejores X» = 0/mes → las guías pasan a ser comparativa de apoyo de su categoría, con los datos de horario/domingo/terraza/delivery).
+
+## 🏠 Sesión 2026-10-05c (DSH) — P4 (vivienda), P1b (farmacias/urgencias) y bares y tapas
+
+Tres piezas nuevas, todas con demanda medida y verificadas en vivo. **Sitemap: 438 URLs.**
+
+### ✅ P4 · `/vivienda/` (commit `7548294`) — demanda ~2.340/mes
+
+La intención de vivienda ya convertía en GSC («pisos cañaveral alquiler», clic en **posición 3**) y no existía
+página. Contenido con **fuente y fecha en cada cifra** (16 fuentes enlazadas, sección «Fuentes» al pie):
+
+- Obra nueva libre: **4.112 €/m²** y media de **427.000 €** (Foro Consultores, ene-2026) → **el barrio más caro
+  del sureste**, con tabla comparativa (Vallecas 4.638, Ahijones 4.232, Berrocales 4.061, Valdecarros ~3.900).
+- Segunda mano: **4.666 €/m²** de la zona estadística que **agrega Los Berrocales** — se dice explícitamente que
+  **no es un dato del barrio**; y se declara lo que **no existe** (precio medio público de un 2-3 dormitorios aquí).
+- Alquiler: **1.709 €/mes** en el distrito (sep-2026) y oferta real del barrio (**1.021 €/mes**, 2 dorm. y 53 m²,
+  VPPL con garaje y trastero).
+- Vivienda pública: **1.212 viviendas asequibles de EMVS en 13 promociones**, 868 sorteadas, sorteos de
+  **Cañaveral 10 y 11 a principios de 2027**, rentas de 300-800 €/mes y requisitos (3,5 × IPREM EMVS ·
+  7,5 × IPREM VPPL · 1,5-5,5 × IPREM Plan Vive).
+- Obra nueva (Aedas Elion vendida, Avintia), impuestos (**IVA 10 % · ITP 6 % · AJD 0,75 %**), empadronamiento,
+  cédula de habitabilidad (no se emite con carácter general en la CM) y las 6 agencias mejor valoradas.
+
+### ✅ P1b · `/farmacias-de-guardia/` (commit `b6bf51b`) — demanda ~490/mes (+90 de veterinario)
+
+**Decisión editorial explícita**: no se publica una lista de guardias que caduca en 24 horas (en salud, un dato
+caducado es inaceptable). La página explica **cómo encontrarla por canales oficiales** (Ayuntamiento de Madrid,
+Colegio Oficial de Farmacéuticos, 010 y 112) y publica lo que sí es estable: las **10 farmacias** del directorio
+con horario y teléfono (6 en el barrio), la que abre **365 días** (Farmacia Méjico 23), el **único veterinario con
+urgencias 24 h** del barrio (Mascotiti) y las clínicas de referencia.
+
+### ✅ Bares y tapas · `/bares-y-tapas/` (commit `b6bf51b`) — demanda 590/mes
+
+No había **ninguna** página que lo cubriera. Selección **curada y explícita** (lista de slugs revisada a mano,
+porque el filtro automático mezclaba churrerías, kebabs y ramen): 4 bares del barrio (MacLaren's, TRIUS,
+Cervecería La Galerna, Seven) + 9 tabernas de tapas de Vicálvaro, Coslada y San Fernando, con terraza,
+valoración real y teléfono. Incluye Tapaveral (V Feria de la Tapa, 2-4 oct-2026) y **declara que no es
+publicidad**: ningún local paga por aparecer.
+
+### ✅ Correcciones de datos en esta ronda
+
+- `/vivir-en-el-canaveral/` decía que la obra nueva rondaba **2.900 €/m²** → ahora **4.112 €/m²** con fecha y
+  enlace a la guía de vivienda (era el segundo dato falso encontrado en el hub principal).
 
 ## 📊 Auditoría GSC #5 (2026-10-05) — **crecimiento confirmado** + oportunidades de contenido
 
