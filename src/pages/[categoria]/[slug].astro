@@ -49,9 +49,9 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
       <nav class="text-sm text-gray-500 mb-6">
         <a href="/" class="hover:text-brand-600">Inicio</a>
         <span class="mx-1.5 text-gray-300">/</span>
-        <a href={`/${negocio.category}`} class="hover:text-brand-600">{negocio.categoryName}</a>
+        <a href={`/${negocio.category}/`} class="hover:text-brand-600">{negocio.categoryName}</a>
         <span class="mx-1.5 text-gray-300">/</span>
-        <a href={`/zona/${negocio.zona}`} class="hover:text-brand-600">{negocio.zonaName}</a>
+        <a href={`/zona/${negocio.zona}/`} class="hover:text-brand-600">{negocio.zonaName}</a>
         <span class="mx-1.5 text-gray-300">/</span>
         <span class="text-gray-900">{negocio.name}</span>
       </nav>
@@ -106,7 +106,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
               {negocio.precioRango && (
                 <span class="text-sm text-gray-500 bg-warm-100 px-2 py-0.5 rounded font-medium">{negocio.precioRango}</span>
               )}
-              <a href={`/${negocio.category}`} class="text-sm text-brand-600 hover:text-brand-700">{negocio.categoryName}</a>
+              <a href={`/${negocio.category}/`} class="text-sm text-brand-600 hover:text-brand-700">{negocio.categoryName}</a>
               <span class="text-sm text-gray-400">{negocio.zonaName}</span>
             </div>
 
@@ -282,7 +282,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
               )}
               <div class="flex items-center gap-3">
                 <span class="text-gray-400 text-sm shrink-0">&#128204;</span>
-                <a href={`/zona/${negocio.zona}`} class="text-sm text-brand-600 hover:text-brand-700">{negocio.zonaName}</a>
+                <a href={`/zona/${negocio.zona}/`} class="text-sm text-brand-600 hover:text-brand-700">{negocio.zonaName}</a>
               </div>
               {negocio.phone && (
                 <div class="flex items-center gap-3">
@@ -368,7 +368,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
             <h2 class="text-xl font-bold text-brand-900">Negocios similares</h2>
             <p class="text-sm text-gray-500 mt-0.5">Otros {negocio.categoryName.toLowerCase()} en la zona</p>
           </div>
-          <a href={`/${negocio.category}`} class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver todos &rarr;</a>
+          <a href={`/${negocio.category}/`} class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver todos &rarr;</a>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {similares.map((n) => (
@@ -388,7 +388,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
             <h2 class="text-xl font-bold text-brand-900">Descubre en {negocio.zonaName}</h2>
             <p class="text-sm text-gray-500 mt-0.5">Otros negocios cerca de ti</p>
           </div>
-          <a href={`/zona/${negocio.zona}`} class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver zona &rarr;</a>
+          <a href={`/zona/${negocio.zona}/`} class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver zona &rarr;</a>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {otrosEnZona.map((n) => (

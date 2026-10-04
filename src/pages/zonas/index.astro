@@ -19,7 +19,7 @@ const zonas = loadZonas();
       <div class="grid sm:grid-cols-2 gap-6">
         {zonas.map((zona) => (
           <a
-            href={`/zona/${zona.slug}`}
+            href={`/zona/${zona.slug}/`}
             class="p-6 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow"
           >
             <h2 class="text-xl font-bold mb-2">{zona.name}</h2>

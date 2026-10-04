@@ -32,7 +32,7 @@ const regiones = data.regiones.map((r: any) => ({
       <div class="grid sm:grid-cols-2 gap-6">
         {regiones.map((r: any) => (
           r.activa ? (
-            <a href={`/escapadas/${r.id}`} class="block bg-white rounded-xl border border-warm-200 p-6 hover:shadow-lg hover:border-brand-200 transition-all group">
+            <a href={`/escapadas/${r.id}/`} class="block bg-white rounded-xl border border-warm-200 p-6 hover:shadow-lg hover:border-brand-200 transition-all group">
               <div class="text-4xl mb-2">{r.icon}</div>
               <h2 class="font-bold text-lg text-brand-900 group-hover:text-brand-600 transition-colors">{r.name}</h2>
               <p class="text-gray-500 text-sm mt-1">{r.desc}</p>

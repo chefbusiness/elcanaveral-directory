@@ -32,18 +32,18 @@ const nRestaurantes = porCategoria("restaurantes");
 const nCafeterias = porCategoria("cafeterias");
 
 const secciones = [
-  { icon: "🏘️", titulo: "Vivienda y precios", texto: "Cuánto cuesta comprar y alquilar, obra nueva en marcha y las 1.212 viviendas asequibles de EMVS, con fuentes y fechas.", href: "/vivienda", cta: "Ver precios de vivienda" },
-  { icon: "🚌", titulo: "Cómo llegar y transporte", texto: "Buses 159, E5 exprés y búho N6, interurbano 290, Cercanías en Vicálvaro y accesos por A-3, M-45 y M-50. Metro: no hay.", href: "/transporte", cta: "Ver transporte" },
-  { icon: "🏪", titulo: "Comercio y servicios", texto: `${negocios.length} negocios en ${categorias.length} categorías y 4 zonas: supermercados, farmacias, peluquerías, talleres, clínicas…`, href: "/directorio", cta: "Ver el directorio" },
-  { icon: "🍽️", titulo: "Dónde comer", texto: `${nRestaurantes} restaurantes, ${nCafeterias} cafeterías, bares de tapas y panaderías, con las mejor valoradas de Google.`, href: "/restaurantes", cta: "Ver dónde comer" },
-  { icon: "🛒", titulo: "Qué abre el domingo", texto: "Supermercados, panaderías, fruterías y bazares abiertos en domingo, con su horario real.", href: "/abiertos-los-domingos", cta: "Ver abiertos en domingo" },
-  { icon: "🌳", titulo: "Parques y espacios públicos", texto: "Parques infantiles, pipicanes, pistas deportivas y zonas verdes del barrio.", href: "/espacios-publicos", cta: "Ver parques" },
-  { icon: "🏫", titulo: "Educación", texto: "Guarderías y escuelas infantiles, academias de inglés y autoescuelas de la zona.", href: "/educacion", cta: "Ver educación" },
-  { icon: "🏥", titulo: "Salud y farmacias", texto: "Centros de salud, dentistas, fisioterapia, farmacias de guardia y urgencias 24 h.", href: "/farmacias-de-guardia", cta: "Ver farmacias y urgencias" },
-  { icon: "🏛️", titulo: "Servicios públicos", texto: "Colegio público, centro de salud, instituto en marcha y trámites (empadronamiento, Junta Municipal).", href: "/servicios-publicos", cta: "Ver servicios públicos" },
-  { icon: "🎉", titulo: "Fiestas y agenda", texto: "Fiestas de Vicálvaro, Tapaveral, carrera popular y días señalados del barrio.", href: "/fiestas", cta: "Ver fiestas" },
-  { icon: "🗺️", titulo: "Planes y escapadas", texto: "Qué hacer desde El Cañaveral: planes por Madrid con filtros para ir con niños o con perro.", href: "/escapadas", cta: "Ver planes" },
-  { icon: "📰", titulo: "Actualidad del barrio", texto: "Aperturas, urbanismo, transporte y todo lo que cambia en el barrio, con fuente y fecha.", href: "/actualidad", cta: "Ver actualidad" },
+  { icon: "🏘️", titulo: "Vivienda y precios", texto: "Cuánto cuesta comprar y alquilar, obra nueva en marcha y las 1.212 viviendas asequibles de EMVS, con fuentes y fechas.", href: "/vivienda/", cta: "Ver precios de vivienda" },
+  { icon: "🚌", titulo: "Cómo llegar y transporte", texto: "Buses 159, E5 exprés y búho N6, interurbano 290, Cercanías en Vicálvaro y accesos por A-3, M-45 y M-50. Metro: no hay.", href: "/transporte/", cta: "Ver transporte" },
+  { icon: "🏪", titulo: "Comercio y servicios", texto: `${negocios.length} negocios en ${categorias.length} categorías y 4 zonas: supermercados, farmacias, peluquerías, talleres, clínicas…`, href: "/directorio/", cta: "Ver el directorio" },
+  { icon: "🍽️", titulo: "Dónde comer", texto: `${nRestaurantes} restaurantes, ${nCafeterias} cafeterías, bares de tapas y panaderías, con las mejor valoradas de Google.`, href: "/restaurantes/", cta: "Ver dónde comer" },
+  { icon: "🛒", titulo: "Qué abre el domingo", texto: "Supermercados, panaderías, fruterías y bazares abiertos en domingo, con su horario real.", href: "/abiertos-los-domingos/", cta: "Ver abiertos en domingo" },
+  { icon: "🌳", titulo: "Parques y espacios públicos", texto: "Parques infantiles, pipicanes, pistas deportivas y zonas verdes del barrio.", href: "/espacios-publicos/", cta: "Ver parques" },
+  { icon: "🏫", titulo: "Educación", texto: "Guarderías y escuelas infantiles, academias de inglés y autoescuelas de la zona.", href: "/educacion/", cta: "Ver educación" },
+  { icon: "🏥", titulo: "Salud y farmacias", texto: "Centros de salud, dentistas, fisioterapia, farmacias de guardia y urgencias 24 h.", href: "/farmacias-de-guardia/", cta: "Ver farmacias y urgencias" },
+  { icon: "🏛️", titulo: "Servicios públicos", texto: "Colegio público, centro de salud, instituto en marcha y trámites (empadronamiento, Junta Municipal).", href: "/servicios-publicos/", cta: "Ver servicios públicos" },
+  { icon: "🎉", titulo: "Fiestas y agenda", texto: "Fiestas de Vicálvaro, Tapaveral, carrera popular y días señalados del barrio.", href: "/fiestas/", cta: "Ver fiestas" },
+  { icon: "🗺️", titulo: "Planes y escapadas", texto: "Qué hacer desde El Cañaveral: planes por Madrid con filtros para ir con niños o con perro.", href: "/escapadas/", cta: "Ver planes" },
+  { icon: "📰", titulo: "Actualidad del barrio", texto: "Aperturas, urbanismo, transporte y todo lo que cambia en el barrio, con fuente y fecha.", href: "/actualidad/", cta: "Ver actualidad" },
 ];
 
 const cifras = [
@@ -72,7 +72,7 @@ const faq = [
   },
   {
     q: "¿Cuánto cuesta vivir en El Cañaveral?",
-    a: "La obra nueva libre está en 4.112 €/m² de media y 427.000 € de precio medio de vivienda nueva (enero de 2026): es el barrio más caro del sureste de Madrid, aunque sigue por debajo del centro. El alquiler medio del distrito de Vicálvaro es de 1.709 €/mes (septiembre de 2026). Hay además 1.212 viviendas de alquiler asequible de EMVS en el barrio, con rentas de 300 a 800 €/mes y sorteos pendientes en 2027. Tienes todos los datos con sus fuentes en la guía de vivienda.",
+    a: "La obra nueva libre está en 4.112 €/m² de media y 427.000 € de precio medio de vivienda nueva (enero de 2026): es el segundo barrio más caro del sureste de Madrid, solo por detrás del Ensanche de Vallecas, aunque sigue por debajo del centro. El alquiler medio del distrito de Vicálvaro es de 1.709 €/mes (septiembre de 2026). Hay además 1.212 viviendas de alquiler asequible de EMVS en el barrio, con rentas de 300 a 800 €/mes y sorteos pendientes en 2027. Tienes todos los datos con sus fuentes en la guía de vivienda.",
   },
   {
     q: "¿Qué se puede hacer en El Cañaveral?",
@@ -168,7 +168,7 @@ const breadcrumbSchema = {
               <li><strong>Cercanías C2 y C7</strong> — estación de Vicálvaro, a 17-19 minutos andando.</li>
               <li><strong>Metro: no hay</strong> en el barrio (hay un apeadero de Cercanías previsto, sin fecha).</li>
             </ul>
-            <a href="/transporte" class="inline-block mt-3 text-sm font-medium text-brand-600 hover:text-brand-700">Guía de transporte completa &rarr;</a>
+            <a href="/transporte/" class="inline-block mt-3 text-sm font-medium text-brand-600 hover:text-brand-700">Guía de transporte completa &rarr;</a>
           </div>
           <div class="bg-white rounded-xl border border-warm-200 p-5 text-sm text-gray-700 leading-relaxed">
             <p class="font-semibold text-brand-900 mb-2">En coche y en bici</p>
@@ -206,7 +206,7 @@ const breadcrumbSchema = {
             Del total de 538 hectáreas, <strong>100 son zonas verdes</strong>: de ahí las avenidas amplias, los
             parques infantiles y las áreas caninas que recorren el barrio.
           </p>
-          <a href="/actualidad" class="inline-block text-sm font-medium text-brand-600 hover:text-brand-700">Seguir la actualidad del barrio &rarr;</a>
+          <a href="/actualidad/" class="inline-block text-sm font-medium text-brand-600 hover:text-brand-700">Seguir la actualidad del barrio &rarr;</a>
         </div>
       </section>
 
@@ -224,7 +224,7 @@ const breadcrumbSchema = {
           </div>
           <div class="bg-white rounded-xl border border-warm-200 p-5 text-sm text-gray-700">
             <p class="font-semibold text-brand-900 mb-1">🏠 Vivienda asequible</p>
-            <p>EMVS suma <strong>1.212 viviendas</strong> de alquiler asequible en 13 promociones; los sorteos de <strong>Cañaveral 10 y Cañaveral 11</strong> están previstos para principios de 2027. <a href="/vivienda" class="text-brand-600 font-medium">Ver requisitos y precios</a>.</p>
+            <p>EMVS suma <strong>1.212 viviendas</strong> de alquiler asequible en 13 promociones; los sorteos de <strong>Cañaveral 10 y Cañaveral 11</strong> están previstos para principios de 2027. <a href="/vivienda/" class="text-brand-600 font-medium">Ver requisitos y precios</a>.</p>
           </div>
           <div class="bg-white rounded-xl border border-warm-200 p-5 text-sm text-gray-700">
             <p class="font-semibold text-brand-900 mb-1">🚉 Transporte</p>
@@ -296,8 +296,8 @@ const breadcrumbSchema = {
           vivienda con precios y trámites.
         </p>
         <div class="flex flex-wrap gap-3 justify-center mt-5">
-          <a href="/directorio" class="bg-accent-500 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">Ver el directorio</a>
-          <a href="/vivienda" class="bg-white/10 text-white border border-white/25 font-semibold px-5 py-2.5 rounded-lg hover:bg-white/20 transition-colors">Guía de vivienda</a>
+          <a href="/directorio/" class="bg-accent-500 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">Ver el directorio</a>
+          <a href="/vivienda/" class="bg-white/10 text-white border border-white/25 font-semibold px-5 py-2.5 rounded-lg hover:bg-white/20 transition-colors">Guía de vivienda</a>
         </div>
       </div>
 

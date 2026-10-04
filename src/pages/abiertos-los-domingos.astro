@@ -8,24 +8,26 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import { abreDomingo, loadNegocios, type Negocio } from "@/lib/directory";
+import { abreDomingo, loadCategorias, loadNegocios, type Negocio } from "@/lib/directory";
 
 const negocios = loadNegocios();
+const categorias = loadCategorias();
+const nombreCategoria = (slug: string) => categorias.find((c) => c.slug === slug)?.name ?? slug;
 const abrenElDomingo = negocios.filter(abreDomingo);
 const abren = (cat: string) => negocios.filter((n) => n.category === cat && abreDomingo(n));
 
-// Solo las categorías donde la pregunta tiene sentido para quien busca comprar.
+// Categorías donde la pregunta «¿abre el domingo?» tiene sentido para quien va a comprar o comer.
 const grupos = [
   {
     id: "supermercados",
     titulo: "🛒 Supermercados",
-    intro: "Los que tienen confirmado horario de domingo, con su horario real de Google.",
+    intro: "Con su horario real de domingo, que en todas las cadenas es de mañana.",
     lista: abren("supermercados"),
   },
   {
     id: "panaderias",
     titulo: "🥖 Panaderías y obradores",
-    intro: "Para el pan del domingo: de las 13 panaderías del directorio, estas abren.",
+    intro: `Para el pan del domingo: de las ${negocios.filter((n) => n.category === "panaderias").length} panaderías del directorio, estas abren.`,
     lista: abren("panaderias"),
   },
   {
@@ -49,9 +51,19 @@ const grupos = [
   {
     id: "restaurantes",
     titulo: "🍽️ Restaurantes",
-    intro: "Comer o cenar en domingo: la mayoría de los 45 restaurantes del directorio abre, aquí están los que lo tienen confirmado en su horario.",
+    intro: `Comer o cenar en domingo: ${abren("restaurantes").length} de los ${negocios.filter((n) => n.category === "restaurantes").length} restaurantes del directorio tienen domingo confirmado en su horario.`,
     lista: abren("restaurantes"),
   },
+  // Cualquier otra categoría con domingo confirmado entra aquí automáticamente, para que ninguna
+  // ficha con horario de domingo se quede fuera de la página (pasaba con gimnasios y lavanderías).
+  ...[...new Set(abrenElDomingo.map((n) => n.category))]
+    .filter((c) => !["supermercados", "panaderias", "fruterias", "tiendas-alimentacion", "cafeterias", "restaurantes"].includes(c))
+    .map((cat) => ({
+      id: `extra-${cat}`,
+      titulo: `🔎 ${nombreCategoria(cat)}`,
+      intro: "También con horario de domingo confirmado.",
+      lista: abren(cat),
+    })),
 ].filter((g) => g.lista.length > 0);
 
 const total = abrenElDomingo.length;
@@ -60,19 +72,29 @@ const conHorario = negocios.filter((n) => n.horario).length;
 const ordenar = (l: Negocio[]) =>
   [...l].sort((a, b) => (b.rating || 0) - (a.rating || 0) || (b.numReviews || 0) - (a.numReviews || 0));
 
+// Extrae SOLO la franja del domingo. Se parte por los mismos separadores que usa Google (incluido
+// el punto medio «·»): si no, en los horarios en formato Google se devolvía la semana entera.
+const SEPARADOR_HORARIO = /[,;\n\u00b7•|]+/;
 const horaDomingo = (n: Negocio) => {
-  const partes = (n.horario || "").split(/[,;\n]+/).map((s) => s.trim());
-  const trozo = partes.find((p) => /^(?:d|do|dom|domingo)\b/i.test(p) || /[-/]\s*(?:d|do|dom)\s*\d/i.test(p));
-  return (trozo || "").replace(/^(?:d|do|dom|domingo)\b[\s:.-]*/i, "").trim();
+  const fragmentos = (n.horario || "").split(SEPARADOR_HORARIO).map((s) => s.trim()).filter(Boolean);
+  for (const f of fragmentos) {
+    const antesDeLaHora = (f.split(/\d/)[0] || "").trim();
+    const tokens = antesDeLaHora.split(/[/\s]+|\by\b|\ba\b/i).flatMap((t) => t.split("-")).map((t) => t.replace(/[.:;,]+$/, "").trim());
+    if (tokens.some((t) => /^(?:d|do|dom|domingo)$/i.test(t))) {
+      return f.replace(/^[^\d]*/, "").trim() || "consultar ficha";
+    }
+  }
+  return "consultar ficha";
 };
 
 const base = "https://www.elcanaveral.info";
-const listado = ordenar(abrenElDomingo).slice(0, 12);
+const todasListadas = grupos.flatMap((g) => g.lista);
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Comercios abiertos los domingos en El Cañaveral y alrededores",
-  itemListElement: listado.map((n, i) => ({
+  numberOfItems: todasListadas.length,
+  itemListElement: todasListadas.map((n, i) => ({
     "@type": "ListItem",
     position: i + 1,
     name: n.name,
@@ -185,11 +207,11 @@ const breadcrumbSchema = {
 
       <div class="bg-brand-50 border border-brand-100 rounded-xl p-5 mb-12 text-sm text-gray-700">
         <span class="font-semibold text-brand-700">También te puede servir:</span>
-        <a href="/supermercados" class="text-brand-600 font-medium">todos los supermercados</a> ·
-        <a href="/panaderias" class="text-brand-600 font-medium">panaderías y obradores</a> ·
-        <a href="/blog/mejores-supermercados-el-canaveral" class="text-brand-600 font-medium">comparativa de supermercados</a> ·
-        <a href="/comida-a-domicilio" class="text-brand-600 font-medium">lo que reparte a domicilio</a> ·
-        <a href="/mercadillos" class="text-brand-600 font-medium">mercadillos de la zona</a>.
+        <a href="/supermercados/" class="text-brand-600 font-medium">todos los supermercados</a> ·
+        <a href="/panaderias/" class="text-brand-600 font-medium">panaderías y obradores</a> ·
+        <a href="/blog/mejores-supermercados-el-canaveral/" class="text-brand-600 font-medium">comparativa de supermercados</a> ·
+        <a href="/comida-a-domicilio/" class="text-brand-600 font-medium">lo que reparte a domicilio</a> ·
+        <a href="/mercadillos/" class="text-brand-600 font-medium">mercadillos de la zona</a>.
       </div>
 
       <section class="mb-10">

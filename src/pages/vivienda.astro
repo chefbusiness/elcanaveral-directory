@@ -21,7 +21,7 @@ const enElBarrio = inmobiliarias.filter((n) => n.zona === "el-canaveral");
 const faq = [
   {
     q: "¿Cuánto cuesta comprar un piso en El Cañaveral?",
-    a: "La referencia pública más sólida es la de obra nueva libre: 4.112 €/m² de media y 427.000 € de precio medio de vivienda nueva (Foro Consultores, enero de 2026), que convierte a El Cañaveral en el barrio más caro del sureste de Madrid. Para segunda mano, el dato disponible es de la zona estadística «El Cañaveral-Los Berrocales» (4.666 €/m², agosto de 2026), que agrega Los Berrocales: no es un dato solo del barrio. No existe un precio medio público de un piso concreto de 2-3 dormitorios en El Cañaveral.",
+    a: "La referencia pública más sólida es la de obra nueva libre: 4.112 €/m² de media y 427.000 € de precio medio de vivienda nueva (Foro Consultores, recogido por idealista/news el 9 de febrero de 2026), que sitúa a El Cañaveral como el segundo barrio más caro del sureste de Madrid, solo por detrás del Ensanche de Vallecas. Para segunda mano, el dato disponible es de la zona estadística «El Cañaveral-Los Berrocales» (4.666 €/m², agosto de 2026), que agrega Los Berrocales: no es un dato solo del barrio. No existe un precio medio público de un piso concreto de 2-3 dormitorios en El Cañaveral.",
   },
   {
     q: "¿Cuánto se paga de alquiler en El Cañaveral?",
@@ -56,7 +56,7 @@ const gastos = [
 ];
 
 const preciosComparativa = [
-  { zona: "El Cañaveral (obra nueva libre)", precio: "4.112 €/m²", detalle: "Media de vivienda nueva: 427.000 €. El barrio más caro del sureste (ene-2026)." },
+  { zona: "El Cañaveral (obra nueva libre)", precio: "4.112 €/m²", detalle: "Media de vivienda nueva: 427.000 €. El segundo más caro del sureste (ene-2026)." },
   { zona: "Ensanche de Vallecas", precio: "4.638 €/m²", detalle: "El más caro del sureste, por delante del Cañaveral." },
   { zona: "Los Ahijones", precio: "4.232 €/m²", detalle: "Desarrollo colindante en construcción." },
   { zona: "Los Berrocales", precio: "4.061 €/m²", detalle: "Desarrollo colindante en construcción." },
@@ -123,7 +123,7 @@ const estrella = (n: Negocio) => (n.rating ? `★ ${n.rating}${n.numReviews ? ` 
       <nav class="text-sm text-gray-500 mb-4">
         <a href="/" class="hover:text-brand-600">Inicio</a>
         <span class="mx-1.5 text-gray-300">/</span>
-        <a href="/el-canaveral" class="hover:text-brand-600">Vivir en El Cañaveral</a>
+        <a href="/el-canaveral/" class="hover:text-brand-600">Vivir en El Cañaveral</a>
         <span class="mx-1.5 text-gray-300">/</span>
         <span class="text-gray-900">Vivienda</span>
       </nav>
@@ -160,12 +160,13 @@ const estrella = (n: Negocio) => (n.rating ? `★ ${n.rating}${n.numReviews ? ` 
       <!-- Comprar -->
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-brand-900 mb-1">💶 Cuánto cuesta comprar en El Cañaveral</h2>
-        <p class="text-gray-500 text-sm mb-5">La referencia pública más sólida es la de obra nueva libre (Foro Consultores, enero de 2026).</p>
+        <p class="text-gray-500 text-sm mb-5">La referencia pública más sólida es la de obra nueva libre (Foro Consultores, recogido por idealista/news el 9 de febrero de 2026).</p>
         <div class="bg-white rounded-xl border border-warm-200 p-5 mb-5">
           <p class="text-gray-700 leading-relaxed">
             <strong>Obra nueva libre: 4.112 €/m²</strong> de media y <strong>427.000 €</strong> de precio medio de
-            vivienda nueva (+18,4 % en un año). Con esos números, El Cañaveral es <strong>el barrio más caro del
-            sureste de Madrid</strong>, por delante de Los Ahijones, Los Berrocales y Valdecarros.
+            vivienda nueva (+18,4 % en un año). Con esos números, El Cañaveral es <strong>el segundo barrio más caro
+            del sureste</strong>, solo por detrás del Ensanche de Vallecas y por delante de Los Ahijones, Los
+            Berrocales y Valdecarros.
           </p>
         </div>
         <div class="overflow-x-auto">
@@ -226,7 +227,7 @@ const estrella = (n: Negocio) => (n.rating ? `★ ${n.rating}${n.numReviews ? ` 
         <div class="bg-white rounded-xl border border-warm-200 p-5 mb-5">
           <ul class="space-y-3 text-gray-700 text-sm leading-relaxed">
             <li>🏗️ <strong>1.212 viviendas de alquiler asequible de EMVS Madrid</strong> en 13 promociones dentro del barrio.</li>
-            <li>✅ <strong>868 sorteadas</strong> hasta mayo de 2026 y <strong>1.078 finalizadas</strong>; a septiembre de 2026 había 8 promociones entregadas (Cañaveral 1, 2, 3, 4, 5, 6, 9 y 12) y la 7 en fase final.</li>
+            <li>✅ <strong>868 sorteadas</strong> hasta mayo de 2026 y <strong>1.078 finalizadas en obra</strong>; a septiembre de 2026 había 8 promociones <em>entregadas</em> (Cañaveral 1, 2, 3, 4, 5, 6, 9 y 12), la 7 en fase final y la 11 con las obras terminadas a falta del sorteo de adjudicación.</li>
             <li>🎲 Los sorteos de <strong>Cañaveral 10 y Cañaveral 11</strong> están previstos para <strong>principios de 2027</strong>.</li>
             <li>💶 Rentas entre <strong>300 y 800 €/mes</strong> según promoción (media de 590 €/mes en la promoción 5) y nunca por encima del 30 % de los ingresos de la familia.</li>
             <li>👨‍👩‍👧 <strong>El 80 % de las viviendas</strong> se reserva a jóvenes y familias con hijos menores.</li>
@@ -328,7 +329,7 @@ const estrella = (n: Negocio) => (n.rating ? `★ ${n.rating}${n.numReviews ? ` 
             </a>
           ))}
         </div>
-        <a href="/inmobiliarias" class="inline-block mt-4 text-sm font-medium text-brand-600 hover:text-brand-700">Ver las {inmobiliarias.length} agencias del directorio &rarr;</a>
+        <a href="/inmobiliarias/" class="inline-block mt-4 text-sm font-medium text-brand-600 hover:text-brand-700">Ver las {inmobiliarias.length} agencias del directorio &rarr;</a>
       </section>
 
       <!-- Vivir aquí -->
@@ -358,10 +359,10 @@ const estrella = (n: Negocio) => (n.rating ? `★ ${n.rating}${n.numReviews ? ` 
         </div>
         <div class="bg-brand-50 border border-brand-100 rounded-xl p-5 mt-5 text-sm text-gray-700">
           <span class="font-semibold text-brand-700">Para el día a día:</span>
-          <a href="/el-canaveral" class="text-brand-600 font-medium">guía de vivir en el barrio</a> ·
-          <a href="/transporte" class="text-brand-600 font-medium">cómo llegar y transporte</a> ·
-          <a href="/servicios-publicos" class="text-brand-600 font-medium">colegios, sanidad y trámites</a> ·
-          <a href="/directorio" class="text-brand-600 font-medium">todos los negocios</a>.
+          <a href="/el-canaveral/" class="text-brand-600 font-medium">guía de vivir en el barrio</a> ·
+          <a href="/transporte/" class="text-brand-600 font-medium">cómo llegar y transporte</a> ·
+          <a href="/servicios-publicos/" class="text-brand-600 font-medium">colegios, sanidad y trámites</a> ·
+          <a href="/directorio/" class="text-brand-600 font-medium">todos los negocios</a>.
         </div>
       </section>
 

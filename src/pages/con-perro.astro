@@ -100,7 +100,7 @@ const breadcrumbSchema = { "@context": "https://schema.org", "@type": "Breadcrum
         <div class="bg-warm-50 border border-warm-100 rounded-xl p-4 mt-5 text-sm text-gray-600">
           ¿Conoces otra área canina del barrio que falte aquí? Escríbenos a
           <a href="mailto:local@elcanaveral.info" class="text-brand-600 font-medium">local@elcanaveral.info</a>
-          y la añadimos. Mira también todos los <a href="/espacios-publicos" class="text-brand-600 font-medium">parques y espacios públicos</a>.
+          y la añadimos. Mira también todos los <a href="/espacios-publicos/" class="text-brand-600 font-medium">parques y espacios públicos</a>.
         </div>
       </section>
 
@@ -110,7 +110,7 @@ const breadcrumbSchema = { "@context": "https://schema.org", "@type": "Breadcrum
         <p class="text-gray-500 text-sm mb-5">Sitios dog-friendly cerca de El Cañaveral para un finde con tu perro.</p>
         <div class="grid sm:grid-cols-2 gap-4">
           {escapadasPerro.map((s: any) => (
-            <a href={`/escapadas/${s.region}`} class="block bg-white rounded-xl border border-warm-200 p-5 hover:shadow-md hover:border-brand-200 transition-all group">
+            <a href={`/escapadas/${s.region}/`} class="block bg-white rounded-xl border border-warm-200 p-5 hover:shadow-md hover:border-brand-200 transition-all group">
               <h3 class="font-bold text-brand-900 leading-snug group-hover:text-brand-600 transition-colors">{s.name}</h3>
               <p class="text-xs text-gray-500 mt-1">📍 {regionName[s.region]} · 🚗 {s.comoLlegar}</p>
               <p class="text-gray-600 text-sm mt-2 leading-snug line-clamp-2">{s.resumen}</p>
@@ -118,7 +118,7 @@ const breadcrumbSchema = { "@context": "https://schema.org", "@type": "Breadcrum
           ))}
         </div>
         <p class="mt-5">
-          <a href="/escapadas" class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver todas las escapadas (filtra por 🐶 con perro) &rarr;</a>
+          <a href="/escapadas/" class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver todas las escapadas (filtra por 🐶 con perro) &rarr;</a>
         </p>
       </section>
 
@@ -129,7 +129,7 @@ const breadcrumbSchema = { "@context": "https://schema.org", "@type": "Breadcrum
 
         <div class="bg-red-50 border border-red-200 rounded-xl p-4 mb-5 text-sm text-gray-700">
           <strong class="text-red-800">🚨 Urgencias 24 h en el barrio:</strong>
-          El Cañaveral cuenta con <a href="/mascotas/mascotiti-hospital-veterinario-canaveral-urgencias-24h" class="text-brand-600 font-medium">Mascotiti Hospital Veterinario</a>,
+          El Cañaveral cuenta con <a href="/mascotas/mascotiti-hospital-veterinario-canaveral-urgencias-24h/" class="text-brand-600 font-medium">Mascotiti Hospital Veterinario</a>,
           en la avenida de Miguel Delibes, con atención de urgencias las 24 horas. Un dato que conviene tener guardado antes de necesitarlo.
         </div>
         <div class="grid sm:grid-cols-2 gap-4">
@@ -137,7 +137,7 @@ const breadcrumbSchema = { "@context": "https://schema.org", "@type": "Breadcrum
             <div class="bg-white rounded-xl border border-warm-200 p-5 flex flex-col">
               <div class="flex items-start justify-between gap-2">
                 <h3 class="font-bold text-brand-900 leading-snug">
-                  <a href={`/${n.category}/${n.slug}`} class="hover:text-brand-600">{n.name}</a>
+                  <a href={`/${n.category}/${n.slug}/`} class="hover:text-brand-600">{n.name}</a>
                 </h3>
                 <span class="shrink-0 flex items-center gap-1 text-sm">
                   <span class="text-yellow-400">&#9733;</span>
@@ -146,14 +146,14 @@ const breadcrumbSchema = { "@context": "https://schema.org", "@type": "Breadcrum
               </div>
               <p class="text-xs text-gray-500 mt-1">{n.googleCategory} · {n.zonaName} · {n.numReviews} reseñas</p>
               <div class="flex items-center gap-4 mt-3 text-sm">
-                <a href={`/${n.category}/${n.slug}`} class="font-medium text-brand-600 hover:text-brand-700">Ver ficha &rarr;</a>
+                <a href={`/${n.category}/${n.slug}/`} class="font-medium text-brand-600 hover:text-brand-700">Ver ficha &rarr;</a>
                 {n.phone && <a href={`tel:${n.phone}`} class="text-gray-500 hover:text-brand-600">Llamar</a>}
               </div>
             </div>
           ))}
         </div>
         <p class="mt-5">
-          <a href="/mascotas" class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver todos los servicios de mascotas &rarr;</a>
+          <a href="/mascotas/" class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver todos los servicios de mascotas &rarr;</a>
         </p>
       </section>
 

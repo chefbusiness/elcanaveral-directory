@@ -31,7 +31,7 @@ const fmt = (iso: string) => new Date(iso).toLocaleDateString("es-ES", { day: "n
       {posts.length > 0 ? (
         <div class="space-y-5">
           {posts.map((p: any) => (
-            <a href={`/actualidad/${p.slug}`} class="block bg-white rounded-xl border border-warm-200 p-6 hover:shadow-lg hover:border-brand-200 transition-all group">
+            <a href={`/actualidad/${p.slug}/`} class="block bg-white rounded-xl border border-warm-200 p-6 hover:shadow-lg hover:border-brand-200 transition-all group">
               <div class="flex flex-wrap items-center gap-2 mb-2">
                 <span class="text-xs text-gray-400">{fmt(p.date)}</span>
                 {(p.tags || []).map((t: string) => (

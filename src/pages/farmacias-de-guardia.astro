@@ -19,9 +19,16 @@ const farmacias = negocios
   .filter((n) => n.category === "salud" && /farmac/i.test(`${n.name} ${n.googleCategory || ""}`))
   .sort((a, b) => (b.rating || 0) - (a.rating || 0));
 const enElBarrio = farmacias.filter((n) => n.zona === "el-canaveral");
+// OJO: solo 24 h de verdad. Antes bastaba con que la ficha dijera «urgencias» y eso pintaba
+// «Abierto 24 horas» en clínicas que solo atienden urgencias en su horario (falso positivo
+// detectado en la revisión adversarial de oct-2026).
 const veterinarios24 = negocios.filter(
-  (n) => n.category === "mascotas" && /24\s?h|24 horas|urgencias/i.test(`${n.name} ${(n.servicios || []).join(" ")} ${n.description || ""}`),
+  (n) => n.category === "mascotas" && /24\s?h|24 horas|24h/i.test(`${n.name} ${(n.servicios || []).join(" ")} ${n.description || ""}`),
 );
+// Farmacias empatadas a la nota más alta (evita coronar a una sola cuando hay varias iguales).
+const mejorNota = Math.max(...farmacias.map((f) => f.rating || 0));
+const mejorValoradas = farmacias.filter((f) => (f.rating || 0) === mejorNota);
+const conHorarioPublicado = farmacias.filter((f) => f.horario);
 const veterinariosTop = negocios
   .filter((n) => n.category === "mascotas" && /veterin/i.test(`${n.name} ${n.googleCategory || ""}`))
   .sort((a, b) => (b.numReviews || 0) - (a.numReviews || 0))
@@ -36,7 +43,7 @@ const faq = [
   },
   {
     q: "¿Cuántas farmacias hay en El Cañaveral?",
-    a: `En el barrio hay ${enElBarrio.length} farmacias (${enElBarrio.map((f) => f.name).join(", ")}), y otras más en Coslada y San Fernando de Henares. Las del barrio cierran los domingos, así que ese día hay que tirar de guardia. La más valorada es Farmacia Sonrisas del Cañaveral (4,8) y la de horario más amplio, Farmacia Central Cañaveral (hasta las 22:00 de lunes a viernes).`,
+    a: `En el barrio hay ${enElBarrio.length} farmacias (${enElBarrio.map((f) => f.name).join(", ")}), y otras más en Coslada y San Fernando de Henares. De las que publican horario, todas cierran los domingos, así que ese día hay que tirar de guardia. Las mejor valoradas son ${mejorValoradas.map((f) => f.name).join(", ")} (todas con ${mejorNota} de nota), y la de horario más amplio es Farmacia Central Cañaveral (hasta las 22:00 de lunes a viernes).`,
   },
   {
     q: "¿Hay alguna farmacia abierta 24 horas o los 365 días?",
@@ -86,7 +93,7 @@ const breadcrumbSchema = {
       <nav class="text-sm text-gray-500 mb-4">
         <a href="/" class="hover:text-brand-600">Inicio</a>
         <span class="mx-1.5 text-gray-300">/</span>
-        <a href="/salud" class="hover:text-brand-600">Salud</a>
+        <a href="/salud/" class="hover:text-brand-600">Salud</a>
         <span class="mx-1.5 text-gray-300">/</span>
         <span class="text-gray-900">Farmacias de guardia y urgencias</span>
       </nav>
@@ -124,7 +131,7 @@ const breadcrumbSchema = {
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-brand-900 mb-1">💊 Farmacias en El Cañaveral y alrededores</h2>
         <p class="text-gray-500 text-sm mb-5">
-          {enElBarrio.length} de ellas están en el propio barrio. Todas cierran los domingos salvo guardia; la de horario más amplio abre hasta las 22:00.
+          {enElBarrio.length} de ellas están en el propio barrio. De las {conHorarioPublicado.length} que publican horario, todas cierran los domingos salvo guardia, y la de horario más amplio abre hasta las 22:00.
         </p>
         <div class="grid sm:grid-cols-2 gap-4">
           {farmacias.map((f) => (
@@ -139,18 +146,24 @@ const breadcrumbSchema = {
             </a>
           ))}
         </div>
-        <a href="/salud" class="inline-block mt-4 text-sm font-medium text-brand-600 hover:text-brand-700">Ver toda la categoría de salud &rarr;</a>
+        <a href="/salud/" class="inline-block mt-4 text-sm font-medium text-brand-600 hover:text-brand-700">Ver toda la categoría de salud &rarr;</a>
       </section>
 
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-brand-900 mb-1">🐾 Urgencias veterinarias 24 horas</h2>
-        <p class="text-gray-500 text-sm mb-5">El único servicio veterinario con urgencias 24 h dentro de El Cañaveral.</p>
+        <p class="text-gray-500 text-sm mb-5">
+          {veterinarios24.length > 0
+            ? "Urgencias veterinarias 24 horas en el barrio y clínicas de referencia cerca."
+            : "Clínicas veterinarias de referencia en la zona (ninguna declara urgencias 24 h en el directorio)."}
+        </p>
         <div class="grid sm:grid-cols-2 gap-4">
           {(veterinarios24.length ? veterinarios24 : veterinariosTop.slice(0, 1)).map((v) => (
             <a href={`/mascotas/${v.slug}/`} class="bg-white rounded-xl border border-brand-200 p-5 hover:border-brand-300 transition-colors">
               <p class="font-bold text-brand-900">{v.name}</p>
               <p class="text-xs text-gray-500 mt-1">📍 {v.zonaName}{v.address ? ` · ${v.address}` : ""}</p>
-              <p class="text-sm text-brand-700 font-semibold mt-2">🚑 Abierto 24 horas · {v.phone}</p>
+              <p class="text-sm text-brand-700 font-semibold mt-2">
+                {veterinarios24.some((x) => x.slug === v.slug) ? "🚑 Urgencias 24 horas" : "🩺 Consulta veterinaria"} · {v.phone}
+              </p>
               <p class="text-xs text-gray-500 mt-2">{estrella(v)}</p>
             </a>
           ))}
@@ -187,9 +200,9 @@ const breadcrumbSchema = {
 
       <div class="bg-white border border-warm-200 rounded-xl p-5 mb-8 text-sm text-gray-700">
         <span class="font-semibold text-brand-700">También te puede servir:</span>
-        <a href="/salud" class="text-brand-600 font-medium">clínicas y centros de salud del barrio</a> ·
-        <a href="/mascotas" class="text-brand-600 font-medium">veterinarios y tiendas de mascotas</a> ·
-        <a href="/servicios-publicos" class="text-brand-600 font-medium">servicios públicos y trámites</a>.
+        <a href="/salud/" class="text-brand-600 font-medium">clínicas y centros de salud del barrio</a> ·
+        <a href="/mascotas/" class="text-brand-600 font-medium">veterinarios y tiendas de mascotas</a> ·
+        <a href="/servicios-publicos/" class="text-brand-600 font-medium">servicios públicos y trámites</a>.
       </div>
 
       <p class="text-xs text-gray-400 mt-8">

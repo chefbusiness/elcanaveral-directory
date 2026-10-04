@@ -32,12 +32,12 @@ const zonas = loadZonas();
         <span class="text-xs font-medium text-gray-400 uppercase tracking-wider">Categorias</span>
       </div>
       <div class="flex flex-wrap gap-2 mb-4">
-        <a href="/directorio" class="text-sm font-medium bg-brand-600 text-white px-3 py-1.5 rounded-full">
+        <a href="/directorio/" class="text-sm font-medium bg-brand-600 text-white px-3 py-1.5 rounded-full">
           Todos ({negocios.length})
         </a>
         {categorias.filter(c => (c.count ?? 0) > 0).map((cat) => (
           <a
-            href={`/${cat.slug}`}
+            href={`/${cat.slug}/`}
             class="text-sm font-medium bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full hover:bg-gray-200 transition-colors"
           >
             {cat.icon} {cat.name} ({cat.count})

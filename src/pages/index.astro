@@ -150,7 +150,7 @@ const websiteSchema = {
     <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-3">
       {zonas.map((zona) => (
         <a
-          href={`/zona/${zona.slug}`}
+          href={`/zona/${zona.slug}/`}
           class="bg-white rounded-xl border border-warm-200 p-4 text-center hover:shadow-md hover:border-brand-200 transition-all"
         >
           <p class="text-2xl font-bold text-brand-600">{zona.count}</p>
@@ -163,7 +163,7 @@ const websiteSchema = {
   <!-- Keystone: vivir en el barrio -->
   <section class="px-4 mt-10">
     <div class="max-w-4xl mx-auto">
-      <a href="/el-canaveral" class="block bg-gradient-to-r from-brand-900 to-brand-700 rounded-2xl p-5 sm:p-6 text-white hover:shadow-lg transition-shadow group">
+      <a href="/el-canaveral/" class="block bg-gradient-to-r from-brand-900 to-brand-700 rounded-2xl p-5 sm:p-6 text-white hover:shadow-lg transition-shadow group">
         <div class="flex items-center justify-between gap-4">
           <div>
             <p class="text-xs font-semibold text-accent-300 uppercase tracking-wide">Nuevo en el barrio o pensando en mudarte</p>
@@ -184,12 +184,12 @@ const websiteSchema = {
           <h2 class="text-2xl font-bold text-brand-900">Explora por categoria</h2>
           <p class="text-gray-500 mt-1">Encuentra exactamente lo que necesitas</p>
         </div>
-        <a href="/directorio" class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver todo &rarr;</a>
+        <a href="/directorio/" class="text-sm font-medium text-brand-600 hover:text-brand-700">Ver todo &rarr;</a>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
         {categorias.filter((cat) => (cat.count ?? 0) > 0).map((cat) => (
           <a
-            href={`/${cat.slug}`}
+            href={`/${cat.slug}/`}
             class="flex items-center gap-3 p-4 rounded-xl border transition-all min-w-0 bg-white border-warm-200 hover:shadow-md hover:border-brand-200"
           >
             {cat.icon && <span class="text-2xl shrink-0">{cat.icon}</span>}
@@ -210,7 +210,13 @@ const websiteSchema = {
         <div class="flex items-end justify-between mb-8">
           <div>
             <h2 class="text-2xl font-bold text-brand-900">Negocios destacados</h2>
-            <p class="text-gray-500 mt-1">Los mejor valorados por los vecinos</p>
+            {/* Honestidad (LSSI): `featured` es una posición del plan Destacado (49 €/mes), no una
+                selección editorial. Antes ponía «los mejor valorados por los vecinos», que era
+                publicidad presentada como recomendación. */}
+            <p class="text-gray-500 mt-1">
+              Espacios del plan Destacado (posición de pago) ·
+              <a href="/planes/" class="text-brand-600 hover:text-brand-700 underline">ver planes</a>
+            </p>
           </div>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -231,7 +237,7 @@ const websiteSchema = {
             <h2 class="text-2xl font-bold text-brand-900">Guías del barrio</h2>
             <p class="text-gray-500 mt-1">Los mejores de cada categoría, según las reseñas reales de Google</p>
           </div>
-          <a href="/blog" class="text-sm font-medium text-brand-600 hover:text-brand-700 shrink-0">Ver todas &rarr;</a>
+          <a href="/blog/" class="text-sm font-medium text-brand-600 hover:text-brand-700 shrink-0">Ver todas &rarr;</a>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {guias.map((guia) => (
@@ -255,7 +261,7 @@ const websiteSchema = {
           </p>
           <div class="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="/alta"
+              href="/alta/"
               class="inline-block bg-accent-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent-600 transition-colors shadow-lg"
             >
               Registrar mi negocio gratis

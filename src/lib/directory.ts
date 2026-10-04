@@ -97,27 +97,37 @@ export function coordenadasPlausibles(lat: number, lng: number): boolean {
   return lat >= AREA.latMin && lat <= AREA.latMax && lng >= AREA.lngMin && lng <= AREA.lngMax;
 }
 
-// ¿Abre en domingo? Los horarios de Google llegan en dos formatos distintos:
+// ¿Abre en domingo? Los horarios de Google llegan en tres formatos:
 //   · español abreviado: "L-S 9:00-21:30, D 10:00-15:00"
-//   · Google (minúsculas, día primero): "do 10 AM to 5 PM, lu 9 AM to 5 PM…"
-// Un fragmento que nombra el domingo y dice "Cerrado"/"closed" cuenta como cerrado.
-// Se miran los tokens de día (incluidos los extremos de un rango: "S-D" y "L-D"
-// incluyen el domingo) y se ignoran los fragmentos que empiezan por hora, que
-// continúan el día anterior ("…, 17:00-20:30").
+//   · Google (día primero, minúsculas): "do 10 AM to 5 PM, lu 9 AM to 5 PM…"
+//   · Google separando días con punto medio: "do 7:30 AM to 1 a.m. · lu Cerrado · ma …"
+// Se separa por coma, punto y coma, salto de línea Y punto medio (el error que hacía perder
+// fichas: al no partir por "·" un solo día «Cerrado» invalidaba el fragmento ENTERO y con él el
+// domingo). Dentro de cada fragmento se miran los tokens de día —incluidos los extremos de un
+// rango («S-D», «L-D») y formas largas («Martes a Domingo: 9:00-21:00»)— y se ignoran los
+// fragmentos que empiezan por hora, que continúan el día anterior ("…, 17:00-20:30").
 const DIA_DOMINGO = /^(?:d|do|dom|domingo)$/i;
+const SEPARADOR = /[,;\n\u00b7•|]+/; // · es U+00B7
+function diaDelFragmento(fragmento: string): string[] {
+  const antesDeLaHora = (fragmento.split(/\d/)[0] || "").trim();
+  if (!antesDeLaHora) return [];
+  return antesDeLaHora
+    .split(/[/\s]+|\by\b|\ba\b/i)
+    .flatMap((t) => t.split("-"))
+    .map((t) => t.replace(/[.:;,]+$/, "").trim())
+    .filter(Boolean);
+}
 export function abreDomingo(negocio: { horario?: string }): boolean {
   const horario = (negocio.horario || "").trim();
   if (!horario) return false;
-  for (const fragmento of horario.split(/[,;\n]+/).map((s) => s.trim())) {
-    if (!fragmento || /cerrado|closed|tancat/i.test(fragmento)) continue;
-    const antesDeLaHora = (fragmento.split(/\d/)[0] || "").trim();
-    if (!antesDeLaHora) continue;
-    const tokens = antesDeLaHora
-      .split(/[/\s]+|\by\b/i)
-      .flatMap((t) => t.split("-"))
-      .map((t) => t.replace(/\.$/, "").trim())
-      .filter(Boolean);
-    if (tokens.some((t) => DIA_DOMINGO.test(t))) return true;
+  for (const fragmento of horario.split(SEPARADOR).map((s) => s.trim())) {
+    if (!fragmento) continue;
+    const tokens = diaDelFragmento(fragmento);
+    if (!tokens.some((t) => DIA_DOMINGO.test(t))) continue;
+    // Cerrado solo cuenta si el fragmento NO trae una franja horaria después del día.
+    const trasElDia = fragmento.replace(/^[^\d]*/, "");
+    if (/cerrado|closed|tancat/i.test(fragmento) && !/\d/.test(trasElDia)) continue;
+    return true;
   }
   return false;
 }

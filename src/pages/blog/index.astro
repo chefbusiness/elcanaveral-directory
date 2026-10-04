@@ -33,7 +33,7 @@ const listicles = loadPublishedListicles().map((l) => {
         <div class="grid sm:grid-cols-2 gap-6">
           {listicles.map((l) => (
             <a
-              href={`/blog/${l.slug}`}
+              href={`/blog/${l.slug}/`}
               class="block bg-white rounded-xl border border-warm-200 overflow-hidden hover:shadow-lg hover:border-brand-200 transition-all group"
             >
               {l.cover && (

@@ -95,7 +95,7 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
       <nav class="text-sm text-gray-500 mb-4">
         <a href="/" class="hover:text-brand-600">Inicio</a>
         <span class="mx-1.5 text-gray-300">/</span>
-        <a href="/blog" class="hover:text-brand-600">Blog</a>
+        <a href="/blog/" class="hover:text-brand-600">Blog</a>
         <span class="mx-1.5 text-gray-300">/</span>
         <span class="text-gray-900">{listicle.breadcrumb}</span>
       </nav>
@@ -119,10 +119,17 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
 
       <!-- Lo que dicen los datos de esta lista (calculado, no escrito a mano) -->
       <div class="bg-brand-50 border border-brand-100 rounded-xl p-4 mb-6 text-sm text-gray-700">
-        <strong class="text-brand-700">Los datos de estas {datosRanking.total} fichas:</strong>{" "}
-        {datosRanking.partes.length > 0
-          ? datosRanking.partes.join(" · ") + "."
-          : "ordenadas por nota media ponderada por número de reseñas; en cada ficha tienes el horario, el teléfono y el mapa."}{" "}
+        {datosRanking.partes.length > 0 ? (
+          <>
+            <strong class="text-brand-700">Los datos de estas {datosRanking.total} fichas:</strong>{" "}
+            {datosRanking.partes.join(" · ")}.{" "}
+          </>
+        ) : (
+          <>
+            Estas {datosRanking.total} fichas están ordenadas por nota media ponderada por número de reseñas; en cada
+            una tienes el horario, el teléfono y el mapa.{" "}
+          </>
+        )}
         {datosRanking.domingo > 0 && (
           <a href="/abiertos-los-domingos/" class="text-brand-600 font-medium">Ver todo lo que abre el domingo &rarr;</a>
         )}
@@ -135,7 +142,7 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
           const cocinas = (n.tiposCocina as string[] | undefined) || [];
           return (
             <div class="bg-white rounded-xl border border-warm-200 overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition-shadow">
-              <a href={`/${n.category}/${n.slug}`} class="relative sm:w-56 shrink-0 block">
+              <a href={`/${n.category}/${n.slug}/`} class="relative sm:w-56 shrink-0 block">
                 <span class="absolute top-3 left-3 z-10 w-9 h-9 rounded-full bg-brand-900/90 text-white font-bold flex items-center justify-center text-sm shadow">
                   {r.rank}
                 </span>
@@ -149,7 +156,7 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
               <div class="p-5 flex-1 min-w-0">
                 <div class="flex items-start justify-between gap-3">
                   <h2 class="text-lg font-bold text-brand-900 leading-snug">
-                    <a href={`/${n.category}/${n.slug}`} class="hover:text-brand-600">{n.name}</a>
+                    <a href={`/${n.category}/${n.slug}/`} class="hover:text-brand-600">{n.name}</a>
                   </h2>
                   {n.precioRango && (
                     <span class="shrink-0 text-xs text-gray-500 bg-warm-100 px-2 py-0.5 rounded font-medium">{n.precioRango}</span>
@@ -186,7 +193,7 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
                 </div>
 
                 <div class="flex items-center gap-4 mt-4 text-sm">
-                  <a href={`/${n.category}/${n.slug}`} class="font-medium text-brand-600 hover:text-brand-700">Ver ficha &rarr;</a>
+                  <a href={`/${n.category}/${n.slug}/`} class="font-medium text-brand-600 hover:text-brand-700">Ver ficha &rarr;</a>
                   {n.phone && <a href={`tel:${n.phone}`} class="text-gray-500 hover:text-brand-600">Llamar</a>}
                   {n.address && (
                     <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(n.address)}`} target="_blank" rel="noopener" class="text-gray-500 hover:text-brand-600">Cómo llegar</a>
@@ -200,7 +207,7 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
 
       <!-- Enlace al directorio completo de la categoría -->
       <div class="mt-6 text-center">
-        <a href={`/${listicle.category}`} class="text-sm font-medium text-brand-600 hover:text-brand-700">
+        <a href={`/${listicle.category}/`} class="text-sm font-medium text-brand-600 hover:text-brand-700">
           Ver el directorio completo de {listicle.noun} &rarr;
         </a>
       </div>
@@ -213,7 +220,7 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
           y llega a los vecinos que buscan {listicle.noun} cerca de casa.
         </p>
         <div class="flex flex-wrap justify-center gap-3 mt-5">
-          <a href="/alta" class="text-sm font-semibold bg-accent-500 text-white px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
+          <a href="/alta/" class="text-sm font-semibold bg-accent-500 text-white px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
             Dar de alta mi negocio
           </a>
           <a href="https://localseoads.com" target="_blank" rel="noopener" class="text-sm font-semibold bg-white/10 text-white border border-white/20 px-5 py-2.5 rounded-lg hover:bg-white/20 transition-colors">

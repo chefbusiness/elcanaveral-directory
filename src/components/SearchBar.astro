@@ -51,7 +51,7 @@
       resultsDiv.innerHTML = results
         .map(
           (r: any) => `
-          <a href="/${r.item.category}/${r.item.slug}" class="flex items-center gap-3 px-4 py-3 hover:bg-warm-50 border-b border-warm-100 last:border-0 transition-colors">
+          <a href="/${r.item.category}/${r.item.slug}/" class="flex items-center gap-3 px-4 py-3 hover:bg-warm-50 border-b border-warm-100 last:border-0 transition-colors">
             ${r.item.image ? `<img src="${r.item.image}" alt="" class="w-10 h-10 rounded-lg object-cover shrink-0"/>` : `<div class="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center shrink-0 text-sm">${r.item.categoryName?.charAt(0) || '?'}</div>`}
             <div class="min-w-0">
               <p class="font-medium text-sm truncate">${r.item.name}</p>
