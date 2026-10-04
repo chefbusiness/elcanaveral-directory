@@ -1,6 +1,6 @@
 # MEMORIA — elcanaveral.info
 
-> Fuente de verdad del proyecto. Leer ANTES de cualquier sesión. Última actualización: **CIERRE DE SESIÓN 2026-09-27** (retirada de la web de una ficha a petición de su titular + guard de webs bloqueadas).
+> Fuente de verdad del proyecto. Leer ANTES de cualquier sesión. Última actualización: **CIERRE DE SESIÓN 2026-09-27c** (bloque GEO: entidad + `/llms.txt` + `/llms-full.txt`; concordancia de género de las guías).
 > Compañera de `handoff.md` (estado y sesiones) y `roadmap.md` (hecho/pendiente).
 
 ## Qué es (y qué NO es)
@@ -17,7 +17,8 @@
 2. **Data-driven**: todo el contenido en `src/data/*.json` leído con `fs` (`src/lib/directory.ts`, `src/lib/listicles.ts`). Sin content collections.
 3. **Guías**: motor de **ranking bayesiano** (IMDb-style: nota × volumen de reseñas) en `src/lib/listicles.ts` + `src/data/listicles.json`; **drip publishing** con `publishedDate` futura (la fecha oculta la página) + GitHub Action diaria (06:15 UTC) que publica.
 4. **SEO por capas**: `src/data/seo-overrides.json` — `categorias` (title/meta/h1 + `intro`/`faq` → FAQPage) y `fichas` (title/meta por slug). Schema: LocalBusiness/AggregateRating por ficha · ItemList (categoría/zona/guías) · FAQPage · NewsArticle · BreadcrumbList · **Organization + WebSite en la home** (entidad para GEO/LLM).
-   - **GEO**: `robots.txt` permite explícitamente los crawlers de IA · **`/llms.txt` se GENERA en build** (`src/pages/llms.txt.ts`, no hay fichero estático en `public/`; el estático se desincronizó una vez y citaba un email equivocado) · en las fichas el `addressLocality` del schema es el **municipio** (de `zonas.json`), no el barrio, y llevan `geo`/`hasMap` (place_id)/`sameAs`.
+   - **GEO**: `robots.txt` permite explícitamente los crawlers de IA · **`/llms.txt` y `/llms-full.txt` se GENERAN en build** (`src/pages/llms.txt.ts` y `src/pages/llms-full.txt.ts`; no hay ficheros estáticos en `public/` — el `llms.txt` estático se desincronizó una vez y citaba un email equivocado) · en las fichas el `addressLocality` del schema es el **municipio** (de `zonas.json`), no el barrio, y llevan `geo`/`hasMap` (place_id)/`sameAs` · el `geo` se descarta si las coordenadas caen fuera de la caja del área (lat 40.2-40.6 / lng −3,95 a −3,2).
+   - **Concordancia de género en las guías**: el artículo lo manda el campo `el`/`la` de la configuración de cada categoría (no un prefijo fijo «Las mejores»). Al tocar textos de guías, generar siempre desde `src/data/listicles.json` + `scripts/generate_zone_listicles.py`, nunca a mano en un sitio solo.
 5. **Fichas**: fuente de datos = Apify (`compass/crawler-google-places`, API REST, idempotente por `placeId`) + fotos por `placeId` autoritativo (`fetch_photos_by_placeid.py`; **NO** usar `fetch_places_photos.py`, busca por texto y puede casar el local equivocado). Imágenes WebP q80.
 6. **Monetización cerrada**: 4 tiers en `/planes` (Básico gratis · Verificado 19 €/mes · Destacado 49 €/mes · Sponsor 800 €/mes), forms Netlify → `local@elcanaveral.info`, cobro manual (Bizum/transferencia), legales = Opción A (sin NIF, decisión de John), cookies RGPD con mapas consent-gated.
 7. **Sitio en producción**: `https://www.elcanaveral.info/` (canonical www; apex 301 → www), sitemap **434 URLs** (verificado 2026-09-27); verificación real de cada cambio = deploy de Netlify en vivo (fetch con Node).

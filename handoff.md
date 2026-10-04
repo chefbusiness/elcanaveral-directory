@@ -1,6 +1,6 @@
 # HANDOFF — elcanaveral.info
 
-> Hoja de arranque y estado del proyecto. Última actualización: **2026-09-27 (sesión b — bloque GEO)**.
+> Hoja de arranque y estado del proyecto. Última actualización: **2026-09-27 (sesión c — concordancia de guías + llms-full.txt)**.
 > 👉 Trilogía de contexto: `handoff.md` (estado/sesiones) · `memoria.md` (contexto, entorno y límites — leer
 > antes de retomar) · `roadmap.md` (hecho/pendiente priorizado). La receta de push del sandbox y el acceso
 > GSC por API están en `memoria.md`.
@@ -15,7 +15,45 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `2880e93` (código del bloque GEO) · docs de cierre en `39c4463` — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** · JSON-LD Organization/WebSite en home · `/llms.txt` generado en build |
+| **HEAD ref** | `a5e91cf` (llms-full.txt) · `e34fcd6`/`2a6e35f` (concordancia) · docs de cierre — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** · JSON-LD Organization/WebSite en home · `/llms.txt` + `/llms-full.txt` generados en build |
+
+## ✅ Sesión 2026-09-27c (Windows local, DSH) — concordancia de las guías + `llms-full.txt`
+
+**Los dos frentes pendientes del cierre anterior, pedidos por John: «¡adelante con todo!».**
+
+### 1. Concordancia de género en las guías «mejores X» (commits `2a6e35f` · `e34fcd6`)
+
+El generador de guías de zona (`scripts/generate_zone_listicles.py`), pese a tener el campo `el`/`la` por
+configuración, fijaba el prefijo **«Las mejores»** → **7 guías con el título roto**: «Las mejores
+**restaurantes** de Coslada», «Las mejores **veterinarios** de Vicálvaro», «Las mejores **talleres mecánicos**
+de San Fernando»… Afectaba a **`h1` + `metaTitle` + `metaDescription` + `intro`** (28 campos) y, en las 18 guías
+de zona, al cierre «Solo aparecen **las** que mantienen 4 estrellas» (→ «los negocios»).
+
+- **Migración campo a campo** (`.tmp/fix-concordancia.mjs`, 47 líneas de datos): el género se deduce **del propio
+  campo**, no del campo `noun`, porque hay guías legítimas con `h1` femenino y `metaTitle` masculino
+  (`mejores-veterinarios-el-canaveral`: «Las mejores **clínicas veterinarias**» / «Los mejores **veterinarios**»)
+  — arreglar por `noun` habría **creado** errores nuevos. Dos trampas más que cazó el propio audit:
+  «panaderías **y obradores** mejor **valorados**» (grupo mixto → masculino, RAE) y «tiendas de ropa **y moda**
+  mejor **valoradas**» (la cabeza es `tiendas`; `moda` es complemento, no segundo núcleo).
+- **Generador corregido** (`Los/Las`, `los/las`, `Estos/Estas`, `-o/-a en participios`), probado con el Python
+  del runtime: `restaurantes` → «Los mejores restaurantes», `clínicas dentales` → «Las mejores clínicas dentales».
+- **Auditoría propia**: 0 discordancias en 32 guías × 7 campos; en `dist`, **0 `h1` discordantes** en las 438
+  páginas. Las femeninas correctas quedaron intactas (`mejores-clinicas-dentales-coslada`) — verificado.
+
+### 2. `llms-full.txt` — versión extendida para LLM (commit `a5e91cf`)
+
+Endpoint `src/pages/llms-full.txt.ts` (generado en build, imposible de desincronizar). **342 KB, 2.127 líneas**:
+
+- **286 fichas** con descripción, zona, dirección, teléfono, web, ★valoración + nº de reseñas, horario y
+  servicios, cada una con su **URL canónica**.
+- **32 guías** con metaDescription, intro, FAQ y el **ranking real** (mismo motor bayesiano que la web vía
+  `getRankedNegocios` → reproducible desde `/data/negocios.json`, no una lista escrita a mano).
+- **10 noticias** con fecha, entradilla, datos clave y **cuerpo completo** en texto plano; los enlaces internos
+  se convierten a `texto (URL absoluta)`.
+- **Verificado**: 365 enlaces únicos, **0 rotos** contra `dist`; **0** etiquetas HTML o entidades residuales;
+  `llms.txt` enlaza la versión extendida (**88 enlaces**) y `public/_headers` sirve ambas como
+  `text/plain; charset=utf-8` con caché de 1 h.
+
 
 ## ✅ Sesión 2026-09-27b (Windows local, DSH) — bloque GEO: entidad, fichas y llms.txt
 
