@@ -82,6 +82,39 @@ fechas; conecta con el **blog de actualidad** (cuando una feria está en marcha)
 
 ---
 
+## 📏 VOLUMEN REAL medido con DataForSEO (2026-10-05) — esto reordena el backlog
+
+51 keywords medidas (Google Ads vía DataForSEO, España/español, **$0,09**; raw en `.tmp/kw-measured.json`).
+⚠️ Y ojo con la conclusión: **el formato «mejores X» tiene CERO volumen** («mejores cafeterías cañaveral» 0,
+«mejores restaurantes cañaveral» 0) — las guías no fallan por SEO, fallan porque nadie busca eso.
+
+| Keyword | Vol/mes | CPC | Qué implica |
+|---|---|---|---|
+| **el cañaveral** | **40.500** | 0,20 | Estamos en **pos 88**. El mayor hueco del sitio con diferencia. |
+| el cañaveral madrid | 6.600 | 0,17 | Refuerza lo mismo: página «El Cañaveral (Madrid)». |
+| **restaurantes cañaveral** | **1.900** | 0,67 | `/restaurantes/` tiene 45 fichas y **2 impresiones** → arreglo de categoría (P5). |
+| pisos en el cañaveral | 1.600 | 0,12 | + obra nueva 260 + alquiler 170 + pisos cañaveral madrid 170 + comprar piso 140 → **~2.340/mes de intención de vivienda** (CPC alto en «comprar piso» y «alquiler»). |
+| estanco el cañaveral | 1.300 | 0,02 | Ya rankeamos 6,9 y el Map Pack se lleva el clic → pieza informativa (horarios/domingos/sellos). |
+| **bares cañaveral** | **590** | — | **No hay ninguna página que lo cubra.** |
+| megafruta | 590 | 0,02 | Marca (ficha). |
+| ahorramas cañaveral | 320 | 0,05 | Marca (ficha, 0 clics). |
+| **que supermercados abren los domingos** | **320** | 0,12 | + «supermercados abiertos los domingos» 210 (**CPC 2,20**) → **~530/mes**: P1a validada. |
+| **peluquerías cañaveral** | **320** | 0,23 | Categoría con volumen y sin intro/FAQ (P5). |
+| obra nueva el cañaveral | 260 | 0,68 | P4. |
+| supermercado cañaveral | 210 | — | P5 (ya tiene FAQ). |
+| farmacia de guardia coslada | 210 | 0,04 | + farmacia 24 h Coslada 170 + farmacia de guardia Vicálvaro 110 → **~490/mes**: P1b validada. |
+| gimnasios cañaveral | 210 | 0,29 | P5 (`/deporte/`). |
+| alquiler el cañaveral / pisos cañaveral madrid / comprar piso el cañaveral | 170 / 170 / 140 | 1,32 / 0,12 / 0,08 | P4. |
+| colegios el cañaveral | 110 | 0,59 | P5 (`/educacion/`) + contenido de servicios públicos. |
+| veterinario cañaveral | 90 | 1,31 | CPC alto y volumen real: la pieza de urgencias debe incluir el veterinario general. |
+| inmobiliarias cañaveral | 40 | 1,05 | P5. |
+| terrazas (cañaveral+vicalvaro+coslada) + brunch | **~50** | — | **P1c se cae**: no da para página propia, va como sección/bloque dentro de otra pieza. |
+| el cañaveral vicalvaro · barrio el cañaveral · vivir en el cañaveral | 70 / 90 / 20 | | Colas del head term. |
+| **que ver en el cañaveral · cuanto cuesta vivir en el cañaveral · parking · piscina** | **0-10** | | Descartados: no se buscan (no inventar páginas). |
+| **mejores cafeterías cañaveral · mejores restaurantes cañaveral** | **0** | | **El formato de las 32 guías no tiene demanda.** |
+
+---
+
 ## 📊 Demanda REAL medida en GSC #5 (2026-10-05) — construir sobre esto, no sobre intuición
 
 Base: 90 días (07-jul→04-oct), 179 queries visibles (⚠️ Google oculta ~77 % de las impresiones en propiedades de

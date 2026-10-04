@@ -97,6 +97,31 @@ export function coordenadasPlausibles(lat: number, lng: number): boolean {
   return lat >= AREA.latMin && lat <= AREA.latMax && lng >= AREA.lngMin && lng <= AREA.lngMax;
 }
 
+// ¿Abre en domingo? Los horarios de Google llegan en dos formatos distintos:
+//   · español abreviado: "L-S 9:00-21:30, D 10:00-15:00"
+//   · Google (minúsculas, día primero): "do 10 AM to 5 PM, lu 9 AM to 5 PM…"
+// Un fragmento que nombra el domingo y dice "Cerrado"/"closed" cuenta como cerrado.
+// Se miran los tokens de día (incluidos los extremos de un rango: "S-D" y "L-D"
+// incluyen el domingo) y se ignoran los fragmentos que empiezan por hora, que
+// continúan el día anterior ("…, 17:00-20:30").
+const DIA_DOMINGO = /^(?:d|do|dom|domingo)$/i;
+export function abreDomingo(negocio: { horario?: string }): boolean {
+  const horario = (negocio.horario || "").trim();
+  if (!horario) return false;
+  for (const fragmento of horario.split(/[,;\n]+/).map((s) => s.trim())) {
+    if (!fragmento || /cerrado|closed|tancat/i.test(fragmento)) continue;
+    const antesDeLaHora = (fragmento.split(/\d/)[0] || "").trim();
+    if (!antesDeLaHora) continue;
+    const tokens = antesDeLaHora
+      .split(/[/\s]+|\by\b/i)
+      .flatMap((t) => t.split("-"))
+      .map((t) => t.replace(/\.$/, "").trim())
+      .filter(Boolean);
+    if (tokens.some((t) => DIA_DOMINGO.test(t))) return true;
+  }
+  return false;
+}
+
 // Perfil social -> URL absoluta. Acepta handle ("@bunbun_brunch"), handle sin @
 // o URL completa ya pegada en los datos (caso real: bunbun-canaveral).
 const SOCIAL_BASE: Record<string, string> = {

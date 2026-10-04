@@ -118,6 +118,7 @@ export const GET: APIRoute = () => {
     "- [Todos los negocios](" + url("/directorio/") + "): listado completo con buscador por nombre, servicio y categoría.",
     "- [Zonas](" + url("/zonas/") + "): las cuatro zonas cubiertas, con sus negocios agrupados.",
     "- [Guías del barrio](" + url("/blog/") + "): rankings y comparativas por categoría.",
+    "- [Abiertos los domingos](" + url("/abiertos-los-domingos/") + "): qué supermercados, panaderías, fruterías y bazares abren en domingo, con su horario real.",
     "- [Actualidad del barrio](" + url("/actualidad/") + "): noticias locales verificadas con fuentes.",
     "- [Comunidad](" + url("/comunidad/") + "): asociaciones, vecinos y cuentas del barrio.",
     "- [Cómo llegar y transporte](" + url("/transporte/") + "): metro, bus, cercanías y accesos.",

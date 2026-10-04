@@ -1,0 +1,218 @@
+---
+// ¿Qué abre en domingo? Página construida SOLO con datos verificados del directorio:
+// el veredicto sale de `abreDomingo()` sobre el campo `horario` de cada ficha, así
+// que no hay listas escritas a mano que puedan quedar desfasadas.
+// Demanda medida (DataForSEO, oct-2026): «que supermercados abren los domingos» 320/mes
+// + «supermercados abiertos los domingos» 210/mes (CPC 2,20) — intención que el Map
+// Pack no responde y que por tanto sí puede capturar una página.
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { abreDomingo, loadNegocios, type Negocio } from "@/lib/directory";
+
+const negocios = loadNegocios();
+const abrenElDomingo = negocios.filter(abreDomingo);
+const abren = (cat: string) => negocios.filter((n) => n.category === cat && abreDomingo(n));
+
+// Solo las categorías donde la pregunta tiene sentido para quien busca comprar.
+const grupos = [
+  {
+    id: "supermercados",
+    titulo: "🛒 Supermercados",
+    intro: "Los que tienen confirmado horario de domingo, con su horario real de Google.",
+    lista: abren("supermercados"),
+  },
+  {
+    id: "panaderias",
+    titulo: "🥖 Panaderías y obradores",
+    intro: "Para el pan del domingo: de las 13 panaderías del directorio, estas abren.",
+    lista: abren("panaderias"),
+  },
+  {
+    id: "fruterias",
+    titulo: "🍎 Fruterías y frutos secos",
+    intro: "Fruta y verdura en domingo, sin cruzar el barrio.",
+    lista: abren("fruterias"),
+  },
+  {
+    id: "tiendas-alimentacion",
+    titulo: "🏪 Tiendas de alimentación y bazares",
+    intro: "Mini markets y bazares de barrio abiertos todo el fin de semana.",
+    lista: abren("tiendas-alimentacion"),
+  },
+  {
+    id: "cafeterias",
+    titulo: "☕ Cafeterías",
+    intro: "Para desayunar o tomar algo el domingo por la mañana.",
+    lista: abren("cafeterias"),
+  },
+  {
+    id: "restaurantes",
+    titulo: "🍽️ Restaurantes",
+    intro: "Comer o cenar en domingo: la mayoría de los 45 restaurantes del directorio abre, aquí están los que lo tienen confirmado en su horario.",
+    lista: abren("restaurantes"),
+  },
+].filter((g) => g.lista.length > 0);
+
+const total = abrenElDomingo.length;
+const conHorario = negocios.filter((n) => n.horario).length;
+
+const ordenar = (l: Negocio[]) =>
+  [...l].sort((a, b) => (b.rating || 0) - (a.rating || 0) || (b.numReviews || 0) - (a.numReviews || 0));
+
+const horaDomingo = (n: Negocio) => {
+  const partes = (n.horario || "").split(/[,;\n]+/).map((s) => s.trim());
+  const trozo = partes.find((p) => /^(?:d|do|dom|domingo)\b/i.test(p) || /[-/]\s*(?:d|do|dom)\s*\d/i.test(p));
+  return (trozo || "").replace(/^(?:d|do|dom|domingo)\b[\s:.-]*/i, "").trim();
+};
+
+const base = "https://www.elcanaveral.info";
+const listado = ordenar(abrenElDomingo).slice(0, 12);
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Comercios abiertos los domingos en El Cañaveral y alrededores",
+  itemListElement: listado.map((n, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: n.name,
+    url: `${base}/${n.category}/${n.slug}/`,
+  })),
+};
+const faq = [
+  {
+    q: "¿Qué supermercados abren los domingos en El Cañaveral?",
+    a: `${abren("supermercados").map((n) => n.name).join(", ")}. Todos con horario de mañana (entre las 9:00 y las 15:00 según la cadena), así que conviene no dejarlo para la tarde.`,
+  },
+  {
+    q: "¿Hay panaderías abiertas el domingo?",
+    a: `Sí: ${abren("panaderias").map((n) => n.name).join(", ")}. Abren de 8:00 a 14:00-15:00 aproximadamente. La mayoría de las panaderías del directorio cierra los domingos, así que estas son las que te sacan del apuro.`,
+  },
+  {
+    q: "¿Y fruterías, bazares o tiendas de alimentación?",
+    a: `${[...abren("fruterias"), ...abren("tiendas-alimentacion")].map((n) => n.name).join(", ")}. Son las opciones de barrio cuando el supermercado está lleno o se te ha olvidado algo.`,
+  },
+  {
+    q: "¿Cómo sé si un negocio concreto abre el domingo?",
+    a: `En cada ficha del directorio tienes el horario completo que publica el negocio en Google. De las ${conHorario} fichas con horario, ${total} tienen domingo abierto. Si el horario de un negocio ha cambiado, escríbenos a local@elcanaveral.info y lo corregimos.`,
+  },
+  {
+    q: "¿Los horarios pueden cambiar?",
+    a: "Sí. En domingo y festivos las cadenas ajustan horarios (y algún festivo cierran). Este listado sale del horario publicado por cada negocio y se regenera en cada actualización del directorio, pero si vas con prisa llama antes: en cada ficha tienes el teléfono.",
+  },
+];
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "Abiertos los domingos", item: `${base}/abiertos-los-domingos/` },
+  ],
+};
+---
+
+<BaseLayout
+  title="Qué supermercados y tiendas abren los domingos en El Cañaveral"
+  description={`Listado actualizado de comercios abiertos el domingo en El Cañaveral, Vicálvaro, Coslada y San Fernando de Henares: ${abren("supermercados").length} supermercados, ${abren("panaderias").length} panaderías, fruterías, bazares y cafeterías, con su horario real.`}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">Abiertos los domingos</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          Qué supermercados y tiendas abren los domingos en El Cañaveral
+        </h1>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          El domingo por la mañana casi todo el barrio cierra, pero no todo: <strong>{abren("supermercados").length} supermercados</strong>,
+          <strong>{abren("panaderias").length} panaderías</strong>, fruterías, bazares y cafeterías sí abren. Esta es la lista real,
+          sacada del horario que cada negocio publica en Google: sin llamadas ni sorpresas.
+        </p>
+      </header>
+
+      <div class="bg-brand-50 border border-brand-100 rounded-xl p-5 mb-10 text-sm text-gray-700">
+        <span class="font-semibold text-brand-700">La respuesta rápida:</span>
+        los supermercados abren <strong>por la mañana</strong> (9:00-15:00 según la cadena) y las panaderías hasta las 14:00-15:00.
+        Si buscas algo concreto, en cada ficha tienes horario completo, teléfono y mapa.
+      </div>
+
+      {grupos.map((g) => (
+        <section class="mb-12" id={g.id}>
+          <h2 class="text-2xl font-bold text-brand-900 mb-1">{g.titulo} <span class="text-gray-400 text-lg font-medium">({g.lista.length})</span></h2>
+          <p class="text-gray-500 text-sm mb-5">{g.intro}</p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            {ordenar(g.lista).map((n) => (
+              <a href={`/${n.category}/${n.slug}/`} class="bg-white rounded-xl border border-warm-200 p-4 hover:border-brand-300 transition-colors flex flex-col">
+                <div class="flex items-start justify-between gap-2">
+                  <h3 class="font-bold text-brand-900 leading-snug">{n.name}</h3>
+                  {n.rating && <span class="shrink-0 text-xs font-semibold text-yellow-600">★ {n.rating}</span>}
+                </div>
+                <p class="text-sm text-gray-600 mt-1">🕘 Domingo: {horaDomingo(n) || "consultar ficha"}</p>
+                <p class="text-xs text-gray-500 mt-1">📍 {n.address}</p>
+                <p class="text-xs text-gray-400 mt-2">{n.zonaName}{n.phone ? ` · ${n.phone}` : ""}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-3">Cómo lo comprobamos</h2>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Este listado no es una lista escrita a mano: se genera en cada actualización del directorio a partir del
+          <strong>horario publicado por cada negocio en Google</strong> ({conHorario} de las {negocios.length} fichas traen horario
+          detallado). Cuando un negocio no publica su horario de domingo, no lo incluimos aquí — preferimos que falte uno
+          a mandarte a una puerta cerrada.
+        </p>
+      </section>
+
+      <div class="bg-brand-50 border border-brand-100 rounded-xl p-5 mb-12 text-sm text-gray-700">
+        <span class="font-semibold text-brand-700">También te puede servir:</span>
+        <a href="/supermercados" class="text-brand-600 font-medium">todos los supermercados</a> ·
+        <a href="/panaderias" class="text-brand-600 font-medium">panaderías y obradores</a> ·
+        <a href="/blog/mejores-supermercados-el-canaveral" class="text-brand-600 font-medium">comparativa de supermercados</a> ·
+        <a href="/comida-a-domicilio" class="text-brand-600 font-medium">lo que reparte a domicilio</a> ·
+        <a href="/mercadillos" class="text-brand-600 font-medium">mercadillos de la zona</a>.
+      </div>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes</h2>
+        <div class="space-y-3">
+          {faq.map((f) => (
+            <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+              <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                {f.q}
+                <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+              </summary>
+              <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <p class="text-xs text-gray-400 mt-8">
+        Horarios orientativos tomados de la ficha pública de cada negocio (Google) y actualizados con el directorio.
+        En domingos y festivos las cadenas ajustan horarios: si vas con prisa, llama antes usando el teléfono de la ficha.
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>
