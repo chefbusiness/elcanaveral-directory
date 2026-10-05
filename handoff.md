@@ -79,6 +79,42 @@ su horario real y las asesorías. El validador de enlaces cazó y se corrigió u
 los organizadores (ViBe El Cañaveral) solo tiene el anuncio previo (horarios y premios) y sus últimas noticias son
 de julio. Queda como pendiente hasta que exista fuente; **no se inventan ganadores**.
 
+### 🔍 Revisión adversarial de la ronda (commit `ff92361`) — 3 bloqueantes, 5 graves y 4 menores
+
+Un revisor adversarial auditó B0cd8b0+0ce8513 contra `dist/` y la web en vivo. Encontró un problema de fondo que
+este trabajo destapó sin querer: **el enriquecimiento trajo un horario de Google más fresco que el texto que la web
+mostraba**, y al emitir el schema desde el dato nuevo, las dos versiones se contradecían.
+
+- **BLOQUEANTE · Dos fuentes de horario**. La ficha imprimía `negocio.horario` (texto viejo) y el JSON-LD emitía
+  `horarioISO(horarioSemanal)` (dato nuevo): en **31 de 111 fichas comparables** cambiaba la hora de apertura y 9 se
+  contradecían el domingo (Levadura Madre mostraba «D Cerrado» y su schema «Su 08:00-19:00»; Supermercado El
+  Cañaveral mostraba el corte de tarde y emitía hasta medianoche). **Arreglo**: una sola fuente — el texto `horario`
+  se **regenera desde el horario estructurado** (265 fichas, agrupando días iguales y con el cierre a medianoche
+  como `24:00`). Verificado en vivo: horario visible == schema en las 9 fichas probadas.
+- **BLOQUEANTE · El estanco se contradecía**: la intro afirmaba «los domingos cierra» y unas horas concretas,
+  mientras la ficha (dato fresco) da domingo 9:00-14:30 y el listado de domingos lo incluye como abierto.
+  **Arreglo**: fuera las horas afirmadas de memoria; el horario vive en la ficha, con el dato del negocio.
+- **BLOQUEANTE · Rangos que cruzan medianoche invertidos** (38 casos, p. ej. `Tu 20:00-02:30`), ilegibles para
+  cualquier consumidor. **Arreglo**: `openingHours` (cadena) solo lleva rangos legibles (**271 fichas, 0 invertidos**)
+  y se añade **`openingHoursSpecification`** con apertura y cierre explícitos (**276 fichas**), que sí expresa un
+  local que cierra de madrugada; los cierres a medianoche pasan a `24:00`.
+- **GRAVE** · las **43 tarjetas** de domingos que decían «consultar ficha» ahora muestran la franja real (una sola
+  regla: `horaDomingo()` lee el mismo dato que `abreDomingo()` para incluir la ficha) · la FAQ de domingos ya cuenta
+  las dos fuentes (277, no 123) · **contactos falsos** que había metido el enriquecimiento: fuera el +49 de la sede
+  alemana de Lidl y su `lidl.de`, el +58 de Family Mini Market y el +57 de García y Asociados, más **17 webs
+  limpiadas** de parámetros de tracking (dos móviles españoles que mi propia limpieza retiró por error se
+  restauraron desde git) · **concordancia** en zona×categoría («1 ficha de panaderías y obradores», «11 fichas de
+  deporte y fitness»: el singularizador por `/s$/` rompía 14 páginas) · la **frase de datos pegada**
+  («…reparten a domicilioAbajo tienes…») · el «mejor valorado» solo se afirma si la ficha tiene nota.
+- **MENOR** · «Abierto las 24 horas» ya produce `openingHours` (MOON los sábados) · el `ItemList` de zona×categoría
+  declara tantos elementos como lista (antes 23 con 20) · `parentOrganization` con `@id` (antes creaba un nodo
+  Organization anónimo en las 442 páginas) · `/anunciate/?plan=…` con barra final (evita un 301).
+
+**Consciente y no corregido**: en las noticias, `author` y `publisher` son la propia `Organization` del sitio
+(es quien las publica: inventar un autor sería peor) y las 21 fichas sin horario estructurado siguen resolviéndose
+con el parser de texto como respaldo.
+
+
 
 ## 🚀 Sesión 2026-10-05b (DSH) — ejecución del plan GSC #5: P1a y P5 desplegados
 
