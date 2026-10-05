@@ -332,6 +332,33 @@ export function horarioSpec(negocio: {
   return salida.length ? salida : undefined;
 }
 
+/** Día schema.org -> número ISO de día de la semana (1 = lunes … 7 = domingo). */
+const DIA_A_NUMERO: Record<string, string> = {
+  Mo: "1", Tu: "2", We: "3", Th: "4", Fr: "5", Sa: "6", Su: "7",
+};
+
+/**
+ * Horario normalizado por día para calcular «abierto ahora» en el navegador:
+ * `{ "1": [["07:00","24:00"]], "6": [["10:00","14:00"],["17:00","21:00"]], … }`.
+ *
+ * Se normaliza en BUILD (una sola vez y con el mismo parser que el schema) y al cliente solo le
+ * queda comparar horas: no tiene que interpretar el texto libre ni el formato 12 h de Google.
+ */
+export function horarioSemanaISO(negocio: {
+  horario?: string;
+  horarioSemanal?: { dia?: string; horas?: string }[];
+}): Record<string, string[][]> | undefined {
+  const spec = horarioSpec(negocio);
+  if (!spec) return undefined;
+  const salida: Record<string, string[][]> = {};
+  for (const s of spec) {
+    const dia = DIA_A_NUMERO[s.dayOfWeek];
+    if (!dia) continue;
+    (salida[dia] ||= []).push([s.opens, s.closes]);
+  }
+  return Object.keys(salida).length > 0 ? salida : undefined;
+}
+
 const SOCIAL_BASE: Record<string, string> = {
   instagram: "https://instagram.com/",
   facebook: "https://facebook.com/",

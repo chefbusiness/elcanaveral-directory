@@ -85,5 +85,10 @@ const organizationSchema = {
     <TopBanner />
     <slot />
     <CookieConsent />
+    <!-- Estado «abierto ahora»: se resuelve en el navegador (el build no puede saber la hora del
+         visitante). En una etiqueta <script> para que Astro lo empaquete y lo ejecute en cliente. -->
+    <script>
+      import "@/scripts/abierto-ahora";
+    </script>
   </body>
 </html>

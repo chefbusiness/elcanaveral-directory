@@ -1,0 +1,142 @@
+---
+// Filtros de servicios (cliente) para los listados con tarjetas.
+//
+// Se apoya en los atributos que ya emite NegocioCard (data-negocio, data-terraza, data-delivery,
+// data-accesible, data-tarjeta, data-ninos, data-aparcamiento) y en el estado que calcula
+// src/scripts/abierto-ahora.ts (data-abierto). Convive con ZonaFilter: al cambiar la zona se
+// reaplica, y para decidir la visibilidad se consultan las zonas activas de su barra.
+interface Props {
+  /** Fichas de la página, para saber si el filtro aporta algo. */
+  total: number;
+  /** Compacto: dentro de una ficha o listado corto. */
+  compacto?: boolean;
+}
+
+const { total, compacto = false } = Astro.props;
+
+const FILTROS = [
+  { id: "abierto", etiqueta: "Abierto ahora" },
+  { id: "terraza", etiqueta: "Con terraza" },
+  { id: "delivery", etiqueta: "A domicilio" },
+  { id: "accesible", etiqueta: "Accesible" },
+  { id: "tarjeta", etiqueta: "Acepta tarjeta" },
+  { id: "ninos", etiqueta: "Para ir con niños" },
+  { id: "aparcamiento", etiqueta: "Aparcamiento" },
+];
+---
+
+{total > 3 && (
+  <div
+    class:list={["flex flex-wrap items-center gap-2", compacto ? "mb-4" : "mb-6"]}
+    data-serv-filter-bar
+    hidden
+  >
+    <span class="text-xs uppercase tracking-wider font-semibold text-gray-500 mr-1">Servicios:</span>
+    {FILTROS.map((f) => (
+      <button
+        type="button"
+        data-sf={f.id}
+        class="sf text-sm font-medium px-3 py-1.5 rounded-full bg-white border border-warm-200 text-gray-700 hover:bg-warm-50 transition-colors"
+      >
+        {f.etiqueta}
+      </button>
+    ))}
+    <button type="button" data-sf-clear class="text-sm text-gray-400 hover:text-gray-600 underline underline-offset-2 ml-1">
+      quitar
+    </button>
+  </div>
+  <p data-serv-empty hidden class="text-gray-500 text-center py-10">
+    Ningún negocio de esta página cumple esos filtros.
+  </p>
+)}
+
+<script is:inline>
+  (function () {
+    var bar = document.querySelector("[data-serv-filter-bar]");
+    if (!bar) return;
+    bar.removeAttribute("hidden"); // sin JS la barra no se muestra: no promete algo que no hace
+    var empty = document.querySelector("[data-serv-empty]");
+    var activos = new Set();
+    var botones = bar.querySelectorAll("[data-sf]");
+    var limpiar = bar.querySelector("[data-sf-clear]");
+
+    // Cabecera de la tabla de atributos: filtro -> atributo de la tarjeta
+    var ATRIBUTOS = {
+      abierto: "data-abierto",
+      terraza: "data-terraza",
+      delivery: "data-delivery",
+      accesible: "data-accesible",
+      tarjeta: "data-tarjeta",
+      ninos: "data-ninos",
+      aparcamiento: "data-aparcamiento",
+    };
+
+    function zonasActivas() {
+      var activas = new Set();
+      document.querySelectorAll("[data-zf]").forEach(function (b) {
+        if (b.classList.contains("bg-brand-600")) {
+          var v = b.getAttribute("data-zf");
+          if (v && v !== "all") activas.add(v);
+        }
+      });
+      return activas;
+    }
+
+    function pintar(b, on) {
+      b.classList.toggle("bg-brand-600", on);
+      b.classList.toggle("text-white", on);
+      b.classList.toggle("bg-white", !on);
+      b.classList.toggle("border", !on);
+      b.classList.toggle("border-warm-200", !on);
+      b.classList.toggle("text-gray-700", !on);
+    }
+
+    function aplicar() {
+      var zonas = zonasActivas();
+      var visibles = 0;
+      document.querySelectorAll("[data-negocio]").forEach(function (c) {
+        var ok = true;
+        activos.forEach(function (f) {
+          var attr = ATRIBUTOS[f];
+          if (!attr) return;
+          if (f === "abierto" && !c.hasAttribute("data-abierto")) return; // aún sin calcular: no se oculta
+          if (c.getAttribute(attr) !== "1") ok = false;
+        });
+        if (ok && zonas.size > 0 && !zonas.has(c.getAttribute("data-zona"))) ok = false;
+        if (c.style.display !== undefined) c.style.display = ok ? "" : "none";
+        if (ok) visibles++;
+      });
+      botones.forEach(function (b) {
+        pintar(b, activos.has(b.getAttribute("data-sf")));
+      });
+      if (empty) empty.hidden = visibles > 0;
+    }
+
+    botones.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var v = b.getAttribute("data-sf");
+        if (activos.has(v)) activos["delete"](v);
+        else activos.add(v);
+        aplicar();
+      });
+    });
+    if (limpiar)
+      limpiar.addEventListener("click", function () {
+        activos.clear();
+        aplicar();
+      });
+
+    // La barra de zonas escribe el display por su cuenta: se reaplica después para que los dos
+    // filtros se compongan en vez de pisarse.
+    document.querySelectorAll("[data-zf]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        setTimeout(aplicar, 0);
+      });
+    });
+    // Cuando el script de «abierto ahora» termina de calcular, se reevalúa (por si hay filtro activo).
+    document.addEventListener("abierto:listo", function () {
+      if (activos.has("abierto")) aplicar();
+    });
+    aplicar();
+  })();
+</script>

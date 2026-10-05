@@ -102,10 +102,7 @@
       "Ofertas semanales"
     ],
     "destacados": [
-      "Precios muy competitivos",
-      "Amplia gama de productos para el hogar",
-      "Apoyo al comercio local",
-      "Atención personalizada"
+      "Buenos productos frescos"
     ],
     "horario": "L-D 09:30-21:30",
     "address": "Avenida Miguel Delibes 10, 28052 Madrid",
@@ -153,6 +150,11 @@
         "dia": "domingo",
         "horas": "9:30 AM to 9:30 PM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ofrece": [
+      "Comida"
     ]
   },
   {
@@ -180,10 +182,7 @@
       "Productos de higiene personal"
     ],
     "destacados": [
-      "Ubicación céntrica y de fácil acceso",
-      "Productos frescos de calidad",
-      "Atención cercana y familiar",
-      "Ideal para compras rápidas y diarias"
+      "Buenos productos frescos"
     ],
     "horario": "L-J 09:30-23:30, V-D 09:30-24:00",
     "address": "C. Ferenc Puskas, 245, Vicálvaro, 28052 Madrid",
@@ -228,7 +227,10 @@
         "dia": "domingo",
         "horas": "9:30 AM to 12 a.m."
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "coviran-plus",
@@ -254,10 +256,7 @@
       "Ofertas y promociones"
     ],
     "destacados": [
-      "Variedad de productos frescos",
-      "Servicio de proximidad y atención personalizada",
-      "Precios competitivos",
-      "Amplio surtido de marcas"
+      "Buenos productos frescos"
     ],
     "horario": "L-D 09:00-22:00",
     "address": "Calle Victoria Kent 12, 28052 Madrid",
@@ -305,7 +304,9 @@
         "dia": "domingo",
         "horas": "9 AM to 10 PM"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "ahorramas",
@@ -376,10 +377,7 @@
       "Ofertas y descuentos"
     ],
     "destacados": [
-      "Precios muy competitivos",
-      "Variedad de productos de marca propia Auchan",
-      "Ideal para compras rápidas",
-      "Ubicación conveniente"
+      "Buenos productos frescos"
     ],
     "horario": "L-S 09:00-22:00, D 10:00-21:00",
     "address": "Calle Anna Frank 8, 28052 Madrid",
@@ -429,7 +427,9 @@
         "dia": "domingo",
         "horas": "10 AM to 9 PM"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "family-mini-market",
@@ -456,10 +456,7 @@
       "Prensa y revistas"
     ],
     "destacados": [
-      "Horario de apertura muy amplio",
-      "Ideal para compras de última hora",
-      "Atención familiar y cercana",
-      "Variedad de productos esenciales"
+      "Buenos productos frescos"
     ],
     "horario": "L-D 08:00-22:00",
     "address": "Calle Mario Moreno Cantinflas 3, 28052 Madrid",
@@ -509,6 +506,14 @@
         "dia": "domingo",
         "horas": "8 AM to 10 PM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ofrece": [
+      "Comida",
+      "Comida preparada",
+      "Farmacia",
+      "Productos orgánicos"
     ]
   },
   {
@@ -628,7 +633,9 @@
         "dia": "domingo",
         "horas": "10 AM to 4 PM, 5 to 10 PM"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "casa-elias",
@@ -656,10 +663,7 @@
       "Atención personalizada"
     ],
     "destacados": [
-      "Excelente calidad en productos frescos",
-      "Pan recién horneado cada día",
-      "Trato amable y cercano",
-      "Limpieza y orden en el establecimiento"
+      "Buenos productos frescos"
     ],
     "horario": "L-V 09:00-21:00, S 09:00-21:30, D 10:00-14:30",
     "images": [
@@ -706,7 +710,9 @@
         "dia": "domingo",
         "horas": "10 AM to 2:30 PM"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "la-fruteria-de-mama",
@@ -936,7 +942,9 @@
         "dia": "domingo",
         "horas": "10 AM to 2 PM"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "fruteria-charcuteria-el-canaveral",
@@ -984,7 +992,9 @@
     "googleCategory": "Frutería",
     "lat": 40.4062931,
     "lng": -3.5628446,
-    "delivery": true
+    "delivery": true,
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "levaduramadre",
@@ -1061,7 +1071,9 @@
         "dia": "domingo",
         "horas": "8 AM to 7 PM"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "el-horno-de-izan-iii",
@@ -1137,6 +1149,13 @@
         "dia": "domingo",
         "horas": "7:30 AM to 9 PM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis en la calle",
+    "ofrece": [
+      "Café",
+      "Desayunos"
     ]
   },
   {
@@ -1516,7 +1535,9 @@
         "dia": "domingo",
         "horas": "11 AM to 4 PM"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "le-petit-cafe-de-cryss",
@@ -1724,7 +1745,9 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "cita": "requiere",
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "escuela-infantil-municipal-muneco-de-nieve",
@@ -1902,10 +1925,15 @@
       "Menú degustación"
     ],
     "destacados": [
-      "Auténtica cocina asturiana",
-      "Cachopo de gran tamaño y calidad",
-      "Arroz con bogavante exquisito",
-      "Ambiente familiar y agradable"
+      "Buen café",
+      "Deliciosos postres",
+      "Deportes",
+      "Muy buena selección de cervezas",
+      "Muy buena selección de vinos",
+      "Desayuno",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "horario": "L-J 06:00-23:00, V-D 09:00-23:00",
     "tiposCocina": [
@@ -1961,6 +1989,28 @@
         "dia": "domingo",
         "horas": "9 AM to 11 PM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Aperitivos",
+      "Barra de ensaladas",
+      "Bebidas fuertes",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Cócteles",
+      "Vino",
+      "Desayunos"
     ]
   },
   {
@@ -2220,7 +2270,10 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada"
   },
   {
     "slug": "sanitas-dental-el-canaveral",
@@ -2309,6 +2362,12 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada",
+    "ofrece": [
+      "Atención pediátrica"
     ]
   },
   {
@@ -2484,6 +2543,12 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "ofrece": [
+      "Atención pediátrica"
     ]
   },
   {
@@ -2564,7 +2629,11 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada",
+    "ninos": true
   },
   {
     "slug": "la-belle-vie-canaveral",
@@ -2644,6 +2713,12 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada",
+    "ofrece": [
+      "Bebidas"
     ]
   },
   {
@@ -2804,7 +2879,11 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "ninos": true
   },
   {
     "slug": "caliza-estilistas",
@@ -2884,7 +2963,11 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "ninos": true
   },
   {
     "slug": "energie-fitness-canaveral",
@@ -3044,6 +3127,13 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "cita": "requiere",
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "Ducha"
     ]
   },
   {
@@ -3199,7 +3289,10 @@
         "dia": "domingo",
         "horas": "10 AM to 1 PM"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere"
   },
   {
     "slug": "peludos-del-canaveral",
@@ -3277,7 +3370,10 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "vicalcan-veterinario",
@@ -3355,7 +3451,9 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "cita": "requiere",
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "ferrokey-vicalvaro",
@@ -3433,7 +3531,9 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "ferreteria-directa-vicalvaro",
@@ -3707,7 +3807,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "cita": "requiere"
   },
   {
     "slug": "beefcious-el-canaveral",
@@ -3732,10 +3833,12 @@
       "Bebidas variadas"
     ],
     "destacados": [
-      "Carne de primera calidad a la brasa",
-      "Variedad de opciones para todos los paladares",
-      "Ambiente moderno y acogedor",
-      "Ideal para cenas informales"
+      "Buen café",
+      "Deliciosos postres",
+      "Muy buena selección de cervezas",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "horario": "L-M 13:00-23:00, X-S 13:00-23:30, D 13:00-23:00",
     "tiposCocina": [
@@ -3792,6 +3895,29 @@
         "dia": "domingo",
         "horas": "1 to 11 PM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bebidas fuertes",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Cócteles",
+      "Vino",
+      "Almuerzo",
+      "Cena",
+      "Postres"
     ]
   },
   {
@@ -3819,10 +3945,13 @@
       "Eventos deportivos en pantalla"
     ],
     "destacados": [
-      "Gran selección de cervezas",
-      "Terraza soleada en avenida principal",
-      "Ambiente animado y familiar",
-      "Ideal para el aperitivo o afterwork"
+      "Buen café",
+      "Muy buena selección de cervezas",
+      "Muy buena selección de vinos",
+      "Desayuno",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "horario": "L-J 11:30-23:30, V-S 11:30-24:00, D 11:30-23:30",
     "tiposCocina": [
@@ -3875,6 +4004,29 @@
         "dia": "domingo",
         "horas": "11:30 AM to 11:30 PM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Aperitivos",
+      "Bebidas fuertes",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Cócteles",
+      "Comedor privado",
+      "Platos saludables",
+      "Vino"
     ]
   },
   {
@@ -3982,10 +4134,9 @@
       "Cenas de grupo"
     ],
     "destacados": [
-      "Auténtica cocina madrileña",
-      "Raciones abundantes y sabrosas",
-      "Ambiente familiar y tradicional",
-      "Excelente relación calidad-precio"
+      "Deportes",
+      "Muy buena selección de cervezas",
+      "Cena en solitario"
     ],
     "horario": "L-S 08:00-24:00, D Cerrado",
     "tiposCocina": [
@@ -4041,6 +4192,24 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ambiente": [
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bebidas fuertes",
+      "Cerveza",
+      "Comida",
+      "Comida en el bar",
+      "Vino",
+      "Servicio a la mesa"
     ]
   },
   {
@@ -4291,7 +4460,12 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "aparcamiento": "gratis en la calle",
+    "ninos": true
   },
   {
     "slug": "focus-clinic-canaveral",
@@ -4376,7 +4550,10 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada"
   },
   {
     "slug": "fisioterapia-escalante",
@@ -4547,7 +4724,11 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "soul-fisioterapia",
@@ -4792,6 +4973,12 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada",
+    "ofrece": [
+      "Cambio de aceite"
     ]
   },
   {
@@ -4871,6 +5058,12 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada",
+    "ofrece": [
+      "Cambio de aceite"
     ]
   },
   {
@@ -4950,6 +5143,12 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada",
+    "ofrece": [
+      "Cambio de aceite"
     ]
   },
   {
@@ -5103,6 +5302,11 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ofrece": [
+      "Vestuario femenino"
     ]
   },
   {
@@ -5455,7 +5659,8 @@
         "horas": "8 AM to 10 PM"
       }
     ],
-    "phone": "654 32 10 98"
+    "phone": "654 32 10 98",
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "mediesven-canaveral",
@@ -5537,10 +5742,9 @@
       "Servicio a domicilio"
     ],
     "destacados": [
-      "Raciones abundantes y precios económicos",
-      "Variedad de opciones turcas y fast-food",
-      "Servicio de entrega a domicilio rápido",
-      "Ideal para una comida rápida y sabrosa"
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "horario": "L 19:00-24:00, M-J 12:30-17:00,19:00-24:00, V-S 12:30-01:00, D 12:30-17:00,19:00-24:00",
     "image": "/images/negocios/mr-kebab-canaveral.webp",
@@ -5587,6 +5791,22 @@
         "dia": "domingo",
         "horas": "12:30 to 5 PM, 7 PM to 12 AM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bocadillos",
+      "Cerveza",
+      "Almuerzo",
+      "Cena",
+      "Servicio a la mesa"
     ]
   },
   {
@@ -5668,7 +5888,10 @@
         "dia": "domingo",
         "horas": "1 to 4 PM, 7 to 11 PM"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis"
   },
   {
     "slug": "kebabish-vicalvaro",
@@ -5696,10 +5919,9 @@
       "Comida para llevar"
     ],
     "destacados": [
-      "Auténtica cocina turca con gran variedad",
-      "Ambiente familiar y acogedor",
-      "Precios muy asequibles",
-      "Ideal para probar diferentes especialidades"
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "horario": "L-D 14:00-24:00",
     "address": "Calle de San Cipriano, 10, 28032 Madrid",
@@ -5748,6 +5970,19 @@
         "dia": "domingo",
         "horas": "2 PM to 12 AM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ninos": true,
+    "ambiente": [
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Bocadillos",
+      "Almuerzo",
+      "Cena",
+      "Servicio a la mesa"
     ]
   },
   {
@@ -5850,10 +6085,7 @@
       "Servicio a domicilio (online)"
     ],
     "destacados": [
-      "Amplia variedad de productos de marca propia",
-      "Excelente relación calidad-precio",
-      "Sección de frescos de calidad",
-      "Comida preparada lista para consumir"
+      "Buenos productos frescos"
     ],
     "horario": "L-S 09:00-21:30, D Cerrado",
     "address": "Avenida de Castilla, 1, 28830 San Fernando de Henares, Madrid",
@@ -5904,6 +6136,15 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis",
+    "ofrece": [
+      "Barra de ensaladas",
+      "Comida",
+      "Comida preparada",
+      "Productos orgánicos"
     ]
   },
   {
@@ -6061,7 +6302,10 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada"
   },
   {
     "slug": "obramat-canaveral",
@@ -6121,7 +6365,7 @@
       "auto-king"
     ],
     "delivery": true,
-    "aparcamiento": true,
+    "aparcamiento": "gratis en la calle",
     "featured": false,
     "servicios": [
       "Whopper y hamburguesas a la parrilla",
@@ -6134,10 +6378,9 @@
       "Servicio a domicilio"
     ],
     "destacados": [
-      "Carne a la parrilla, sello de Burger King",
-      "Servicio Auto-King sin bajar del coche",
-      "Pedido rápido en quioscos digitales",
-      "Ideal para familias y comidas rápidas"
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "horario": "L-J 12:30-24:00, V-D 12:30-00:30",
     "address": "Avenida de Miguel Delibes, 80, 28052 Madrid",
@@ -6187,6 +6430,25 @@
         "dia": "domingo",
         "horas": "12:30 PM to 12:30 AM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ninos": true,
+    "perros": true,
+    "ambiente": [
+      "Informal"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Desayunos",
+      "Almuerzo",
+      "Cena",
+      "Servicio en el mostrador",
+      "Postres",
+      "Espacio con asientos"
     ]
   },
   {
@@ -6267,6 +6529,15 @@
         "dia": "domingo",
         "horas": "8 AM to 3 PM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "sí",
+    "ambiente": [
+      "Ducha"
+    ],
+    "ofrece": [
+      "Sauna"
     ]
   },
   {
@@ -6773,9 +7044,8 @@
       "Menú del día"
     ],
     "destacados": [
-      "Auténtica cocina vietnamita",
-      "Platos tradicionales y frescos",
-      "Excelente valoración en TheFork"
+      "Buen café",
+      "Desayuno"
     ],
     "horario": "L-J 18:00-23:30, V-D 12:00-23:30",
     "image": "/images/negocios/vietnam-2013-canaveral.webp",
@@ -6823,6 +7093,28 @@
         "dia": "domingo",
         "horas": "12 to 11:30 PM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "perros": true,
+    "ambiente": [
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Café",
+      "Cerveza",
+      "Vino",
+      "Desayunos",
+      "Almuerzo",
+      "Cena",
+      "Servicio de catering",
+      "Servicio en el mostrador",
+      "Postres"
     ]
   },
   {
@@ -6901,9 +7193,9 @@
       "Ambiente caribeño"
     ],
     "destacados": [
-      "Auténtica comida cubana",
-      "Variedad de cafés",
-      "Ambiente acogedor y familiar"
+      "Buenos cócteles",
+      "Deportes",
+      "Karaoke"
     ],
     "image": "/images/negocios/havana-madrid-canaveral.webp",
     "images": [
@@ -6949,6 +7241,20 @@
         "dia": "domingo",
         "horas": "8 PM to 2:30 AM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ambiente": [
+      "A la moda",
+      "Informal"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bebidas fuertes",
+      "Cerveza",
+      "Cócteles",
+      "Comida",
+      "Vino"
     ]
   },
   {
@@ -7066,9 +7372,11 @@
       "Reservas online"
     ],
     "destacados": [
-      "Auténtica fusión chino-venezolana",
-      "Platos frescos y sabrosos",
-      "Excelente relación calidad-precio"
+      "Buen café",
+      "Muy buena selección de cervezas",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "horario": "L-S 12:00-23:00, D 12:00-22:00",
     "image": "/images/negocios/chinawok-express-canaveral.webp",
@@ -7117,6 +7425,29 @@
         "dia": "domingo",
         "horas": "12 to 10 PM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Aperitivos",
+      "Bebidas fuertes",
+      "Café",
+      "Cerveza",
+      "Vino",
+      "Almuerzo",
+      "Cena",
+      "Postres",
+      "Espacio con asientos"
     ]
   },
   {
@@ -7354,7 +7685,9 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "farmacia-botica-de-mar",
@@ -7429,7 +7762,9 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "farmacia-el-canaveral-vk",
@@ -7535,15 +7870,17 @@
       "Reservas online"
     ],
     "destacados": [
-      "Amplia terraza ajardinada",
-      "Especialidad en carnes a la brasa",
-      "Ambiente familiar y acogedor"
+      "Buen café",
+      "Deliciosos postres",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "horario": "Martes a Domingo: 13:00-16:30 y 20:00-23:30, Lunes: Cerrado",
     "address": "C. Cerro del Campo, 62, 28052 Madrid",
     "phone": "+34 912 62 40 03",
     "accesibilidad": true,
-    "aparcamiento": true,
+    "aparcamiento": "gratis en la calle",
     "image": "/images/negocios/jardin-canaveral.webp",
     "images": [
       "/images/negocios/jardin-canaveral.webp",
@@ -7557,7 +7894,29 @@
     "placeId": "ChIJwSUL2Wc7Qg0R2RyYy80AOx4",
     "googleCategory": "Restaurante familiar",
     "lat": 40.40523,
-    "lng": -3.5502325
+    "lng": -3.5502325,
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "ninos": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Aperitivos",
+      "Bebidas fuertes",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Cócteles",
+      "Vino",
+      "Desayunos",
+      "Almuerzo"
+    ]
   },
   {
     "slug": "estanco-el-canaveral",
@@ -8204,7 +8563,10 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:00-20:00, S 10:00-14:00, D Cerrado"
+    "horario": "L-V 10:00-20:00, S 10:00-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere"
   },
   {
     "slug": "peluqueros-del-prado",
@@ -8345,7 +8707,12 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-M 10:00-14:00,15:00-19:00, X-V 10:00-19:00, S 10:00-14:00, D Cerrado"
+    "horario": "L-M 10:00-14:00,15:00-19:00, X-V 10:00-19:00, S 10:00-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "aparcamiento": "gratis en la calle",
+    "ninos": true
   },
   {
     "slug": "peluqueria-en-coslada-rocio-aparicio",
@@ -8487,7 +8854,11 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L 10:00-19:00, M-J 10:00-17:30, V 10:00-19:00, S-D Cerrado"
+    "horario": "L 10:00-19:00, M-J 10:00-17:30, V 10:00-19:00, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada",
+    "ninos": true
   },
   {
     "slug": "imar",
@@ -8619,7 +8990,12 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 09:00-20:00, S 09:00-14:00, D Cerrado"
+    "horario": "L-V 09:00-20:00, S 09:00-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "aparcamiento": "gratis en la calle",
+    "ninos": true
   },
   {
     "slug": "peluqueria-imagen-estilistas",
@@ -8755,7 +9131,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 09:30-13:45,17:00-20:00, S 10:00-13:45, D Cerrado"
+    "horario": "L-V 09:30-13:45,17:00-20:00, S 10:00-13:45, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "farmacia-mejico-23-abierto-365-dias",
@@ -8827,7 +9205,9 @@
         "horas": "9 AM to 9:30 PM"
       }
     ],
-    "horario": "L-D 09:00-21:30"
+    "horario": "L-D 09:00-21:30",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "gimnasio-vivagym-coslada-plaza",
@@ -9105,7 +9485,8 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 08:00-22:00, S 08:00-15:00, D Cerrado"
+    "horario": "L-V 08:00-22:00, S 08:00-15:00, D Cerrado",
+    "cita": "recomendada"
   },
   {
     "slug": "clinica-dental-caredent-coslada",
@@ -9177,7 +9558,13 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:00-14:00,16:00-21:00, S-D Cerrado"
+    "horario": "L-V 10:00-14:00,16:00-21:00, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "ofrece": [
+      "Atención pediátrica"
+    ]
   },
   {
     "slug": "clinica-dental-dra-conca",
@@ -9748,7 +10135,8 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 11:00-13:30,17:00-20:00, S 10:00-13:00, D Cerrado"
+    "horario": "L-V 11:00-13:30,17:00-20:00, S 10:00-13:00, D Cerrado",
+    "cita": "recomendada"
   },
   {
     "slug": "centro-veterinario-los-delfines-clinica-veterinaria-en-",
@@ -9893,7 +10281,8 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:00-19:00, S-D Cerrado"
+    "horario": "L-V 10:00-19:00, S-D Cerrado",
+    "cita": "recomendada"
   },
   {
     "slug": "clinica-veterinaria-vellcan",
@@ -9965,7 +10354,8 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 09:00-21:00, S-D Cerrado"
+    "horario": "L-V 09:00-21:00, S-D Cerrado",
+    "cita": "recomendada"
   },
   {
     "slug": "clinica-veterinaria-wecan-la-colina",
@@ -10036,7 +10426,8 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:00-14:00,17:00-20:30, S 10:00-14:00, D Cerrado"
+    "horario": "L-V 10:00-14:00,17:00-20:30, S 10:00-14:00, D Cerrado",
+    "cita": "requiere"
   },
   {
     "slug": "clinica-veterinaria-alameda",
@@ -10099,7 +10490,8 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:30-13:30,17:30-20:00, S-D Cerrado"
+    "horario": "L-V 10:30-13:30,17:30-20:00, S-D Cerrado",
+    "cita": "recomendada"
   },
   {
     "slug": "clinica-veterinaria-coslada",
@@ -10620,8 +11012,11 @@
       "Comida para llevar"
     ],
     "destacados": [
-      "Ambiente moderno y juvenil",
-      "Carta variada ideal para grupos"
+      "Buen café",
+      "Deportes",
+      "Desayuno",
+      "Almuerzo",
+      "Cena en solitario"
     ],
     "rating": 4.4,
     "numReviews": 110,
@@ -10670,6 +11065,28 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Aperitivos",
+      "Barra de ensaladas",
+      "Bebidas fuertes",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Comida",
+      "Comida en el bar",
+      "Lugar para bailar"
     ]
   },
   {
@@ -11401,7 +11818,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 08:30-20:30, S 10:30-15:30, D Cerrado"
+    "horario": "L-V 08:30-20:30, S 10:30-15:30, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "cafeteria-el-rincon-de-ilda",
@@ -11422,8 +11841,7 @@
       "Consumo en barra y mesa"
     ],
     "destacados": [
-      "Ambiente de barrio cercano y familiar",
-      "Variedad de aperitivos y raciones tradicionales"
+      "Cena en solitario"
     ],
     "rating": 4.3,
     "numReviews": 177,
@@ -11472,7 +11890,27 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-J 07:00-22:00, V-S 07:00-02:00, D Cerrado"
+    "horario": "L-J 07:00-22:00, V-S 07:00-02:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bebidas fuertes",
+      "Cerveza",
+      "Comida",
+      "Comida en el bar",
+      "Vino",
+      "Espacio con asientos",
+      "Servicio a la mesa"
+    ]
   },
   {
     "slug": "cafe-jp",
@@ -11493,8 +11931,8 @@
       "Atención en mesa y barra"
     ],
     "destacados": [
-      "Servicio rápido y eficiente",
-      "Espacio cómodo para el día a día"
+      "Buen café",
+      "Desayuno"
     ],
     "rating": 4.6,
     "numReviews": 55,
@@ -11540,7 +11978,22 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 06:00-19:00, S 06:00-14:00, D Cerrado"
+    "horario": "L-V 06:00-19:00, S 06:00-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ambiente": [
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bebidas fuertes",
+      "Café",
+      "Cerveza",
+      "Vino",
+      "Desayunos"
+    ]
   },
   {
     "slug": "bar-cafeteria-luis",
@@ -11561,8 +12014,8 @@
       "Atención en barra y mesas"
     ],
     "destacados": [
-      "Trato muy familiar y cercano",
-      "Excelente opción para el aperitivo diario"
+      "Buen café",
+      "Desayuno"
     ],
     "rating": 4.3,
     "numReviews": 110,
@@ -11609,7 +12062,26 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 07:00-23:00, S 08:00-15:00, D Cerrado"
+    "horario": "L-V 07:00-23:00, S 08:00-15:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ninos": true,
+    "ambiente": [
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bebidas fuertes",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Vino",
+      "Desayunos",
+      "Espacio con asientos",
+      "Servicio a la mesa"
+    ]
   },
   {
     "slug": "churreria-cafeteria-jh-i",
@@ -11630,8 +12102,8 @@
       "Servicio para llevar"
     ],
     "destacados": [
-      "Ubicación accesible en Coslada",
-      "Ambiente familiar y cercano"
+      "Buen café",
+      "Desayuno"
     ],
     "rating": 4.4,
     "numReviews": 420,
@@ -11679,7 +12151,24 @@
         "horas": "6 AM to 1 PM"
       }
     ],
-    "horario": "L Cerrado, M-D 06:00-13:00"
+    "horario": "L Cerrado, M-D 06:00-13:00",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "Agradable",
+      "Informal"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bebidas fuertes",
+      "Café",
+      "Cerveza",
+      "Desayunos",
+      "Espacio con asientos",
+      "Servicio a la mesa"
+    ]
   },
   {
     "slug": "cafeteria-miky-tapas-sin-fin",
@@ -11817,7 +12306,13 @@
         "horas": "8:30 AM to 10:30 PM"
       }
     ],
-    "horario": "L Cerrado, M-D 08:30-22:30"
+    "horario": "L Cerrado, M-D 08:30-22:30",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ofrece": [
+      "Café",
+      "Desayunos"
+    ]
   },
   {
     "slug": "panaderia-baki-pan",
@@ -12132,7 +12627,8 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-S 09:30-14:00, D Cerrado"
+    "horario": "L-S 09:30-14:00, D Cerrado",
+    "tarjeta": true
   },
   {
     "slug": "ferriplus-cadena88",
@@ -12204,7 +12700,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 08:30-14:00,16:00-19:30, S 09:30-13:30, D Cerrado"
+    "horario": "L-V 08:30-14:00,16:00-19:30, S 09:30-13:30, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "ferreteria-coslada-s-a",
@@ -12276,7 +12774,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 08:00-14:00,15:30-19:00, S 09:00-13:30, D Cerrado"
+    "horario": "L-V 08:00-14:00,15:30-19:00, S 09:00-13:30, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "sanfer",
@@ -12347,7 +12847,13 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 09:30-13:30, S 10:00-13:30, D Cerrado"
+    "horario": "L-V 09:30-13:30, S 10:00-13:30, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ofrece": [
+      "Servicio de armado",
+      "Servicios de reparación"
+    ]
   },
   {
     "slug": "showroom-barral-tienda-autoservicio-y-almacen",
@@ -12490,7 +12996,12 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 08:30-14:00,15:00-19:00, S-D Cerrado"
+    "horario": "L-V 08:30-14:00,15:00-19:00, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ofrece": [
+      "Cambio de aceite"
+    ]
   },
   {
     "slug": "talleres-bruster",
@@ -12696,7 +13207,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 08:30-14:00,15:30-19:30, S-D Cerrado"
+    "horario": "L-V 08:30-14:00,15:30-19:30, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "galauto-motor-coslada",
@@ -12944,7 +13457,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 07:00-15:30, S-D Cerrado"
+    "horario": "L-V 07:00-15:30, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "bigmat-silviu-materiales-de-construccion",
@@ -13017,7 +13532,12 @@
         "horas": "8 AM to 2 PM"
       }
     ],
-    "horario": "L-J 07:00-20:00, V 07:00-17:00, S Cerrado, D 08:00-14:00"
+    "horario": "L-J 07:00-20:00, V 07:00-17:00, S Cerrado, D 08:00-14:00",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ofrece": [
+      "Servicio de armado"
+    ]
   },
   {
     "slug": "pinturas-aldeco-distribuidor-titan-pintores-a-su-servic",
@@ -13230,7 +13750,14 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-J 08:30-14:00,15:30-18:00, V 08:00-16:00, S-D Cerrado"
+    "horario": "L-J 08:30-14:00,15:30-18:00, V 08:00-16:00, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "aparcamiento": "sí",
+    "ofrece": [
+      "Cambio de aceite"
+    ]
   },
   {
     "slug": "moda-tenda",
@@ -13301,7 +13828,14 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:00-14:00,17:00-20:30, S 10:00-14:00, D Cerrado"
+    "horario": "L-V 10:00-14:00,17:00-20:30, S 10:00-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis en la calle",
+    "ofrece": [
+      "Vestuario femenino",
+      "Vestuario masculino"
+    ]
   },
   {
     "slug": "restaurante-asturias",
@@ -13322,9 +13856,11 @@
       "Celebración de eventos familiares"
     ],
     "destacados": [
-      "Ambiente acogedor y familiar",
-      "Cocina tradicional de calidad",
-      "Excelente ubicación en el municipio"
+      "Buen café",
+      "Desayuno",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "rating": 4.8,
     "numReviews": 757,
@@ -13373,6 +13909,28 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Aperitivos",
+      "Barra de ensaladas",
+      "Bebidas fuertes",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Cócteles",
+      "Platos saludables",
+      "Vino"
     ]
   },
   {
@@ -13659,7 +14217,10 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L Cerrado, M-V 10:00-19:00, S 09:00-14:00, D Cerrado"
+    "horario": "L Cerrado, M-V 10:00-19:00, S 09:00-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada"
   },
   {
     "slug": "arroceria-los-amigos",
@@ -13731,6 +14292,27 @@
         "dia": "domingo",
         "horas": "9 AM to 4 PM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Aperitivos",
+      "Barra de ensaladas",
+      "Cerveza",
+      "Comidas durante la madrugada",
+      "Opciones veganas",
+      "Platos saludables",
+      "Platos vegetarianos",
+      "Vino",
+      "Desayuno-almuerzo"
     ]
   },
   {
@@ -13752,9 +14334,10 @@
       "Servicio de terraza exterior"
     ],
     "destacados": [
-      "Ambiente tranquilo y acogedor",
-      "Ideal para el desayuno diario",
-      "Trato amable y servicio rápido"
+      "Buen café",
+      "Chimenea",
+      "Desayuno",
+      "Almuerzo"
     ],
     "rating": 4.4,
     "numReviews": 142,
@@ -13804,7 +14387,30 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 07:00-16:30, S-D Cerrado"
+    "horario": "L-V 07:00-16:30, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "perros": true,
+    "ambiente": [
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Aperitivos",
+      "Bebidas fuertes",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Cócteles",
+      "Platos orgánicos",
+      "Platos vegetarianos",
+      "Vino"
+    ]
   },
   {
     "slug": "gimnasio-soldiers",
@@ -13874,7 +14480,12 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 09:30-22:30, S 10:00-14:00, D Cerrado"
+    "horario": "L-V 09:30-22:30, S 10:00-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ofrece": [
+      "Sauna"
+    ]
   },
   {
     "slug": "la-inmobiliaria-de-cris",
@@ -14015,7 +14626,12 @@
         "horas": "9 AM to 2 PM"
       }
     ],
-    "horario": "L Cerrado, M-V 08:30-17:00, S-D 09:00-14:00"
+    "horario": "L Cerrado, M-V 08:30-17:00, S-D 09:00-14:00",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ofrece": [
+      "Café"
+    ]
   },
   {
     "slug": "moon-cafeteria-restaurante",
@@ -14227,7 +14843,12 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-J 08:00-17:00, V 08:00-14:00, S-D Cerrado"
+    "horario": "L-J 08:00-17:00, V 08:00-14:00, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "ofrece": [
+      "Cambio de aceite"
+    ]
   },
   {
     "slug": "restaurante-albarracin",
@@ -14368,7 +14989,11 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:00-19:00, S 10:00-14:00, D Cerrado"
+    "horario": "L-V 10:00-19:00, S 10:00-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada",
+    "ninos": true
   },
   {
     "slug": "j-rey-barberia-peluqueria-san-fernando-de-henares",
@@ -14509,7 +15134,11 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-S 10:00-14:30,16:00-21:00, D Cerrado"
+    "horario": "L-S 10:00-14:30,16:00-21:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "ninos": true
   },
   {
     "slug": "alba-centro-de-belleza",
@@ -14935,7 +15564,11 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:00-19:00, S 09:30-14:00, D Cerrado"
+    "horario": "L-V 10:00-19:00, S 09:30-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada",
+    "ninos": true
   },
   {
     "slug": "rhyno-funcional-training-san-fernando-de-henares",
@@ -15005,7 +15638,10 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 07:00-22:00, S 09:00-14:00, D Cerrado"
+    "horario": "L-V 07:00-22:00, S 09:00-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "c-veterinaria-andreal",
@@ -15176,7 +15812,11 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-J 10:00-14:00,16:30-20:30, V 10:00-14:00,16:00-18:00, S-D Cerrado"
+    "horario": "L-J 10:00-14:00,16:30-20:30, V 10:00-14:00,16:00-18:00, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "caelum-pets-tanatorio-y-crematorio-de-mascotas-en-madri",
@@ -15249,7 +15889,8 @@
         "horas": "10 AM to 7 PM"
       }
     ],
-    "horario": "L-D 10:00-19:00"
+    "horario": "L-D 10:00-19:00",
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "salvavidas-cardioproteccion-y-formacion-en-emergencias",
@@ -15537,7 +16178,13 @@
         "horas": "10 AM to 9:30 PM"
       }
     ],
-    "horario": "L-D 10:00-21:30"
+    "horario": "L-D 10:00-21:30",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis",
+    "ofrece": [
+      "Productos usados"
+    ]
   },
   {
     "slug": "action-san-fernando-de-henares",
@@ -15610,7 +16257,9 @@
         "horas": "9 AM to 9:30 PM"
       }
     ],
-    "horario": "L-D 09:00-21:30"
+    "horario": "L-D 09:00-21:30",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "nutri-pets",
@@ -15898,7 +16547,10 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-J 10:00-14:00,16:00-21:00, V 10:00-14:00,15:00-20:00, S-D Cerrado"
+    "horario": "L-J 10:00-14:00,16:00-21:00, V 10:00-14:00,15:00-20:00, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada"
   },
   {
     "slug": "frutos-secos-gloria",
@@ -15968,7 +16620,9 @@
         "horas": "10 AM to 2 PM, 5:30 to 9:30 PM"
       }
     ],
-    "horario": "L-V 09:00-14:30,17:30-21:30, S-D 10:00-14:00,17:30-21:30"
+    "horario": "L-V 09:00-14:30,17:30-21:30, S-D 10:00-14:00,17:30-21:30",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "pets-eternity-sl-crematorio-tanatorio-de-mascotas",
@@ -16039,7 +16693,8 @@
         "horas": "10 AM to 6:30 PM"
       }
     ],
-    "horario": "L-V 08:00-20:00, S-D 10:00-18:30"
+    "horario": "L-V 08:00-20:00, S-D 10:00-18:30",
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "rentokil-control-de-plagas",
@@ -16535,7 +17190,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 08:30-21:30, S 09:30-21:30, D Cerrado"
+    "horario": "L-V 08:30-21:30, S 09:30-21:30, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "street-grills",
@@ -16556,8 +17213,10 @@
       "Terraza exterior"
     ],
     "destacados": [
-      "Ambiente acogedor y moderno",
-      "Variedad de platos en carta"
+      "Asientos en la terraza",
+      "Buen café",
+      "Cena",
+      "Cena en solitario"
     ],
     "rating": 4.9,
     "numReviews": 936,
@@ -16607,7 +17266,28 @@
         "horas": "1 to 11 PM"
       }
     ],
-    "horario": "L-D 13:00-23:00"
+    "horario": "L-D 13:00-23:00",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bebidas fuertes",
+      "Café",
+      "Cerveza",
+      "Cócteles",
+      "Vino",
+      "Almuerzo",
+      "Cena",
+      "Postres",
+      "Servicio a la mesa"
+    ]
   },
   {
     "slug": "cafe-damario",
@@ -16628,8 +17308,11 @@
       "Comida para llevar bajo pedido"
     ],
     "destacados": [
-      "Servicio rápido y eficiente",
-      "Localización cómoda en la zona"
+      "Buen café",
+      "Muy buena selección de té",
+      "Desayuno",
+      "Almuerzo",
+      "Cena en solitario"
     ],
     "rating": 4.3,
     "numReviews": 333,
@@ -16649,7 +17332,30 @@
     ],
     "terraza": true,
     "delivery": true,
-    "accesibilidad": true
+    "accesibilidad": true,
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bebidas fuertes",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Vino",
+      "Desayunos",
+      "Desayuno-almuerzo",
+      "Almuerzo",
+      "Cena"
+    ]
   },
   {
     "slug": "cafe-lave",
@@ -16670,8 +17376,10 @@
       "Servicio de terraza"
     ],
     "destacados": [
-      "Ambiente tranquilo y acogedor",
-      "Ideal para el día a día"
+      "Buen café",
+      "Muy buena selección de té",
+      "Desayuno",
+      "Un buen lugar para trabajar con una laptop"
     ],
     "rating": 4.7,
     "numReviews": 105,
@@ -16719,7 +17427,24 @@
         "horas": "8 AM to 9 PM"
       }
     ],
-    "horario": "L-V 07:00-21:00, S-D 08:00-21:00"
+    "horario": "L-V 07:00-21:00, S-D 08:00-21:00",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bocadillos",
+      "Café",
+      "Desayunos",
+      "Postres"
+    ]
   },
   {
     "slug": "dulce-ruah",
@@ -16809,8 +17534,11 @@
       "Reserva de mesas online y telefónica"
     ],
     "destacados": [
-      "Propuesta gastronómica original",
-      "Excelente presentación de platos"
+      "Buen café",
+      "Muy buena selección de cervezas",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "rating": 4.8,
     "numReviews": 898,
@@ -16860,6 +17588,30 @@
         "dia": "domingo",
         "horas": "12:30 to 4:30 PM, 7:30 to 11:30 PM"
       }
+    ],
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "perros": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Aperitivos",
+      "Bebidas fuertes",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Platos saludables",
+      "Vino",
+      "Almuerzo",
+      "Cena"
     ]
   },
   {
@@ -16931,7 +17683,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 09:00-14:00,17:00-20:30, S 09:00-14:00, D Cerrado"
+    "horario": "L-V 09:00-14:00,17:00-20:30, S 09:00-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "farmacia-covian",
@@ -17002,7 +17756,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 09:30-13:45,16:00-20:00, S 10:00-13:45, D Cerrado"
+    "horario": "L-V 09:30-13:45,16:00-20:00, S 10:00-13:45, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "farmacia-diaz-nadela-canaveral",
@@ -17142,7 +17898,10 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L 09:30-11:30,17:30-21:30, M 17:30-21:30, X 09:30-11:30,17:30-21:30, J 17:30-21:30, V 17:30-20:30, S 09:30-12:30, D Cerrado"
+    "horario": "L 09:30-11:30,17:30-21:30, M 17:30-21:30, X 09:30-11:30,17:30-21:30, J 17:30-21:30, V 17:30-20:30, S 09:30-12:30, D Cerrado",
+    "tarjeta": true,
+    "cita": "recomendada",
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "sano-mad-canaveral",
@@ -17214,7 +17973,11 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-J 07:00-11:00,16:00-22:00, V 07:00-11:00,17:00-20:00, S 09:00-13:00, D Cerrado"
+    "horario": "L-J 07:00-11:00,16:00-22:00, V 07:00-11:00,17:00-20:00, S 09:00-13:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true
   },
   {
     "slug": "clinica-alineacion-dental",
@@ -17286,7 +18049,10 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:00-14:00,16:00-20:00, S-D Cerrado"
+    "horario": "L-V 10:00-14:00,16:00-20:00, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada"
   },
   {
     "slug": "bellmad-salon",
@@ -17358,7 +18124,11 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L 16:00-19:00, M-V 10:00-19:30, S 10:00-14:00, D Cerrado"
+    "horario": "L 16:00-19:00, M-V 10:00-19:30, S 10:00-14:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada",
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "peluqueria-saludable-gala",
@@ -17502,7 +18272,15 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:00-20:30, S 09:00-14:30, D Cerrado"
+    "horario": "L-V 10:00-20:30, S 09:00-14:30, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ofrece": [
+      "Bebidas"
+    ]
   },
   {
     "slug": "ferreteria-ferrpelaez",
@@ -17644,7 +18422,13 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 09:00-18:30, S-D Cerrado"
+    "horario": "L-V 09:00-18:30, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "ofrece": [
+      "Cambio de aceite"
+    ]
   },
   {
     "slug": "talleres-laen-expert-service-car",
@@ -17754,7 +18538,13 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 09:00-14:00,16:00-20:00, S-D Cerrado"
+    "horario": "L-V 09:00-14:00,16:00-20:00, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "recomendada",
+    "ofrece": [
+      "Cambio de aceite"
+    ]
   },
   {
     "slug": "taller-mecanico-jesus-arredondo",
@@ -17816,7 +18606,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 09:00-14:00,16:00-19:30, S-D Cerrado"
+    "horario": "L-V 09:00-14:00,16:00-19:30, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "barcos-de-papel",
@@ -18305,7 +19097,8 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 09:15-19:30, S 09:30-13:30, D Cerrado"
+    "horario": "L-V 09:15-19:30, S 09:30-13:30, D Cerrado",
+    "cita": "recomendada"
   },
   {
     "slug": "clinica-veterinaria-omega",
@@ -18521,7 +19314,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L 07:00-12:00,16:00-22:00, M 07:00-12:00,17:00-22:00, X 07:00-12:00,16:00-22:00, J 07:00-12:00,17:00-22:00, V 07:00-12:00,16:00-21:00, S 09:00-13:00, D Cerrado"
+    "horario": "L 07:00-12:00,16:00-22:00, M 07:00-12:00,17:00-22:00, X 07:00-12:00,16:00-22:00, J 07:00-12:00,17:00-22:00, V 07:00-12:00,16:00-21:00, S 09:00-13:00, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "sapporo-ramen-bar-canaveral",
@@ -18541,8 +19336,9 @@
       "Servicio de bebidas y postres"
     ],
     "destacados": [
-      "Especialización en gastronomía japonesa",
-      "Ubicación cómoda en El Cañaveral"
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "rating": 4.8,
     "numReviews": 321,
@@ -18591,7 +19387,30 @@
         "horas": "12 to 4:30 PM, 7:30 to 11:30 PM"
       }
     ],
-    "horario": "L-D 12:00-16:30,19:30-23:30"
+    "horario": "L-D 12:00-16:30,19:30-23:30",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "perros": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Aperitivos",
+      "Bebidas fuertes",
+      "Café",
+      "Cerveza",
+      "Cócteles",
+      "Comidas durante la madrugada",
+      "Opciones veganas",
+      "Platos vegetarianos",
+      "Vino"
+    ]
   },
   {
     "slug": "brasa-tia-mariama",
@@ -18753,8 +19572,12 @@
       "Servicio de mesa y terraza"
     ],
     "destacados": [
-      "Sabor tradicional italiano",
-      "Servicio rápido y cómodo para el barrio"
+      "Buen café",
+      "Deliciosos postres",
+      "Muy buena selección de cervezas",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ],
     "rating": 4.5,
     "numReviews": 827,
@@ -18805,7 +19628,30 @@
         "horas": "1 to 11 PM"
       }
     ],
-    "horario": "L-J 13:00-23:00, V-S 13:00-23:30, D 13:00-23:00"
+    "horario": "L-J 13:00-23:00, V-S 13:00-23:30, D 13:00-23:00",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bebidas fuertes",
+      "Café",
+      "Cerveza",
+      "Platos saludables",
+      "Vino",
+      "Almuerzo",
+      "Cena",
+      "Postres",
+      "Espacio con asientos"
+    ]
   },
   {
     "slug": "mr-kebab-canaveral-2",
@@ -18897,8 +19743,10 @@
       "Terraza exterior"
     ],
     "destacados": [
-      "Excelente ambiente deportivo y social",
-      "Amplia selección de bebidas"
+      "Buenos cócteles",
+      "Deportes",
+      "Muy buena selección de cervezas",
+      "Cena en solitario"
     ],
     "rating": 4.4,
     "numReviews": 1619,
@@ -18948,7 +19796,28 @@
         "horas": "10 AM to 1 a.m."
       }
     ],
-    "horario": "L-J 12:00-01:00, V 12:00-02:30, S 10:00-02:30, D 10:00-01:00"
+    "horario": "L-J 12:00-01:00, V 12:00-02:30, S 10:00-02:30, D 10:00-01:00",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "perros": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Bebidas fuertes",
+      "Cerveza",
+      "Cócteles",
+      "Comida",
+      "Comida en el bar",
+      "Vino",
+      "Espacio con asientos",
+      "Servicio a la mesa"
+    ]
   },
   {
     "slug": "skull-barber-shop-madrid-el-canaveral",
@@ -19090,7 +19959,10 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:00-20:30, S 09:30-14:30, D Cerrado"
+    "horario": "L-V 10:00-20:30, S 09:30-14:30, D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere"
   },
   {
     "slug": "nails-boutique-el-canaveral",
@@ -19538,9 +20410,12 @@
       "Terraza exterior"
     ],
     "destacados": [
-      "Espacio versátil para comidas y cenas",
-      "Ubicación clave en El Cañaveral",
-      "Ambiente acogedor y servicio local"
+      "Buen café",
+      "Deportes",
+      "Muy buena selección de cervezas",
+      "Desayuno",
+      "Almuerzo",
+      "Cena en solitario"
     ],
     "rating": 4.1,
     "numReviews": 206,
@@ -19590,7 +20465,31 @@
         "horas": "9:30 AM to 11 PM"
       }
     ],
-    "horario": "L 09:30-16:30,19:00-23:00, M-J 09:30-16:30,18:30-23:00, V 09:30-16:30,18:30-24:00, S 09:30-24:00, D 09:30-23:00"
+    "horario": "L 09:30-16:30,19:00-23:00, M-J 09:30-16:30,18:30-23:00, V 09:30-16:30,18:30-24:00, S 09:30-24:00, D 09:30-23:00",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "reservas": true,
+    "aparcamiento": "gratis en la calle",
+    "ninos": true,
+    "perros": true,
+    "ambiente": [
+      "A la moda",
+      "Agradable",
+      "Informal",
+      "Relajado"
+    ],
+    "ofrece": [
+      "Alcohol",
+      "Aperitivos",
+      "Bebidas fuertes",
+      "Bocadillos",
+      "Café",
+      "Cerveza",
+      "Cócteles",
+      "Comida",
+      "Comida en el bar",
+      "Platos saludables"
+    ]
   },
   {
     "slug": "o-oy",
@@ -19943,7 +20842,9 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-J 10:00-21:00, V 10:00-20:00, S-D Cerrado"
+    "horario": "L-J 10:00-21:00, V 10:00-20:00, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true
   },
   {
     "slug": "clinica-impulso-fisioterapia-y-psicologia-en-el-canaver",
@@ -20192,7 +21093,10 @@
         "horas": "9:30 AM to 9:30 PM"
       }
     ],
-    "horario": "L-D 09:30-21:30"
+    "horario": "L-D 09:30-21:30",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "logopedas-y-psicologos-canaveral-anda-conmigo",
@@ -20264,7 +21168,11 @@
         "horas": "Cerrado"
       }
     ],
-    "horario": "L-V 10:00-20:30, S-D Cerrado"
+    "horario": "L-V 10:00-20:30, S-D Cerrado",
+    "tarjeta": true,
+    "pagoMovil": true,
+    "cita": "requiere",
+    "aparcamiento": "gratis en la calle"
   },
   {
     "slug": "fisen",
@@ -20408,7 +21316,8 @@
         "horas": "Abierto las 24 horas"
       }
     ],
-    "horario": "L-D 00:00-24:00"
+    "horario": "L-D 00:00-24:00",
+    "cita": "recomendada"
   },
   {
     "slug": "bunbun-canaveral",

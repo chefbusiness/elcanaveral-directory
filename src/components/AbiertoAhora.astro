@@ -1,0 +1,34 @@
+---
+// Badge «Abierto ahora» / «Cerrado».
+//
+// El estado depende de la hora en que el visitante mira la página, así que NO se puede hornear en el
+// build (un sitio estático se generaría con la hora del deploy). El componente pinta un hueco con el
+// horario normalizado en un atributo y el script global (src/scripts/abierto-ahora.ts) lo resuelve en
+// el navegador. Sin JavaScript queda el texto neutro «Horario», nunca un estado equivocado.
+import { horarioSemanaISO } from "@/lib/directory";
+import type { Negocio } from "@/lib/directory";
+
+interface Props {
+  negocio: Negocio;
+  /** compacto: para tarjetas de listado (punto + texto corto). */
+  compacto?: boolean;
+}
+
+const { negocio, compacto = false } = Astro.props;
+const semana = horarioSemanaISO(negocio);
+---
+
+{semana && (
+  <span
+    data-abierto-ahora
+    data-horario={JSON.stringify(semana)}
+    class:list={[
+      "js-abierto inline-flex items-center gap-1.5 rounded-full bg-warm-100 text-gray-500",
+      compacto ? "text-[11px] font-medium px-2 py-0.5" : "text-xs font-medium px-2.5 py-1",
+    ]}
+    title="Calculado con el horario que el negocio publica en Google"
+  >
+    <span class="js-abierto-punto w-1.5 h-1.5 rounded-full bg-gray-400 shrink-0"></span>
+    <span class="js-abierto-texto">Horario</span>
+  </span>
+)}

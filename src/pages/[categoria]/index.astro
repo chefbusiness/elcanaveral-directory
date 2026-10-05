@@ -6,6 +6,7 @@ import NegocioCard from "@/components/NegocioCard.astro";
 import { generateCategoriaPaths, loadZonas, getNegociosByCategoriaYZona } from "@/lib/directory";
 import { getListicleByCategory } from "@/lib/listicles";
 import ZonaFilter from "@/components/ZonaFilter.astro";
+import FiltrosServicios from "@/components/FiltrosServicios.astro";
 import type { Negocio, Categoria } from "@/lib/directory";
 import seoOverrides from "@/data/seo-overrides.json";
 
@@ -104,6 +105,7 @@ const itemListSchema = {
       {zonasConNegocios.length > 1 && (
         <ZonaFilter zonas={zonasConNegocios} total={negocios.length} />
       )}
+      <FiltrosServicios total={negocios.length} />
 
       {guia && (
         <a

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import SearchBar from "@/components/SearchBar.astro";
 import ZonaFilter from "@/components/ZonaFilter.astro";
+import FiltrosServicios from "@/components/FiltrosServicios.astro";
 import { loadNegocios, loadCategorias, loadZonas } from "@/lib/directory";
 
 const negocios = loadNegocios();
@@ -45,12 +46,13 @@ const zonas = loadZonas();
         ))}
       </div>
       <ZonaFilter zonas={zonas} total={negocios.length} />
+      <FiltrosServicios total={negocios.length} />
     </div>
   </section>
 
   <!-- Grid -->
   <section class="px-4 pb-16">
-    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-grid-negocios>
       {negocios.map((negocio) => (
         <NegocioCard negocio={negocio} />
       ))}

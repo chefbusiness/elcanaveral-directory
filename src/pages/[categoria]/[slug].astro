@@ -4,6 +4,7 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import Galeria from "@/components/Galeria.astro";
+import AbiertoAhora from "@/components/AbiertoAhora.astro";
 import { generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona, socialProfileUrl } from "@/lib/directory";
 import type { Negocio } from "@/lib/directory";
 import seoOverrides from "@/data/seo-overrides.json";
@@ -305,7 +306,10 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
               {negocio.horario && (
                 <div class="flex items-start gap-3">
                   <span class="text-gray-400 text-sm mt-0.5 shrink-0">&#128336;</span>
-                  <span class="text-sm whitespace-pre-line">{negocio.horario}</span>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="text-sm whitespace-pre-line">{negocio.horario}</span>
+                    <AbiertoAhora negocio={negocio} />
+                  </div>
                 </div>
               )}
             </div>
