@@ -54,9 +54,11 @@ const estrella = (n: Negocio) =>
 
 function lineaNegocio(n: Negocio): string[] {
   const desc = plain(n.description);
-// Horario en ISO: es lo que un LLM puede razonar («¿está abierto un domingo a las 10:00?») sin
-  // interpretar texto en español. Se acompaña del horario legible para las respuestas en prosa.
-  const iso = horarioISO(n);
+  // Horario en ISO: es lo que un LLM puede razonar («¿está abierto un domingo a las 10:00?») sin
+  // interpretar texto en español. Se pide CON cruces de medianoche: este mismo fichero promete que un
+  // local de 20:00 a 02:30 aparece con esa franja, y sin el flag esas 10 fichas se quedaban sin línea
+  // o con días omitidos (contradecía la promesa del propio fichero).
+  const iso = horarioISO(n, true);
   const abreDomingo = abreDomingoHelper(n);
   // Servicios prácticos verificados (solo cuando el dato existe: no se afirma la ausencia).
   const servicios = [

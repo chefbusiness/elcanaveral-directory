@@ -15,7 +15,72 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `0ce8513` (enriquecimiento Apify + estanco) · `b0cd8b0` (Organization global, zona×categoría, horario ISO) — 286 negocios, 442 páginas, sitemap **438 URLs** · `/llms.txt` (92 enlaces) + `/llms-full.txt` generados en build |
+| **HEAD ref** | `9f0d4b0` (prospección con argumento nuevo) · `28b24ef` (GEO + hub de niños) · `cd0b9f4` (abierto ahora + filtros) — 286 negocios, **443 páginas**, sitemap **439 URLs** |
+
+## 🔧 Sesión 2026-10-05e (DSH) — el dato de horario pasa a ser producto
+
+Hasta aquí el horario estructurado (lo que pagamos a Apify) solo servía para pintar texto y schema. Esta sesión
+lo convierte en utilidad para el vecino y en argumento comercial.
+
+### ✅ «Abierto ahora» (commit `cd0b9f4`)
+
+Badge **«Abierto ahora / Cerrado · abre 09:30»** en las fichas y en las 286 tarjetas. Se calcula **en el
+navegador** porque es lo único correcto en un sitio estático: en el build quedaría congelado en la hora del
+deploy. El horario se **normaliza una sola vez en build** (`data-horario` = `{ "1": [["07:00","24:00"]], … }`, con
+1 = lunes) usando el **mismo parser que el schema**, así que al cliente solo le queda comparar horas.
+
+La lógica vive en `src/lib/abierto.ts` (módulo puro, sin DOM) y **se prueba de verdad**: se compila con esbuild y
+se ejecutan **21 escenarios límite** (franjas múltiples, cierre después de medianoche —un bar de 20:00 a 02:30
+sigue abierto a la 01:00 por la franja del día anterior—, 24 h, día libre, y la hora de Madrid con el cambio
+horario de octubre y enero). Las dos primeras pasadas dieron dos «fallos» que eran **expectativas mías mal
+escritas**, no bugs: `24:00` es medianoche exacta y las 22:30 UTC del domingo son las 00:30 del lunes en Madrid.
+
+### ✅ Filtros de servicios (mismo commit)
+
+En el directorio y en las 31 páginas de categoría: **abierto ahora, con terraza, a domicilio, accesible, acepta
+tarjeta, para ir con niños y aparcamiento**. Conviven con el filtro de zona que ya existía (al cambiar de zona se
+reaplican y se consultan las zonas activas, para que se compongan en vez de pisarse). La barra nace oculta y el
+script la muestra: sin JS no promete algo que no hace. Sin JS, y mientras el script no ha corrido, el hueco dice
+«Horario» (neutro): **nunca un estado equivocado**.
+
+### ✅ GEO: horarios y amenities para los LLM (commit `28b24ef`)
+
+`llms-full.txt` (376 KB) lleva ahora, por ficha, el **horario en ISO** (272 fichas), la marca **«Abre los
+domingos»**, los **servicios verificados** (235 fichas) y las etiquetas del perfil de Google. `llms.txt` explica
+cómo leerlos con los recuentos reales e incluye el aviso de que **la ausencia de un servicio es ausencia de dato,
+no una negación** (justo lo que un LLM repetiría mal si no se le avisa).
+
+### ✅ Datos del scrape reutilizados **sin volver a pagar** (mismo commit)
+
+El dataset del run de 1,41 $ ya contenía mucho más de lo que habíamos mapeado: se reprocesa gratis y se extraen
+pagos (**tarjeta 111**, pago móvil 108), planificación (**requiere cita 47**, reservas 18), **estacionamiento 50**
+(el grupo de Apify se llama «Estacionamiento» y yo lo había buscado como «Aparcamiento»: de ahí que antes solo
+salieran 2), **menores 35** («ideal para ir con niños»), mascotas 7, ambiente 29, «qué ofrece» 53 y las etiquetas
+destacadas. Con eso:
+
+- Las fichas ganan un bloque **«Lo que destaca su perfil de Google»** con las etiquetas, el ambiente y el «ofrece»,
+  siempre **atribuido** y separado del texto editorial propio.
+- Nuevo hub **`/con-ninos/`** (mismo patrón que el `/con-perro/` que ya existía): **11 parques y áreas de juegos**
+  con enlace al mapa, el ranking de los locales «ideales para ir con niños» con la misma puntuación bayesiana que
+  las guías, **11 escuelas infantiles** y guarderías, extraescolares y la salud del barrio.
+
+**Daño propio detectado y reparado**: la extracción asignó el campo `destacados` sin comprobar si ya existía y
+**pisó el texto editorial de 33 fichas** (cambiar «Precios muy competitivos y amplia gama de productos» por el
+genérico «Buenos productos frescos» empeora la ficha). Los 33 originales se restauraron desde el commit anterior y
+el dato de Google vive ahora en su propio campo `destacadosGoogle`, que es lo que permite atribuirlo. También se
+corrigió una frase sin respaldo en la intro del hub («la mayoría de los vecinos llegaron con niños pequeños») por
+los datos verificados del barrio.
+
+### ✅ Prospección con el argumento nuevo (commit `9f0d4b0`)
+
+`scripts/leads_prospecting.py` suma dos cosas que **se enseñan en pantalla**: en cuántas páginas del sitio aparece
+ya cada negocio (leído del build real, no estimado) y qué datos le faltan **con su consecuencia concreta** («sin
+horario no sale en abierto ahora ni en el listado de domingos»). Resultado: 15 leads calientes, 96 de GastroSEO,
+74 de GastroLocal y 73 de ChefBusiness, de los que **48 ya aparecen en 5 o más páginas** del directorio. Dos
+arreglos de criterio antes de darlo por bueno: los datos sugeridos dependen de la **categoría** (pedir terraza a
+una escuela infantil dejaba el informe en evidencia) y el gancho ya usa concordancia y separador de millar.
+El informe es privado (`prospecting/` está en `.gitignore`) y no se publica.
+
 
 ## 🔧 Sesión 2026-10-05d (DSH) — E · A · C · B · D: entidad global, datos y horarios
 

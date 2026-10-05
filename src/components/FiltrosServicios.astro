@@ -36,6 +36,7 @@ const FILTROS = [
       <button
         type="button"
         data-sf={f.id}
+        aria-pressed="false"
         class="sf text-sm font-medium px-3 py-1.5 rounded-full bg-white border border-warm-200 text-gray-700 hover:bg-warm-50 transition-colors"
       >
         {f.etiqueta}
@@ -89,6 +90,7 @@ const FILTROS = [
       b.classList.toggle("border", !on);
       b.classList.toggle("border-warm-200", !on);
       b.classList.toggle("text-gray-700", !on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
     }
 
     function aplicar() {
@@ -99,7 +101,9 @@ const FILTROS = [
         activos.forEach(function (f) {
           var attr = ATRIBUTOS[f];
           if (!attr) return;
-          if (f === "abierto" && !c.hasAttribute("data-abierto")) return; // aún sin calcular: no se oculta
+          // Todos los filtros exigen el atributo en «1», incluido «abierto ahora»: una tarjeta sin
+          // horario calculado no puede afirmarse abierta (antes se colaba, p. ej. una «próxima
+          // apertura» aparecía al filtrar por abierto).
           if (c.getAttribute(attr) !== "1") ok = false;
         });
         if (ok && zonas.size > 0 && !zonas.has(c.getAttribute("data-zona"))) ok = false;
@@ -109,7 +113,9 @@ const FILTROS = [
       botones.forEach(function (b) {
         pintar(b, activos.has(b.getAttribute("data-sf")));
       });
-      if (empty) empty.hidden = visibles > 0;
+      // El aviso solo con un filtro puesto; si no, al ejecutarse antes de que existan las tarjetas
+      // (el script va antes que la rejilla) decía «Ningún negocio cumple esos filtros» con 286 visibles.
+      if (empty) empty.hidden = activos.size === 0 || visibles > 0;
     }
 
     botones.forEach(function (b) {
@@ -137,6 +143,8 @@ const FILTROS = [
     document.addEventListener("abierto:listo", function () {
       if (activos.has("abierto")) aplicar();
     });
-    aplicar();
+    // Se arranca con el DOM ya parseado: antes no existen las tarjetas que hay que contar.
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", aplicar);
+    else aplicar();
   })();
 </script>

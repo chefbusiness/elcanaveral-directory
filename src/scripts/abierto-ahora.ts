@@ -6,13 +6,25 @@
 // navegador solo le queda comparar horas. La lógica vive en @/lib/abierto para poder probarla.
 import { estadoAbierto, diaYMinutosMadrid, type Semana } from "@/lib/abierto";
 
-function pintar(el: HTMLElement) {
-  let semana: Semana | null = null;
-  try {
-    semana = JSON.parse(el.getAttribute("data-horario") || "null");
-  } catch {
-    semana = null;
+/** «1:0700-2030;5:0930-2400,1700-2000» → { "1": [["07:00","20:30"]], … } (formato compacto del build). */
+function descompactar(txt: string | null): Semana | null {
+  if (!txt) return null;
+  const semana: Semana = {};
+  for (const trozo of txt.split(";")) {
+    const [dia, rangos] = trozo.split(":");
+    if (!dia || !rangos) continue;
+    const lista = rangos.split(",").map((r) => {
+      const [a, b] = r.split("-");
+      const hora = (x: string) => `${x.slice(0, 2)}:${x.slice(2, 4)}`;
+      return [hora(a), b === "2400" ? "24:00" : hora(b)];
+    });
+    semana[dia] = lista;
   }
+  return Object.keys(semana).length > 0 ? semana : null;
+}
+
+function pintar(el: HTMLElement) {
+  const semana = descompactar(el.getAttribute("data-horario"));
   if (!semana) return;
 
   let estado;
@@ -48,10 +60,17 @@ function pintar(el: HTMLElement) {
 }
 
 export function iniciarAbiertoAhora() {
-  const pintarTodos = () => document.querySelectorAll<HTMLElement>("[data-abierto-ahora]").forEach(pintar);
+  const pintarTodos = () => {
+    // Con la pestaña en segundo plano no se repinta: no se ve y solo gasta batería.
+    if (typeof document !== "undefined" && document.hidden) return;
+    document.querySelectorAll<HTMLElement>("[data-abierto-ahora]").forEach(pintar);
+  };
   pintarTodos();
-  // Se repinta cada minuto: si alguien deja la página abierta, el estado no se queda obsoleto.
+  // Se repinta cada minuto solo si la pestaña está visible (y al volver a ella).
   setInterval(pintarTodos, 60_000);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) pintarTodos();
+  });
 }
 
 if (typeof document !== "undefined") {

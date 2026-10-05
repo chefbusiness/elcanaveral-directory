@@ -193,7 +193,9 @@ function diasDelFragmento(fragmento: string): string[] | null {
   const dias: string[] = [];
   for (const parte of antes.split(/\s+y\s+/i)) {
     const limpio = parte.replace(/[.:;,]+$/, "").trim().toLowerCase();
-    const rango = limpio.split(/\s*-\s*|\s+a\s+/);
+    // Guion normal, en (–) y em (—): una ficha real (Mediadores Inmobiliarios) usa el guion largo
+    // «L-V 9:00–21:00» y sin esto se quedaba sin schema, sin ISO y sin badge.
+    const rango = limpio.split(/\s*[-\u2013\u2014]\s*|\s+a\s+/);
     if (rango.length === 2) {
       const a = DIAS_ISO[rango[0].trim()];
       const b = DIAS_ISO[rango[1].trim()];
@@ -235,7 +237,7 @@ export function horarioISO(
       }
       const partes: string[] = [];
       for (const fr of horas.split(/,\s*/).map((s) => s.trim()).filter(Boolean)) {
-        const m = /^(.+?)\s*(?:-|\bto\b|\ba\b)\s*(.+)$/i.exec(fr);
+        const m = /^(.+?)\s*(?:[-\u2013\u2014]|\bto\b|\ba\b)\s*(.+)$/i.exec(fr);
         if (!m) return undefined;
         const pm = /pm|p\.?\s?m/i.test(m[1]) || /pm|p\.?\s?m/i.test(m[2]);
         const ini = horaAIso(m[1], pm);
@@ -282,7 +284,7 @@ export function horarioISO(
       for (const fr of trasDia.split(/\s+y\s+|,\s*/i).map((s) => s.trim()).filter(Boolean)) {
         // Los separadores van con límite de palabra: sin él, la alternativa «a» de «9 AM to 11 PM»
         // casaba con la A de AM y partía la hora en "9" / "M to 11 PM".
-        const m = /^(.+?)\s*(?:-|\bto\b|\ba\b)\s*(.+)$/i.exec(fr);
+        const m = /^(.+?)\s*(?:[-\u2013\u2014]|\bto\b|\ba\b)\s*(.+)$/i.exec(fr);
         if (!m) continue;
         const pmEnLaFrase = /pm|p\.?\s?m/i.test(m[1]) || /pm|p\.?\s?m/i.test(m[2]);
         const ini = horaAIso(m[1], pmEnLaFrase);
@@ -330,7 +332,19 @@ export function horarioSpec(negocio: {
     for (const rango of m[2].split(",")) {
       const [opens, closes] = rango.split("-");
       if (!opens || !closes) return undefined;
-      for (const d of dias) salida.push({ "@type": "OpeningHoursSpecification", dayOfWeek: d, opens, closes });
+      // Un local que cierra de madrugada (20:00→02:30) se publica partido: hasta las 23:59 de ese día
+      // y desde las 00:00 del día siguiente. Así el intervalo NUNCA aparece invertido (que es lo que
+      // ningún consumidor puede leer) y sigue siendo cierto.
+      const cruza = closes !== "24:00" && closes <= opens;
+      for (const d of dias) {
+        if (cruza) {
+          const siguiente = ORDEN_DIAS[(ORDEN_DIAS.indexOf(d) + 1) % 7];
+          salida.push({ "@type": "OpeningHoursSpecification", dayOfWeek: d, opens, closes: "23:59" });
+          salida.push({ "@type": "OpeningHoursSpecification", dayOfWeek: siguiente, opens: "00:00", closes });
+        } else {
+          salida.push({ "@type": "OpeningHoursSpecification", dayOfWeek: d, opens, closes });
+        }
+      }
     }
   }
   return salida.length ? salida : undefined;
@@ -361,6 +375,25 @@ export function horarioSemanaISO(negocio: {
     (salida[dia] ||= []).push([s.opens, s.closes]);
   }
   return Object.keys(salida).length > 0 ? salida : undefined;
+}
+
+/**
+ * Horario normalizado COMPACTO para el navegador: `"1:0700-2030;5:0930-2400,1700-2000"`.
+ *
+ * Es el mismo dato que `horarioSemanaISO` pero en ~35 % menos bytes: en el directorio (286 tarjetas con su
+ * horario embebido) el JSON con corchetes y comillas sumaba ~101 KB solo en atributos. El parser del
+ * cliente es una línea y el dato sigue siendo legible a ojo si hay que depurar una ficha.
+ */
+export function horarioSemanaCompacto(negocio: {
+  horario?: string;
+  horarioSemanal?: { dia?: string; horas?: string }[];
+}): string | undefined {
+  const semana = horarioSemanaISO(negocio);
+  if (!semana) return undefined;
+  return Object.keys(semana)
+    .sort()
+    .map((dia) => `${dia}:${semana[dia].map(([a, b]) => `${a.replace(":", "")}-${b.replace(":", "")}`).join(",")}`)
+    .join(";");
 }
 
 const SOCIAL_BASE: Record<string, string> = {

@@ -45,8 +45,17 @@ const escuelas = negocios
 const tiendasBebe = negocios.filter((n) => /beb[eé]|ni[nñ]os/i.test(`${n.googleCategory || ""} ${n.name}`) && n.category !== "educacion");
 const actividades = negocios.filter((n) => n.category === "educacion" && !PREESCOLAR.test(`${n.googleCategory || ""} ${n.name}`));
 
-// 4) Salud: el centro de salud del barrio y las farmacias (sin inventar pediatría)
-const salud = negocios.filter((n) => n.category === "salud" && /centro de salud|m[eé]dico|farmac/i.test(n.googleCategory || ""));
+// 4) Salud: farmacias y centros de salud del barrio. El filtro excluye lo que Google clasifica mal:
+//    «Logopedas y Psicólogos» lleva la categoría «Centro de salud infantil» y no es un centro de salud
+//    (se aprovecha aparte, como apoyo al lenguaje, que sí es útil para familias).
+const GC_SALUD = /^(farmacia|centro de salud|centro m[eé]dico|hospital)/i;
+const GC_NO_SALUD = /infantil|logop|psic|dental|fisio/i;
+const esCentroSanitario = (n: Negocio) => {
+  const gc = (n.googleCategory || "").trim();
+  return n.category === "salud" && GC_SALUD.test(gc) && !GC_NO_SALUD.test(gc);
+};
+const salud = negocios.filter(esCentroSanitario);
+const terapias = negocios.filter((n) => n.category === "salud" && /logop|psic/i.test(`${n.name} ${n.googleCategory || ""}`));
 
 const hospital = negocios.find((n) => /hospital|urgencias/i.test(n.name));
 
@@ -57,7 +66,7 @@ const faq = [
   },
   {
     q: "¿Qué restaurantes y cafeterías son recomendables para ir con niños?",
-    a: `Hay ${conNinos.length} locales del directorio que declaran en su perfil de Google que son «ideales para ir con niños»: ${comerenos.slice(0, 6).map((n) => n.name).join(", ")}${comerenos.length > 6 ? " y otros más" : ""}. Todos con su ficha, teléfono y horario real.`,
+    a: `De las ${conNinos.length} fichas que declaran en su perfil de Google ser «ideales para ir con niños», ${comerenos.length} son de restauración y cafeterías (${comerenos.slice(0, 5).map((n) => n.name).join(", ")}${comerenos.length > 5 ? " y más" : ""}); el resto son ${demas.map((n) => n.categoryName?.toLowerCase()).filter((v, i, a) => a.indexOf(v) === i).join(", ")}. Todas con su ficha, teléfono y horario real.`,
   },
   {
     q: "¿Cuántas escuelas infantiles hay en el barrio?",
@@ -87,7 +96,8 @@ const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Locales de El Cañaveral ideales para ir con niños",
-  numberOfItems: comerenos.length,
+  // El número declarado y los elementos emitidos tienen que coincidir (antes decía 22 y listaba 20).
+  numberOfItems: Math.min(comerenos.length, 20),
   itemListElement: comerenos.slice(0, 20).map((n, i) => ({ "@type": "ListItem", position: i + 1, name: n.name, url: `${base}/${n.category}/${n.slug}/` })),
 };
 
@@ -120,7 +130,8 @@ const lista = (l: Negocio[], tope = 8) => rank(l, tope);
         </h1>
         <p class="text-gray-600 leading-relaxed mt-4 text-lg">
           El Cañaveral es un barrio nuevo: las obras del PAU empezaron en 2013 y los primeros vecinos llegaron
-          en 2016. Hoy tiene 27.014 personas empadronadas y más de la mitad de las 14.000 viviendas previstas
+          en 2016. Hoy tiene <strong>27.014 personas empadronadas</strong> (agosto de 2026, según el padrón
+          municipal) y más de la mitad de las <strong>14.000 viviendas previstas</strong> en el plan parcial
           son de algún régimen de protección. Aquí tienes lo práctico para el día a día con niños: dónde jugar,
           dónde comer sin agobios, las escuelas infantiles del barrio y los servicios de salud.
         </p>
@@ -227,6 +238,14 @@ const lista = (l: Negocio[], tope = 8) => rank(l, tope);
         {tiendasBebe.length > 0 && (
           <p class="text-sm text-gray-600 mt-2">
             Y para comprar, {tiendasBebe.map((n) => n.name).join(" y ")} ({tiendasBebe.map((n) => n.zonaName).join(", ")}).
+          </p>
+        )}
+        {terapias.length > 0 && (
+          <p class="text-sm text-gray-600 mt-2">
+            Para apoyo del lenguaje o psicología infantil, en el barrio está
+            {terapias.map((n) => (
+              <> <a href={`/${n.category}/${n.slug}/`} class="text-brand-600 font-medium">{n.name}</a></>
+            ))}.
           </p>
         )}
       </section>

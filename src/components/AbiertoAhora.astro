@@ -5,7 +5,7 @@
 // build (un sitio estático se generaría con la hora del deploy). El componente pinta un hueco con el
 // horario normalizado en un atributo y el script global (src/scripts/abierto-ahora.ts) lo resuelve en
 // el navegador. Sin JavaScript queda el texto neutro «Horario», nunca un estado equivocado.
-import { horarioSemanaISO } from "@/lib/directory";
+import { horarioSemanaCompacto } from "@/lib/directory";
 import type { Negocio } from "@/lib/directory";
 
 interface Props {
@@ -15,20 +15,23 @@ interface Props {
 }
 
 const { negocio, compacto = false } = Astro.props;
-const semana = horarioSemanaISO(negocio);
+// Formato compacto: el JSON con corchetes y comillas sumaba ~101 KB de atributos solo en /directorio/.
+const semana = horarioSemanaCompacto(negocio);
 ---
 
 {semana && (
   <span
     data-abierto-ahora
-    data-horario={JSON.stringify(semana)}
+    data-horario={semana}
     class:list={[
-      "js-abierto inline-flex items-center gap-1.5 rounded-full bg-warm-100 text-gray-500",
-      compacto ? "text-[11px] font-medium px-2 py-0.5" : "text-xs font-medium px-2.5 py-1",
+      // `min-w` reserva el ancho del texto más largo («Abierto · hasta 21:30»): sin él, al pasar de
+      // «Horario» al estado real la fila se reajustaba y el cambio se veía como un salto (CLS).
+      "js-abierto inline-flex items-center justify-center gap-1.5 rounded-full bg-warm-100 text-gray-500 text-center",
+      compacto ? "text-[11px] font-medium px-2 py-0.5 min-w-[8.5rem]" : "text-xs font-medium px-2.5 py-1 min-w-[9.5rem]",
     ]}
-    title="Calculado con el horario que el negocio publica en Google"
+    title="Calculado con el horario habitual que el negocio publica en Google. No incluye festivos ni cierres por vacaciones."
   >
     <span class="js-abierto-punto w-1.5 h-1.5 rounded-full bg-gray-400 shrink-0"></span>
-    <span class="js-abierto-texto">Horario</span>
+    <span class="js-abierto-texto" aria-live="polite">Horario</span>
   </span>
 )}
