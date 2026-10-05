@@ -35,13 +35,43 @@ import os
 import sys
 import time
 import unicodedata
+import urllib.error
+import urllib.parse
+import urllib.request
 from pathlib import Path
 
-import requests
-from dotenv import load_dotenv
+# Sin dependencias externas a propósito: antes usaba `requests` + `python-dotenv`, y en la máquina de
+# trabajo ese Python no está disponible (el runtime del harness no trae requests y el venv alternativo
+# está bloqueado por política de aplicaciones). Con la stdlib el script corre en cualquier Python ≥3.8.
 
 ROOT = Path(__file__).resolve().parent.parent
-load_dotenv(ROOT / ".env")
+
+# En Windows la consola usa cp1252 y el script imprime flechas y acentos: sin esto revienta con
+# UnicodeEncodeError antes incluso de lanzar el actor.
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
+
+def _load_env_file(path: Path) -> None:
+    """Carga un .env mínimo (clave=valor, ignora comentarios y comillas) sin python-dotenv."""
+    if not path.exists():
+        return
+    for linea in path.read_text(encoding="utf-8").splitlines():
+        linea = linea.strip()
+        if not linea or linea.startswith("#") or "=" not in linea:
+            continue
+        clave, valor = linea.split("=", 1)
+        clave = clave.strip()
+        valor = valor.strip().strip('"').strip("'")
+        # No pisar lo que ya venga del entorno (permite inyectar el token sin tocar ficheros).
+        os.environ.setdefault(clave, valor)
+
+
+_load_env_file(ROOT / ".env")
+_load_env_file(Path.home() / "chefbusiness-prospecting" / ".env")
 
 APIFY_TOKEN = os.environ.get("APIFY_TOKEN")
 if not APIFY_TOKEN:
@@ -75,18 +105,28 @@ def fmt_hours(opening) -> str | None:
     return " · ".join(partes) if partes else None
 
 
+# ----------------------------- HTTP (stdlib) ------------------------------- #
+def _get_json(url: str, params: dict, timeout: int = 60):
+    qs = urllib.parse.urlencode(params)
+    with urllib.request.urlopen(f"{url}?{qs}", timeout=timeout) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def _post_json(url: str, params: dict, payload: dict, timeout: int = 60):
+    qs = urllib.parse.urlencode(params)
+    data = json.dumps(payload).encode("utf-8")
+    req = urllib.request.Request(
+        f"{url}?{qs}", data=data, headers={"Content-Type": "application/json"}, method="POST"
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
 # ----------------------------- Apify -------------------------------------- #
 def run_actor(run_input: dict, wait_secs: int = 600) -> tuple[list, dict]:
     """Lanza el actor, espera, y devuelve (items, stats). stats incluye coste."""
     print(f"  → lanzando actor {ACTOR} …")
-    r = requests.post(
-        f"{API}/acts/{ACTOR}/runs",
-        params={"token": APIFY_TOKEN},
-        json=run_input,
-        timeout=30,
-    )
-    r.raise_for_status()
-    run = r.json()["data"]
+    run = _post_json(f"{API}/acts/{ACTOR}/runs", {"token": APIFY_TOKEN}, run_input, timeout=30)["data"]
     run_id, ds_id = run["id"], run["defaultDatasetId"]
     print(f"    run id: {run_id}")
 
@@ -95,33 +135,26 @@ def run_actor(run_input: dict, wait_secs: int = 600) -> tuple[list, dict]:
     while status in ("READY", "RUNNING") and waited < wait_secs:
         time.sleep(5)
         waited += 5
-        s = requests.get(f"{API}/actor-runs/{run_id}",
-                         params={"token": APIFY_TOKEN}, timeout=30).json()["data"]
+        s = _get_json(f"{API}/actor-runs/{run_id}", {"token": APIFY_TOKEN}, timeout=30)["data"]
         status = s["status"]
         print(f"    … {status} ({waited}s)")
 
-    info = requests.get(f"{API}/actor-runs/{run_id}",
-                        params={"token": APIFY_TOKEN}, timeout=30).json()["data"]
+    info = _get_json(f"{API}/actor-runs/{run_id}", {"token": APIFY_TOKEN}, timeout=30)["data"]
     stats = {
         "status": info["status"],
         "usd": info.get("usageTotalUsd"),
         "computeUnits": (info.get("stats") or {}).get("computeUnits"),
     }
 
-    items = requests.get(f"{API}/datasets/{ds_id}/items",
-                         params={"token": APIFY_TOKEN, "clean": "true"},
-                         timeout=60).json()
+    items = _get_json(f"{API}/datasets/{ds_id}/items", {"token": APIFY_TOKEN, "clean": "true"}, timeout=60)
     return items, stats
 
 
 def fetch_run_items(run_id: str) -> tuple[list, dict]:
     """Re-usa los resultados de un run YA pagado (sin re-crawlear → gratis)."""
-    info = requests.get(f"{API}/actor-runs/{run_id}",
-                        params={"token": APIFY_TOKEN}, timeout=30).json()["data"]
+    info = _get_json(f"{API}/actor-runs/{run_id}", {"token": APIFY_TOKEN}, timeout=30)["data"]
     ds_id = info["defaultDatasetId"]
-    items = requests.get(f"{API}/datasets/{ds_id}/items",
-                         params={"token": APIFY_TOKEN, "clean": "true"},
-                         timeout=60).json()
+    items = _get_json(f"{API}/datasets/{ds_id}/items", {"token": APIFY_TOKEN, "clean": "true"}, timeout=60)
     stats = {"status": info["status"], "usd": 0.0, "computeUnits": 0.0}
     return items, stats
 
@@ -143,6 +176,15 @@ def select_targets(negocios, args):
     if args.limit:
         targets = targets[: args.limit]
     return targets
+
+
+def _amenities(place: dict, grupo: str) -> dict:
+    """Aplana una categoría de additionalInfo ('Opciones de servicio', 'Accesibilidad'…) a dict."""
+    out = {}
+    for item in ((place.get("additionalInfo") or {}).get(grupo) or []):
+        if isinstance(item, dict):
+            out.update(item)
+    return out
 
 
 def build_diff(n: dict, place: dict, refresh_horario: bool,
@@ -170,13 +212,36 @@ def build_diff(n: dict, place: dict, refresh_horario: bool,
     loc = place.get("location") or {}
     setif("lat", loc.get("lat"))
     setif("lng", loc.get("lng"))
-    # Amenities reales de Google (additionalInfo > Opciones de servicio)
-    so = {}
-    for item in ((place.get("additionalInfo") or {}).get("Opciones de servicio") or []):
-        so.update(item)
+    # Amenities reales de Google (additionalInfo). REGLA CLAVE: la ausencia de un amenity en el
+    # scrape NO prueba que no exista (Google lista unos y omite otros), así que aquí solo se
+    # ESCRIBE en positivo: nada de poner False encima de un True ya verificado. (Antes se hacía
+    # bool(so.get(...)) y una pasada bajó terraza de 39 a 27 fichas.)
+    def setsi_true(key, val):
+        if val is True and n.get(key) is not True:
+            diff[key] = True
+
+    so = _amenities(place, "Opciones de servicio")
     if so:
-        setif("terraza", bool(so.get("Asientos al aire libre")))
-        setif("delivery", bool(so.get("Entrega a domicilio")))
+        setsi_true("terraza", so.get("Asientos al aire libre") is True)
+        setsi_true("delivery", so.get("Entrega a domicilio") is True)
+    acc = _amenities(place, "Accesibilidad")
+    if acc and any(bool(v) for v in acc.values()):
+        setsi_true("accesibilidad", True)
+    serv = _amenities(place, "Servicios")
+    if serv.get("Wi-Fi") is True:
+        setsi_true("wifi", True)
+    aparc = _amenities(place, "Aparcamiento")
+    if aparc and any(bool(v) for v in aparc.values()):
+        setsi_true("aparcamiento", True)
+    # Horario: el actor lo devuelve estructurado por día (día en español + horas en formato Google).
+    # Se guarda tal cual porque es más fiable que el texto compacto y permite traducir a ISO sin
+    # adivinar; el campo visible `horario` se refresca además con el formato compacto de siempre.
+    semanal = place.get("openingHours")
+    if isinstance(semanal, list) and semanal:
+        limpio = [{"dia": d.get("day"), "horas": d.get("hours")} for d in semanal
+                  if isinstance(d, dict) and d.get("day")]
+        if limpio:
+            setif("horarioSemanal", limpio)
     if refresh_horario:
         h = fmt_hours(place.get("openingHours"))
         setif("horario", h)
@@ -184,7 +249,13 @@ def build_diff(n: dict, place: dict, refresh_horario: bool,
 
 
 def match_item(n: dict, items: list) -> dict | None:
-    """Empareja un negocio con el item de Apify (por searchString o por nombre)."""
+    """Empareja un negocio con el item de Apify (por placeId, searchString o nombre)."""
+    # 0) por placeId (modo --by-placeid): identidad exacta, sin ambigüedad de nombres
+    pid = n.get("placeId")
+    if pid:
+        for it in items:
+            if it.get("placeId") == pid:
+                return it
     target_q = norm(f"{n['name']}, {n.get('address','')}")
     nm = norm(n["name"])
     # 1) por searchString exacto del query
@@ -210,13 +281,20 @@ def mode_enrich(negocios, args):
     queries = [f"{n['name']}, {n.get('address','')}" for n in targets]
 
     run_input = {
-        "searchStringsArray": queries,
-        "maxCrawledPlacesPerSearch": 1,
         "language": "es",
         "maxImages": 0,            # las fotos van por fetch_places_photos.py
         "scrapeReviewsPersonalData": False,
         "skipClosedPlaces": False,
     }
+    # Con --by-placeid se crawlean EXACTAMENTE las fichas pedidas (match por placeId, sin
+    # búsquedas por texto): más preciso y más barato que una búsqueda "nombre, dirección" por ficha.
+    place_ids = [t["placeId"] for t in targets if t.get("placeId")]
+    if args.by_placeid and place_ids:
+        run_input["placeIds"] = place_ids
+        print(f"  crawl de {len(place_ids)} placeId exactos")
+    else:
+        run_input["searchStringsArray"] = queries
+        run_input["maxCrawledPlacesPerSearch"] = 1
     if args.location_bias:
         # constriñe la búsqueda al barrio → evita matchear fichas corporativas globales
         run_input["locationQuery"] = args.location or DEFAULT_LOCATION
@@ -330,6 +408,8 @@ def main():
     p.add_argument("--refresh-contacto", action="store_true",
                    help="(enrich) phone/website: el dato de Google manda (pisa los inventados)")
     p.add_argument("--from-run", help="(enrich) re-usa un run de Apify ya hecho (gratis)")
+    p.add_argument("--by-placeid", action="store_true",
+                   help="(enrich) crawlea por placeId exacto (más preciso y barato que buscar por texto)")
     p.add_argument("--write", action="store_true",
                    help="(enrich) persiste en negocios.json (por defecto dry-run)")
     p.add_argument("--search", help="(discover) un término a buscar")

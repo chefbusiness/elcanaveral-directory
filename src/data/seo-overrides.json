@@ -192,9 +192,27 @@
       "h1": "Talleres y Automoción cerca de El Cañaveral"
     },
     "servicios-profesionales": {
-      "title": "Abogados, gestorías y asesorías en El Cañaveral",
-      "description": "Abogados, asesoría fiscal y gestorías en El Cañaveral y Vicálvaro. Servicios profesionales de confianza con direcciones, horarios y reseñas.",
-      "h1": "Servicios Profesionales en El Cañaveral"
+      "title": "Servicios profesionales en El Cañaveral: estanco, abogados y asesoría",
+      "h1": "Servicios profesionales en El Cañaveral",
+      "description": "Los servicios profesionales de El Cañaveral y alrededores: estanco (tabaco, sellos y lotería), abogados y asesoría fiscal, con horarios, teléfono y reseñas reales de Google.",
+      "intro": [
+        "En El Cañaveral y su entorno el directorio recoge <strong>4 servicios profesionales</strong>: el <a href=\"/servicios-profesionales/estanco-el-canaveral/\">Estanco El Cañaveral</a> (tabaco, sellos, <strong>lotería y apuestas del Estado</strong> y recargas de teléfono), <a href=\"/servicios-profesionales/abogados-el-canaveral/\">Abogados El Cañaveral</a> (inmuebles, familia y derecho laboral) y <a href=\"/servicios-profesionales/garcia-asociados-asesoria/\">García y Asociados Asesoría</a> (fiscal, contable y nóminas) en Vicálvaro. Para trámites del día a día también tienes los <a href=\"/servicios-publicos/\">servicios públicos</a>.",
+        "El estanco abre <strong>de lunes a viernes de 9:00 a 14:00 y de 17:00 a 20:00</strong> y los <strong>sábados de 9:30 a 14:00</strong>; los domingos cierra. Las asesorías trabajan en horario de oficina (9:00-14:00 y 16:00-19:00). Abajo tienes las fichas con dirección, teléfono y valoraciones reales."
+      ],
+      "faq": [
+        {
+          "q": "¿Dónde hay un estanco en El Cañaveral?",
+          "a": "El Estanco El Cañaveral está en el propio barrio y abre de lunes a viernes de 9:00 a 14:00 y de 17:00 a 20:00, y los sábados de 9:30 a 14:00 (domingos cerrado). Además de tabaco vende sellos, recargas de teléfono y Loterías y Apuestas del Estado. En Madrid, el punto de venta de tabaco más cercano a tu calle se puede consultar en el localizador oficial de estancos del Comisionado para el Mercado de Tabacos."
+        },
+        {
+          "q": "¿Qué servicios profesionales hay en el barrio?",
+          "a": "Abogados El Cañaveral (asesoramiento en compraventa de inmuebles, derecho de familia y laboral) y, a pocos minutos en Vicálvaro, García y Asociados Asesoría (fiscal, contable, nóminas y declaraciones). Para temas de administración pública, trámites y empadronamiento tienes la sección de servicios públicos."
+        },
+        {
+          "q": "¿Los servicios profesionales abren por la tarde?",
+          "a": "Sí: las asesorías y el despacho de abogados trabajan en jornada partida (9:00-14:00 y 16:00-19:00) y el estanco también abre por la tarde de lunes a viernes (17:00-20:00). Los sábados solo el estanco, por la mañana."
+        }
+      ]
     },
     "moda": {
       "title": "Tiendas de ropa en El Cañaveral y Vicálvaro",

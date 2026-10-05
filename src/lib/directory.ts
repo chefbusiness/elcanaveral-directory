@@ -20,6 +20,9 @@ export interface Negocio {
   images?: string[];
   horario?: string;
   googleMapsUrl?: string;
+  // Horario estructurado por día tal como lo publica Google (enriquecimiento con Apify):
+  // [{ dia: "lunes", horas: "9 AM to 8 PM" }, { dia: "domingo", horas: "Cerrado" }]
+  horarioSemanal?: { dia?: string; horas?: string }[];
   // Reputacion
   rating?: number;
   numReviews?: number;
@@ -51,7 +54,14 @@ export interface Negocio {
   accesibilidad?: boolean;
   wifi?: boolean;
   // Catch-all
-  [key: string]: string | string[] | boolean | number | Record<string, string> | undefined;
+  [key: string]:
+    | string
+    | string[]
+    | boolean
+    | number
+    | Record<string, string>
+    | { dia?: string; horas?: string }[]
+    | undefined;
 }
 
 export interface Categoria {
@@ -117,7 +127,15 @@ function diaDelFragmento(fragmento: string): string[] {
     .map((t) => t.replace(/[.:;,]+$/, "").trim())
     .filter(Boolean);
 }
-export function abreDomingo(negocio: { horario?: string }): boolean {
+export function abreDomingo(negocio: { horario?: string; horarioSemanal?: { dia?: string; horas?: string }[] }): boolean {
+  // Si tenemos el horario estructurado por día (enriquecimiento de Apify), es la fuente fiable:
+  // no hay que interpretar texto. "Cerrado" en el domingo = cerrado.
+  const semanal = negocio.horarioSemanal;
+  if (Array.isArray(semanal) && semanal.length > 0) {
+    const dom = semanal.find((d) => /^dom/i.test((d.dia || "").trim()));
+    if (dom) return !!dom.horas && !/cerrado|closed/i.test(dom.horas);
+    return false;
+  }
   const horario = (negocio.horario || "").trim();
   if (!horario) return false;
   for (const fragmento of horario.split(SEPARADOR).map((s) => s.trim())) {
@@ -190,7 +208,35 @@ function diasDelFragmento(fragmento: string): string[] | null {
 }
 
 /** Horario libre -> ISO (varias cadenas). undefined si no se puede traducir con seguridad. */
-export function horarioISO(negocio: { horario?: string }): string[] | undefined {
+export function horarioISO(negocio: {
+  horario?: string;
+  horarioSemanal?: { dia?: string; horas?: string }[];
+}): string[] | undefined {
+  // 1) Preferencia: el horario ESTRUCTURADO por día del enriquecimiento de Apify (viene directo del
+  // perfil de Google, con el día cerrado ya marcado): no hay que adivinar nada leyendo texto.
+  const semanal = negocio.horarioSemanal;
+  if (Array.isArray(semanal) && semanal.length > 0) {
+    const salida: string[] = [];
+    for (const d of semanal) {
+      const dia = DIAS_ISO[(d.dia || "").trim().toLowerCase()];
+      const horas = (d.horas || "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+      if (!dia || !horas || /cerrado|closed/i.test(horas)) continue;
+      const partes: string[] = [];
+      for (const fr of horas.split(/,\s*/).map((s) => s.trim()).filter(Boolean)) {
+        const m = /^(.+?)\s*(?:-|\bto\b|\ba\b)\s*(.+)$/i.exec(fr);
+        if (!m) return undefined;
+        const pm = /pm|p\.?\s?m/i.test(m[1]) || /pm|p\.?\s?m/i.test(m[2]);
+        const ini = horaAIso(m[1], pm);
+        const fin = horaAIso(m[2], pm);
+        if (!ini || !fin) return undefined;
+        partes.push(`${ini}-${fin}`);
+      }
+      if (partes.length) salida.push(`${dia} ${partes.join(",")}`);
+    }
+    return salida.length ? salida : undefined;
+  }
+
+  // 2) Texto libre (formato español o el compacto de Google).
   const limpiar = (s: string) => s.replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
   const limpio = limpiar(negocio.horario || "");
   if (!limpio) return undefined;
