@@ -1,6 +1,6 @@
 # HANDOFF — elcanaveral.info
 
-> Hoja de arranque y estado del proyecto. Última actualización: **2026-10-05 (auditoría GSC #5 — crecimiento y oportunidades de contenido)**.
+> Hoja de arranque y estado del proyecto. Última actualización: **2026-10-05 (sesión d — Organization global, zona×categoría, horario ISO y enriquecimiento real de fichas)**.
 > 👉 Trilogía de contexto: `handoff.md` (estado/sesiones) · `memoria.md` (contexto, entorno y límites — leer
 > antes de retomar) · `roadmap.md` (hecho/pendiente priorizado). La receta de push del sandbox y el acceso
 > GSC por API están en `memoria.md`.
@@ -15,7 +15,70 @@
 | **Repo** | github.com/chefbusiness/elcanaveral-directory (privado) |
 | **Stack** | Astro 5 + Tailwind v4 + pnpm · deploy Netlify |
 | **Marca operadora** | LocalSEOAds.com · email contacto `local@elcanaveral.info` |
-| **HEAD ref** | `9023ae3` (bloque GEO + llms-full) · docs de cierre — 286 negocios, 32 guías, 10 posts, sitemap **434 URLs** · JSON-LD Organization/WebSite en home · `/llms.txt` + `/llms-full.txt` generados en build |
+| **HEAD ref** | `0ce8513` (enriquecimiento Apify + estanco) · `b0cd8b0` (Organization global, zona×categoría, horario ISO) — 286 negocios, 442 páginas, sitemap **438 URLs** · `/llms.txt` (92 enlaces) + `/llms-full.txt` generados en build |
+
+## 🔧 Sesión 2026-10-05d (DSH) — E · A · C · B · D: entidad global, datos y horarios
+
+### ✅ E · Limpieza del roadmap
+Se eliminan **5 pendientes duplicados** (los mismos items repetidos) y se reordena el backlog.
+
+### ✅ A · Organization en todo el sitio + zona×categoría (commit `b0cd8b0`)
+
+1. **`Organization` en las 442 páginas** (antes solo en la home): se mueve a `BaseLayout` con el mismo `@id`, así
+   que cualquier página se identifica como publicada por la misma entidad y no hay 442 marcas distintas. En la home
+   se quita el duplicado y queda `WebSite`. Verificado: **exactamente 1 nodo por página**, mismo `@id` en todas.
+2. **P6 · zona×categoría**: las ~60 páginas de zona+categoría solo decían el nombre de la categoría, y algunas **ya
+   reciben impresiones** (`/zona/el-canaveral/supermercados/`: 120i, 3 clics, CTR 2,5 %). Ahora llevan **intro y 3
+   preguntas calculadas de los datos** (cuántos hay, el mejor valorado por nota y volumen, cuántos abren el domingo
+   o tienen terraza) + `FAQPage`. Sirve para todas las combinaciones sin mantenimiento.
+
+### ✅ C · `openingHours` en ISO (mismo commit)
+
+El horario era texto libre y **Google lo ignoraba**. Nuevo `horarioISO()` que traduce los dos formatos (español
+compacto y el de Google), rangos (`S-D`, `L-D`), franjas múltiples (`9:00-14:00 y 16:00-19:30`), formato 12 h
+(`10 AM to 5 PM`) y cruces de medianoche (`07:30-01:00`). **Es conservador**: si un fragmento no se entiende, no se
+publica horario para ese negocio (mejor ausente que equivocado).
+
+**Tres bugs propios detectados con trazas durante la implementación:** (1) el regex de franja era *greedy* y se
+comía la primera mitad de «do 9 AM to 11 PM»; (2) faltaba la abreviatura `sá` de Google y un día no reconocido
+heredaba en silencio los días del fragmento anterior (ahora descarta); (3) la alternativa `a` del separador casaba
+con la **A de AM** y partía «9 AM» en «9»/«M to 11 PM», así que todos los horarios en formato Google se caían.
+Tras arreglarlos: **274 de 277 fichas con horario tienen `openingHours` ISO (99 %), 0 textos inválidos**.
+
+### ✅ B · Enriquecimiento real de las fichas con Apify (commit `0ce8513`) — coste **1,40 $**
+
+277 fichas actualizadas crawleando **283 placeId exactos** (match por identidad, sin búsquedas por texto; 6 sin
+match, los que ya están marcados en `VERIFICAR-EN-PERSONA.md`). Lo que cambia el sitio:
+
+| Campo | Antes | Ahora |
+|---|---|---|
+| `horarioSemanal` (horario estructurado por día, con los días cerrados) | 0 | **265** |
+| `openingHours` ISO en el schema | 122 | **274** (99 % de las que tienen horario) |
+| `accesibilidad` | 1 | **200** |
+| `delivery` | 16 | **34** |
+| `terraza` | 20 | **27** |
+| `wifi` | 2 | **10** |
+| Fichas en `/abiertos-los-domingos/` | 43 | **85** (12 categorías; panaderías 4 → 11, restaurantes 24 → 33) |
+
+Además se **limpian 162 valores `false`** que venían de una pasada anterior y eran basura: la ausencia de un
+amenity en el scrape **no prueba que no exista**, así que el script ahora solo escribe en positivo (nunca pisa un
+`true` ya verificado). `scripts/apify_enrich.py` pasa a ser ejecutable en esta máquina: **solo stdlib** (usaba
+`requests` + `python-dotenv`, que el Python disponible no tiene), **stdout en UTF-8** (en Windows reventaba antes de
+lanzar el actor), nuevo **`--by-placeid`** y mapeo de amenities + horario semanal.
+
+### ✅ D · Bloque del estanco (mismo commit)
+
+`/servicios-profesionales/` tenía 4 fichas y ningún texto, y «estanco el cañaveral» son **1.300 búsquedas/mes con
+0 clics** (el Map Pack se lleva el clic): se añade intro + FAQ con el estanco (tabaco, sellos, lotería y recargas),
+su horario real y las asesorías. El validador de enlaces cazó y se corrigió un slug mal escrito en esa intro
+(`garcia-y-asociados` → `garcia-asociados`).
+
+### ⬜ D · Post-evento: sin fuente, no se toca
+
+**No se refrescan** los posts de Tapaveral ni de la V Carrera Popular: **no hay resultados publicados**. La web de
+los organizadores (ViBe El Cañaveral) solo tiene el anuncio previo (horarios y premios) y sus últimas noticias son
+de julio. Queda como pendiente hasta que exista fuente; **no se inventan ganadores**.
+
 
 ## 🚀 Sesión 2026-10-05b (DSH) — ejecución del plan GSC #5: P1a y P5 desplegados
 
