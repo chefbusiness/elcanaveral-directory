@@ -18,6 +18,9 @@ const fichaSeo = (seoOverrides as any).fichas?.[negocio.slug] || {};
 const schema = generateLocalBusinessSchema(negocio);
 const servicios = (negocio.servicios as string[] | undefined) || [];
 const destacados = (negocio.destacados as string[] | undefined) || [];
+const destacadosGoogle = (negocio.destacadosGoogle as string[] | undefined) || [];
+const ambiente = (negocio.ambiente as string[] | undefined) || [];
+const ofrece = (negocio.ofrece as string[] | undefined) || [];
 const especialidades = (negocio.especialidades as string[] | undefined) || [];
 const tiposCocina = (negocio.tiposCocina as string[] | undefined) || [];
 const redes = (negocio.redesSociales as Record<string, string> | undefined) || {};
@@ -223,6 +226,30 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
                   </li>
                 ))}
               </ul>
+            </div>
+          )}
+
+          <!-- Etiquetas del perfil de Google (dato de terceros: se atribuye, no se presenta como propio) -->
+          {destacadosGoogle.length > 0 && (
+            <div class="bg-white rounded-xl border border-warm-200 p-6">
+              <h2 class="font-semibold text-lg mb-1">Lo que destaca su perfil de Google</h2>
+              <p class="text-xs text-gray-400 mb-3">
+                Etiquetas que el propio negocio o Google muestran en su ficha de Google Maps. No es una
+                valoración de este directorio.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                {destacadosGoogle.slice(0, 8).map((d) => (
+                  <span class="text-sm bg-warm-100 text-gray-700 px-3 py-1 rounded-full">{d}</span>
+                ))}
+                {ambiente.length > 0 && ambiente.map((a) => (
+                  <span class="text-sm bg-brand-50 text-brand-700 px-3 py-1 rounded-full">{a}</span>
+                ))}
+              </div>
+              {ofrece.length > 0 && (
+                <p class="text-sm text-gray-500 mt-3">
+                  <span class="font-medium text-gray-700">Ofrece:</span> {ofrece.join(", ")}.
+                </p>
+              )}
             </div>
           )}
 

@@ -1,0 +1,283 @@
+---
+// Hub de afinidad «El Cañaveral con niños»: el mismo patrón que /con-perro/, pero con lo que sí
+// sostienen los datos (áreas de juegos infantiles de espacios.json, escuelas infantiles del directorio
+// y los 35 locales que declaran en Google «ideal para ir con niños»). No se afirma pediatría ni
+// servicios que no estén verificados: lo que no hay, no se dice.
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { loadNegocios, type Negocio } from "@/lib/directory";
+import espaciosData from "@/data/espacios.json";
+
+const negocios = loadNegocios();
+const espacios = espaciosData as any[];
+
+const maps = (q: string) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+
+// 1) Parques y áreas de juegos infantiles (dato propio, no de Google)
+const juegos = espacios.filter((e) => e.tipo === "infantil");
+const parques = espacios.filter((e) => e.tipo === "parque");
+
+// 2) Dónde comer con niños: solo fichas que lo declaran en su perfil
+const conNinos = negocios.filter((n) => n.ninos && n.rating && n.numReviews);
+const comerenos = conNinos.filter((n) => ["restaurantes", "cafeterias", "panaderias"].includes(n.category));
+const demas = conNinos.filter((n) => !["restaurantes", "cafeterias", "panaderias"].includes(n.category));
+
+// Ranking bayesiano (el mismo que usan las guías): evita que una nota alta con 3 reseñas lidere.
+const rank = (lista: Negocio[], tope = 8) => {
+  if (lista.length === 0) return [];
+  const C = lista.reduce((s, n) => s + (n.rating || 0), 0) / lista.length;
+  const revs = lista.map((n) => n.numReviews || 0).sort((a, b) => a - b);
+  const mid = Math.floor(revs.length / 2);
+  const m = revs.length % 2 ? revs[mid] : (revs[mid - 1] + revs[mid]) / 2 || 1;
+  return [...lista]
+    .map((n) => ({ n, s: ((n.numReviews || 0) / ((n.numReviews || 0) + m)) * (n.rating || 0) + (m / ((n.numReviews || 0) + m)) * C }))
+    .sort((a, b) => b.s - a.s)
+    .slice(0, tope)
+    .map((x) => x.n);
+};
+
+// 3) Escuelas infantiles y guarderías
+const PREESCOLAR = /preescolar|infancia|guarder|infantil/i;
+const escuelas = negocios
+  .filter((n) => n.category === "educacion" && PREESCOLAR.test(`${n.googleCategory || ""} ${n.name}`))
+  .sort((a, b) => (b.numReviews || 0) - (a.numReviews || 0));
+const tiendasBebe = negocios.filter((n) => /beb[eé]|ni[nñ]os/i.test(`${n.googleCategory || ""} ${n.name}`) && n.category !== "educacion");
+const actividades = negocios.filter((n) => n.category === "educacion" && !PREESCOLAR.test(`${n.googleCategory || ""} ${n.name}`));
+
+// 4) Salud: el centro de salud del barrio y las farmacias (sin inventar pediatría)
+const salud = negocios.filter((n) => n.category === "salud" && /centro de salud|m[eé]dico|farmac/i.test(n.googleCategory || ""));
+
+const hospital = negocios.find((n) => /hospital|urgencias/i.test(n.name));
+
+const faq = [
+  {
+    q: "¿Dónde hay parques infantiles en El Cañaveral?",
+    a: `El barrio tiene al menos ${juegos.length} áreas de juegos infantiles repartidas entre sus zonas, además de ${parques.length} parques. En esta página las tienes con su ubicación y enlace al mapa; el barrio sigue creciendo y se van abriendo nuevas.`,
+  },
+  {
+    q: "¿Qué restaurantes y cafeterías son recomendables para ir con niños?",
+    a: `Hay ${conNinos.length} locales del directorio que declaran en su perfil de Google que son «ideales para ir con niños»: ${comerenos.slice(0, 6).map((n) => n.name).join(", ")}${comerenos.length > 6 ? " y otros más" : ""}. Todos con su ficha, teléfono y horario real.`,
+  },
+  {
+    q: "¿Cuántas escuelas infantiles hay en el barrio?",
+    a: `El directorio recoge ${escuelas.length} centros de educación infantil y preescolar en El Cañaveral y alrededores, entre públicos, autonómicos y privados. La admisión en los centros públicos y sostenidos con fondos públicos se solicita en los plazos de la Comunidad de Madrid (normalmente en primavera); en los privados se contacta directamente con cada centro.`,
+  },
+  {
+    q: "¿Hay pediatra en El Cañaveral?",
+    a: "La atención pediátrica de la sanidad pública se presta en los centros de salud de referencia del barrio y de Vicálvaro, y las urgencias infantiles más cercanas están en los hospitales del entorno. En el directorio tienes los centros de salud y farmacias del barrio; para asignación de pediatra concreto, lo mejor es consultar en tu centro de salud o en la web de la Comunidad de Madrid.",
+  },
+  {
+    q: "¿Qué hacer con niños un fin de semana en el barrio?",
+    a: "Lo más socorrido: los parques y áreas de juegos (gratis y al aire libre), y comer o merendar en alguno de los locales que se llevan bien con niños. Para planes algo más largos, en la sección de escapadas tienes ideas a menos de una hora con filtro por afinidad.",
+  },
+];
+
+const base = "https://www.elcanaveral.info";
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "El Cañaveral con niños", item: `${base}/con-ninos/` },
+  ],
+};
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Locales de El Cañaveral ideales para ir con niños",
+  numberOfItems: comerenos.length,
+  itemListElement: comerenos.slice(0, 20).map((n, i) => ({ "@type": "ListItem", position: i + 1, name: n.name, url: `${base}/${n.category}/${n.slug}/` })),
+};
+
+const lista = (l: Negocio[], tope = 8) => rank(l, tope);
+---
+
+<BaseLayout
+  title="El Cañaveral con niños: parques infantiles, escuelas y dónde comer"
+  description="Guía de El Cañaveral con niños: áreas de juegos infantiles y parques, escuelas infantiles y guarderías, locales «ideales para ir con niños» y los servicios de salud del barrio."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">El Cañaveral con niños</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+          El Cañaveral con niños 👶
+        </h1>
+        <p class="text-gray-600 leading-relaxed mt-4 text-lg">
+          El Cañaveral es un barrio nuevo: las obras del PAU empezaron en 2013 y los primeros vecinos llegaron
+          en 2016. Hoy tiene 27.014 personas empadronadas y más de la mitad de las 14.000 viviendas previstas
+          son de algún régimen de protección. Aquí tienes lo práctico para el día a día con niños: dónde jugar,
+          dónde comer sin agobios, las escuelas infantiles del barrio y los servicios de salud.
+        </p>
+      </header>
+
+      <!-- Parques y juegos infantiles -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🛝 Parques y áreas de juegos infantiles</h2>
+        <p class="text-gray-500 text-sm mb-5">Zonas con columpios y juegos repartidas por el barrio. Entrada libre.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {juegos.map((e: any) => (
+            <div class="bg-white rounded-xl border border-warm-200 p-5">
+              <h3 class="font-bold text-brand-900 leading-snug">{e.name}</h3>
+              <p class="text-xs text-gray-500 mt-1">📍 {e.address}</p>
+              <a href={maps(`${e.name} ${e.address}`)} target="_blank" rel="noopener" class="mt-3 inline-block text-sm font-medium text-brand-600 hover:text-brand-700">
+                Ver en el mapa &rarr;
+              </a>
+            </div>
+          ))}
+        </div>
+        {parques.length > 0 && (
+          <>
+            <h3 class="text-lg font-semibold text-brand-900 mt-8 mb-3">Parques del barrio</h3>
+            <div class="grid sm:grid-cols-2 gap-4">
+              {parques.map((e: any) => (
+                <div class="bg-white rounded-xl border border-warm-200 p-5">
+                  <h4 class="font-bold text-brand-900 leading-snug">{e.name}</h4>
+                  <p class="text-xs text-gray-500 mt-1">📍 {e.address}</p>
+                  <a href={maps(`${e.name} ${e.address}`)} target="_blank" rel="noopener" class="mt-3 inline-block text-sm font-medium text-brand-600 hover:text-brand-700">
+                    Ver en el mapa &rarr;
+                  </a>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+        <div class="bg-warm-50 border border-warm-100 rounded-xl p-4 mt-5 text-sm text-gray-600">
+          ¿Falta un parque o un área de juegos? Escríbenos a
+          <a href="mailto:local@elcanaveral.info" class="text-brand-600 font-medium">local@elcanaveral.info</a>
+          y lo añadimos. Tienes todos los <a href="/espacios-publicos/" class="text-brand-600 font-medium">espacios públicos</a> del barrio.
+        </div>
+      </section>
+
+      <!-- Dónde comer con niños -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🍽️ Dónde comer con niños</h2>
+        <p class="text-gray-500 text-sm mb-5">
+          Locales que declaran en su perfil de Google ser «ideales para ir con niños», ordenados con la misma
+          puntuación que las guías del barrio (nota media ponderada por número de reseñas).
+        </p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {lista(comerenos).map((n) => (
+            <div class="bg-white rounded-xl border border-warm-200 p-5">
+              <div class="flex items-start justify-between gap-2">
+                <h3 class="font-bold text-brand-900 leading-snug">
+                  <a href={`/${n.category}/${n.slug}/`} class="hover:text-brand-600">{n.name}</a>
+                </h3>
+                <span class="shrink-0 flex items-center gap-1 text-sm">
+                  <span class="text-yellow-400">&#9733;</span>
+                  <span class="font-semibold text-gray-700">{n.rating}</span>
+                </span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">{n.googleCategory} · {n.zonaName} · {n.numReviews} reseñas</p>
+              {n.horario && <p class="text-xs text-gray-500 mt-1">🕘 {n.horario}</p>}
+              <div class="flex items-center gap-4 mt-3 text-sm">
+                <a href={`/${n.category}/${n.slug}/`} class="font-medium text-brand-600 hover:text-brand-700">Ver ficha &rarr;</a>
+                {n.phone && <a href={`tel:${n.phone}`} class="text-gray-500 hover:text-brand-600">Llamar</a>}
+              </div>
+            </div>
+          ))}
+        </div>
+        {demas.length > 0 && (
+          <p class="text-sm text-gray-600 mt-5">
+            También declaran ser aptos para niños: {demas.slice(0, 6).map((n) => n.name).join(", ")}
+            {demas.length > 6 ? " y otros más" : ""}. Fíjate en el filtro
+            <a href="/directorio/" class="text-brand-600 font-medium">«para ir con niños» del directorio</a>.
+          </p>
+        )}
+      </section>
+
+      <!-- Escuelas infantiles -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🏫 Escuelas infantiles y guarderías</h2>
+        <p class="text-gray-500 text-sm mb-5">Los centros de educación infantil y preescolar del barrio y alrededores.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {escuelas.map((n) => (
+            <div class="bg-white rounded-xl border border-warm-200 p-5">
+              <h3 class="font-bold text-brand-900 leading-snug">
+                <a href={`/${n.category}/${n.slug}/`} class="hover:text-brand-600">{n.name}</a>
+              </h3>
+              <p class="text-xs text-gray-500 mt-1">{(n.googleCategory as string) || "Educación infantil"} · {n.zonaName}{n.numReviews ? ` · ${n.numReviews} reseñas` : ""}</p>
+              {n.address && <p class="text-xs text-gray-500 mt-1">📍 {n.address}</p>}
+              <a href={`/${n.category}/${n.slug}/`} class="mt-3 inline-block text-sm font-medium text-brand-600 hover:text-brand-700">Ver ficha &rarr;</a>
+            </div>
+          ))}
+        </div>
+        {actividades.length > 0 && (
+          <p class="text-sm text-gray-600 mt-5">
+            Para extraescolares, el directorio tiene también {actividades.length} academias y centros de clases
+            (idiomas y música) en el barrio y su entorno: {actividades.slice(0, 4).map((n) => n.name).join(", ")}
+            {actividades.length > 4 ? "…" : ""}.
+          </p>
+        )}
+        {tiendasBebe.length > 0 && (
+          <p class="text-sm text-gray-600 mt-2">
+            Y para comprar, {tiendasBebe.map((n) => n.name).join(" y ")} ({tiendasBebe.map((n) => n.zonaName).join(", ")}).
+          </p>
+        )}
+      </section>
+
+      <!-- Salud -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-brand-900 mb-1">🏥 Salud y farmacias</h2>
+        <p class="text-gray-500 text-sm mb-5">Lo que hay en el barrio para las urgencias del día a día.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {salud.map((n) => (
+            <div class="bg-white rounded-xl border border-warm-200 p-5">
+              <h3 class="font-bold text-brand-900 leading-snug">
+                <a href={`/${n.category}/${n.slug}/`} class="hover:text-brand-600">{n.name}</a>
+              </h3>
+              <p class="text-xs text-gray-500 mt-1">{n.googleCategory} · {n.zonaName}</p>
+              {n.horario && <p class="text-xs text-gray-500 mt-1">🕘 {n.horario}</p>}
+              <a href={`/${n.category}/${n.slug}/`} class="mt-3 inline-block text-sm font-medium text-brand-600 hover:text-brand-700">Ver ficha &rarr;</a>
+            </div>
+          ))}
+        </div>
+        <p class="text-sm text-gray-600 mt-5">
+          Para la farmacia de guardia de hoy tienes la guía
+          <a href="/farmacias-de-guardia/" class="text-brand-600 font-medium">farmacias de guardia y urgencias 24 h</a>
+          {hospital ? <> y el <a href={`/${hospital.category}/${hospital.slug}/`} class="text-brand-600 font-medium">hospital veterinario 24 h</a> si el que se pone malo es el perro</> : null}.
+        </p>
+      </section>
+
+      <!-- FAQ -->
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-5">Preguntas frecuentes</h2>
+        <div class="space-y-3">
+          {faq.map((f) => (
+            <details class="bg-white rounded-xl border border-warm-200 p-4 group">
+              <summary class="font-semibold text-gray-800 cursor-pointer list-none flex items-center justify-between">
+                {f.q}
+                <span class="text-brand-400 group-open:rotate-180 transition-transform">&#9662;</span>
+              </summary>
+              <p class="text-gray-600 text-sm mt-3 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <p class="text-xs text-gray-400 mt-8">
+        Los datos de locales y reseñas provienen de los perfiles de Google de cada negocio; los parques y áreas
+        de juegos, del propio directorio. Los plazos de admisión y la asignación de pediatra dependen de la
+        Comunidad de Madrid y de cada centro: confirma siempre la información con el centro o tu centro de salud.
+        Si falta algo del barrio, escríbenos a local@elcanaveral.info.
+      </p>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>

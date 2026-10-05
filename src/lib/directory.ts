@@ -23,6 +23,10 @@ export interface Negocio {
   // Horario estructurado por día tal como lo publica Google (enriquecimiento con Apify):
   // [{ dia: "lunes", horas: "9 AM to 8 PM" }, { dia: "domingo", horas: "Cerrado" }]
   horarioSemanal?: { dia?: string; horas?: string }[];
+  // Etiquetas del perfil de Google del negocio («Buen café», «Buenos productos frescos»). Van en su
+  // propio campo, separadas de `destacados` (que es texto editorial nuestro): mezclarlas hacía que
+  // una etiqueta genérica de Google sustituyera una descripción escrita a mano.
+  destacadosGoogle?: string[];
   // Reputacion
   rating?: number;
   numReviews?: number;

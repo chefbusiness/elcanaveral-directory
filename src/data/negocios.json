@@ -102,7 +102,10 @@
       "Ofertas semanales"
     ],
     "destacados": [
-      "Buenos productos frescos"
+      "Precios muy competitivos",
+      "Amplia gama de productos para el hogar",
+      "Apoyo al comercio local",
+      "Atención personalizada"
     ],
     "horario": "L-D 09:30-21:30",
     "address": "Avenida Miguel Delibes 10, 28052 Madrid",
@@ -155,6 +158,9 @@
     "pagoMovil": true,
     "ofrece": [
       "Comida"
+    ],
+    "destacadosGoogle": [
+      "Buenos productos frescos"
     ]
   },
   {
@@ -182,7 +188,10 @@
       "Productos de higiene personal"
     ],
     "destacados": [
-      "Buenos productos frescos"
+      "Ubicación céntrica y de fácil acceso",
+      "Productos frescos de calidad",
+      "Atención cercana y familiar",
+      "Ideal para compras rápidas y diarias"
     ],
     "horario": "L-J 09:30-23:30, V-D 09:30-24:00",
     "address": "C. Ferenc Puskas, 245, Vicálvaro, 28052 Madrid",
@@ -230,7 +239,10 @@
     ],
     "tarjeta": true,
     "pagoMovil": true,
-    "aparcamiento": "gratis en la calle"
+    "aparcamiento": "gratis en la calle",
+    "destacadosGoogle": [
+      "Buenos productos frescos"
+    ]
   },
   {
     "slug": "coviran-plus",
@@ -256,7 +268,10 @@
       "Ofertas y promociones"
     ],
     "destacados": [
-      "Buenos productos frescos"
+      "Variedad de productos frescos",
+      "Servicio de proximidad y atención personalizada",
+      "Precios competitivos",
+      "Amplio surtido de marcas"
     ],
     "horario": "L-D 09:00-22:00",
     "address": "Calle Victoria Kent 12, 28052 Madrid",
@@ -306,7 +321,10 @@
       }
     ],
     "tarjeta": true,
-    "pagoMovil": true
+    "pagoMovil": true,
+    "destacadosGoogle": [
+      "Buenos productos frescos"
+    ]
   },
   {
     "slug": "ahorramas",
@@ -377,7 +395,10 @@
       "Ofertas y descuentos"
     ],
     "destacados": [
-      "Buenos productos frescos"
+      "Precios muy competitivos",
+      "Variedad de productos de marca propia Auchan",
+      "Ideal para compras rápidas",
+      "Ubicación conveniente"
     ],
     "horario": "L-S 09:00-22:00, D 10:00-21:00",
     "address": "Calle Anna Frank 8, 28052 Madrid",
@@ -429,7 +450,10 @@
       }
     ],
     "tarjeta": true,
-    "pagoMovil": true
+    "pagoMovil": true,
+    "destacadosGoogle": [
+      "Buenos productos frescos"
+    ]
   },
   {
     "slug": "family-mini-market",
@@ -456,7 +480,10 @@
       "Prensa y revistas"
     ],
     "destacados": [
-      "Buenos productos frescos"
+      "Horario de apertura muy amplio",
+      "Ideal para compras de última hora",
+      "Atención familiar y cercana",
+      "Variedad de productos esenciales"
     ],
     "horario": "L-D 08:00-22:00",
     "address": "Calle Mario Moreno Cantinflas 3, 28052 Madrid",
@@ -514,6 +541,9 @@
       "Comida preparada",
       "Farmacia",
       "Productos orgánicos"
+    ],
+    "destacadosGoogle": [
+      "Buenos productos frescos"
     ]
   },
   {
@@ -663,7 +693,10 @@
       "Atención personalizada"
     ],
     "destacados": [
-      "Buenos productos frescos"
+      "Excelente calidad en productos frescos",
+      "Pan recién horneado cada día",
+      "Trato amable y cercano",
+      "Limpieza y orden en el establecimiento"
     ],
     "horario": "L-V 09:00-21:00, S 09:00-21:30, D 10:00-14:30",
     "images": [
@@ -712,7 +745,10 @@
       }
     ],
     "tarjeta": true,
-    "pagoMovil": true
+    "pagoMovil": true,
+    "destacadosGoogle": [
+      "Buenos productos frescos"
+    ]
   },
   {
     "slug": "la-fruteria-de-mama",
@@ -1925,15 +1961,10 @@
       "Menú degustación"
     ],
     "destacados": [
-      "Buen café",
-      "Deliciosos postres",
-      "Deportes",
-      "Muy buena selección de cervezas",
-      "Muy buena selección de vinos",
-      "Desayuno",
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Auténtica cocina asturiana",
+      "Cachopo de gran tamaño y calidad",
+      "Arroz con bogavante exquisito",
+      "Ambiente familiar y agradable"
     ],
     "horario": "L-J 06:00-23:00, V-D 09:00-23:00",
     "tiposCocina": [
@@ -2011,6 +2042,17 @@
       "Cócteles",
       "Vino",
       "Desayunos"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Deliciosos postres",
+      "Deportes",
+      "Muy buena selección de cervezas",
+      "Muy buena selección de vinos",
+      "Desayuno",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -3833,12 +3875,10 @@
       "Bebidas variadas"
     ],
     "destacados": [
-      "Buen café",
-      "Deliciosos postres",
-      "Muy buena selección de cervezas",
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Carne de primera calidad a la brasa",
+      "Variedad de opciones para todos los paladares",
+      "Ambiente moderno y acogedor",
+      "Ideal para cenas informales"
     ],
     "horario": "L-M 13:00-23:00, X-S 13:00-23:30, D 13:00-23:00",
     "tiposCocina": [
@@ -3918,6 +3958,14 @@
       "Almuerzo",
       "Cena",
       "Postres"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Deliciosos postres",
+      "Muy buena selección de cervezas",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -3945,13 +3993,10 @@
       "Eventos deportivos en pantalla"
     ],
     "destacados": [
-      "Buen café",
-      "Muy buena selección de cervezas",
-      "Muy buena selección de vinos",
-      "Desayuno",
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Gran selección de cervezas",
+      "Terraza soleada en avenida principal",
+      "Ambiente animado y familiar",
+      "Ideal para el aperitivo o afterwork"
     ],
     "horario": "L-J 11:30-23:30, V-S 11:30-24:00, D 11:30-23:30",
     "tiposCocina": [
@@ -4027,6 +4072,15 @@
       "Comedor privado",
       "Platos saludables",
       "Vino"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Muy buena selección de cervezas",
+      "Muy buena selección de vinos",
+      "Desayuno",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -4134,9 +4188,10 @@
       "Cenas de grupo"
     ],
     "destacados": [
-      "Deportes",
-      "Muy buena selección de cervezas",
-      "Cena en solitario"
+      "Auténtica cocina madrileña",
+      "Raciones abundantes y sabrosas",
+      "Ambiente familiar y tradicional",
+      "Excelente relación calidad-precio"
     ],
     "horario": "L-S 08:00-24:00, D Cerrado",
     "tiposCocina": [
@@ -4210,6 +4265,11 @@
       "Comida en el bar",
       "Vino",
       "Servicio a la mesa"
+    ],
+    "destacadosGoogle": [
+      "Deportes",
+      "Muy buena selección de cervezas",
+      "Cena en solitario"
     ]
   },
   {
@@ -5742,9 +5802,10 @@
       "Servicio a domicilio"
     ],
     "destacados": [
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Raciones abundantes y precios económicos",
+      "Variedad de opciones turcas y fast-food",
+      "Servicio de entrega a domicilio rápido",
+      "Ideal para una comida rápida y sabrosa"
     ],
     "horario": "L 19:00-24:00, M-J 12:30-17:00,19:00-24:00, V-S 12:30-01:00, D 12:30-17:00,19:00-24:00",
     "image": "/images/negocios/mr-kebab-canaveral.webp",
@@ -5807,6 +5868,11 @@
       "Almuerzo",
       "Cena",
       "Servicio a la mesa"
+    ],
+    "destacadosGoogle": [
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -5919,9 +5985,10 @@
       "Comida para llevar"
     ],
     "destacados": [
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Auténtica cocina turca con gran variedad",
+      "Ambiente familiar y acogedor",
+      "Precios muy asequibles",
+      "Ideal para probar diferentes especialidades"
     ],
     "horario": "L-D 14:00-24:00",
     "address": "Calle de San Cipriano, 10, 28032 Madrid",
@@ -5983,6 +6050,11 @@
       "Almuerzo",
       "Cena",
       "Servicio a la mesa"
+    ],
+    "destacadosGoogle": [
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -6085,7 +6157,10 @@
       "Servicio a domicilio (online)"
     ],
     "destacados": [
-      "Buenos productos frescos"
+      "Amplia variedad de productos de marca propia",
+      "Excelente relación calidad-precio",
+      "Sección de frescos de calidad",
+      "Comida preparada lista para consumir"
     ],
     "horario": "L-S 09:00-21:30, D Cerrado",
     "address": "Avenida de Castilla, 1, 28830 San Fernando de Henares, Madrid",
@@ -6145,6 +6220,9 @@
       "Comida",
       "Comida preparada",
       "Productos orgánicos"
+    ],
+    "destacadosGoogle": [
+      "Buenos productos frescos"
     ]
   },
   {
@@ -6378,9 +6456,10 @@
       "Servicio a domicilio"
     ],
     "destacados": [
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Carne a la parrilla, sello de Burger King",
+      "Servicio Auto-King sin bajar del coche",
+      "Pedido rápido en quioscos digitales",
+      "Ideal para familias y comidas rápidas"
     ],
     "horario": "L-J 12:30-24:00, V-D 12:30-00:30",
     "address": "Avenida de Miguel Delibes, 80, 28052 Madrid",
@@ -6449,6 +6528,11 @@
       "Servicio en el mostrador",
       "Postres",
       "Espacio con asientos"
+    ],
+    "destacadosGoogle": [
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -7044,8 +7128,9 @@
       "Menú del día"
     ],
     "destacados": [
-      "Buen café",
-      "Desayuno"
+      "Auténtica cocina vietnamita",
+      "Platos tradicionales y frescos",
+      "Excelente valoración en TheFork"
     ],
     "horario": "L-J 18:00-23:30, V-D 12:00-23:30",
     "image": "/images/negocios/vietnam-2013-canaveral.webp",
@@ -7115,6 +7200,10 @@
       "Servicio de catering",
       "Servicio en el mostrador",
       "Postres"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Desayuno"
     ]
   },
   {
@@ -7193,9 +7282,9 @@
       "Ambiente caribeño"
     ],
     "destacados": [
-      "Buenos cócteles",
-      "Deportes",
-      "Karaoke"
+      "Auténtica comida cubana",
+      "Variedad de cafés",
+      "Ambiente acogedor y familiar"
     ],
     "image": "/images/negocios/havana-madrid-canaveral.webp",
     "images": [
@@ -7255,6 +7344,11 @@
       "Cócteles",
       "Comida",
       "Vino"
+    ],
+    "destacadosGoogle": [
+      "Buenos cócteles",
+      "Deportes",
+      "Karaoke"
     ]
   },
   {
@@ -7372,11 +7466,9 @@
       "Reservas online"
     ],
     "destacados": [
-      "Buen café",
-      "Muy buena selección de cervezas",
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Auténtica fusión chino-venezolana",
+      "Platos frescos y sabrosos",
+      "Excelente relación calidad-precio"
     ],
     "horario": "L-S 12:00-23:00, D 12:00-22:00",
     "image": "/images/negocios/chinawok-express-canaveral.webp",
@@ -7448,6 +7540,13 @@
       "Cena",
       "Postres",
       "Espacio con asientos"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Muy buena selección de cervezas",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -7870,11 +7969,9 @@
       "Reservas online"
     ],
     "destacados": [
-      "Buen café",
-      "Deliciosos postres",
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Amplia terraza ajardinada",
+      "Especialidad en carnes a la brasa",
+      "Ambiente familiar y acogedor"
     ],
     "horario": "Martes a Domingo: 13:00-16:30 y 20:00-23:30, Lunes: Cerrado",
     "address": "C. Cerro del Campo, 62, 28052 Madrid",
@@ -7916,6 +8013,13 @@
       "Vino",
       "Desayunos",
       "Almuerzo"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Deliciosos postres",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -11012,11 +11116,8 @@
       "Comida para llevar"
     ],
     "destacados": [
-      "Buen café",
-      "Deportes",
-      "Desayuno",
-      "Almuerzo",
-      "Cena en solitario"
+      "Ambiente moderno y juvenil",
+      "Carta variada ideal para grupos"
     ],
     "rating": 4.4,
     "numReviews": 110,
@@ -11087,6 +11188,13 @@
       "Comida",
       "Comida en el bar",
       "Lugar para bailar"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Deportes",
+      "Desayuno",
+      "Almuerzo",
+      "Cena en solitario"
     ]
   },
   {
@@ -11841,7 +11949,8 @@
       "Consumo en barra y mesa"
     ],
     "destacados": [
-      "Cena en solitario"
+      "Ambiente de barrio cercano y familiar",
+      "Variedad de aperitivos y raciones tradicionales"
     ],
     "rating": 4.3,
     "numReviews": 177,
@@ -11910,6 +12019,9 @@
       "Vino",
       "Espacio con asientos",
       "Servicio a la mesa"
+    ],
+    "destacadosGoogle": [
+      "Cena en solitario"
     ]
   },
   {
@@ -11931,8 +12043,8 @@
       "Atención en mesa y barra"
     ],
     "destacados": [
-      "Buen café",
-      "Desayuno"
+      "Servicio rápido y eficiente",
+      "Espacio cómodo para el día a día"
     ],
     "rating": 4.6,
     "numReviews": 55,
@@ -11993,6 +12105,10 @@
       "Cerveza",
       "Vino",
       "Desayunos"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Desayuno"
     ]
   },
   {
@@ -12014,8 +12130,8 @@
       "Atención en barra y mesas"
     ],
     "destacados": [
-      "Buen café",
-      "Desayuno"
+      "Trato muy familiar y cercano",
+      "Excelente opción para el aperitivo diario"
     ],
     "rating": 4.3,
     "numReviews": 110,
@@ -12081,6 +12197,10 @@
       "Desayunos",
       "Espacio con asientos",
       "Servicio a la mesa"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Desayuno"
     ]
   },
   {
@@ -12102,8 +12222,8 @@
       "Servicio para llevar"
     ],
     "destacados": [
-      "Buen café",
-      "Desayuno"
+      "Ubicación accesible en Coslada",
+      "Ambiente familiar y cercano"
     ],
     "rating": 4.4,
     "numReviews": 420,
@@ -12168,6 +12288,10 @@
       "Desayunos",
       "Espacio con asientos",
       "Servicio a la mesa"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Desayuno"
     ]
   },
   {
@@ -13856,11 +13980,9 @@
       "Celebración de eventos familiares"
     ],
     "destacados": [
-      "Buen café",
-      "Desayuno",
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Ambiente acogedor y familiar",
+      "Cocina tradicional de calidad",
+      "Excelente ubicación en el municipio"
     ],
     "rating": 4.8,
     "numReviews": 757,
@@ -13931,6 +14053,13 @@
       "Cócteles",
       "Platos saludables",
       "Vino"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Desayuno",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -14334,10 +14463,9 @@
       "Servicio de terraza exterior"
     ],
     "destacados": [
-      "Buen café",
-      "Chimenea",
-      "Desayuno",
-      "Almuerzo"
+      "Ambiente tranquilo y acogedor",
+      "Ideal para el desayuno diario",
+      "Trato amable y servicio rápido"
     ],
     "rating": 4.4,
     "numReviews": 142,
@@ -14410,6 +14538,12 @@
       "Platos orgánicos",
       "Platos vegetarianos",
       "Vino"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Chimenea",
+      "Desayuno",
+      "Almuerzo"
     ]
   },
   {
@@ -17213,10 +17347,8 @@
       "Terraza exterior"
     ],
     "destacados": [
-      "Asientos en la terraza",
-      "Buen café",
-      "Cena",
-      "Cena en solitario"
+      "Ambiente acogedor y moderno",
+      "Variedad de platos en carta"
     ],
     "rating": 4.9,
     "numReviews": 936,
@@ -17287,6 +17419,12 @@
       "Cena",
       "Postres",
       "Servicio a la mesa"
+    ],
+    "destacadosGoogle": [
+      "Asientos en la terraza",
+      "Buen café",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -17308,11 +17446,8 @@
       "Comida para llevar bajo pedido"
     ],
     "destacados": [
-      "Buen café",
-      "Muy buena selección de té",
-      "Desayuno",
-      "Almuerzo",
-      "Cena en solitario"
+      "Servicio rápido y eficiente",
+      "Localización cómoda en la zona"
     ],
     "rating": 4.3,
     "numReviews": 333,
@@ -17355,6 +17490,13 @@
       "Desayuno-almuerzo",
       "Almuerzo",
       "Cena"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Muy buena selección de té",
+      "Desayuno",
+      "Almuerzo",
+      "Cena en solitario"
     ]
   },
   {
@@ -17376,10 +17518,8 @@
       "Servicio de terraza"
     ],
     "destacados": [
-      "Buen café",
-      "Muy buena selección de té",
-      "Desayuno",
-      "Un buen lugar para trabajar con una laptop"
+      "Ambiente tranquilo y acogedor",
+      "Ideal para el día a día"
     ],
     "rating": 4.7,
     "numReviews": 105,
@@ -17444,6 +17584,12 @@
       "Café",
       "Desayunos",
       "Postres"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Muy buena selección de té",
+      "Desayuno",
+      "Un buen lugar para trabajar con una laptop"
     ]
   },
   {
@@ -17534,11 +17680,8 @@
       "Reserva de mesas online y telefónica"
     ],
     "destacados": [
-      "Buen café",
-      "Muy buena selección de cervezas",
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Propuesta gastronómica original",
+      "Excelente presentación de platos"
     ],
     "rating": 4.8,
     "numReviews": 898,
@@ -17612,6 +17755,13 @@
       "Vino",
       "Almuerzo",
       "Cena"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Muy buena selección de cervezas",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -19336,9 +19486,8 @@
       "Servicio de bebidas y postres"
     ],
     "destacados": [
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Especialización en gastronomía japonesa",
+      "Ubicación cómoda en El Cañaveral"
     ],
     "rating": 4.8,
     "numReviews": 321,
@@ -19410,6 +19559,11 @@
       "Opciones veganas",
       "Platos vegetarianos",
       "Vino"
+    ],
+    "destacadosGoogle": [
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -19572,12 +19726,8 @@
       "Servicio de mesa y terraza"
     ],
     "destacados": [
-      "Buen café",
-      "Deliciosos postres",
-      "Muy buena selección de cervezas",
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
+      "Sabor tradicional italiano",
+      "Servicio rápido y cómodo para el barrio"
     ],
     "rating": 4.5,
     "numReviews": 827,
@@ -19651,6 +19801,14 @@
       "Cena",
       "Postres",
       "Espacio con asientos"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Deliciosos postres",
+      "Muy buena selección de cervezas",
+      "Almuerzo",
+      "Cena",
+      "Cena en solitario"
     ]
   },
   {
@@ -19743,10 +19901,8 @@
       "Terraza exterior"
     ],
     "destacados": [
-      "Buenos cócteles",
-      "Deportes",
-      "Muy buena selección de cervezas",
-      "Cena en solitario"
+      "Excelente ambiente deportivo y social",
+      "Amplia selección de bebidas"
     ],
     "rating": 4.4,
     "numReviews": 1619,
@@ -19817,6 +19973,12 @@
       "Vino",
       "Espacio con asientos",
       "Servicio a la mesa"
+    ],
+    "destacadosGoogle": [
+      "Buenos cócteles",
+      "Deportes",
+      "Muy buena selección de cervezas",
+      "Cena en solitario"
     ]
   },
   {
@@ -20410,12 +20572,9 @@
       "Terraza exterior"
     ],
     "destacados": [
-      "Buen café",
-      "Deportes",
-      "Muy buena selección de cervezas",
-      "Desayuno",
-      "Almuerzo",
-      "Cena en solitario"
+      "Espacio versátil para comidas y cenas",
+      "Ubicación clave en El Cañaveral",
+      "Ambiente acogedor y servicio local"
     ],
     "rating": 4.1,
     "numReviews": 206,
@@ -20489,6 +20648,14 @@
       "Comida",
       "Comida en el bar",
       "Platos saludables"
+    ],
+    "destacadosGoogle": [
+      "Buen café",
+      "Deportes",
+      "Muy buena selección de cervezas",
+      "Desayuno",
+      "Almuerzo",
+      "Cena en solitario"
     ]
   },
   {

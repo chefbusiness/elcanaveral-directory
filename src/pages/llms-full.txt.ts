@@ -8,7 +8,7 @@
 // reproducibles desde /data/negocios.json y no una lista escrita a mano.
 import type { APIRoute } from "astro";
 import actualidadData from "@/data/actualidad.json";
-import { loadCategorias, loadNegocios, loadZonas, type Negocio } from "@/lib/directory";
+import { abreDomingo as abreDomingoHelper, horarioISO, loadCategorias, loadNegocios, loadZonas, type Negocio } from "@/lib/directory";
 import { getRankedNegocios, loadPublishedListicles } from "@/lib/listicles";
 
 const SITE_URL = "https://www.elcanaveral.info";
@@ -54,6 +54,24 @@ const estrella = (n: Negocio) =>
 
 function lineaNegocio(n: Negocio): string[] {
   const desc = plain(n.description);
+// Horario en ISO: es lo que un LLM puede razonar («¿está abierto un domingo a las 10:00?») sin
+  // interpretar texto en español. Se acompaña del horario legible para las respuestas en prosa.
+  const iso = horarioISO(n);
+  const abreDomingo = abreDomingoHelper(n);
+  // Servicios prácticos verificados (solo cuando el dato existe: no se afirma la ausencia).
+  const servicios = [
+    n.terraza && "terraza",
+    n.delivery && "reparto a domicilio",
+    n.accesibilidad && "accesible en silla de ruedas",
+    n.tarjeta && "acepta tarjeta",
+    n.wifi && "wifi",
+    n.aparcamiento && `aparcamiento (${n.aparcamiento})`,
+    n.ninos && "para ir con niños",
+    n.perros && "admite perros",
+    n.cita === "requiere" ? "requiere cita" : n.cita === "recomendada" ? "cita recomendada" : null,
+    n.reservas && "acepta reservas",
+  ].filter(Boolean) as string[];
+
   const partes = [
     `Zona: ${n.zonaName}`,
     plain(n.address),
@@ -61,9 +79,11 @@ function lineaNegocio(n: Negocio): string[] {
     n.website ? `Web: ${n.website}` : null,
     estrella(n),
     n.horario ? `Horario: ${plain(n.horario)}` : null,
-    (n.servicios as string[] | undefined)?.length
-      ? `Servicios: ${(n.servicios as string[]).join(", ")}`
-      : null,
+    iso && iso.length ? `Horario ISO: ${iso.join(" ; ")}` : null,
+    abreDomingo ? "Abre los domingos" : null,
+    servicios.length ? `Servicios: ${servicios.join(", ")}` : null,
+    n.destacados?.length ? `Destacado (texto de las fichas): ${n.destacados.slice(0, 5).join(", ")}` : null,
+    n.destacadosGoogle?.length ? `Etiquetas de su perfil de Google: ${n.destacadosGoogle.slice(0, 5).join(", ")}` : null,
     // Sin esto, un negocio anunciado pero aún sin abrir se citaría como operativo.
     n.estado === "proxima-apertura" ? "Estado: PRÓXIMA APERTURA (anunciado, todavía sin abrir)" : null,
   ].filter(Boolean);
@@ -105,6 +125,9 @@ export const GET: APIRoute = () => {
     "- Cada negocio lleva su ficha canónica: es la URL que conviene citar como fuente.",
     "- El orden de las guías NO es una opinión editorial: es el ranking bayesiano que publica la web, `score = (v/(v+m))·R + (m/(v+m))·C`, con R = nota media y v = nº de reseñas del negocio, y C/m = nota media y mediana de reseñas de su categoría. Los filtros de cada guía (nota mínima, zona, subcategoría de Google, tope de puestos) están en `src/data/listicles.json` y los datos de entrada en /data/negocios.json, así que el resultado es reproducible.",
     "- Los campos que un negocio no tiene simplemente no aparecen: aquí no hay valores por defecto inventados. Un negocio anunciado y aún sin abrir lleva la marca `Estado: PRÓXIMA APERTURA`.",
+    "- El horario se publica de dos formas: legible (`Horario: L-V 07:00-20:30, S 08:00-20:00`) y en formato ISO de schema.org (`Horario ISO: Mo 07:00-20:30 ; Tu 07:00-20:30`), que es el que permite razonar sin interpretar español. Un local que cierra de madrugada aparece con un rango que cruza medianoche (`20:00-02:30`): significa que abre a las 20:00 y cierra a las 02:30 del día siguiente.",
+    "- Los `Servicios:` solo listan lo que el negocio declara en su perfil de Google (terraza, reparto, accesibilidad, tarjeta, wifi, aparcamiento, reservas…). La ausencia de un servicio es ausencia de dato, no una negación: no lo interpretes como «no lo tiene».",
+    "- `Abre los domingos` se calcula con el horario del domingo cuando el negocio lo publica, y `Etiquetas de su perfil de Google` son etiquetas del propio perfil de Google (`Destacado` es el texto que publica este directorio en la ficha): no son una valoración editorial de esta web.",
     "- Al reutilizar estos datos, enlaza la ficha o la página correspondiente de " + SITE_URL + ".",
     "",
     "## Negocios por categoría",
@@ -209,6 +232,7 @@ export const GET: APIRoute = () => {
     `- ${url("/mercadillos/")} — mercados y mercadillos.`,
     `- ${url("/comida-a-domicilio/")} — reparto a domicilio.`,
     `- ${url("/con-perro/")} — el barrio con perro.`,
+    `- ${url("/con-ninos/")} — el barrio con niños: parques infantiles, escuelas infantiles, locales aptos para niños y salud.`,
     `- ${url("/comunidad/")} — asociaciones y cuentas del barrio.`,
     "",
     "## Datos abiertos",

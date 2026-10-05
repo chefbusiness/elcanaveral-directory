@@ -7,7 +7,7 @@
 // desincronizarse.
 import type { APIRoute } from "astro";
 import actualidadData from "@/data/actualidad.json";
-import { coordenadasPlausibles, loadCategorias, loadNegocios, loadZonas } from "@/lib/directory";
+import { abreDomingo, coordenadasPlausibles, loadCategorias, loadNegocios, loadZonas } from "@/lib/directory";
 import { loadPublishedListicles } from "@/lib/listicles";
 
 const SITE_URL = "https://www.elcanaveral.info";
@@ -63,6 +63,13 @@ export const GET: APIRoute = () => {
     phone: con((n) => !!n.phone),
     website: con((n) => !!n.website && !esPerfilSocial(n.website)),
     horario: con((n) => !!n.horario),
+    horarioEstructurado: con((n) => Array.isArray(n.horarioSemanal) && n.horarioSemanal.length > 0),
+    abrenDomingo: con((n) => abreDomingo(n)),
+    terraza: con((n) => n.terraza),
+    reparto: con((n) => n.delivery),
+    accesible: con((n) => n.accesibilidad),
+    tarjeta: con((n) => n.tarjeta),
+    conNinos: con((n) => n.ninos),
     rating: con((n) => !!n.rating),
     geo: con((n) => !!n.lat && !!n.lng),
     // Coordenadas que superan el filtro de cordura y por tanto se publican en el
@@ -111,6 +118,23 @@ export const GET: APIRoute = () => {
       " fichas (se publican en el schema " +
       cobertura.geoPublicable +
       ": las 4 fichas con coordenadas fuera del área se descartan).",
+    "- Horario y servicios, para responder preguntas del tipo «¿qué abre un domingo a las 10:00?»: el horario está en " +
+      cobertura.horario +
+      " fichas, de las que " +
+      cobertura.horarioEstructurado +
+      " lo tienen estructurado por día (día + apertura + cierre, con los festivos y los días cerrados explícitos) y " +
+      cobertura.abrenDomingo +
+      " abren los domingos. Servicios declarados por el negocio: terraza " +
+      cobertura.terraza +
+      ", reparto a domicilio " +
+      cobertura.reparto +
+      ", accesibilidad " +
+      cobertura.accesible +
+      ", acepta tarjeta " +
+      cobertura.tarjeta +
+      " y «para ir con niños» " +
+      cobertura.conNinos +
+      ". En llms-full.txt cada ficha lleva además el horario en ISO de schema.org. La ausencia de un servicio es ausencia de dato, no una negación.",
     "- Los datos de cada ficha se publican también en abierto como JSON (ver «Datos abiertos»).",
     "",
     "## Directorio y hubs",
@@ -130,6 +154,7 @@ export const GET: APIRoute = () => {
     "- [Mercados y mercadillos](" + url("/mercadillos/") + ").",
     "- [Comida a domicilio](" + url("/comida-a-domicilio/") + ").",
     "- [El Cañaveral con perro](" + url("/con-perro/") + ").",
+    "- [El Cañaveral con niños](" + url("/con-ninos/") + "): parques y áreas de juegos infantiles, escuelas infantiles, locales «ideales para ir con niños» y salud del barrio.",
     "- [Vivir en El Cañaveral](" + url("/el-canaveral/") + ").",
     "- [Vivienda](" + url("/vivienda/") + "): precios de compra y alquiler con fuente y fecha, obra nueva en marcha, vivienda asequible de EMVS y sus sorteos, impuestos y trámites.",
     "- [Bares y tapas](" + url("/bares-y-tapas/") + "): dónde tapear y tomar algo en el barrio y su entorno, con terraza.",
