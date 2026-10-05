@@ -18,50 +18,14 @@ const guias = loadPublishedListicles()
   .slice(0, 6);
 
 // --- GEO / entidad del sitio -------------------------------------------------
-// La home es donde los motores generativos resuelven QUIÉN publica el directorio:
-// Organization (marca + ámbito + temas) y WebSite (sitio + editor) son la base
-// para que un LLM atribuya y cite el directorio en vez de deducirlo del HTML.
+// La Organization (marca + ámbito + temas) se emite ahora en TODAS las páginas desde
+// BaseLayout con el mismo @id, así que aquí no se repite: la home añade el nodo WebSite,
+// que es el que declara el sitio y su editor.
 // Deliberadamente SIN potentialAction/SearchAction: la búsqueda es client-side
 // (Fuse.js sobre /data/negocios.json) y no existe una URL de resultados con
 // parámetro, así que declararla sería una señal falsa.
 const SITE_URL = "https://www.elcanaveral.info";
 const orgId = `${SITE_URL}/#organization`;
-const municipios = [...new Set(zonas.map((z) => z.municipality).filter(Boolean))];
-
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": orgId,
-  name: "El Cañaveral Info",
-  // Variante sin eñe: es como mucha gente escribe el barrio y el propio dominio.
-  alternateName: ["El Canaveral Info", "elcanaveral.info"],
-  url: `${SITE_URL}/`,
-  logo: {
-    "@type": "ImageObject",
-    url: `${SITE_URL}/favicon-512.png`,
-    width: 512,
-    height: 512,
-  },
-  description:
-    "Directorio hiperlocal de negocios, comercios y servicios de El Cañaveral (Vicálvaro, Madrid), Coslada y San Fernando de Henares.",
-  email: "local@elcanaveral.info",
-  areaServed: municipios.map((m) => ({ "@type": "City", name: m })),
-  knowsAbout: categorias.map((c) => c.name),
-  parentOrganization: {
-    "@type": "Organization",
-    name: "LocalSEOAds",
-    url: "https://localseoads.com",
-  },
-  contactPoint: [
-    {
-      "@type": "ContactPoint",
-      contactType: "customer support",
-      email: "local@elcanaveral.info",
-      url: `${SITE_URL}/contacto/`,
-      availableLanguage: ["es"],
-    },
-  ],
-};
 
 const websiteSchema = {
   "@context": "https://schema.org",
@@ -82,7 +46,6 @@ const websiteSchema = {
   description="Directorio de negocios en El Cañaveral, Vicálvaro, Coslada y San Fernando de Henares. Restaurantes, tiendas, clínicas y servicios cerca de ti."
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
   </Fragment>
 

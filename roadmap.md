@@ -50,19 +50,14 @@
 - [ ] **GSC #6 (noviembre)**: comprobar si las páginas nuevas (`/abiertos-los-domingos/`, `/vivienda/`, `/bares-y-tapas/`, `/farmacias-de-guardia/`) empiezan a recibir impresiones y si `/restaurantes/` despega desde las 2 impresiones. Medir también el efecto GEO.
 - [ ] **Post-evento (después del 4-oct)**: balance de Tapaveral (tapas ganadoras, locales participantes) y de la V Carrera Popular; refrescar ambos posts con los resultados si hay fuente.
 - [ ] **Verificación in situ (John)** — `VERIFICAR-EN-PERSONA.md`: Obramat (¿existe / otro rótulo?; su `placeId` es el único de 283 con forma no estándar), Mediadores Inmobiliarios (¿= SM Homes?), **BunBun** (número exacto, calle «Elías», apertura — su web sigue sin incluir El Cañaveral), **Música de los Ríos** (QR del cartel, dirección, teléfono, fecha; el curso ya ha empezado) y las **4 fichas con coordenadas corruptas** (lidl-canaveral, family-mini-market, garcia-asociados-asesoria, mercadona-san-fernando: lat/lng de Alemania, Venezuela, Bogotá y Cádiz → el schema ya no publica su `geo`, pero el dato de origen hay que re-enriquecerlo).
-- [ ] **Guía de terrazas — PARKED**: John aporta datos a medida que visita locales en persona (campos `terraza`/`delivery` ya se capturan con Apify desde `additionalInfo`).
-- [ ] **Legales Opción B**: NIF + domicilio fiscal en aviso-legal/privacidad si John factura en serio (decisión del cliente; hoy = Opción A sin NIF).
-- [ ] **Fiestas**: ampliar con más ferias reales de zonas cercanas cuando toque temporada (hub `/fiestas` ya operativo).
-- [ ] **Hubs por afinidad**: «familias con peques» (guarderías + parques + pediatría) — el motor de afinidad ya existe (`AfinidadFilter`).
-- [ ] **Leads**: refrescar `prospecting/` con `leads_prospecting.py` cuando se quiera una ronda nueva de prospección a pie de calle.
-- [ ] **Boilerplate replicable**: documentar para nuevos barrios (Sanchinarro, Valdebebas, Rivas…) — el motor directorio+guías+drip+pilares es portable; referencia viva: azul-flojito (ya lo usó).
-- [ ] **Guía de terrazas — PARKED**: John aporta datos a medida que visita locales en persona (campos `terraza`/`delivery` ya se capturan con Apify desde `additionalInfo`).
-- [ ] **Legales Opción B**: NIF + domicilio fiscal en aviso-legal/privacidad si John factura en serio (decisión del cliente; hoy = Opción A sin NIF).
+- [ ] **Re-enriquecimiento de fichas (Apify)** — la palanca de datos pendiente: de 286 fichas solo **123 tienen horario**, **39 terraza**, **39 delivery** y **4 menú del día**. Sin eso, los badges de las 32 guías y las piezas informativas (domingos, bares, terrazas) están a medias. Medir coste antes de lanzar.
 - [ ] **Fiestas**: ampliar con más ferias reales de zonas cercanas cuando toque temporada (hub `/fiestas` ya operativo).
 - [ ] **Hubs por afinidad**: «familias con peques» (guarderías + parques + pediatría) — el motor de afinidad ya existe (`AfinidadFilter`).
 - [ ] **Leads**: refrescar `prospecting/` con `leads_prospecting.py` cuando se quiera una ronda nueva de prospección a pie de calle.
 - [ ] **Boilerplate replicable**: documentar para nuevos barrios (Sanchinarro, Valdebebas, Rivas…) — el motor directorio+guías+drip+pilares es portable; referencia viva: azul-flojito (ya lo usó).
 - [ ] **Roadmap maestro de contenido**: `IDEAS-CONTENIDO.md` (pilares + frentes «desde el Cañaveral») sigue vivo como backlog.
+- [ ] **Guía de terrazas — PARKED**: John aporta datos a medida que visita locales en persona (con el re-enriquecimiento de Apify puede desbloquearse sin esperar).
+- [ ] **Legales Opción B**: NIF + domicilio fiscal en aviso-legal/privacidad si John factura en serio (decisión del cliente; hoy = Opción A sin NIF).
 
 ## Nota entorno (resumen — detalle completo en `memoria.md`)
 

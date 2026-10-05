@@ -2,6 +2,7 @@
 import "@/styles/global.css";
 import TopBanner from "@/components/TopBanner.astro";
 import CookieConsent from "@/components/CookieConsent.astro";
+import { loadCategorias, loadZonas } from "@/lib/directory";
 
 interface Props {
   title: string;
@@ -14,6 +15,41 @@ const { title, description, image = "/images/og-default.webp", noindex = false }
 const siteName = "elcanaveral.info";
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const fullTitle = `${title} | ${siteName}`;
+
+// --- Entidad del sitio en TODAS las páginas ----------------------------------
+// La Organization estaba solo en la home: ahora viaja con cada página para que un buscador o un LLM
+// sepa quién publica lo que está leyendo, con el mismo @id en todo el sitio (una sola entidad, no
+// 442 marcas distintas). La home añade además el nodo WebSite.
+const SITE_URL = "https://www.elcanaveral.info";
+const orgId = `${SITE_URL}/#organization`;
+const zonas = loadZonas();
+const categorias = loadCategorias();
+const municipios = [...new Set(zonas.map((z) => z.municipality).filter(Boolean))];
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": orgId,
+  name: "El Cañaveral Info",
+  alternateName: ["El Canaveral Info", "elcanaveral.info"],
+  url: `${SITE_URL}/`,
+  logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon-512.png`, width: 512, height: 512 },
+  description:
+    "Directorio hiperlocal de negocios, comercios y servicios de El Cañaveral (Vicálvaro, Madrid), Coslada y San Fernando de Henares.",
+  email: "local@elcanaveral.info",
+  areaServed: municipios.map((m) => ({ "@type": "City", name: m })),
+  knowsAbout: categorias.filter((c) => (c.count ?? 0) > 0).map((c) => c.name),
+  parentOrganization: { "@type": "Organization", name: "LocalSEOAds", url: "https://localseoads.com" },
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      email: "local@elcanaveral.info",
+      url: `${SITE_URL}/contacto/`,
+      availableLanguage: ["es"],
+    },
+  ],
+};
 ---
 
 <!doctype html>
@@ -41,6 +77,7 @@ const fullTitle = `${title} | ${siteName}`;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
     <slot name="head" />
   </head>
   <body>

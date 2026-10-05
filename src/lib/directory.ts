@@ -134,6 +134,109 @@ export function abreDomingo(negocio: { horario?: string }): boolean {
 
 // Perfil social -> URL absoluta. Acepta handle ("@bunbun_brunch"), handle sin @
 // o URL completa ya pegada en los datos (caso real: bunbun-canaveral).
+// --- Horario en formato ISO (schema.org) -------------------------------------
+// `horario` es texto libre en español o en el formato de Google («L-S 9:00-21:30, D 10:00-15:00» /
+// «do 10 AM to 5 PM · lu 9 AM to 5 PM»). Schema.org espera ISO («Mo-Sa 09:00-21:30») y, si no se
+// convierte, Google ignora el campo. La conversión es CONSERVADORA: si un solo fragmento no se
+// entiende con seguridad se devuelve undefined y no se publica nada para ese negocio, porque un
+// horario mal traducido en un directorio local es peor que un campo ausente.
+const DIAS_ISO: Record<string, string> = {
+  l: "Mo", lu: "Mo", lun: "Mo", lunes: "Mo",
+  m: "Tu", ma: "Tu", mar: "Tu", martes: "Tu",
+  x: "We", mi: "We", mie: "We", "mié": "We", miercoles: "We", "miércoles": "We",
+  j: "Th", ju: "Th", jue: "Th", jueves: "Th",
+  v: "Fr", vi: "Fr", vie: "Fr", viernes: "Fr",
+  s: "Sa", sa: "Sa", sab: "Sa", "sá": "Sa", "sáb": "Sa", sabado: "Sa", "sábado": "Sa",
+  d: "Su", do: "Su", dom: "Su", "dóm": "Su", domingo: "Su",
+};
+const ORDEN_DIAS = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
+
+function horaAIso(hora: string, pmPorContexto: boolean): string | null {
+  const m = /^(\d{1,2})(?::(\d{2}))?\s*(am|pm|a\.?\s?m\.?|p\.?\s?m\.?)?$/i.exec(hora.trim());
+  if (!m) return null;
+  let hh = parseInt(m[1], 10);
+  const mm = m[2] || "00";
+  const sufijo = (m[3] || "").toLowerCase().replace(/[.\s]/g, "");
+  const esPm = sufijo.startsWith("p") || (pmPorContexto && sufijo === "");
+  const esAm = sufijo.startsWith("a");
+  if (hh > 23 || parseInt(mm, 10) > 59) return null;
+  if (esPm && hh < 12) hh += 12;
+  if (esAm && hh === 12) hh = 0;
+  return `${String(hh).padStart(2, "0")}:${mm}`;
+}
+
+function diasDelFragmento(fragmento: string): string[] | null {
+  const antes = (fragmento.split(/\d/)[0] || "").trim();
+  if (!antes) return null; // empieza por hora: continúa los días anteriores
+  const dias: string[] = [];
+  for (const parte of antes.split(/\s+y\s+/i)) {
+    const limpio = parte.replace(/[.:;,]+$/, "").trim().toLowerCase();
+    const rango = limpio.split(/\s*-\s*|\s+a\s+/);
+    if (rango.length === 2) {
+      const a = DIAS_ISO[rango[0].trim()];
+      const b = DIAS_ISO[rango[1].trim()];
+      if (!a || !b) return null;
+      const ia = ORDEN_DIAS.indexOf(a);
+      const ib = ORDEN_DIAS.indexOf(b);
+      if (ia < 0 || ib < 0 || ia > ib) return null;
+      dias.push(`${a}-${b}`);
+    } else {
+      const d = DIAS_ISO[limpio];
+      if (!d) return null;
+      dias.push(d);
+    }
+  }
+  return dias.length ? dias : null;
+}
+
+/** Horario libre -> ISO (varias cadenas). undefined si no se puede traducir con seguridad. */
+export function horarioISO(negocio: { horario?: string }): string[] | undefined {
+  const limpiar = (s: string) => s.replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+  const limpio = limpiar(negocio.horario || "");
+  if (!limpio) return undefined;
+  if (/^24\s?h/i.test(limpio) || /todos los d[ií]as.*24/i.test(limpio)) return ["Mo-Su 00:00-24:00"];
+
+  const fragmentos = limpio.split(/[,;\n\u00b7•|]+/).map(limpiar).filter(Boolean);
+  if (fragmentos.length === 0) return undefined;
+
+  const salida: string[] = [];
+  let diasPendientes: string[] | null = null;
+  for (const f of fragmentos) {
+    if (/cerrado|closed/i.test(f)) { diasPendientes = null; continue; }
+    const dias = diasDelFragmento(f);
+    // Un fragmento con prefijo de días que NO se reconoce (p. ej. una abreviatura nueva de Google)
+    // no puede heredar los días del anterior: eso atribuía en silencio unas horas al día equivocado.
+    // Si trae prefijo y no lo entendemos, se descarta el horario entero.
+    const prefijo = (f.split(/\d/)[0] || "").trim();
+    if (!dias && prefijo) return undefined;
+    if (dias) diasPendientes = dias;
+    if (!diasPendientes) return undefined;
+
+    // OJO con el greedy: `^[^\d]*(?=\d)` se comía la primera franja de "do 9 AM to 11 PM"
+    // (seguía buscando dígitos hasta el "11"). Tiene que parar en el primero.
+    const trasDia = f.replace(/^[^\d]*/, "");
+    const partes: string[] = [];
+    if (/24\s?h/i.test(trasDia)) {
+      partes.push("00:00-24:00");
+    } else {
+      for (const fr of trasDia.split(/\s+y\s+|,\s*/i).map((s) => s.trim()).filter(Boolean)) {
+        // Los separadores van con límite de palabra: sin él, la alternativa «a» de «9 AM to 11 PM»
+        // casaba con la A de AM y partía la hora en "9" / "M to 11 PM".
+        const m = /^(.+?)\s*(?:-|\bto\b|\ba\b)\s*(.+)$/i.exec(fr);
+        if (!m) continue;
+        const pmEnLaFrase = /pm|p\.?\s?m/i.test(m[1]) || /pm|p\.?\s?m/i.test(m[2]);
+        const ini = horaAIso(m[1], pmEnLaFrase);
+        const fin = horaAIso(m[2], pmEnLaFrase);
+        if (!ini || !fin) return undefined;
+        partes.push(`${ini}-${fin}`);
+      }
+    }
+    if (partes.length === 0) return undefined;
+    salida.push(`${diasPendientes.join(",")} ${partes.join(",")}`);
+  }
+  return salida.length ? salida : undefined;
+}
+
 const SOCIAL_BASE: Record<string, string> = {
   instagram: "https://instagram.com/",
   facebook: "https://facebook.com/",
@@ -360,11 +463,10 @@ export function generateLocalBusinessSchema(negocio: Negocio) {
         reviewCount: negocio.numReviews,
       },
     }),
-    // OJO: `horario` es texto libre en español ("L-S 9:00-21:00, D 10:00-14:00").
-    // Schema.org espera formato ISO ("Mo-Sa 09:00-21:00"). Se mantiene el texto
-    // tal cual a proposito: traducirlo automaticamente podria publicar un horario
-    // equivocado, que en un directorio local es peor que un campo ignorado.
-    ...(negocio.horario && { openingHours: negocio.horario }),
+    // Horario en ISO cuando se puede traducir con seguridad (ver `horarioISO`): el texto libre que
+    // había antes lo ignoran Google y los LLM. Si no se puede traducir, NO se publica el campo
+    // (el horario sigue visible en la ficha para las personas): mejor ausente que equivocado.
+    ...((horarioISO(negocio) ?? []).length > 0 && { openingHours: horarioISO(negocio) }),
     ...(negocio.precioRango && { priceRange: negocio.precioRango }),
     ...(servicios.length > 0 && {
       hasOfferCatalog: {
