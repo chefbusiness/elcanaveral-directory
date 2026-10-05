@@ -208,10 +208,13 @@ function diasDelFragmento(fragmento: string): string[] | null {
 }
 
 /** Horario libre -> ISO (varias cadenas). undefined si no se puede traducir con seguridad. */
-export function horarioISO(negocio: {
-  horario?: string;
-  horarioSemanal?: { dia?: string; horas?: string }[];
-}): string[] | undefined {
+export function horarioISO(
+  negocio: {
+    horario?: string;
+    horarioSemanal?: { dia?: string; horas?: string }[];
+  },
+  incluirCrucesMedianoche = false,
+): string[] | undefined {
   // 1) Preferencia: el horario ESTRUCTURADO por día del enriquecimiento de Apify (viene directo del
   // perfil de Google, con el día cerrado ya marcado): no hay que adivinar nada leyendo texto.
   const semanal = negocio.horarioSemanal;
@@ -221,14 +224,21 @@ export function horarioISO(negocio: {
       const dia = DIAS_ISO[(d.dia || "").trim().toLowerCase()];
       const horas = (d.horas || "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
       if (!dia || !horas || /cerrado|closed/i.test(horas)) continue;
+      // «Abierto las 24 horas» (Dreamfit, MOON los sábados): antes se descartaba el horario entero.
+      if (/24\s?h|abierto las 24|24 horas/i.test(horas)) {
+        salida.push(`${dia} 00:00-24:00`);
+        continue;
+      }
       const partes: string[] = [];
       for (const fr of horas.split(/,\s*/).map((s) => s.trim()).filter(Boolean)) {
         const m = /^(.+?)\s*(?:-|\bto\b|\ba\b)\s*(.+)$/i.exec(fr);
         if (!m) return undefined;
         const pm = /pm|p\.?\s?m/i.test(m[1]) || /pm|p\.?\s?m/i.test(m[2]);
         const ini = horaAIso(m[1], pm);
-        const fin = horaAIso(m[2], pm);
+        let fin = horaAIso(m[2], pm);
         if (!ini || !fin) return undefined;
+        if (fin === "00:00" && ini !== "00:00") fin = "24:00";        // cierra a medianoche
+        if (fin <= ini && fin !== "24:00" && !incluirCrucesMedianoche) continue; // cruza medianoche
         partes.push(`${ini}-${fin}`);
       }
       if (partes.length) salida.push(`${dia} ${partes.join(",")}`);
@@ -272,13 +282,52 @@ export function horarioISO(negocio: {
         if (!m) continue;
         const pmEnLaFrase = /pm|p\.?\s?m/i.test(m[1]) || /pm|p\.?\s?m/i.test(m[2]);
         const ini = horaAIso(m[1], pmEnLaFrase);
-        const fin = horaAIso(m[2], pmEnLaFrase);
+        let fin = horaAIso(m[2], pmEnLaFrase);
         if (!ini || !fin) return undefined;
+        if (fin === "00:00" && ini !== "00:00") fin = "24:00";           // cierra a medianoche
+        if (fin <= ini && fin !== "24:00" && !incluirCrucesMedianoche) continue; // cruza medianoche
         partes.push(`${ini}-${fin}`);
       }
     }
     if (partes.length === 0) return undefined;
     salida.push(`${diasPendientes.join(",")} ${partes.join(",")}`);
+  }
+  return salida.length ? salida : undefined;
+}
+
+/**
+ * Horario en `openingHoursSpecification` (estructura día + apertura + cierre).
+ *
+ * Por qué existe además de `horarioISO`: los locales que cierran de madrugada (un bar de 20:00 a
+ * 02:30) producen en la forma de cadena un rango INVERTIDO («Tu 20:00-02:30») que ningún consumidor
+ * puede leer. En la forma estructurada «abre 20:00 / cierra 02:30» no hay ambigüedad. La cadena solo
+ * lleva los rangos legibles; aquí van todos.
+ */
+export function horarioSpec(negocio: {
+  horario?: string;
+  horarioSemanal?: { dia?: string; horas?: string }[];
+}): { "@type": string; dayOfWeek: string; opens: string; closes: string }[] | undefined {
+  const iso = horarioISO(negocio, true); // aquí SÍ entran los rangos que cruzan medianoche
+  if (!iso) return undefined;
+  const salida: { "@type": string; dayOfWeek: string; opens: string; closes: string }[] = [];
+  for (const entrada of iso) {
+    const m = /^([A-Za-z,\-]+)\s+(.+)$/.exec(entrada);
+    if (!m) return undefined;
+    const dias: string[] = [];
+    for (const etiqueta of m[1].split(",")) {
+      const [a, b] = etiqueta.split("-");
+      const ia = ORDEN_DIAS.indexOf(a);
+      if (ia < 0) return undefined;
+      if (!b) { dias.push(a); continue; }
+      const ib = ORDEN_DIAS.indexOf(b);
+      if (ib < 0 || ib < ia) return undefined;
+      dias.push(...ORDEN_DIAS.slice(ia, ib + 1));
+    }
+    for (const rango of m[2].split(",")) {
+      const [opens, closes] = rango.split("-");
+      if (!opens || !closes) return undefined;
+      for (const d of dias) salida.push({ "@type": "OpeningHoursSpecification", dayOfWeek: d, opens, closes });
+    }
   }
   return salida.length ? salida : undefined;
 }
@@ -509,10 +558,18 @@ export function generateLocalBusinessSchema(negocio: Negocio) {
         reviewCount: negocio.numReviews,
       },
     }),
-    // Horario en ISO cuando se puede traducir con seguridad (ver `horarioISO`): el texto libre que
-    // había antes lo ignoran Google y los LLM. Si no se puede traducir, NO se publica el campo
-    // (el horario sigue visible en la ficha para las personas): mejor ausente que equivocado.
-    ...((horarioISO(negocio) ?? []).length > 0 && { openingHours: horarioISO(negocio) }),
+    // Horario: la cadena (`openingHours`) solo lleva rangos legibles y la estructura
+    // (`openingHoursSpecification`) lleva todos, incluidos los locales que cierran de madrugada.
+    // El texto libre que había antes lo ignoran Google y los LLM; si no se puede traducir, no se
+    // publica el campo (el horario sigue visible en la ficha para las personas).
+    ...(() => {
+      const iso = horarioISO(negocio);
+      return iso && iso.length > 0 ? { openingHours: iso } : {};
+    })(),
+    ...(() => {
+      const spec = horarioSpec(negocio);
+      return spec && spec.length > 0 ? { openingHoursSpecification: spec } : {};
+    })(),
     ...(negocio.precioRango && { priceRange: negocio.precioRango }),
     ...(servicios.length > 0 && {
       hasOfferCatalog: {

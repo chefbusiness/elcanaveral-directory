@@ -32,7 +32,7 @@
       "Excelente relación calidad-precio",
       "Horario ininterrumpido"
     ],
-    "horario": "L-S 9:00-21:30",
+    "horario": "L-S 09:00-21:30, D Cerrado",
     "images": [
       "/images/negocios/mercadona-coslada.webp",
       "/images/negocios/mercadona-coslada-2.webp",
@@ -107,7 +107,7 @@
       "Apoyo al comercio local",
       "Atención personalizada"
     ],
-    "horario": "L-S 9:00-21:00, D 10:00-14:00",
+    "horario": "L-D 09:30-21:30",
     "address": "Avenida Miguel Delibes 10, 28052 Madrid",
     "images": [
       "/images/negocios/hiper-canaveral.webp",
@@ -185,7 +185,7 @@
       "Atención cercana y familiar",
       "Ideal para compras rápidas y diarias"
     ],
-    "horario": "L-S 9:30-14:30, 17:00-20:30",
+    "horario": "L-J 09:30-23:30, V-D 09:30-24:00",
     "address": "C. Ferenc Puskas, 245, Vicálvaro, 28052 Madrid",
     "images": [
       "/images/negocios/supermercado-el-canaveral.webp",
@@ -259,7 +259,7 @@
       "Precios competitivos",
       "Amplio surtido de marcas"
     ],
-    "horario": "L-S 9:00-21:00, D 9:30-14:30",
+    "horario": "L-D 09:00-22:00",
     "address": "Calle Victoria Kent 12, 28052 Madrid",
     "images": [
       "/images/negocios/coviran-plus.webp",
@@ -381,7 +381,7 @@
       "Ideal para compras rápidas",
       "Ubicación conveniente"
     ],
-    "horario": "L-S 9:00-21:00, D 10:00-15:00",
+    "horario": "L-S 09:00-22:00, D 10:00-21:00",
     "address": "Calle Anna Frank 8, 28052 Madrid",
     "images": [
       "/images/negocios/mi-alcampo.webp",
@@ -393,7 +393,7 @@
     "rating": 3.1,
     "numReviews": 164,
     "phone": "+34 913 68 78 57",
-    "website": "https://www.compraonline.alcampo.es/?utm_campaign=GMB&utm_content=home&utm_medium=organic&utm_source=google&utm_term=sitio_web",
+    "website": "https://www.compraonline.alcampo.es/",
     "placeId": "ChIJwzSZkeA7Qg0RFEZJhm--csA",
     "googleCategory": "Supermercado",
     "lat": 40.4039955,
@@ -461,7 +461,7 @@
       "Atención familiar y cercana",
       "Variedad de productos esenciales"
     ],
-    "horario": "L-D 9:00-23:00",
+    "horario": "L-D 08:00-22:00",
     "address": "Calle Mario Moreno Cantinflas 3, 28052 Madrid",
     "images": [
       "/images/negocios/family-mini-market.webp",
@@ -476,8 +476,7 @@
     "googleCategory": "Supermercado",
     "lat": 10.9911991,
     "lng": -63.8208484,
-    "phone": "+58 295-2671656",
-    "website": "https://efamilymarket.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPNTY3MDY3MzQzMzUyNDI3AAGnhz0K2uJP5i0Ge1at9rAP0i6BrCFkGb4DCVerCF6CLnJw9t8MezuaGM5yVfk_aem___gUt9WTxYgTXAryV_WUcw",
+    "website": "https://efamilymarket.com/",
     "delivery": true,
     "accesibilidad": true,
     "wifi": true,
@@ -585,7 +584,7 @@
       "Atención personalizada",
       "Ideal para compras rápidas"
     ],
-    "horario": "L-S 9:00-14:00, 17:00-20:00",
+    "horario": "L-V 09:00-22:00, S 09:30-22:00, D 10:00-16:00,17:00-22:00",
     "address": "Calle Blas de Lezo 10, 28052 Madrid",
     "rating": 4.7,
     "numReviews": 13,
@@ -662,7 +661,7 @@
       "Trato amable y cercano",
       "Limpieza y orden en el establecimiento"
     ],
-    "horario": "L-S 9:00-14:30, 17:00-20:30, D 9:30-14:00",
+    "horario": "L-V 09:00-21:00, S 09:00-21:30, D 10:00-14:30",
     "images": [
       "/images/negocios/casa-elias.webp",
       "/images/negocios/casa-elias-2.webp",
@@ -742,7 +741,7 @@
       "Excelente calidad-precio",
       "Ubicación céntrica en el barrio"
     ],
-    "horario": "L-S 9:00-14:30, 17:00-20:00",
+    "horario": "L-V 09:30-14:00,17:00-20:00, S 09:30-14:00, D Cerrado",
     "images": [
       "/images/negocios/la-fruteria-de-mama.webp",
       "/images/negocios/la-fruteria-de-mama-2.webp",
@@ -817,7 +816,7 @@
       "Gran variedad de elección",
       "Ideal para compras grandes"
     ],
-    "horario": "L-S 9:00-14:30, 17:00-20:30, D 9:30-14:00",
+    "horario": "L-V 09:00-22:00, S-D 10:30-22:00",
     "images": [
       "/images/negocios/megafruta-canaveral.webp",
       "/images/negocios/megafruta-canaveral-2.webp",
@@ -893,7 +892,7 @@
       "Calidad superior y sabor auténtico",
       "Opciones saludables para toda la familia"
     ],
-    "horario": "L-S 9:30-14:00, 17:30-20:00",
+    "horario": "L-S 09:00-21:00, D 10:00-14:00",
     "images": [
       "/images/negocios/frutas-y-verduras-vida-sana.webp",
       "/images/negocios/frutas-y-verduras-vida-sana-2.webp",
@@ -1018,7 +1017,7 @@
       "Variedad de panes saludables",
       "Atención personalizada"
     ],
-    "horario": "L-V 8:00-14:30 y 17:00-20:00, S 8:00-14:30, D Cerrado",
+    "horario": "L-S 08:00-21:00, D 08:00-19:00",
     "images": [
       "/images/negocios/levaduramadre.webp",
       "/images/negocios/levaduramadre-2.webp",
@@ -1095,7 +1094,7 @@
       "Excelente relación calidad-precio",
       "Ubicación céntrica en el barrio"
     ],
-    "horario": "L-S 7:30-20:30, D 8:00-15:00",
+    "horario": "L-D 07:30-21:00",
     "images": [
       "/images/negocios/el-horno-de-izan-iii.webp",
       "/images/negocios/el-horno-de-izan-iii-2.webp",
@@ -1172,7 +1171,7 @@
       "Bollería casera exquisita",
       "Ideal para teletrabajar o reuniones informales"
     ],
-    "horario": "L-V 7:30-20:00, S-D 8:30-14:30",
+    "horario": "L-S 06:30-21:00, D 08:30-14:30",
     "images": [
       "/images/negocios/caprichos-coffee-bakery.webp",
       "/images/negocios/caprichos-coffee-bakery-2.webp",
@@ -1250,7 +1249,7 @@
       "Variedad de empanadas para llevar",
       "Productos frescos y de calidad"
     ],
-    "horario": "L-S 8:00-14:30 y 17:00-20:00, D 8:00-14:00",
+    "horario": "L-V 07:00-20:30, S 08:00-20:00, D 08:00-21:00",
     "images": [
       "/images/negocios/obrador-de-goya.webp",
       "/images/negocios/obrador-de-goya-2.webp",
@@ -1327,7 +1326,7 @@
       "Precios asequibles",
       "Ubicación conveniente para el barrio"
     ],
-    "horario": "L-S 7:00-15:00 y 17:00-20:00, D 8:00-14:00",
+    "horario": "L-V 08:30-19:30, S 08:30-14:30, D 09:00-14:30",
     "images": [
       "/images/negocios/panaderia-bulevar.webp",
       "/images/negocios/panaderia-bulevar-2.webp",
@@ -1400,7 +1399,7 @@
       "Ideal para eventos o negocios",
       "Productos frescos y de calidad"
     ],
-    "horario": "L-V 6:00-14:00, S 6:00-12:00, D Cerrado",
+    "horario": "L 09:00-14:00, M 08:00-15:00,17:30-20:00, X-J 09:00-14:00, V 08:00-15:00,17:30-20:00, S-D 09:00-14:00",
     "rating": 3.6,
     "numReviews": 37,
     "placeId": "ChIJAYvmBUYlQg0R01wL2A3V0hg",
@@ -1472,7 +1471,7 @@
       "Repostería casera y original",
       "Brunches completos y deliciosos"
     ],
-    "horario": "L-V 8:30-20:00, S-D 9:00-20:30",
+    "horario": "L-V 11:00-21:00, S-D 11:00-16:00",
     "wifi": true,
     "images": [
       "/images/negocios/mimarutxa.webp",
@@ -1597,7 +1596,7 @@
       "Monitores cualificados para todos los niveles",
       "Ambiente deportivo y comunitario"
     ],
-    "horario": "L-D 9:00-23:00",
+    "horario": "L-V 10:00-14:00,16:30-20:30, S 10:00-14:00, D Cerrado",
     "address": "Avenida Miguel Delibes 30, 28052 Madrid",
     "images": [
       "/images/negocios/padel-el-canaveral.webp",
@@ -1675,7 +1674,7 @@
       "Personal cualificado y cariñoso",
       "Instalaciones seguras y adaptadas"
     ],
-    "horario": "L-V 7:30-17:00",
+    "horario": "L-V 07:00-17:30, S-D Cerrado",
     "edades": "0-3 años",
     "plazas": 80,
     "tipoGestion": "privada",
@@ -1758,7 +1757,7 @@
       "Equipo docente experimentado",
       "Instalaciones modernas y seguras"
     ],
-    "horario": "L-V 7:30-16:30",
+    "horario": "L-V 07:30-17:30, S-D Cerrado",
     "edades": "0-3 años",
     "plazas": 156,
     "tipoGestion": "pública",
@@ -1836,7 +1835,7 @@
       "Proyecto educativo innovador",
       "Gestión autonómica de calidad"
     ],
-    "horario": "L-V 7:30-16:30",
+    "horario": "L-V 09:00-16:00, S-D Cerrado",
     "edades": "0-3 años",
     "plazas": 186,
     "tipoGestion": "pública",
@@ -1908,7 +1907,7 @@
       "Arroz con bogavante exquisito",
       "Ambiente familiar y agradable"
     ],
-    "horario": "do 9 AM to 11 PM · lu 6 AM to 11 PM · ma 6 AM to 11 PM · mi 6 AM to 11 PM · ju 6 AM to 11 PM · vi 9 AM to 11 PM · sá 9 AM to 11 PM",
+    "horario": "L-J 06:00-23:00, V-D 09:00-23:00",
     "tiposCocina": [
       "Asturiana",
       "Tradicional Española"
@@ -1991,7 +1990,7 @@
       "Cocina casera de calidad",
       "Ideal para el día a día"
     ],
-    "horario": "do 9 AM to 12 a.m. · lu 6:30 AM to 12 a.m. · ma 6:30 AM to 12 a.m. · mi 6:30 AM to 12 a.m. · ju 6:30 AM to 12 a.m. · vi 6:30 AM to 12 a.m. · sá 9 AM to 12 a.m.",
+    "horario": "L-V 06:30-24:00, S-D 09:00-24:00",
     "tiposCocina": [
       "Casera",
       "Mediterránea"
@@ -2075,7 +2074,7 @@
       "Excelente relación calidad-precio",
       "Variedad de platos latinos"
     ],
-    "horario": "do 10 AM to 5 PM, 7 PM to 12 AM · lu 9 AM to 5 PM, 8 PM to 12 AM · ma 9 AM to 5 PM, 8 PM to 12 AM · mi 9 AM to 5 PM, 8 PM to 12 AM · ju 9 AM to 5 PM, 8 PM to 12 AM · vi 9 AM to 5 PM, 8 PM to 12 AM · sá 10 AM to 5 PM, 7 PM to 12 AM",
+    "horario": "L-V 09:00-17:00,20:00-24:00, S-D 10:00-17:00,19:00-24:00",
     "tiposCocina": [
       "Latina",
       "Casera",
@@ -2166,7 +2165,7 @@
       "Tecnología moderna",
       "Ubicación céntrica en El Cañaveral"
     ],
-    "horario": "L-V 9:30-14:00, 16:00-20:00",
+    "horario": "L-V 10:00-13:30,16:00-20:00, S-D Cerrado",
     "especialidades": [
       "Odontología General",
       "Implantes Dentales",
@@ -2253,7 +2252,7 @@
       "Acepta seguros Sanitas y otros",
       "Amplia gama de especialidades"
     ],
-    "horario": "L-V 9:00-21:00, S 10:00-14:00",
+    "horario": "L-V 09:00-21:00, S-D Cerrado",
     "especialidades": [
       "Odontología General",
       "Ortodoncia",
@@ -2343,7 +2342,7 @@
       "Tratamientos personalizados",
       "Resultados de alta calidad"
     ],
-    "horario": "L-V 9:00-20:00",
+    "horario": "L-J 10:00-14:00,15:30-20:00, V 10:00-18:00, S-D Cerrado",
     "especialidades": [
       "Ortodoncia",
       "Estética Dental",
@@ -2430,7 +2429,7 @@
       "Profesionales altamente cualificados",
       "Atención personalizada"
     ],
-    "horario": "L-V 9:30-14:00, 16:00-20:00, S (urgencias)",
+    "horario": "L-V 10:00-20:30, S 10:00-14:00, D Cerrado",
     "especialidades": [
       "Odontología General",
       "Urgencias Dentales",
@@ -2517,7 +2516,7 @@
       "Productos de calidad",
       "Ambiente agradable y relajante"
     ],
-    "horario": "M-V 10:00-19:00, S 9:30-14:00",
+    "horario": "L-V 10:00-20:00, S 09:30-14:30, D Cerrado",
     "image": "/images/negocios/antonella-peluqueria-y-belleza.webp",
     "address": "Av. Miguel Delibes 35, 28052 Madrid",
     "phone": "+34 912 44 57 67",
@@ -2599,7 +2598,7 @@
       "Ambiente sofisticado y relajante",
       "Atención personalizada"
     ],
-    "horario": "M-V 10:00-20:00, S 9:00-15:00",
+    "horario": "L-V 10:00-20:00, S 09:00-14:00, D Cerrado",
     "image": "/images/negocios/la-belle-vie-canaveral.webp",
     "images": [
       "/images/negocios/la-belle-vie-canaveral.webp",
@@ -2678,7 +2677,7 @@
       "Enfoque en la sostenibilidad",
       "Resultados naturales y duraderos"
     ],
-    "horario": "M-V 10:00-19:00, S 9:00-14:00",
+    "horario": "L-V 10:00-20:00, S 10:00-14:00, D Cerrado",
     "image": "/images/negocios/rizal-organic-studio.webp",
     "images": [
       "/images/negocios/rizal-organic-studio.webp",
@@ -2757,7 +2756,7 @@
       "Compromiso con la sostenibilidad",
       "Productos de alta calidad y éticos"
     ],
-    "horario": "M-V 9:30-19:30, S 9:00-14:00",
+    "horario": "L-V 10:00-20:00, S 09:00-14:30, D Cerrado",
     "image": "/images/negocios/mai-de-diego-estetica-estilistas.webp",
     "address": "Calle Victoria Kent 12, 28052 Madrid",
     "phone": "+34 744 63 37 59",
@@ -2838,7 +2837,7 @@
       "Profesionales con experiencia",
       "Productos de calidad"
     ],
-    "horario": "M-V 9:30-19:30, S 9:00-14:00",
+    "horario": "L-V 10:00-14:00,16:00-20:00, S 09:00-14:00, D Cerrado",
     "image": "/images/negocios/caliza-estilistas.webp",
     "address": "Calle San Cipriano 30, 28032 Madrid",
     "phone": "+34 917 60 26 62",
@@ -2918,7 +2917,7 @@
       "Ambiente motivador y moderno",
       "Monitores cualificados"
     ],
-    "horario": "L-V 7:00-22:00, S 9:00-14:00, D 10:00-14:00",
+    "horario": "L-V 07:00-22:00, S 08:00-20:00, D 08:00-15:00",
     "image": "/images/negocios/energie-fitness-canaveral.webp",
     "images": [
       "/images/negocios/energie-fitness-canaveral.webp",
@@ -2998,7 +2997,7 @@
       "Monitores altamente cualificados",
       "Comunidad activa y motivadora"
     ],
-    "horario": "L-V 7:00-12:00, 17:00-22:00, S 9:00-13:00",
+    "horario": "L-J 07:00-12:00,13:30-15:30,17:00-22:00, V 07:00-12:00,13:30-15:30,16:00-21:00, S 08:00-13:00, D Cerrado",
     "image": "/images/negocios/apache-crosstraining-canaveral.webp",
     "address": "Calle Mario Moreno Cantinflas 8, 28052 Madrid",
     "phone": "+34 613 05 20 92",
@@ -3075,7 +3074,7 @@
       "Entrenadores cualificados y motivadores",
       "Variedad de entrenamientos para todos los niveles"
     ],
-    "horario": "L-V 7:00-22:00, S 9:00-14:00",
+    "horario": "L-V 07:00-22:00, S 10:00-13:00, D Cerrado",
     "image": "/images/negocios/winfit-canaveral.webp",
     "address": "Calle Anna Frank 20, 28052 Madrid",
     "phone": "+34 618 85 15 65",
@@ -3152,7 +3151,7 @@
       "Resultados rápidos en poco tiempo",
       "Comunidad activa y motivadora"
     ],
-    "horario": "L-V 7:00-22:00, S 9:00-14:00",
+    "horario": "L 09:30-11:30,13:30-14:30,17:30-21:30, M 08:00-09:00,09:30-10:30,14:30-15:30,17:30-21:30, X 09:30-11:30,13:30-14:30,17:30-21:30, J 08:00-09:00,09:30-10:30,14:30-15:30,17:30-21:30, V 08:00-09:00,09:30-11:30,16:30-20:30, S-D 10:00-13:00",
     "image": "/images/negocios/brooklyn-fitboxing-canaveral.webp",
     "address": "Av. Miguel Delibes 50, 28052 Madrid",
     "phone": "+34 608 26 50 97",
@@ -3235,7 +3234,7 @@
       "Ubicación céntrica en El Cañaveral",
       "Trato amable y cercano con las mascotas"
     ],
-    "horario": "L-V 10:00-14:00 y 17:00-20:00, S 10:00-14:00",
+    "horario": "L-X 09:30-17:30, J-D Cerrado",
     "image": "/images/negocios/peludos-del-canaveral.webp",
     "images": [
       "/images/negocios/peludos-del-canaveral.webp",
@@ -3309,7 +3308,7 @@
       "Atención integral para mascotas",
       "Urgencias veterinarias (horario comercial)"
     ],
-    "horario": "L-V 10:00-14:00 y 17:00-20:30, S 10:00-14:00",
+    "horario": "L-V 08:30-22:00, S 10:00-15:00, D Cerrado",
     "image": "/images/negocios/vicalcan-veterinario.webp",
     "address": "Calle Jose Prat 15, 28032 Madrid",
     "phone": "+34 910 06 80 99",
@@ -3387,7 +3386,7 @@
       "Ubicación céntrica en Vicálvaro",
       "Servicio de duplicado de llaves al instante"
     ],
-    "horario": "L-V 9:00-14:00 y 17:00-20:00, S 9:30-14:00",
+    "horario": "L-V 09:30-14:00,17:30-20:00, S 09:30-14:00, D Cerrado",
     "image": "/images/negocios/ferrokey-vicalvaro.webp",
     "images": [
       "/images/negocios/ferrokey-vicalvaro.webp",
@@ -3465,7 +3464,7 @@
       "Productos de alta calidad y marcas reconocidas",
       "Asesoramiento experto para proyectos complejos"
     ],
-    "horario": "L-V 8:30-19:00",
+    "horario": "L-V 09:30-14:00,17:00-20:00, S 10:00-13:30, D Cerrado",
     "image": "/images/negocios/ferreteria-directa-vicalvaro.webp",
     "address": "Calle Villacarlos 7, 28032 Madrid",
     "phone": "+34 648 50 14 45",
@@ -3542,7 +3541,7 @@
       "Amplia experiencia en diversas ramas del derecho",
       "Primera consulta informativa"
     ],
-    "horario": "L-V 9:00-14:00 y 16:00-19:00",
+    "horario": "L-J 09:30-14:00,16:30-20:00, V 09:30-14:00, S-D Cerrado",
     "image": "/images/negocios/abogados-el-canaveral.webp",
     "images": [
       "/images/negocios/abogados-el-canaveral.webp",
@@ -3630,7 +3629,6 @@
     "googleCategory": "Bufete",
     "lat": 4.6069553,
     "lng": -74.0739086,
-    "phone": "+57 312 3688837",
     "website": "http://garciayasociadosasesoressas.com/"
   },
   {
@@ -3662,7 +3660,7 @@
       "Amplio conocimiento del mercado local",
       "Asesoramiento integral en todo el proceso"
     ],
-    "horario": "L-V 9:30-14:00 y 16:30-20:00, S 10:00-14:00",
+    "horario": "L-V 09:30-20:00, S 10:00-14:00, D Cerrado",
     "image": "/images/negocios/templo-consulting-inmobiliaria.webp",
     "address": "Calle Jose Prat 22, 28032 Madrid",
     "phone": "+34 919 38 56 78",
@@ -3739,7 +3737,7 @@
       "Ambiente moderno y acogedor",
       "Ideal para cenas informales"
     ],
-    "horario": "do 1 to 11 PM · lu 1 to 11 PM · ma 1 to 11 PM · mi 1 to 11:30 PM · ju 1 to 11:30 PM · vi 1 to 11:30 PM · sá 1 to 11:30 PM",
+    "horario": "L-M 13:00-23:00, X-S 13:00-23:30, D 13:00-23:00",
     "tiposCocina": [
       "Americana",
       "Gourmet"
@@ -3826,7 +3824,7 @@
       "Ambiente animado y familiar",
       "Ideal para el aperitivo o afterwork"
     ],
-    "horario": "do 11:30 AM to 11:30 PM · lu 11:30 AM to 11:30 PM · ma 11:30 AM to 11:30 PM · mi 11:30 AM to 11:30 PM · ju 11:30 AM to 11:30 PM · vi 11:30 AM to 12 a.m. · sá 11:30 AM to 12 a.m.",
+    "horario": "L-J 11:30-23:30, V-S 11:30-24:00, D 11:30-23:30",
     "tiposCocina": [
       "Española",
       "Tapas"
@@ -3907,7 +3905,7 @@
       "Ambiente familiar y de barrio",
       "Ideal para desayunos y meriendas"
     ],
-    "horario": "do 7 AM to 1 PM, 5 to 10 PM · lu Cerrado · ma 7 AM to 1 PM, 5 to 10 PM · mi 7 AM to 1 PM, 5 to 10 PM · ju 7 AM to 1 PM, 5 to 10 PM · vi 7 AM to 1 PM, 5 to 10 PM · sá 7 AM to 1 PM, 5 to 10 PM",
+    "horario": "L Cerrado, M-D 07:00-13:00,17:00-22:00",
     "tiposCocina": [
       "Dulces",
       "Desayunos"
@@ -3989,7 +3987,7 @@
       "Ambiente familiar y tradicional",
       "Excelente relación calidad-precio"
     ],
-    "horario": "do Cerrado · lu 8 AM to 12 a.m. · ma 8 AM to 12 a.m. · mi 8 AM to 12 a.m. · ju 8 AM to 12 a.m. · vi 8 AM to 12 a.m. · sá 8 AM to 12 a.m.",
+    "horario": "L-S 08:00-24:00, D Cerrado",
     "tiposCocina": [
       "Española",
       "Madrileña"
@@ -4073,7 +4071,7 @@
       "Ambiente acogedor y de barrio",
       "Ideal para comer a diario"
     ],
-    "horario": "do 7:30 AM to 1 a.m. · lu Cerrado · ma 7:30 AM to 1 a.m. · mi 7:30 AM to 1 a.m. · ju 7:30 AM to 1 a.m. · vi 7:30 AM to 1 a.m. · sá 7:30 AM to 1 a.m.",
+    "horario": "L Cerrado, M-D 07:30-01:00",
     "tiposCocina": [
       "Casera",
       "Mediterránea"
@@ -4156,7 +4154,7 @@
       "Ambiente elegante y moderno",
       "Ideal para celebraciones y ocasiones especiales"
     ],
-    "horario": "do Cerrado · lu 8:30 AM to 2 PM, 5 to 9 PM · ma 8:30 AM to 2 PM, 5 to 9 PM · mi 8:30 AM to 2 PM, 5 to 9 PM · ju 8:30 AM to 2 PM, 5 to 9 PM · vi 8:30 AM to 2 PM, 5 to 9 PM · sá 8:30 AM to 2 PM",
+    "horario": "L-V 08:30-14:00,17:00-21:00, S 08:30-14:00, D Cerrado",
     "tiposCocina": [
       "De Autor",
       "Mediterránea Moderna"
@@ -4240,7 +4238,7 @@
       "Enfoque integral y personalizado",
       "Profesionales altamente cualificados"
     ],
-    "horario": "L-V 9:00-20:00",
+    "horario": "L 10:00-21:00, M 09:00-21:00, X-V 10:00-21:00, S 10:00-14:00, D Cerrado",
     "especialidades": [
       "Fisioterapia de suelo pélvico",
       "Fisioterapia obstétrica",
@@ -4325,7 +4323,7 @@
       "Tratamientos innovadores y efectivos",
       "Equipo profesional y experimentado"
     ],
-    "horario": "L-V 10:00-14:00, 16:00-21:00",
+    "horario": "L-V 09:00-21:00, S-D Cerrado",
     "especialidades": [
       "Fisioterapia deportiva",
       "Fisioterapia de ATM",
@@ -4410,7 +4408,7 @@
       "Enfoque en la recuperación activa",
       "Profesionales con experiencia"
     ],
-    "horario": "L-V 9:00-14:00, 16:00-20:00",
+    "horario": "L-J 10:00-14:00,16:00-21:00, V 10:00-14:00,16:00-20:00, S-D Cerrado",
     "especialidades": [
       "Fisioterapia traumatológica",
       "Fisioterapia deportiva",
@@ -4497,7 +4495,7 @@
       "Enfoque integral para la salud familiar",
       "Fácil acceso en Valdebernardo"
     ],
-    "horario": "L-V 9:00-20:00, S 9:00-14:00",
+    "horario": "L-V 10:00-14:00,17:00-20:00, S-D Cerrado",
     "especialidades": [
       "Podología",
       "Fisioterapia",
@@ -4581,7 +4579,7 @@
       "Tratamientos personalizados y preventivos",
       "Ambiente relajante y profesional"
     ],
-    "horario": "L-V 9:30-14:00, 16:00-20:30",
+    "horario": "L-V 09:00-21:00, S-D Cerrado",
     "especialidades": [
       "Fisioterapia",
       "Osteopatía",
@@ -4666,7 +4664,7 @@
       "Profesores nativos y bilingües",
       "Flexibilidad de horarios"
     ],
-    "horario": "L-V 10:00-14:00, 16:00-21:00",
+    "horario": "L 10:30-14:00,17:00-20:30, M 16:30-20:30, X 10:30-14:00,17:00-20:30, J 16:30-20:30, V 10:30-14:00,17:00-20:30, S-D Cerrado",
     "edades": "Desde 3 años hasta adultos",
     "plazas": 150,
     "tipoGestion": "privada",
@@ -4681,7 +4679,7 @@
     "rating": 4.9,
     "numReviews": 74,
     "phone": "+34 618 59 47 43",
-    "website": "https://englishconnection.es/academia-ingles/canaveral/?utm_source=gmb&utm_medium=organic&utm_campaign=canaveral",
+    "website": "https://englishconnection.es/academia-ingles/canaveral/",
     "placeId": "ChIJMY2DbLQ7Qg0RU7P3ZC7dGiU",
     "googleCategory": "Academia de inglés",
     "lat": 40.4075606,
@@ -4726,7 +4724,7 @@
     "zona": "coslada",
     "zonaName": "Coslada",
     "address": "Av. San Pablo, 32, 28823 Coslada, Madrid",
-    "website": "https://sadecocoslada.com/?utm_source=gmb&utm_medium=organic&utm_campaign=gmb-appointment&utm_content=sadeco-coslada-mantenimovil",
+    "website": "https://sadecocoslada.com/",
     "tags": [
       "taller",
       "pre-itv",
@@ -4748,7 +4746,7 @@
       "Precios competitivos",
       "Atención rápida y eficiente"
     ],
-    "horario": "L-V 9:00-14:00, 16:00-20:00",
+    "horario": "L-V 09:00-19:00, S-D Cerrado",
     "image": "/images/negocios/sadeco-coslada.webp",
     "images": [
       "/images/negocios/sadeco-coslada.webp",
@@ -4826,7 +4824,7 @@
       "Parte de la red First Stop",
       "Profesionales cualificados"
     ],
-    "horario": "L-V 8:30-19:00, S 9:00-13:00",
+    "horario": "L-J 08:00-14:00,15:30-18:30, V 08:00-14:00, S-D Cerrado",
     "address": "Av. de España 10, 28823 Coslada, Madrid",
     "phone": "+34 919 19 19 66",
     "image": "/images/negocios/masruedas-coslada.webp",
@@ -4905,7 +4903,7 @@
       "Atención personalizada y presupuestos transparentes",
       "Ubicación accesible en San Fernando de Henares"
     ],
-    "horario": "L-V 9:00-14:00 y 16:00-19:30, S 9:00-13:00",
+    "horario": "L-J 08:00-14:00,15:30-18:30, V 08:00-14:00, S-D Cerrado",
     "address": "Calle San Pablo 5, 28830 San Fernando de Henares, Madrid",
     "phone": "+34 916 69 69 26",
     "image": "/images/negocios/electroi-san-fernando.webp",
@@ -4984,7 +4982,7 @@
       "Equipo de mecánicos con amplia experiencia",
       "Garantía en todas las reparaciones"
     ],
-    "horario": "L-V 9:00-14:00 y 16:00-19:00",
+    "horario": "L-V 09:00-14:00,16:00-20:00, S-D Cerrado",
     "address": "Calle de la Carpintería, 10, 28830 San Fernando de Henares, Madrid",
     "phone": "+34 916 71 78 33",
     "image": "/images/negocios/inyeauto-san-fernando.webp",
@@ -5058,7 +5056,7 @@
       "Ambiente acogedor y personal",
       "Ideal para encontrar ese 'algo' diferente"
     ],
-    "horario": "L-S 10:00-14:00 y 17:00-20:30",
+    "horario": "L-V 10:30-14:00,18:30-20:00, S 11:00-14:00, D Cerrado",
     "image": "/images/negocios/aticomoda-vicalvaro.webp",
     "images": [
       "/images/negocios/aticomoda-vicalvaro.webp",
@@ -5179,7 +5177,7 @@
       "Atención al detalle en cada compra",
       "Ideal para encontrar piezas duraderas"
     ],
-    "horario": "L-S 10:00-14:00 y 17:00-20:30",
+    "horario": "L-V 10:00-13:30,17:00-20:00, S 10:00-13:30, D Cerrado",
     "address": "Calle de Villacarlos, 12, 28032 Madrid",
     "image": "/images/negocios/almacenes-s-lara.webp",
     "images": [
@@ -5255,7 +5253,7 @@
       "Estilo propio y diferenciador",
       "Ideal para renovar el armario con lo más actual"
     ],
-    "horario": "L-S 10:30-14:00 y 17:30-20:30",
+    "horario": "L-V 10:00-13:30,17:30-20:30, S 10:00-13:30, D Cerrado",
     "address": "Calle de Jose Prat, 25, 28032 Madrid",
     "image": "/images/negocios/akiomoda-vicalvaro.webp",
     "images": [
@@ -5314,7 +5312,7 @@
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
     "address": "C. Anna Frank, 8, Local 2, Vicalvaro, 28052 Madrid",
-    "horario": "L-V 10:00-14:00, 17:00-20:00, S 10:00-14:00",
+    "horario": "L-V 10:00-14:00,17:00-20:00, S 10:30-14:00, D Cerrado",
     "tags": [
       "lavandería",
       "tintorería",
@@ -5411,9 +5409,8 @@
       "Detergente y suavizante ecológicos incluidos",
       "Ideal para coladas grandes y prendas voluminosas"
     ],
-    "horario": "L-D 7:00-23:00",
+    "horario": "L-D 08:00-22:00",
     "address": "Calle de San Cipriano, 68, 28032 Madrid",
-    "phone": "654 32 10 98",
     "image": "/images/negocios/lavanderia-vicalvaro.webp",
     "images": [
       "/images/negocios/lavanderia-vicalvaro.webp",
@@ -5457,7 +5454,8 @@
         "dia": "domingo",
         "horas": "8 AM to 10 PM"
       }
-    ]
+    ],
+    "phone": "654 32 10 98"
   },
   {
     "slug": "mediesven-canaveral",
@@ -5544,7 +5542,7 @@
       "Servicio de entrega a domicilio rápido",
       "Ideal para una comida rápida y sabrosa"
     ],
-    "horario": "do 12:30 to 5 PM, 7 PM to 12 AM · lu 7 PM to 12 AM · ma 12:30 to 5 PM, 7 PM to 12 AM · mi 12:30 to 5 PM, 7 PM to 12 AM · ju 12:30 to 5 PM, 7 PM to 12 AM · vi 12:30 PM to 1 AM · sá 12:30 PM to 1 AM",
+    "horario": "L 19:00-24:00, M-J 12:30-17:00,19:00-24:00, V-S 12:30-01:00, D 12:30-17:00,19:00-24:00",
     "image": "/images/negocios/mr-kebab-canaveral.webp",
     "images": [
       "/images/negocios/mr-kebab-canaveral.webp",
@@ -5555,7 +5553,7 @@
     ],
     "rating": 4.7,
     "numReviews": 438,
-    "website": "https://www.instagram.com/mrkebab_el_canaveral?igsh=MXN5ZjMzbzhmbzg2cg%3D%3D&utm_source=qr",
+    "website": "https://www.instagram.com/mrkebab_el_canaveral?igsh=MXN5ZjMzbzhmbzg2cg%3D%3D",
     "placeId": "ChIJi1s5K_c7Qg0RpAGRIOMFO8Q",
     "lat": 40.4085461,
     "lng": -3.55308,
@@ -5622,7 +5620,7 @@
       "Ofertas y promociones constantes",
       "Ideal para compartir en familia o con amigos"
     ],
-    "horario": "do 1 to 4 PM, 7:30 to 11:30 PM · lu 7:30 to 11:30 PM · ma 7:30 to 11:30 PM · mi 7:30 to 11:30 PM · ju 7:30 to 11:30 PM · vi 1 to 4 PM, 7:30 PM to 12 AM · sá 1 to 4 PM, 7:30 PM to 12 AM",
+    "horario": "L-J 19:00-23:00, V-S 13:00-16:00,19:00-24:00, D 13:00-16:00,19:00-23:00",
     "address": "Avenida de Miguel Delibes, 50, 28052 Madrid",
     "phone": "+34 910 01 14 66",
     "image": "/images/negocios/telepizza-canaveral.webp",
@@ -5635,7 +5633,7 @@
     ],
     "rating": 3.1,
     "numReviews": 388,
-    "website": "https://www.telepizza.es/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+    "website": "https://www.telepizza.es/",
     "placeId": "ChIJ4Y66gTQ7Qg0RrJ6k512wcDQ",
     "googleCategory": "Pizzería a domicilio",
     "lat": 40.4025832,
@@ -5703,7 +5701,7 @@
       "Precios muy asequibles",
       "Ideal para probar diferentes especialidades"
     ],
-    "horario": "do 12 PM to 12 AM · lu 12 PM to 12 AM · ma 12 PM to 12 AM · mi 12 PM to 12 AM · ju 12 PM to 12 AM · vi 12 PM to 12 AM · sá 12 PM to 12 AM",
+    "horario": "L-D 14:00-24:00",
     "address": "Calle de San Cipriano, 10, 28032 Madrid",
     "phone": "+34 663 87 72 77",
     "image": "/images/negocios/kebabish-vicalvaro.webp",
@@ -5781,7 +5779,7 @@
       "Amplia variedad de productos frescos",
       "Ofertas semanales muy atractivas"
     ],
-    "horario": "L-S 9:00-21:30, D 10:00-15:00",
+    "horario": "L-V 07:00-21:00, S 07:00-20:00, D Cerrado",
     "address": "Avenida de Miguel Delibes, 100, 28052 Madrid",
     "image": "/images/negocios/lidl-canaveral.webp",
     "images": [
@@ -5797,8 +5795,6 @@
     "googleCategory": "Supermercado",
     "lat": 50.71708,
     "lng": 10.46791,
-    "phone": "+49 30 22005500",
-    "website": "https://www.lidl.de/",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -5859,7 +5855,7 @@
       "Sección de frescos de calidad",
       "Comida preparada lista para consumir"
     ],
-    "horario": "L-S 9:00-21:30",
+    "horario": "L-S 09:00-21:30, D Cerrado",
     "address": "Avenida de Castilla, 1, 28830 San Fernando de Henares, Madrid",
     "image": "/images/negocios/mercadona-san-fernando.webp",
     "images": [
@@ -5939,7 +5935,7 @@
       "Variedad de productos internacionales",
       "Calidad en productos frescos"
     ],
-    "horario": "L-S 9:00-21:30, D 10:00-15:00",
+    "horario": "L-S 09:00-22:00, D 10:00-22:00",
     "address": "Avenida de España, 100, 28823 Coslada, Madrid",
     "image": "/images/negocios/aldi-coslada.webp",
     "images": [
@@ -6018,7 +6014,7 @@
       "Productos de alta calidad",
       "Ambiente acogedor y relajante"
     ],
-    "horario": "M-V 10:00-19:00, S 9:00-14:00",
+    "horario": "L-X 10:00-19:00, J-V 10:00-20:00, S-D Cerrado",
     "address": "Calle de San Cipriano, 45, 28032 Madrid",
     "image": "/images/negocios/laura-vivar-estilistas-3.webp",
     "images": [
@@ -6143,7 +6139,7 @@
       "Pedido rápido en quioscos digitales",
       "Ideal para familias y comidas rápidas"
     ],
-    "horario": "do 12:30 PM to 12:30 AM · lu 12:30 PM to 12:30 AM · ma 12:30 PM to 12:30 AM · mi 12:30 PM to 12:30 AM · ju 12:30 PM to 12:30 AM · vi 12:30 PM to 1 AM · sá 12:30 PM to 1 AM",
+    "horario": "L-J 12:30-24:00, V-D 12:30-00:30",
     "address": "Avenida de Miguel Delibes, 80, 28052 Madrid",
     "image": "/images/negocios/burger-king-canaveral.webp",
     "images": [
@@ -6224,7 +6220,7 @@
       "Amplia oferta de clases dirigidas",
       "Tarifas competitivas sin permanencia"
     ],
-    "horario": "L-D 24h (acceso con huella)",
+    "horario": "L-V 06:00-23:00, S 08:00-20:00, D 08:00-15:00",
     "address": "Calle de los Pinillas, 1, 28032 Madrid",
     "image": "/images/negocios/dreamfit-valdebernardo.webp",
     "images": [
@@ -6305,7 +6301,7 @@
       "Programación de entrenamientos variada",
       "Ideal para todos los niveles, desde principiantes a avanzados"
     ],
-    "horario": "L-V 7:00-22:00, S 9:00-14:00",
+    "horario": "L-V 07:00-22:00, S 09:00-13:30, D Cerrado",
     "image": "/images/negocios/vicalvaro-crossfit.webp",
     "images": [
       "/images/negocios/vicalvaro-crossfit.webp",
@@ -6382,7 +6378,7 @@
       "Entrenadores cualificados",
       "Planes de entrenamiento adaptados a cada persona"
     ],
-    "horario": "L-V 7:00-22:00, S 9:00-14:00",
+    "horario": "L-D 06:00-23:00",
     "address": "Calle de San Cipriano, 70, 28032 Madrid",
     "image": "/images/negocios/lorange-bleue-vicalvaro.webp",
     "images": [
@@ -6520,7 +6516,7 @@
       "Equipo pedagógico innovador",
       "Fomento de la autonomía infantil"
     ],
-    "horario": "L-V 8:00-17:00",
+    "horario": "L-V 07:00-18:00, S-D Cerrado",
     "plazas": 60,
     "image": "/images/negocios/escuela-infantil-aupa.webp",
     "images": [
@@ -6611,7 +6607,7 @@
       "Trato cercano y personalizado",
       "Financiación a medida"
     ],
-    "horario": "L-V 9:30-14:00 y 16:00-20:00, S 10:00-14:00",
+    "horario": "L-J 10:00-20:00, V 10:00-19:00, S-D Cerrado",
     "image": "/images/negocios/ikigai-dental-canaveral-v2.webp",
     "images": [
       "/images/negocios/ikigai-dental-canaveral-v2.webp",
@@ -6700,7 +6696,7 @@
       "Tecnología avanzada para diagnósticos",
       "Registro sanitario garantizado"
     ],
-    "horario": "L-V 9:00-20:00",
+    "horario": "L-V 10:00-13:30,16:00-21:00, S-D Cerrado",
     "image": "/images/negocios/vicalvaro-dental.webp",
     "images": [
       "/images/negocios/vicalvaro-dental.webp",
@@ -6781,7 +6777,7 @@
       "Platos tradicionales y frescos",
       "Excelente valoración en TheFork"
     ],
-    "horario": "do 12:30 to 11:30 PM · lu 6 to 11:30 PM · ma 6 to 11:30 PM · mi 6 to 11:30 PM · ju 6 to 11:30 PM · vi 12:30 to 11:30 PM · sá 12:30 to 11:30 PM",
+    "horario": "L-J 18:00-23:30, V-D 12:00-23:30",
     "image": "/images/negocios/vietnam-2013-canaveral.webp",
     "images": [
       "/images/negocios/vietnam-2013-canaveral.webp",
@@ -6894,7 +6890,7 @@
       "cubana",
       "latina"
     ],
-    "horario": "do 8 PM to 2:30 AM · lu Cerrado · ma 8 PM to 12 AM · mi 12 AM to 5 PM, 8 PM to 2:30 AM · ju 8 PM to 2:30 AM · vi 8 PM to 2:30 AM · sá 8 PM to 2:30 AM",
+    "horario": "L Cerrado, M-D 20:00-02:30",
     "featured": false,
     "servicios": [
       "Desayunos cubanos",
@@ -6919,7 +6915,7 @@
     ],
     "rating": 4.9,
     "numReviews": 29,
-    "website": "https://www.instagram.com/havana.lounge.bar?igsh=OWE2ajBwMWxzMWho&utm_source=qr",
+    "website": "https://www.instagram.com/havana.lounge.bar?igsh=OWE2ajBwMWxzMWho",
     "placeId": "ChIJpepqbgAvQg0Ryib_REEDZ9g",
     "googleCategory": "Pub",
     "lat": 40.4378837,
@@ -6988,7 +6984,7 @@
       "Amplia variedad de arepas",
       "Nuevo local con ambiente moderno"
     ],
-    "horario": "do 9 AM to 5 PM, 7 to 11 PM · lu 10 AM to 4 PM, 7 to 11 PM · ma 10 AM to 4 PM, 7 to 11 PM · mi 10 AM to 4 PM, 7 to 11 PM · ju 10 AM to 4 PM, 7 to 11 PM · vi 10 AM to 4 PM, 7 PM to 12 AM · sá 9 AM to 5 PM, 7 PM to 12 AM",
+    "horario": "L-J 10:00-23:00, V 10:00-24:00, S 09:00-24:00, D 09:00-23:00",
     "image": "/images/negocios/guasacaca-madrid-canaveral.webp",
     "images": [
       "/images/negocios/guasacaca-madrid-canaveral.webp",
@@ -7074,7 +7070,7 @@
       "Platos frescos y sabrosos",
       "Excelente relación calidad-precio"
     ],
-    "horario": "do 12 PM to 12 AM · lu 12 PM to 12 AM · ma 12 PM to 12 AM · mi 12 PM to 12 AM · ju 12 PM to 12 AM · vi 12 PM to 12 AM · sá 12 PM to 12 AM",
+    "horario": "L-S 12:00-23:00, D 12:00-22:00",
     "image": "/images/negocios/chinawok-express-canaveral.webp",
     "images": [
       "/images/negocios/chinawok-express-canaveral.webp",
@@ -7156,7 +7152,7 @@
       "Ambiente moderno y juvenil",
       "Excelente valoración en TheFork"
     ],
-    "horario": "do 1 to 11 PM · lu 1 to 11 PM · ma 1 to 11 PM · mi 1 to 11 PM · ju 1 to 11 PM · vi 1 PM to 12 AM · sá 1 PM to 12 AM",
+    "horario": "L-J 13:00-23:00, V-S 13:00-24:00, D 13:00-23:00",
     "address": "C. de San Cipriano, 67, Vicálvaro, 28032 Madrid",
     "phone": "+34 915 50 14 34",
     "website": "https://restaurantelabajada.com/carta-vicalvaro/",
@@ -7236,7 +7232,7 @@
       "Atención personalizada y profesional",
       "Gran variedad de productos de parafarmacia"
     ],
-    "horario": "Lunes a Viernes: 09:00-22:00, Sábado: 09:30-14:00 y 17:00-21:00, Domingo: Cerrado (consultar guardias)",
+    "horario": "L-V 09:00-21:30, S-D 09:30-21:30",
     "image": "/images/negocios/farmacia-central-canaveral.webp",
     "images": [
       "/images/negocios/farmacia-central-canaveral.webp",
@@ -7311,7 +7307,7 @@
       "Amplia gama de productos infantiles",
       "Trato cercano y familiar"
     ],
-    "horario": "Lunes a Viernes: 09:30-14:00 y 17:00-20:30, Sábado: 10:00-14:00, Domingo: Cerrado",
+    "horario": "L-V 09:30-21:30, S 09:30-14:30, D Cerrado",
     "image": "/images/negocios/farmacia-sonrisas-canaveral.webp",
     "images": [
       "/images/negocios/farmacia-sonrisas-canaveral.webp",
@@ -7386,7 +7382,7 @@
       "Especialistas en dermofarmacia",
       "Ubicación céntrica en el barrio"
     ],
-    "horario": "Lunes a Viernes: 09:00-14:00 y 17:00-20:00, Sábado: 10:00-14:00, Domingo: Cerrado",
+    "horario": "L-S 09:30-21:30, D Cerrado",
     "image": "/images/negocios/farmacia-botica-de-mar.webp",
     "images": [
       "/images/negocios/farmacia-botica-de-mar.webp",
@@ -7462,7 +7458,7 @@
       "Ubicación estratégica en el barrio",
       "Amplia disponibilidad de productos"
     ],
-    "horario": "Lunes a Viernes: 09:00-21:00, Sábado: 09:30-14:00, Domingo: Cerrado",
+    "horario": "L-V 08:30-21:30, S 09:30-21:30, D Cerrado",
     "image": "/images/negocios/farmacia-el-canaveral-vk.webp",
     "images": [
       "/images/negocios/farmacia-el-canaveral-vk.webp",
@@ -7591,7 +7587,7 @@
       "Amplia variedad de productos",
       "Punto de venta de loterías"
     ],
-    "horario": "Lunes a Viernes: 09:00-14:00 y 17:00-20:00, Sábado: 09:30-14:00, Domingo: Cerrado",
+    "horario": "L-V 08:00-21:00, S-D 09:00-14:30",
     "address": "Av. de Blas de Lezo, 74, Vicálvaro, 28052 Madrid",
     "image": "/images/negocios/estanco-el-canaveral.webp",
     "images": [
@@ -7667,7 +7663,7 @@
       "Valoración gratuita de tu vivienda sin compromiso",
       "Red de oficinas: El Cañaveral, Coslada y Chamberí"
     ],
-    "horario": "L-V 10:00-14:00 y 16:30-20:00",
+    "horario": "L-V 10:00-14:00,16:30-20:00, S-D Cerrado",
     "image": "/images/negocios/sm-homes-el-canaveral.webp",
     "address": "Calle Enrique Urquijo 90, 28052 Madrid",
     "phone": "+34 674 38 19 97",
@@ -7748,13 +7744,13 @@
     "horario": "L-V 9:00–21:00 · D cerrado",
     "image": "/images/negocios/mediadores-inmobiliarios-canaveral.webp",
     "address": "C. de Enrique Urquijo, 134, Vicálvaro, 28052 Madrid",
-    "phone": "722148775",
     "images": [
       "/images/negocios/mediadores-inmobiliarios-canaveral.webp",
       "/images/negocios/mediadores-inmobiliarios-canaveral-2.webp",
       "/images/negocios/mediadores-inmobiliarios-canaveral-3.webp",
       "/images/negocios/mediadores-inmobiliarios-canaveral-4.webp"
-    ]
+    ],
+    "phone": "722148775"
   },
   {
     "slug": "redpiso-el-canaveral",
@@ -7785,7 +7781,7 @@
       "Valoración gratuita sin compromiso",
       "Servicio integral compraventa y alquiler"
     ],
-    "horario": "L-V 9:30–14:00, 16:00–20:00 · D cerrado",
+    "horario": "L-V 09:30-14:00,16:00-20:00, S 10:00-14:00, D Cerrado",
     "image": "/images/negocios/redpiso-el-canaveral.webp",
     "address": "Av. de Miguel Delibes, 30, Local 8, Vicálvaro, 28052 Madrid",
     "phone": "+34 910 94 37 69",
@@ -7860,7 +7856,7 @@
       "Valoración gratuita sin compromiso",
       "Servicio integral compraventa y alquiler"
     ],
-    "horario": "L-V 9:00–14:00, 16:00–19:00 · S cerrado · D cerrado",
+    "horario": "L-V 09:00-14:00,16:00-19:00, S-D Cerrado",
     "image": "/images/negocios/inmobiliaria-el-canaveral-coslada.webp",
     "address": "C. de la Iglesia, 4, 28821 Coslada, Madrid",
     "phone": "+34 910 28 98 08",
@@ -7936,7 +7932,7 @@
       "Valoración gratuita sin compromiso",
       "Servicio integral compraventa y alquiler"
     ],
-    "horario": "L-V 9:30–14:00, 17:00–20:30 · S cerrado · D cerrado",
+    "horario": "L-V 09:30-14:00,17:00-20:30, S-D Cerrado",
     "image": "/images/negocios/inmoacierta-vicalvaro.webp",
     "address": "C. del Lago Van, 12, Vicálvaro, 28032 Madrid",
     "phone": "+34 623 23 45 07",
@@ -8014,7 +8010,7 @@
       "Valoración gratuita sin compromiso",
       "Servicio integral compraventa y alquiler"
     ],
-    "horario": "L-V 10:00–14:00, 17:00–20:30 · D cerrado",
+    "horario": "L-V 10:00-14:00,17:00-20:30, S 10:00-14:00, D Cerrado",
     "image": "/images/negocios/globalpiso-vicalvaro.webp",
     "address": "C. de S. Cipriano, 30, Vicálvaro, 28032 Madrid",
     "phone": "+34 910 42 97 60",
@@ -8091,7 +8087,7 @@
       "Valoración gratuita sin compromiso",
       "Servicio integral compraventa y alquiler"
     ],
-    "horario": "L-V 9:30–14:00, 17:00–20:30 · D cerrado",
+    "horario": "L-V 10:00-14:00,17:00-20:00, S 10:00-14:00, D Cerrado",
     "image": "/images/negocios/alianza-madrid-vicalvaro.webp",
     "address": "C. de S. Cipriano, 20, Vicálvaro, 28032 Madrid",
     "phone": "+34 910 42 47 55",
@@ -8207,7 +8203,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-20:00, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "peluqueros-del-prado",
@@ -8276,7 +8273,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,17:00-19:30, S 09:00-13:00, D Cerrado"
   },
   {
     "slug": "r-d-estilistas",
@@ -8305,7 +8303,7 @@
     "placeId": "ChIJ54nQznwwQg0RWArcub4Ve2g",
     "googleCategory": "Peluquería",
     "phone": "+34 910 86 38 52",
-    "website": "https://www.facebook.com/RyDestilistas/?ref=aymt_homepage_panel",
+    "website": "https://www.facebook.com/RyDestilistas/",
     "lat": 40.4275651,
     "lng": -3.5442547,
     "image": "/images/negocios/r-d-estilistas.webp",
@@ -8346,7 +8344,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-M 10:00-14:00,15:00-19:00, X-V 10:00-19:00, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "peluqueria-en-coslada-rocio-aparicio",
@@ -8416,7 +8415,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-20:00, S 09:30-14:00, D Cerrado"
   },
   {
     "slug": "peinadox",
@@ -8486,7 +8486,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L 10:00-19:00, M-J 10:00-17:30, V 10:00-19:00, S-D Cerrado"
   },
   {
     "slug": "imar",
@@ -8547,7 +8548,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,16:30-20:00, S 09:30-14:00, D Cerrado"
   },
   {
     "slug": "sandra-rueda-estilistas-peluqueria-belleza-coslada",
@@ -8616,7 +8618,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-20:00, S 09:00-14:00, D Cerrado"
   },
   {
     "slug": "peluqueria-imagen-estilistas",
@@ -8680,7 +8683,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:30-13:30,15:00-19:00, S 09:00-14:00, D Cerrado"
   },
   {
     "slug": "farmacia-castillo-de-la-torre",
@@ -8750,7 +8754,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:30-13:45,17:00-20:00, S 10:00-13:45, D Cerrado"
   },
   {
     "slug": "farmacia-mejico-23-abierto-365-dias",
@@ -8821,7 +8826,8 @@
         "dia": "domingo",
         "horas": "9 AM to 9:30 PM"
       }
-    ]
+    ],
+    "horario": "L-D 09:00-21:30"
   },
   {
     "slug": "gimnasio-vivagym-coslada-plaza",
@@ -8850,7 +8856,7 @@
     "numReviews": 1167,
     "placeId": "ChIJ33bXTVkxQg0RWO6ucpCXRcs",
     "googleCategory": "Gimnasio",
-    "website": "https://www.vivagym.com/es-es/gimnasios/madrid/coslada/coslada-plaza/?utm_campaign=250922_es_gmb_conversion_generic_coslada-plaza&utm_medium=organic&utm_source=gmb",
+    "website": "https://www.vivagym.com/es-es/gimnasios/madrid/coslada/coslada-plaza/",
     "lat": 40.4284953,
     "lng": -3.5511941,
     "image": "/images/negocios/gimnasio-vivagym-coslada-plaza.webp",
@@ -8891,7 +8897,8 @@
         "dia": "domingo",
         "horas": "8 AM to 9 PM"
       }
-    ]
+    ],
+    "horario": "L-V 06:00-23:00, S-D 08:00-21:00"
   },
   {
     "slug": "club-deportivo-jose-arturo-blanco",
@@ -8961,7 +8968,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L 10:00-14:00,16:30-22:00, M 10:00-14:00,16:30-22:30, X 10:00-14:00,16:30-22:00, J 10:00-14:00,16:30-22:30, V 10:00-14:00,16:30-22:00, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "gimnasio-katana",
@@ -9031,7 +9039,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L 17:00-22:00, M 18:30-20:30, X 17:00-22:00, J 18:30-20:30, V 17:00-22:00, S 10:00-13:00, D Cerrado"
   },
   {
     "slug": "f4trainers-coslada",
@@ -9095,7 +9104,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 08:00-22:00, S 08:00-15:00, D Cerrado"
   },
   {
     "slug": "clinica-dental-caredent-coslada",
@@ -9166,7 +9176,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,16:00-21:00, S-D Cerrado"
   },
   {
     "slug": "clinica-dental-dra-conca",
@@ -9236,7 +9247,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-X 10:00-18:30, J 10:00-19:00, V 10:00-14:00, S-D Cerrado"
   },
   {
     "slug": "clinica-dental-ohi-odontologia-hospitalaria-coslada",
@@ -9307,7 +9319,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-M 10:00-14:00,16:00-21:00, X 10:00-21:00, J-V 10:00-14:00,16:00-21:00, S-D Cerrado"
   },
   {
     "slug": "seven-dental",
@@ -9376,7 +9389,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 10:00-14:00,16:00-20:00, V 10:00-14:00, S-D Cerrado"
   },
   {
     "slug": "clinica-dental-vitaldent",
@@ -9406,7 +9420,7 @@
     "placeId": "ChIJKYloegAxQg0R0UKxw8XOy1Q",
     "googleCategory": "Clínica dental",
     "phone": "+34 917 79 02 65",
-    "website": "https://clinicas.vitaldent.com/madrid/clinica-dental-vitaldent-coslada-mexico/?utm_source=google-my-business&utm_medium=organic&utm_id=cmp-01487-q5t8w&utm_campaign=gbp:ficha-gbp&utm_term=sin-t%C3%A9rmino&utm_content=vitaldent",
+    "website": "https://clinicas.vitaldent.com/madrid/clinica-dental-vitaldent-coslada-mexico/?utm_id=cmp-01487-q5t8w",
     "lat": 40.4281222,
     "lng": -3.5428592,
     "image": "/images/negocios/clinica-dental-vitaldent.webp",
@@ -9447,7 +9461,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,16:00-20:00, S-D Cerrado"
   },
   {
     "slug": "escuela-infantil-monigotes",
@@ -9516,7 +9531,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:00-18:00, S-D Cerrado"
   },
   {
     "slug": "ares-baby",
@@ -9588,7 +9604,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L 17:00-20:00, M-V 10:00-14:00,17:00-20:00, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "escuela-infantil-pegasito",
@@ -9659,7 +9676,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:00-19:00, S-D Cerrado"
   },
   {
     "slug": "clinica-veterinaria-mejico-17",
@@ -9729,7 +9747,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 11:00-13:30,17:00-20:00, S 10:00-13:00, D Cerrado"
   },
   {
     "slug": "centro-veterinario-los-delfines-clinica-veterinaria-en-",
@@ -9801,7 +9820,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:30-14:00,17:00-20:30, S 10:30-14:00, D Cerrado"
   },
   {
     "slug": "clinica-veterinaria-valleaguado",
@@ -9872,7 +9892,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-19:00, S-D Cerrado"
   },
   {
     "slug": "clinica-veterinaria-vellcan",
@@ -9943,7 +9964,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-21:00, S-D Cerrado"
   },
   {
     "slug": "clinica-veterinaria-wecan-la-colina",
@@ -10013,7 +10035,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,17:00-20:30, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "clinica-veterinaria-alameda",
@@ -10075,7 +10098,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:30-13:30,17:30-20:00, S-D Cerrado"
   },
   {
     "slug": "clinica-veterinaria-coslada",
@@ -10146,7 +10170,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 11:00-13:30,17:00-20:00, S 10:00-13:00, D Cerrado"
   },
   {
     "slug": "bar-restaurante-tierra-de-barros",
@@ -10188,7 +10213,7 @@
       "/images/negocios/bar-restaurante-tierra-de-barros-5.webp"
     ],
     "terraza": true,
-    "horario": "do Cerrado · lu 6 AM to 10 PM · ma 6 AM to 10 PM · mi 6 AM to 10 PM · ju 6 AM to 10 PM · vi 6 AM to 10 PM · sá Cerrado",
+    "horario": "L-V 06:00-22:00, S-D Cerrado",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -10259,7 +10284,7 @@
       "/images/negocios/la-mesa-escondida-4.webp",
       "/images/negocios/la-mesa-escondida-5.webp"
     ],
-    "horario": "do 12 to 11 PM · lu Cerrado · ma 12 to 11 PM · mi 12 to 11 PM · ju 12 to 11 PM · vi 12 PM to 12 AM · sá 12 PM to 12 AM",
+    "horario": "L Cerrado, M-J 12:00-23:00, V-S 12:00-24:00, D 12:00-23:00",
     "horarioSemanal": [
       {
         "dia": "lunes",
@@ -10329,7 +10354,7 @@
       "/images/negocios/restaurante-hermanos-poveda-s-l-5.webp"
     ],
     "terraza": true,
-    "horario": "do 9 AM to 12 a.m. · lu 9 AM to 12 a.m. · ma 9 AM to 12 a.m. · mi 9 AM to 12 a.m. · ju 9 AM to 12 a.m. · vi 9 AM to 12 a.m. · sá 9 AM to 12 a.m.",
+    "horario": "L-D 09:00-24:00",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -10400,7 +10425,7 @@
       "/images/negocios/bar-restaurante-el-rincon-de-cristian-5.webp"
     ],
     "terraza": true,
-    "horario": "do Cerrado · lu 6:30 AM to 8 PM · ma 6:30 AM to 8 PM · mi 6:30 AM to 8 PM · ju 6:30 AM to 8 PM · vi 6:30 AM to 8 PM · sá 7 AM to 5 PM",
+    "horario": "L-V 06:30-20:00, S 07:00-17:00, D Cerrado",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -10472,7 +10497,7 @@
       "/images/negocios/restaurante-las-americas-5.webp"
     ],
     "terraza": true,
-    "horario": "do 9 AM to 2 PM · lu 7 AM to 11 PM · ma 7 AM to 11 PM · mi 7 AM to 11 PM · ju 7 AM to 11 PM · vi 7 AM to 11 PM · sá 9 AM to 2 PM",
+    "horario": "L-V 07:00-23:00, S-D 09:00-14:00",
     "horarioSemanal": [
       {
         "dia": "lunes",
@@ -10543,7 +10568,7 @@
     ],
     "terraza": true,
     "delivery": true,
-    "horario": "do 12 to 6 PM · lu Cerrado · ma Cerrado · mi 8 AM to 12 a.m. · ju 8 AM to 12 a.m. · vi 8 AM to 1:30 a.m. · sá 12 PM to 2 AM",
+    "horario": "L-M Cerrado, X-J 08:00-24:00, V 08:00-01:30, S 12:00-02:00, D 12:00-24:00",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -10614,7 +10639,7 @@
       "/images/negocios/greenway-grill-station-5.webp"
     ],
     "terraza": true,
-    "horario": "do Cerrado · lu 7 AM to 10:30 PM · ma 7 AM to 11 PM · mi 7 AM to 10:30 PM · ju 7 AM to 11 PM · vi 7 AM to 11 PM · sá 8:30 AM to 11 PM",
+    "horario": "L 07:00-22:30, M 07:00-23:00, X 07:00-22:30, J-V 07:00-23:00, S 08:30-23:00, D Cerrado",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -10715,7 +10740,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:30-14:00,16:30-20:00, S-D Cerrado"
   },
   {
     "slug": "urbanis-inmobiliaria",
@@ -10782,7 +10808,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-13:30,17:00-20:00, S-D Cerrado"
   },
   {
     "slug": "imc-cazacu-soluciones-inmobiliarias-y-financieras",
@@ -10844,7 +10871,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,17:00-21:00, S-D Cerrado"
   },
   {
     "slug": "tecnocasa-agencia-inmobiliaria",
@@ -10914,7 +10942,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:30-14:00,17:00-21:00, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "reylank-propiedades",
@@ -10983,7 +11012,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,17:00-20:00, S-D Cerrado"
   },
   {
     "slug": "inmobiliaria-san-fernando-de-henares-redpiso",
@@ -11052,7 +11082,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:30-14:00,17:00-20:00, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "confecciones-ocana",
@@ -11121,7 +11152,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-X 10:00-14:00,17:00-20:30, J 10:00-14:00,18:00-20:30, V 10:00-14:00,17:00-20:30, S 09:00-14:00, D Cerrado"
   },
   {
     "slug": "estyda",
@@ -11226,7 +11258,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,17:00-20:30, S-D Cerrado"
   },
   {
     "slug": "la-huerta-de-noa",
@@ -11295,7 +11328,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-14:00,17:00-20:00, S 09:00-14:00, D Cerrado"
   },
   {
     "slug": "buenos-dias-princesa-coslada",
@@ -11366,7 +11400,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 08:30-20:30, S 10:30-15:30, D Cerrado"
   },
   {
     "slug": "cafeteria-el-rincon-de-ilda",
@@ -11436,7 +11471,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 07:00-22:00, V-S 07:00-02:00, D Cerrado"
   },
   {
     "slug": "cafe-jp",
@@ -11503,7 +11539,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 06:00-19:00, S 06:00-14:00, D Cerrado"
   },
   {
     "slug": "bar-cafeteria-luis",
@@ -11571,7 +11608,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:00-23:00, S 08:00-15:00, D Cerrado"
   },
   {
     "slug": "churreria-cafeteria-jh-i",
@@ -11640,7 +11678,8 @@
         "dia": "domingo",
         "horas": "6 AM to 1 PM"
       }
-    ]
+    ],
+    "horario": "L Cerrado, M-D 06:00-13:00"
   },
   {
     "slug": "cafeteria-miky-tapas-sin-fin",
@@ -11708,7 +11747,8 @@
         "dia": "domingo",
         "horas": "9 AM to 12 a.m."
       }
-    ]
+    ],
+    "horario": "L Cerrado, M-V 07:00-24:00, S 08:00-01:00, D 09:00-24:00"
   },
   {
     "slug": "pastelerias-roma-s-l",
@@ -11776,7 +11816,8 @@
         "dia": "domingo",
         "horas": "8:30 AM to 10:30 PM"
       }
-    ]
+    ],
+    "horario": "L Cerrado, M-D 08:30-22:30"
   },
   {
     "slug": "panaderia-baki-pan",
@@ -11845,7 +11886,8 @@
         "dia": "domingo",
         "horas": "7 AM to 11 PM"
       }
-    ]
+    ],
+    "horario": "L-D 07:00-23:00"
   },
   {
     "slug": "casa-brioche",
@@ -11948,7 +11990,8 @@
         "dia": "domingo",
         "horas": "9:30 AM to 2:30 PM"
       }
-    ]
+    ],
+    "horario": "L-D 09:30-14:30"
   },
   {
     "slug": "levaduramadre-2",
@@ -12018,7 +12061,8 @@
         "dia": "domingo",
         "horas": "8 AM to 9 PM"
       }
-    ]
+    ],
+    "horario": "L-D 08:00-21:00"
   },
   {
     "slug": "ferreteria-dato-en-coslada-afilador-copia-de-llaves-arr",
@@ -12087,7 +12131,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-S 09:30-14:00, D Cerrado"
   },
   {
     "slug": "ferriplus-cadena88",
@@ -12158,7 +12203,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 08:30-14:00,16:00-19:30, S 09:30-13:30, D Cerrado"
   },
   {
     "slug": "ferreteria-coslada-s-a",
@@ -12229,7 +12275,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 08:00-14:00,15:30-19:00, S 09:00-13:30, D Cerrado"
   },
   {
     "slug": "sanfer",
@@ -12299,7 +12346,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:30-13:30, S 10:00-13:30, D Cerrado"
   },
   {
     "slug": "showroom-barral-tienda-autoservicio-y-almacen",
@@ -12370,7 +12418,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 07:30-18:00, V 07:30-15:30, S 08:30-13:00, D Cerrado"
   },
   {
     "slug": "taller-mecanico-ds-motor",
@@ -12440,7 +12489,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 08:30-14:00,15:00-19:00, S-D Cerrado"
   },
   {
     "slug": "talleres-bruster",
@@ -12510,7 +12560,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-14:00,16:00-19:00, S 09:00-13:00, D Cerrado"
   },
   {
     "slug": "rallye-auto-sport-s-l-taller-mecanico",
@@ -12581,7 +12632,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 08:30-14:00,16:00-19:00, V 08:30-15:00, S-D Cerrado"
   },
   {
     "slug": "coslamovil",
@@ -12643,7 +12695,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 08:30-14:00,15:30-19:30, S-D Cerrado"
   },
   {
     "slug": "galauto-motor-coslada",
@@ -12713,7 +12766,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 08:30-14:00,15:00-18:00, S-D Cerrado"
   },
   {
     "slug": "tecnoautofm",
@@ -12817,7 +12871,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 07:30-17:30, V 07:30-15:30, S-D Cerrado"
   },
   {
     "slug": "talleres-j-cisneros",
@@ -12888,7 +12943,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:00-15:30, S-D Cerrado"
   },
   {
     "slug": "bigmat-silviu-materiales-de-construccion",
@@ -12960,7 +13016,8 @@
         "dia": "domingo",
         "horas": "8 AM to 2 PM"
       }
-    ]
+    ],
+    "horario": "L-J 07:00-20:00, V 07:00-17:00, S Cerrado, D 08:00-14:00"
   },
   {
     "slug": "pinturas-aldeco-distribuidor-titan-pintores-a-su-servic",
@@ -13029,7 +13086,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:30-14:00,16:00-20:00, S 09:00-13:30, D Cerrado"
   },
   {
     "slug": "afijo-de-sierra-dormida",
@@ -13099,7 +13157,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:30-12:30, S 09:00-10:00, D Cerrado"
   },
   {
     "slug": "taller-mecanico-aynacar",
@@ -13170,7 +13229,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 08:30-14:00,15:30-18:00, V 08:00-16:00, S-D Cerrado"
   },
   {
     "slug": "moda-tenda",
@@ -13240,7 +13300,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,17:00-20:30, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "restaurante-asturias",
@@ -13282,7 +13343,7 @@
       "/images/negocios/restaurante-asturias-5.webp"
     ],
     "terraza": true,
-    "horario": "do Cerrado · lu 6 AM to 6 PM · ma 6 AM to 6 PM · mi 6 AM to 6 PM · ju 6 AM to 6 PM · vi 6 AM to 6 PM · sá 7 AM to 4 PM",
+    "horario": "L-V 06:00-18:00, S 07:00-16:00, D Cerrado",
     "horarioSemanal": [
       {
         "dia": "lunes",
@@ -13354,7 +13415,7 @@
     ],
     "terraza": true,
     "delivery": true,
-    "horario": "do Cerrado · lu 6 AM to 9 PM · ma 6 AM to 9 PM · mi 6 AM to 9 PM · ju 6 AM to 9 PM · vi 6 AM to 9 PM · sá 7 AM to 2 PM",
+    "horario": "L-V 06:00-21:00, S 07:00-14:00, D Cerrado",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -13426,7 +13487,7 @@
       "/images/negocios/restaurante-phoenix-5.webp"
     ],
     "terraza": true,
-    "horario": "do Cerrado · lu 7 AM to 7 PM · ma 7 AM to 7 PM · mi 7 AM to 7 PM · ju 7 AM to 7 PM · vi 7 AM to 7 PM · sá Cerrado",
+    "horario": "L-V 07:00-19:00, S-D Cerrado",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -13526,7 +13587,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-14:30,17:00-20:30, S 09:00-14:30, D Cerrado"
   },
   {
     "slug": "peluqueria-mogan",
@@ -13596,7 +13658,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L Cerrado, M-V 10:00-19:00, S 09:00-14:00, D Cerrado"
   },
   {
     "slug": "arroceria-los-amigos",
@@ -13637,7 +13700,7 @@
       "/images/negocios/arroceria-los-amigos-4.webp",
       "/images/negocios/arroceria-los-amigos-5.webp"
     ],
-    "horario": "do 9 AM to 4 PM · lu Cerrado · ma 8 AM to 4 PM · mi 8 AM to 4 PM · ju 8 AM to 4 PM · vi 8 AM to 4 PM · sá 9 AM to 4 PM",
+    "horario": "L Cerrado, M-V 08:00-16:00, S-D 09:00-16:00",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -13740,7 +13803,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:00-16:30, S-D Cerrado"
   },
   {
     "slug": "gimnasio-soldiers",
@@ -13809,7 +13873,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:30-22:30, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "la-inmobiliaria-de-cris",
@@ -13878,7 +13943,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-13:30,17:00-20:00, S-D Cerrado"
   },
   {
     "slug": "panaderia-el-horno-de-raquel-y-mateo",
@@ -13948,7 +14014,8 @@
         "dia": "domingo",
         "horas": "9 AM to 2 PM"
       }
-    ]
+    ],
+    "horario": "L Cerrado, M-V 08:30-17:00, S-D 09:00-14:00"
   },
   {
     "slug": "moon-cafeteria-restaurante",
@@ -14017,7 +14084,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:00-24:00, S 00:00-24:00, D Cerrado"
   },
   {
     "slug": "restaurante-toledano-ii",
@@ -14057,7 +14125,7 @@
       "/images/negocios/restaurante-toledano-ii-5.webp"
     ],
     "terraza": true,
-    "horario": "do Cerrado · lu 5 AM to 11 PM · ma 5 AM to 11 PM · mi 5 AM to 11 PM · ju 5 AM to 11 PM · vi 5 AM to 11 PM · sá 5 AM to 4 PM",
+    "horario": "L-V 05:00-23:00, S 05:00-16:00, D Cerrado",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -14158,7 +14226,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 08:00-17:00, V 08:00-14:00, S-D Cerrado"
   },
   {
     "slug": "restaurante-albarracin",
@@ -14199,7 +14268,7 @@
       "/images/negocios/restaurante-albarracin-5.webp"
     ],
     "terraza": true,
-    "horario": "do Cerrado · lu 7 AM to 7 PM · ma 7 AM to 7 PM · mi 7 AM to 7 PM · ju 7 AM to 7 PM · vi 7 AM to 7 PM · sá Cerrado",
+    "horario": "L-V 07:00-19:00, S-D Cerrado",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -14298,7 +14367,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-19:00, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "j-rey-barberia-peluqueria-san-fernando-de-henares",
@@ -14368,7 +14438,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L 16:00-20:00, M-V 09:30-13:30,16:00-20:00, S 09:30-13:30, D Cerrado"
   },
   {
     "slug": "peluqueria-khnisser",
@@ -14437,7 +14508,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-S 10:00-14:30,16:00-21:00, D Cerrado"
   },
   {
     "slug": "alba-centro-de-belleza",
@@ -14506,7 +14578,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L 10:00-14:00, M-V 10:00-20:00, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "maxima-dental",
@@ -14576,7 +14649,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-20:00, S-D Cerrado"
   },
   {
     "slug": "la-choco-2",
@@ -14618,7 +14692,7 @@
     ],
     "terraza": true,
     "delivery": true,
-    "horario": "do Cerrado · lu 7 AM to 6 PM · ma 7 AM to 6 PM · mi 7 AM to 6 PM · ju 7 AM to 6 PM · vi 7 AM to 6 PM · sá Cerrado",
+    "horario": "L-V 07:00-18:00, S-D Cerrado",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -14689,7 +14763,7 @@
       "/images/negocios/restaurante-naciones-5.webp"
     ],
     "terraza": true,
-    "horario": "do Cerrado · lu 7 AM to 6 PM · ma 7 AM to 6 PM · mi 7 AM to 6 PM · ju 7 AM to 6 PM · vi 7 AM to 6 PM · sá Cerrado",
+    "horario": "L-V 07:00-18:00, S-D Cerrado",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -14790,7 +14864,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-20:30, S-D Cerrado"
   },
   {
     "slug": "peluqueria-chus",
@@ -14859,7 +14934,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-19:00, S 09:30-14:00, D Cerrado"
   },
   {
     "slug": "rhyno-funcional-training-san-fernando-de-henares",
@@ -14928,7 +15004,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:00-22:00, S 09:00-14:00, D Cerrado"
   },
   {
     "slug": "c-veterinaria-andreal",
@@ -15027,7 +15104,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:30-13:45,17:00-20:00, S 10:00-13:45, D Cerrado"
   },
   {
     "slug": "clinica-de-implantologia-oral-dra-gomez",
@@ -15097,7 +15175,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 10:00-14:00,16:30-20:30, V 10:00-14:00,16:00-18:00, S-D Cerrado"
   },
   {
     "slug": "caelum-pets-tanatorio-y-crematorio-de-mascotas-en-madri",
@@ -15169,7 +15248,8 @@
         "dia": "domingo",
         "horas": "10 AM to 7 PM"
       }
-    ]
+    ],
+    "horario": "L-D 10:00-19:00"
   },
   {
     "slug": "salvavidas-cardioproteccion-y-formacion-en-emergencias",
@@ -15200,7 +15280,7 @@
     "placeId": "ChIJIaFu2FQuQg0RIa0xCBakZRA",
     "googleCategory": "Servicio de salud ocupacional",
     "phone": "+34 900 670 112",
-    "website": "https://www.salvavidas.com/?utm_source=GMB&utm_medium=GMB&utm_campaign=GMB&utm_id=GMB&utm_term=GMB&utm_content=GMB",
+    "website": "https://www.salvavidas.com/?utm_id=GMB",
     "lat": 40.4531943,
     "lng": -3.5086372,
     "image": "/images/negocios/salvavidas-cardioproteccion-y-formacion-en-emergencias.webp",
@@ -15241,7 +15321,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 08:00-16:30, V 08:00-15:30, S-D Cerrado"
   },
   {
     "slug": "clinica-dental-adeslas",
@@ -15272,7 +15353,7 @@
     "placeId": "ChIJSQ23AYUwQg0RdTZvl3OAORI",
     "googleCategory": "Clínica dental",
     "phone": "+34 900 229 922",
-    "website": "https://www.adeslasdental.es/clinicas/clinica-dental-adeslas-San-Fernando-de-Henares?utm_campaign=Local&utm_medium=organic&utm_source=GoogleMyBuiness",
+    "website": "https://www.adeslasdental.es/clinicas/clinica-dental-adeslas-San-Fernando-de-Henares",
     "lat": 40.4259776,
     "lng": -3.5332306,
     "image": "/images/negocios/clinica-dental-adeslas.webp",
@@ -15313,7 +15394,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-14:00,16:00-21:00, S-D Cerrado"
   },
   {
     "slug": "educacion-canina-es",
@@ -15379,7 +15461,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-21:00, S-D Cerrado"
   },
   {
     "slug": "decathlon-san-fernando-de-henares",
@@ -15410,7 +15493,7 @@
     "placeId": "ChIJQ1HFrMIwQg0R18YyH1pS54Y",
     "googleCategory": "Tienda de deportes",
     "phone": "+34 914 85 15 41",
-    "website": "https://www.decathlon.es/es/store-view/tienda-de-deportes-san-fernando-de-henares-0070076600766?utm_campaign=es_f-cv_xx-gbp-decathlon-san-fernando-de-henares&utm_medium=organic&utm_source=organic-shopping",
+    "website": "https://www.decathlon.es/es/store-view/tienda-de-deportes-san-fernando-de-henares-0070076600766",
     "lat": 40.448288,
     "lng": -3.523219,
     "image": "/images/negocios/decathlon-san-fernando-de-henares.webp",
@@ -15453,7 +15536,8 @@
         "dia": "domingo",
         "horas": "10 AM to 9:30 PM"
       }
-    ]
+    ],
+    "horario": "L-D 10:00-21:30"
   },
   {
     "slug": "action-san-fernando-de-henares",
@@ -15484,7 +15568,7 @@
     "placeId": "ChIJQeI8BkQxQg0RCnSETLk7j5I",
     "googleCategory": "Tienda de descuento",
     "phone": "+34 937 81 76 20",
-    "website": "https://www.action.com/es-es/tiendas/?utm_campaign=localbusiness&utm_source=google&utm_medium=organic&utm_content=6262",
+    "website": "https://www.action.com/es-es/tiendas/",
     "lat": 40.4467431,
     "lng": -3.5238186,
     "image": "/images/negocios/action-san-fernando-de-henares.webp",
@@ -15525,7 +15609,8 @@
         "dia": "domingo",
         "horas": "9 AM to 9:30 PM"
       }
-    ]
+    ],
+    "horario": "L-D 09:00-21:30"
   },
   {
     "slug": "nutri-pets",
@@ -15595,7 +15680,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,17:00-20:30, S-D Cerrado"
   },
   {
     "slug": "peluqueria-canina-frenchieperbote",
@@ -15666,7 +15752,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-18:00, S 09:00-14:00, D Cerrado"
   },
   {
     "slug": "digitanimal",
@@ -15738,7 +15825,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-19:00, S-D Cerrado"
   },
   {
     "slug": "imd",
@@ -15809,7 +15897,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 10:00-14:00,16:00-21:00, V 10:00-14:00,15:00-20:00, S-D Cerrado"
   },
   {
     "slug": "frutos-secos-gloria",
@@ -15838,7 +15927,7 @@
     "placeId": "ChIJRYoKspowQg0R8TOYqyIWmi0",
     "googleCategory": "Tienda de golosinas",
     "phone": "+34 606 69 77 45",
-    "website": "https://mtouch.facebook.com/frutossecosgloria/?ref=bookmarks",
+    "website": "https://mtouch.facebook.com/frutossecosgloria/",
     "lat": 40.4278602,
     "lng": -3.5304492,
     "image": "/images/negocios/frutos-secos-gloria.webp",
@@ -15878,7 +15967,8 @@
         "dia": "domingo",
         "horas": "10 AM to 2 PM, 5:30 to 9:30 PM"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-14:30,17:30-21:30, S-D 10:00-14:00,17:30-21:30"
   },
   {
     "slug": "pets-eternity-sl-crematorio-tanatorio-de-mascotas",
@@ -15948,7 +16038,8 @@
         "dia": "domingo",
         "horas": "10 AM to 6:30 PM"
       }
-    ]
+    ],
+    "horario": "L-V 08:00-20:00, S-D 10:00-18:30"
   },
   {
     "slug": "rentokil-control-de-plagas",
@@ -15977,7 +16068,7 @@
     "placeId": "ChIJSya4etQwQg0RSOF8vgBSQaQ",
     "googleCategory": "Empresa de fumigación y control de plagas",
     "phone": "+34 900 901 076",
-    "website": "https://www.rentokil.com/es/sobre-nosotros/equipo-local/control-de-plagas-en-madrid/?utm_source=google&utm_medium=gbp&utm_campaign=listing&utm_content=button_website_link&utm_term=madrid",
+    "website": "https://www.rentokil.com/es/sobre-nosotros/equipo-local/control-de-plagas-en-madrid/",
     "lat": 40.4558276,
     "lng": -3.5030302,
     "image": "/images/negocios/rentokil-control-de-plagas.webp",
@@ -16018,7 +16109,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 08:00-17:30, V 08:00-13:30, S-D Cerrado"
   },
   {
     "slug": "centro-comercial-valencia",
@@ -16088,7 +16180,8 @@
         "dia": "domingo",
         "horas": "9 AM to 2 PM, 5 to 8 PM"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-14:00,17:00-20:00, S 09:00-14:00, D 09:00-14:00,17:00-20:00"
   },
   {
     "slug": "silva-training-center",
@@ -16158,7 +16251,8 @@
         "dia": "domingo",
         "horas": "9 AM to 12 PM"
       }
-    ]
+    ],
+    "horario": "L-V 07:00-22:00, S-D 09:00-12:00"
   },
   {
     "slug": "nine-fitness-canaveral",
@@ -16228,7 +16322,8 @@
         "dia": "domingo",
         "horas": "10 AM to 3 PM"
       }
-    ]
+    ],
+    "horario": "L-V 06:00-22:30, S 09:00-18:00, D 10:00-15:00"
   },
   {
     "slug": "topochitos",
@@ -16297,7 +16392,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:00-19:00, S-D Cerrado"
   },
   {
     "slug": "centro-privado-de-educacion-infantil-munecos",
@@ -16367,7 +16463,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:00-20:00, S-D Cerrado"
   },
   {
     "slug": "farmacia-riera-de-la-vereda",
@@ -16437,7 +16534,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 08:30-21:30, S 09:30-21:30, D Cerrado"
   },
   {
     "slug": "street-grills",
@@ -16508,7 +16606,8 @@
         "dia": "domingo",
         "horas": "1 to 11 PM"
       }
-    ]
+    ],
+    "horario": "L-D 13:00-23:00"
   },
   {
     "slug": "cafe-damario",
@@ -16619,7 +16718,8 @@
         "dia": "domingo",
         "horas": "8 AM to 9 PM"
       }
-    ]
+    ],
+    "horario": "L-V 07:00-21:00, S-D 08:00-21:00"
   },
   {
     "slug": "dulce-ruah",
@@ -16687,7 +16787,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:30-15:00, S 09:00-16:00, D Cerrado"
   },
   {
     "slug": "tsinghe-cocina-fusion",
@@ -16728,7 +16829,7 @@
       "/images/negocios/tsinghe-cocina-fusion-5.webp"
     ],
     "terraza": true,
-    "horario": "do 12:30 to 4:30 PM, 7:30 to 11:30 PM · lu Cerrado · ma 12:30 to 4:30 PM, 7:30 to 11:30 PM · mi 12:30 to 4:30 PM, 7:30 to 11:30 PM · ju 12:30 to 4:30 PM, 7:30 to 11:30 PM · vi 12:30 to 4:30 PM, 7:30 to 11:30 PM · sá 12:30 to 4:30 PM, 7:30 to 11:30 PM",
+    "horario": "L Cerrado, M-D 12:30-16:30,19:30-23:30",
     "accesibilidad": true,
     "horarioSemanal": [
       {
@@ -16829,7 +16930,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-14:00,17:00-20:30, S 09:00-14:00, D Cerrado"
   },
   {
     "slug": "farmacia-covian",
@@ -16899,7 +17001,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:30-13:45,16:00-20:00, S 10:00-13:45, D Cerrado"
   },
   {
     "slug": "farmacia-diaz-nadela-canaveral",
@@ -16967,7 +17070,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-S 09:30-21:30, D Cerrado"
   },
   {
     "slug": "haro-pilates-reformer",
@@ -17037,7 +17141,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L 09:30-11:30,17:30-21:30, M 17:30-21:30, X 09:30-11:30,17:30-21:30, J 17:30-21:30, V 17:30-20:30, S 09:30-12:30, D Cerrado"
   },
   {
     "slug": "sano-mad-canaveral",
@@ -17108,7 +17213,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 07:00-11:00,16:00-22:00, V 07:00-11:00,17:00-20:00, S 09:00-13:00, D Cerrado"
   },
   {
     "slug": "clinica-alineacion-dental",
@@ -17179,7 +17285,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,16:00-20:00, S-D Cerrado"
   },
   {
     "slug": "bellmad-salon",
@@ -17250,7 +17357,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L 16:00-19:00, M-V 10:00-19:30, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "peluqueria-saludable-gala",
@@ -17321,7 +17429,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:30-19:00, S 09:30-14:00, D Cerrado"
   },
   {
     "slug": "di-classe-barbershop",
@@ -17392,7 +17501,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-20:30, S 09:00-14:30, D Cerrado"
   },
   {
     "slug": "ferreteria-ferrpelaez",
@@ -17462,7 +17572,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 09:30-14:00,17:15-20:00, V 09:30-14:00,17:15-19:30, S 09:30-13:30, D Cerrado"
   },
   {
     "slug": "talleres-iauto",
@@ -17532,7 +17643,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-18:30, S-D Cerrado"
   },
   {
     "slug": "talleres-laen-expert-service-car",
@@ -17641,7 +17753,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-14:00,16:00-20:00, S-D Cerrado"
   },
   {
     "slug": "taller-mecanico-jesus-arredondo",
@@ -17702,7 +17815,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-14:00,16:00-19:30, S-D Cerrado"
   },
   {
     "slug": "barcos-de-papel",
@@ -17772,7 +17886,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 07:30-17:30, S-D Cerrado"
   },
   {
     "slug": "clinica-veterinaria-animalandia",
@@ -17841,7 +17956,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-21:00, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "ferreteria-gogar-2",
@@ -17909,7 +18025,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:45-13:30,17:00-20:00, S-D Cerrado"
   },
   {
     "slug": "inmobiliaria-vicalvaro",
@@ -17975,7 +18092,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,17:30-20:30, S-D Cerrado"
   },
   {
     "slug": "tecnocasa-vicalvaro-inmobiliaria",
@@ -18045,7 +18163,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-14:00,17:00-21:00, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "veterinaria-vicalvaro",
@@ -18114,7 +18233,8 @@
         "dia": "domingo",
         "horas": "11:30 AM to 1:30 PM"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-13:30,17:30-20:00, S 10:00-13:30, D 11:30-13:30"
   },
   {
     "slug": "clinica-veterinaria-calidad-sin-frontera-vicalvaro",
@@ -18184,7 +18304,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:15-19:30, S 09:30-13:30, D Cerrado"
   },
   {
     "slug": "clinica-veterinaria-omega",
@@ -18256,7 +18377,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-13:30,17:00-20:30, S 10:00-13:30, D Cerrado"
   },
   {
     "slug": "clinica-veterinaria-habitat-vicalvaro",
@@ -18327,7 +18449,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:30-14:00,17:00-20:30, S-D Cerrado"
   },
   {
     "slug": "one-more",
@@ -18397,7 +18520,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L 07:00-12:00,16:00-22:00, M 07:00-12:00,17:00-22:00, X 07:00-12:00,16:00-22:00, J 07:00-12:00,17:00-22:00, V 07:00-12:00,16:00-21:00, S 09:00-13:00, D Cerrado"
   },
   {
     "slug": "sapporo-ramen-bar-canaveral",
@@ -18466,7 +18590,8 @@
         "dia": "domingo",
         "horas": "12 to 4:30 PM, 7:30 to 11:30 PM"
       }
-    ]
+    ],
+    "horario": "L-D 12:00-16:30,19:30-23:30"
   },
   {
     "slug": "brasa-tia-mariama",
@@ -18535,7 +18660,8 @@
         "dia": "domingo",
         "horas": "1 to 5 PM, 8:30 to 11 PM"
       }
-    ]
+    ],
+    "horario": "L Cerrado, M-J 13:00-17:00,20:30-23:00, V-S 13:00-17:00,20:30-00:30, D 13:00-17:00,20:30-23:00"
   },
   {
     "slug": "kau-koi-restaurante-fusion-el-canaveral",
@@ -18605,7 +18731,8 @@
         "dia": "domingo",
         "horas": "12 to 4:30 PM, 7 to 11:55 PM"
       }
-    ]
+    ],
+    "horario": "L-D 12:00-16:30,19:00-23:55"
   },
   {
     "slug": "la-pecora-nera-canaveral-pizzeria",
@@ -18677,7 +18804,8 @@
         "dia": "domingo",
         "horas": "1 to 11 PM"
       }
-    ]
+    ],
+    "horario": "L-J 13:00-23:00, V-S 13:00-23:30, D 13:00-23:00"
   },
   {
     "slug": "mr-kebab-canaveral-2",
@@ -18747,7 +18875,8 @@
         "dia": "domingo",
         "horas": "12:30 PM to 12:30 AM"
       }
-    ]
+    ],
+    "horario": "L-J 12:30-00:30, V-S 12:30-01:00, D 12:30-00:30"
   },
   {
     "slug": "maclaren-s-irish-sport-bar-canaveral",
@@ -18818,7 +18947,8 @@
         "dia": "domingo",
         "horas": "10 AM to 1 a.m."
       }
-    ]
+    ],
+    "horario": "L-J 12:00-01:00, V 12:00-02:30, S 10:00-02:30, D 10:00-01:00"
   },
   {
     "slug": "skull-barber-shop-madrid-el-canaveral",
@@ -18888,7 +19018,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-21:00, S 10:00-19:00, D Cerrado"
   },
   {
     "slug": "bellavida",
@@ -18958,7 +19089,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-20:30, S 09:30-14:30, D Cerrado"
   },
   {
     "slug": "nails-boutique-el-canaveral",
@@ -19027,7 +19159,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:30-20:00, S 10:30-19:00, D Cerrado"
   },
   {
     "slug": "kora-balance",
@@ -19097,7 +19230,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L 17:30-21:30, M 08:30-12:30,17:30-21:30, X 09:30-12:30,17:00-21:30, J 08:30-12:30,17:00-21:30, V 09:30-12:30,16:30-20:00, S 09:30-12:30, D Cerrado"
   },
   {
     "slug": "larry-and-andy-language-academy",
@@ -19167,7 +19301,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 10:00-13:00,17:00-20:30, V 17:00-20:00, S-D Cerrado"
   },
   {
     "slug": "kids-us-el-canaveral",
@@ -19238,7 +19373,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 12:00-14:00,16:00-20:00, S-D Cerrado"
   },
   {
     "slug": "ms-mr-language-el-canaveral",
@@ -19309,7 +19445,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 16:00-20:00, S-D Cerrado"
   },
   {
     "slug": "churreria-canaveral",
@@ -19379,7 +19516,8 @@
         "dia": "domingo",
         "horas": "6 AM to 12:30 PM"
       }
-    ]
+    ],
+    "horario": "L Cerrado, M-X 06:00-12:30, J-S 06:00-12:30,17:00-20:30, D 06:00-12:30"
   },
   {
     "slug": "trius-gastrobar",
@@ -19451,7 +19589,8 @@
         "dia": "domingo",
         "horas": "9:30 AM to 11 PM"
       }
-    ]
+    ],
+    "horario": "L 09:30-16:30,19:00-23:00, M-J 09:30-16:30,18:30-23:00, V 09:30-16:30,18:30-24:00, S 09:30-24:00, D 09:30-23:00"
   },
   {
     "slug": "o-oy",
@@ -19522,7 +19661,8 @@
         "dia": "domingo",
         "horas": "1 to 4:30 PM, 8 to 11:30 PM"
       }
-    ]
+    ],
+    "horario": "L-D 13:00-16:30,20:00-23:30"
   },
   {
     "slug": "poyoquese",
@@ -19592,7 +19732,8 @@
         "dia": "domingo",
         "horas": "1 to 3:30 PM"
       }
-    ]
+    ],
+    "horario": "L 13:30-15:30, M Cerrado, X-V 13:30-15:30, S-D 13:00-15:30"
   },
   {
     "slug": "optica-canaveral",
@@ -19662,7 +19803,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 11:00-19:00, S-D Cerrado"
   },
   {
     "slug": "lavanderia-autoservicio-openblue24h-canaveral",
@@ -19731,7 +19873,8 @@
         "dia": "domingo",
         "horas": "8 AM to 10:30 PM"
       }
-    ]
+    ],
+    "horario": "L-D 08:00-22:30"
   },
   {
     "slug": "canaveral-gala-autoescuela",
@@ -19799,7 +19942,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-J 10:00-21:00, V 10:00-20:00, S-D Cerrado"
   },
   {
     "slug": "clinica-impulso-fisioterapia-y-psicologia-en-el-canaver",
@@ -19870,7 +20014,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L 10:00-21:00, M 09:00-21:00, X 10:00-21:00, J 09:00-21:00, V 10:00-21:00, S-D Cerrado"
   },
   {
     "slug": "fisioterapia-con-mario",
@@ -19975,7 +20120,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L Cerrado, M 09:00-20:00, X-J Cerrado, V 08:00-17:30, S-D Cerrado"
   },
   {
     "slug": "lavapeludos",
@@ -20045,7 +20191,8 @@
         "dia": "domingo",
         "horas": "9:30 AM to 9:30 PM"
       }
-    ]
+    ],
+    "horario": "L-D 09:30-21:30"
   },
   {
     "slug": "logopedas-y-psicologos-canaveral-anda-conmigo",
@@ -20075,7 +20222,7 @@
     "placeId": "ChIJKyR5HJE7Qg0RGlca1aAchnk",
     "googleCategory": "Centro de salud infantil",
     "phone": "+34 633 34 12 76",
-    "website": "https://andaconmigo.com/centros/anda-conmigo-canaveral/?utm_source=google&utm_medium=gbp&utm_campaign=ficha-ca%C3%B1averal",
+    "website": "https://andaconmigo.com/centros/anda-conmigo-canaveral/",
     "lat": 40.3986559,
     "lng": -3.5469092,
     "image": "/images/negocios/logopedas-y-psicologos-canaveral-anda-conmigo.webp",
@@ -20116,7 +20263,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 10:00-20:30, S-D Cerrado"
   },
   {
     "slug": "fisen",
@@ -20187,7 +20335,8 @@
         "dia": "domingo",
         "horas": "Cerrado"
       }
-    ]
+    ],
+    "horario": "L-V 09:00-21:00, S 10:00-14:00, D Cerrado"
   },
   {
     "slug": "mascotiti-hospital-veterinario-canaveral-urgencias-24h",
@@ -20258,7 +20407,8 @@
         "dia": "domingo",
         "horas": "Abierto las 24 horas"
       }
-    ]
+    ],
+    "horario": "L-D 00:00-24:00"
   },
   {
     "slug": "bunbun-canaveral",

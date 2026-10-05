@@ -67,20 +67,31 @@ const grupos = [
 ].filter((g) => g.lista.length > 0);
 
 const total = abrenElDomingo.length;
-const conHorario = negocios.filter((n) => n.horario).length;
+// "Con horario" cuenta cualquier fuente de horario: el estructurado por día (265 fichas) o el texto.
+const conHorario = negocios.filter(
+  (n) => n.horario || (Array.isArray(n.horarioSemanal) && n.horarioSemanal.length > 0),
+).length;
 
 const ordenar = (l: Negocio[]) =>
   [...l].sort((a, b) => (b.rating || 0) - (a.rating || 0) || (b.numReviews || 0) - (a.numReviews || 0));
 
-// Extrae SOLO la franja del domingo. Se parte por los mismos separadores que usa Google (incluido
-// el punto medio «·»): si no, en los horarios en formato Google se devolvía la semana entera.
+// Franja del domingo. Primero el dato estructurado (el horario por día que publica Google, que es el
+// mismo que usa `abreDomingo()` para incluir la ficha: así la lista y lo que se muestra coinciden);
+// si no lo hay, se interpreta el texto con los separadores de siempre (incluido el punto medio «·»).
 const SEPARADOR_HORARIO = /[,;\n\u00b7•|]+/;
+const DIAS_DOMINGO = /^(?:d|do|dom|dóm|domingo)$/i;
 const horaDomingo = (n: Negocio) => {
+  const semanal = n.horarioSemanal;
+  if (Array.isArray(semanal) && semanal.length > 0) {
+    const dom = semanal.find((d) => /^dom/i.test((d.dia || "").trim()));
+    const horas = (dom?.horas || "").replace(/\u00a0/g, " ").trim();
+    return horas && !/cerrado|closed/i.test(horas) ? horas : "consultar ficha";
+  }
   const fragmentos = (n.horario || "").split(SEPARADOR_HORARIO).map((s) => s.trim()).filter(Boolean);
   for (const f of fragmentos) {
     const antesDeLaHora = (f.split(/\d/)[0] || "").trim();
     const tokens = antesDeLaHora.split(/[/\s]+|\by\b|\ba\b/i).flatMap((t) => t.split("-")).map((t) => t.replace(/[.:;,]+$/, "").trim());
-    if (tokens.some((t) => /^(?:d|do|dom|domingo)$/i.test(t))) {
+    if (tokens.some((t) => DIAS_DOMINGO.test(t))) {
       return f.replace(/^[^\d]*/, "").trim() || "consultar ficha";
     }
   }

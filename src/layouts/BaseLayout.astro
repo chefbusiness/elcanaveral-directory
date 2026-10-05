@@ -39,7 +39,8 @@ const organizationSchema = {
   email: "local@elcanaveral.info",
   areaServed: municipios.map((m) => ({ "@type": "City", name: m })),
   knowsAbout: categorias.filter((c) => (c.count ?? 0) > 0).map((c) => c.name),
-  parentOrganization: { "@type": "Organization", name: "LocalSEOAds", url: "https://localseoads.com" },
+  // Con @id para que no se genere un segundo nodo Organization anónimo en cada página.
+  parentOrganization: { "@type": "Organization", "@id": "https://localseoads.com/#organization", name: "LocalSEOAds", url: "https://localseoads.com" },
   contactPoint: [
     {
       "@type": "ContactPoint",

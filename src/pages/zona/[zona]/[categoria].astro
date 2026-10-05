@@ -27,34 +27,42 @@ const guia = getListicleByCategoryZona(categoria.slug, zona.slug) || getListicle
 // calculan de los propios datos, así que valen para las ~60 combinaciones zona×categoría sin
 // mantenimiento. Solo se afirma lo que los datos sostienen.
 const ranking = getRankedNegocios(categoria.slug, { zona: zona.slug });
-const mejor = ranking[0]?.negocio;
+// Solo cuenta como "mejor valorado" si tiene nota y reseñas: si no, la frase se calla en vez de
+// afirmar que la primera ficha (a veces la única, sin valoraciones) es la mejor.
+const mejor = ranking[0]?.negocio?.rating ? ranking[0].negocio : undefined;
 const abrenDomingo = negocios.filter(abreDomingo);
 const conTerraza = negocios.filter((n) => n.terraza);
 const conReparto = negocios.filter((n) => n.delivery);
+const plural = (n: number, sing: string, plu: string) => `${n} ${n === 1 ? sing : plu}`;
 const listaNombres = (l: Negocio[], n = 4) =>
   l.slice(0, n).map((x) => x.name).join(", ") + (l.length > n ? ` y ${l.length - n} más` : "");
+const categoriaMin = categoria.name.toLowerCase();
+
+// Frase de datos secundarios: se compone aparte para no depender de trucos de mayúsculas.
+const datos = [
+  abrenDomingo.length > 0 ? `${plural(abrenDomingo.length, "abre", "abren")} el domingo` : null,
+  conTerraza.length > 0 ? `${plural(conTerraza.length, "tiene", "tienen")} terraza` : null,
+  conReparto.length > 0 ? `${plural(conReparto.length, "reparte", "reparten")} a domicilio` : null,
+].filter(Boolean);
 
 const intro = [
-  `En ${zona.name} el directorio recoge ${negocios.length} ${negocios.length === 1 ? categoria.name.toLowerCase().replace(/s$/, "") : categoria.name.toLowerCase()}.${mejor ? ` El mejor valorado por nota y volumen de reseñas es ${mejor.name}${mejor.rating ? ` (${mejor.rating} sobre 5${mejor.numReviews ? ` con ${mejor.numReviews} reseñas` : ""})` : ""}.` : ""}`,
-  [
-    abrenDomingo.length > 0 ? `${abrenDomingo.length} de ellos abren el domingo` : null,
-    conTerraza.length > 0 ? `${conTerraza.length} tienen terraza` : null,
-    conReparto.length > 0 ? `${conReparto.length} reparten a domicilio` : null,
-  ]
-    .filter(Boolean)
-    .join(", ")
-    .replace(/^/, (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) + ". " : "")) +
-    "Abajo tienes las fichas con dirección, teléfono y valoraciones reales de Google.",
+  `En ${zona.name} el directorio recoge ${plural(negocios.length, "ficha", "fichas")} de ${categoriaMin}.` +
+    (mejor
+      ? ` El mejor valorado por nota y volumen de reseñas es ${mejor.name}${mejor.rating ? ` (${mejor.rating} sobre 5${mejor.numReviews ? ` con ${mejor.numReviews} reseñas` : ""})` : ""}.`
+      : ""),
+  datos.length > 0
+    ? `De esas fichas, ${datos.join(", ")}. Abajo las tienes todas con dirección, teléfono y valoraciones reales de Google.`
+    : "Abajo las tienes todas con dirección, teléfono y valoraciones reales de Google.",
 ];
 
 const faq = [
   mejor && {
-    q: `¿Cuál es el mejor valorado de ${categoria.name.toLowerCase()} en ${zona.name}?`,
+    q: `¿Cuál es el mejor valorado de ${categoriaMin} en ${zona.name}?`,
     a: `${mejor.name}, con ${mejor.rating} sobre 5${mejor.numReviews ? ` y ${mejor.numReviews} reseñas` : ""}. El orden de esta página y de las guías del barrio sale de una puntuación que combina la nota media con el número de reseñas, para que una nota alta con pocas opiniones no adelante a una con cientos.`,
   },
   {
-    q: `¿Cuántos ${categoria.name.toLowerCase()} hay en ${zona.name}?`,
-    a: `El directorio tiene ${negocios.length} fichas${conTerraza.length > 0 ? `, de las que ${conTerraza.length} declaran terraza` : ""}${conReparto.length > 0 ? ` y ${conReparto.length} servicio a domicilio` : ""}. Todas con dirección, teléfono cuando el negocio lo publica y su ficha completa.`,
+    q: `¿Cuántos ${categoriaMin} hay en ${zona.name}?`,
+    a: `El directorio tiene ${plural(negocios.length, "ficha", "fichas")}${conTerraza.length > 0 ? `, de las que ${plural(conTerraza.length, "declara", "declaran")} terraza` : ""}${conReparto.length > 0 ? ` y ${plural(conReparto.length, "con servicio", "con servicio")} a domicilio` : ""}. Todas con dirección, teléfono cuando el negocio lo publica y su ficha completa.`,
   },
   abrenDomingo.length > 0 && {
     q: `¿Alguno abre el domingo en ${zona.name}?`,
@@ -73,7 +81,8 @@ const itemListSchema = {
   "@type": "ItemList",
   name: `${categoria.name} en ${zona.name}`,
   description: `Directorio de ${categoria.name.toLowerCase()} en ${zona.name}.`,
-  numberOfItems: negocios.length,
+  // El ItemList declara EXACTAMENTE las fichas que lista: antes ponía el total y emitía solo 20.
+  numberOfItems: negocios.slice(0, 20).length,
   itemListElement: negocios.slice(0, 20).map((n, i) => ({
     "@type": "ListItem",
     position: i + 1,
