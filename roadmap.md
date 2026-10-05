@@ -54,6 +54,9 @@
 - [x] **Hub `/con-ninos/` (mismo commit)**: 11 parques y áreas de juegos, ranking de los 35 locales «ideales para ir con niños», 11 escuelas infantiles, extraescolares y salud. Enlazado desde header, footer, llms.txt y sitemap.
 - [x] **Prospección con el argumento nuevo (05-oct e, commit `9f0d4b0`)**: el informe privado de leads dice en cuántas páginas del sitio aparece ya cada negocio y qué datos le faltan con su consecuencia (48 leads aparecen en 5+ páginas). Script con datos sugeridos según categoría.
 
+- [x] **Revisión adversarial del bloque de datos (05-oct e, commit `a8baaf8`)**: 1 bloqueante (los filtros avisaban de «ningún resultado» nada más cargar, porque sus scripts corrían antes que las tarjetas), 1 grave (`llms-full` con el ISO incompleto en 10 fichas nocturnas) y 8 menores (filtro «abierto ahora», guion largo en el parser, madrugada partida… ), todos corregidos y verificados en vivo. El horario embebido bajó de 101 a 29 KB por página.
+- [ ] **Festivos y cierres por vacaciones**: «abierto ahora» usa el horario habitual; no hay fuente fiable de festivos locales, así que el badge lo advierte. Si se quiere afinarlo, habría que cargar el calendario laboral de Madrid y los cierres que comuniquen los negocios.
+
 ## Pendiente ⬜
 
 - [ ] **Estancos** (1.300/mes, ya rankeamos 6,9 con 0 clics por el Map Pack): **hecho como bloque en `/servicios-profesionales/`** (05-oct d). Pendiente solo si aparece un segundo estanco en el barrio: valorar página propia.

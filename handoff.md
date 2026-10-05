@@ -71,7 +71,33 @@ el dato de Google vive ahora en su propio campo `destacadosGoogle`, que es lo qu
 corrigió una frase sin respaldo en la intro del hub («la mayoría de los vecinos llegaron con niños pequeños») por
 los datos verificados del barrio.
 
-### ✅ Prospección con el argumento nuevo (commit `9f0d4b0`)
+### 🔍 Revisión adversarial del bloque (commit `a8baaf8`) — 1 bloqueante, 1 grave y 8 menores
+
+Un revisor adversarial auditó `cd0b9f4`+`28b24ef`+`9f0d4b0` contra `dist/` y la web en vivo. Todo corregido:
+
+- **BLOQUEANTE · Los filtros avisaban de que no había resultados nada más cargar.** Los dos scripts corrían
+  **antes** que la rejilla de tarjetas, así que contaban 0 y mostraban «Ningún negocio de esta página cumple esos
+  filtros» / «No hay negocios de esa selección» con 286 tarjetas a la vista. Ahora arrancan en `DOMContentLoaded`
+  y el aviso solo aparece **si hay un filtro puesto** y no queda ninguna tarjeta. (El fallo ya existía en
+  `ZonaFilter`; se arregla en los dos.)
+- **GRAVE · `llms-full.txt` publicaba el ISO sin los cruces de medianoche**: 10 fichas locales salían sin línea ISO
+  o con días omitidos, contradiciendo la promesa del propio fichero. Ahora usa el horario completo.
+- **Menores**: el filtro «abierto ahora» ya no deja pasar tarjetas sin horario (se colaba una «próxima apertura») ·
+  el parser acepta el **guion largo** («L-V 9:00–21:00», Mediadores Inmobiliarios, que se quedaba sin schema ni
+  badge) · `openingHoursSpecification` **parte la madrugada** en dos entradas (hasta 23:59 y desde 00:00 del día
+  siguiente) en vez de publicar un intervalo invertido · el badge avisa de que **no incluye festivos** ·
+  `/con-ninos/` con el `ItemList` cuadrado (20 y 20) y la FAQ con el desglose real (35 fichas: 22 de restauración,
+  10 de belleza, 2 de deporte y 1 de salud) y los datos del padrón con fecha · la consulta de **logopedia**
+  (Google la clasifica «Centro de salud infantil») sale de la sección de salud y se aprovecha como apoyo al
+  lenguaje · **peso**: el horario embebido pasa a formato compacto (**101 KB → 29 KB** por página; `/directorio/`
+  de 848 a 809 KB), el badge reserva su ancho (CLS) y no se repinta con la pestaña en segundo plano ·
+  **accesibilidad**: `aria-pressed` en los botones y `aria-live` en el estado.
+
+**Consciente y documentado**: el estado «abierto ahora» se calcula con el horario habitual y **no conoce
+festivos, puentes ni cierres por vacaciones** (no hay fuente de datos para ello); se avisa en el propio badge. Los
+11 locales que cierran de madrugada publican su horario partido en la estructura, que es la forma que cualquier
+consumidor puede leer.
+
 
 `scripts/leads_prospecting.py` suma dos cosas que **se enseñan en pantalla**: en cuántas páginas del sitio aparece
 ya cada negocio (leído del build real, no estimado) y qué datos le faltan **con su consecuencia concreta** («sin
