@@ -76,10 +76,9 @@ export function erroresAperturas(datos, indice) {
       errores.push(`${ruta}: fichaSlug no existe en el directorio`);
     }
     fechaOpcional(item.fechaPrevista, `${ruta}.fechaPrevista`, errores);
+    // fechaApertura es opcional también con estado abierto: sin fuente de la fecha
+    // no se inventa el día. fuentes y verificadoEn siguen siendo obligatorios.
     fechaOpcional(item.fechaApertura, `${ruta}.fechaApertura`, errores);
-    if (item.estado === "abierto" && !diaDe(item.fechaApertura)) {
-      errores.push(`${ruta}: una apertura abierta necesita fechaApertura confirmada`);
-    }
     if (typeof item.resumen !== "string" || !item.resumen.trim()) errores.push(`${ruta}: falta resumen`);
     errores.push(...erroresFuentesYFecha(item, ruta));
   });

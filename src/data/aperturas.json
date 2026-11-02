@@ -1,5 +1,5 @@
 {
-  "lastReview": "2026-08-21",
+  "lastReview": "2026-11-02",
   "items": [
     {
       "id": "bunbun-canaveral",
@@ -45,6 +45,36 @@
         }
       ],
       "verificadoEn": "2026-08-21"
+    },
+    {
+      "id": "playlandia-cafe-canaveral",
+      "nombre": "Playlandia Café",
+      "estado": "abierto",
+      "categoria": "cafeterias",
+      "zona": "el-canaveral",
+      "direccion": "C. de Francisco Grande Covián, 61, Vicálvaro, 28052 Madrid",
+      "fichaSlug": "playlandia-cafe-canaveral",
+      "fechaPrevista": null,
+      "fechaApertura": null,
+      "resumen": "Cafetería con zona de juegos infantil, ya abierta: visitada el 2 de noviembre de 2026. Tiene carta de tostadas y brunch y packs de cumpleaños (Cumpleylandia) con reserva por WhatsApp. La sociedad que la gestiona se constituyó en julio de 2026. En Google figura como «Cafetería Playlandia». No hay horario ni fecha de apertura publicados.",
+      "fuentes": [
+        {
+          "nombre": "Perfil de Google Maps (Cafetería Playlandia)",
+          "url": "https://maps.google.com/?cid=17794954199831326760",
+          "tipo": "web"
+        },
+        {
+          "nombre": "Instagram @playlandiacafe",
+          "url": "https://www.instagram.com/playlandiacafe/",
+          "tipo": "red-social"
+        },
+        {
+          "nombre": "Registro Mercantil: Playlandia Family Group SL (datoscif)",
+          "url": "https://www.datoscif.es/empresa/playlandia-family-group-sl",
+          "tipo": "web"
+        }
+      ],
+      "verificadoEn": "2026-11-02"
     }
   ]
 }
