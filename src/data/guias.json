@@ -1,0 +1,163 @@
+[
+  {
+    "slug": "mejores-sitios-con-ninos-el-canaveral",
+    "title": "Mejores sitios con niños en El Cañaveral (2026)",
+    "description": "Playlandia Café y las 7 áreas infantiles municipales de El Cañaveral, con la fuente y el día en que se contrastó cada una. Sin horarios ni notas inventadas.",
+    "h1": "Mejores sitios con niños en El Cañaveral (2026)",
+    "intro": "Ocho sitios, y solo esos: una cafetería con zona de juegos y las siete áreas infantiles que el inventario del Ayuntamiento de Madrid sitúa en El Cañaveral. Cada una lleva una fuente que se puede abrir y la fecha en que la contrastamos. No hay horario si la fuente no lo publica, y no hay nota media de Playlandia: el 2 de noviembre de 2026 su perfil tenía 4 reseñas.",
+    "actualizado": "2026-11-02",
+    "items": [
+      {
+        "id": "playlandia-cafe",
+        "grupo": "cafeteria",
+        "nombre": "Playlandia Café",
+        "resumen": "Cafetería en la calle de Francisco Grande Covián, 61, Vicálvaro, 28052 Madrid, con zona de juegos infantil. En Google figura como «Cafetería Playlandia». El 2 de noviembre de 2026 el perfil no publicaba horario ni página web, y mostraba 5,0 con 4 reseñas: no publicamos esa nota como valoración agregada. Ese día el local anunciaba tostadas, brunch (el combo, 14,50 €) y packs de cumpleaños Cumpleylandia —Standard, Premium y Platinum— con aforo máximo de 55 personas y reserva por WhatsApp. La sociedad Playlandia Family Group SL se constituyó el 1 de julio de 2026; esa fecha no es la de apertura del local, que no está publicada.",
+        "direccion": "C. de Francisco Grande Covián, 61, Vicálvaro, 28052 Madrid",
+        "telefono": "+34 696 137 786",
+        "whatsapp": "https://wa.me/34696137786",
+        "fichaCategoria": "cafeterias",
+        "fichaSlug": "playlandia-cafe-canaveral",
+        "fuentes": [
+          {
+            "nombre": "Perfil de Google Maps (Cafetería Playlandia)",
+            "url": "https://maps.google.com/?cid=17794954199831326760",
+            "tipo": "web"
+          },
+          {
+            "nombre": "Instagram @playlandiacafe",
+            "url": "https://www.instagram.com/playlandiacafe/",
+            "tipo": "red-social"
+          },
+          {
+            "nombre": "Registro Mercantil: Playlandia Family Group SL (datoscif)",
+            "url": "https://www.datoscif.es/empresa/playlandia-family-group-sl",
+            "tipo": "web"
+          }
+        ],
+        "verificadoEn": "2026-11-02"
+      },
+      {
+        "id": "area-cerro-del-campo",
+        "grupo": "parque",
+        "nombre": "Área infantil de la calle Cerro del Campo, 41",
+        "resumen": "Área infantil municipal en la calle Cerro del Campo, 41, Vicálvaro, 28052 Madrid. Identificador 7129053 del inventario del Ayuntamiento. 10 elementos. Estado: operativo, en la descarga del 2 de noviembre de 2026. El inventario no publica horario.",
+        "direccion": "Calle Cerro del Campo, 41, Vicálvaro, 28052 Madrid",
+        "fuentes": [
+          {
+            "nombre": "Ayuntamiento de Madrid: áreas infantiles municipales (CC BY 4.0)",
+            "url": "https://datos.madrid.es/dataset/200652-0-areas-infantiles",
+            "tipo": "institucional"
+          }
+        ],
+        "verificadoEn": "2026-11-02"
+      },
+      {
+        "id": "area-alto-del-esparragal",
+        "grupo": "parque",
+        "nombre": "Área infantil de la calle Alto del Esparragal, 186",
+        "resumen": "Área infantil municipal en la calle Alto del Esparragal, 186, Vicálvaro, 28052 Madrid. Identificador 7126577. 7 elementos. Estado: operativo, en la descarga del 2 de noviembre de 2026. El inventario no publica horario.",
+        "direccion": "Calle Alto del Esparragal, 186, Vicálvaro, 28052 Madrid",
+        "fuentes": [
+          {
+            "nombre": "Ayuntamiento de Madrid: áreas infantiles municipales (CC BY 4.0)",
+            "url": "https://datos.madrid.es/dataset/200652-0-areas-infantiles",
+            "tipo": "institucional"
+          }
+        ],
+        "verificadoEn": "2026-11-02"
+      },
+      {
+        "id": "area-canada-vicalvaro",
+        "grupo": "parque",
+        "nombre": "Área infantil de la calle Cañada de Vicálvaro a San Fernando, 4",
+        "resumen": "Área infantil municipal en la calle Cañada de Vicálvaro a San Fernando, 4, Vicálvaro, 28052 Madrid. Identificador 7125671. 7 elementos. Estado: operativo, en la descarga del 2 de noviembre de 2026. El inventario no publica horario.",
+        "direccion": "Calle Cañada de Vicálvaro a San Fernando, 4, Vicálvaro, 28052 Madrid",
+        "fuentes": [
+          {
+            "nombre": "Ayuntamiento de Madrid: áreas infantiles municipales (CC BY 4.0)",
+            "url": "https://datos.madrid.es/dataset/200652-0-areas-infantiles",
+            "tipo": "institucional"
+          }
+        ],
+        "verificadoEn": "2026-11-02"
+      },
+      {
+        "id": "area-victorino-granizo",
+        "grupo": "parque",
+        "nombre": "Área infantil de la calle Concejal Victorino Granizo, 75",
+        "resumen": "Área infantil municipal en la calle Concejal Victorino Granizo, 75, Vicálvaro, 28052 Madrid. Identificador 3994618. 14 elementos: es la que más tiene de las siete del barrio. Estado: operativo, en la descarga del 2 de noviembre de 2026. El inventario no publica horario.",
+        "direccion": "Calle Concejal Victorino Granizo, 75, Vicálvaro, 28052 Madrid",
+        "fuentes": [
+          {
+            "nombre": "Ayuntamiento de Madrid: áreas infantiles municipales (CC BY 4.0)",
+            "url": "https://datos.madrid.es/dataset/200652-0-areas-infantiles",
+            "tipo": "institucional"
+          }
+        ],
+        "verificadoEn": "2026-11-02"
+      },
+      {
+        "id": "area-dialogo",
+        "grupo": "parque",
+        "nombre": "Área infantil de la calle Diálogo, 71",
+        "resumen": "Área infantil municipal en la calle Diálogo, 71, Vicálvaro, 28052 Madrid. Identificador 5220866. 5 elementos. Estado: operativo, en la descarga del 2 de noviembre de 2026. El inventario no publica horario.",
+        "direccion": "Calle Diálogo, 71, Vicálvaro, 28052 Madrid",
+        "fuentes": [
+          {
+            "nombre": "Ayuntamiento de Madrid: áreas infantiles municipales (CC BY 4.0)",
+            "url": "https://datos.madrid.es/dataset/200652-0-areas-infantiles",
+            "tipo": "institucional"
+          }
+        ],
+        "verificadoEn": "2026-11-02"
+      },
+      {
+        "id": "area-padre-gregorio",
+        "grupo": "parque",
+        "nombre": "Área infantil de la calle Padre Gregorio de Céspedes, 30",
+        "resumen": "Área infantil municipal en la calle Padre Gregorio de Céspedes, 30, Vicálvaro, 28052 Madrid. Identificador 7126531. 13 elementos. Estado: operativo, en la descarga del 2 de noviembre de 2026. El inventario no publica horario.",
+        "direccion": "Calle Padre Gregorio de Céspedes, 30, Vicálvaro, 28052 Madrid",
+        "fuentes": [
+          {
+            "nombre": "Ayuntamiento de Madrid: áreas infantiles municipales (CC BY 4.0)",
+            "url": "https://datos.madrid.es/dataset/200652-0-areas-infantiles",
+            "tipo": "institucional"
+          }
+        ],
+        "verificadoEn": "2026-11-02"
+      },
+      {
+        "id": "area-infantil-7126517",
+        "grupo": "parque",
+        "nombre": "Área infantil municipal (identificador 7126517)",
+        "resumen": "Área infantil del inventario municipal en el barrio El Cañaveral. Identificador 7126517. 13 elementos. Estado: operativo, en la descarga del 2 de noviembre de 2026. El inventario no publica horario.",
+        "fuentes": [
+          {
+            "nombre": "Ayuntamiento de Madrid: áreas infantiles municipales (CC BY 4.0)",
+            "url": "https://datos.madrid.es/dataset/200652-0-areas-infantiles",
+            "tipo": "institucional"
+          }
+        ],
+        "verificadoEn": "2026-11-02"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cuántas áreas infantiles municipales hay en El Cañaveral?",
+        "a": "El inventario de áreas infantiles del Ayuntamiento de Madrid (https://datos.madrid.es/dataset/200652-0-areas-infantiles, descarga del 2 de noviembre de 2026, licencia CC BY 4.0) incluye 7 áreas en el barrio El Cañaveral, todas con estado operativo. La de la calle Concejal Victorino Granizo, 75 (identificador 3994618) es la que más elementos tiene: 14."
+      },
+      {
+        "q": "¿Qué se sabe de Playlandia Café?",
+        "a": "Es una cafetería en la calle de Francisco Grande Covián, 61, Vicálvaro, 28052 Madrid, con zona de juegos infantil. En Google figura como «Cafetería Playlandia» (https://maps.google.com/?cid=17794954199831326760). El 2 de noviembre de 2026 el perfil no publicaba horario ni página web. El local anunciaba reservas de cumpleaños por WhatsApp en el 696 137 786 y packs Cumpleylandia (Standard, Premium y Platinum) con aforo máximo de 55 personas. No hay una fecha de apertura publicada."
+      },
+      {
+        "q": "¿Los packs de cumpleaños de Playlandia tienen precio publicado?",
+        "a": "El 2 de noviembre de 2026 la pantalla de packs del local no publicaba precios: indicaba consultar. El aforo máximo de Standard, Premium y Platinum es 55 personas. Catering, música en directo, mago y animador figuran como opcionales, con presupuesto aparte. El combo brunch de la carta sí tiene precio: 14,50 €."
+      },
+      {
+        "q": "¿El gran parque infantil del proyecto 19126 es otro sitio?",
+        "a": "El proyecto participativo 19126 se dio por finalizado porque el Servicio de Equipamientos Urbanos informó de que la instalación, con un elemento singular de grandes dimensiones, ya está abierta al público (https://decide.madrid.es/presupuestos/presupuestos-participativos-2021/proyecto/19126). El aviso no publica la dirección del área terminada. No la listamos como un noveno sitio: no está comprobado que sea distinta de las siete del inventario municipal."
+      }
+    ]
+  }
+]

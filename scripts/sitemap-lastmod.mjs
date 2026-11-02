@@ -155,6 +155,9 @@ export function datosAsociados(archivo) {
     add("src/data/categorias.json");
     add("src/data/zonas.json");
   }
+  if (archivo === "src/pages/con-ninos.astro" || archivo.startsWith("src/pages/guias/")) {
+    add("src/data/guias.json");
+  }
   if (archivo === "src/pages/nuevas-aperturas.astro") add("src/data/aperturas.json");
   if (archivo === "src/pages/agenda/index.astro" || archivo === "src/pages/agenda/[slug].astro") {
     add("src/data/agenda.json");
@@ -233,6 +236,7 @@ export function createLastmodLookup(opts = {}) {
   const { exactas, dinamicas } = indexarPaginas(archivos);
   const aperturas = opts.aperturas ?? leerJson(root, "src/data/aperturas.json");
   const agenda = opts.agenda ?? leerJson(root, "src/data/agenda.json");
+  const guias = opts.guias ?? leerJson(root, "src/data/guias.json");
 
   return function lastmodDe(url) {
     const ruta = normalizarRuta(url);
@@ -243,6 +247,23 @@ export function createLastmodLookup(opts = {}) {
       return masReciente([
         gitDates.get("src/pages/nuevas-aperturas.astro"),
         gitDates.get("src/data/aperturas.json"),
+      ]);
+    }
+    if (ruta === "/guias/" || ruta.startsWith("/guias/")) {
+      const lista = Array.isArray(guias) ? guias : [];
+      const slug = ruta === "/guias/" ? null : ruta.slice("/guias/".length, -1);
+      const propias = slug ? lista.filter((guia) => guia?.slug === slug) : lista;
+      const fechas = [];
+      for (const guia of propias) {
+        fechas.push(guia?.actualizado, guia?.verificadoEn);
+        const items = Array.isArray(guia?.items) ? guia.items : [];
+        for (const item of items) fechas.push(item?.verificadoEn);
+      }
+      const propia = masReciente(fechas);
+      if (propia) return propia;
+      return masReciente([
+        gitDates.get(slug ? "src/pages/guias/[slug].astro" : "src/pages/guias/index.astro"),
+        gitDates.get("src/data/guias.json"),
       ]);
     }
     if (ruta === "/agenda/" || ruta.startsWith("/agenda/")) {
