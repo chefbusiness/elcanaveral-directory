@@ -1,0 +1,11 @@
+# 301 de /ruta a /ruta/ en dos capas que no entran en bucle:
+# - Pretty URLs, para el HTML de dist/<ruta>/index.html (el 301 que documenta Netlify).
+# - La edge function barra-final, que redirige la ruta cruda sin barra.
+# Una regla /*  /:splat/  301 no vale: el CDN trata /ruta y /ruta/ como la misma
+# antes de mirar _redirects y la regla se llama a sí misma.
+[build.processing.html]
+  pretty_urls = true
+
+[[edge_functions]]
+function = "barra-final"
+path = "/*"

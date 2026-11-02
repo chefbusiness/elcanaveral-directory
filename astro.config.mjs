@@ -7,6 +7,8 @@ const lastmodDe = createLastmodLookup();
 
 export default defineConfig({
   site: "https://www.elcanaveral.info",
+  // Las páginas viven en dist/<ruta>/index.html. La canonical y el 301 usan esa forma.
+  trailingSlash: "always",
   integrations: [
     sitemap({
       // Fuera del sitemap las páginas noindex (legales y la confirmación de formularios).
