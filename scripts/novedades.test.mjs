@@ -94,6 +94,30 @@ test("una guía sin fuentes o sin verificadoEn no pasa", () => {
   );
 });
 
+test("una apertura abierta puede ir sin fechaApertura, pero no sin fuentes", () => {
+  const sinFecha = erroresAperturas(
+    { lastReview: "2026-11-02", items: [{ ...aperturaOk, estado: "abierto", fechaApertura: null }] },
+    indice,
+  );
+  assert.deepEqual(sinFecha, []);
+  const sinFuente = erroresAperturas(
+    {
+      lastReview: "2026-11-02",
+      items: [{ ...aperturaOk, estado: "abierto", fechaApertura: null, fuentes: [] }],
+    },
+    indice,
+  );
+  assert.ok(sinFuente.some((e) => e.includes("sin fuentes")));
+  const sinVerificacion = erroresAperturas(
+    {
+      lastReview: "2026-11-02",
+      items: [{ ...aperturaOk, estado: "abierto", fechaApertura: null, verificadoEn: "" }],
+    },
+    indice,
+  );
+  assert.ok(sinVerificacion.some((e) => e.includes("verificadoEn")));
+});
+
 test("reverificar a los 90 días y abiertas recientes", () => {
   assert.equal(porReverificar("2026-08-21", "2026-11-19"), false);
   assert.equal(porReverificar("2026-08-21", "2026-11-20"), true);
