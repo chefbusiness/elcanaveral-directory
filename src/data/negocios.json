@@ -89,7 +89,7 @@
     "tags": [
       "local"
     ],
-    "featured": true,
+    "featured": false,
     "image": "/images/negocios/hiper-canaveral.webp",
     "servicios": [
       "Sección de frescos (fruta, verdura, carne, pescado)",
@@ -338,7 +338,7 @@
       "cadena",
       "productos-frescos"
     ],
-    "featured": true,
+    "featured": false,
     "image": "/images/negocios/ahorramas.webp",
     "servicios": [
       "Carnicería con corte al momento",
@@ -680,7 +680,7 @@
       "local",
       "productos-frescos"
     ],
-    "featured": true,
+    "featured": false,
     "image": "/images/negocios/casa-elias.webp",
     "servicios": [
       "Frutería con producto de temporada",
@@ -762,7 +762,7 @@
       "familiar",
       "temporada"
     ],
-    "featured": true,
+    "featured": false,
     "address": "C. Anna Frank, 12, Local 7, Vicalvaro, 28052 Madrid",
     "rating": 5,
     "phone": "+34 699 90 33 69",
@@ -1044,7 +1044,7 @@
       "artesanal",
       "masa-madre"
     ],
-    "featured": true,
+    "featured": false,
     "address": "Av. de Blas de Lezo, Vicalvaro, 28052 Madrid",
     "rating": 4.3,
     "numReviews": 123,
@@ -1505,7 +1505,7 @@
       "familias",
       "zona-infantil"
     ],
-    "featured": true,
+    "featured": false,
     "address": "Avenida Miguel Delibes & C. Concejal Victorino Granizo, 28052 Madrid",
     "rating": 3.8,
     "numReviews": 192,
@@ -1635,7 +1635,7 @@
       "clases",
       "alquiler"
     ],
-    "featured": true,
+    "featured": false,
     "image": "/images/negocios/padel-el-canaveral.webp",
     "servicios": [
       "Alquiler de pistas de pádel (cubiertas)",
@@ -1716,7 +1716,7 @@
       "privada",
       "cheque-guardería"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Educación infantil 0-3 años",
       "Comedor con menú adaptado",
@@ -1801,7 +1801,7 @@
       "municipal",
       "guardería"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Educación infantil 0-3 años",
       "Comedor escolar",
@@ -1879,7 +1879,7 @@
       "autonómica",
       "guardería"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Educación infantil 0-3 años",
       "Comedor con cocina propia",
@@ -1951,7 +1951,7 @@
       "cachopo",
       "arroz-bogavante"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Comida en sala",
       "Cenas",
@@ -2240,7 +2240,7 @@
       "ortodoncia",
       "implantes"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Odontología general",
       "Implantes dentales",
@@ -2606,7 +2606,7 @@
       "estética",
       "color"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Corte de pelo (mujer, hombre, niño)",
       "Coloración (mechas, balayage, tintes)",
@@ -3025,7 +3025,7 @@
       "clases",
       "musculación"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Sala de musculación y peso libre",
       "Zona de cardio con máquinas de última generación",
@@ -3354,7 +3354,7 @@
       "peluquería-canina",
       "vacunas"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Consultas veterinarias generales",
       "Vacunaciones y desparasitaciones",
@@ -3511,7 +3511,7 @@
       "bricolaje",
       "herramientas"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Venta de herramientas manuales y eléctricas",
       "Material eléctrico y de fontanería",
@@ -3668,7 +3668,7 @@
       "inmobiliario",
       "familia"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Asesoramiento en compraventa de inmuebles",
       "Derecho de familia (divorcios, herencias)",
@@ -3983,7 +3983,7 @@
       "terraza"
     ],
     "terraza": true,
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Amplia carta de cervezas artesanales",
       "Tapas variadas",
@@ -4716,7 +4716,7 @@
       "logopedia",
       "multidisciplinar"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Podología general y deportiva",
       "Fisioterapia y rehabilitación",
@@ -4971,7 +4971,7 @@
       "pre-itv",
       "neumáticos"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Revisión Pre-ITV",
       "Mecánica general y rápida",
@@ -5300,7 +5300,7 @@
       "asesoramiento",
       "único"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Asesoramiento de imagen personalizado",
       "Venta de ropa femenina (vestidos, blusas, pantalones)",
@@ -5740,7 +5740,7 @@
       "ginecología",
       "estética"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Consultas de Pediatría",
       "Consultas de Medicina de Familia",
@@ -6398,7 +6398,7 @@
       "construcción",
       "jardinería"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Venta de materiales de construcción",
       "Herramientas eléctricas y manuales",
@@ -6800,7 +6800,7 @@
     ],
     "edades": "0-3 años",
     "tipoGestion": "privada",
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Educación bilingüe (inglés)",
       "Comedor con menú adaptado",
@@ -6945,7 +6945,7 @@
       "estética dental",
       "odontopediatría"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Revisiones y limpiezas dentales",
       "Ortodoncia invisible (Invisalign)",
@@ -7118,7 +7118,7 @@
       "vietnamita",
       "asiática"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Comida para llevar",
       "Servicio a domicilio",
@@ -7370,7 +7370,7 @@
       "venezolana",
       "latina"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Comida para llevar",
       "Servicio a domicilio",
@@ -7568,7 +7568,7 @@
       "street food",
       "brasa"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Comida para llevar",
       "Terraza exterior",
@@ -7648,7 +7648,7 @@
       "guardia",
       "parafarmacia"
     ],
-    "featured": true,
+    "featured": false,
     "servicios": [
       "Dispensación de medicamentos",
       "Asesoramiento farmacéutico",

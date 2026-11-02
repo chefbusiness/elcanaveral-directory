@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { stripBlockedWebsites, warnStripped } from "./website-guard.js";
+import { fichasPatrocinadas, fotosDeFicha, ordenarPorPlan } from "./planes.mjs";
 
 export interface Negocio {
   slug: string;
@@ -38,6 +39,10 @@ export interface Negocio {
   // Clasificacion
   tags?: string[];
   featured?: boolean;
+  // Opcional. Si falta, la ficha es editorial (ninguno). Los planes de pago no se
+  // asignan en los datos reales: solo aparecen en fixtures de test.
+  plan?: "ninguno" | "presencia" | "destacado" | "crecimiento" | "sponsor";
+  cta?: { texto: string; url: string };
   estado?: "proxima-apertura";   // negocio anunciado que aun no ha abierto
   // Campos enriquecidos (comunes a todos)
   servicios?: string[];
@@ -462,30 +467,28 @@ export function loadZonas(): Zona[] {
 }
 
 export function getNegociosByCategoria(categoriaSlug: string): Negocio[] {
-  return loadNegocios().filter((n) => n.category === categoriaSlug);
+  return ordenarPorPlan(loadNegocios().filter((n) => n.category === categoriaSlug));
 }
 
 export function getNegociosByZona(zonaSlug: string): Negocio[] {
-  return loadNegocios().filter((n) => n.zona === zonaSlug);
+  return ordenarPorPlan(loadNegocios().filter((n) => n.zona === zonaSlug));
 }
 
 export function getNegociosByCategoriaYZona(
   categoriaSlug: string,
   zonaSlug: string
 ): Negocio[] {
-  return loadNegocios().filter(
+  return ordenarPorPlan(loadNegocios().filter(
     (n) => n.category === categoriaSlug && n.zona === zonaSlug
-  );
+  ));
 }
 
 export function getNegocioBySlug(slug: string): Negocio | undefined {
   return loadNegocios().find((n) => n.slug === slug);
 }
 
-export function getFeaturedNegocios(limit = 6): Negocio[] {
-  return loadNegocios()
-    .filter((n) => n.featured)
-    .slice(0, limit);
+export function getNegociosPatrocinados(limit = 6): Negocio[] {
+  return fichasPatrocinadas(loadNegocios(), limit);
 }
 
 // Path generators for getStaticPaths
@@ -619,9 +622,12 @@ export function generateLocalBusinessSchema(negocio: Negocio) {
     ...(sameAs.length > 0 && { sameAs }),
     ...(negocio.phone && { telephone: negocio.phone }),
     ...(negocio.email && { email: negocio.email }),
-    ...((negocio.images && negocio.images.length > 0)
-      ? { image: negocio.images.map((img) => `https://www.elcanaveral.info${img}`) }
-      : negocio.image && { image: `https://www.elcanaveral.info${negocio.image}` }),
+    ...((() => {
+      const fotos = fotosDeFicha(negocio);
+      return fotos.length > 0
+        ? { image: fotos.map((img: string) => `https://www.elcanaveral.info${img}`) }
+        : {};
+    })()),
     // aggregateRating exige reseñas de verdad. Con menos de 5 (Playlandia tenía
     // 4 el 2026-11-02) la nota no es estable y no se publica el marcado.
     ...(negocio.rating && (negocio.numReviews || 0) >= 5 && {

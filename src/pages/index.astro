@@ -5,7 +5,7 @@ import Footer from "@/components/Footer.astro";
 import SearchBar from "@/components/SearchBar.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import GuiaCard from "@/components/GuiaCard.astro";
-import { loadCategorias, loadZonas, getFeaturedNegocios, loadNegocios } from "@/lib/directory";
+import { loadCategorias, loadZonas, getNegociosPatrocinados, loadNegocios } from "@/lib/directory";
 import { loadPublishedListicles } from "@/lib/listicles";
 import { UBICACION_POR_DEFECTO, enlaceCtaLocalseoads } from "@/lib/localseoads";
 
@@ -13,7 +13,7 @@ const hrefLocalSeo = enlaceCtaLocalseoads({ ubicacion: UBICACION_POR_DEFECTO, co
 
 const categorias = loadCategorias();
 const zonas = loadZonas();
-const featured = getFeaturedNegocios(6);
+const patrocinados = getNegociosPatrocinados(6);
 const totalNegocios = loadNegocios().length;
 // Guías generales (de "y alrededores") primero, para la home
 const guias = loadPublishedListicles()
@@ -193,24 +193,22 @@ const websiteSchema = {
     </div>
   </section>
 
-  <!-- Destacados -->
-  {featured.length > 0 && (
+  <!-- Patrocinados: solo Destacado, Crecimiento o Sponsor. Sin fichas de esos planes, no se pinta. -->
+  {patrocinados.length > 0 && (
     <section class="py-16 px-4 bg-white">
       <div class="max-w-6xl mx-auto">
         <div class="flex items-end justify-between mb-8">
           <div>
-            <h2 class="text-2xl font-bold text-brand-900">Negocios destacados</h2>
-            {/* Honestidad (LSSI): `featured` es una posición del plan Destacado (49 €/mes), no una
-                selección editorial. Antes ponía «los mejor valorados por los vecinos», que era
-                publicidad presentada como recomendación. */}
+            <h2 class="text-2xl font-bold text-brand-900">Patrocinados</h2>
+            {/* Posición de pago, no una selección editorial. */}
             <p class="text-gray-500 mt-1">
-              Espacios del plan Destacado (posición de pago) ·
+              Espacios de pago con etiqueta Patrocinado. Destacado, 79 €/mes + IVA; también Crecimiento y Sponsor ·
               <a href="/planes/" class="text-brand-600 hover:text-brand-700 underline">ver planes</a>
             </p>
           </div>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featured.map((negocio) => (
+          {patrocinados.map((negocio) => (
             <NegocioCard negocio={negocio} />
           ))}
         </div>
