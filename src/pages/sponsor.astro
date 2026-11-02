@@ -7,28 +7,16 @@ const submitted = Astro.url.searchParams.get("ok") === "1";
 
 const beneficios = [
   {
-    titulo: "Exclusividad real en tu categoría",
-    texto: "Solo 1 sponsor por categoría. Si firmas inmobiliarias, ningún competidor puede aparecer destacado en esa sección. Bloqueas el slot durante toda la duración del acuerdo.",
+    titulo: "Un solo sponsor por categoría",
+    texto: "Contratamos un único sponsor por categoría mientras el acuerdo esté vigente. No hay un segundo patrocinio de esa categoría en paralelo.",
   },
   {
-    titulo: "Presencia site-wide en todas las páginas",
-    texto: "Banner rotativo en home, fichas de negocios, listados por zona y categoría, blog y hub social del barrio. Cada visita al directorio cuenta.",
+    titulo: "Sin tarifa pública",
+    texto: "El precio no se publica. Tras la solicitud enviamos una propuesta con el alcance, la duración y la cuota. No hay un periodo sin cuota.",
   },
   {
-    titulo: "Tu ficha como referencia editorial",
-    texto: "Badge dorado de patrocinador oficial, tarjeta destacada en sidebar de toda tu categoría, CTA directo a tu web desde cada ficha relacionada.",
-  },
-  {
-    titulo: "Newsletter y redes co-brandeadas",
-    texto: "Mención en el boletín mensual a vecinos suscritos al directorio, presencia en el hub social del barrio y posibilidad de co-creación de contenido (entrevista, reportaje).",
-  },
-  {
-    titulo: "Reportes de tráfico transparentes",
-    texto: "Informe mensual con páginas vistas, visitas únicas, clics a tu ficha y rendimiento de tus banners. Sin medias tintas: ves lo que está funcionando.",
-  },
-  {
-    titulo: "Activación rápida tras la firma",
-    texto: "Aplicamos featured + badge + banners en menos de 24 horas tras la firma. Cero fricción técnica: tú nos pasas creatividades, nosotros las publicamos.",
+    titulo: "El alcance se acuerda",
+    texto: "Lo que se publica sale en la propuesta. El directorio no tiene boletín, informe de clics del sitio, banner de sponsor ni tarjeta de patrocinador en la categoría.",
   },
 ];
 
@@ -42,27 +30,27 @@ const faqs = [
     a: "El directorio se lanzó en abril de 2026 y está en fase de crecimiento orgánico vía SEO local. Cada candidato a sponsor recibe los datos reales de tráfico actuales y el plan de crecimiento estimado antes de firmar. La propuesta se construye sobre datos verificables, no sobre proyecciones infladas.",
   },
   {
-    q: "¿Por qué 800 €/mes y no 200 €?",
-    a: "Porque es exclusividad. Bloqueas la categoría completa durante 12 meses: el resto de competidores no pueden aparecer destacados, ni con banner, ni con featured. Para una inmobiliaria del barrio que cierra una venta de 5K-10K€ en comisiones, el ROI es directo. Para un negocio con tickets más pequeños, probablemente tiene más sentido el plan Destacado (49 €/mes).",
-  },
-  {
     q: "¿Qué pasa si la categoría que me interesa ya tiene sponsor?",
-    a: "Te lo decimos al recibir tu solicitud. Mientras el slot esté ocupado, te ofrecemos el plan Destacado (49 €/mes), que también pone tu ficha en lo más alto pero sin exclusividad. En cuanto el slot del sponsor quede libre, tienes prioridad para entrar.",
+    a: "Te lo decimos al recibir tu solicitud. Mientras el hueco esté ocupado, la alternativa con tarifa pública es Destacado (79 €/mes + IVA): etiqueta Patrocinado y sección de la home, con un máximo de 5 fichas patrocinadas por categoría. En cuanto el hueco del sponsor quede libre, puedes optar a él.",
   },
   {
-    q: "¿Cuál es la duración mínima?",
-    a: "12 meses, con bonificación a partir del mes 3 (gratis los primeros 60 días para activar el contenido y ver primeros resultados). Después, renovación anual a precio fijo o renegociación según volumen del directorio.",
+    q: "¿Cuál es la duración?",
+    a: "La duración y la cuota se cierran en la propuesta. No hay tarifa pública ni un periodo sin cuota.",
+  },
+  {
+    q: "¿Garantizáis resultados de leads o ventas?",
+    a: "No. El patrocinio no garantiza visitas, contactos ni ventas. Esos resultados dependen de la estacionalidad, la competencia, la calidad del propio negocio y la oferta.",
   },
   {
     q: "¿Puedo ver una propuesta antes de comprometerme?",
-    a: "Sí. Tras tu solicitud te enviamos una propuesta personalizada en formato PDF con: tráfico actual, fórmulas de activación, calendario, métricas clave y desglose de cuota. Sin compromiso. La firma se hace solo cuando ambas partes estamos alineadas.",
+    a: "Sí. Tras tu solicitud te enviamos una propuesta con el alcance, la duración y la cuota. Sin compromiso. La firma se hace solo cuando ambas partes estamos alineadas.",
   },
 ];
 ---
 
 <BaseLayout
   title="Sponsor exclusivo del directorio"
-  description="Patrocinio integral por categoría desde 800 €/mes: presencia site-wide, ficha premium, newsletter y reportes transparentes. Solo 1 sponsor por categoría."
+  description="Patrocinio de una categoría, a consultar y sin tarifa pública. Un solo sponsor por categoría."
 >
   <Header />
 
@@ -76,8 +64,8 @@ const faqs = [
         Domina tu categoría en el barrio
       </h1>
       <p class="text-lg sm:text-xl text-brand-100 max-w-2xl mx-auto leading-relaxed mb-8">
-        Patrocinio exclusivo desde <strong class="text-white">800 €/mes</strong>. Tu negocio como
-        referencia editorial del directorio. Tu competencia, fuera del slot premium durante 12 meses.
+        Patrocinio de categoría <strong class="text-white">a consultar</strong>. Un solo sponsor
+        por categoría. La cuota no se publica: sale en la propuesta.
       </p>
       <a href="#solicitar" class="inline-block bg-accent-500 hover:bg-accent-600 text-white font-semibold px-8 py-3.5 rounded-lg transition-colors">
         Solicitar propuesta personalizada
@@ -90,7 +78,7 @@ const faqs = [
     <div class="max-w-5xl mx-auto">
       <h2 class="text-2xl sm:text-3xl font-bold text-brand-900 text-center mb-3">Qué incluye el sponsor exclusivo</h2>
       <p class="text-center text-warm-600 mb-12 max-w-2xl mx-auto">
-        Más que un banner. Una alianza editorial entre tu marca y el directorio del barrio.
+        Un acuerdo por categoría. Sin tarifa en esta página.
       </p>
       <div class="grid md:grid-cols-2 gap-5">
         {beneficios.map((b) => (
@@ -109,18 +97,13 @@ const faqs = [
       <h2 class="text-2xl sm:text-3xl font-bold text-brand-900 mb-6 text-center">Por qué exclusividad</h2>
       <div class="space-y-5 text-warm-800 text-lg leading-relaxed">
         <p>
-          Un banner sin exclusividad compite con los del resto. Un sponsor exclusivo
-          <strong class="text-brand-900">bloquea la categoría</strong>: ningún otro competidor del barrio
-          aparece destacado, en ningún sitio, durante 12 meses.
+          Contratamos <strong class="text-brand-900">un solo sponsor por categoría</strong>.
+          No publicamos la cuota: el alcance y el precio salen en la propuesta.
         </p>
         <p>
-          Para sectores con ticket medio alto — inmobiliario, dental, seguros, asesoría fiscal,
-          guardería privada, fisioterapia premium — la diferencia entre aparecer "destacado entre 8"
-          y "ser el único" cambia el cálculo del ROI.
-        </p>
-        <p>
-          Si una venta media de tu negocio cubre 1-3 cuotas mensuales de sponsorship, y este canal
-          te da una sola venta extra al mes, te paga el año.
+          Si quieres la tarifa pública, Destacado es 79 €/mes + IVA (etiqueta Patrocinado y sección
+          de la home, máximo 5 fichas por categoría) y Crecimiento es 149 €/mes + IVA (todo Destacado,
+          más el trabajo mensual de la ficha de Google, que ejecuta LocalSEOAds).
         </p>
       </div>
     </div>
@@ -226,16 +209,6 @@ const faqs = [
             <div>
               <label for="web" class="block text-sm font-semibold text-brand-900 mb-1">Web de tu empresa</label>
               <input id="web" name="web" type="url" placeholder="https://..." class="w-full px-4 py-2.5 border border-warm-300 rounded-lg focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100" />
-            </div>
-
-            <div>
-              <label for="presupuesto" class="block text-sm font-semibold text-brand-900 mb-1">Rango de presupuesto mensual aproximado</label>
-              <select id="presupuesto" name="presupuesto" class="w-full px-4 py-2.5 border border-warm-300 rounded-lg bg-white focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100">
-                <option>800 € - 1.200 €</option>
-                <option>1.200 € - 2.000 €</option>
-                <option>Más de 2.000 €</option>
-                <option>Aún no lo tengo claro</option>
-              </select>
             </div>
 
             <div>

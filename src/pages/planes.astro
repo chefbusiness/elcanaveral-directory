@@ -3,67 +3,77 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 
+const SITE = "https://www.elcanaveral.info";
+
 const tiers = [
   {
-    name: "Verificado",
-    price: "19 €",
-    cadence: "/mes · 190 € anual",
-    tagline: "Toma el control de tu ficha y elimina la publicidad externa",
+    name: "Presencia",
+    price: "29 €",
+    cadence: "/mes + IVA",
+    annual: "290 €/año + IVA · paga 10, disfruta 12",
+    tagline: "Ficha contratada, sin etiqueta Patrocinado ni hueco en la home.",
     cta: "Contratar",
-    href: "/anunciate/?plan=verificado",
+    href: "/anunciate/?plan=presencia",
     highlight: false,
     features: [
-      { label: "Ficha publicada en el directorio", on: true },
-      { label: "Edición directa de tu ficha", on: true },
-      { label: "Hasta 10 fotografías propias", on: true },
-      { label: "Botones de contacto reales (web, WhatsApp, tel)", on: true },
-      { label: "Badge \"Verificado\" en tu ficha", on: true },
-      { label: "Sin banner LocalSEOAds en tu ficha", on: true },
-      { label: "Soporte por email <72 h", on: true },
-      { label: "Featured en home", on: false },
-      { label: "Top de tu categoría y zona", on: false },
-      { label: "Banner propio en tu ficha", on: false },
-      { label: "Reporte mensual de visitas", on: false },
+      { label: "Ficha publicada en su categoría y zona", on: true },
+      { label: "Hasta 5 fotos en la ficha", on: true },
+      { label: "Descripción editorial y mapa si hay dirección", on: true },
+      { label: "Botón de llamada y enlace a la web cuando constan en la ficha", on: true },
+      { label: "Cambios de la ficha por email", on: true },
     ],
   },
   {
     name: "Destacado",
-    price: "49 €",
-    cadence: "/mes · 490 € anual",
-    tagline: "Visibilidad prioritaria en home, categoría y zona",
+    price: "79 €",
+    cadence: "/mes + IVA",
+    annual: "790 €/año + IVA · paga 10, disfruta 12",
+    tagline: "Etiqueta Patrocinado y sección de la home. Máximo 5 por categoría.",
     cta: "Contratar",
     href: "/anunciate/?plan=destacado",
     highlight: true,
     features: [
-      { label: "Todo lo del plan Verificado", on: true },
-      { label: "Featured rotativo en home", on: true },
-      { label: "Top de tu categoría", on: true },
-      { label: "Top de tu zona", on: true },
-      { label: "Banner propio inline en tu ficha (CTA a tu web)", on: true },
-      { label: "Hasta 15 fotografías propias", on: true },
-      { label: "Reporte mensual de visitas y clics", on: true },
-      { label: "Mención mensual en redes sociales del directorio", on: true },
-      { label: "Soporte por email <48 h", on: true },
+      { label: "Todo lo del plan Presencia", on: true },
+      { label: "Etiqueta visible «Patrocinado» en la ficha y en las tarjetas", on: true },
+      { label: "Sección de patrocinados en la home (hasta 6 fichas)", on: true },
+      { label: "Máximo 5 fichas patrocinadas por categoría", on: true },
+    ],
+  },
+  {
+    name: "Crecimiento",
+    price: "149 €",
+    cadence: "/mes + IVA",
+    annual: "1.490 €/año + IVA · paga 10, disfruta 12",
+    tagline: "Todo Destacado, más la ficha de Google cada mes. Lo ejecuta LocalSEOAds.",
+    cta: "Contratar",
+    href: "/anunciate/?plan=crecimiento",
+    highlight: false,
+    features: [
+      { label: "Todo lo del plan Destacado", on: true },
+      { label: "4 publicaciones en la ficha de Google al mes (una por semana)", on: true },
+      { label: "Respuesta a reseñas en 2 días laborables (lunes a viernes)", on: true },
+      { label: "Una revisión del perfil al mes: categorías, horarios, fotos que aporta el cliente y servicios", on: true },
+      { label: "Resumen mensual con los datos reales de la ficha de Google", on: true },
+      { label: "Diagnóstico de ficha (99 €, IVA incluido) una vez, al contratar", on: true },
+      { label: "Compromiso mínimo de 3 meses en la cuota mensual", on: true },
+      { label: "Fotos o vídeos profesionales", on: false },
+      { label: "Anuncios", on: false },
+      { label: "Web", on: false },
     ],
   },
   {
     name: "Sponsor exclusivo",
-    price: "Desde 800 €",
-    cadence: "/mes · solo 1 por categoría",
-    tagline: "Patrocinio integral de tu categoría con presencia site-wide",
+    price: "A consultar",
+    cadence: "sin tarifa pública",
+    annual: "1 sponsor por categoría",
+    tagline: "Patrocinio de una categoría. El alcance se cierra en la propuesta.",
     cta: "Solicitar propuesta",
     href: "/sponsor/",
     highlight: false,
     features: [
-      { label: "Todo lo del plan Destacado", on: true },
-      { label: "Sponsor exclusivo de tu categoría (1 único cliente)", on: true },
-      { label: "Banner site-wide rotativo (todas las páginas)", on: true },
-      { label: "Badge \"Patrocinador oficial\" en tu ficha", on: true },
-      { label: "Tarjeta sponsor en sidebar de toda la categoría", on: true },
-      { label: "Newsletter mensual con mención", on: true },
-      { label: "Hub social del barrio co-brandeado", on: true },
-      { label: "Reporte mensual detallado", on: true },
-      { label: "Acuerdo personalizado 12 meses", on: true },
+      { label: "Un solo sponsor por categoría", on: true },
+      { label: "Propuesta a medida, sin tarifa pública", on: true },
+      { label: "El alcance de lo que se publica se acuerda en la propuesta", on: true },
     ],
   },
 ];
@@ -71,61 +81,141 @@ const tiers = [
 const faqs = [
   {
     q: "¿Quién está detrás del directorio?",
-    a: "elcanaveral.info es un proyecto editorial gestionado por LocalSEOAds.com, especialistas en SEO local de negocios de proximidad. El operador es vecino del barrio y mantiene el directorio con datos verificados.",
+    a: "elcanaveral.info es un proyecto editorial gestionado por LocalSEOAds.com, especialistas en SEO local de negocios de proximidad. El operador es vecino del barrio y mantiene el directorio con datos verificados. El trabajo mensual del plan Crecimiento sobre la ficha de Google lo ejecuta LocalSEOAds.",
   },
   {
     q: "¿Cómo se genera tráfico al directorio?",
     a: "El directorio está optimizado para SEO local: Schema.org LocalBusiness por ficha, fotos reales, contenido único por zona y categoría, sitemap completo y canonical correcto. La mayor parte de las visitas llega vía búsquedas en Google del tipo \"[categoría] El Cañaveral\" o \"[negocio] Vicálvaro\".",
   },
   {
-    q: "¿Hay un listado gratuito?",
-    a: "No. Para publicar tu ficha con control del titular hay que contratar Verificado (19 €/mes) o Destacado (49 €/mes). Las fichas que ya están en el directorio son contenido editorial a partir de datos públicos: no son un plan, no se pueden reclamar como alta gratuita y no dan edición, contactos ni posición prioritaria.",
+    q: "¿Hay un alta sin cuota?",
+    a: "No. Las fichas ya publicadas son contenido editorial a partir de datos públicos: no son un plan. Si el dato existe, muestran hasta 5 fotos, el mapa, el botón de llamada y el enlace a la web. No llevan la etiqueta Patrocinado ni entran en la sección de la home. No hay un editor para el titular: los cambios se piden por email a local@elcanaveral.info. Presencia es 29 €/mes + IVA (290 €/año + IVA, paga 10, disfruta 12). Destacado es 79 €/mes + IVA. Crecimiento es 149 €/mes + IVA.",
   },
   {
     q: "¿Cómo se contrata el plan?",
-    a: "Rellenas el formulario en /anunciate, te confirmamos disponibilidad por email en menos de 48 horas, te enviamos los datos para el pago (transferencia bancaria o Bizum) y activamos el plan en menos de 24 horas tras recibir el primer pago.",
+    a: "Rellenas el formulario en /anunciate, te confirmamos disponibilidad por email en menos de 48 horas, te enviamos los datos para el pago (transferencia bancaria o Bizum) y activamos el plan en menos de 24 horas tras recibir el primer pago. Las cuotas son + IVA. En Crecimiento, la cuota mensual tiene un compromiso mínimo de 3 meses e incluye una vez el diagnóstico de ficha (99 €, IVA incluido).",
   },
   {
     q: "¿Hay permanencia?",
-    a: "No. Los planes mensuales se renuevan automáticamente y puedes cancelar cuando quieras escribiendo a local@elcanaveral.info con 7 días de antelación al final del periodo. Los planes anuales tienen una pequeña bonificación a cambio del compromiso de 12 meses.",
+    a: "Presencia y Destacado, en cuota mensual, duran un mínimo de un mes y se renuevan solos. Puedes cancelar escribiendo a local@elcanaveral.info con 7 días de antelación al final del periodo. Crecimiento, en cuota mensual, tiene un compromiso mínimo de 3 meses. La modalidad anual de estos planes es paga 10, disfruta 12. El sponsor se pacta aparte y no tiene tarifa pública.",
   },
   {
     q: "¿Qué pasa si el sponsor exclusivo de mi categoría ya está cogido?",
-    a: "Si la categoría ya tiene un sponsor activo, te avisamos al recibir tu solicitud y te ofrecemos una posición en el plan Destacado. En cuanto el slot del sponsor quede libre, puedes optar a él.",
+    a: "Si la categoría ya tiene un sponsor activo, te avisamos al recibir tu solicitud. La alternativa con tarifa pública es Destacado (79 €/mes + IVA): etiqueta Patrocinado y sección de la home, con un máximo de 5 fichas patrocinadas por categoría. En cuanto el hueco del sponsor quede libre, puedes optar a él. El sponsor no tiene precio publicado.",
   },
   {
     q: "¿Garantizáis resultados de leads o ventas?",
-    a: "No. Los planes de pago aumentan la visibilidad dentro del directorio, pero el resultado comercial depende de muchos factores (estacionalidad, competencia, calidad del propio negocio, oferta). Lo que sí garantizamos es la posición visual contratada y un reporte mensual transparente de visitas y clics a tu ficha.",
+    a: "No. Los planes no garantizan visitas, contactos ni ventas: el resultado comercial depende de la estacionalidad, la competencia, la calidad del propio negocio y la oferta. En Destacado y Crecimiento publicamos la etiqueta Patrocinado y la sección de la home, con un máximo de 5 fichas patrocinadas por categoría. El resumen mensual de Crecimiento recoge los datos reales de la ficha de Google; no es una garantía de resultados.",
   },
   {
     q: "¿Hacéis SEO de mi web aparte del directorio?",
-    a: "Sí, pero como servicio separado a través de LocalSEOAds.com. El directorio es un canal de visibilidad complementario; el SEO de tu propia web requiere un trabajo dedicado que cotizamos en función del proyecto.",
+    a: "La web, los anuncios y las fotos o vídeos profesionales no entran en estos planes. El SEO de tu propia web es un servicio aparte de LocalSEOAds.com y se cotiza según el proyecto. Crecimiento trabaja la ficha de Google del negocio (publicaciones, reseñas, perfil y un resumen mensual), no la web.",
   },
 ];
+
+function oferta(name: string, price: string, description: string, url: string) {
+  return {
+    "@type": "Offer",
+    name,
+    price,
+    priceCurrency: "EUR",
+    valueAddedTaxIncluded: false,
+    description,
+    url,
+  };
+}
+
+const offersSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Planes del directorio elcanaveral.info",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Service",
+        name: "Presencia",
+        serviceType: "Ficha en el directorio",
+        description: "Ficha contratada sin etiqueta Patrocinado ni sección de la home. 29 €/mes + IVA o 290 €/año + IVA (paga 10, disfruta 12).",
+        provider: { "@type": "Organization", name: "elcanaveral.info", url: SITE },
+        offers: [
+          oferta("Presencia mensual", "29", "29 €/mes + IVA", `${SITE}/anunciate/?plan=presencia`),
+          oferta("Presencia anual", "290", "290 €/año + IVA. Paga 10, disfruta 12.", `${SITE}/anunciate/?plan=presencia`),
+        ],
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Service",
+        name: "Destacado",
+        serviceType: "Ficha patrocinada",
+        description: "Etiqueta Patrocinado y sección de la home. Máximo 5 fichas patrocinadas por categoría. 79 €/mes + IVA o 790 €/año + IVA (paga 10, disfruta 12).",
+        provider: { "@type": "Organization", name: "elcanaveral.info", url: SITE },
+        offers: [
+          oferta("Destacado mensual", "79", "79 €/mes + IVA", `${SITE}/anunciate/?plan=destacado`),
+          oferta("Destacado anual", "790", "790 €/año + IVA. Paga 10, disfruta 12.", `${SITE}/anunciate/?plan=destacado`),
+        ],
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Service",
+        name: "Crecimiento",
+        serviceType: "Ficha patrocinada y ficha de Google",
+        description: "Todo lo de Destacado, más el trabajo mensual sobre la ficha de Google que ejecuta LocalSEOAds. Incluye una vez el diagnóstico de ficha (99 €, IVA incluido). Cuota mensual con compromiso mínimo de 3 meses. 149 €/mes + IVA o 1.490 €/año + IVA (paga 10, disfruta 12). No incluye fotos o vídeos profesionales, anuncios ni web.",
+        provider: { "@type": "Organization", name: "LocalSEOAds", url: "https://localseoads.com" },
+        offers: [
+          oferta("Crecimiento mensual", "149", "149 €/mes + IVA. Compromiso mínimo de 3 meses.", `${SITE}/anunciate/?plan=crecimiento`),
+          oferta("Crecimiento anual", "1490", "1.490 €/año + IVA. Paga 10, disfruta 12.", `${SITE}/anunciate/?plan=crecimiento`),
+        ],
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
+      item: {
+        "@type": "Service",
+        name: "Sponsor exclusivo",
+        serviceType: "Patrocinio de categoría",
+        description: "Un sponsor por categoría. Precio a consultar, sin tarifa pública.",
+        provider: { "@type": "Organization", name: "elcanaveral.info", url: SITE },
+        offers: {
+          "@type": "Offer",
+          url: `${SITE}/sponsor/`,
+          availability: "https://schema.org/LimitedAvailability",
+          description: "Precio a consultar. Sin tarifa pública. Un sponsor por categoría.",
+        },
+      },
+    },
+  ],
+};
 ---
 
 <BaseLayout
   title="Planes y precios"
-  description="Verificado 19 €/mes, Destacado 49 €/mes y sponsor exclusivo desde 800 €/mes. Visibilidad de pago para negocios de El Cañaveral."
+  description="Presencia 29 €/mes + IVA, Destacado 79 €/mes + IVA (máximo 5 por categoría, etiqueta Patrocinado), Crecimiento 149 €/mes + IVA y sponsor a consultar."
 >
   <Header />
 
-  <!-- Hero -->
   <section class="pt-24 pb-12 px-4 bg-gradient-to-b from-warm-50 to-white">
     <div class="max-w-5xl mx-auto text-center">
       <h1 class="text-4xl sm:text-5xl font-bold text-brand-900 mb-4 tracking-tight">
         Planes y precios
       </h1>
       <p class="text-lg sm:text-xl text-warm-700 max-w-2xl mx-auto leading-relaxed">
-        Verificado (19 €/mes), Destacado (49 €/mes) o sponsor exclusivo.
-        No hay listado gratuito.
+        Presencia, Destacado o Crecimiento, siempre + IVA. El sponsor, a consultar.
+        No hay alta sin cuota.
       </p>
     </div>
   </section>
 
-  <!-- Tiers grid -->
   <section class="px-4 pb-16">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 xl:grid-cols-4 gap-6">
       {tiers.map((tier) => (
         <article class={`relative rounded-2xl border-2 p-6 flex flex-col ${
           tier.highlight
@@ -145,6 +235,9 @@ const faqs = [
             <div class="text-3xl font-bold text-brand-900">{tier.price}</div>
             {tier.cadence && (
               <div class="text-xs text-warm-600 mt-1">{tier.cadence}</div>
+            )}
+            {tier.annual && (
+              <div class="text-xs text-warm-600 mt-1">{tier.annual}</div>
             )}
           </div>
           <ul class="space-y-2 mb-6 flex-1">
@@ -172,35 +265,45 @@ const faqs = [
     </div>
   </section>
 
-  <!-- Comparativa rápida -->
   <section class="px-4 py-16 bg-warm-50">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-2xl sm:text-3xl font-bold text-brand-900 text-center mb-3">¿Qué incluye cada plan?</h2>
       <p class="text-center text-warm-600 mb-10 max-w-2xl mx-auto">
-        Resumen rápido para elegir según el momento de tu negocio.
+        Solo lo que el directorio publica hoy, y el trabajo de ficha de Google que ejecuta LocalSEOAds en Crecimiento.
       </p>
       <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-warm-200">
         <div class="divide-y divide-warm-100">
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5">
-            <div class="font-semibold text-brand-900">Quieres control de tu ficha</div>
+            <div class="font-semibold text-brand-900">Quieres la ficha contratada</div>
             <div class="sm:col-span-2 text-warm-700 text-sm">
-              <strong class="text-brand-900">Verificado (19 €/mes).</strong> Editas tu ficha, subes tus
-              fotos, muestras tu WhatsApp y eliminas la publicidad de LocalSEOAds en tu página.
+              <strong class="text-brand-900">Presencia (29 €/mes + IVA).</strong> Ficha en su categoría
+              y zona, hasta 5 fotos, mapa y botones de llamada y web cuando el negocio los publica.
+              Sin etiqueta Patrocinado. Anual: 290 € + IVA, paga 10, disfruta 12.
             </div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5">
-            <div class="font-semibold text-brand-900">Compites con otros del barrio</div>
+            <div class="font-semibold text-brand-900">Quieres que se vea que es de pago</div>
             <div class="sm:col-span-2 text-warm-700 text-sm">
-              <strong class="text-brand-900">Destacado (49 €/mes).</strong> Apareces primero en tu
-              categoría y zona, en el home rotativo y con banner propio en tu ficha. Reporte mensual.
+              <strong class="text-brand-900">Destacado (79 €/mes + IVA).</strong> Todo Presencia, más la
+              etiqueta Patrocinado y la sección de la home (hasta 6 fichas). Máximo 5 por categoría.
+              Anual: 790 € + IVA, paga 10, disfruta 12.
             </div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5">
-            <div class="font-semibold text-brand-900">Quieres dominar tu sector</div>
+            <div class="font-semibold text-brand-900">Quieres la ficha de Google trabajada</div>
             <div class="sm:col-span-2 text-warm-700 text-sm">
-              <strong class="text-brand-900">Sponsor exclusivo (desde 800 €/mes).</strong> Patrocinas
-              toda una categoría: banner site-wide, ficha premium con badge dorado, newsletter,
-              acuerdo 12 meses. Solo 1 por categoría.
+              <strong class="text-brand-900">Crecimiento (149 €/mes + IVA).</strong> Todo Destacado, más
+              cada mes 4 publicaciones en Google, respuesta a reseñas en 2 días laborables, una revisión
+              del perfil y un resumen con los datos reales de la ficha. Incluye una vez el diagnóstico
+              (99 €, IVA incluido). Mínimo 3 meses. Lo ejecuta LocalSEOAds. No incluye fotos o vídeos
+              profesionales, anuncios ni web. Anual: 1.490 € + IVA, paga 10, disfruta 12.
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5">
+            <div class="font-semibold text-brand-900">Quieres una categoría en exclusiva</div>
+            <div class="sm:col-span-2 text-warm-700 text-sm">
+              <strong class="text-brand-900">Sponsor exclusivo (a consultar).</strong> Un sponsor por
+              categoría. Sin tarifa pública: el alcance se cierra en la propuesta.
             </div>
           </div>
         </div>
@@ -208,7 +311,6 @@ const faqs = [
     </div>
   </section>
 
-  <!-- FAQ -->
   <section class="px-4 py-16">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-2xl sm:text-3xl font-bold text-brand-900 text-center mb-10">Preguntas frecuentes</h2>
@@ -226,7 +328,6 @@ const faqs = [
     </div>
   </section>
 
-  <!-- CTA final -->
   <section class="px-4 pb-20">
     <div class="max-w-3xl mx-auto text-center bg-brand-900 text-white rounded-2xl p-10">
       <h2 class="text-2xl sm:text-3xl font-bold mb-3">¿Hablamos?</h2>
@@ -235,10 +336,10 @@ const faqs = [
       </p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
         <a href="/anunciate/" class="inline-block bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
-          Contratar Verificado o Destacado
+          Contratar Presencia, Destacado o Crecimiento
         </a>
         <a href="/sponsor/" class="inline-block bg-white text-brand-900 hover:bg-warm-50 font-semibold px-6 py-3 rounded-lg transition-colors">
-          Sponsor exclusivo (800 €/mes)
+          Sponsor exclusivo (a consultar)
         </a>
       </div>
     </div>
@@ -256,3 +357,4 @@ const faqs = [
     "acceptedAnswer": { "@type": "Answer", "text": f.a }
   }))
 })} />
+<script type="application/ld+json" set:html={JSON.stringify(offersSchema)} />
