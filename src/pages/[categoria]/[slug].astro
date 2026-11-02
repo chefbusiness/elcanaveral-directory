@@ -9,6 +9,7 @@ import { generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategor
 import type { Negocio } from "@/lib/directory";
 import { UBICACION_POR_DEFECTO, enlaceLocalseoads } from "@/lib/localseoads";
 import ReclamarFicha from "@/components/ReclamarFicha.astro";
+import { textoDatosRevisados } from "@/lib/fechas-ficha.mjs";
 import seoOverrides from "@/data/seo-overrides.json";
 
 export function getStaticPaths() {
@@ -16,6 +17,7 @@ export function getStaticPaths() {
 }
 
 const negocio = Astro.props as Negocio;
+const textoRevision = textoDatosRevisados(negocio);
 const fichaSeo = (seoOverrides as any).fichas?.[negocio.slug] || {};
 const schema = generateLocalBusinessSchema(negocio);
 const servicios = (negocio.servicios as string[] | undefined) || [];
@@ -375,6 +377,9 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
                 </a>
               )}
             </div>
+            {textoRevision && (
+              <p class="text-xs text-gray-500 mt-4 pt-3 border-t border-warm-200">{textoRevision}</p>
+            )}
           </div>
 
           <ReclamarFicha negocio={negocio} />

@@ -57,6 +57,11 @@ export interface Negocio {
   aparcamiento?: boolean;
   accesibilidad?: boolean;
   wifi?: boolean;
+  // Fechas opcionales (ISO YYYY-MM-DD). Dejarlas vacías: solo se rellenan cuando
+  // el repo documenta una verificación real con fecha. Si no existen, la ficha
+  // no dice «Datos revisados el …» y el sitemap usa la fecha git.
+  verificadoEn?: string;
+  actualizado?: string;
   // Catch-all
   [key: string]:
     | string

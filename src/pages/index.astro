@@ -30,6 +30,13 @@ const guias = loadPublishedListicles()
 const SITE_URL = "https://www.elcanaveral.info";
 const orgId = `${SITE_URL}/#organization`;
 
+const documentTitle = "Directorio de El Cañaveral (Madrid) | elcanaveral.info";
+if ([...documentTitle].length > 65) {
+  throw new Error(`El <title> de la home tiene ${[...documentTitle].length} caracteres (máximo 65).`);
+}
+const homeDescription =
+  "Directorio de negocios de El Cañaveral (Madrid): restaurantes, tiendas, clínicas y servicios del barrio, Vicálvaro, Coslada y San Fernando de Henares.";
+
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -45,8 +52,10 @@ const websiteSchema = {
 ---
 
 <BaseLayout
-  title="Directorio de Negocios Locales"
-  description="Directorio de negocios en El Cañaveral, Vicálvaro, Coslada y San Fernando de Henares. Restaurantes, tiendas, clínicas y servicios cerca de ti."
+  title="Directorio de El Cañaveral (Madrid)"
+  documentTitle={documentTitle}
+  ogTitle={documentTitle}
+  description={homeDescription}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
