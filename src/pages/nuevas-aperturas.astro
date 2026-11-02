@@ -19,7 +19,11 @@ import {
 const datos = aperturasData as AperturasFile;
 const hoy = hoyMadrid();
 const items = datos.items;
-const abiertas = items.filter((item) => esAbiertaReciente(item, hoy));
+// Abierta reciente (fecha confirmada, ≤90 días) o abierta sin fecha: la fecha
+// no se inventa, pero el local no desaparece de la lista.
+const abiertas = items.filter(
+  (item) => item.estado === "abierto" && (esAbiertaReciente(item, hoy) || item.fechaApertura == null),
+);
 const proximamente = items.filter((item) => esProximamente(item));
 const revision = textoFechaLarga(datos.lastReview);
 
@@ -102,8 +106,9 @@ const breadcrumbSchema = {
         <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">Nuevas aperturas en El Cañaveral</h1>
         {revision && <p class="text-sm text-gray-500 mt-3">Revisión: {revision}</p>}
         <p class="text-gray-600 mt-4 text-lg leading-relaxed">
-          Lo que va a abrir en el barrio, y lo que abrió en los últimos 90 días. Cada ficha lleva una fuente
-          que se puede abrir y el día en que la contrastamos.
+          Lo que va a abrir en el barrio, y lo que ya está abierto. Cada ficha lleva una fuente
+          que se puede abrir y el día en que la contrastamos. Si la fecha de apertura no está
+          confirmada, no la inventamos.
         </p>
       </header>
 
