@@ -3,6 +3,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import guiasData from "@/data/guias.json";
+import { guiaEducacionInfantil } from "@/lib/guia-educacion.mjs";
 import { textoFechaLarga } from "@/lib/novedades.mjs";
 
 interface GuiaIndice {
@@ -13,7 +14,7 @@ interface GuiaIndice {
   items?: unknown[];
 }
 
-const guias = guiasData as GuiaIndice[];
+const guias = [...(guiasData as GuiaIndice[]), guiaEducacionInfantil()];
 const base = "https://www.elcanaveral.info";
 const breadcrumbSchema = {
   "@context": "https://schema.org",
