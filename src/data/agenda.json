@@ -1,0 +1,73 @@
+{
+  "items": [
+    {
+      "id": "tapaveral-2026",
+      "nombre": "Tapaveral 2026 — V Feria de la Tapa",
+      "estado": "confirmado",
+      "inicio": "2026-10-02T00:00:00+02:00",
+      "fin": "2026-10-04T00:00:00+02:00",
+      "sinHora": true,
+      "lugar": {
+        "nombre": "Locales participantes de El Cañaveral",
+        "direccion": "El Cañaveral, Vicálvaro, Madrid",
+        "zona": "el-canaveral"
+      },
+      "organizador": {
+        "nombre": "ViBe El Cañaveral",
+        "url": "https://vibecanaveral.es/eventos/Tapaveral-2026-%E2%80%93-V-Feria-de-la-Tapa/HtRg5qAvDLH4Vpkp0Z36"
+      },
+      "gratis": false,
+      "precio": null,
+      "entradasUrl": "https://vibecanaveral.es/eventos/Tapaveral-2026-%E2%80%93-V-Feria-de-la-Tapa/HtRg5qAvDLH4Vpkp0Z36",
+      "categoria": "gastronomia",
+      "resumen": "La V Feria de la Tapa de El Cañaveral se celebró del 2 al 4 de octubre de 2026. El anuncio de ViBe El Cañaveral, con la Junta Municipal de Vicálvaro, hablaba de tapa y bebida a precio especial, votación y sorteos. Esa fuente no publica resultados ni ganadores, y aquí no se añaden.",
+      "fichasRelacionadas": [],
+      "fiestaSlug": null,
+      "fuentes": [
+        {
+          "nombre": "ViBe El Cañaveral — Tapaveral 2026, V Feria de la Tapa",
+          "url": "https://vibecanaveral.es/eventos/Tapaveral-2026-%E2%80%93-V-Feria-de-la-Tapa/HtRg5qAvDLH4Vpkp0Z36",
+          "tipo": "web"
+        },
+        {
+          "nombre": "ViBe El Cañaveral — Inscripción abierta Tapaveral 2026",
+          "url": "https://vibecanaveral.es/noticias/Inscripci%C3%B3n-abierta-Tapaveral-2026/pi4I487CgoFrxwsXtURr",
+          "tipo": "noticia"
+        }
+      ],
+      "verificadoEn": "2026-09-23"
+    },
+    {
+      "id": "v-carrera-popular-el-canaveral-2026",
+      "nombre": "V Carrera Popular El Cañaveral — Corre para Dar Vida",
+      "estado": "confirmado",
+      "inicio": "2026-10-04T00:00:00+02:00",
+      "fin": "2026-10-04T00:00:00+02:00",
+      "sinHora": true,
+      "lugar": {
+        "nombre": "Calles de El Cañaveral",
+        "direccion": "El Cañaveral, Vicálvaro, Madrid",
+        "zona": "el-canaveral"
+      },
+      "organizador": {
+        "nombre": "ViBe El Cañaveral",
+        "url": "https://vibecanaveral.es/eventos/V-Carrera-Popular-El-Ca%C3%B1averal-2026-en-Madrid/2THDpTlpWyBApXOdARtU"
+      },
+      "gratis": false,
+      "precio": "12 €",
+      "entradasUrl": "https://vibecanaveral.es/eventos/V-Carrera-Popular-El-Ca%C3%B1averal-2026-en-Madrid/2THDpTlpWyBApXOdARtU",
+      "categoria": "deporte",
+      "resumen": "La V Carrera Popular «Corre para Dar Vida» se celebró el domingo 4 de octubre de 2026. El anuncio incluía 10K, 5K y pruebas infantiles de 2 a 11 años, con inscripción de 12 €. No hay clasificaciones en las fuentes citadas, y no se publican.",
+      "fichasRelacionadas": [],
+      "fiestaSlug": null,
+      "fuentes": [
+        {
+          "nombre": "ViBe El Cañaveral — V Carrera Popular El Cañaveral 2026",
+          "url": "https://vibecanaveral.es/eventos/V-Carrera-Popular-El-Ca%C3%B1averal-2026-en-Madrid/2THDpTlpWyBApXOdARtU",
+          "tipo": "web"
+        }
+      ],
+      "verificadoEn": "2026-09-23"
+    }
+  ]
+}

@@ -228,6 +228,8 @@ export const GET: APIRoute = () => {
     `- ${url("/transporte/")} — cómo llegar: metro, bus, cercanías y accesos.`,
     `- ${url("/servicios-publicos/")} — sanidad, educación y administración.`,
     `- ${url("/espacios-publicos/")} — parques y espacios públicos.`,
+    `- ${url("/nuevas-aperturas/")} — aperturas anunciadas y recién abiertas, con fuente y fecha de verificación.`,
+    `- ${url("/agenda/")} — agenda de eventos con fuente. Lo pasado queda en el archivo.`,
     `- ${url("/fiestas/")} — fiestas y días especiales.`,
     `- ${url("/escapadas/")} — planes y escapadas por regiones.`,
     `- ${url("/compras/")} — outlets y centros comerciales.`,

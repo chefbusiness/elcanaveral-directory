@@ -2,7 +2,7 @@
   "intro": {
     "title": "Comunidad de El Cañaveral",
     "description": "Toda la comunidad digital del barrio en un solo lugar. Asociaciones vecinales, medios locales, centros públicos, comercios y creadores con presencia activa en redes sociales.",
-    "lastReview": "2026-04-28",
+    "lastReview": "2026-11-02",
     "disclaimer": "Listado curado a partir de búsqueda OSINT. Si gestionas una cuenta del barrio y quieres aparecer (o corregir tu ficha), escríbenos a local@elcanaveral.info."
   },
   "platforms": [
@@ -251,8 +251,10 @@
       "id": "el-canaveral-noticias-web",
       "name": "El Cañaveral Noticias — Web",
       "handle": "elcanaveralnoticias.es",
-      "description": "Portal web del medio hiperlocal del barrio.",
+      "description": "Portal web del medio hiperlocal del barrio. No lo enlazamos: la web da error 500.",
       "url": "http://elcanaveralnoticias.es/",
+      "enlaceRoto": true,
+      "aviso": "La web de El Cañaveral Noticias da error 500. Facebook, X e Instagram del medio siguen en el listado.",
       "platform": "web",
       "type": "medio",
       "zona": "el-canaveral"
@@ -373,8 +375,10 @@
       "id": "jmd-vicalvaro-web",
       "name": "Junta Municipal Vicálvaro — Web",
       "handle": "madrid.es",
-      "description": "Web oficial de la Junta Municipal del Distrito de Vicálvaro. Trámites, agenda, anuncios.",
+      "description": "Junta Municipal del Distrito de Vicálvaro. Trámites, agenda y anuncios. La cuenta de X de la Junta sigue enlazada.",
       "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Vicalvaro",
+      "enlaceRoto": true,
+      "aviso": "URL de madrid.es retirada del enlace: la ruta del portal no abre la ficha del distrito.",
       "platform": "web",
       "type": "ayuntamiento",
       "zona": "vicalvaro"
@@ -544,6 +548,8 @@
       "handle": "bibliotecas.madrid.es",
       "description": "Única biblioteca municipal del distrito (1987). C/ Villardondiego 36. Hasta apertura del centro cultural propio de El Cañaveral.",
       "url": "https://bibliotecas.madrid.es/portales/bibliotecas/es/Informacion-y-servicios/Biblioteca-Publica-Municipal-Vicalvaro/",
+      "enlaceRoto": true,
+      "aviso": "Esta URL de bibliotecas.madrid.es responde 404 (comprobado el 2 de noviembre de 2026). No la enlazamos.",
       "platform": "web",
       "type": "centro-cultural",
       "zona": "vicalvaro"

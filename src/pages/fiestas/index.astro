@@ -3,8 +3,17 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import fiestasData from "@/data/fiestas.json";
+import { textoFechaLarga } from "@/lib/novedades.mjs";
 
 const fiestas = (fiestasData as any[]).slice().sort((a, b) => (b.destacada ? 1 : 0) - (a.destacada ? 1 : 0));
+
+function cuandoVisible(f: { inicio?: string; fin?: string; cuando: string }) {
+  const ini = f.inicio ? textoFechaLarga(f.inicio) : null;
+  const fin = f.fin ? textoFechaLarga(f.fin) : null;
+  if (ini && fin && f.inicio !== f.fin) return `${ini} – ${fin}`;
+  if (ini) return ini;
+  return f.cuando;
+}
 ---
 
 <BaseLayout
@@ -31,7 +40,7 @@ const fiestas = (fiestasData as any[]).slice().sort((a, b) => (b.destacada ? 1 :
           >
             <div class="flex items-center gap-2 mb-2">
               {f.destacada && <span class="text-[11px] font-bold bg-accent-500 text-white px-2 py-0.5 rounded uppercase tracking-wide">Ahora</span>}
-              <span class="text-xs text-gray-400">{f.cuando}</span>
+              <span class="text-xs text-gray-400">{cuandoVisible(f)}</span>
             </div>
             <h2 class="font-bold text-lg text-brand-900 group-hover:text-brand-600 transition-colors leading-snug">{f.name}</h2>
             <p class="text-xs text-gray-500 mt-1">📍 {f.localidad}</p>

@@ -155,7 +155,19 @@ export function datosAsociados(archivo) {
     add("src/data/categorias.json");
     add("src/data/zonas.json");
   }
+  if (archivo === "src/pages/nuevas-aperturas.astro") add("src/data/aperturas.json");
+  if (archivo === "src/pages/agenda/index.astro" || archivo === "src/pages/agenda/[slug].astro") {
+    add("src/data/agenda.json");
+  }
   return out;
+}
+
+function leerJson(root, rel) {
+  try {
+    return JSON.parse(readFileSync(path.join(root, rel), "utf8"));
+  } catch {
+    return null;
+  }
 }
 
 function asegurarHistoria(root) {
@@ -219,9 +231,31 @@ export function createLastmodLookup(opts = {}) {
     archivos.push(file);
   }
   const { exactas, dinamicas } = indexarPaginas(archivos);
+  const aperturas = opts.aperturas ?? leerJson(root, "src/data/aperturas.json");
+  const agenda = opts.agenda ?? leerJson(root, "src/data/agenda.json");
 
   return function lastmodDe(url) {
     const ruta = normalizarRuta(url);
+    if (ruta === "/nuevas-aperturas/") {
+      const items = Array.isArray(aperturas?.items) ? aperturas.items : [];
+      const propia = masReciente([aperturas?.lastReview, ...items.map((item) => item?.verificadoEn)]);
+      if (propia) return propia;
+      return masReciente([
+        gitDates.get("src/pages/nuevas-aperturas.astro"),
+        gitDates.get("src/data/aperturas.json"),
+      ]);
+    }
+    if (ruta === "/agenda/" || ruta.startsWith("/agenda/")) {
+      const items = Array.isArray(agenda?.items) ? agenda.items : [];
+      const slug = ruta === "/agenda/" ? null : ruta.slice("/agenda/".length, -1);
+      const propios = slug ? items.filter((item) => item?.id === slug) : items;
+      const propia = masReciente(propios.map((item) => item?.verificadoEn));
+      if (propia) return propia;
+      return masReciente([
+        gitDates.get(slug ? "src/pages/agenda/[slug].astro" : "src/pages/agenda/index.astro"),
+        gitDates.get("src/data/agenda.json"),
+      ]);
+    }
     const negocio = fichas.get(ruta);
     if (negocio) {
       const propia = fechaLastmodFicha(negocio);

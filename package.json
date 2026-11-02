@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "node scripts/copy-data.mjs && astro dev",
-    "build": "node scripts/copy-data.mjs && astro build",
+    "build": "node scripts/copy-data.mjs && node scripts/validate-datos.mjs && astro build",
     "preview": "astro preview",
     "data:seed": "node scripts/seed-data.mjs",
     "pseo:generate": "node scripts/generate-pseo.mjs"

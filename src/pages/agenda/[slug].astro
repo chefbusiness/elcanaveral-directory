@@ -1,0 +1,210 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import agendaData from "@/data/agenda.json";
+import type { AgendaFile, EstadoAgenda, EventoAgenda } from "@/lib/novedades.mjs";
+import { loadNegocios } from "@/lib/directory";
+import { enlaceLocalseoads } from "@/lib/localseoads";
+import {
+  admiteSchemaEvento,
+  fechaSchema,
+  hoyMadrid,
+  porReverificar,
+  textoFechaLarga,
+  textoIntervalo,
+} from "@/lib/novedades.mjs";
+
+export function getStaticPaths() {
+  const datos = agendaData as AgendaFile;
+  return datos.items.map((evento) => ({ params: { slug: evento.id }, props: { evento } }));
+}
+
+const { evento } = Astro.props as { evento: EventoAgenda };
+const hoy = hoyMadrid();
+const pasado = (evento.fin || evento.inicio).slice(0, 10) < hoy;
+const base = "https://www.elcanaveral.info";
+const hrefLocal = enlaceLocalseoads({ ubicacion: "el-canaveral", content: "agenda" });
+const fichas = new Map(loadNegocios().map((negocio) => [negocio.slug, negocio]));
+
+const etiqueta: Record<EstadoAgenda, string> = {
+  confirmado: "Confirmado",
+  anunciado: "Anunciado",
+  cancelado: "Cancelado",
+  aplazado: "Aplazado",
+};
+
+function estadoSchema(estado: EstadoAgenda): string {
+  switch (estado) {
+    case "confirmado":
+    case "anunciado":
+      return "https://schema.org/EventScheduled";
+    case "cancelado":
+      return "https://schema.org/EventCancelled";
+    case "aplazado":
+      return "https://schema.org/EventPostponed";
+    default: {
+      const nunca: never = estado;
+      return nunca;
+    }
+  }
+}
+
+const eventSchema = admiteSchemaEvento(evento)
+  ? {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: evento.nombre,
+      startDate: fechaSchema(evento.inicio, evento.sinHora),
+      endDate: fechaSchema(evento.fin, evento.sinHora),
+      eventStatus: estadoSchema(evento.estado),
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      location: {
+        "@type": "Place",
+        name: evento.lugar.nombre,
+        address: evento.lugar.direccion,
+      },
+      description: evento.resumen,
+      url: `${base}/agenda/${evento.id}/`,
+      organizer: {
+        "@type": "Organization",
+        name: evento.organizador.nombre,
+        ...(evento.organizador.url ? { url: evento.organizador.url } : {}),
+      },
+    }
+  : null;
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "Agenda", item: `${base}/agenda/` },
+    { "@type": "ListItem", position: 3, name: evento.nombre, item: `${base}/agenda/${evento.id}/` },
+  ],
+};
+---
+
+<BaseLayout title={evento.nombre} description={evento.resumen}>
+  <Fragment slot="head">
+    {eventSchema && <script type="application/ld+json" set:html={JSON.stringify(eventSchema)} />}
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <a href="/agenda/" class="hover:text-brand-600">Agenda</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">{evento.nombre}</span>
+      </nav>
+
+      <header class="mb-8">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <span class="text-sm bg-brand-50 text-brand-700 px-3 py-1 rounded-full font-medium">{etiqueta[evento.estado]}</span>
+          {pasado && <span class="text-sm bg-warm-100 text-gray-600 px-3 py-1 rounded-full font-medium">Ya celebrado</span>}
+          {porReverificar(evento.verificadoEn, hoy) && (
+            <span class="text-sm bg-amber-50 text-amber-800 px-3 py-1 rounded-full font-medium">dato por reverificar</span>
+          )}
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">{evento.nombre}</h1>
+        <p class="text-lg text-gray-700 mt-4">{textoIntervalo(evento.inicio, evento.fin, evento.sinHora)}</p>
+        {evento.sinHora && <p class="text-sm text-gray-500 mt-1">La fuente no publica hora de inicio.</p>}
+      </header>
+
+      <p class="text-gray-700 leading-relaxed text-lg">{evento.resumen}</p>
+
+      <dl class="mt-6 bg-white rounded-xl border border-warm-200 divide-y divide-warm-100">
+        <div class="p-4">
+          <dt class="text-xs font-semibold uppercase tracking-wide text-gray-400">Lugar</dt>
+          <dd class="text-gray-800 mt-1">{evento.lugar.nombre}</dd>
+          <dd class="text-sm text-gray-500">{evento.lugar.direccion}</dd>
+        </div>
+        <div class="p-4">
+          <dt class="text-xs font-semibold uppercase tracking-wide text-gray-400">Organizador</dt>
+          <dd class="text-gray-800 mt-1">
+            {evento.organizador.url ? (
+              <a href={evento.organizador.url} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{evento.organizador.nombre}</a>
+            ) : (
+              evento.organizador.nombre
+            )}
+          </dd>
+        </div>
+        <div class="p-4">
+          <dt class="text-xs font-semibold uppercase tracking-wide text-gray-400">Precio</dt>
+          <dd class="text-gray-800 mt-1">
+            {evento.gratis ? "Gratis" : evento.precio ? `Inscripción anunciada: ${evento.precio}` : "La fuente no publica el importe."}
+          </dd>
+        </div>
+      </dl>
+
+      {evento.fichasRelacionadas.length > 0 && (
+        <section class="mt-6">
+          <h2 class="text-lg font-bold text-brand-900 mb-2">Fichas relacionadas</h2>
+          <ul class="space-y-1">
+            {evento.fichasRelacionadas.map((slug) => {
+              const negocio = fichas.get(slug);
+              return (
+                <li>
+                  {negocio ? (
+                    <a href={`/${negocio.category}/${negocio.slug}/`} class="text-brand-600 hover:text-brand-700">{negocio.name}</a>
+                  ) : (
+                    slug
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+
+      {evento.fiestaSlug && (
+        <p class="mt-4 text-sm">
+          <a href={`/fiestas/${evento.fiestaSlug}/`} class="text-brand-600 font-medium hover:text-brand-700">Ver la ficha de la fiesta</a>
+        </p>
+      )}
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href={`/agenda/${evento.id}.ics`} class="inline-block text-sm font-semibold bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700">
+          Añadir al calendario (.ics)
+        </a>
+        {evento.entradasUrl && (
+          <a href={evento.entradasUrl} target="_blank" rel="noopener" class="inline-block text-sm font-semibold border border-brand-200 text-brand-800 px-4 py-2 rounded-lg hover:bg-brand-50">
+            {pasado ? "Página del organizador" : "Entradas y convocatoria"}
+          </a>
+        )}
+      </div>
+
+      <section class="mt-8">
+        <h2 class="text-lg font-bold text-brand-900 mb-2">Fuentes</h2>
+        <ul class="space-y-2">
+          {evento.fuentes.map((fuente) => (
+            <li class="text-sm">
+              <a href={fuente.url} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{fuente.nombre}</a>
+            </li>
+          ))}
+        </ul>
+        <p class="text-xs text-gray-500 mt-2">Verificado el {textoFechaLarga(evento.verificadoEn)}.</p>
+      </section>
+
+      <p class="mt-8 text-sm text-gray-600">
+        <a href="/agenda/" class="text-brand-600 font-medium hover:text-brand-700">Volver a la agenda</a>
+        <span class="mx-2 text-gray-300">·</span>
+        <a href="/fiestas/" class="text-brand-600 font-medium hover:text-brand-700">Fiestas y días especiales</a>
+      </p>
+
+      <aside class="mt-10 bg-brand-900 text-white rounded-2xl p-6">
+        <p class="font-semibold">¿Quieres que tu local se encuentre cuando la gente busca el plan?</p>
+        <a href={hrefLocal} target="_blank" rel="noopener" class="inline-block mt-3 text-sm font-semibold bg-white text-brand-900 px-4 py-2 rounded-lg">
+          Ver LocalSEOAds
+        </a>
+      </aside>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>
