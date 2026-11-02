@@ -4,8 +4,8 @@ import {
   UTM_MEDIUM,
   UTM_SOURCE,
   UBICACION_POR_DEFECTO,
-  auditoriaLandingActiva,
-  enlaceAuditoriaGratis,
+  diagnosticoLandingActivo,
+  enlaceDiagnosticoFicha,
   enlaceWhatsappReclamar,
 } from "@/lib/localseoads";
 
@@ -17,7 +17,9 @@ const { negocio } = Astro.props;
 const zona = negocio.zona || UBICACION_POR_DEFECTO;
 const utm = `utm_source=${UTM_SOURCE}&utm_medium=${UTM_MEDIUM}&utm_campaign=${zona}&utm_content=${negocio.slug}`;
 const whatsapp = enlaceWhatsappReclamar(negocio);
-const auditoria = auditoriaLandingActiva() ? enlaceAuditoriaGratis(negocio) : undefined;
+const diagnostico = diagnosticoLandingActivo()
+  ? enlaceDiagnosticoFicha({ ubicacion: zona, content: negocio.slug, ficha: negocio.slug })
+  : undefined;
 const formId = `reclamar-${negocio.slug}`;
 ---
 
@@ -80,14 +82,15 @@ const formId = `reclamar-${negocio.slug}`;
     </a>
   )}
 
-  {auditoria && (
-    <a
-      href={auditoria}
-      target="_blank"
-      rel="noopener"
-      class="mt-3 block text-center text-sm font-semibold text-brand-900 border border-brand-200 rounded-lg py-2.5 hover:bg-brand-50 transition-colors"
-    >
-      Auditoría gratis de tu ficha
-    </a>
+  {diagnostico && (
+    <div class="mt-3">
+      <a
+        href={diagnostico}
+        target="_blank"
+        rel="noopener"
+        class="block text-center text-sm font-semibold text-brand-900 border border-brand-200 rounded-lg py-2.5 hover:bg-brand-50 transition-colors"
+      >Diagnóstico de tu ficha · 99 €</a>
+      <p class="mt-1.5 text-center text-[11px] leading-snug text-warm-600">99 € IVA incluido, descontable si después contratan LocalSEO.</p>
+    </div>
   )}
 </div>

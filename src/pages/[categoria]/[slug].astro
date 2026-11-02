@@ -7,7 +7,7 @@ import Galeria from "@/components/Galeria.astro";
 import AbiertoAhora from "@/components/AbiertoAhora.astro";
 import { generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona, socialProfileUrl } from "@/lib/directory";
 import type { Negocio } from "@/lib/directory";
-import { UBICACION_POR_DEFECTO, enlaceLocalseoads } from "@/lib/localseoads";
+import { UBICACION_POR_DEFECTO, enlaceCtaLocalseoads } from "@/lib/localseoads";
 import ReclamarFicha from "@/components/ReclamarFicha.astro";
 import { textoDatosRevisados } from "@/lib/fechas-ficha.mjs";
 import seoOverrides from "@/data/seo-overrides.json";
@@ -28,9 +28,10 @@ const ofrece = (negocio.ofrece as string[] | undefined) || [];
 const especialidades = (negocio.especialidades as string[] | undefined) || [];
 const tiposCocina = (negocio.tiposCocina as string[] | undefined) || [];
 const redes = (negocio.redesSociales as Record<string, string> | undefined) || {};
-const hrefLocalSeo = enlaceLocalseoads({
+const hrefLocalSeo = enlaceCtaLocalseoads({
   ubicacion: negocio.zona || UBICACION_POR_DEFECTO,
   content: negocio.slug,
+  ficha: negocio.slug,
 });
 
 // Negocios similares (misma categoria, excluyendo el actual)

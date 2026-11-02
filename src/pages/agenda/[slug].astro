@@ -5,7 +5,7 @@ import Footer from "@/components/Footer.astro";
 import agendaData from "@/data/agenda.json";
 import type { AgendaFile, EstadoAgenda, EventoAgenda } from "@/lib/novedades.mjs";
 import { loadNegocios } from "@/lib/directory";
-import { enlaceLocalseoads } from "@/lib/localseoads";
+import { enlaceCtaLocalseoads } from "@/lib/localseoads";
 import {
   admiteSchemaEvento,
   fechaSchema,
@@ -24,7 +24,7 @@ const { evento } = Astro.props as { evento: EventoAgenda };
 const hoy = hoyMadrid();
 const pasado = (evento.fin || evento.inicio).slice(0, 10) < hoy;
 const base = "https://www.elcanaveral.info";
-const hrefLocal = enlaceLocalseoads({ ubicacion: "el-canaveral", content: "agenda" });
+const hrefLocal = enlaceCtaLocalseoads({ ubicacion: "el-canaveral", content: "agenda" });
 const fichas = new Map(loadNegocios().map((negocio) => [negocio.slug, negocio]));
 
 const etiqueta: Record<EstadoAgenda, string> = {

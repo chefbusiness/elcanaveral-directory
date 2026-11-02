@@ -88,26 +88,61 @@ export function enlaceLocalseoads(opts: {
   return `${LOCALSEOADS_ORIGIN}${path}?${params.toString()}`;
 }
 
-export function enlaceLocalseoadsEnPagina(pathname: string, hueco: HuecoUtm): string {
-  const ctx = contextoDesdeRuta(pathname);
-  return enlaceLocalseoads({
-    ubicacion: ctx.ubicacion,
-    content: contenidoUtm(ctx, hueco),
-  });
-}
+/**
+ * Landing del diagnóstico de ficha (99 €, IVA incluido):
+ * https://localseoads.com/diagnostico-ficha/el-canaveral/
+ * La zona del negocio no va en el path. Va en utm_campaign.
+ */
+export const DIAGNOSTICO_FICHA_PATH = "/diagnostico-ficha/el-canaveral/";
 
-/** La landing /auditoria-gratis/ aún no existe en localseoads.com. */
-export function auditoriaLandingActiva(): boolean {
+/**
+ * Apagado por defecto. El CTA solo sale con PUBLIC_AUDIT_LANDING_LIVE="true"
+ * (la landing nueva tiene que responder 200 antes de encenderlo en Netlify).
+ */
+export function diagnosticoLandingActivo(): boolean {
   return import.meta.env.PUBLIC_AUDIT_LANDING_LIVE === "true";
 }
 
-export function enlaceAuditoriaGratis(negocio: { slug: string; zona?: string }): string {
-  const zona = negocio.zona || UBICACION_POR_DEFECTO;
+/**
+ * Enlace al diagnóstico, con el mismo bloque UTM que el resto de la marca.
+ * En una ficha: ficha=<slug>, utm_campaign=<ubicación>, utm_content=<slug>.
+ * Fuera de una ficha: sin ficha, utm_content es el hueco (banner-top, footer, home…).
+ */
+export function enlaceDiagnosticoFicha(opts: {
+  ubicacion: string;
+  content: string;
+  ficha?: string;
+}): string {
   return enlaceLocalseoads({
-    path: `/auditoria-gratis/${zona}/`,
-    ubicacion: zona,
-    content: negocio.slug,
-    query: { ficha: negocio.slug },
+    path: DIAGNOSTICO_FICHA_PATH,
+    ubicacion: opts.ubicacion,
+    content: opts.content,
+    query: opts.ficha ? { ficha: opts.ficha } : undefined,
+  });
+}
+
+/**
+ * CTA comercial. Con la landing encendida apunta al diagnóstico; apagada,
+ * a la home de LocalSEOAds con las mismas UTM y sin el parámetro ficha.
+ */
+export function enlaceCtaLocalseoads(opts: {
+  ubicacion: string;
+  content: string;
+  ficha?: string;
+}): string {
+  if (diagnosticoLandingActivo()) return enlaceDiagnosticoFicha(opts);
+  return enlaceLocalseoads({
+    ubicacion: opts.ubicacion,
+    content: opts.content,
+  });
+}
+
+export function enlaceLocalseoadsEnPagina(pathname: string, hueco: HuecoUtm): string {
+  const ctx = contextoDesdeRuta(pathname);
+  return enlaceCtaLocalseoads({
+    ubicacion: ctx.ubicacion,
+    content: contenidoUtm(ctx, hueco),
+    ficha: ctx.fichaSlug,
   });
 }
 
