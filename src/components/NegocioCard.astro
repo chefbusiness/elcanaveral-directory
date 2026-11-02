@@ -1,6 +1,7 @@
 ---
 import type { Negocio } from "@/lib/directory";
 import AbiertoAhora from "@/components/AbiertoAhora.astro";
+import { esPatrocinado } from "@/lib/planes.mjs";
 
 interface Props {
   negocio: Negocio;
@@ -44,7 +45,7 @@ const emoji = EMOJI_CATEGORIA[negocio.category] || "🏪";
         <span class="absolute top-3 left-3 text-xs font-semibold bg-brand-600 text-white px-2.5 py-1 rounded-md shadow-sm">
           Próxima apertura
         </span>
-      ) : negocio.featured && (
+      ) : esPatrocinado(negocio) && (
         <span class="absolute top-3 left-3 text-xs font-semibold bg-accent-500 text-white px-2.5 py-1 rounded-md shadow-sm">
           Patrocinado
         </span>
@@ -62,7 +63,7 @@ const emoji = EMOJI_CATEGORIA[negocio.category] || "🏪";
         <span class="absolute top-3 left-3 text-xs font-semibold bg-brand-600 text-white px-2.5 py-1 rounded-md shadow-sm">
           Próxima apertura
         </span>
-      ) : negocio.featured && (
+      ) : esPatrocinado(negocio) && (
         <span class="absolute top-3 left-3 text-xs font-semibold bg-accent-500 text-white px-2.5 py-1 rounded-md shadow-sm">
           Patrocinado
         </span>
