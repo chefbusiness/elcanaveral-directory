@@ -22,12 +22,7 @@ const formId = `reclamar-${negocio.slug}`;
 ---
 
 <div class="rounded-xl border border-warm-200 bg-white p-5">
-  <div id={`${formId}-ok`} class="hidden text-center">
-    <p class="text-sm font-semibold text-brand-900">Solicitud recibida</p>
-    <p class="text-xs text-warm-600 mt-1">Revisamos que seas el titular y te escribimos al email que nos has dejado.</p>
-  </div>
-
-  <details id={`${formId}-panel`} class="group">
+  <details class="group">
     <summary class="list-none cursor-pointer text-center text-sm font-semibold text-brand-700 border border-brand-200 rounded-lg py-2.5 hover:bg-brand-50 transition-colors">
       ¿Es tu negocio? Reclámala
     </summary>
@@ -36,7 +31,7 @@ const formId = `reclamar-${negocio.slug}`;
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
-      action={`/${negocio.category}/${negocio.slug}/?reclamada=1`}
+      action={`/gracias/?ficha=${negocio.slug}`}
       class="mt-4 space-y-3"
     >
       <input type="hidden" name="form-name" value="reclamar-ficha" />
@@ -96,12 +91,3 @@ const formId = `reclamar-${negocio.slug}`;
     </a>
   )}
 </div>
-
-<script is:inline define:vars={{ formId }}>
-  if (new URLSearchParams(location.search).get("reclamada") === "1") {
-    var ok = document.getElementById(formId + "-ok");
-    var panel = document.getElementById(formId + "-panel");
-    if (ok) ok.classList.remove("hidden");
-    if (panel) panel.classList.add("hidden");
-  }
-</script>
