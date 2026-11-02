@@ -1,8 +1,8 @@
 // llms.txt — índice del sitio para modelos de lenguaje (spec: https://llmstxt.org).
 //
 // Se genera en build desde src/data, igual que el resto del sitio. Motivo: el
-// fichero estático anterior se había desincronizado (citaba info@localseads.com
-// como email de contacto cuando el real es elcanaveral.info, omitía la categoría
+// fichero estático anterior se había desincronizado (citaba un email con el
+// dominio de LocalSEOAds mal escrito, cuando el real es elcanaveral.info, omitía la categoría
 // inmobiliarias y no incluía ni un solo enlace). Generado, no puede volver a
 // desincronizarse.
 import type { APIRoute } from "astro";
@@ -202,7 +202,7 @@ export const GET: APIRoute = () => {
     "",
     "- Email: local@elcanaveral.info",
     "- [Formulario de contacto](" + url("/contacto/") + ").",
-    "- Directorio gestionado por LocalSEOAds (https://localseads.com).",
+    "- Directorio gestionado por LocalSEOAds (https://localseoads.com).",
     "",
     "## Optional",
     "",

@@ -1,6 +1,6 @@
 <!--
   Copias estáticas de los formularios para la detección de Netlify Forms.
-  Netlify parsea este fichero en cada deploy y registra los 4 formularios.
+  Netlify parsea este fichero en cada deploy y registra los formularios.
   No es para usuarios (oculto); los formularios reales viven en sus páginas.
 -->
 <!doctype html>
@@ -55,6 +55,20 @@
       <input name="categoria" />
       <input name="presupuesto" />
       <textarea name="comentarios"></textarea>
+      <input type="checkbox" name="acepto-rgpd" />
+    </form>
+
+    <form name="reclamar-ficha" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="reclamar-ficha" />
+      <input name="bot-field" />
+      <input type="hidden" name="ficha" />
+      <input type="hidden" name="slug" />
+      <input type="hidden" name="categoria" />
+      <input type="hidden" name="utm" />
+      <input name="nombre" />
+      <input name="email" />
+      <input name="telefono" />
+      <textarea name="mensaje"></textarea>
       <input type="checkbox" name="acepto-rgpd" />
     </form>
 

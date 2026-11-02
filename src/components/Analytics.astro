@@ -1,0 +1,31 @@
+---
+// Analítica sin cookies. No renderiza nada si PUBLIC_ANALYTICS_ID está vacío.
+// Plausible: PUBLIC_ANALYTICS_ID = dominio (elcanaveral.info). Provider vacío o "plausible".
+// Umami: PUBLIC_ANALYTICS_PROVIDER=umami, PUBLIC_ANALYTICS_ID = website id
+// y PUBLIC_ANALYTICS_SRC = URL del script. Si falta el src, no se carga.
+
+const id = (import.meta.env.PUBLIC_ANALYTICS_ID ?? "").trim();
+const provider = (import.meta.env.PUBLIC_ANALYTICS_PROVIDER ?? "").trim().toLowerCase();
+const src = (import.meta.env.PUBLIC_ANALYTICS_SRC ?? "").trim();
+
+type Analytics =
+  | { kind: "off" }
+  | { kind: "plausible"; domain: string }
+  | { kind: "umami"; src: string; websiteId: string };
+
+function decidir(): Analytics {
+  if (!id) return { kind: "off" };
+  if (provider === "" || provider === "plausible") return { kind: "plausible", domain: id };
+  if (provider === "umami" && src) return { kind: "umami", src, websiteId: id };
+  return { kind: "off" };
+}
+
+const analytics = decidir();
+---
+
+{analytics.kind === "plausible" && (
+  <script is:inline defer data-domain={analytics.domain} src="https://plausible.io/js/script.js"></script>
+)}
+{analytics.kind === "umami" && (
+  <script is:inline defer src={analytics.src} data-website-id={analytics.websiteId}></script>
+)}

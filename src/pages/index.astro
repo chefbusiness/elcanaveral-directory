@@ -7,6 +7,9 @@ import NegocioCard from "@/components/NegocioCard.astro";
 import GuiaCard from "@/components/GuiaCard.astro";
 import { loadCategorias, loadZonas, getFeaturedNegocios, loadNegocios } from "@/lib/directory";
 import { loadPublishedListicles } from "@/lib/listicles";
+import { UBICACION_POR_DEFECTO, enlaceLocalseoads } from "@/lib/localseoads";
+
+const hrefLocalSeo = enlaceLocalseoads({ ubicacion: UBICACION_POR_DEFECTO, content: "home" });
 
 const categorias = loadCategorias();
 const zonas = loadZonas();
@@ -230,7 +233,7 @@ const websiteSchema = {
               Registrar mi negocio gratis
             </a>
             <a
-              href="https://localseoads.com"
+              href={hrefLocalSeo}
               target="_blank"
               rel="noopener"
               class="inline-block bg-white/10 text-white font-medium px-6 py-3 rounded-lg hover:bg-white/20 transition-colors border border-white/20"

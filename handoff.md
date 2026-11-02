@@ -506,7 +506,7 @@ Auditoría del repo: los cimientos estaban (robots con `GPTBot`/`ClaudeBot`/`Per
 `Applebot-Extended`, llms.txt, schema por tipo de página) pero con **4 huecos de peso** para citación por LLM.
 
 **El hallazgo que más dolía:** el `public/llms.txt` **estático** se había desincronizado → citaba
-`info@localseads.com` cuando el email real es **`local@elcanaveral.info`** (verificado en 18 sitios del código),
+un email con el dominio de LocalSEOAds mal escrito, cuando el email real es **`local@elcanaveral.info`** (verificado en 18 sitios del código),
 omitía la categoría **inmobiliarias**, estaba en ASCII sin eñes («El Canaveral») y **no incluía ni un enlace**,
 cuando el estándar llms.txt es precisamente un índice de enlaces.
 
