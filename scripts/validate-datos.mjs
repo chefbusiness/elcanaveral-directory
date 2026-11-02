@@ -1,4 +1,5 @@
-// Falla el build si una apertura o un evento de la agenda no tiene fuente o verificadoEn.
+// Falla el build si una apertura, un evento de la agenda o un ítem de guía
+// no tiene fuente o verificadoEn, o si un plan de ficha no es válido.
 // Un array vacío es válido: la página enseña el estado vacío y el formulario.
 import { readFileSync } from "node:fs";
 import path from "node:path";
@@ -77,10 +78,9 @@ export function erroresAperturas(datos, indice) {
       errores.push(`${ruta}: fichaSlug no existe en el directorio`);
     }
     fechaOpcional(item.fechaPrevista, `${ruta}.fechaPrevista`, errores);
+    // fechaApertura es opcional también con estado abierto: sin fuente de la fecha
+    // no se inventa el día. fuentes y verificadoEn siguen siendo obligatorios.
     fechaOpcional(item.fechaApertura, `${ruta}.fechaApertura`, errores);
-    if (item.estado === "abierto" && !diaDe(item.fechaApertura)) {
-      errores.push(`${ruta}: una apertura abierta necesita fechaApertura confirmada`);
-    }
     if (typeof item.resumen !== "string" || !item.resumen.trim()) errores.push(`${ruta}: falta resumen`);
     errores.push(...erroresFuentesYFecha(item, ruta));
   });
@@ -150,6 +150,48 @@ export function erroresAgenda(datos, indice) {
   return errores;
 }
 
+export function erroresGuias(datos) {
+  const errores = [];
+  if (!Array.isArray(datos)) return ["guias.json: hace falta un array de guías"];
+  const slugs = new Set();
+  datos.forEach((guia, i) => {
+    const ruta = `guias[${i}]`;
+    if (!esObjeto(guia)) {
+      errores.push(`${ruta}: no es un objeto`);
+      return;
+    }
+    if (typeof guia.slug !== "string" || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(guia.slug)) {
+      errores.push(`${ruta}: slug vacío o no es un slug`);
+    } else if (slugs.has(guia.slug)) {
+      errores.push(`${ruta}: slug repetido`);
+    } else {
+      slugs.add(guia.slug);
+    }
+    if (!Array.isArray(guia.items)) {
+      errores.push(`${ruta}: items tiene que ser un array`);
+      return;
+    }
+    const ids = new Set();
+    guia.items.forEach((item, j) => {
+      const ir = `${ruta}.items[${j}]`;
+      if (!esObjeto(item)) {
+        errores.push(`${ir}: no es un objeto`);
+        return;
+      }
+      if (typeof item.id !== "string" || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id)) {
+        errores.push(`${ir}: id vacío o no es un slug`);
+      } else if (ids.has(item.id)) {
+        errores.push(`${ir}: id repetido`);
+      } else {
+        ids.add(item.id);
+      }
+      if (typeof item.nombre !== "string" || !item.nombre.trim()) errores.push(`${ir}: falta nombre`);
+      errores.push(...erroresFuentesYFecha(item, ir));
+    });
+  });
+  return errores;
+}
+
 export function indiceDesde({ negocios = [], categorias = [], zonas = [], fiestas = [] } = {}) {
   return {
     fichas: new Set(negocios.filter((n) => n?.category && n?.slug).map((n) => `${n.category}/${n.slug}`)),
@@ -175,6 +217,7 @@ export function validarRaiz(root) {
     ...erroresAperturas(leer(root, "src/data/aperturas.json"), indice),
     ...erroresAgenda(leer(root, "src/data/agenda.json"), indice),
     ...erroresPlanes(leer(root, "src/data/negocios.json")),
+    ...erroresGuias(leer(root, "src/data/guias.json")),
   ];
 }
 
@@ -186,5 +229,5 @@ if (esCli) {
     for (const error of errores) console.error(`- ${error}`);
     process.exit(1);
   }
-  console.log("validate-datos: aperturas, agenda y planes ok");
+  console.log("validate-datos: aperturas, agenda, planes y guías ok");
 }

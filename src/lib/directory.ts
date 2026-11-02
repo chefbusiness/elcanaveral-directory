@@ -67,6 +67,9 @@ export interface Negocio {
   // no dice «Datos revisados el …» y el sitemap usa la fecha git.
   verificadoEn?: string;
   actualizado?: string;
+  // Fuentes enlazables de una ficha escrita a mano (no del scrape). Cada una
+  // lleva nombre, url http(s) y tipo, el mismo contrato que aperturas.json.
+  fuentes?: { nombre: string; url: string; tipo: string }[];
   // Catch-all
   [key: string]:
     | string
@@ -75,6 +78,7 @@ export interface Negocio {
     | number
     | Record<string, string>
     | { dia?: string; horas?: string }[]
+    | { nombre: string; url: string; tipo: string }[]
     | undefined;
 }
 
@@ -624,8 +628,9 @@ export function generateLocalBusinessSchema(negocio: Negocio) {
         ? { image: fotos.map((img: string) => `https://www.elcanaveral.info${img}`) }
         : {};
     })()),
-    // aggregateRating exige al menos 1 resena: sin numReviews el markup es invalido.
-    ...(negocio.rating && (negocio.numReviews || 0) > 0 && {
+    // aggregateRating exige reseñas de verdad. Con menos de 5 (Playlandia tenía
+    // 4 el 2026-11-02) la nota no es estable y no se publica el marcado.
+    ...(negocio.rating && (negocio.numReviews || 0) >= 5 && {
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: negocio.rating,

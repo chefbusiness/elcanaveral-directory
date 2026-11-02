@@ -1,0 +1,82 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import guiasData from "@/data/guias.json";
+import { textoFechaLarga } from "@/lib/novedades.mjs";
+
+interface GuiaIndice {
+  slug: string;
+  title: string;
+  description: string;
+  actualizado?: string;
+  items?: unknown[];
+}
+
+const guias = guiasData as GuiaIndice[];
+const base = "https://www.elcanaveral.info";
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "Guías", item: `${base}/guias/` },
+  ],
+};
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Guías de El Cañaveral",
+  numberOfItems: guias.length,
+  itemListElement: guias.map((guia, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: guia.title,
+    url: `${base}/guias/${guia.slug}/`,
+  })),
+};
+---
+
+<BaseLayout
+  title="Guías de El Cañaveral"
+  description="Guías cortas de El Cañaveral: solo entran los sitios con una fuente que se puede abrir y una fecha de verificación."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">Guías</span>
+      </nav>
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">Guías</h1>
+        <p class="text-gray-600 mt-4 text-lg leading-relaxed">
+          Listas cortas. Cada sitio lleva una fuente que se puede abrir y el día en que la contrastamos.
+        </p>
+      </header>
+      <ul class="space-y-4">
+        {guias.map((guia) => (
+          <li class="bg-white rounded-xl border border-warm-200 p-5">
+            <h2 class="font-bold text-lg text-brand-900">
+              <a href={`/guias/${guia.slug}/`} class="hover:text-brand-600">{guia.title}</a>
+            </h2>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">{guia.description}</p>
+            <p class="text-xs text-gray-500 mt-2">
+              {Array.isArray(guia.items) ? `${guia.items.length} sitios` : ""}
+              {guia.actualizado ? ` · revisión ${textoFechaLarga(guia.actualizado)}` : ""}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>

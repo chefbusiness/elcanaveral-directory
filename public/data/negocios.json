@@ -21556,5 +21556,47 @@
       "Disciplinas desde bebés: música y movimiento, instrumentos y canto",
       "Apertura prevista para el curso 2026/2027"
     ]
+  },
+  {
+    "slug": "playlandia-cafe-canaveral",
+    "name": "Playlandia Café",
+    "description": "Cafetería con zona de juegos infantil en El Cañaveral, recién abierta. Sirve tostadas, brunch y cafés, y organiza cumpleaños privados con los packs Cumpleylandia. En Google figura como «Cafetería Playlandia».",
+    "category": "cafeterias",
+    "categoryName": "Cafeterías",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. de Francisco Grande Covián, 61, Vicálvaro, 28052 Madrid",
+    "phone": "+34 696 137 786",
+    "rating": 5.0,
+    "numReviews": 4,
+    "placeId": "ChIJ1ejfWM87Qg0RKLBKI5Bg9PY",
+    "googleCategory": "Cafetería",
+    "lat": 40.4007395,
+    "lng": -3.5582987,
+    "googleMapsUrl": "https://maps.google.com/?cid=17794954199831326760",
+    "redesSociales": { "instagram": "https://www.instagram.com/playlandiacafe/" },
+    "tags": ["zona-infantil", "cumpleanos", "brunch", "familias", "nueva-apertura"],
+    "featured": false,
+    "ninos": true,
+    "servicios": [
+      "Zona de juegos infantil",
+      "Cumpleaños privados (packs Cumpleylandia: Standard, Premium y Platinum, aforo máximo 55 personas)",
+      "Tostadas y brunch",
+      "Combo brunch a 14,50 €",
+      "Cafés, bebidas frías y cervezas",
+      "Bocadillos y raciones para compartir",
+      "Reservas de cumpleaños por WhatsApp"
+    ],
+    "destacados": [
+      "Zona de juegos infantil dentro de la cafetería",
+      "Packs de cumpleaños con animador, pintacaras y mini disco",
+      "Aforo máximo de 55 personas en los packs"
+    ],
+    "fuentes": [
+      { "nombre": "Perfil de Google Maps (Cafetería Playlandia)", "url": "https://maps.google.com/?cid=17794954199831326760", "tipo": "web" },
+      { "nombre": "Instagram @playlandiacafe", "url": "https://www.instagram.com/playlandiacafe/", "tipo": "red-social" },
+      { "nombre": "Registro Mercantil: Playlandia Family Group SL (datoscif)", "url": "https://www.datoscif.es/empresa/playlandia-family-group-sl", "tipo": "web" }
+    ],
+    "verificadoEn": "2026-11-02"
   }
 ]
