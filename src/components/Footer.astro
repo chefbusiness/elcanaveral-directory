@@ -1,6 +1,9 @@
 ---
+import { enlaceLocalseoadsEnPagina } from "@/lib/localseoads";
+
 const siteName = "elcanaveral.info";
 const year = new Date().getFullYear();
+const hrefLocal = enlaceLocalseoadsEnPagina(Astro.url.pathname, "footer");
 ---
 
 <footer class="border-t border-warm-200 py-12 px-4 mt-16 bg-brand-900 text-white">
@@ -49,14 +52,14 @@ const year = new Date().getFullYear();
       <div>
         <h3 class="font-semibold mb-3 text-sm uppercase tracking-wider text-brand-200">Servicios</h3>
         <nav class="flex flex-col gap-2 text-sm text-brand-100">
-          <a href="https://localseoads.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">LocalSEOAds</a>
+          <a href={hrefLocal} target="_blank" rel="noopener" class="hover:text-white transition-colors">LocalSEOAds</a>
           <a href="https://gastroseo.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">GastroSEO</a>
           <a href="https://gastrolocal.pro" target="_blank" rel="noopener" class="hover:text-white transition-colors">GastroLocal</a>
         </nav>
       </div>
     </div>
     <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-200 border-t border-brand-700 pt-6">
-      <p>&copy; {year} {siteName} &mdash; Gestionado por <a href="https://localseoads.com" target="_blank" rel="noopener" class="hover:text-white underline">LocalSEOAds.com</a></p>
+      <p>&copy; {year} {siteName} &mdash; Gestionado por <a href={hrefLocal} target="_blank" rel="noopener" class="hover:text-white underline">LocalSEOAds.com</a></p>
       <div class="flex flex-wrap gap-x-5 gap-y-2 justify-center">
         <a href="/aviso-legal/" class="hover:text-white transition-colors">Aviso legal</a>
         <a href="/terminos/" class="hover:text-white transition-colors">Términos</a>

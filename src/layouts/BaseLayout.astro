@@ -2,6 +2,7 @@
 import "@/styles/global.css";
 import TopBanner from "@/components/TopBanner.astro";
 import CookieConsent from "@/components/CookieConsent.astro";
+import Analytics from "@/components/Analytics.astro";
 import { loadCategorias, loadZonas } from "@/lib/directory";
 
 interface Props {
@@ -89,6 +90,7 @@ const organizationSchema = {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <Analytics />
     <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
     <slot name="head" />
   </head>

@@ -7,6 +7,8 @@ import Galeria from "@/components/Galeria.astro";
 import AbiertoAhora from "@/components/AbiertoAhora.astro";
 import { generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona, socialProfileUrl } from "@/lib/directory";
 import type { Negocio } from "@/lib/directory";
+import { UBICACION_POR_DEFECTO, enlaceLocalseoads } from "@/lib/localseoads";
+import ReclamarFicha from "@/components/ReclamarFicha.astro";
 import { textoDatosRevisados } from "@/lib/fechas-ficha.mjs";
 import seoOverrides from "@/data/seo-overrides.json";
 
@@ -26,6 +28,10 @@ const ofrece = (negocio.ofrece as string[] | undefined) || [];
 const especialidades = (negocio.especialidades as string[] | undefined) || [];
 const tiposCocina = (negocio.tiposCocina as string[] | undefined) || [];
 const redes = (negocio.redesSociales as Record<string, string> | undefined) || {};
+const hrefLocalSeo = enlaceLocalseoads({
+  ubicacion: negocio.zona || UBICACION_POR_DEFECTO,
+  content: negocio.slug,
+});
 
 // Negocios similares (misma categoria, excluyendo el actual)
 const similares = getNegociosByCategoria(negocio.category)
@@ -140,7 +146,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
               <p class="text-brand-200 text-xs mt-0.5">Atrae clientes locales con SEO profesional para tu barrio</p>
             </div>
             <a
-              href="https://localseoads.com"
+              href={hrefLocalSeo}
               target="_blank"
               rel="noopener"
               class="shrink-0 text-xs sm:text-sm font-semibold bg-accent-500 text-white px-4 py-2 rounded-lg hover:bg-accent-600 transition-colors"
@@ -376,12 +382,14 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
             )}
           </div>
 
+          <ReclamarFicha negocio={negocio} />
+
           <!-- Banner LocalSEOAds -->
           <div class="bg-brand-900 rounded-xl p-5 text-center text-white">
             <p class="text-sm font-medium mb-1">Tu negocio aqui</p>
             <p class="text-xs text-brand-200 mb-3">Destaca en el directorio y atrae mas clientes de tu barrio</p>
             <a
-              href="https://localseoads.com"
+              href={hrefLocalSeo}
               target="_blank"
               rel="noopener"
               class="inline-block text-sm font-semibold bg-accent-500 text-white px-4 py-2 rounded-lg hover:bg-accent-600 transition-colors"

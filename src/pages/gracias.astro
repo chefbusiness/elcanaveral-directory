@@ -3,6 +3,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import { loadNegocios } from "@/lib/directory";
+import { enlaceLocalseoads } from "@/lib/localseoads";
 
 const indice: Record<string, string> = {};
 const porSlug = new Map<string, string | null>();
@@ -16,8 +17,7 @@ for (const [slug, ruta] of porSlug) {
   if (ruta && !indice[slug]) indice[slug] = ruta;
 }
 
-const enlaceLocalSeo =
-  "https://localseoads.com?utm_source=elcanaveral&utm_medium=directorio&utm_campaign=gracias";
+const enlaceLocalSeo = enlaceLocalseoads({ ubicacion: "gracias", content: "gracias" });
 const indiceJson = JSON.stringify(indice).replace(/</g, "\\u003c");
 ---
 

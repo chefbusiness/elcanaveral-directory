@@ -246,7 +246,7 @@ export const GET: APIRoute = () => {
     "",
     "- Email: local@elcanaveral.info",
     `- Formulario: ${url("/contacto/")}`,
-    "- Directorio gestionado por LocalSEOAds (https://localseads.com).",
+    "- Directorio gestionado por LocalSEOAds (https://localseoads.com).",
     "",
   );
 

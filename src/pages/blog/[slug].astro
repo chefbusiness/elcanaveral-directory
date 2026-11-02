@@ -5,6 +5,7 @@ import Footer from "@/components/Footer.astro";
 import { generateListiclePaths, getRankedNegocios } from "@/lib/listicles";
 import type { Listicle } from "@/lib/listicles";
 import { abreDomingo } from "@/lib/directory";
+import { UBICACION_POR_DEFECTO, enlaceLocalseoads } from "@/lib/localseoads";
 
 export function getStaticPaths() {
   return generateListiclePaths();
@@ -33,6 +34,11 @@ const datosRanking = (() => {
   ].filter((p): p is string => !!p);
   return { total, domingo, terraza, delivery, partes };
 })();
+
+const hrefLocalSeo = enlaceLocalseoads({
+  ubicacion: listicle.zona || UBICACION_POR_DEFECTO,
+  content: listicle.slug,
+});
 
 const fmtDate = (iso: string) =>
   new Date(iso).toLocaleDateString("es-ES", { month: "long", year: "numeric" });
@@ -223,7 +229,7 @@ const faqSchema = listicle.faq && listicle.faq.length > 0
           <a href="/alta/" class="text-sm font-semibold bg-accent-500 text-white px-5 py-2.5 rounded-lg hover:bg-accent-600 transition-colors">
             Dar de alta mi negocio
           </a>
-          <a href="https://localseoads.com" target="_blank" rel="noopener" class="text-sm font-semibold bg-white/10 text-white border border-white/20 px-5 py-2.5 rounded-lg hover:bg-white/20 transition-colors">
+          <a href={hrefLocalSeo} target="_blank" rel="noopener" class="text-sm font-semibold bg-white/10 text-white border border-white/20 px-5 py-2.5 rounded-lg hover:bg-white/20 transition-colors">
             Posicionarme en Google Maps
           </a>
         </div>
