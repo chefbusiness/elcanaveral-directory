@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { filaDesdeEventoNetlify, formatearFecha, webhookActivo } from "./lead-row.mjs";
-import { enviarAlWebhook, handler } from "./submission-created.mjs";
+import { filaDesdeEventoNetlify, formatearFecha, webhookActivo } from "../netlify/functions/submission-created/lead-row.mjs";
+import { enviarAlWebhook, handler } from "../netlify/functions/submission-created/index.mjs";
 
 test("formatea la hora de Madrid y solo activa un webhook https", () => {
   assert.equal(formatearFecha("2026-11-02T11:37:00.000Z"), "2026-11-02 12:37");

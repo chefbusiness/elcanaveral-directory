@@ -4,7 +4,7 @@
  * Pegar en Extensiones → Apps Script de la hoja (proyecto ligado a esa hoja,
  * no un script suelto). No hace falta el ID de la hoja: usa la hoja activa.
  *
- * Acepta el JSON que envía netlify/functions/submission-created.mjs y, por si
+ * Acepta el JSON que envía netlify/functions/submission-created y, por si
  * el webhook de Netlify apunta aquí directamente, el evento submission-created
  * crudo. Columnas, en este orden:
  * Fecha, Formulario, Negocio, Slug ficha, Contacto, Email, Teléfono,
