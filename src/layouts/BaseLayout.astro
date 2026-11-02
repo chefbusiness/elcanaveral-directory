@@ -9,12 +9,23 @@ interface Props {
   description: string;
   image?: string;
   noindex?: boolean;
+  /** <title> exacto, sin añadir el nombre del sitio otra vez. */
+  documentTitle?: string;
+  /** og:title y twitter:title. Por defecto, el título corto de la página. */
+  ogTitle?: string;
 }
 
-const { title, description, image = "/images/og-default.webp", noindex = false } = Astro.props;
+const {
+  title,
+  description,
+  image = "/images/og-default.webp",
+  noindex = false,
+  documentTitle,
+  ogTitle = title,
+} = Astro.props;
 const siteName = "elcanaveral.info";
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
-const fullTitle = `${title} | ${siteName}`;
+const fullTitle = documentTitle ?? `${title} | ${siteName}`;
 
 // --- Entidad del sitio en TODAS las páginas ----------------------------------
 // La Organization estaba solo en la home: ahora viaja con cada página para que un buscador o un LLM
@@ -62,14 +73,14 @@ const organizationSchema = {
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(image, Astro.site)} />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:site_name" content={siteName} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:title" content={ogTitle} />
     <meta name="twitter:description" content={description} />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
