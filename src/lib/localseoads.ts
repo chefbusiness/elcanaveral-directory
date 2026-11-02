@@ -89,31 +89,32 @@ export function enlaceLocalseoads(opts: {
 }
 
 /**
- * Landing publicada: https://localseoads.com/auditoria-gratis/el-canaveral/
- * La zona del negocio no va en el path (solo existe esta URL). Va en utm_campaign.
+ * Landing del diagnóstico de ficha (99 €, IVA incluido):
+ * https://localseoads.com/diagnostico-ficha/el-canaveral/
+ * La zona del negocio no va en el path. Va en utm_campaign.
  */
-export const AUDITORIA_GRATIS_PATH = "/auditoria-gratis/el-canaveral/";
+export const DIAGNOSTICO_FICHA_PATH = "/diagnostico-ficha/el-canaveral/";
 
 /**
- * Activa por defecto. Solo PUBLIC_AUDIT_LANDING_LIVE="false" la apaga,
- * para que el CTA salga en Netlify sin variable de entorno.
+ * Apagado por defecto. El CTA solo sale con PUBLIC_AUDIT_LANDING_LIVE="true"
+ * (la landing nueva tiene que responder 200 antes de encenderlo en Netlify).
  */
-export function auditoriaLandingActiva(): boolean {
-  return import.meta.env.PUBLIC_AUDIT_LANDING_LIVE !== "false";
+export function diagnosticoLandingActivo(): boolean {
+  return import.meta.env.PUBLIC_AUDIT_LANDING_LIVE === "true";
 }
 
 /**
- * Enlace a la auditoría, con el mismo bloque UTM que el resto de la marca.
+ * Enlace al diagnóstico, con el mismo bloque UTM que el resto de la marca.
  * En una ficha: ficha=<slug>, utm_campaign=<ubicación>, utm_content=<slug>.
  * Fuera de una ficha: sin ficha, utm_content es el hueco (banner-top, footer, home…).
  */
-export function enlaceAuditoriaGratis(opts: {
+export function enlaceDiagnosticoFicha(opts: {
   ubicacion: string;
   content: string;
   ficha?: string;
 }): string {
   return enlaceLocalseoads({
-    path: AUDITORIA_GRATIS_PATH,
+    path: DIAGNOSTICO_FICHA_PATH,
     ubicacion: opts.ubicacion,
     content: opts.content,
     query: opts.ficha ? { ficha: opts.ficha } : undefined,
@@ -121,15 +122,15 @@ export function enlaceAuditoriaGratis(opts: {
 }
 
 /**
- * CTA comercial. Con la landing activa apunta a la auditoría; con el kill
- * switch, a la home de LocalSEOAds (sin el parámetro ficha).
+ * CTA comercial. Con la landing encendida apunta al diagnóstico; apagada,
+ * a la home de LocalSEOAds con las mismas UTM y sin el parámetro ficha.
  */
 export function enlaceCtaLocalseoads(opts: {
   ubicacion: string;
   content: string;
   ficha?: string;
 }): string {
-  if (auditoriaLandingActiva()) return enlaceAuditoriaGratis(opts);
+  if (diagnosticoLandingActivo()) return enlaceDiagnosticoFicha(opts);
   return enlaceLocalseoads({
     ubicacion: opts.ubicacion,
     content: opts.content,

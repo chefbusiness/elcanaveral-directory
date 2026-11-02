@@ -189,7 +189,7 @@ export const GET: APIRoute = () => {
     "",
     "## Información para negocios",
     "",
-    "- [Registrar un negocio](" + url("/alta/") + "): alta básica gratuita.",
+    "- [Alta de un negocio](" + url("/alta/") + "): solicitud de revisión editorial. No hay listado gratuito.",
     "- [Planes y precios](" + url("/planes/") + ").",
     "- [Anúnciate](" + url("/anunciate/") + ").",
     "- [Sponsor exclusivo](" + url("/sponsor/") + ").",
