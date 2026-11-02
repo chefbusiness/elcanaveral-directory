@@ -11,15 +11,17 @@ const tiers = [
     price: "29 €",
     cadence: "/mes + IVA",
     annual: "290 €/año + IVA · paga 10, disfruta 12",
-    tagline: "Ficha contratada, sin etiqueta Patrocinado ni hueco en la home.",
+    tagline: "Ficha de pago, sin etiqueta Patrocinado ni hueco en la home.",
     cta: "Contratar",
     href: "/anunciate/?plan=presencia",
     highlight: false,
     features: [
       { label: "Ficha publicada en su categoría y zona", on: true },
-      { label: "Hasta 5 fotos en la ficha", on: true },
-      { label: "Descripción editorial y mapa si hay dirección", on: true },
-      { label: "Botón de llamada y enlace a la web cuando constan en la ficha", on: true },
+      { label: "Hasta 5 fotos en la galería de la ficha", on: true },
+      { label: "Por delante de las fichas sin plan en los listados de categoría y zona", on: true },
+      { label: "Botón propio con el texto y el enlace que aporte el negocio", on: true },
+      { label: "Sin el botón de diagnóstico ni el de reclamar la ficha", on: true },
+      { label: "Descripción editorial, mapa, llamada y web cuando constan", on: true },
       { label: "Cambios de la ficha por email", on: true },
     ],
   },
@@ -36,7 +38,8 @@ const tiers = [
       { label: "Todo lo del plan Presencia", on: true },
       { label: "Etiqueta visible «Patrocinado» en la ficha y en las tarjetas", on: true },
       { label: "Sección de patrocinados en la home (hasta 6 fichas)", on: true },
-      { label: "Máximo 5 fichas patrocinadas por categoría", on: true },
+      { label: "Por delante de Presencia en los listados de categoría y zona", on: true },
+      { label: "Máximo 5 fichas del plan Destacado por categoría", on: true },
     ],
   },
   {
@@ -50,6 +53,7 @@ const tiers = [
     highlight: false,
     features: [
       { label: "Todo lo del plan Destacado", on: true },
+      { label: "Por delante de Destacado en los listados de categoría y zona", on: true },
       { label: "4 publicaciones en la ficha de Google al mes (una por semana)", on: true },
       { label: "Respuesta a reseñas en 2 días laborables (lunes a viernes)", on: true },
       { label: "Una revisión del perfil al mes: categorías, horarios, fotos que aporta el cliente y servicios", on: true },
@@ -71,9 +75,11 @@ const tiers = [
     href: "/sponsor/",
     highlight: false,
     features: [
+      { label: "Etiqueta «Patrocinado», sección de la home y el primer puesto en los listados", on: true },
+      { label: "Hasta 5 fotos, botón propio y sin el bloque de diagnóstico o reclamar", on: true },
       { label: "Un solo sponsor por categoría", on: true },
       { label: "Propuesta a medida, sin tarifa pública", on: true },
-      { label: "El alcance de lo que se publica se acuerda en la propuesta", on: true },
+      { label: "El resto del alcance se acuerda en la propuesta", on: true },
     ],
   },
 ];
@@ -89,7 +95,7 @@ const faqs = [
   },
   {
     q: "¿Hay un alta sin cuota?",
-    a: "No. Las fichas ya publicadas son contenido editorial a partir de datos públicos: no son un plan. Si el dato existe, muestran hasta 5 fotos, el mapa, el botón de llamada y el enlace a la web. No llevan la etiqueta Patrocinado ni entran en la sección de la home. No hay un editor para el titular: los cambios se piden por email a local@elcanaveral.info. Presencia es 29 €/mes + IVA (290 €/año + IVA, paga 10, disfruta 12). Destacado es 79 €/mes + IVA. Crecimiento es 149 €/mes + IVA.",
+    a: "No. Las fichas ya publicadas son contenido editorial a partir de datos públicos: no son un plan. Si el dato existe, muestran una foto, el mapa, el botón de llamada y el enlace a la web, y el bloque para reclamar la ficha o pedir el diagnóstico. No llevan la etiqueta Patrocinado ni entran en la sección de la home. En los listados de categoría y zona van detrás de los planes de pago. No hay un editor para el titular: los cambios se piden por email a local@elcanaveral.info. Presencia es 29 €/mes + IVA (290 €/año + IVA, paga 10, disfruta 12) y muestra hasta 5 fotos. Destacado es 79 €/mes + IVA. Crecimiento es 149 €/mes + IVA.",
   },
   {
     q: "¿Cómo se contrata el plan?",
@@ -101,11 +107,11 @@ const faqs = [
   },
   {
     q: "¿Qué pasa si el sponsor exclusivo de mi categoría ya está cogido?",
-    a: "Si la categoría ya tiene un sponsor activo, te avisamos al recibir tu solicitud. La alternativa con tarifa pública es Destacado (79 €/mes + IVA): etiqueta Patrocinado y sección de la home, con un máximo de 5 fichas patrocinadas por categoría. En cuanto el hueco del sponsor quede libre, puedes optar a él. El sponsor no tiene precio publicado.",
+    a: "Si la categoría ya tiene un sponsor activo, te avisamos al recibir tu solicitud. La alternativa con tarifa pública es Destacado (79 €/mes + IVA): etiqueta Patrocinado y sección de la home, con un máximo de 5 fichas del plan Destacado por categoría. En cuanto el hueco del sponsor quede libre, puedes optar a él. El sponsor no tiene precio publicado.",
   },
   {
     q: "¿Garantizáis resultados de leads o ventas?",
-    a: "No. Los planes no garantizan visitas, contactos ni ventas: el resultado comercial depende de la estacionalidad, la competencia, la calidad del propio negocio y la oferta. En Destacado y Crecimiento publicamos la etiqueta Patrocinado y la sección de la home, con un máximo de 5 fichas patrocinadas por categoría. El resumen mensual de Crecimiento recoge los datos reales de la ficha de Google; no es una garantía de resultados.",
+    a: "No. Los planes no garantizan visitas, contactos ni ventas: el resultado comercial depende de la estacionalidad, la competencia, la calidad del propio negocio y la oferta. En Destacado, Crecimiento y Sponsor publicamos la etiqueta Patrocinado y pueden salir en la sección de la home (hasta 6 fichas). El plan Destacado tiene un máximo de 5 fichas por categoría. El resumen mensual de Crecimiento recoge los datos reales de la ficha de Google; no es una garantía de resultados.",
   },
   {
     q: "¿Hacéis SEO de mi web aparte del directorio?",
@@ -137,7 +143,7 @@ const offersSchema = {
         "@type": "Service",
         name: "Presencia",
         serviceType: "Ficha en el directorio",
-        description: "Ficha contratada sin etiqueta Patrocinado ni sección de la home. 29 €/mes + IVA o 290 €/año + IVA (paga 10, disfruta 12).",
+        description: "Ficha de pago sin etiqueta Patrocinado ni sección de la home. Hasta 5 fotos, prioridad sobre las fichas sin plan, botón propio si el negocio lo aporta y sin el botón de diagnóstico o reclamar. 29 €/mes + IVA o 290 €/año + IVA (paga 10, disfruta 12).",
         provider: { "@type": "Organization", name: "elcanaveral.info", url: SITE },
         offers: [
           oferta("Presencia mensual", "29", "29 €/mes + IVA", `${SITE}/anunciate/?plan=presencia`),
@@ -152,7 +158,7 @@ const offersSchema = {
         "@type": "Service",
         name: "Destacado",
         serviceType: "Ficha patrocinada",
-        description: "Etiqueta Patrocinado y sección de la home. Máximo 5 fichas patrocinadas por categoría. 79 €/mes + IVA o 790 €/año + IVA (paga 10, disfruta 12).",
+        description: "Etiqueta Patrocinado, sección de la home (hasta 6 fichas) y prioridad sobre Presencia. Máximo 5 fichas del plan Destacado por categoría. 79 €/mes + IVA o 790 €/año + IVA (paga 10, disfruta 12).",
         provider: { "@type": "Organization", name: "elcanaveral.info", url: SITE },
         offers: [
           oferta("Destacado mensual", "79", "79 €/mes + IVA", `${SITE}/anunciate/?plan=destacado`),
@@ -167,7 +173,7 @@ const offersSchema = {
         "@type": "Service",
         name: "Crecimiento",
         serviceType: "Ficha patrocinada y ficha de Google",
-        description: "Todo lo de Destacado, más el trabajo mensual sobre la ficha de Google que ejecuta LocalSEOAds. Incluye una vez el diagnóstico de ficha (99 €, IVA incluido). Cuota mensual con compromiso mínimo de 3 meses. 149 €/mes + IVA o 1.490 €/año + IVA (paga 10, disfruta 12). No incluye fotos o vídeos profesionales, anuncios ni web.",
+        description: "Todo lo de Destacado y por delante de Destacado en los listados, más el trabajo mensual sobre la ficha de Google que ejecuta LocalSEOAds. Incluye una vez el diagnóstico de ficha (99 €, IVA incluido). Cuota mensual con compromiso mínimo de 3 meses. 149 €/mes + IVA o 1.490 €/año + IVA (paga 10, disfruta 12). No incluye fotos o vídeos profesionales, anuncios ni web.",
         provider: { "@type": "Organization", name: "LocalSEOAds", url: "https://localseoads.com" },
         offers: [
           oferta("Crecimiento mensual", "149", "149 €/mes + IVA. Compromiso mínimo de 3 meses.", `${SITE}/anunciate/?plan=crecimiento`),
@@ -182,7 +188,7 @@ const offersSchema = {
         "@type": "Service",
         name: "Sponsor exclusivo",
         serviceType: "Patrocinio de categoría",
-        description: "Un sponsor por categoría. Precio a consultar, sin tarifa pública.",
+        description: "Un sponsor por categoría. Etiqueta Patrocinado, sección de la home y primer puesto en los listados. Precio a consultar, sin tarifa pública.",
         provider: { "@type": "Organization", name: "elcanaveral.info", url: SITE },
         offers: {
           "@type": "Offer",
@@ -198,7 +204,7 @@ const offersSchema = {
 
 <BaseLayout
   title="Planes y precios"
-  description="Presencia 29 €/mes + IVA, Destacado 79 €/mes + IVA (máximo 5 por categoría, etiqueta Patrocinado), Crecimiento 149 €/mes + IVA y sponsor a consultar."
+  description="Presencia 29 €/mes + IVA, Destacado 79 €/mes + IVA (máximo 5 fichas Destacado por categoría, etiqueta Patrocinado), Crecimiento 149 €/mes + IVA y sponsor a consultar."
 >
   <Header />
 
@@ -277,23 +283,25 @@ const offersSchema = {
             <div class="font-semibold text-brand-900">Quieres la ficha contratada</div>
             <div class="sm:col-span-2 text-warm-700 text-sm">
               <strong class="text-brand-900">Presencia (29 €/mes + IVA).</strong> Ficha en su categoría
-              y zona, hasta 5 fotos, mapa y botones de llamada y web cuando el negocio los publica.
-              Sin etiqueta Patrocinado. Anual: 290 € + IVA, paga 10, disfruta 12.
+              y zona, hasta 5 fotos en la galería, por delante de las fichas sin plan, y un botón
+              propio si el negocio aporta texto y enlace. Sin el botón de diagnóstico ni el de
+              reclamar. Sin etiqueta Patrocinado. Anual: 290 € + IVA, paga 10, disfruta 12.
             </div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5">
             <div class="font-semibold text-brand-900">Quieres que se vea que es de pago</div>
             <div class="sm:col-span-2 text-warm-700 text-sm">
               <strong class="text-brand-900">Destacado (79 €/mes + IVA).</strong> Todo Presencia, más la
-              etiqueta Patrocinado y la sección de la home (hasta 6 fichas). Máximo 5 por categoría.
+              etiqueta Patrocinado, la sección de la home (hasta 6 fichas) y un puesto por delante
+              de Presencia. Máximo 5 fichas del plan Destacado por categoría.
               Anual: 790 € + IVA, paga 10, disfruta 12.
             </div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5">
             <div class="font-semibold text-brand-900">Quieres la ficha de Google trabajada</div>
             <div class="sm:col-span-2 text-warm-700 text-sm">
-              <strong class="text-brand-900">Crecimiento (149 €/mes + IVA).</strong> Todo Destacado, más
-              cada mes 4 publicaciones en Google, respuesta a reseñas en 2 días laborables, una revisión
+              <strong class="text-brand-900">Crecimiento (149 €/mes + IVA).</strong> Todo Destacado, por delante
+              de Destacado en los listados, más cada mes 4 publicaciones en Google, respuesta a reseñas en 2 días laborables, una revisión
               del perfil y un resumen con los datos reales de la ficha. Incluye una vez el diagnóstico
               (99 €, IVA incluido). Mínimo 3 meses. Lo ejecuta LocalSEOAds. No incluye fotos o vídeos
               profesionales, anuncios ni web. Anual: 1.490 € + IVA, paga 10, disfruta 12.
@@ -303,7 +311,9 @@ const offersSchema = {
             <div class="font-semibold text-brand-900">Quieres una categoría en exclusiva</div>
             <div class="sm:col-span-2 text-warm-700 text-sm">
               <strong class="text-brand-900">Sponsor exclusivo (a consultar).</strong> Un sponsor por
-              categoría. Sin tarifa pública: el alcance se cierra en la propuesta.
+              categoría. En el directorio lleva la etiqueta Patrocinado, puede salir en la home y
+              queda el primero en los listados de su categoría y zona. Sin tarifa pública: el resto
+              del alcance se cierra en la propuesta.
             </div>
           </div>
         </div>

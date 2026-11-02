@@ -9,6 +9,7 @@ import { generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategor
 import type { Negocio } from "@/lib/directory";
 import { UBICACION_POR_DEFECTO, enlaceCtaLocalseoads } from "@/lib/localseoads";
 import ReclamarFicha from "@/components/ReclamarFicha.astro";
+import { ctaPublicable, esPatrocinado, esPlanPago, fotosDeFicha } from "@/lib/planes.mjs";
 import { textoDatosRevisados } from "@/lib/fechas-ficha.mjs";
 import seoOverrides from "@/data/seo-overrides.json";
 
@@ -17,6 +18,9 @@ export function getStaticPaths() {
 }
 
 const negocio = Astro.props as Negocio;
+const fotos = fotosDeFicha(negocio);
+const ctaNegocio = ctaPublicable(negocio);
+const planPago = esPlanPago(negocio);
 const textoRevision = textoDatosRevisados(negocio);
 const fichaSeo = (seoOverrides as any).fichas?.[negocio.slug] || {};
 const schema = generateLocalBusinessSchema(negocio);
@@ -76,14 +80,8 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
         <div class="lg:col-span-2 space-y-6">
 
           <!-- Galería de fotos -->
-          {negocio.images && negocio.images.length > 0 ? (
-            <Galeria images={negocio.images} alt={`${negocio.name} en ${negocio.zonaName}`} />
-          ) : negocio.image && (
-            <img
-              src={negocio.image}
-              alt={`${negocio.name} en ${negocio.zonaName}`}
-              class="w-full h-72 sm:h-80 object-cover rounded-xl"
-            />
+          {fotos.length > 0 && (
+            <Galeria images={fotos} alt={`${negocio.name} en ${negocio.zonaName}`} />
           )}
 
           <!-- Titulo + meta -->
@@ -95,7 +93,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
                   Próxima apertura
                 </span>
               )}
-              {negocio.featured && (
+              {esPatrocinado(negocio) && (
                 <span class="shrink-0 text-xs font-semibold bg-accent-500 text-white px-3 py-1 rounded-md mt-1.5">
                   Patrocinado
                 </span>
@@ -362,6 +360,11 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
             )}
 
             <div class="mt-4 space-y-2">
+              {ctaNegocio && (
+                <a href={ctaNegocio.url} target="_blank" rel="noopener" class="block w-full text-center bg-accent-500 text-white py-2.5 rounded-lg font-medium hover:bg-accent-600 transition-colors">
+                  {ctaNegocio.texto}
+                </a>
+              )}
               {negocio.phone && (
                 <a href={`tel:${negocio.phone}`} class="block w-full text-center bg-brand-600 text-white py-2.5 rounded-lg font-medium hover:bg-brand-700 transition-colors">
                   Llamar ahora
@@ -383,7 +386,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
             )}
           </div>
 
-          <ReclamarFicha negocio={negocio} />
+          {!planPago && <ReclamarFicha negocio={negocio} />}
 
           <!-- Banner LocalSEOAds -->
           <div class="bg-brand-900 rounded-xl p-5 text-center text-white">

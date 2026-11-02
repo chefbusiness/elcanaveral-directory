@@ -58,7 +58,7 @@ const intro = [
 const faq = [
   mejor && {
     q: `¿Cuál es el mejor valorado de ${categoriaMin} en ${zona.name}?`,
-    a: `${mejor.name}, con ${mejor.rating} sobre 5${mejor.numReviews ? ` y ${mejor.numReviews} reseñas` : ""}. El orden de esta página y de las guías del barrio sale de una puntuación que combina la nota media con el número de reseñas, para que una nota alta con pocas opiniones no adelante a una con cientos.`,
+    a: `${mejor.name}, con ${mejor.rating} sobre 5${mejor.numReviews ? ` y ${mejor.numReviews} reseñas` : ""}. La guía del barrio ordena por una puntuación que combina la nota media con el número de reseñas, para que una nota alta con pocas opiniones no adelante a una con cientos. Este listado pone primero las fichas con plan de pago (sponsor, crecimiento, destacado y presencia) y, dentro de cada plan, conserva el orden del directorio.`,
   },
   {
     q: `¿Cuántos ${categoriaMin} hay en ${zona.name}?`,

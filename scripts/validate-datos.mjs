@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { diaDe, instanteConZona } from "../src/lib/novedades.mjs";
+import { erroresPlanes } from "../src/lib/planes.mjs";
 
 const ESTADOS_APERTURA = new Set(["anunciado", "obras", "abierto", "cerrado"]);
 const ESTADOS_AGENDA = new Set(["confirmado", "anunciado", "cancelado", "aplazado"]);
@@ -173,6 +174,7 @@ export function validarRaiz(root) {
   return [
     ...erroresAperturas(leer(root, "src/data/aperturas.json"), indice),
     ...erroresAgenda(leer(root, "src/data/agenda.json"), indice),
+    ...erroresPlanes(leer(root, "src/data/negocios.json")),
   ];
 }
 
@@ -184,5 +186,5 @@ if (esCli) {
     for (const error of errores) console.error(`- ${error}`);
     process.exit(1);
   }
-  console.log("validate-datos: aperturas y agenda ok");
+  console.log("validate-datos: aperturas, agenda y planes ok");
 }
