@@ -1,0 +1,50 @@
+{
+  "lastReview": "2026-08-21",
+  "items": [
+    {
+      "id": "bunbun-canaveral",
+      "nombre": "BunBun — Açaí, Brunch & Bakery",
+      "estado": "anunciado",
+      "categoria": "cafeterias",
+      "zona": "el-canaveral",
+      "direccion": "Av. de Miguel Delibes (esquina con calle Elías), Vicálvaro, 28052 Madrid",
+      "fichaSlug": "bunbun-canaveral",
+      "fechaPrevista": null,
+      "fechaApertura": null,
+      "resumen": "Vecinos anunciaron en X la llegada de BunBun a la avenida de Miguel Delibes, esquina con la calle Elías. La web oficial de la cadena no incluye El Cañaveral y no hay fecha de apertura confirmada.",
+      "fuentes": [
+        {
+          "nombre": "BunBun (web oficial)",
+          "url": "https://bunbun.es/",
+          "tipo": "web"
+        },
+        {
+          "nombre": "@hug0nES en X",
+          "url": "https://x.com/hug0nES",
+          "tipo": "red-social"
+        }
+      ],
+      "verificadoEn": "2026-08-21"
+    },
+    {
+      "id": "musica-de-los-rios-canaveral",
+      "nombre": "Música de los Ríos",
+      "estado": "anunciado",
+      "categoria": "educacion",
+      "zona": "el-canaveral",
+      "direccion": "Av. de Blas de Lezo (esquina con calle Diálogo), Vicálvaro, 28052 Madrid",
+      "fichaSlug": "musica-de-los-rios-canaveral",
+      "fechaPrevista": null,
+      "fechaApertura": null,
+      "resumen": "Un cartel en la avenida de Blas de Lezo, esquina con la calle Diálogo, anuncia Música de los Ríos para el curso 2026/2027 (bebés, canto e instrumentos, con un 50 % de descuento de matrícula por QR). No hay fecha de apertura confirmada ni está confirmado que sea la escuela homónima de Chamberí.",
+      "fuentes": [
+        {
+          "nombre": "@hug0nES en X",
+          "url": "https://x.com/hug0nES",
+          "tipo": "red-social"
+        }
+      ],
+      "verificadoEn": "2026-08-21"
+    }
+  ]
+}

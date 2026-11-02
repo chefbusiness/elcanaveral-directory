@@ -1,0 +1,234 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import ReclamarFicha from "@/components/ReclamarFicha.astro";
+import FormularioSugerencia from "@/components/FormularioSugerencia.astro";
+import aperturasData from "@/data/aperturas.json";
+import type { Apertura, AperturasFile } from "@/lib/novedades.mjs";
+import { loadNegocios } from "@/lib/directory";
+import { enlaceLocalseoads } from "@/lib/localseoads";
+import {
+  esAbiertaReciente,
+  esProximamente,
+  hoyMadrid,
+  porReverificar,
+  textoFechaLarga,
+} from "@/lib/novedades.mjs";
+
+const datos = aperturasData as AperturasFile;
+const hoy = hoyMadrid();
+const items = datos.items;
+const abiertas = items.filter((item) => esAbiertaReciente(item, hoy));
+const proximamente = items.filter((item) => esProximamente(item));
+const revision = textoFechaLarga(datos.lastReview);
+
+const fichas = new Map(loadNegocios().map((negocio) => [`${negocio.category}/${negocio.slug}`, negocio]));
+const negocioDe = (item: Apertura) =>
+  item.fichaSlug ? fichas.get(`${item.categoria}/${item.fichaSlug}`) : undefined;
+
+const base = "https://www.elcanaveral.info";
+const hrefLocal = enlaceLocalseoads({ ubicacion: "el-canaveral", content: "nuevas-aperturas" });
+
+const etiqueta: Record<Apertura["estado"], string> = {
+  anunciado: "Anunciado",
+  obras: "En obras",
+  abierto: "Abierto",
+  cerrado: "Cerrado",
+};
+
+function cuando(item: Apertura) {
+  if (item.fechaApertura) return textoFechaLarga(item.fechaApertura);
+  if (item.fechaPrevista) return `Fecha prevista: ${textoFechaLarga(item.fechaPrevista)}`;
+  return "sin fecha confirmada";
+}
+
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Nuevas aperturas en El Cañaveral",
+  url: `${base}/nuevas-aperturas/`,
+  inLanguage: "es-ES",
+  dateModified: datos.lastReview,
+};
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Nuevas aperturas en El Cañaveral",
+  numberOfItems: items.length,
+  itemListElement: items.map((item, i) => {
+    const ficha = item.fichaSlug ? `${base}/${item.categoria}/${item.fichaSlug}/` : undefined;
+    const local: Record<string, unknown> = {
+      "@type": "LocalBusiness",
+      name: item.nombre,
+      address: item.direccion,
+    };
+    if (ficha) local.url = ficha;
+    if (item.fechaApertura) local.openingDate = item.fechaApertura;
+    return { "@type": "ListItem", position: i + 1, item: local };
+  }),
+};
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: `${base}/` },
+    { "@type": "ListItem", position: 2, name: "Nuevas aperturas", item: `${base}/nuevas-aperturas/` },
+  ],
+};
+---
+
+<BaseLayout
+  title="Nuevas aperturas en El Cañaveral"
+  description="Aperturas anunciadas y recién abiertas en El Cañaveral, con fuente enlazable y fecha de verificación. Sin fecha confirmada no inventamos el día."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <Header />
+
+  <article class="pt-24 pb-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="/" class="hover:text-brand-600">Inicio</a>
+        <span class="mx-1.5 text-gray-300">/</span>
+        <span class="text-gray-900">Nuevas aperturas</span>
+      </nav>
+
+      <header class="mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">Nuevas aperturas en El Cañaveral</h1>
+        {revision && <p class="text-sm text-gray-500 mt-3">Revisión: {revision}</p>}
+        <p class="text-gray-600 mt-4 text-lg leading-relaxed">
+          Lo que va a abrir en el barrio, y lo que abrió en los últimos 90 días. Cada ficha lleva una fuente
+          que se puede abrir y el día en que la contrastamos.
+        </p>
+      </header>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-4">Ya abiertas</h2>
+        {abiertas.length > 0 ? (
+          <div class="space-y-4">
+            {abiertas.map((item) => {
+              const negocio = negocioDe(item);
+              const href = item.fichaSlug ? `/${item.categoria}/${item.fichaSlug}/` : null;
+              return (
+                <article class="bg-white rounded-xl border border-warm-200 p-5">
+                  <div class="flex flex-wrap items-center gap-2 mb-2">
+                    <span class="text-[11px] font-bold uppercase tracking-wide bg-green-50 text-green-800 px-2 py-0.5 rounded">{etiqueta[item.estado]}</span>
+                    <span class="text-xs text-gray-500">{cuando(item)}</span>
+                    {porReverificar(item.verificadoEn, hoy) && (
+                      <span class="text-[11px] font-semibold bg-amber-50 text-amber-800 px-2 py-0.5 rounded">dato por reverificar</span>
+                    )}
+                  </div>
+                  <h3 class="font-bold text-lg text-brand-900">
+                    {href ? <a href={href} class="hover:text-brand-600">{item.nombre}</a> : item.nombre}
+                  </h3>
+                  <p class="text-sm text-gray-500 mt-1">{item.direccion}</p>
+                  <p class="text-gray-700 text-sm mt-3 leading-relaxed">{item.resumen}</p>
+                  <ul class="mt-3 space-y-1">
+                    {item.fuentes.map((fuente) => (
+                      <li class="text-xs text-gray-500">
+                        Fuente: <a href={fuente.url} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{fuente.nombre}</a>
+                        <span> · verificado el {textoFechaLarga(item.verificadoEn)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {negocio && <div class="mt-4"><ReclamarFicha negocio={negocio} /></div>}
+                </article>
+              );
+            })}
+          </div>
+        ) : (
+          <p class="text-gray-600 bg-warm-50 border border-warm-200 rounded-xl p-5 leading-relaxed">
+            En los últimos 90 días no hay ninguna apertura con fecha confirmada y fuente.
+            Si acabas de ver un local abierto, el formulario de abajo pide el enlace de donde lo viste.
+          </p>
+        )}
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-bold text-brand-900 mb-4">Próximamente</h2>
+        {proximamente.length > 0 ? (
+          <div class="space-y-4">
+            {proximamente.map((item) => {
+              const negocio = negocioDe(item);
+              const href = item.fichaSlug ? `/${item.categoria}/${item.fichaSlug}/` : null;
+              return (
+                <article class="bg-white rounded-xl border border-warm-200 p-5">
+                  <div class="flex flex-wrap items-center gap-2 mb-2">
+                    <span class="text-[11px] font-bold uppercase tracking-wide bg-brand-50 text-brand-700 px-2 py-0.5 rounded">{etiqueta[item.estado]}</span>
+                    <span class="text-xs text-gray-500">{cuando(item)}</span>
+                    {porReverificar(item.verificadoEn, hoy) && (
+                      <span class="text-[11px] font-semibold bg-amber-50 text-amber-800 px-2 py-0.5 rounded">dato por reverificar</span>
+                    )}
+                  </div>
+                  <h3 class="font-bold text-lg text-brand-900">
+                    {href ? <a href={href} class="hover:text-brand-600">{item.nombre}</a> : item.nombre}
+                  </h3>
+                  <p class="text-sm text-gray-500 mt-1">{item.direccion}</p>
+                  <p class="text-gray-700 text-sm mt-3 leading-relaxed">{item.resumen}</p>
+                  <ul class="mt-3 space-y-1">
+                    {item.fuentes.map((fuente) => (
+                      <li class="text-xs text-gray-500">
+                        Fuente: <a href={fuente.url} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{fuente.nombre}</a>
+                        <span> · verificado el {textoFechaLarga(item.verificadoEn)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {negocio && <div class="mt-4"><ReclamarFicha negocio={negocio} /></div>}
+                </article>
+              );
+            })}
+          </div>
+        ) : (
+          <p class="text-gray-600 bg-warm-50 border border-warm-200 rounded-xl p-5 leading-relaxed">
+            Ahora mismo no hay aperturas anunciadas con una fuente que podamos enlazar.
+            El formulario de abajo sirve para contar la que tú hayas visto.
+          </p>
+        )}
+      </section>
+
+      <section class="mb-2 bg-warm-50 border border-warm-200 rounded-xl p-5">
+        <h2 class="text-lg font-bold text-brand-900 mb-2">Política de fuentes</h2>
+        <ul class="text-sm text-gray-700 space-y-2 leading-relaxed list-disc pl-5">
+          <li>No publicamos una apertura sin al menos una fuente que se pueda abrir y una fecha de verificación.</li>
+          <li>La fecha de apertura solo aparece cuando está confirmada. Si no, decimos «sin fecha confirmada».</li>
+          <li>Si la verificación tiene más de 90 días, la ficha muestra «dato por reverificar».</li>
+          <li>Una sugerencia del formulario no se publica sola: hace falta la URL de la fuente.</li>
+        </ul>
+        <p class="text-sm text-gray-600 mt-3">
+          El relato de agosto de 2026 está en
+          <a href="/actualidad/nuevas-aperturas-el-canaveral-agosto-2026/" class="text-brand-600 font-medium">la noticia de BunBun y Música de los Ríos</a>.
+        </p>
+      </section>
+
+      <FormularioSugerencia
+        nombre="sugerir-apertura"
+        titulo="Sugerir una apertura"
+        introduccion="Cuéntanos un local que vaya a abrir o que acabe de abrir. La URL de la fuente es obligatoria."
+        etiquetaAsunto="Nombre del local"
+      />
+
+      <aside class="mt-10 bg-brand-900 text-white rounded-2xl p-6 sm:p-8">
+        <h2 class="text-xl font-bold">¿Es tu local el que abre?</h2>
+        <p class="text-brand-100 text-sm mt-2 leading-relaxed">
+          Si la ficha ya está en el directorio, reclámala en la tarjeta. Si quieres que se vea más cuando abra,
+          en LocalSEOAds trabajan el SEO local.
+        </p>
+        <a
+          href={hrefLocal}
+          target="_blank"
+          rel="noopener"
+          class="inline-block mt-4 bg-white text-brand-900 font-semibold px-5 py-2.5 rounded-lg hover:bg-brand-50 transition-colors"
+        >
+          Ver LocalSEOAds
+        </a>
+      </aside>
+    </div>
+  </article>
+
+  <Footer />
+</BaseLayout>

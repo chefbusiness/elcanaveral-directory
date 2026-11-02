@@ -112,6 +112,26 @@ test("volver a la ficha solo enlaza una ruta conocida", () => {
   );
 });
 
+test("aperturas y agenda usan la fecha del dato, no el día del build", () => {
+  const lookup = createLastmodLookup({
+    gitDates: new Map([
+      ["src/pages/nuevas-aperturas.astro", "2026-11-02"],
+      ["src/data/aperturas.json", "2026-11-02"],
+      ["src/pages/agenda/index.astro", "2026-11-02"],
+      ["src/pages/agenda/[slug].astro", "2026-11-02"],
+      ["src/data/agenda.json", "2026-11-02"],
+    ]),
+    negocios: [],
+    overrides: new Set(),
+    aperturas: { lastReview: "2026-08-21", items: [{ verificadoEn: "2026-08-21" }] },
+    agenda: { items: [{ id: "tapaveral-2026", verificadoEn: "2026-09-23" }] },
+  });
+  assert.equal(lookup("/nuevas-aperturas/"), "2026-08-21");
+  assert.equal(lookup("/agenda/"), "2026-09-23");
+  assert.equal(lookup("/agenda/tapaveral-2026/"), "2026-09-23");
+  assert.equal(lookup("/agenda/no-existe/"), "2026-11-02");
+});
+
 test("el sitemap real usa la fecha git, no el día del build", () => {
   const dia = (archivo) =>
     execFileSync("git", ["log", "-1", "--format=%cI", "--", archivo], { encoding: "utf8" }).trim().slice(0, 10);

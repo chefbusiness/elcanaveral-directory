@@ -33,6 +33,8 @@ const RESERVADOS = new Set([
   "abiertos-los-domingos",
   "bares-y-tapas",
   "farmacias-de-guardia",
+  "agenda",
+  "nuevas-aperturas",
 ]);
 
 const OMITIR_NOTAS = new Set([
@@ -214,7 +216,7 @@ export function filaDesdeEventoNetlify(body, ahora = new Date()) {
     contacto: texto(data.contacto || data.nombre),
     email,
     telefono: texto(data.telefono || data.tel),
-    mensaje: texto(data.mensaje || data.comentarios || data.descripcion),
+    mensaje: texto(data.mensaje || data.comentarios || data.descripcion || data.detalle),
     origen: origenDe(data),
     estado: "Nuevo",
     notas: notasDe(data),

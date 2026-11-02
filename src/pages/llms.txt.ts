@@ -144,6 +144,8 @@ export const GET: APIRoute = () => {
     "- [Guías del barrio](" + url("/blog/") + "): rankings y comparativas por categoría.",
     "- [Abiertos los domingos](" + url("/abiertos-los-domingos/") + "): qué supermercados, panaderías, fruterías y bazares abren en domingo, con su horario real.",
     "- [Actualidad del barrio](" + url("/actualidad/") + "): noticias locales verificadas con fuentes.",
+    "- [Nuevas aperturas](" + url("/nuevas-aperturas/") + "): locales anunciados o recién abiertos, cada uno con fuente y fecha de verificación.",
+    "- [Agenda](" + url("/agenda/") + "): eventos con inicio, lugar y fuente. Lo ya celebrado está en el archivo.",
     "- [Comunidad](" + url("/comunidad/") + "): asociaciones, vecinos y cuentas del barrio.",
     "- [Cómo llegar y transporte](" + url("/transporte/") + "): metro, bus, cercanías y accesos.",
     "- [Parques y espacios públicos](" + url("/espacios-publicos/") + ").",

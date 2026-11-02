@@ -141,7 +141,7 @@ function ctaLabel(platform: string, type: string) {
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {imprescindibles.map((a: any) => (
             <a
-              href={a.url}
+              href={a.enlaceRoto || !a.url ? undefined : a.url}
               target="_blank"
               rel="noopener nofollow"
               class="comunidad-card group block min-w-0 bg-white rounded-2xl border-2 border-brand-100 hover:border-brand-400 hover:shadow-lg p-5 transition-all relative overflow-hidden"
@@ -159,6 +159,7 @@ function ctaLabel(platform: string, type: string) {
                 </div>
               </div>
               <p class="text-sm text-gray-600 leading-snug line-clamp-3 mb-3">{a.description}</p>
+              {a.aviso && <p class="text-xs font-medium text-amber-800 mb-3">{a.aviso}</p>}
               <div class="flex items-center justify-between text-xs">
                 <span class="inline-flex items-center gap-1 text-gray-500">
                   <span>{typeIcons[a.type]}</span>
@@ -184,7 +185,7 @@ function ctaLabel(platform: string, type: string) {
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {featured.map((a: any) => (
             <a
-              href={a.url}
+              href={a.enlaceRoto || !a.url ? undefined : a.url}
               target="_blank"
               rel="noopener nofollow"
               class="comunidad-card group block min-w-0 bg-white rounded-xl border border-warm-200 hover:border-brand-300 hover:shadow-md p-5 transition-all"
@@ -201,6 +202,7 @@ function ctaLabel(platform: string, type: string) {
                 </div>
               </div>
               <p class="text-sm text-gray-600 leading-snug line-clamp-3 mb-3">{a.description}</p>
+              {a.aviso && <p class="text-xs font-medium text-amber-800 mb-3">{a.aviso}</p>}
               <div class="flex items-center justify-between text-xs">
                 <span class="inline-flex items-center gap-1 text-gray-500">
                   <span>{typeIcons[a.type]}</span>
@@ -225,7 +227,7 @@ function ctaLabel(platform: string, type: string) {
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {restantes.map((a: any) => (
           <a
-            href={a.url}
+            href={a.enlaceRoto || !a.url ? undefined : a.url}
             target="_blank"
             rel="noopener nofollow"
             class="comunidad-card group block min-w-0 bg-white rounded-xl border border-warm-200 hover:border-brand-300 hover:shadow-md p-4 transition-all"
@@ -242,6 +244,7 @@ function ctaLabel(platform: string, type: string) {
               </div>
             </div>
             <p class="text-xs text-gray-600 leading-snug line-clamp-2">{a.description}</p>
+            {a.aviso && <p class="text-xs font-medium text-amber-800 mt-2">{a.aviso}</p>}
             <div class="flex items-center gap-2 mt-2 text-[11px] text-gray-500">
               <span>{typeIcons[a.type]}</span>
               <span>{typeNames[a.type]}</span>

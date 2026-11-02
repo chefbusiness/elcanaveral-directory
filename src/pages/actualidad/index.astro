@@ -26,6 +26,12 @@ const fmt = (iso: string) => new Date(iso).toLocaleDateString("es-ES", { day: "n
           Lo que pasa en el barrio: nuevas aperturas, urbanismo, comercio, transporte y novedades que afectan al
           día a día de El Cañaveral y alrededores.
         </p>
+        <p class="text-sm text-gray-600 mt-4">
+          Las fichas vivas están en
+          <a href="/nuevas-aperturas/" class="text-brand-600 font-medium hover:text-brand-700">nuevas aperturas</a>
+          y en la <a href="/agenda/" class="text-brand-600 font-medium hover:text-brand-700">agenda</a>.
+          Aquí se queda el relato, con su fecha.
+        </p>
       </header>
 
       {posts.length > 0 ? (

@@ -10,7 +10,8 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Fuera del sitemap las páginas noindex (legales y la confirmación de formularios).
-      filter: (page) => !/\/(aviso-legal|terminos|privacidad|cookies|gracias)\/?$/.test(page),
+      filter: (page) =>
+        !/\.ics$/.test(page) && !/\/(aviso-legal|terminos|privacidad|cookies|gracias)\/?$/.test(page),
       // lastmod = fecha de la ficha, o el commit del dato o de la página. Nunca «hoy» para todo.
       serialize(item) {
         const lastmod = lastmodDe(item.url);
