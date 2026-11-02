@@ -5,7 +5,7 @@ import Footer from "@/components/Footer.astro";
 import { generateListiclePaths, getRankedNegocios } from "@/lib/listicles";
 import type { Listicle } from "@/lib/listicles";
 import { abreDomingo } from "@/lib/directory";
-import { UBICACION_POR_DEFECTO, enlaceLocalseoads } from "@/lib/localseoads";
+import { UBICACION_POR_DEFECTO, enlaceCtaLocalseoads } from "@/lib/localseoads";
 
 export function getStaticPaths() {
   return generateListiclePaths();
@@ -35,7 +35,7 @@ const datosRanking = (() => {
   return { total, domingo, terraza, delivery, partes };
 })();
 
-const hrefLocalSeo = enlaceLocalseoads({
+const hrefLocalSeo = enlaceCtaLocalseoads({
   ubicacion: listicle.zona || UBICACION_POR_DEFECTO,
   content: listicle.slug,
 });

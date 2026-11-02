@@ -17,7 +17,9 @@ const { negocio } = Astro.props;
 const zona = negocio.zona || UBICACION_POR_DEFECTO;
 const utm = `utm_source=${UTM_SOURCE}&utm_medium=${UTM_MEDIUM}&utm_campaign=${zona}&utm_content=${negocio.slug}`;
 const whatsapp = enlaceWhatsappReclamar(negocio);
-const auditoria = auditoriaLandingActiva() ? enlaceAuditoriaGratis(negocio) : undefined;
+const auditoria = auditoriaLandingActiva()
+  ? enlaceAuditoriaGratis({ ubicacion: zona, content: negocio.slug, ficha: negocio.slug })
+  : undefined;
 const formId = `reclamar-${negocio.slug}`;
 ---
 

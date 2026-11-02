@@ -7,7 +7,7 @@ import FormularioSugerencia from "@/components/FormularioSugerencia.astro";
 import aperturasData from "@/data/aperturas.json";
 import type { Apertura, AperturasFile } from "@/lib/novedades.mjs";
 import { loadNegocios } from "@/lib/directory";
-import { enlaceLocalseoads } from "@/lib/localseoads";
+import { enlaceCtaLocalseoads } from "@/lib/localseoads";
 import {
   esAbiertaReciente,
   esProximamente,
@@ -28,7 +28,7 @@ const negocioDe = (item: Apertura) =>
   item.fichaSlug ? fichas.get(`${item.categoria}/${item.fichaSlug}`) : undefined;
 
 const base = "https://www.elcanaveral.info";
-const hrefLocal = enlaceLocalseoads({ ubicacion: "el-canaveral", content: "nuevas-aperturas" });
+const hrefLocal = enlaceCtaLocalseoads({ ubicacion: "el-canaveral", content: "nuevas-aperturas" });
 
 const etiqueta: Record<Apertura["estado"], string> = {
   anunciado: "Anunciado",

@@ -88,26 +88,60 @@ export function enlaceLocalseoads(opts: {
   return `${LOCALSEOADS_ORIGIN}${path}?${params.toString()}`;
 }
 
-export function enlaceLocalseoadsEnPagina(pathname: string, hueco: HuecoUtm): string {
-  const ctx = contextoDesdeRuta(pathname);
+/**
+ * Landing publicada: https://localseoads.com/auditoria-gratis/el-canaveral/
+ * La zona del negocio no va en el path (solo existe esta URL). Va en utm_campaign.
+ */
+export const AUDITORIA_GRATIS_PATH = "/auditoria-gratis/el-canaveral/";
+
+/**
+ * Activa por defecto. Solo PUBLIC_AUDIT_LANDING_LIVE="false" la apaga,
+ * para que el CTA salga en Netlify sin variable de entorno.
+ */
+export function auditoriaLandingActiva(): boolean {
+  return import.meta.env.PUBLIC_AUDIT_LANDING_LIVE !== "false";
+}
+
+/**
+ * Enlace a la auditoría, con el mismo bloque UTM que el resto de la marca.
+ * En una ficha: ficha=<slug>, utm_campaign=<ubicación>, utm_content=<slug>.
+ * Fuera de una ficha: sin ficha, utm_content es el hueco (banner-top, footer, home…).
+ */
+export function enlaceAuditoriaGratis(opts: {
+  ubicacion: string;
+  content: string;
+  ficha?: string;
+}): string {
   return enlaceLocalseoads({
-    ubicacion: ctx.ubicacion,
-    content: contenidoUtm(ctx, hueco),
+    path: AUDITORIA_GRATIS_PATH,
+    ubicacion: opts.ubicacion,
+    content: opts.content,
+    query: opts.ficha ? { ficha: opts.ficha } : undefined,
   });
 }
 
-/** La landing /auditoria-gratis/ aún no existe en localseoads.com. */
-export function auditoriaLandingActiva(): boolean {
-  return import.meta.env.PUBLIC_AUDIT_LANDING_LIVE === "true";
+/**
+ * CTA comercial. Con la landing activa apunta a la auditoría; con el kill
+ * switch, a la home de LocalSEOAds (sin el parámetro ficha).
+ */
+export function enlaceCtaLocalseoads(opts: {
+  ubicacion: string;
+  content: string;
+  ficha?: string;
+}): string {
+  if (auditoriaLandingActiva()) return enlaceAuditoriaGratis(opts);
+  return enlaceLocalseoads({
+    ubicacion: opts.ubicacion,
+    content: opts.content,
+  });
 }
 
-export function enlaceAuditoriaGratis(negocio: { slug: string; zona?: string }): string {
-  const zona = negocio.zona || UBICACION_POR_DEFECTO;
-  return enlaceLocalseoads({
-    path: `/auditoria-gratis/${zona}/`,
-    ubicacion: zona,
-    content: negocio.slug,
-    query: { ficha: negocio.slug },
+export function enlaceLocalseoadsEnPagina(pathname: string, hueco: HuecoUtm): string {
+  const ctx = contextoDesdeRuta(pathname);
+  return enlaceCtaLocalseoads({
+    ubicacion: ctx.ubicacion,
+    content: contenidoUtm(ctx, hueco),
+    ficha: ctx.fichaSlug,
   });
 }
 

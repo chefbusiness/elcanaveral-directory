@@ -7,9 +7,9 @@ import NegocioCard from "@/components/NegocioCard.astro";
 import GuiaCard from "@/components/GuiaCard.astro";
 import { loadCategorias, loadZonas, getFeaturedNegocios, loadNegocios } from "@/lib/directory";
 import { loadPublishedListicles } from "@/lib/listicles";
-import { UBICACION_POR_DEFECTO, enlaceLocalseoads } from "@/lib/localseoads";
+import { UBICACION_POR_DEFECTO, enlaceCtaLocalseoads } from "@/lib/localseoads";
 
-const hrefLocalSeo = enlaceLocalseoads({ ubicacion: UBICACION_POR_DEFECTO, content: "home" });
+const hrefLocalSeo = enlaceCtaLocalseoads({ ubicacion: UBICACION_POR_DEFECTO, content: "home" });
 
 const categorias = loadCategorias();
 const zonas = loadZonas();
