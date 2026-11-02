@@ -7,6 +7,7 @@ import NegocioCard from "@/components/NegocioCard.astro";
 import GuiaCard from "@/components/GuiaCard.astro";
 import { loadCategorias, loadZonas, getNegociosPatrocinados, loadNegocios } from "@/lib/directory";
 import { loadPublishedListicles } from "@/lib/listicles";
+import { enlacesDePortada } from "@/lib/enlaces-internos.mjs";
 import { UBICACION_POR_DEFECTO, enlaceCtaLocalseoads } from "@/lib/localseoads";
 
 const hrefLocalSeo = enlaceCtaLocalseoads({ ubicacion: UBICACION_POR_DEFECTO, content: "home" });
@@ -15,6 +16,7 @@ const categorias = loadCategorias();
 const zonas = loadZonas();
 const patrocinados = getNegociosPatrocinados(6);
 const totalNegocios = loadNegocios().length;
+const indice = enlacesDePortada();
 // Guías generales (de "y alrededores") primero, para la home
 const guias = loadPublishedListicles()
   .sort((a, b) => (a.zona ? 1 : 0) - (b.zona ? 1 : 0))
@@ -189,6 +191,41 @@ const websiteSchema = {
             </div>
           </a>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Índice rastreable: todos los hubs, todos los listicles, las guías y el barrio. -->
+  <section class="pb-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-brand-900">Índice del barrio</h2>
+      <p class="text-gray-500 mt-1 mb-6">Categorías, rankings «mejores» y guías con fuente.</p>
+      <div class="grid md:grid-cols-3 gap-8 text-sm">
+        <nav aria-label="Categorías">
+          <h3 class="font-semibold text-brand-900 mb-2">Categorías</h3>
+          <ul class="space-y-1.5">
+            {indice.hubs.map((item) => (
+              <li><a href={item.href} class="text-brand-600 hover:text-brand-700">{item.label}</a></li>
+            ))}
+          </ul>
+        </nav>
+        <nav aria-label="Listicles">
+          <h3 class="font-semibold text-brand-900 mb-2">Mejores de cada categoría</h3>
+          <ul class="space-y-1.5">
+            {indice.listicles.map((item) => (
+              <li><a href={item.href} class="text-brand-600 hover:text-brand-700">{item.label}</a></li>
+            ))}
+          </ul>
+        </nav>
+        <nav aria-label="Guías y el barrio">
+          <h3 class="font-semibold text-brand-900 mb-2">Guías y el barrio</h3>
+          <ul class="space-y-1.5">
+            <li><a href={indice.barrio.href} class="text-brand-600 hover:text-brand-700">{indice.barrio.label}</a></li>
+            {indice.guias.map((item) => (
+              <li><a href={item.href} class="text-brand-600 hover:text-brand-700">{item.label}</a></li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </div>
   </section>
