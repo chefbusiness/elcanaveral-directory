@@ -53,6 +53,28 @@ test("el lastmod de una ficha no se sustituye por una fecha git más nueva ni po
   assert.notEqual(lookup("/transporte/"), "2026-11-02");
 });
 
+test("la guía usa la fecha de verificación y no la sustituye por git", () => {
+  const lookup = createLastmodLookup({
+    gitDates: new Map([
+      ["src/pages/guias/[slug].astro", "2020-01-01"],
+      ["src/pages/guias/index.astro", "2020-01-01"],
+      ["src/data/guias.json", "2020-01-01"],
+    ]),
+    negocios: [],
+    overrides: new Set(),
+    guias: [
+      {
+        slug: "mejores-sitios-con-ninos-el-canaveral",
+        actualizado: "2026-11-02",
+        items: [{ verificadoEn: "2026-10-27" }],
+      },
+    ],
+  });
+  assert.equal(lookup("https://www.elcanaveral.info/guias/mejores-sitios-con-ninos-el-canaveral/"), "2026-11-02");
+  assert.equal(lookup("/guias/"), "2026-11-02");
+  assert.notEqual(lookup("/guias/mejores-sitios-con-ninos-el-canaveral/"), "2020-01-01");
+});
+
 test("las rutas estáticas ganan a las dinámicas y el blog no se confunde con una ficha", () => {
   const { exactas, dinamicas } = indexarPaginas([
     "src/pages/blog/[slug].astro",

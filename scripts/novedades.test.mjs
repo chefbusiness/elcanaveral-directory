@@ -8,7 +8,7 @@ import {
   porReverificar,
   textoIcs,
 } from "../src/lib/novedades.mjs";
-import { erroresAgenda, erroresAperturas, indiceDesde } from "./validate-datos.mjs";
+import { erroresAgenda, erroresAperturas, erroresGuias, indiceDesde } from "./validate-datos.mjs";
 
 const indice = indiceDesde({
   negocios: [{ category: "cafeterias", slug: "bunbun-canaveral" }],
@@ -77,6 +77,21 @@ test("la agenda vacía pasa y un evento sin fuente no", () => {
   assert.ok(errores.some((e) => e.includes("sin fuentes")));
   assert.equal(instanteConZona("2026-10-02"), null);
   assert.equal(instanteConZona("2026-10-02T00:00:00+02:00"), "2026-10-02T00:00:00+02:00");
+});
+
+test("una guía sin fuentes o sin verificadoEn no pasa", () => {
+  const item = {
+    id: "playlandia-cafe",
+    nombre: "Playlandia Café",
+    fuentes: [{ nombre: "Maps", url: "https://maps.google.com/?cid=1", tipo: "web" }],
+    verificadoEn: "2026-11-02",
+  };
+  const guia = { slug: "mejores-sitios-con-ninos-el-canaveral", items: [item] };
+  assert.deepEqual(erroresGuias([guia]), []);
+  assert.ok(erroresGuias([{ ...guia, items: [{ ...item, fuentes: [] }] }]).some((e) => e.includes("sin fuentes")));
+  assert.ok(
+    erroresGuias([{ ...guia, items: [{ ...item, verificadoEn: "" }] }]).some((e) => e.includes("verificadoEn")),
+  );
 });
 
 test("reverificar a los 90 días y abiertas recientes", () => {
