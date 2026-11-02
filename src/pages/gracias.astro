@@ -1,0 +1,78 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { loadNegocios } from "@/lib/directory";
+
+const indice: Record<string, string> = {};
+const porSlug = new Map<string, string | null>();
+for (const negocio of loadNegocios()) {
+  const ruta = `/${negocio.category}/${negocio.slug}/`;
+  indice[`${negocio.category}/${negocio.slug}`.toLowerCase()] = ruta;
+  const slug = negocio.slug.toLowerCase();
+  porSlug.set(slug, porSlug.has(slug) ? null : porSlug.get(slug) ?? ruta);
+}
+for (const [slug, ruta] of porSlug) {
+  if (ruta && !indice[slug]) indice[slug] = ruta;
+}
+
+const enlaceLocalSeo =
+  "https://localseoads.com?utm_source=elcanaveral&utm_medium=directorio&utm_campaign=gracias";
+const indiceJson = JSON.stringify(indice).replace(/</g, "\\u003c");
+---
+
+<BaseLayout
+  title="Gracias"
+  description="Hemos recibido tu mensaje. Te responderemos por email."
+  noindex={true}
+>
+  <Header />
+
+  <section class="pt-24 pb-20 px-4 bg-gradient-to-b from-warm-50 to-white">
+    <div class="max-w-xl mx-auto bg-white border border-warm-200 rounded-2xl p-8 sm:p-10 text-center shadow-sm">
+      <div class="text-5xl mb-4 text-brand-600" aria-hidden="true">✓</div>
+      <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 mb-3 tracking-tight">Gracias, ya lo tenemos</h1>
+      <p class="text-lg text-warm-700 leading-relaxed mb-8">
+        Hemos recibido tu mensaje. Lo leemos con calma y te respondemos por email.
+        Si era sobre un negocio del barrio, lo comprobamos antes de tocar la ficha.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a
+          href="/directorio/"
+          class="inline-block bg-brand-900 text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-800 transition-colors"
+        >
+          Volver al directorio
+        </a>
+        <a
+          id="volver-ficha"
+          href="/directorio/"
+          hidden
+          class="inline-block bg-white text-brand-700 font-semibold px-6 py-3 rounded-lg border border-brand-200 hover:bg-brand-50 transition-colors"
+        >
+          Volver a la ficha
+        </a>
+      </div>
+      <p class="text-sm text-warm-600 mt-8">
+        Si quieres que tu negocio se vea más en el barrio, en
+        <a href={enlaceLocalSeo} target="_blank" rel="noopener" class="text-brand-600 font-medium hover:text-brand-700">LocalSEOAds</a>
+        te echamos una mano.
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+
+  <script type="application/json" id="gracias-fichas" set:html={indiceJson} />
+  <script>
+    import { hrefVolverFicha } from "../lib/gracias-ficha.mjs";
+
+    const nodo = document.getElementById("gracias-fichas");
+    const indice = nodo?.textContent ? JSON.parse(nodo.textContent) : {};
+    const href = hrefVolverFicha(window.location.search, document.referrer, window.location.origin, indice);
+    const enlace = document.getElementById("volver-ficha");
+    if (href && enlace instanceof HTMLAnchorElement) {
+      enlace.href = href;
+      enlace.hidden = false;
+    }
+  </script>
+</BaseLayout>

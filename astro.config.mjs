@@ -1,13 +1,22 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
+import { createLastmodLookup } from "./scripts/sitemap-lastmod.mjs";
+
+const lastmodDe = createLastmodLookup();
 
 export default defineConfig({
   site: "https://www.elcanaveral.info",
   integrations: [
     sitemap({
-      // Fuera del sitemap las páginas noindex (legales): no enviar señales contradictorias a Google.
-      filter: (page) => !/\/(aviso-legal|terminos|privacidad|cookies)\/?$/.test(page),
+      // Fuera del sitemap las páginas noindex (legales y la confirmación de formularios).
+      filter: (page) => !/\/(aviso-legal|terminos|privacidad|cookies|gracias)\/?$/.test(page),
+      // lastmod = fecha de la ficha, o el commit del dato o de la página. Nunca «hoy» para todo.
+      serialize(item) {
+        const lastmod = lastmodDe(item.url);
+        if (lastmod) item.lastmod = lastmod;
+        return item;
+      },
       // Hoja de estilo XSL: hace legible el sitemap en el navegador (los buscadores usan el XML crudo).
       xslURL: "/sitemap.xsl",
     }),
