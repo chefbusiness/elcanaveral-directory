@@ -11,6 +11,7 @@ import { UBICACION_POR_DEFECTO, enlaceCtaLocalseoads } from "@/lib/localseoads";
 import ReclamarFicha from "@/components/ReclamarFicha.astro";
 import { ctaPublicable, esPatrocinado, esPlanPago, fotosDeFicha } from "@/lib/planes.mjs";
 import { textoDatosRevisados } from "@/lib/fechas-ficha.mjs";
+import { metaDeFicha, tituloDeFicha } from "@/lib/seo-ficha.mjs";
 import seoOverrides from "@/data/seo-overrides.json";
 
 export function getStaticPaths() {
@@ -51,8 +52,8 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
 ---
 
 <BaseLayout
-  title={fichaSeo.title || `${negocio.name} — ${negocio.zonaName}`}
-  description={fichaSeo.description || negocio.description}
+  title={tituloDeFicha(negocio, fichaSeo.title)}
+  description={metaDeFicha(negocio, fichaSeo.description)}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
