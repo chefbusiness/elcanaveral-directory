@@ -4,6 +4,7 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import ReclamarFicha from "@/components/ReclamarFicha.astro";
 import guiasData from "@/data/guias.json";
+import { guiaEducacionInfantil } from "@/lib/guia-educacion.mjs";
 import { getNegocioBySlug, type Negocio } from "@/lib/directory";
 import { enlaceCtaLocalseoads } from "@/lib/localseoads";
 import { textoFechaLarga } from "@/lib/novedades.mjs";
@@ -25,7 +26,7 @@ interface ItemGuia {
   fichaCategoria?: string;
   fichaSlug?: string;
   fuentes: FuenteGuia[];
-  verificadoEn: string;
+  verificadoEn?: string;
 }
 
 interface Guia {
@@ -34,13 +35,16 @@ interface Guia {
   description: string;
   h1: string;
   intro: string;
-  actualizado: string;
+  actualizado?: string;
   items: ItemGuia[];
   faq: { q: string; a: string }[];
+  grupos?: Record<string, string>;
+  enlaces?: { href: string; label: string }[];
 }
 
 export function getStaticPaths() {
-  return (guiasData as Guia[]).map((guia) => ({
+  const guias = [...(guiasData as Guia[]), guiaEducacionInfantil() as Guia];
+  return guias.map((guia) => ({
     params: { slug: guia.slug },
     props: { guia },
   }));
@@ -51,11 +55,15 @@ const renderizados = guia.items;
 const base = "https://www.elcanaveral.info";
 const pagina = `${base}/guias/${guia.slug}/`;
 const revision = textoFechaLarga(guia.actualizado);
-const hrefLocal = enlaceCtaLocalseoads({ ubicacion: "el-canaveral", content: "guia-ninos" });
+const hrefLocal = enlaceCtaLocalseoads({
+  ubicacion: "el-canaveral",
+  content: guia.slug === "mejores-sitios-con-ninos-el-canaveral" ? "guia-ninos" : guia.slug,
+});
 
 const TITULOS: Record<string, string> = {
   cafeteria: "Cafetería con zona de juegos",
   parque: "Áreas infantiles municipales",
+  ...(guia.grupos || {}),
 };
 
 function fichaDe(item: ItemGuia): Negocio | undefined {
@@ -147,10 +155,22 @@ const faqSchema = {
         <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">{guia.h1}</h1>
         {revision && <p class="text-sm text-gray-500 mt-3">Revisión: {revision}</p>}
         <p class="text-gray-600 mt-4 text-lg leading-relaxed">{guia.intro}</p>
-        <p class="text-sm text-gray-600 mt-3">
-          Escuelas, salud y el resto del día a día siguen en
-          <a href="/con-ninos/" class="text-brand-600 font-medium hover:text-brand-700">El Cañaveral con niños</a>.
-        </p>
+        {guia.slug === "mejores-sitios-con-ninos-el-canaveral" && (
+          <p class="text-sm text-gray-600 mt-3">
+            Escuelas, salud y el resto del día a día siguen en
+            <a href="/con-ninos/" class="text-brand-600 font-medium hover:text-brand-700">El Cañaveral con niños</a>.
+          </p>
+        )}
+        {guia.enlaces && guia.enlaces.length > 0 && (
+          <p class="text-sm text-gray-600 mt-3">
+            {guia.enlaces.map((enlace, i) => (
+              <>
+                {i > 0 && " · "}
+                <a href={enlace.href} class="text-brand-600 font-medium hover:text-brand-700">{enlace.label}</a>
+              </>
+            ))}
+          </p>
+        )}
       </header>
 
       <ol class="space-y-4 list-none">
