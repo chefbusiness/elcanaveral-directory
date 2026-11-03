@@ -60,9 +60,8 @@ Responde SOLO con el JSON array completo, sin markdown ni explicaciones."""
                 "Content-Type": "application/json",
             },
             json={
-                "model": "google/gemini-2.5-flash",
+                "model": "google/gemini-3.5-flash-lite",
                 "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.2,
             },
             timeout=120,
         )

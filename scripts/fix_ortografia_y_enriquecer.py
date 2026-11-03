@@ -69,9 +69,8 @@ Negocios:
                 "Content-Type": "application/json",
             },
             json={
-                "model": "google/gemini-2.5-flash",
+                "model": "google/gemini-3.5-flash-lite",
                 "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.1,
             },
             timeout=120,
         )
