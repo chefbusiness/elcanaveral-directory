@@ -1,5 +1,8 @@
-# 301: la ficha de Av. Miguel Delibes 80 era Burger King, no McDonald's
-/restaurantes/mcdonalds-canaveral   /restaurantes/burger-king-canaveral   301
+# 301: la ficha se publicó como McDonald's y es Burger King.
+# El destino lleva barra final (canonical). Sin ella, /burger-king-canaveral
+# encadena otro 301 y Search Console sigue atribuyendo la consulta a la URL vieja.
+/restaurantes/mcdonalds-canaveral/   /restaurantes/burger-king-canaveral/   301
+/restaurantes/mcdonalds-canaveral    /restaurantes/burger-king-canaveral/   301
 
 # --- 301 URLs heredadas del antiguo WordPress (daban 404 pese a tener rankings/impresiones en GSC, jul-2026) ---
 # Rankeaba #1 en Google pero devolvía 404 → recuperamos el clic a la ficha viva

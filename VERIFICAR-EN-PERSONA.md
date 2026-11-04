@@ -23,7 +23,8 @@ dato de origen sigue mal: conviene confirmar el local real y, si toca, re-enriqu
 > Regla añadida al código: `generateLocalBusinessSchema` (`src/lib/directory.ts`) descarta `geo` fuera de la
 > caja del área cubierta (lat 40.2-40.6 / lng −3.95 a −3.2) y, en esas fichas, deja de fiarse del `placeId`.
 
-> Resuelto el 2026-06-25: la ficha "McDonald's El Cañaveral" (Av. Miguel Delibes 80) era en realidad **Burger King** → renombrada a `burger-king-canaveral` con redirect 301.
+> Resuelto el 2026-06-25: la ficha "McDonald's El Cañaveral" era en realidad **Burger King** → renombrada a `burger-king-canaveral` con redirect 301.
+> Corregido el 2026-11-04: esa ficha no está en la avenida Miguel Delibes 80 (esa dirección es Obrador de Goya). Burger King está en la avenida Miguel Delibes, 55.
 
 ## Aperturas anunciadas (alta 2026-08-21, sin abrir todavía)
 
