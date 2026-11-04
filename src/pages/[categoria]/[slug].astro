@@ -5,7 +5,7 @@ import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import Galeria from "@/components/Galeria.astro";
 import AbiertoAhora from "@/components/AbiertoAhora.astro";
-import { generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona, socialProfileUrl } from "@/lib/directory";
+import { generateNegocioPaths, generateLocalBusinessSchema, getNegocioBySlug, getNegociosByCategoria, getNegociosByZona, socialProfileUrl } from "@/lib/directory";
 import type { Negocio } from "@/lib/directory";
 import { UBICACION_POR_DEFECTO, enlaceCtaLocalseoads } from "@/lib/localseoads";
 import ReclamarFicha from "@/components/ReclamarFicha.astro";
@@ -19,6 +19,9 @@ export function getStaticPaths() {
 }
 
 const negocio = Astro.props as Negocio;
+const otrasFichas = (negocio.otrasFichas || [])
+  .map((slug) => getNegocioBySlug(slug))
+  .filter((otra): otra is Negocio => Boolean(otra));
 const fotos = fotosDeFicha(negocio);
 const ctaNegocio = ctaPublicable(negocio);
 const planPago = esPlanPago(negocio);
@@ -344,6 +347,22 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
                   <div class="flex flex-wrap items-center gap-2">
                     <span class="text-sm whitespace-pre-line">{negocio.horario}</span>
                     <AbiertoAhora negocio={negocio} />
+                  </div>
+                </div>
+              )}
+              {otrasFichas.length > 0 && (
+                <div class="flex items-start gap-3">
+                  <span class="text-gray-400 text-sm mt-0.5 shrink-0">&#128279;</span>
+                  <div class="text-sm">
+                    <p class="text-gray-700">{otrasFichas.length === 1 ? "Otra tienda en el directorio" : "Otras tiendas en el directorio"}</p>
+                    <ul class="mt-1 space-y-1">
+                      {otrasFichas.map((otra) => (
+                        <li>
+                          <a href={`/${otra.category}/${otra.slug}/`} class="text-brand-600 hover:text-brand-700 font-medium">{otra.name}</a>
+                          {otra.address && <span class="block text-xs text-gray-500">{otra.address}</span>}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               )}

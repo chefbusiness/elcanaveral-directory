@@ -70,6 +70,8 @@ export interface Negocio {
   // Fuentes enlazables de una ficha escrita a mano (no del scrape). Cada una
   // lleva nombre, url http(s) y tipo, el mismo contrato que aperturas.json.
   fuentes?: { nombre: string; url: string; tipo: string }[];
+  // Otras fichas de la misma cadena o marca, por slug. La ficha las enlaza.
+  otrasFichas?: string[];
   // Catch-all
   [key: string]:
     | string
