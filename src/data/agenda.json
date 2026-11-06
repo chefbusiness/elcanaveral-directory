@@ -1,6 +1,53 @@
 {
   "items": [
     {
+      "id": "la-muestra-canaveral-8-nov-2026",
+      "nombre": "La Muestra El Cañaveral – Vicálvaro (noviembre 2026)",
+      "estado": "confirmado",
+      "inicio": "2026-11-08T10:00:00+01:00",
+      "fin": "2026-11-08T16:00:00+01:00",
+      "sinHora": false,
+      "lugar": {
+        "nombre": "Avenida Provisional Gran Vía de Vicálvaro",
+        "direccion": "Avenida Provisional Gran Vía de Vicálvaro, El Cañaveral, Vicálvaro, Madrid",
+        "zona": "el-canaveral"
+      },
+      "organizador": {
+        "nombre": "Gescomer / La Muestra (con JMD Vicálvaro)",
+        "url": "https://lamuestra.es/"
+      },
+      "gratis": true,
+      "precio": null,
+      "entradasUrl": null,
+      "categoria": "comercio",
+      "resumen": "Mercado al aire libre de La Muestra en El Cañaveral (Vicálvaro): domingo 8 de noviembre de 2026, de 10:00 a 16:00, en la Avenida Provisional Gran Vía de Vicálvaro. Horario según lamuestra.es (no el 10:00–18:00 que publican algunos agregadores). Según la web oficial, la cita reúne productores, moda, artesanía y actividades infantiles.",
+      "fichasRelacionadas": [],
+      "fiestaSlug": null,
+      "fuentes": [
+        {
+          "nombre": "La Muestra (lamuestra.es) — próxima cita Cañaveral 8 nov 2026, 10:00–16:00",
+          "url": "https://lamuestra.es/",
+          "tipo": "web"
+        },
+        {
+          "nombre": "AAVV El Cañaveral — Instagram (anuncio La Muestra)",
+          "url": "https://www.instagram.com/p/DfW79RvRMnH/",
+          "tipo": "red-social"
+        },
+        {
+          "nombre": "Gescomer — La Muestra en El Cañaveral (JMD Vicálvaro; @mercado_lamuestra)",
+          "url": "https://gescomer.org/la-muestra-regresa-al-canaveral-en-septiembre-con-una-nueva-edicion-de-mercado/",
+          "tipo": "noticia"
+        },
+        {
+          "nombre": "Instagram @mercado_lamuestra",
+          "url": "https://www.instagram.com/mercado_lamuestra/",
+          "tipo": "red-social"
+        }
+      ],
+      "verificadoEn": "2026-11-06"
+    },
+    {
       "id": "tapaveral-2026",
       "nombre": "Tapaveral 2026 — V Feria de la Tapa",
       "estado": "confirmado",
