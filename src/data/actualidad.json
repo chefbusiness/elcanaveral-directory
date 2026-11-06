@@ -1,6 +1,77 @@
 {
   "posts": [
     {
+      "slug": "guppy-carsharing-el-canaveral",
+      "title": "Guppy ya opera en El Cañaveral: carsharing eléctrico con app",
+      "date": "2026-11-05",
+      "updated": "2026-11-06",
+      "excerpt": "La AAVV El Cañaveral anunció que Guppy, el carsharing de coches eléctricos, ya está disponible en el barrio. Los coches se ven y se reservan en la app; el alquiler se finaliza dentro de la zona habilitada.",
+      "tags": [
+        "Movilidad",
+        "Servicios",
+        "Transporte"
+      ],
+      "lead": "Nueva opción de movilidad en el barrio: la Asociación de Vecinos El Cañaveral publicó el 5 de noviembre de 2026 que Guppy ha incorporado su servicio de carsharing de coches eléctricos en El Cañaveral. Se usa con la app (descargar, registrarse, ver el mapa, reservar y finalizar dentro de la zona habilitada). En los comentarios de esa publicación, varios vecinos preguntaban dónde están aparcados los coches.",
+      "datosClave": [
+        "Fuente local: AAVV El Cañaveral (@avelcanaveral) en Instagram, 5 de noviembre de 2026.",
+        "Servicio: carsharing freefloating de vehículos eléctricos (guppy.es).",
+        "Dónde están los coches: en el mapa de la app; no hay una dirección fija publicada para El Cañaveral en guppy.es.",
+        "Dónde iniciar/finalizar: dentro de la zona guppy (área iluminada del mapa) o en un punto guppy.",
+        "Tarifa base en marcha (guppy.es/tarifas): desde 1 €/km los primeros 10 km y 0,30 €/km el resto; stand-by 0,05 €/minuto; tope diario desde 60 €/día. Revisa siempre el precio del vehículo en la app."
+      ],
+      "secciones": [
+        {
+          "h2": "Qué ha anunciado la AAVV",
+          "parrafos": [
+            "La Asociación de Vecinos El Cañaveral informó en Instagram de que Guppy (@guppy.es) ya está operativo en el barrio. El mensaje describe el flujo habitual del servicio: descargar la app, registrarse, consultar el mapa, reservar un coche y finalizar el alquiler dentro de la zona habilitada.",
+            "Varios vecinos preguntaron en los comentarios dónde aparcan los vehículos. Ni la publicación de la AAVV ni la web oficial de Guppy publican una calle concreta en El Cañaveral: la ubicación de cada coche disponible se consulta en el mapa de la app en tiempo real."
+          ]
+        },
+        {
+          "h2": "Cómo funciona la zona guppy (según guppy.es)",
+          "parrafos": [
+            "En Madrid, Guppy ofrece carsharing freefloating. La zona guppy es el área iluminada del mapa de la app: ahí se puede iniciar y finalizar el alquiler. Según el blog y la página de Madrid de Guppy, dentro de esa zona se puede estacionar en plazas legales de zona SER/azul (sin ticket, por ser flota eléctrica del servicio) y en zona blanca; también existen puntos guppy con plazas exclusivas y puntos de carsharing compartidos.",
+            "No se puede finalizar el alquiler fuera de la zona o de un punto guppy, ni en parkings privados, plazas reservadas para personas con discapacidad, plazas con límite horario ni en puntos de recarga si no se enchufa el vehículo. La web de Madrid de Guppy describe la zona como la mayor parte del espacio urbano de Madrid (y áreas como Nuevos Ministerios, Chamartín o IFEMA); la llegada concreta a El Cañaveral la confirma la AAVV, y el mapa de la app es la referencia actualizada de si un punto concreto está iluminado."
+          ]
+        },
+        {
+          "h2": "Precios (fuente: guppy.es/tarifas)",
+          "parrafos": [
+            "Guppy tarifica por kilómetros, no por minutos. En la página de tarifas, la tarifa en marcha aparece desde 1 €/km en los primeros 10 km y 0,30 €/km en el resto; la tarifa stand-by (coche parado o aparcado con el alquiler activo) es 0,05 €/minuto, con 20 minutos de reserva gratuita antes de iniciar; el importe máximo diario parte desde 60 €/día. Hay Bonos Ahorro y otras promociones que rebajan esos importes.",
+            "La propia Guppy pide consultar en la app la pantalla de precios del vehículo antes de confirmar el alquiler: el precio aplicable puede variar según el coche y las promociones activas."
+          ]
+        },
+        {
+          "h2": "Ficha en el directorio",
+          "parrafos": [
+            "Hemos añadido una ficha de Guppy en Automoción para que los vecinos encuentren el servicio junto al resto de movilidad del barrio: /automocion/guppy-canaveral/. La web oficial es guppy.es (página de Madrid)."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "AAVV El Cañaveral (Instagram)",
+          "url": "https://www.instagram.com/p/DfXG4VMEXLG/"
+        },
+        {
+          "name": "Guppy — Madrid",
+          "url": "https://www.guppy.es/madrid/"
+        },
+        {
+          "name": "Guppy — Cómo funciona la zona guppy en Madrid",
+          "url": "https://www.guppy.es/como-funciona-la-zona-guppy-en-madrid/"
+        },
+        {
+          "name": "Guppy — Tarifas",
+          "url": "https://www.guppy.es/tarifas/"
+        },
+        {
+          "name": "Guppy — Carsharing Madrid",
+          "url": "https://www.guppy.es/carsharing/madrid/"
+        }
+      ]
+    },
+    {
       "slug": "canaveral-11-45-viviendas-publicas-alquiler-asequible",
       "title": "Cañaveral 11: 45 nuevas viviendas públicas de alquiler asequible y sorteo a principios de 2027",
       "date": "2026-09-23",

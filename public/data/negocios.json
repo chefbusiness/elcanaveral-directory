@@ -21574,8 +21574,16 @@
     "lat": 40.4007395,
     "lng": -3.5582987,
     "googleMapsUrl": "https://maps.google.com/?cid=17794954199831326760",
-    "redesSociales": { "instagram": "https://www.instagram.com/playlandiacafe/" },
-    "tags": ["zona-infantil", "cumpleanos", "brunch", "familias", "nueva-apertura"],
+    "redesSociales": {
+      "instagram": "https://www.instagram.com/playlandiacafe/"
+    },
+    "tags": [
+      "zona-infantil",
+      "cumpleanos",
+      "brunch",
+      "familias",
+      "nueva-apertura"
+    ],
     "featured": false,
     "ninos": true,
     "servicios": [
@@ -21593,10 +21601,61 @@
       "Aforo máximo de 55 personas en los packs"
     ],
     "fuentes": [
-      { "nombre": "Perfil de Google Maps (Cafetería Playlandia)", "url": "https://maps.google.com/?cid=17794954199831326760", "tipo": "web" },
-      { "nombre": "Instagram @playlandiacafe", "url": "https://www.instagram.com/playlandiacafe/", "tipo": "red-social" },
-      { "nombre": "Registro Mercantil: Playlandia Family Group SL (datoscif)", "url": "https://www.datoscif.es/empresa/playlandia-family-group-sl", "tipo": "web" }
+      {
+        "nombre": "Perfil de Google Maps (Cafetería Playlandia)",
+        "url": "https://maps.google.com/?cid=17794954199831326760",
+        "tipo": "web"
+      },
+      {
+        "nombre": "Instagram @playlandiacafe",
+        "url": "https://www.instagram.com/playlandiacafe/",
+        "tipo": "red-social"
+      },
+      {
+        "nombre": "Registro Mercantil: Playlandia Family Group SL (datoscif)",
+        "url": "https://www.datoscif.es/empresa/playlandia-family-group-sl",
+        "tipo": "web"
+      }
     ],
     "verificadoEn": "2026-11-02"
+  },
+  {
+    "slug": "guppy-canaveral",
+    "name": "Guppy",
+    "description": "Carsharing de coches eléctricos freefloating en Madrid. Según la AAVV El Cañaveral, el servicio ya está disponible en el barrio: los coches se localizan y se reservan en la app, y el alquiler se inicia y finaliza dentro de la zona guppy (área iluminada del mapa).",
+    "category": "automocion",
+    "categoryName": "Automoción",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "El Cañaveral, Vicálvaro, Madrid (ubicación de cada coche en el mapa de la app)",
+    "tags": [
+      "carsharing",
+      "electrico",
+      "movilidad",
+      "app"
+    ],
+    "featured": false,
+    "image": null,
+    "images": null,
+    "servicios": [
+      "Carsharing freefloating de vehículos 100% eléctricos",
+      "Localización y reserva de coches en la app",
+      "Inicio y fin del alquiler dentro de la zona guppy (área iluminada)",
+      "Aparcamiento en zona SER/azul sin ticket dentro de la zona guppy (según guppy.es)",
+      "Puntos guppy con plazas exclusivas en Madrid (listado en la web y en la app)",
+      "Tarifa por kilómetros (no por minutos); stand-by mientras el coche está parado con alquiler activo"
+    ],
+    "destacados": [
+      "Disponible en El Cañaveral según anuncio de la AAVV El Cañaveral (5 nov 2026)",
+      "La ubicación exacta de cada coche se consulta en el mapa de la app",
+      "Flota eléctrica; en Madrid el servicio es freefloating",
+      "Consulta siempre la pantalla de precios del vehículo en la app antes de confirmar"
+    ],
+    "horario": "Según disponibilidad en la app (24 h)",
+    "website": "https://www.guppy.es/madrid/",
+    "redesSociales": {
+      "instagram": "https://www.instagram.com/guppy.es/"
+    },
+    "googleCategory": "Servicio de alquiler de coches"
   }
 ]
