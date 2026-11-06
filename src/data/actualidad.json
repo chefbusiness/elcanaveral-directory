@@ -30,7 +30,7 @@
         {
           "h2": "Cómo funciona la zona guppy (según guppy.es)",
           "parrafos": [
-            "En Madrid, Guppy ofrece carsharing freefloating. La zona guppy es el área iluminada del mapa de la app: ahí se puede iniciar y finalizar el alquiler. Según el blog y la página de Madrid de Guppy, dentro de esa zona se puede estacionar en plazas legales de zona SER/azul (sin ticket, por ser flota eléctrica del servicio) y en zona blanca; también existen puntos guppy con plazas exclusivas y puntos de carsharing compartidos.",
+            "En Madrid, Guppy ofrece carsharing freefloating. La zona guppy es el área iluminada del mapa de la app: ahí se puede iniciar y finalizar el alquiler. Según el blog y la página de carsharing en Madrid de Guppy, dentro de esa zona se puede estacionar en plazas legales de zona SER/azul (sin ticket, por ser flota eléctrica del servicio) y en zona blanca; también existen puntos guppy con plazas exclusivas y puntos de carsharing compartidos.",
             "No se puede finalizar el alquiler fuera de la zona o de un punto guppy, ni en parkings privados, plazas reservadas para personas con discapacidad, plazas con límite horario ni en puntos de recarga si no se enchufa el vehículo. La web de Madrid de Guppy describe la zona como la mayor parte del espacio urbano de Madrid (y áreas como Nuevos Ministerios, Chamartín o IFEMA); la llegada concreta a El Cañaveral la confirma la AAVV, y el mapa de la app es la referencia actualizada de si un punto concreto está iluminado."
           ]
         },
@@ -44,18 +44,18 @@
         {
           "h2": "Ficha en el directorio",
           "parrafos": [
-            "Hemos añadido una ficha de Guppy en Automoción para que los vecinos encuentren el servicio junto al resto de movilidad del barrio: /automocion/guppy-canaveral/. La web oficial es guppy.es (página de Madrid)."
+            "Hemos añadido una ficha de Guppy en Automoción para que los vecinos encuentren el servicio junto al resto de movilidad del barrio: /automocion/guppy-canaveral/. La web oficial de Madrid es https://www.guppy.es/carsharing/madrid/ (URL canónica tras redirección desde /madrid/)."
           ]
         }
       ],
       "fuentes": [
         {
-          "name": "AAVV El Cañaveral (Instagram)",
+          "name": "AAVV El Cañaveral (Instagram, 5 nov 2026)",
           "url": "https://www.instagram.com/p/DfXG4VMEXLG/"
         },
         {
-          "name": "Guppy — Madrid",
-          "url": "https://www.guppy.es/madrid/"
+          "name": "Guppy — Carsharing Madrid (canónica)",
+          "url": "https://www.guppy.es/carsharing/madrid/"
         },
         {
           "name": "Guppy — Cómo funciona la zona guppy en Madrid",
@@ -64,10 +64,6 @@
         {
           "name": "Guppy — Tarifas",
           "url": "https://www.guppy.es/tarifas/"
-        },
-        {
-          "name": "Guppy — Carsharing Madrid",
-          "url": "https://www.guppy.es/carsharing/madrid/"
         }
       ]
     },

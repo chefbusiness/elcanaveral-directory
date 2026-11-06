@@ -21652,10 +21652,32 @@
       "Consulta siempre la pantalla de precios del vehículo en la app antes de confirmar"
     ],
     "horario": "Según disponibilidad en la app (24 h)",
-    "website": "https://www.guppy.es/madrid/",
+    "website": "https://www.guppy.es/carsharing/madrid/",
     "redesSociales": {
       "instagram": "https://www.instagram.com/guppy.es/"
     },
-    "googleCategory": "Servicio de alquiler de coches"
+    "googleCategory": "Servicio de alquiler de coches",
+    "fuentes": [
+      {
+        "nombre": "AAVV El Cañaveral — Instagram (5 nov 2026): Guppy en el barrio",
+        "url": "https://www.instagram.com/p/DfXG4VMEXLG/",
+        "tipo": "red-social"
+      },
+      {
+        "nombre": "Guppy — Carsharing Madrid (web oficial, consultada 6 nov 2026)",
+        "url": "https://www.guppy.es/carsharing/madrid/",
+        "tipo": "web"
+      },
+      {
+        "nombre": "Guppy — Cómo funciona la zona guppy en Madrid (blog, 24 mar 2026; consultada 6 nov 2026)",
+        "url": "https://www.guppy.es/como-funciona-la-zona-guppy-en-madrid/",
+        "tipo": "web"
+      },
+      {
+        "nombre": "Guppy — Tarifas (web oficial, consultada 6 nov 2026)",
+        "url": "https://www.guppy.es/tarifas/",
+        "tipo": "web"
+      }
+    ]
   }
 ]
