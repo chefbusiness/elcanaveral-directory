@@ -1,6 +1,79 @@
 {
   "posts": [
     {
+      "slug": "la-muestra-canaveral-noviembre-2026",
+      "title": "La Muestra vuelve a El Cañaveral el domingo 8 de noviembre (10:00–16:00)",
+      "date": "2026-11-06",
+      "updated": "2026-11-06",
+      "excerpt": "El mercadillo de La Muestra, de Gescomer con el Ayuntamiento de Madrid (JMD Vicálvaro), regresa el domingo 8 de noviembre de 2026 a la Avenida Provisional Gran Vía de Vicálvaro. Horario oficial: 10:00 a 16:00, según lamuestra.es.",
+      "tags": [
+        "Eventos",
+        "Comercio",
+        "Ocio"
+      ],
+      "lead": "Plan de domingo en el barrio: La Muestra El Cañaveral – Vicálvaro celebra su próxima edición el domingo 8 de noviembre de 2026, de 10:00 a 16:00, en la Avenida Provisional Gran Vía de Vicálvaro. Lo anuncia la web oficial lamuestra.es y lo ha difundido también la Asociación de Vecinos El Cañaveral. El proyecto lo impulsa Gescomer en colaboración con el Ayuntamiento de Madrid a través de la Junta Municipal de Distrito de Vicálvaro.",
+      "datosClave": [
+        "Fecha: domingo 8 de noviembre de 2026.",
+        "Horario oficial (lamuestra.es): 10:00 a 16:00. Algunos agregadores publican 10:00–18:00; aquí priorizamos la web oficial.",
+        "Lugar: Avenida Provisional Gran Vía de Vicálvaro (El Cañaveral, Vicálvaro).",
+        "Según lamuestra.es, la cita del 8 incluye productores, moda, artesanía y actividades infantiles.",
+        "Organización: Gescomer / La Muestra, con la JMD de Vicálvaro (Ayuntamiento de Madrid).",
+        "Redes del mercado: Instagram @mercado_lamuestra.",
+        "Agenda del barrio: /agenda/la-muestra-canaveral-8-nov-2026/."
+      ],
+      "secciones": [
+        {
+          "h2": "Cuándo y dónde",
+          "parrafos": [
+            "La web de La Muestra (lamuestra.es) sitúa la próxima edición en El Cañaveral el domingo 8 de noviembre, de 10:00 a 16:00, en la Avenida Provisional Gran Vía de Vicálvaro. Es el horario que usamos aquí. Sitios como Cabila listan el mismo día con cierre a las 18:00 y hablan de «cada segundo domingo»; ante la discrepancia, nos quedamos con lamuestra.es.",
+            "La Asociación de Vecinos El Cañaveral también ha compartido la cita en Instagram, lo que refuerza que el aviso ha llegado a vecinos del barrio."
+          ]
+        },
+        {
+          "h2": "Qué encontrarás",
+          "parrafos": [
+            "Para el 8 de noviembre, lamuestra.es resume la muestra de Cañaveral como mercado de productores, moda, artesanía y actividades infantiles. En la misma web, La Muestra presenta cuatro bloques habituales: productores (pan, queso, embutidos, conservas, miel, frutas y verduras), artesanía (hogar, joyería y decoración), moda (diseño independiente, vintage y tendencias) y «planes y peques» (talleres, cuentacuentos y música para toda la familia).",
+            "Coberturas de ediciones anteriores en el barrio (por ejemplo, vivirEdiciones sobre la cita de septiembre) describen sectores de música en directo, alimentación, bisutería, artesanía, hogar y moda, además de actividades infantiles. La programación concreta de cada domingo puede variar; conviene mirar @mercado_lamuestra el mismo fin de semana."
+          ]
+        },
+        {
+          "h2": "Quién lo organiza",
+          "parrafos": [
+            "Gescomer presenta La Muestra como su proyecto de mercado al aire libre. En la nota sobre la edición de septiembre en El Cañaveral, Gescomer indica que la cita del barrio está promovida por la Junta Municipal de Distrito de Vicálvaro y remite a las redes oficiales del mercado, en concreto a Instagram @mercado_lamuestra.",
+            "Hemos añadido el evento también a la <a href=\"/agenda/\">agenda del barrio</a> para que quede con fecha, hora y lugar consultables."
+          ]
+        },
+        {
+          "h2": "¿Y el 13 de diciembre?",
+          "parrafos": [
+            "Agregadores como Cabila y mercadillos.org listan otra fecha en El Cañaveral el domingo 13 de diciembre de 2026 (con horario 10:00–18:00). En el momento de redactar esto, lamuestra.es solo anuncia de forma explícita la cita del 8 de noviembre en Cañaveral, además de otras muestras en Montecarmelo y Majadahonda. Hasta que la web oficial o Gescomer confirmen diciembre para El Cañaveral, no damos esa fecha por cerrada aquí."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "La Muestra (lamuestra.es)",
+          "url": "https://lamuestra.es/"
+        },
+        {
+          "name": "AAVV El Cañaveral (Instagram)",
+          "url": "https://www.instagram.com/p/DfW79RvRMnH/"
+        },
+        {
+          "name": "Gescomer — La Muestra en El Cañaveral",
+          "url": "https://gescomer.org/la-muestra-regresa-al-canaveral-en-septiembre-con-una-nueva-edicion-de-mercado/"
+        },
+        {
+          "name": "Instagram @mercado_lamuestra",
+          "url": "https://www.instagram.com/mercado_lamuestra/"
+        },
+        {
+          "name": "vivirEdiciones — La Muestra en El Cañaveral (edición septiembre; sectores)",
+          "url": "https://vivirediciones.es/la-muestra-llega-el-13-de-septiembre-a-el-canaveral-vicalvaro/"
+        }
+      ]
+    },
+    {
       "slug": "guppy-carsharing-el-canaveral",
       "title": "Guppy ya opera en El Cañaveral: carsharing eléctrico con app",
       "date": "2026-11-05",
