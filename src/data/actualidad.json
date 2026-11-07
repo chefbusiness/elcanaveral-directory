@@ -4,8 +4,17 @@
       "slug": "la-muestra-canaveral-noviembre-2026",
       "title": "La Muestra vuelve a El Cañaveral el domingo 8 de noviembre (10:00–16:00)",
       "date": "2026-11-06",
-      "updated": "2026-11-06",
+      "updated": "2026-11-07",
       "excerpt": "El mercadillo de La Muestra, de Gescomer con el Ayuntamiento de Madrid (JMD Vicálvaro), regresa el domingo 8 de noviembre de 2026 a la Avenida Provisional Gran Vía de Vicálvaro. Horario oficial: 10:00 a 16:00, según lamuestra.es.",
+      "image": {
+        "src": "/images/actualidad/la-muestra-canaveral-noviembre-2026.webp",
+        "alt": "Ilustración de un mercadillo de domingo en una avenida de un barrio residencial, con puestos y familias paseando.",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+          "note": "Ilustración generada con IA para elcanaveral.info. No es una fotografía del evento."
+        }
+      },
       "tags": [
         "Eventos",
         "Comercio",

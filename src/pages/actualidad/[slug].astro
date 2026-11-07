@@ -14,6 +14,15 @@ export function getStaticPaths() {
 const { post } = Astro.props as any;
 const fmt = (iso: string) => new Date(iso).toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" });
 const base = "https://www.elcanaveral.info";
+const httpUrl = (value: unknown): string | null =>
+  typeof value === "string" && /^https?:\/\//.test(value) ? value : null;
+// Opcional. Las noticias anteriores (Guppy, vivienda, etc.) no traen imagen:
+// sin este objeto la página sigue siendo solo texto y el og:image es el del sitio.
+const imagen =
+  post.image && typeof post.image.src === "string" && post.image.src.startsWith("/")
+    ? post.image
+    : null;
+const credito = imagen?.credit && typeof imagen.credit === "object" ? imagen.credit : null;
 // Misma entidad que la Organization de la home (src/pages/index.astro): sin el
 // @id, cada noticia declaraba una Organization distinta del mismo editor y un
 // LLM veia dos marcas donde hay una. Se mantienen name+logo inline porque el
@@ -27,6 +36,28 @@ const publisher = {
   logo: { "@type": "ImageObject", url: `${base}/favicon-512.png`, width: 512, height: 512 },
 };
 
+const articleImage = imagen
+  ? {
+      "@type": "ImageObject",
+      url: `${base}${imagen.src}`,
+      ...(typeof imagen.width === "number" ? { width: imagen.width } : {}),
+      ...(typeof imagen.height === "number" ? { height: imagen.height } : {}),
+      ...(typeof imagen.alt === "string" && imagen.alt ? { caption: imagen.alt } : {}),
+      ...(credito?.author
+        ? {
+            creditText: [credito.author, credito.source, credito.licence].filter(Boolean).join(", "),
+            creator: {
+              "@type": "Person",
+              name: credito.author,
+              ...(httpUrl(credito.authorUrl) ? { url: credito.authorUrl } : {}),
+            },
+          }
+        : typeof credito?.note === "string" && credito.note
+          ? { creditText: credito.note }
+          : {}),
+      ...(httpUrl(credito?.licenceUrl) ? { license: credito.licenceUrl } : {}),
+    }
+  : null;
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
@@ -34,6 +65,7 @@ const articleSchema = {
   description: post.excerpt,
   datePublished: post.date,
   dateModified: post.updated || post.date,
+  ...(articleImage ? { image: articleImage } : {}),
   author: publisher,
   publisher,
   mainEntityOfPage: `${base}/actualidad/${post.slug}/`,
@@ -49,7 +81,7 @@ const breadcrumbSchema = {
 };
 ---
 
-<BaseLayout title={post.title} description={post.excerpt}>
+<BaseLayout title={post.title} description={post.excerpt} image={imagen?.src}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
@@ -75,6 +107,45 @@ const breadcrumbSchema = {
           ))}
         </div>
         <h1 class="text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">{post.title}</h1>
+        {imagen && (
+          <figure class="mt-6">
+            <img
+              src={imagen.src}
+              alt={typeof imagen.alt === "string" ? imagen.alt : ""}
+              width={imagen.width}
+              height={imagen.height}
+              class="w-full h-auto rounded-xl border border-warm-200"
+              fetchpriority="high"
+            />
+            {credito && (credito.author || credito.source || credito.licence || credito.note) && (
+              <figcaption class="mt-2 text-xs text-gray-500 leading-relaxed">
+                {(credito.author || credito.source || credito.licence) ? (
+                  <>
+                    Foto: {httpUrl(credito.authorUrl) ? (
+                      <a href={credito.authorUrl} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{credito.author}</a>
+                    ) : (
+                      credito.author
+                    )}{credito.source && (
+                      <>, {httpUrl(credito.sourceUrl) ? (
+                        <a href={credito.sourceUrl} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{credito.source}</a>
+                      ) : (
+                        credito.source
+                      )}</>
+                    )}{credito.licence && (
+                      <>, licencia {httpUrl(credito.licenceUrl) ? (
+                        <a href={credito.licenceUrl} target="_blank" rel="license noopener" class="text-brand-600 hover:text-brand-700">{credito.licence}</a>
+                      ) : (
+                        credito.licence
+                      )}</>
+                    )}.{credito.note && <span> {credito.note}</span>}
+                  </>
+                ) : (
+                  credito.note
+                )}
+              </figcaption>
+            )}
+          </figure>
+        )}
         <p class="text-gray-600 leading-relaxed mt-4 text-lg">{post.lead}</p>
       </header>
 
