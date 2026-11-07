@@ -4,8 +4,23 @@
       "slug": "la-muestra-canaveral-noviembre-2026",
       "title": "La Muestra vuelve a El Cañaveral el domingo 8 de noviembre (10:00–16:00)",
       "date": "2026-11-06",
-      "updated": "2026-11-06",
+      "updated": "2026-11-07",
       "excerpt": "El mercadillo de La Muestra, de Gescomer con el Ayuntamiento de Madrid (JMD Vicálvaro), regresa el domingo 8 de noviembre de 2026 a la Avenida Provisional Gran Vía de Vicálvaro. Horario oficial: 10:00 a 16:00, según lamuestra.es.",
+      "image": {
+        "src": "/images/actualidad/la-muestra-canaveral-noviembre-2026.webp",
+        "alt": "Puestos de ropa al aire libre en una plaza, con toldos, percheros y sillas entre las paradas.",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+          "author": "Acabashi",
+          "authorUrl": "https://commons.wikimedia.org/wiki/User:Acabashi",
+          "source": "Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Romford_outdoor_market_at_Market_Place_Romford_London_01.jpg",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "note": "Mercado al aire libre en Romford (Londres), fotografiado el 1 de agosto de 2025. No es una fotografía de La Muestra en El Cañaveral. Adaptación: anchura reducida a 1200 px y conversión a WebP."
+        }
+      },
       "tags": [
         "Eventos",
         "Comercio",
