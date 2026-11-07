@@ -52,7 +52,9 @@ const articleImage = imagen
               ...(httpUrl(credito.authorUrl) ? { url: credito.authorUrl } : {}),
             },
           }
-        : {}),
+        : typeof credito?.note === "string" && credito.note
+          ? { creditText: credito.note }
+          : {}),
       ...(httpUrl(credito?.licenceUrl) ? { license: credito.licenceUrl } : {}),
     }
   : null;
@@ -115,26 +117,31 @@ const breadcrumbSchema = {
               class="w-full h-auto rounded-xl border border-warm-200"
               fetchpriority="high"
             />
-            {credito && (credito.author || credito.source || credito.licence) && (
+            {credito && (credito.author || credito.source || credito.licence || credito.note) && (
               <figcaption class="mt-2 text-xs text-gray-500 leading-relaxed">
-                Foto: {httpUrl(credito.authorUrl) ? (
-                  <a href={credito.authorUrl} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{credito.author}</a>
+                {(credito.author || credito.source || credito.licence) ? (
+                  <>
+                    Foto: {httpUrl(credito.authorUrl) ? (
+                      <a href={credito.authorUrl} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{credito.author}</a>
+                    ) : (
+                      credito.author
+                    )}{credito.source && (
+                      <>, {httpUrl(credito.sourceUrl) ? (
+                        <a href={credito.sourceUrl} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{credito.source}</a>
+                      ) : (
+                        credito.source
+                      )}</>
+                    )}{credito.licence && (
+                      <>, licencia {httpUrl(credito.licenceUrl) ? (
+                        <a href={credito.licenceUrl} target="_blank" rel="license noopener" class="text-brand-600 hover:text-brand-700">{credito.licence}</a>
+                      ) : (
+                        credito.licence
+                      )}</>
+                    )}.{credito.note && <span> {credito.note}</span>}
+                  </>
                 ) : (
-                  credito.author
-                )}{credito.source && (
-                  <>, {httpUrl(credito.sourceUrl) ? (
-                    <a href={credito.sourceUrl} target="_blank" rel="noopener" class="text-brand-600 hover:text-brand-700">{credito.source}</a>
-                  ) : (
-                    credito.source
-                  )}</>
-                )}{credito.licence && (
-                  <>, licencia {httpUrl(credito.licenceUrl) ? (
-                    <a href={credito.licenceUrl} target="_blank" rel="license noopener" class="text-brand-600 hover:text-brand-700">{credito.licence}</a>
-                  ) : (
-                    credito.licence
-                  )}</>
-                )}.
-                {credito.note && <span> {credito.note}</span>}
+                  credito.note
+                )}
               </figcaption>
             )}
           </figure>
