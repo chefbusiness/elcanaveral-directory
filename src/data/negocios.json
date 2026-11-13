@@ -3970,7 +3970,7 @@
   },
   {
     "slug": "cerveceria-la-galerna",
-    "name": "Cervecería La Galerna",
+    "name": "Restaurante Galerna",
     "description": "Una auténtica cervecería de barrio ubicada en la Avenida Miguel Delibes, perfecta para disfrutar de una amplia selección de cervezas artesanales.",
     "category": "restaurantes",
     "categoryName": "Restaurantes",
@@ -4015,6 +4015,7 @@
     "rating": 4.2,
     "numReviews": 938,
     "phone": "+34 916 00 45 89",
+    "website": "https://restaurantegalerna.com",
     "placeId": "ChIJ03tn2247Qg0R9dGfbfzMKWg",
     "googleCategory": "Restaurante",
     "lat": 40.4065364,
@@ -6334,7 +6335,7 @@
       "Ambiente acogedor y relajante"
     ],
     "horario": "L-X 10:00-19:00, J-V 10:00-20:00, S-D Cerrado",
-    "address": "Calle de San Cipriano, 45, 28032 Madrid",
+    "address": "Calle de Villablanca, 13, 28032 Madrid",
     "image": "/images/negocios/laura-vivar-estilistas-3.webp",
     "images": [
       "/images/negocios/laura-vivar-estilistas-3.webp",

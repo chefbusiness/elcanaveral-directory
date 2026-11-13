@@ -1,6 +1,196 @@
 {
   "posts": [
     {
+      "slug": "ii-paella-comunitaria-canaveral-2026",
+      "title": "II Paella Comunitaria de El Cañaveral: sábado 21 de noviembre, de 10:00 a 16:30",
+      "date": "2026-11-13",
+      "updated": "2026-11-13",
+      "excerpt": "La AV El Cañaveral convoca la II Paella Comunitaria el sábado 21 de noviembre de 2026, de 10:00 a 16:30, en la avenida de Miguel Delibes esquina con la calle de la Ilusión. A las 12:30 el promotor presenta el proyecto del Centro Comercial OMO.",
+      "image": {
+        "src": "/images/actualidad/ii-paella-comunitaria-canaveral-2026.webp",
+        "alt": "Ilustración de una paella comunitaria en una plaza de barrio, con vecinos sirviendo el arroz, familias sentadas a la mesa y niños jugando entre banderines.",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+          "note": "Ilustración generada con IA para elcanaveral.info. No es una fotografía del evento."
+        }
+      },
+      "tags": [
+        "Eventos",
+        "Comercio",
+        "Ocio"
+      ],
+      "lead": "Plan de sábado en el barrio: la Asociación Vecinal El Cañaveral convoca la II Paella Comunitaria el sábado 21 de noviembre de 2026, de 10:00 a 16:30, en la avenida de Miguel Delibes esquina con la calle de la Ilusión. A las 12:30 el promotor presenta a los vecinos el proyecto del Centro Comercial OMO. Lo anuncia la propia AV en X, con el cartel de la cita.",
+      "datosClave": [
+        "Fecha: sábado 21 de noviembre de 2026.",
+        "Horario del evento: 10:00 a 16:30. En el cartel de la publicación, la paella figura a las 13:30.",
+        "Lugar: avenida de Miguel Delibes esquina con calle de la Ilusión (El Cañaveral).",
+        "A las 12:30 el promotor presenta el proyecto del Centro Comercial OMO.",
+        "El tuit anuncia juegos y actividades. El cartel concreta juegos para niños, castillos hinchables, mesas informativas y una mesa de registro para socios.",
+        "Inscripción: hay que escanear el QR del cartel. La publicación no incluye un enlace web ni el precio.",
+        "Organiza: AV El Cañaveral.",
+        "Agenda del barrio: /agenda/ii-paella-comunitaria-21-nov-2026/."
+      ],
+      "secciones": [
+        {
+          "h2": "Cuándo y dónde",
+          "parrafos": [
+            "La AV El Cañaveral publicó el 9 de noviembre de 2026 la convocatoria de la II Paella Comunitaria: sábado 21 de noviembre, de 10:00 a 16:30. El cartel que acompaña al tuit sitúa la cita en la avenida de Miguel Delibes esquina con la calle de la Ilusión y marca la paella a las 13:30, dentro de ese horario.",
+            "El mismo cartel anuncia juegos para niños, castillos hinchables, mesas informativas y una mesa de registro para socios. Ni el tuit ni el cartel publican el precio de la paella."
+          ]
+        },
+        {
+          "h2": "La presentación del Centro Comercial OMO",
+          "parrafos": [
+            "A las 12:30, dentro de la misma jornada, el promotor presenta el proyecto del Centro Comercial OMO a los vecinos. Así lo dice el tuit de la AV («presentación del proyecto del futuro Centro Comercial OMO») y lo repite el cartel («El promotor presentará el proyecto a las 12:30 h»).",
+            "La publicación no detalla el contenido del proyecto ni abre un enlace aparte para esa presentación: forma parte del programa de la paella."
+          ]
+        },
+        {
+          "h2": "Cómo apuntarse",
+          "parrafos": [
+            "La AV pide inscribirse escaneando el QR del cartel. En el tuit no hay una URL de alta, así que el cartel es la vía que ellos indican.",
+            "Hemos dejado la cita en la <a href=\"/agenda/ii-paella-comunitaria-21-nov-2026/\">agenda del barrio</a>, con fecha, hora y lugar."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "AV El Cañaveral (X, 9 nov 2026)",
+          "url": "https://x.com/AVElCanaveral/status/2119879557998334334"
+        }
+      ]
+    },
+    {
+      "slug": "presupuestos-2027-el-canaveral",
+      "title": "Presupuestos 2027 en El Cañaveral: 6.819.767 euros del Ayuntamiento y 11,5 millones de la Comunidad",
+      "date": "2026-11-13",
+      "updated": "2026-11-13",
+      "excerpt": "El Ayuntamiento reserva 6.819.767 euros para El Cañaveral en 2027 (centro cultural, alumbrado, recinto de eventos, punto de información juvenil y la anualidad del BRT). La Comunidad detalla 11.496.615 euros en el CEIPSO Rudyard Kipling y el nuevo IES. La residencia de mayores está en licitación.",
+      "image": {
+        "src": "/images/actualidad/presupuestos-2027-el-canaveral.webp",
+        "alt": "Ilustración de una avenida de un barrio residencial nuevo, con farolas, bloques de viviendas y una grúa junto a un edificio público en obras.",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+          "note": "Ilustración generada con IA para elcanaveral.info. No es una fotografía del evento."
+        }
+      },
+      "tags": [
+        "Urbanismo",
+        "Servicios",
+        "Educación"
+      ],
+      "lead": "Los presupuestos de 2027 dejan cifras concretas para El Cañaveral. El Ayuntamiento de Madrid reserva 6.819.767 euros en el barrio y la Comunidad de Madrid detalla 11.496.615 euros en infraestructuras educativas (el CEIPSO Rudyard Kipling y el nuevo instituto), unos 11,5 millones. La residencia de mayores del barrio figura en licitación, sin una partida en euros en estas dos informaciones. Los datos salen de Nuevo Sureste, que desglosa los libros del Ayuntamiento (10 de noviembre de 2026) y los de la Comunidad (5 de noviembre de 2026).",
+      "datosClave": [
+        "Ayuntamiento de Madrid, proyecto de presupuestos 2027 presentado el 5 de noviembre: 6.819.767 euros en El Cañaveral. Para todo el distrito de Vicálvaro, las mismas cuentas contemplan 13.764.864 euros.",
+        "Centro cultural, biblioteca, auditorio y ludoteca: 4.703.126 euros en 2027. Está en la calle de la Ilusión, 32. Las obras empezaron en noviembre de 2025; el contrato se adjudicó en septiembre de 2025 a Edhinor.",
+        "Alumbrado público: 540.000 euros, para eficiencia energética y adecuación al entorno.",
+        "Recinto al aire libre para eventos: 1.250.000 euros. Nuevo Sureste no publica la calle.",
+        "Punto de Información Juvenil y Lectura: 300.000 euros, en la avenida de Miguel Delibes, 73.",
+        "BRT (autobús de tránsito rápido): 26.641 euros en 2027, anualidad de un proyecto cuya previsión es de 11,5 millones de euros en 2028. En marzo se adjudicó el proyecto a AYESA Ingeniería y Arquitectura. La línea conectará El Cañaveral con Vicálvaro y con la plaza de Felipe II.",
+        "Comunidad de Madrid, infraestructuras educativas: 11.496.615 euros. Nuevo Sureste lo resume como más de 11,4 millones.",
+        "CEIPSO Rudyard Kipling: 11.058.630 euros para la finalización. Contrato adjudicado en julio a EJUCA. Parcela en la calle de José Escobar y Saliente, 50, con aulas ya en uso desde el curso 2025/2026.",
+        "Nuevo IES: 437.985 euros. Se construye en la calle Victoria Kent. El artículo habla de 1.000 plazas nuevas.",
+        "Residencia de mayores de El Cañaveral: en licitación, dentro del Plan 40-40. Parcela de 14.704 m² en la calle Suertes de la Villa, 32 (parcela RL-E11 del sector UZP 2.01). El pliego contempla 150 plazas residenciales y 50 de centro de día. Estas fuentes no publican el importe de 2027."
+      ],
+      "secciones": [
+        {
+          "h2": "Los 6.819.767 euros del Ayuntamiento",
+          "parrafos": [
+            "Nuevo Sureste recoge el proyecto de presupuestos que el Ayuntamiento presentó el 5 de noviembre de 2026. Para El Cañaveral la inversión prevista es de 6.819.767 euros. La misma información distingue esa cifra de los 13.764.864 euros previstos para el conjunto del distrito de Vicálvaro.",
+            "La partida mayor del barrio es el Centro Cultural, Biblioteca, Auditorio y Ludoteca: 4.703.126 euros en 2027. No es el coste total de la obra. El edificio está en la calle de la Ilusión, 32. Las obras empezaron en noviembre de 2025, después de que el contrato se adjudicara en septiembre de ese año a Edhinor. Del paquete municipal de 2026 ya hablamos en <a href=\"/actualidad/el-canaveral-15-millones-equipamientos-2026/\">esta pieza</a>; aquí van solo las anualidades de 2027.",
+            "El resto del desglose municipal, según la misma noticia: 540.000 euros para mejorar el alumbrado público (eficiencia energética y adecuación al entorno); 1.250.000 euros para un recinto al aire libre de eventos, sin calle publicada; y 300.000 euros para adecuar un Punto de Información Juvenil y Lectura en la avenida de Miguel Delibes, 73.",
+            "La línea de autobús de tránsito rápido (BRT) que unirá El Cañaveral con Vicálvaro aparece con 26.641 euros en 2027. Nuevo Sureste la describe como la anualidad de un proyecto cuya previsión asciende a 11,5 millones de euros en 2028, y recuerda que en marzo el Ayuntamiento adjudicó el proyecto a AYESA Ingeniería y Arquitectura. Esa línea, según la noticia, conecta el desarrollo con el centro de Madrid, en la plaza de Felipe II."
+          ]
+        },
+        {
+          "h2": "CEIPSO Rudyard Kipling y el nuevo instituto",
+          "parrafos": [
+            "En las cuentas de la Comunidad de Madrid, Nuevo Sureste suma 11.496.615 euros de infraestructuras educativas en El Cañaveral y titula esa inversión como más de 11,4 millones de euros. La cifra sale de dos partidas.",
+            "La mayor es la finalización del CEIPSO Rudyard Kipling: 11.058.630 euros. El contrato de las obras se adjudicó en julio a EJUCA. Esta fase contempla seis aulas de Educación Infantil, 36 de Primaria, seis de desdoble y seis de apoyo, cuatro aulas de Informática y Música, un aula de recursos y biblioteca, gimnasio y pistas deportivas. Los trabajos van en la calle de José Escobar y Saliente, 50, donde desde el curso 2025/2026 ya hay aulas en uso. El seguimiento de la ampliación está en <a href=\"/actualidad/ampliacion-ceipso-rudyard-kipling-el-canaveral/\">la noticia del CEIPSO</a>.",
+            "El nuevo instituto lleva 437.985 euros en 2027. Se construye en la calle Victoria Kent y, según Nuevo Sureste, ampliará la oferta con 1.000 plazas: 24 aulas de ESO y ocho de Bachillerato, más espacios de informática, tecnología, laboratorios, dibujo, plástica, imagen y diseño, aulas para grupos reducidos, biblioteca, gimnasio, pistas y zona administrativa. Del arranque de ese centro hablamos en <a href=\"/actualidad/el-canaveral-primer-instituto-publico-ies/\">la pieza del primer instituto público</a>."
+          ]
+        },
+        {
+          "h2": "La residencia de mayores sigue en licitación",
+          "parrafos": [
+            "La residencia de mayores que se construirá en El Cañaveral está en fase de licitación. Nuevo Sureste la enmarca en el Plan 40-40 de la Comunidad y remite al pliego de prescripciones técnicas: una parcela dotacional de 14.704 metros cuadrados en el número 32 de la calle Suertes de la Villa, parcela RL-E11 del sector UZP 2.01. El proyecto contempla 150 plazas residenciales y 50 de centro de atención diurna para personas mayores dependientes.",
+            "En esa información no aparece una cantidad de euros de 2027 para la residencia. Aquí no se añade ninguna."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "Nuevo Sureste — El Ayuntamiento destinará 6.819.767 euros a El Cañaveral en 2027",
+          "url": "https://nuevosureste.es/el-ayuntamiento-de-madrid-destinara-mas-de-68-millones-de-euros-a-inversiones-en-el-canaveral-durante-2027/"
+        },
+        {
+          "name": "Nuevo Sureste — Presupuestos de la Comunidad de Madrid 2027 en El Cañaveral",
+          "url": "https://nuevosureste.es/presupuestos-comunidad-madrid-2027-el-canaveral/"
+        }
+      ]
+    },
+    {
+      "slug": "comisaria-policia-nacional-vicalvaro",
+      "title": "El Gobierno incluye una comisaría de Policía Nacional en Vicálvaro hasta 2034, sin calle ni plazo",
+      "date": "2026-11-13",
+      "updated": "2026-11-13",
+      "excerpt": "El Consejo de Ministros del 10 de noviembre de 2026 incluye una comisaría de distrito de Policía Nacional en Vicálvaro en la programación de infraestructuras del Ministerio del Interior hasta 2034. Nuevo Sureste no publica ubicación ni fecha de obra.",
+      "image": {
+        "src": "/images/actualidad/comisaria-policia-nacional-vicalvaro.webp",
+        "alt": "Ilustración de un edificio bajo y acristalado en un solar vallado, con bloques de viviendas al fondo y un cielo nublado.",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+          "note": "Ilustración generada con IA para elcanaveral.info. No es una fotografía del evento."
+        }
+      },
+      "tags": [
+        "Servicios",
+        "Urbanismo"
+      ],
+      "lead": "El Gobierno ha incluido la construcción de una comisaría de Policía Nacional en Vicálvaro en la programación de infraestructuras del Ministerio del Interior hasta 2034. Lo cuenta Nuevo Sureste a partir del acuerdo del Consejo de Ministros del martes 10 de noviembre de 2026. Esa información no da calle ni plazo para la comisaría de Vicálvaro, y aquí tampoco.",
+      "datosClave": [
+        "Acuerdo del Consejo de Ministros del 10 de noviembre de 2026: la programación ordinaria de infraestructuras policiales del Ministerio del Interior se amplía hasta 2034.",
+        "Entre los proyectos figura una comisaría de distrito de Policía Nacional en Vicálvaro. La misma lista cita otra en Valdebebas.",
+        "Nuevo Sureste no publica dirección ni calendario de obras de la comisaría de Vicálvaro.",
+        "En el conjunto del país, el presupuesto de esa programación es de 731 millones de euros; casi 164 millones corresponden a la Comunidad de Madrid.",
+        "Sustituye a la programación aprobada en diciembre de 2025: 262,8 millones de euros y 130 proyectos hasta 2029.",
+        "302 proyectos en España (construcción, reforma, ampliación, rehabilitación o eficiencia energética de comisarías y cuarteles). 81 están en la Comunidad de Madrid.",
+        "De esos 81, 41 corresponden a la Dirección General de la Policía, con un importe superior a 89 millones de euros, financiados con sus presupuestos. Ahí entran las comisarías nuevas de Valdebebas y Vicálvaro."
+      ],
+      "secciones": [
+        {
+          "h2": "Qué ha incluido el Gobierno",
+          "parrafos": [
+            "El 10 de noviembre de 2026 el Consejo de Ministros acordó elevar la programación del presupuesto ordinario con el que el Ministerio del Interior mejora infraestructuras policiales, y alargar ese horizonte hasta 2034. Nuevo Sureste recoge que el Gobierno ha incluido en esa programación la construcción de una nueva comisaría de Policía Nacional en Vicálvaro.",
+            "En el conjunto del país el presupuesto de esta programación asciende a 731 millones de euros, de los cuales casi 164 millones se destinan a actuaciones en la Comunidad de Madrid. Sustituye a la que el Gobierno aprobó en diciembre de 2025, de 262,8 millones de euros para 130 proyectos hasta 2029."
+          ]
+        },
+        {
+          "h2": "Vicálvaro, sin ubicación ni plazo",
+          "parrafos": [
+            "La noticia cita la comisaría de Vicálvaro como una comisaría de distrito nueva, en la misma frase que la de Valdebebas. No dice en qué calle de Vicálvaro iría, ni en qué año empezaría o terminaría la obra. No hay plano, parcela ni fecha de licitación de este edificio concreto.",
+            "Hasta que Interior o el Ayuntamiento publiquen dirección y calendario, la comisaría de Vicálvaro queda como un proyecto incluido en el plan hasta 2034, no como una obra con sitio y fecha. No está anunciada, en esa información, dentro de El Cañaveral en particular: el ámbito que se nombra es Vicálvaro."
+          ]
+        },
+        {
+          "h2": "El paquete de la Comunidad de Madrid",
+          "parrafos": [
+            "La Subdirección General de Planificación y Gestión de Infraestructuras y Medios para la Seguridad ha proyectado 302 actuaciones en España. 81 están en la Comunidad de Madrid. De ellas, 41 las asume la Dirección General de la Policía, por un importe superior a 89 millones de euros con cargo a sus presupuestos. En ese grupo están las comisarías de distrito nuevas de Valdebebas y de Vicálvaro, además de otras obras en la región que no son de este distrito.",
+            "La misma pieza reparte el resto de los 81 proyectos entre la Secretaría de Estado de Seguridad y la Dirección General de la Guardia Civil. Esas otras actuaciones no son la comisaría de Vicálvaro."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "Nuevo Sureste — El Gobierno prevé una comisaría de Policía Nacional en Vicálvaro",
+          "url": "https://nuevosureste.es/nueva-comisaria-policia-nacional-vicalvaro/"
+        }
+      ]
+    },
+    {
       "slug": "la-muestra-canaveral-noviembre-2026",
       "title": "La Muestra vuelve a El Cañaveral el domingo 8 de noviembre (10:00–16:00)",
       "date": "2026-11-06",
