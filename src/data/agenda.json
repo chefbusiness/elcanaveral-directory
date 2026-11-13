@@ -1,6 +1,70 @@
 {
   "items": [
     {
+      "id": "escape-room-jovenes-cmsc-vicalvaro-20-nov-2026",
+      "nombre": "Escape room para jóvenes del CMSc de Vicálvaro",
+      "estado": "confirmado",
+      "inicio": "2026-11-20T17:00:00+01:00",
+      "fin": "2026-11-20T17:00:00+01:00",
+      "sinHora": false,
+      "lugar": {
+        "nombre": "Centro Municipal de Salud Comunitaria de Vicálvaro",
+        "direccion": "Calle de Calahorra, 11 bis, Vicálvaro, Madrid",
+        "zona": "vicalvaro"
+      },
+      "organizador": {
+        "nombre": "Centro Municipal de Salud Comunitaria de Vicálvaro",
+        "url": null
+      },
+      "gratis": false,
+      "precio": null,
+      "entradasUrl": null,
+      "categoria": "ocio",
+      "resumen": "El Centro Municipal de Salud Comunitaria de Vicálvaro organiza un escape room para jóvenes y adolescentes el viernes 20 de noviembre de 2026 a las 17:00, en la calle de Calahorra, 11 bis. La Junta Municipal de Distrito de Vicálvaro publica el teléfono de inscripción 657 643 317. La publicación no indica hora de fin ni si la actividad tiene un precio.",
+      "fichasRelacionadas": [],
+      "fiestaSlug": null,
+      "fuentes": [
+        {
+          "nombre": "Junta Municipal de Distrito de Vicálvaro (X, 9 nov 2026)",
+          "url": "https://x.com/jmdvicalvaro/status/2119809758496436311",
+          "tipo": "red-social"
+        }
+      ],
+      "verificadoEn": "2026-11-13"
+    },
+    {
+      "id": "ii-paella-comunitaria-21-nov-2026",
+      "nombre": "II Paella Comunitaria de El Cañaveral",
+      "estado": "confirmado",
+      "inicio": "2026-11-21T10:00:00+01:00",
+      "fin": "2026-11-21T16:30:00+01:00",
+      "sinHora": false,
+      "lugar": {
+        "nombre": "Avenida de Miguel Delibes esquina con calle de la Ilusión",
+        "direccion": "Avenida de Miguel Delibes esquina con calle de la Ilusión, El Cañaveral, Vicálvaro, Madrid",
+        "zona": "el-canaveral"
+      },
+      "organizador": {
+        "nombre": "AV El Cañaveral",
+        "url": "https://x.com/AVElCanaveral/status/2119879557998334334"
+      },
+      "gratis": false,
+      "precio": null,
+      "entradasUrl": null,
+      "categoria": "comunidad",
+      "resumen": "II Paella Comunitaria de la AV El Cañaveral, el sábado 21 de noviembre de 2026, de 10:00 a 16:30, en la avenida de Miguel Delibes esquina con la calle de la Ilusión. A las 12:30 el promotor presenta el proyecto del Centro Comercial OMO. El cartel sitúa la paella a las 13:30. La inscripción es con el QR del cartel: el tuit no publica enlace ni precio.",
+      "fichasRelacionadas": [],
+      "fiestaSlug": null,
+      "fuentes": [
+        {
+          "nombre": "AV El Cañaveral (X, 9 nov 2026) — II Paella Comunitaria, 21 nov, 10:00–16:30",
+          "url": "https://x.com/AVElCanaveral/status/2119879557998334334",
+          "tipo": "red-social"
+        }
+      ],
+      "verificadoEn": "2026-11-13"
+    },
+    {
       "id": "la-muestra-canaveral-8-nov-2026",
       "nombre": "La Muestra El Cañaveral – Vicálvaro (noviembre 2026)",
       "estado": "confirmado",
