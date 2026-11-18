@@ -21680,5 +21680,39 @@
         "tipo": "web"
       }
     ]
+  },
+  {
+    "slug": "polloveral-canaveral",
+    "name": "Polloveral",
+    "description": "Polloveral es un restaurante y bar del barrio de El Cañaveral. Está en la calle del Erial de la Abuela, 30.",
+    "category": "restaurantes",
+    "categoryName": "Restaurantes",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. del Erial de la Abuela, 30, 28052 Madrid",
+    "phone": "+34 682 55 96 40",
+    "website": "https://polloveral.es",
+    "tags": [
+      "bar"
+    ],
+    "featured": false,
+    "verificadoEn": "2026-11-18"
+  },
+  {
+    "slug": "alonso-carnicas-canaveral",
+    "name": "Alonso Cárnicas",
+    "description": "Alonso Cárnicas es una carnicería y restaurante en El Cañaveral. Está en la calle Ferenc Puskas, 195, local 4.",
+    "category": "tiendas-alimentacion",
+    "categoryName": "Tiendas de Alimentación",
+    "zona": "el-canaveral",
+    "zonaName": "El Cañaveral",
+    "address": "C. Ferenc Puskas, 195, local 4, 28052 Madrid",
+    "phone": "+34 640 91 43 80",
+    "tags": [
+      "carnicería",
+      "restaurante"
+    ],
+    "featured": false,
+    "verificadoEn": "2026-11-18"
   }
 ]
