@@ -1,6 +1,107 @@
 {
   "items": [
     {
+      "id": "cine-los-domingos-el-madrono-20-nov-2026",
+      "nombre": "Cine: «Los domingos» (ciclo Nosotras contamos)",
+      "estado": "confirmado",
+      "inicio": "2026-11-20T19:00:00+01:00",
+      "fin": "2026-11-20T19:00:00+01:00",
+      "sinHora": false,
+      "lugar": {
+        "nombre": "Centro Cultural El Madroño",
+        "direccion": "Calle de Villardondiego, 36, Vicálvaro, Madrid",
+        "zona": "vicalvaro"
+      },
+      "organizador": {
+        "nombre": "Junta Municipal de Distrito de Vicálvaro",
+        "url": "https://x.com/jmdvicalvaro"
+      },
+      "gratis": true,
+      "precio": null,
+      "entradasUrl": null,
+      "categoria": "cultura",
+      "resumen": "Proyección gratuita de «Los domingos», de Alauda Ruiz de Azúa, el viernes 20 de noviembre de 2026 a las 19:00 en el Centro Cultural El Madroño (calle de Villardondiego, 36), dentro del ciclo «Nosotras contamos». Las fuentes no indican hora de fin ni si hay que reservar.",
+      "fichasRelacionadas": [],
+      "fiestaSlug": null,
+      "fuentes": [
+        {
+          "nombre": "Junta Municipal de Distrito de Vicálvaro (X, 18 nov 2026) — ciclo «Nosotras contamos»",
+          "url": "https://x.com/jmdvicalvaro/status/2122994479074251145",
+          "tipo": "red-social"
+        },
+        {
+          "nombre": "Ayuntamiento de Madrid — ficha de «Los domingos»",
+          "url": "https://informate.madrid.es/a6f5c8",
+          "tipo": "web"
+        }
+      ],
+      "verificadoEn": "2026-11-19"
+    },
+    {
+      "id": "cine-la-furia-el-madrono-21-nov-2026",
+      "nombre": "Cine: «La furia» (ciclo Nosotras contamos)",
+      "estado": "confirmado",
+      "inicio": "2026-11-21T18:00:00+01:00",
+      "fin": "2026-11-21T18:00:00+01:00",
+      "sinHora": false,
+      "lugar": {
+        "nombre": "Centro Cultural El Madroño",
+        "direccion": "Calle de Villardondiego, 36, Vicálvaro, Madrid",
+        "zona": "vicalvaro"
+      },
+      "organizador": {
+        "nombre": "Junta Municipal de Distrito de Vicálvaro",
+        "url": "https://x.com/jmdvicalvaro"
+      },
+      "gratis": true,
+      "precio": null,
+      "entradasUrl": null,
+      "categoria": "cultura",
+      "resumen": "Proyección gratuita de «La furia» el sábado 21 de noviembre de 2026 a las 18:00 en el Centro Cultural El Madroño (calle de Villardondiego, 36), dentro del ciclo «Nosotras contamos». La publicación no indica hora de fin ni si hay que reservar.",
+      "fichasRelacionadas": [],
+      "fiestaSlug": null,
+      "fuentes": [
+        {
+          "nombre": "Junta Municipal de Distrito de Vicálvaro (X, 18 nov 2026) — ciclo «Nosotras contamos»",
+          "url": "https://x.com/jmdvicalvaro/status/2122994479074251145",
+          "tipo": "red-social"
+        }
+      ],
+      "verificadoEn": "2026-11-19"
+    },
+    {
+      "id": "cine-romeria-el-madrono-22-nov-2026",
+      "nombre": "Cine: «Romería» (ciclo Nosotras contamos)",
+      "estado": "confirmado",
+      "inicio": "2026-11-22T18:00:00+01:00",
+      "fin": "2026-11-22T18:00:00+01:00",
+      "sinHora": false,
+      "lugar": {
+        "nombre": "Centro Cultural El Madroño",
+        "direccion": "Calle de Villardondiego, 36, Vicálvaro, Madrid",
+        "zona": "vicalvaro"
+      },
+      "organizador": {
+        "nombre": "Junta Municipal de Distrito de Vicálvaro",
+        "url": "https://x.com/jmdvicalvaro"
+      },
+      "gratis": true,
+      "precio": null,
+      "entradasUrl": null,
+      "categoria": "cultura",
+      "resumen": "Proyección gratuita de «Romería» el domingo 22 de noviembre de 2026 a las 18:00 en el Centro Cultural El Madroño (calle de Villardondiego, 36), dentro del ciclo «Nosotras contamos». La publicación no indica hora de fin ni si hay que reservar.",
+      "fichasRelacionadas": [],
+      "fiestaSlug": null,
+      "fuentes": [
+        {
+          "nombre": "Junta Municipal de Distrito de Vicálvaro (X, 18 nov 2026) — ciclo «Nosotras contamos»",
+          "url": "https://x.com/jmdvicalvaro/status/2122994479074251145",
+          "tipo": "red-social"
+        }
+      ],
+      "verificadoEn": "2026-11-19"
+    },
+    {
       "id": "escape-room-jovenes-cmsc-vicalvaro-20-nov-2026",
       "nombre": "Escape room para jóvenes del CMSc de Vicálvaro",
       "estado": "confirmado",

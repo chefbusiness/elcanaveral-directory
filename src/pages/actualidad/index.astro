@@ -36,19 +36,44 @@ const fmt = (iso: string) => new Date(iso).toLocaleDateString("es-ES", { day: "n
 
       {posts.length > 0 ? (
         <div class="space-y-5">
-          {posts.map((p: any) => (
-            <a href={`/actualidad/${p.slug}/`} class="block bg-white rounded-xl border border-warm-200 p-6 hover:shadow-lg hover:border-brand-200 transition-all group">
-              <div class="flex flex-wrap items-center gap-2 mb-2">
-                <span class="text-xs text-gray-400">{fmt(p.date)}</span>
-                {(p.tags || []).map((t: string) => (
-                  <span class="text-[11px] bg-brand-50 text-brand-700 px-2 py-0.5 rounded">{t}</span>
-                ))}
-              </div>
-              <h2 class="font-bold text-lg sm:text-xl text-brand-900 group-hover:text-brand-600 transition-colors leading-snug">{p.title}</h2>
-              <p class="text-gray-500 text-sm mt-2 leading-snug">{p.excerpt}</p>
-              <span class="inline-block mt-3 text-sm font-medium text-brand-600">Leer más &rarr;</span>
-            </a>
-          ))}
+          {posts.map((p: any) => {
+            const imagen =
+              p.image && typeof p.image.src === "string" && p.image.src.startsWith("/")
+                ? p.image
+                : null;
+            const nota =
+              imagen?.credit && typeof imagen.credit.note === "string" ? imagen.credit.note : "";
+            return (
+              <a href={`/actualidad/${p.slug}/`} class="block bg-white rounded-xl border border-warm-200 overflow-hidden hover:shadow-lg hover:border-brand-200 transition-all group">
+                {imagen && (
+                  <figure>
+                    <img
+                      src={imagen.src}
+                      alt={typeof imagen.alt === "string" ? imagen.alt : ""}
+                      width={imagen.width}
+                      height={imagen.height}
+                      class="w-full h-auto"
+                      loading="lazy"
+                    />
+                    {nota && (
+                      <figcaption class="px-6 pt-2 text-xs text-gray-500 leading-relaxed">{nota}</figcaption>
+                    )}
+                  </figure>
+                )}
+                <div class={imagen ? "px-6 pb-6 pt-3" : "p-6"}>
+                  <div class="flex flex-wrap items-center gap-2 mb-2">
+                    <span class="text-xs text-gray-400">{fmt(p.date)}</span>
+                    {(p.tags || []).map((t: string) => (
+                      <span class="text-[11px] bg-brand-50 text-brand-700 px-2 py-0.5 rounded">{t}</span>
+                    ))}
+                  </div>
+                  <h2 class="font-bold text-lg sm:text-xl text-brand-900 group-hover:text-brand-600 transition-colors leading-snug">{p.title}</h2>
+                  <p class="text-gray-500 text-sm mt-2 leading-snug">{p.excerpt}</p>
+                  <span class="inline-block mt-3 text-sm font-medium text-brand-600">Leer más &rarr;</span>
+                </div>
+              </a>
+            );
+          })}
         </div>
       ) : (
         <p class="text-gray-500">Aún no hay noticias publicadas. Vuelve pronto.</p>
