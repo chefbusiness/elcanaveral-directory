@@ -1,15 +1,13 @@
 # AGENTS.md
 
-## Regla de imagen del holding
+## Regla de imagen
 
-Fuente: skill compartida `regla-imagen-holding` de los GrokBots del holding (20-nov-2026, decisión de John).
-
-**Vigente desde el 20-nov-2026, por decisión de John.** Sustituye a cualquier regla anterior de imágenes (incluida la de «sin manos ni personas» y el uso de Grok).
+**Vigente desde el 20-nov-2026.** Sustituye a cualquier regla anterior de imágenes.
 
 #### 1. Modelo
-- **GPT Image 2.6 en Higgsfield (`gpt_image_2_6`), `quality: high`, `resolution: 2k`**, para todas las marcas, webs e Instagram. Coste: 2,75 créditos por imagen.
+- **GPT Image 2.6 en Higgsfield (`gpt_image_2_6`), `quality: high`, `resolution: 2k`**, para webs e Instagram.
 - Una imagen por hueco. Solo se repite (máximo 1 vez) si hay un defecto claro (ver lista de comprobación). Sin variantes «por si acaso».
-- No usar Grok, Auto/default ni otros modelos para imágenes publicables. El modelo por defecto de calidad baja/1K (0,25 cr) no vale para publicar.
+- No usar otros modelos para imágenes publicables. El modelo por defecto de calidad baja/1K no vale para publicar.
 
 #### 2. Resolución y formatos
 - Resolución mínima de generación: **2K**. Nunca se publica una imagen reescalada desde algo menor.
@@ -23,7 +21,7 @@ Fuente: skill compartida `regla-imagen-holding` de los GrokBots del holding (20-
 
 #### 3. Prohibido el stock
 - **Prohibidos los bancos de imágenes** (Pexels, Unsplash, Pixabay, Freepik, Shutterstock, etc.), también «gratuitos» y también para fondos o detalles.
-- **Se permiten personas y manos.** Es una decisión de John: la antigua regla de «sin manos ni personas» queda derogada.
+- **Se permiten personas y manos.**
 
 #### 4. Plantilla base de prompt (en inglés)
 Cambiar solo lo que va entre `[ ]`. Una escena, un sujeto principal, un tipo de luz.
@@ -55,11 +53,7 @@ Abrir la imagen a tamaño completo (no la miniatura) y comprobar:
 6. **Escena española creíble:** mobiliario, utensilios, señalización y arquitectura coherentes con el lugar.
 7. **Formato:** dimensiones, relación de aspecto, formato de archivo, nombre y texto alternativo en español correctos.
 8. **Sin stock** y con el original de 2K guardado.
-Si falla algo evidente, se repite como máximo 1 vez. Si vuelve a fallar, se avisa en lugar de publicar.
+Si falla algo evidente, se repite como máximo 1 vez. Si vuelve a fallar, no se publica.
 
-#### 7. Si Higgsfield se queda sin créditos
-- **No se usa Grok ni ningún recorte de Grok como sustituto.** No se publica una imagen de menor calidad.
-- El hueco queda **pendiente**: se deja la imagen anterior o el hueco sin cambiar, y **se avisa de inmediato** (qué hueco, qué falta, saldo actual y fecha de la próxima renovación).
-- **Aviso de saldo bajo (no es un tope):** quien lance un trabajo en Higgsfield comprueba antes el saldo y, si queda por debajo de unos **300 créditos**, avisa de inmediato a JohnB · CEO con el saldo actual y la fecha de la próxima renovación. No se bloquea ni se limita ningún trabajo. Un aviso por bot y día como máximo. *(Aprobado por John el 20-nov-2026.)*
-- **No hay tope de vídeo**: John no quiere ponerlo. La responsabilidad de que haya créditos para las imágenes es de quien lance los trabajos; antes de una tanda grande, comprobar el saldo.
-- No comprar créditos ni cambiar el plan sin autorización expresa de John.
+#### 7. Si no se puede generar
+Si no se puede generar con el modelo de esta regla, no se usa otro modelo ni se publica una imagen de menor calidad. El hueco queda pendiente: se deja la imagen anterior o el hueco sin cambiar.
