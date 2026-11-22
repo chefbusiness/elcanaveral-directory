@@ -7949,6 +7949,7 @@
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
+    "estado": "cerrado",
     "tags": [
       "terraza",
       "jardín",
@@ -8021,6 +8022,14 @@
       "Almuerzo",
       "Cena",
       "Cena en solitario"
+    ],
+    "verificadoEn": "2026-11-22",
+    "fuentes": [
+      {
+        "nombre": "Google Maps: Restaurante El Jardín del Cañaveral, marcado como cerrado permanentemente",
+        "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20El%20Jard%C3%ADn%20del%20Ca%C3%B1averal&query_place_id=ChIJwSUL2Wc7Qg0R2RyYy80AOx4",
+        "tipo": "web"
+      }
     ]
   },
   {

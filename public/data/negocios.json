@@ -7942,88 +7942,6 @@
     ]
   },
   {
-    "slug": "jardin-canaveral",
-    "name": "El Jardín del Cañaveral",
-    "description": "Restaurante familiar con amplia terraza ajardinada en El Cañaveral. Cocina mediterránea, carnes a la brasa y platos caseros. Espacio accesible con.",
-    "category": "restaurantes",
-    "categoryName": "Restaurantes",
-    "zona": "el-canaveral",
-    "zonaName": "El Cañaveral",
-    "tags": [
-      "terraza",
-      "jardín",
-      "mediterráneo",
-      "brasa"
-    ],
-    "tiposCocina": [
-      "mediterránea",
-      "brasa"
-    ],
-    "terraza": true,
-    "featured": false,
-    "servicios": [
-      "Terraza exterior",
-      "Zona infantil",
-      "Menú del día",
-      "Eventos privados",
-      "Opciones sin gluten",
-      "Reservas online"
-    ],
-    "destacados": [
-      "Amplia terraza ajardinada",
-      "Especialidad en carnes a la brasa",
-      "Ambiente familiar y acogedor"
-    ],
-    "horario": "Martes a Domingo: 13:00-16:30 y 20:00-23:30, Lunes: Cerrado",
-    "address": "C. Cerro del Campo, 62, 28052 Madrid",
-    "phone": "+34 912 62 40 03",
-    "accesibilidad": true,
-    "aparcamiento": "gratis en la calle",
-    "image": "/images/negocios/jardin-canaveral.webp",
-    "images": [
-      "/images/negocios/jardin-canaveral.webp",
-      "/images/negocios/jardin-canaveral-2.webp",
-      "/images/negocios/jardin-canaveral-3.webp",
-      "/images/negocios/jardin-canaveral-4.webp",
-      "/images/negocios/jardin-canaveral-5.webp"
-    ],
-    "rating": 3.6,
-    "numReviews": 426,
-    "placeId": "ChIJwSUL2Wc7Qg0R2RyYy80AOx4",
-    "googleCategory": "Restaurante familiar",
-    "lat": 40.40523,
-    "lng": -3.5502325,
-    "tarjeta": true,
-    "pagoMovil": true,
-    "reservas": true,
-    "ninos": true,
-    "ambiente": [
-      "A la moda",
-      "Agradable",
-      "Informal",
-      "Relajado"
-    ],
-    "ofrece": [
-      "Alcohol",
-      "Aperitivos",
-      "Bebidas fuertes",
-      "Bocadillos",
-      "Café",
-      "Cerveza",
-      "Cócteles",
-      "Vino",
-      "Desayunos",
-      "Almuerzo"
-    ],
-    "destacadosGoogle": [
-      "Buen café",
-      "Deliciosos postres",
-      "Almuerzo",
-      "Cena",
-      "Cena en solitario"
-    ]
-  },
-  {
     "slug": "estanco-el-canaveral",
     "name": "Estanco El Cañaveral",
     "description": "Expendeduría de tabaco y timbre del Estado. También lotería, recargas, prensa y artículos de fumador. Primer estanco del barrio, licencia adjudicada.",
@@ -21568,7 +21486,7 @@
     "zonaName": "El Cañaveral",
     "address": "C. de Francisco Grande Covián, 61, Vicálvaro, 28052 Madrid",
     "phone": "+34 696 137 786",
-    "rating": 5.0,
+    "rating": 5,
     "numReviews": 4,
     "placeId": "ChIJ1ejfWM87Qg0RKLBKI5Bg9PY",
     "googleCategory": "Cafetería",

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import Galeria from "@/components/Galeria.astro";
 import AbiertoAhora from "@/components/AbiertoAhora.astro";
-import { generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona, socialProfileUrl } from "@/lib/directory";
+import { estaCerrado, generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona, socialProfileUrl } from "@/lib/directory";
 import type { Negocio } from "@/lib/directory";
 import { UBICACION_POR_DEFECTO, enlaceCtaLocalseoads } from "@/lib/localseoads";
 import ReclamarFicha from "@/components/ReclamarFicha.astro";
@@ -19,12 +19,14 @@ export function getStaticPaths() {
 }
 
 const negocio = Astro.props as Negocio;
+const cerrado = estaCerrado(negocio);
 const fotos = fotosDeFicha(negocio);
 const ctaNegocio = ctaPublicable(negocio);
 const planPago = esPlanPago(negocio);
 const textoRevision = textoDatosRevisados(negocio);
 const fichaSeo = (seoOverrides as any).fichas?.[negocio.slug] || {};
-const schema = generateLocalBusinessSchema(negocio);
+// Un negocio cerrado no se marca como LocalBusiness con horario y teléfono.
+const schema = cerrado ? null : generateLocalBusinessSchema(negocio);
 const servicios = (negocio.servicios as string[] | undefined) || [];
 const destacados = (negocio.destacados as string[] | undefined) || [];
 const destacadosGoogle = (negocio.destacadosGoogle as string[] | undefined) || [];
@@ -52,11 +54,13 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
 ---
 
 <BaseLayout
-  title={tituloDeFicha(negocio, fichaSeo.title)}
-  description={metaDeFicha(negocio, fichaSeo.description)}
+  title={cerrado ? `Cerrado: ${tituloDeFicha(negocio, fichaSeo.title)}` : tituloDeFicha(negocio, fichaSeo.title)}
+  description={cerrado
+    ? metaDeFicha(negocio, `${negocio.name} ha cerrado definitivamente. Mira otros ${negocio.categoryName.toLowerCase()} abiertos en ${negocio.zonaName} y alrededores.`)
+    : metaDeFicha(negocio, fichaSeo.description)}
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
   </Fragment>
 
   <Header />
@@ -92,6 +96,11 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
               {negocio.estado === "proxima-apertura" && (
                 <span class="shrink-0 text-xs font-semibold bg-brand-600 text-white px-3 py-1 rounded-md mt-1.5">
                   Próxima apertura
+                </span>
+              )}
+              {cerrado && (
+                <span class="shrink-0 text-xs font-semibold bg-gray-700 text-white px-3 py-1 rounded-md mt-1.5">
+                  Cerrado definitivamente
                 </span>
               )}
               {esPatrocinado(negocio) && (
@@ -132,6 +141,18 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
               {negocio.accesibilidad && <span class="text-xs bg-teal-50 text-teal-700 px-2.5 py-1 rounded-full font-medium">Accesible</span>}
             </div>
           </div>
+
+          {cerrado && (
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
+              <p class="font-semibold mb-1">Este negocio ha cerrado definitivamente</p>
+              <p>
+                Su perfil de Google Maps lo marca como cerrado permanentemente. Dejamos la ficha como
+                referencia, sin teléfono ni horario. Si buscas una alternativa, mira los
+                <a href={`/${negocio.category}/`} class="underline font-medium">{negocio.categoryName.toLowerCase()}</a>
+                o lo que hay en <a href={`/zona/${negocio.zona}/`} class="underline font-medium">{negocio.zonaName}</a>.
+              </p>
+            </div>
+          )}
 
           <!-- Descripcion -->
           <div class="bg-white rounded-xl border border-warm-200 p-6">
@@ -223,7 +244,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
           )}
 
           <!-- Destacados -->
-          {destacados.length > 0 && (
+          {!cerrado && destacados.length > 0 && (
             <div class="bg-gradient-to-br from-brand-50 to-brand-100 rounded-xl p-6 border border-brand-200">
               <h2 class="font-semibold text-lg mb-3">Por que elegir {negocio.name}</h2>
               <ul class="space-y-2.5">
@@ -262,7 +283,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
           )}
 
           <!-- Mapa grande (principal) -->
-          {negocio.address && (
+          {!cerrado && negocio.address && (
             <div class="bg-white rounded-xl border border-warm-200 overflow-hidden">
               <div class="p-4 border-b border-warm-200">
                 <h2 class="font-semibold text-lg">Como llegar</h2>
@@ -320,7 +341,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
                 <span class="text-gray-400 text-sm shrink-0">&#128204;</span>
                 <a href={`/zona/${negocio.zona}/`} class="text-sm text-brand-600 hover:text-brand-700">{negocio.zonaName}</a>
               </div>
-              {negocio.phone && (
+              {!cerrado && negocio.phone && (
                 <div class="flex items-center gap-3">
                   <span class="text-gray-400 text-sm shrink-0">&#128222;</span>
                   <a href={`tel:${negocio.phone}`} class="text-sm text-brand-600 hover:text-brand-700 font-medium">{negocio.phone}</a>
@@ -338,7 +359,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
                   <a href={negocio.website} target="_blank" rel="noopener" class="text-sm text-brand-600 hover:text-brand-700 break-all">{negocio.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a>
                 </div>
               )}
-              {negocio.horario && (
+              {!cerrado && negocio.horario && (
                 <div class="flex items-start gap-3">
                   <span class="text-gray-400 text-sm mt-0.5 shrink-0">&#128336;</span>
                   <div class="flex flex-wrap items-center gap-2">
@@ -360,6 +381,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
               </div>
             )}
 
+            {!cerrado && (
             <div class="mt-4 space-y-2">
               {ctaNegocio && (
                 <a href={ctaNegocio.url} target="_blank" rel="noopener" class="block w-full text-center bg-accent-500 text-white py-2.5 rounded-lg font-medium hover:bg-accent-600 transition-colors">
@@ -382,6 +404,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
                 </a>
               )}
             </div>
+            )}
             {textoRevision && (
               <p class="text-xs text-gray-500 mt-4 pt-3 border-t border-warm-200">{textoRevision}</p>
             )}
@@ -399,7 +422,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
             )}
           </div>
 
-          {!planPago && <ReclamarFicha negocio={negocio} />}
+          {!planPago && !cerrado && <ReclamarFicha negocio={negocio} />}
 
           <!-- Banner LocalSEOAds -->
           <div class="bg-brand-900 rounded-xl p-5 text-center text-white">

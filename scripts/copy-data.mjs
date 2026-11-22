@@ -2,6 +2,8 @@
 // Copia negocios.json a public/data/ para la busqueda client-side.
 // Aplica el guard de webs bloqueadas (src/data/website-blocklist.json): el JSON
 // publicado nunca debe contener una web retirada a peticion de su titular.
+// Las fichas con estado "cerrado" no se publican aqui: el buscador solo lista
+// negocios abiertos (la pagina de la ficha cerrada sigue existiendo con su aviso).
 import fs from "node:fs";
 import path from "node:path";
 import { stripBlockedWebsites, warnStripped } from "../src/lib/website-guard.js";
@@ -15,15 +17,16 @@ if (!fs.existsSync(destDir)) {
 }
 
 const negocios = JSON.parse(fs.readFileSync(src, "utf-8"));
-const { negocios: clean, stripped } = stripBlockedWebsites(negocios);
+const { negocios: limpios, stripped } = stripBlockedWebsites(negocios);
+const abiertos = limpios.filter((n) => n.estado !== "cerrado");
 
-if (stripped.length === 0) {
+if (stripped.length === 0 && abiertos.length === negocios.length) {
   // Caso normal: la fuente ya esta limpia -> copia byte a byte (sin reformatear).
   fs.copyFileSync(src, dest);
 } else {
-  // La fuente traia una web bloqueada (p. ej. tras un enriquecimiento): se publica
-  // la version saneada para que el dominio no quede expuesto en /data/negocios.json.
-  warnStripped(stripped, "copy-data");
-  fs.writeFileSync(dest, `${JSON.stringify(clean, null, 2)}\n`, "utf-8");
+  // La fuente traia una web bloqueada (p. ej. tras un enriquecimiento) o fichas
+  // cerradas: se publica la version saneada.
+  if (stripped.length > 0) warnStripped(stripped, "copy-data");
+  fs.writeFileSync(dest, `${JSON.stringify(abiertos, null, 2)}\n`, "utf-8");
 }
-console.log(`Copiado: ${src} → ${dest} (${clean.length} negocios)`);
+console.log(`Copiado: ${src} → ${dest} (${abiertos.length} negocios)`);

@@ -1,7 +1,7 @@
 // Enlaces a LocalSEOAds. Un solo sitio construye las UTM para que ficha, cabecera
 // y pie no se desvíen. Las URLs de schema.org (@id, url de la Organization) no pasan
 // por aquí: no son clics y no deben llevar parámetros de campaña.
-import { loadNegocios } from "@/lib/directory";
+import { loadFichas } from "@/lib/directory";
 
 export const LOCALSEOADS_ORIGIN = "https://localseoads.com";
 export const UTM_SOURCE = "elcanaveral";
@@ -33,7 +33,7 @@ let fichasPorRuta: Map<string, { zona: string; slug: string }> | undefined;
 function fichaPorRuta(category: string, slug: string): { zona: string; slug: string } | undefined {
   if (!fichasPorRuta) {
     fichasPorRuta = new Map();
-    for (const negocio of loadNegocios()) {
+    for (const negocio of loadFichas()) {
       fichasPorRuta.set(`${negocio.category}/${negocio.slug}`, {
         zona: negocio.zona || UBICACION_POR_DEFECTO,
         slug: negocio.slug,

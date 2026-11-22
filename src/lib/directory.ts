@@ -43,7 +43,10 @@ export interface Negocio {
   // asignan en los datos reales: solo aparecen en fixtures de test.
   plan?: "ninguno" | "presencia" | "destacado" | "crecimiento" | "sponsor";
   cta?: { texto: string; url: string };
-  estado?: "proxima-apertura";   // negocio anunciado que aun no ha abierto
+  // proxima-apertura: anunciado y aún sin abrir. cerrado: cierre definitivo con
+  // fuente en `fuentes`; la ficha sigue publicada con el aviso, pero sale de
+  // listados, guías, buscador y contadores.
+  estado?: "proxima-apertura" | "cerrado";
   // Campos enriquecidos (comunes a todos)
   servicios?: string[];
   destacados?: string[];    // puntos fuertes / highlights
@@ -433,7 +436,12 @@ export function normalizeSocialUrls(redes?: Record<string, string>): string[] {
     .filter((url): url is string => !!url);
 }
 
-export function loadNegocios(): Negocio[] {
+export function estaCerrado(negocio: Pick<Negocio, "estado">): boolean {
+  return negocio.estado === "cerrado";
+}
+
+/** Todas las fichas, también las cerradas. Solo para generar y resolver la página de cada ficha. */
+export function loadFichas(): Negocio[] {
   const filePath = path.join(DATA_DIR, "negocios.json");
   if (!fs.existsSync(filePath)) return [];
   const raw: Negocio[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
@@ -442,6 +450,11 @@ export function loadNegocios(): Negocio[] {
   const { negocios, stripped } = stripBlockedWebsites(raw);
   warnStripped(stripped, "website-guard");
   return negocios as Negocio[];
+}
+
+/** Negocios abiertos: lo que listan las páginas, las guías y los contadores. */
+export function loadNegocios(): Negocio[] {
+  return loadFichas().filter((n) => !estaCerrado(n));
 }
 
 export function loadCategorias(): Categoria[] {
@@ -484,7 +497,7 @@ export function getNegociosByCategoriaYZona(
 }
 
 export function getNegocioBySlug(slug: string): Negocio | undefined {
-  return loadNegocios().find((n) => n.slug === slug);
+  return loadFichas().find((n) => n.slug === slug);
 }
 
 export function getNegociosPatrocinados(limit = 6): Negocio[] {
@@ -493,7 +506,7 @@ export function getNegociosPatrocinados(limit = 6): Negocio[] {
 
 // Path generators for getStaticPaths
 export function generateNegocioPaths() {
-  const negocios = loadNegocios();
+  const negocios = loadFichas();
   return negocios.map((negocio) => ({
     params: { categoria: negocio.category, slug: negocio.slug },
     props: negocio,
