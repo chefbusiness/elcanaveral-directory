@@ -2,8 +2,16 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
+import { UBICACION_POR_DEFECTO, enlaceDiagnosticoFicha } from "@/lib/localseoads";
 
 const SITE = "https://www.elcanaveral.info";
+
+const DIAGNOSTICO_APARTE =
+  "Antes de empezar: diagnóstico de ficha de 99 € (IVA incluido), pago único por adelantado y aparte de la cuota.";
+const hrefDiagnostico = enlaceDiagnosticoFicha({
+  ubicacion: UBICACION_POR_DEFECTO,
+  content: "planes-crecimiento",
+});
 
 const tiers = [
   {
@@ -48,8 +56,10 @@ const tiers = [
     cadence: "/mes + IVA",
     annual: "1.490 €/año + IVA · paga 10, disfruta 12",
     tagline: "Todo Destacado, más la ficha de Google cada mes. Lo ejecuta LocalSEOAds.",
-    cta: "Contratar",
-    href: "/anunciate/?plan=crecimiento",
+    note: DIAGNOSTICO_APARTE,
+    cta: "Empezar por el diagnóstico (99 €)",
+    href: hrefDiagnostico,
+    external: true,
     highlight: false,
     features: [
       { label: "Todo lo del plan Destacado", on: true },
@@ -58,7 +68,6 @@ const tiers = [
       { label: "Respuesta a reseñas en 2 días laborables (lunes a viernes)", on: true },
       { label: "Una revisión del perfil al mes: categorías, horarios, fotos que aporta el cliente y servicios", on: true },
       { label: "Resumen mensual con los datos reales de la ficha de Google", on: true },
-      { label: "Diagnóstico de ficha (99 €, IVA incluido) una vez, al contratar", on: true },
       { label: "Compromiso mínimo de 3 meses en la cuota mensual", on: true },
       { label: "Fotos o vídeos profesionales", on: false },
       { label: "Anuncios", on: false },
@@ -99,7 +108,7 @@ const faqs = [
   },
   {
     q: "¿Cómo se contrata el plan?",
-    a: "Rellenas el formulario en /anunciate, te confirmamos disponibilidad por email en menos de 48 horas, te enviamos los datos para el pago (transferencia bancaria o Bizum) y activamos el plan en menos de 24 horas tras recibir el primer pago. Las cuotas son + IVA. En Crecimiento, la cuota mensual tiene un compromiso mínimo de 3 meses e incluye una vez el diagnóstico de ficha (99 €, IVA incluido).",
+    a: "Rellenas el formulario en /anunciate, te confirmamos disponibilidad por email en menos de 48 horas, te enviamos los datos para el pago (transferencia bancaria o Bizum) y activamos el plan en menos de 24 horas tras recibir el primer pago. Las cuotas son + IVA. En Crecimiento, la cuota mensual tiene un compromiso mínimo de 3 meses. Antes se hace el diagnóstico de ficha (99 €, IVA incluido), que se paga aparte y por adelantado; no va incluido ni se descuenta.",
   },
   {
     q: "¿Hay permanencia?",
@@ -173,7 +182,7 @@ const offersSchema = {
         "@type": "Service",
         name: "Crecimiento",
         serviceType: "Ficha patrocinada y ficha de Google",
-        description: "Todo lo de Destacado y por delante de Destacado en los listados, más el trabajo mensual sobre la ficha de Google que ejecuta LocalSEOAds. Incluye una vez el diagnóstico de ficha (99 €, IVA incluido). Cuota mensual con compromiso mínimo de 3 meses. 149 €/mes + IVA o 1.490 €/año + IVA (paga 10, disfruta 12). No incluye fotos o vídeos profesionales, anuncios ni web.",
+        description: `Todo lo de Destacado y por delante de Destacado en los listados, más el trabajo mensual sobre la ficha de Google que ejecuta LocalSEOAds. ${DIAGNOSTICO_APARTE} Cuota mensual con compromiso mínimo de 3 meses. 149 €/mes + IVA o 1.490 €/año + IVA (paga 10, disfruta 12). No incluye fotos o vídeos profesionales, anuncios ni web.`,
         provider: { "@type": "Organization", name: "LocalSEOAds", url: "https://localseoads.com" },
         offers: [
           oferta("Crecimiento mensual", "149", "149 €/mes + IVA. Compromiso mínimo de 3 meses.", `${SITE}/anunciate/?plan=crecimiento`),
@@ -246,6 +255,9 @@ const offersSchema = {
               <div class="text-xs text-warm-600 mt-1">{tier.annual}</div>
             )}
           </div>
+          {tier.note && (
+            <p class="mb-5 text-xs font-medium text-brand-900 bg-warm-50 border border-warm-200 rounded-lg p-3">{tier.note}</p>
+          )}
           <ul class="space-y-2 mb-6 flex-1">
             {tier.features.map((f) => (
               <li class={`flex items-start gap-2 text-sm ${f.on ? "text-warm-800" : "text-warm-400 line-through"}`}>
@@ -258,6 +270,7 @@ const offersSchema = {
           </ul>
           <a
             href={tier.href}
+            {...(tier.external && { target: "_blank", rel: "noopener" })}
             class={`block text-center font-semibold px-4 py-3 rounded-lg transition-colors ${
               tier.highlight
                 ? "bg-accent-500 text-white hover:bg-accent-600"
@@ -302,9 +315,10 @@ const offersSchema = {
             <div class="sm:col-span-2 text-warm-700 text-sm">
               <strong class="text-brand-900">Crecimiento (149 €/mes + IVA).</strong> Todo Destacado, por delante
               de Destacado en los listados, más cada mes 4 publicaciones en Google, respuesta a reseñas en 2 días laborables, una revisión
-              del perfil y un resumen con los datos reales de la ficha. Incluye una vez el diagnóstico
-              (99 €, IVA incluido). Mínimo 3 meses. Lo ejecuta LocalSEOAds. No incluye fotos o vídeos
-              profesionales, anuncios ni web. Anual: 1.490 € + IVA, paga 10, disfruta 12.
+              del perfil y un resumen con los datos reales de la ficha. Mínimo 3 meses. Lo ejecuta
+              LocalSEOAds. No incluye fotos o vídeos profesionales, anuncios ni web. Anual: 1.490 € + IVA,
+              paga 10, disfruta 12. {DIAGNOSTICO_APARTE}
+              <a href={hrefDiagnostico} target="_blank" rel="noopener" class="text-brand-700 underline">Pedir el diagnóstico</a>.
             </div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5">
