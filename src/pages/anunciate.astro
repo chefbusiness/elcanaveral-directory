@@ -2,7 +2,12 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
+import { UBICACION_POR_DEFECTO, enlaceDiagnosticoFicha } from "@/lib/localseoads";
 
+const hrefDiagnostico = enlaceDiagnosticoFicha({
+  ubicacion: UBICACION_POR_DEFECTO,
+  content: "anunciate-crecimiento",
+});
 const submitted = Astro.url.searchParams.get("ok") === "1";
 const planParam = Astro.url.searchParams.get("plan") || "";
 const preselectDestacado = planParam === "destacado";
@@ -55,7 +60,7 @@ const preselectPresencia = !preselectDestacado && !preselectCrecimiento;
           data-netlify="true"
           netlify-honeypot="bot-field"
           action="/gracias/"
-          class="space-y-5"
+          class="group space-y-5"
         >
           <input type="hidden" name="form-name" value="anunciate" />
           <p class="hidden"><label>No rellenar: <input name="bot-field" /></label></p>
@@ -80,13 +85,20 @@ const preselectPresencia = !preselectDestacado && !preselectCrecimiento;
                 <p class="text-xs text-warm-600">Más elegido. Etiqueta Patrocinado, sección de la home y por delante de Presencia. Máximo 5 fichas Destacado por categoría.</p>
               </label>
               <label class="border border-warm-300 rounded-lg p-4 cursor-pointer hover:border-brand-600 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-50 transition-colors">
-                <input type="radio" name="plan" value="Crecimiento (149 €/mes + IVA)" checked={preselectCrecimiento} required class="sr-only peer" />
+                <input id="plan-crecimiento" type="radio" name="plan" value="Crecimiento (149 €/mes + IVA)" checked={preselectCrecimiento} required class="sr-only peer" />
                 <div class="flex items-start justify-between mb-1 gap-3">
                   <span class="font-semibold text-brand-900">Crecimiento</span>
                   <span class="text-brand-700 font-bold shrink-0">149 €/mes + IVA</span>
                 </div>
-                <p class="text-xs text-warm-600">Todo Destacado y por delante de Destacado en los listados, más la ficha de Google cada mes. Mínimo 3 meses. Lo ejecuta LocalSEOAds. Incluye una vez el diagnóstico (99 €, IVA incluido).</p>
+                <p class="text-xs text-warm-600">Todo Destacado y por delante de Destacado en los listados, más la ficha de Google cada mes. Mínimo 3 meses. Lo ejecuta LocalSEOAds. Antes de empezar: diagnóstico de ficha de 99 € (IVA incluido), pago único por adelantado y aparte de la cuota.</p>
               </label>
+            </div>
+            <div class="hidden group-has-[#plan-crecimiento:checked]:block mt-3 rounded-lg border border-brand-200 bg-brand-50 p-4 text-sm text-warm-800">
+              <p class="font-semibold text-brand-900 mb-1">Crecimiento empieza por el diagnóstico de ficha</p>
+              <p class="mb-3">Primero pide el diagnóstico de tu ficha de Google: 99 € (IVA incluido), pago único por adelantado y aparte de la cuota. No va incluido en Crecimiento ni se descuenta. Si ya lo has pedido, envía este formulario y te confirmamos el plan.</p>
+              <a href={hrefDiagnostico} target="_blank" rel="noopener" class="inline-block bg-brand-900 text-white font-semibold px-4 py-2 rounded-lg hover:bg-brand-800 transition-colors">
+                Solicitar el diagnóstico (99 €) →
+              </a>
             </div>
           </div>
 
@@ -183,7 +195,7 @@ const preselectPresencia = !preselectDestacado && !preselectCrecimiento;
           </button>
 
           <p class="text-xs text-warm-500 text-center">
-            Respuesta en menos de 48 h. Presencia y Destacado: mínimo 1 mes. Crecimiento: mínimo 3 meses. Anual: paga 10, disfruta 12.
+            Respuesta en menos de 48 h. Presencia y Destacado: mínimo 1 mes. Crecimiento: mínimo 3 meses, con el diagnóstico de ficha (99 €, IVA incluido) pagado aparte y antes. Anual: paga 10, disfruta 12.
           </p>
         </form>
       </div>

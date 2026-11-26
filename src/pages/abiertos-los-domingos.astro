@@ -119,7 +119,7 @@ const faq = [
   },
   {
     q: "¿Hay panaderías abiertas el domingo?",
-    a: `Sí: ${abren("panaderias").map((n) => n.name).join(", ")}. Abren de 8:00 a 14:00-15:00 aproximadamente. La mayoría de las panaderías del directorio cierra los domingos, así que estas son las que te sacan del apuro.`,
+    a: `Sí: ${abren("panaderias").map((n) => n.name).join(", ")}. Son ${abren("panaderias").length} de las ${negocios.filter((n) => n.category === "panaderias").length} panaderías del directorio. Unas cierran a mediodía y otras siguen hasta la noche: tienes la hora de cada una en la lista.`,
   },
   {
     q: "¿Y fruterías, bazares o tiendas de alimentación?",
@@ -182,7 +182,7 @@ const breadcrumbSchema = {
 
       <div class="bg-brand-50 border border-brand-100 rounded-xl p-5 mb-10 text-sm text-gray-700">
         <span class="font-semibold text-brand-700">La respuesta rápida:</span>
-        los supermercados abren <strong>por la mañana</strong> (9:00-15:00 según la cadena) y las panaderías hasta las 14:00-15:00.
+        los supermercados abren <strong>por la mañana</strong> (9:00-15:00 según la cadena) y las panaderías, unas hasta mediodía y otras hasta la noche.
         Si buscas algo concreto, en cada ficha tienes horario completo, teléfono y mapa.
       </div>
 

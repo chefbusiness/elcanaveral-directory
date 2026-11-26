@@ -8,6 +8,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import { loadNegocios, type Negocio } from "@/lib/directory";
+import { crearResolutorCifras } from "@/lib/cifras-datos.mjs";
 
 const base = "https://www.elcanaveral.info";
 
@@ -33,6 +34,7 @@ const zonaSlugs = [
 
 const negocios = loadNegocios();
 const porSlug = new Map(negocios.map((n) => [n.slug, n]));
+const cifras = crearResolutorCifras(negocios);
 const faltan: string[] = [];
 const recoge = (slugs: string[]) =>
   slugs
@@ -74,7 +76,7 @@ const faq = [
   },
   {
     q: "¿Hay bares para ver el fútbol o deporte?",
-    a: "MacLaren's Irish & Sport Bar, en El Cañaveral, es el local de referencia para deporte: es un pub irlandés con pantallas para retransmisiones y una de las fichas con más reseñas del barrio (más de 1.400).",
+    a: cifras("MacLaren's Irish & Sport Bar, en El Cañaveral, es el local de referencia para deporte: es un pub irlandés con pantallas para retransmisiones y una de las fichas con más reseñas del barrio ({{reseñas:maclaren-s-irish-sport-bar-canaveral}})."),
   },
   {
     q: "¿Qué es Tapaveral y cuándo se celebra?",
@@ -82,7 +84,7 @@ const faq = [
   },
   {
     q: "¿Dónde tomar cerveza artesanal?",
-    a: "Restaurante Galerna, en la Avenida Miguel Delibes, es una cervecería de barrio con selección de cervezas artesanales y una de las más valoradas del barrio (4,2 con casi 900 reseñas).",
+    a: cifras("Restaurante Galerna, en la Avenida Miguel Delibes, es una cervecería de barrio con selección de cervezas artesanales y una de las más valoradas del barrio ({{nota:cerveceria-la-galerna}} con {{reseñas:cerveceria-la-galerna}} reseñas)."),
   },
 ];
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
@@ -202,7 +204,7 @@ const breadcrumbSchema = {
 
       <div class="bg-white border border-warm-200 rounded-xl p-5 mb-8 text-sm text-gray-700">
         <span class="font-semibold text-brand-700">También te puede servir:</span>
-        <a href="/restaurantes/" class="text-brand-600 font-medium">los 46 restaurantes</a> ·
+        <a href="/restaurantes/" class="text-brand-600 font-medium">los 45 restaurantes</a> ·
         <a href="/cafeterias/" class="text-brand-600 font-medium">cafeterías para desayunar</a> ·
         <a href="/abiertos-los-domingos/" class="text-brand-600 font-medium">qué abre el domingo</a> ·
         <a href="/comida-a-domicilio/" class="text-brand-600 font-medium">lo que reparte a domicilio</a>.

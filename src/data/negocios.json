@@ -1356,13 +1356,13 @@
     "description": "La panadería de barrio por excelencia en el Bulevar de Indalecio Prieto, ofreciendo un surtido diario de panes, bollería y empanadas. Destaca por su.",
     "category": "panaderias",
     "categoryName": "Panaderías y Obradores",
-    "zona": "el-canaveral",
-    "zonaName": "El Cañaveral",
+    "zona": "vicalvaro",
+    "zonaName": "Vicálvaro",
     "tags": [
       "barrio"
     ],
     "featured": false,
-    "address": "Blvr. de Indalecio Prieto, 12, local 6, Vicalvaro, 28032 Madrid",
+    "address": "Blvr. de Indalecio Prieto, 12, local 6, Vicálvaro, 28032 Madrid",
     "rating": 4.4,
     "numReviews": 129,
     "phone": "+34 910 44 22 38",
@@ -4390,7 +4390,7 @@
       "Mediterránea Moderna"
     ],
     "precioRango": "€€€",
-    "address": "Calle San Cipriano 25, 28032 Madrid",
+    "address": "C. de San Cipriano, 10, 28032 Madrid",
     "phone": "+34 910 52 66 69",
     "image": "/images/negocios/rechupete-vicalvaro.webp",
     "images": [
@@ -7953,6 +7953,7 @@
     "categoryName": "Restaurantes",
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
+    "estado": "cerrado",
     "tags": [
       "terraza",
       "jardín",
@@ -8025,6 +8026,14 @@
       "Almuerzo",
       "Cena",
       "Cena en solitario"
+    ],
+    "verificadoEn": "2026-11-22",
+    "fuentes": [
+      {
+        "nombre": "Google Maps: Restaurante El Jardín del Cañaveral, marcado como cerrado permanentemente",
+        "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20El%20Jard%C3%ADn%20del%20Ca%C3%B1averal&query_place_id=ChIJwSUL2Wc7Qg0R2RyYy80AOx4",
+        "tipo": "web"
+      }
     ]
   },
   {

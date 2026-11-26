@@ -3,7 +3,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
-import { generateCategoriaPaths, loadZonas, getNegociosByCategoriaYZona } from "@/lib/directory";
+import { generateCategoriaPaths, loadNegocios, loadZonas, getNegociosByCategoriaYZona } from "@/lib/directory";
+import { crearResolutorCifras, resolverEnProfundidad } from "@/lib/cifras-datos.mjs";
 import { listiclesDeCategoria } from "@/lib/enlaces-internos.mjs";
 import ZonaFilter from "@/components/ZonaFilter.astro";
 import FiltrosServicios from "@/components/FiltrosServicios.astro";
@@ -28,7 +29,10 @@ const zonasConNegocios = zonas
   .filter((z) => z.count > 0);
 
 const guiasHub = listiclesDeCategoria(slug!);
-const seo = (seoOverrides.categorias as Record<string, any>)[slug!] || {};
+const seo = resolverEnProfundidad(
+  (seoOverrides.categorias as Record<string, any>)[slug!] || {},
+  crearResolutorCifras(loadNegocios()),
+);
 const seoTitle = seo.title || `${name} en El Cañaveral y alrededores`;
 const seoDesc = seo.description || description;
 const seoH1 = seo.h1 || name;

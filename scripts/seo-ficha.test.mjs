@@ -10,10 +10,14 @@ import {
   recortarMeta,
   tituloDeFicha,
 } from "../src/lib/seo-ficha.mjs";
+import { crearResolutorCifras, resolverEnProfundidad } from "../src/lib/cifras-datos.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const negocios = JSON.parse(readFileSync(path.join(root, "src/data/negocios.json"), "utf8"));
-const overrides = JSON.parse(readFileSync(path.join(root, "src/data/seo-overrides.json"), "utf8")).fichas;
+const overrides = resolverEnProfundidad(
+  JSON.parse(readFileSync(path.join(root, "src/data/seo-overrides.json"), "utf8")).fichas,
+  crearResolutorCifras(negocios.filter((n) => n.estado !== "cerrado")),
+);
 
 const CONECTOR = /^(?:a|al|con|de|del|e|el|en|la|las|le|lo|los|o|para|por|que|su|sus|un|una|y)$/i;
 
