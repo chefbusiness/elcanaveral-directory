@@ -25,6 +25,7 @@ const fotos = fotosDeFicha(negocio);
 const ctaNegocio = ctaPublicable(negocio);
 const planPago = esPlanPago(negocio);
 const textoRevision = textoDatosRevisados(negocio);
+const proximaApertura = negocio.estado === "proxima-apertura";
 const fichaSeo = resolverEnProfundidad(
   (seoOverrides as any).fichas?.[negocio.slug] || {},
   crearResolutorCifras(loadNegocios()),
@@ -97,7 +98,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
           <div>
             <div class="flex items-start gap-3 mb-2">
               <h1 class="text-3xl font-bold text-brand-900">{negocio.name}</h1>
-              {negocio.estado === "proxima-apertura" && (
+              {proximaApertura && (
                 <span class="shrink-0 text-xs font-semibold bg-brand-600 text-white px-3 py-1 rounded-md mt-1.5">
                   Próxima apertura
                 </span>
@@ -154,6 +155,16 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
                 referencia, sin teléfono ni horario. Si buscas una alternativa, mira los
                 <a href={`/${negocio.category}/`} class="underline font-medium">{negocio.categoryName.toLowerCase()}</a>
                 o lo que hay en <a href={`/zona/${negocio.zona}/`} class="underline font-medium">{negocio.zonaName}</a>.
+              </p>
+            </div>
+          )}
+
+          {proximaApertura && negocio.aperturaPrevista && (
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-5" role="note">
+              <p class="font-semibold text-amber-900">Próxima apertura: prevista para {negocio.aperturaPrevista}</p>
+              <p class="text-sm text-amber-800 mt-1">
+                Todavía no ha abierto. Esta ficha solo recoge lo anunciado públicamente, con sus fuentes
+                enlazadas, y se actualizará cuando abra.
               </p>
             </div>
           )}
@@ -250,7 +261,9 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
           <!-- Destacados -->
           {!cerrado && destacados.length > 0 && (
             <div class="bg-gradient-to-br from-brand-50 to-brand-100 rounded-xl p-6 border border-brand-200">
-              <h2 class="font-semibold text-lg mb-3">Por que elegir {negocio.name}</h2>
+              <h2 class="font-semibold text-lg mb-3">
+                {proximaApertura ? "Lo que se sabe hasta ahora" : `Por que elegir ${negocio.name}`}
+              </h2>
               <ul class="space-y-2.5">
                 {destacados.map((d) => (
                   <li class="flex items-start gap-3 text-sm text-gray-700">
@@ -363,7 +376,7 @@ const otrosEnZona = getNegociosByZona(negocio.zona)
                   <a href={negocio.website} target="_blank" rel="noopener" class="text-sm text-brand-600 hover:text-brand-700 break-all">{negocio.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a>
                 </div>
               )}
-              {!cerrado && negocio.horario && (
+              {!cerrado && !proximaApertura && negocio.horario && (
                 <div class="flex items-start gap-3">
                   <span class="text-gray-400 text-sm mt-0.5 shrink-0">&#128336;</span>
                   <div class="flex flex-wrap items-center gap-2">

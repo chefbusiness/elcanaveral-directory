@@ -16,7 +16,7 @@ interface Props {
 
 const { negocio, compacto = false } = Astro.props;
 // Formato compacto: el JSON con corchetes y comillas sumaba ~101 KB de atributos solo en /directorio/.
-const semana = horarioSemanaCompacto(negocio);
+const semana = negocio.estado === "proxima-apertura" ? undefined : horarioSemanaCompacto(negocio);
 ---
 
 {semana && (

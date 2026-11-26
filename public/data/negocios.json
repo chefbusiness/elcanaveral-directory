@@ -6389,46 +6389,50 @@
   {
     "slug": "obramat-canaveral",
     "name": "Obramat El Cañaveral",
-    "description": "Obramat El Cañaveral es el almacén profesional de referencia para todos tus proyectos de bricolaje, construcción y reformas. Con una vasta selección de.",
+    "description": "Obramat (grupo Adeo) prepara un almacén en El Cañaveral con apertura prevista a finales de 2027. Todavía no está abierto. Irá en el Omo Cañaveral Retail Park, el futuro parque comercial de Omo Retail en el barrio, cuyas obras de urbanización empezaron en marzo. Será el séptimo almacén de la marca en la Comunidad de Madrid.",
     "category": "hogar",
     "categoryName": "Hogar y Reformas",
     "zona": "el-canaveral",
     "zonaName": "El Cañaveral",
+    "address": "Omo Cañaveral Retail Park, El Cañaveral (en obras)",
     "tags": [
-      "bricolaje",
       "construcción",
-      "jardinería"
+      "reforma",
+      "empleo",
+      "próxima-apertura"
     ],
     "featured": false,
-    "servicios": [
-      "Venta de materiales de construcción",
-      "Herramientas eléctricas y manuales",
-      "Pintura y droguería",
-      "Fontanería y calefacción",
-      "Electricidad e iluminación",
-      "Jardinería y exterior",
-      "Decoración y revestimientos",
-      "Corte de madera y tableros"
-    ],
+    "estado": "proxima-apertura",
+    "aperturaPrevista": "finales de 2027",
     "destacados": [
-      "Amplio stock y variedad de productos",
-      "Precios competitivos para profesionales y particulares",
-      "Asesoramiento especializado",
-      "Horario amplio, incluyendo fines de semana"
+      "Inauguración prevista a finales de 2027: hasta entonces no hay tienda abierta ni horario",
+      "Ubicación: Omo Cañaveral Retail Park, en El Cañaveral (distrito de Vicálvaro). La urbanización del parque, a cargo de ASCH Infraestructuras y Servicios, empezó en marzo",
+      "Parcela de 12.000 m² con un almacén de 8.100 m² de superficie comercial",
+      "Séptimo almacén de Obramat en la Comunidad de Madrid, que ya cuenta con los de Alcobendas, Alcorcón, Majadahonda, Leganés, Rivas y Usera",
+      "Selección abierta para 100 empleos directos, gestionada por Randstad: se buscan personas con experiencia en atención al cliente o que conozcan el producto de reforma y construcción. Las ofertas se publican en empleo.obramat.es (enlace en las fuentes de esta ficha)"
     ],
-    "horario": "L-S 7:00-21:00, D 9:00-15:00",
-    "address": "Avenida de Miguel Delibes, 150, 28052 Madrid",
-    "image": "/images/negocios/obramat-canaveral.webp",
-    "images": [
-      "/images/negocios/obramat-canaveral.webp",
-      "/images/negocios/obramat-canaveral-2.webp",
-      "/images/negocios/obramat-canaveral-3.webp",
-      "/images/negocios/obramat-canaveral-4.webp",
-      "/images/negocios/obramat-canaveral-5.webp"
-    ],
-    "placeId": "IjESLwoUChIJ5Yzp8ZY6Qg0RBAOy5vg9r7MQlgEqFAoSCT2vmDKSOkINESCcncyHeal5",
-    "lat": 40.4038239,
-    "lng": -3.5579595
+    "fuentes": [
+      {
+        "nombre": "Alimarket (25 nov 2026): Obramat abrirá su séptimo almacén madrileño en El Cañaveral",
+        "url": "https://www.alimarket.es/construccion/noticia/435060/obramat-reforzara-su-presencia-en-madrid-con-la-apertura-de-su-septimo-almacen",
+        "tipo": "noticia"
+      },
+      {
+        "nombre": "Nota de prensa de Obramat en CanalDis (24 nov 2026): selección de 100 empleos para El Cañaveral",
+        "url": "https://canaldis.com/mediahubs/obramat/notas-de-prensa/obramat-abre-el-proceso-de-seleccion-para-su-nuevo-almacen-de-el-canaveral",
+        "tipo": "noticia"
+      },
+      {
+        "nombre": "Omo Retail: ficha del Omo Cañaveral Retail Park",
+        "url": "https://omoretail.es/fondos/el-canaveral/",
+        "tipo": "web"
+      },
+      {
+        "nombre": "Obramat Empleo: oferta para el almacén de El Cañaveral (operador/a logístico/a)",
+        "url": "https://empleo.obramat.es/jobs/8761305-almacen-canaveral_operador-a-logistico-a-indefinido",
+        "tipo": "web"
+      }
+    ]
   },
   {
     "slug": "burger-king-canaveral",
