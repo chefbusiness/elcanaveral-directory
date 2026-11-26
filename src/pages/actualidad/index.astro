@@ -52,7 +52,7 @@ const fmt = (iso: string) => new Date(iso).toLocaleDateString("es-ES", { day: "n
                       alt={typeof imagen.alt === "string" ? imagen.alt : ""}
                       width={imagen.width}
                       height={imagen.height}
-                      class="w-full h-auto"
+                      class="w-full h-auto aspect-video object-cover object-center"
                       loading="lazy"
                     />
                     {nota && (
