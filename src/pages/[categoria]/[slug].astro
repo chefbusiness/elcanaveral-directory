@@ -5,13 +5,14 @@ import Footer from "@/components/Footer.astro";
 import NegocioCard from "@/components/NegocioCard.astro";
 import Galeria from "@/components/Galeria.astro";
 import AbiertoAhora from "@/components/AbiertoAhora.astro";
-import { estaCerrado, generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona, socialProfileUrl } from "@/lib/directory";
+import { estaCerrado, generateNegocioPaths, generateLocalBusinessSchema, getNegociosByCategoria, getNegociosByZona, loadNegocios, socialProfileUrl } from "@/lib/directory";
 import type { Negocio } from "@/lib/directory";
 import { UBICACION_POR_DEFECTO, enlaceCtaLocalseoads } from "@/lib/localseoads";
 import ReclamarFicha from "@/components/ReclamarFicha.astro";
 import { ctaPublicable, esPatrocinado, esPlanPago, fotosDeFicha } from "@/lib/planes.mjs";
 import { textoDatosRevisados } from "@/lib/fechas-ficha.mjs";
 import { metaDeFicha, tituloDeFicha } from "@/lib/seo-ficha.mjs";
+import { crearResolutorCifras, resolverEnProfundidad } from "@/lib/cifras-datos.mjs";
 import seoOverrides from "@/data/seo-overrides.json";
 
 export function getStaticPaths() {
@@ -24,7 +25,10 @@ const fotos = fotosDeFicha(negocio);
 const ctaNegocio = ctaPublicable(negocio);
 const planPago = esPlanPago(negocio);
 const textoRevision = textoDatosRevisados(negocio);
-const fichaSeo = (seoOverrides as any).fichas?.[negocio.slug] || {};
+const fichaSeo = resolverEnProfundidad(
+  (seoOverrides as any).fichas?.[negocio.slug] || {},
+  crearResolutorCifras(loadNegocios()),
+);
 // Un negocio cerrado no se marca como LocalBusiness con horario y teléfono.
 const schema = cerrado ? null : generateLocalBusinessSchema(negocio);
 const servicios = (negocio.servicios as string[] | undefined) || [];
