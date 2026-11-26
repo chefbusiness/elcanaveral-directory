@@ -4,7 +4,7 @@ Negocios con datos dudosos que conviene confirmar in situ (John vive en el barri
 
 | Negocio | slug | Duda | Acción |
 |---|---|---|---|
-| **Obramat El Cañaveral** | `obramat-canaveral` | No aparece en Google Maps ni con sesgo de barrio; John no recuerda haberlo visto. Puede estar cerrado o tener otro rótulo a pie de calle. Dirección en datos: Av. de Miguel Delibes, 150. | Verificar si existe y con qué nombre. Si no existe → eliminar del directorio. |
+| **Obramat El Cañaveral** | `obramat-canaveral` | **Resuelto (2026-11-26).** No existe todavía: es una apertura prevista a finales de 2027 en el Omo Cañaveral Retail Park (en obras). La dirección «Av. de Miguel Delibes, 150» y el horario que tenía la ficha no estaban verificados. Fuentes: [Alimarket, 25-nov-2026](https://www.alimarket.es/construccion/noticia/435060/obramat-reforzara-su-presencia-en-madrid-con-la-apertura-de-su-septimo-almacen) y [nota de prensa de Obramat, 24-nov-2026](https://canaldis.com/mediahubs/obramat/notas-de-prensa/obramat-abre-el-proceso-de-seleccion-para-su-nuevo-almacen-de-el-canaveral). | Hecho: ficha convertida en «próxima apertura» (`estado: proxima-apertura`, `aperturaPrevista: finales de 2027`), sin horario, sin dirección con número, sin fotos de otros almacenes y `featured: false`. Revisar cuando abra. |
 | **Mediadores Inmobiliarios El Cañaveral** | `mediadores-inmobiliarios-canaveral` | La búsqueda en Google lo cruzó con **SM Homes** (mismo teléfono que `sm-homes-el-canaveral`). Sin ficha propia en Google. | Confirmar si es un negocio distinto de SM Homes o un duplicado. Si es duplicado → fusionar/eliminar. |
 
 ## Datos geográficos corruptos (detectado 2026-09-27 al montar el JSON-LD)

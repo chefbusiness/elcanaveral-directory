@@ -87,7 +87,9 @@ function lineaNegocio(n: Negocio): string[] {
     n.destacados?.length ? `Destacado (texto de las fichas): ${n.destacados.slice(0, 5).join(", ")}` : null,
     n.destacadosGoogle?.length ? `Etiquetas de su perfil de Google: ${n.destacadosGoogle.slice(0, 5).join(", ")}` : null,
     // Sin esto, un negocio anunciado pero aún sin abrir se citaría como operativo.
-    n.estado === "proxima-apertura" ? "Estado: PRÓXIMA APERTURA (anunciado, todavía sin abrir)" : null,
+    n.estado === "proxima-apertura"
+      ? `Estado: PRÓXIMA APERTURA (anunciado, todavía sin abrir${n.aperturaPrevista ? `; prevista para ${n.aperturaPrevista}` : ""})`
+      : null,
   ].filter(Boolean);
   return [`- **${n.name}** — ${desc}`, `  ${partes.join(" · ")}`, `  Ficha: ${url(`/${n.category}/${n.slug}/`)}`];
 }

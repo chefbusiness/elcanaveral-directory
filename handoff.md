@@ -904,7 +904,7 @@ Refrescar todo: `python scripts/apify_enrich.py --mode enrich --write` (coste ~$
    septiembre** (maduracion de guías + actualidad + vuelta al cole).
 3. **🍹 Guía de terrazas — PARKED**: John aporta datos a medida que visita locales en persona. No enfocarse hasta que él lo pida. (Campos `terraza`/`delivery` ya se capturan en `apify_enrich.py` desde `additionalInfo`.)
 4. **Ampliar fiestas** (opcional): más ferias reales de la zona cuando toque.
-5. **Verificar in situ** (`VERIFICAR-EN-PERSONA.md`): Obramat (¿existe/otro rótulo?) y Mediadores (¿= SM Homes?).
+5. **Verificar in situ** (`VERIFICAR-EN-PERSONA.md`): Mediadores (¿= SM Homes?). Obramat ya no está pendiente de verificar: es una próxima apertura prevista para finales de 2027 en el Omo Cañaveral Retail Park, según la [nota de prensa de Obramat del 24-nov-2026](https://canaldis.com/mediahubs/obramat/notas-de-prensa/obramat-abre-el-proceso-de-seleccion-para-su-nuevo-almacen-de-el-canaveral).
 6. **Legales Opción B** (si John factura en serio): añadir NIF + domicilio fiscal a aviso-legal y privacidad.
 7. **Documentar boilerplate** replicable (Sanchinarro, Valdebebas, Rivas…) — el motor directorio+listicles+drip+pilares ya es bastante portable.
 
