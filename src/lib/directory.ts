@@ -44,6 +44,9 @@ export interface Negocio {
   plan?: "ninguno" | "presencia" | "destacado" | "crecimiento" | "sponsor";
   cta?: { texto: string; url: string };
   estado?: "proxima-apertura";   // negocio anunciado que aun no ha abierto
+  // Solo con estado "proxima-apertura" y tal como lo publica la fuente («finales de 2027»):
+  // la ficha lo muestra en el aviso «Próxima apertura: prevista para …».
+  aperturaPrevista?: string;
   // Campos enriquecidos (comunes a todos)
   servicios?: string[];
   destacados?: string[];    // puntos fuertes / highlights
@@ -642,11 +645,14 @@ export function generateLocalBusinessSchema(negocio: Negocio) {
     // (`openingHoursSpecification`) lleva todos, incluidos los locales que cierran de madrugada.
     // El texto libre que había antes lo ignoran Google y los LLM; si no se puede traducir, no se
     // publica el campo (el horario sigue visible en la ficha para las personas).
+    // Un negocio que aún no ha abierto no tiene horario que declarar.
     ...(() => {
+      if (negocio.estado === "proxima-apertura") return {};
       const iso = horarioISO(negocio);
       return iso && iso.length > 0 ? { openingHours: iso } : {};
     })(),
     ...(() => {
+      if (negocio.estado === "proxima-apertura") return {};
       const spec = horarioSpec(negocio);
       return spec && spec.length > 0 ? { openingHoursSpecification: spec } : {};
     })(),
