@@ -32,13 +32,13 @@
       "description": "45 restaurantes en El Cañaveral, Vicálvaro, Coslada y San Fernando: 21 con terraza, 15 con reparto a domicilio y 32 que abren los domingos. Horarios, teléfonos y notas reales de Google.",
       "h1": "Restaurantes en El Cañaveral y alrededores",
       "intro": [
-        "El Cañaveral tiene <strong>23 restaurantes dentro del barrio</strong> y otros 22 a pocos minutos (Vicálvaro, Coslada y San Fernando de Henares). Los mejor valorados por volumen de reseñas son <a href=\"/restaurantes/con-sazon-el-canaveral/\">Con Sazón</a> (4,8 con más de 6.700 reseñas), <a href=\"/restaurantes/chinawok-express-canaveral/\">ChinaWok Express</a> (4,7 con 3.199), <a href=\"/restaurantes/tsinghe-cocina-fusion/\">TSINGHE Cocina Fusión</a> (4,8 con 836) y <a href=\"/restaurantes/guasacaca-madrid-canaveral/\">Guasacaca</a> (4,8 con 781). En cocina hay de todo: casera, mediterránea, española, latina y venezolana, brasa y china.",
+        "El Cañaveral tiene <strong>23 restaurantes dentro del barrio</strong> y otros 22 a pocos minutos (Vicálvaro, Coslada y San Fernando de Henares). Los mejor valorados, con la nota ponderada por el volumen de reseñas, son <a href=\"/restaurantes/con-sazon-el-canaveral/\">Con Sazón</a> ({{nota:con-sazon-el-canaveral}} con {{reseñas:con-sazon-el-canaveral}} reseñas), <a href=\"/restaurantes/chinawok-express-canaveral/\">ChinaWok Express</a> ({{nota:chinawok-express-canaveral}} con {{reseñas:chinawok-express-canaveral}}), <a href=\"/restaurantes/guasacaca-madrid-canaveral/\">Guasacaca</a> ({{nota:guasacaca-madrid-canaveral}} con {{reseñas:guasacaca-madrid-canaveral}}) y <a href=\"/restaurantes/tsinghe-cocina-fusion/\">TSINGHE Cocina Fusión</a> ({{nota:tsinghe-cocina-fusion}} con {{reseñas:tsinghe-cocina-fusion}}). En cocina hay de todo: casera, mediterránea, española, latina y venezolana, brasa y china.",
         "Para elegir rápido: <strong>21 tienen terraza</strong>, <strong>15 reparten a domicilio</strong> y <strong>32 abren los domingos</strong> (los tienes con su hora exacta en el <a href=\"/abiertos-los-domingos/\">listado de lo que abre el domingo</a>). Abajo están los 45. Horario y valoración de Google se muestran en las fichas que los publican. Y si lo que te apetece es tapear, mira los <a href=\"/bares-y-tapas/\">bares y tabernas de tapas de El Cañaveral</a> y su entorno."
       ],
       "faq": [
         {
           "q": "¿Cuál es el mejor restaurante de El Cañaveral?",
-          "a": "Con el ranking que usamos —nota media ponderada por número de reseñas, para que una nota alta con pocas opiniones no adelante a una con cientos— encabeza la lista Con Sazón El Cañaveral (4,8 con más de 6.700 reseñas), seguido de ChinaWok Express (4,7 con 3.199) y TSINGHE Cocina Fusión (4,8 con 836)."
+          "a": "Con el ranking que usamos —nota media ponderada por número de reseñas, para que una nota alta con pocas opiniones no adelante a una con cientos— encabeza la lista Con Sazón El Cañaveral ({{nota:con-sazon-el-canaveral}} con {{reseñas:con-sazon-el-canaveral}} reseñas), seguido de Guasacaca Madrid ({{nota:guasacaca-madrid-canaveral}} con {{reseñas:guasacaca-madrid-canaveral}}) y TSINGHE Cocina Fusión ({{nota:tsinghe-cocina-fusion}} con {{reseñas:tsinghe-cocina-fusion}})."
         },
         {
           "q": "¿Qué restaurantes abren los domingos en El Cañaveral?",
@@ -46,7 +46,7 @@
         },
         {
           "q": "¿Dónde se puede comer con terraza?",
-          "a": "21 locales tienen terraza confirmada, entre ellos Restaurante Galerna (4,2 con 896 reseñas) o El Rincón de Carla. En cada ficha aparece el distintivo de terraza cuando el negocio lo declara en Google; en primavera y verano, reserva."
+          "a": "21 locales tienen terraza confirmada, entre ellos Restaurante Galerna ({{nota:cerveceria-la-galerna}} con {{reseñas:cerveceria-la-galerna}} reseñas) o El Rincón de Carla. En cada ficha aparece el distintivo de terraza cuando el negocio lo declara en Google; en primavera y verano, reserva."
         },
         {
           "q": "¿Cuáles reparten a domicilio?",
@@ -347,67 +347,67 @@
   "fichas": {
     "obrador-de-goya": {
       "title": "Obrador de Goya — Pan de leña en El Cañaveral",
-      "description": "Pan de leña y recetas clásicas en la avenida Miguel Delibes, 80 (El Cañaveral). 3,8 de 5 en Google con 357 reseñas. Horarios y dirección en la ficha."
+      "description": "Pan de leña y recetas clásicas en la avenida Miguel Delibes, 80 (El Cañaveral). {{nota:obrador-de-goya}} de 5 en Google con {{reseñas:obrador-de-goya}} reseñas. Horarios y dirección en la ficha."
     },
     "sanitas-dental-el-canaveral": {
       "title": "Sanitas Dental El Cañaveral — Dentista en Miguel Delibes",
-      "description": "Clínica dental Sanitas en El Cañaveral (Av. Miguel Delibes, 18): tecnología avanzada y financiación. 3,8 de 5 (79 reseñas). L-V 9:00-21:00 y sábados 10:00-14:00."
+      "description": "Clínica dental Sanitas en El Cañaveral (Av. Miguel Delibes, 18): tecnología avanzada y financiación. {{nota:sanitas-dental-el-canaveral}} de 5 con {{reseñas:sanitas-dental-el-canaveral}} reseñas. Horario: {{horario:sanitas-dental-el-canaveral}}."
     },
     "churreria-bernis": {
       "title": "Churrería Bernís — Churros y porras cerca de El Cañaveral",
-      "description": "Churros y porras artesanales al momento en Vicálvaro, a pocos minutos de El Cañaveral. 4,5 de 5 con más de 1.100 reseñas de Google. Horarios y dirección."
+      "description": "Churros y porras artesanales al momento en Vicálvaro, a pocos minutos de El Cañaveral. {{nota:churreria-bernis}} de 5 con {{reseñas:churreria-bernis}} reseñas de Google. Horarios y dirección."
     },
     "la-belle-vie-canaveral": {
       "title": "La Belle Vie — Peluquería y estética en El Cañaveral",
-      "description": "Salón de belleza integral en El Cañaveral (calle Victoria Kent, 7): corte, color y tratamientos estéticos. 4,7 de 5 (120 reseñas). M-V 10:00-20:00 y sábados 9:00-15:00."
+      "description": "Salón de belleza integral en El Cañaveral (calle Victoria Kent, 7): corte, color y tratamientos estéticos. {{nota:la-belle-vie-canaveral}} de 5 con {{reseñas:la-belle-vie-canaveral}} reseñas. Horario: {{horario:la-belle-vie-canaveral}}."
     },
     "mr-kebab-canaveral": {
       "title": "Mr Kebab El Cañaveral — Kebab turco y a domicilio",
-      "description": "Cocina turca con raciones generosas en El Cañaveral: kebab, falafel y opciones para llevar y a domicilio. 4,7 de 5 (423 reseñas). Horarios y ubicación."
+      "description": "Cocina turca con raciones generosas en El Cañaveral: kebab, falafel y opciones para llevar y a domicilio. {{nota:mr-kebab-canaveral}} de 5 con {{reseñas:mr-kebab-canaveral}} reseñas. Horarios y ubicación."
     },
     "levaduramadre": {
       "title": "Levadura Madre — Pan de masa madre en El Cañaveral",
-      "description": "Panadería artesanal de masa madre y larga fermentación en la avenida Blas de Lezo. 3,8 de 5 (74 reseñas). L-V 8:00-14:30 y 17:00-20:00; sábados 8:00-14:30."
+      "description": "Panadería artesanal de masa madre y larga fermentación en la avenida Blas de Lezo. {{nota:levaduramadre}} de 5 con {{reseñas:levaduramadre}} reseñas. Horario: {{horario:levaduramadre}}."
     },
     "supermercado-el-canaveral": {
       "title": "Supermercado El Cañaveral — Súper de barrio en Ferenc Puskas",
-      "description": "Supermercado de proximidad en el corazón de El Cañaveral (calle Ferenc Puskas, 245) para la compra diaria. 5 de 5 (15 reseñas). L-S 9:30-14:30 y 17:00-20:30."
+      "description": "Supermercado de proximidad en el corazón de El Cañaveral (calle Ferenc Puskas, 245) para la compra diaria. {{nota:supermercado-el-canaveral}} de 5 con {{reseñas:supermercado-el-canaveral}} reseñas. Horario: {{horario:supermercado-el-canaveral}}."
     },
     "panaderia-bulevar": {
       "title": "Panadería Bulevar — Pan de barrio, bollería y empanadas",
-      "description": "Panadería de barrio en el Bulevar de Indalecio Prieto: pan diario, bollería y empanadas. 4,4 de 5 con 128 reseñas. L-S 7:00-15:00 y 17:00-20:00; domingos 8:00-14:00."
+      "description": "Panadería en el Bulevar de Indalecio Prieto: pan, bollería y empanadas. {{nota:panaderia-bulevar}} de 5 con {{reseñas:panaderia-bulevar}} reseñas. Horario: {{horario:panaderia-bulevar}}."
     },
     "masruedas-coslada": {
       "title": "Masruedas First Stop Coslada — Neumáticos y mecánica rápida",
-      "description": "Neumáticos, mecánica rápida y revisiones pre-ITV en Coslada, a un paso de El Cañaveral. 4,9 de 5 (116 reseñas). L-V 8:30-19:00 y sábados 9:00-13:00."
+      "description": "Neumáticos, mecánica rápida y revisiones pre-ITV en Coslada, a un paso de El Cañaveral. {{nota:masruedas-coslada}} de 5 con {{reseñas:masruedas-coslada}} reseñas. Horario: {{horario:masruedas-coslada}}."
     },
     "dreamfit-valdebernardo": {
       "title": "Dreamfit Valdebernardo — Gimnasio 24 horas cerca de El Cañaveral",
-      "description": "Gimnasio completo abierto las 24 horas con acceso por huella: musculación, cardio y clases. 4 de 5 con 1.508 reseñas. Cerca de El Cañaveral (calle de los Pinillas, 1)."
+      "description": "Gimnasio completo abierto las 24 horas con acceso por huella: musculación, cardio y clases. {{nota:dreamfit-valdebernardo}} de 5 con {{reseñas:dreamfit-valdebernardo}} reseñas. Cerca de El Cañaveral (calle de los Pinillas, 1)."
     },
     "estanco-el-canaveral": {
       "title": "Estanco El Cañaveral — Tabaco, lotería y prensa en Blas de Lezo",
-      "description": "El estanco del barrio en la avenida de Blas de Lezo, 74: tabaco y timbre del Estado, lotería, recargas y prensa. 4,1 de 5 con 55 reseñas. L-V 9:00-14:00 y 17:00-20:00; sábados 9:30-14:00."
+      "description": "El estanco del barrio en la avenida de Blas de Lezo, 74: tabaco y timbre del Estado, lotería, recargas y prensa. {{nota:estanco-el-canaveral}} de 5 con {{reseñas:estanco-el-canaveral}} reseñas. Horario: {{horario:estanco-el-canaveral}}."
     },
     "mi-alcampo": {
       "title": "Mi Alcampo El Cañaveral — Supermercado en calle Anna Frank",
-      "description": "El formato compacto de Alcampo en El Cañaveral (calle Anna Frank, 8) para la compra rápida y diaria. Abierto de lunes a sábado 9:00-21:00 y domingos 10:00-15:00. 146 reseñas en Google."
+      "description": "El formato compacto de Alcampo en El Cañaveral (calle Anna Frank, 8) para la compra rápida y diaria. Horario: {{horario:mi-alcampo}}. {{reseñas:mi-alcampo}} reseñas en Google."
     },
     "ahorramas": {
       "title": "Ahorramas El Cañaveral — Supermercado en Miguel Delibes",
-      "description": "Supermercado madrileño de precio ajustado y buenos frescos en la avenida Miguel Delibes, 20. Abierto de lunes a sábado 9:00-21:30 y domingos 9:00-15:00. 4 de 5 con 252 reseñas."
+      "description": "Supermercado madrileño de precio ajustado y buenos frescos en la avenida Miguel Delibes, 20. Horario: {{horario:ahorramas}}. {{nota:ahorramas}} de 5 con {{reseñas:ahorramas}} reseñas."
     },
     "escuela-infantil-aupa": {
       "title": "Escuela Infantil AUPA — Guardería 0-3 años en El Cañaveral",
-      "description": "Escuela infantil de pedagogía activa en Blas de Lezo, 15 (El Cañaveral), para niños de 0 a 3 años. 4,7 de 5 con 43 reseñas. Abierta de lunes a viernes, de 8:00 a 17:00."
+      "description": "Escuela infantil de pedagogía activa en Blas de Lezo, 15 (El Cañaveral), para niños de 0 a 3 años. {{nota:escuela-infantil-aupa}} de 5 con {{reseñas:escuela-infantil-aupa}} reseñas. Horario: {{horario:escuela-infantil-aupa}}."
     },
     "farmacia-sonrisas-canaveral": {
       "title": "Farmacia Sonrisas del Cañaveral — Farmacia en Anna Frank",
-      "description": "Farmacia de barrio en la calle Anna Frank, 10: atención cercana, cosmética natural y productos infantiles. 4,8 de 5 (59 reseñas). L-V 9:30-14:00 y 17:00-20:30; sábados 10:00-14:00."
+      "description": "Farmacia de barrio en la calle Anna Frank, 10: atención cercana, cosmética natural y productos infantiles. {{nota:farmacia-sonrisas-canaveral}} de 5 con {{reseñas:farmacia-sonrisas-canaveral}} reseñas. Horario: {{horario:farmacia-sonrisas-canaveral}}."
     },
     "vicalcan-veterinario": {
       "title": "Vicalcan — Clínica veterinaria en Vicálvaro",
-      "description": "Clínica veterinaria de referencia cerca de El Cañaveral (calle Jose Prat, 15, Vicálvaro): consulta, vacunas y cuidado de tu mascota. 4,6 de 5 con 942 reseñas. L-V 10:00-14:00 y 17:00-20:30; sábados 10:00-14:00."
+      "description": "Clínica veterinaria de referencia cerca de El Cañaveral (calle Jose Prat, 15, Vicálvaro): consulta, vacunas y cuidado de tu mascota. {{nota:vicalcan-veterinario}} de 5 con {{reseñas:vicalcan-veterinario}} reseñas. Horario: {{horario:vicalcan-veterinario}}."
     }
   }
 }
