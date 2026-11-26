@@ -1,6 +1,191 @@
 {
   "posts": [
     {
+      "slug": "madrid-distrito-en-corto-vicalvaro-28-noviembre-2026",
+      "title": "Madrid Distrito en Corto llega a Vicálvaro: cinco cortos el sábado 28 de noviembre en el CC Fuente de San Pedro-Valderrivas",
+      "date": "2026-11-26",
+      "updated": "2026-11-26",
+      "excerpt": "El ciclo municipal de cortometrajes para en el Centro Cultural Fuente de San Pedro-Valderrivas (calle Titanio, 5) el sábado 28 de noviembre. El programa oficial de madrid.es lo fija a las 18:00; la Junta de Vicálvaro había anunciado las 19:00. Entrada libre.",
+      "image": {
+        "src": "/images/actualidad/madrid-distrito-en-corto-vicalvaro-2026.webp",
+        "alt": "Público de espaldas en una sala de un centro cultural de barrio frente a una pantalla con una proyección sin títulos.",
+        "width": 864,
+        "height": 1080,
+        "credit": {
+          "note": "Ilustración generada con IA para elcanaveral.info. No es una fotografía del evento."
+        }
+      },
+      "tags": [
+        "Eventos",
+        "Ocio"
+      ],
+      "lead": "Plan de cine corto para el sábado sin salir del distrito. Madrid Distrito en Corto, el programa con el que el Ayuntamiento lleva cortometrajes a centros culturales y bibliotecas de los barrios, hace parada en Vicálvaro el sábado 28 de noviembre de 2026, en el Centro Cultural Fuente de San Pedro-Valderrivas. Se proyectan cinco cortos y la entrada es libre.",
+      "datosClave": [
+        "Cuándo: sábado 28 de noviembre de 2026, a las 18:00 según el programa oficial de madrid.es.",
+        "Ojo con la hora: la Junta Municipal de Vicálvaro anunció la sesión a las 19:00. Les recomendamos llegar a las 18:00.",
+        "Dónde: Centro Cultural Fuente de San Pedro-Valderrivas, calle Titanio, 5 (Vicálvaro).",
+        "Entrada libre.",
+        "Programa: «Una cabeza en la pared», «La fuerza», «El relevo», «Cosas de chicos» y «Teo va al espacio».",
+        "Agenda del barrio: /agenda/."
+      ],
+      "secciones": [
+        {
+          "h2": "Los cinco cortos",
+          "parrafos": [
+            "La sesión de noviembre, que el Ayuntamiento titula «Madrid residencia de talento», reúne cinco cortometrajes:",
+            "1. «Una cabeza en la pared».<br>2. «La fuerza».<br>3. «El relevo».<br>4. «Cosas de chicos».<br>5. «Teo va al espacio».",
+            "El <a href=\"https://www.madrid.es/UnidadWeb/UGBBDD/Actividades/ficheros/MDEC_Nov_2026.pdf\" target=\"_blank\" rel=\"noopener\">programa en PDF de madrid.es</a> recoge la sinopsis, la duración y la calificación por edades de cada uno, por si quieren mirarlo antes de ir con niños."
+          ]
+        },
+        {
+          "h2": "¿A las 18:00 o a las 19:00?",
+          "parrafos": [
+            "La Junta Municipal de Vicálvaro difundió la cita a las 19:00. Sin embargo, la tabla de sesiones del <a href=\"https://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad/Actividades-y-eventos/Madrid-Distrito-en-Corto/?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=5248b6c423f11a10VgnVCM100000891ecb1aRCRD\" target=\"_blank\" rel=\"noopener\">programa oficial en madrid.es</a> sitúa la de Vicálvaro a las 18:00. El PDF del programa solo trae las fichas de los cortos, no los horarios.",
+            "Nos quedamos con la hora del programa municipal, las 18:00. Si se aclara la discrepancia, actualizaremos esta noticia y la agenda."
+          ]
+        },
+        {
+          "h2": "Cómo ir",
+          "parrafos": [
+            "El Centro Cultural Fuente de San Pedro-Valderrivas está en la calle Titanio, 5, en Vicálvaro. La entrada es libre.",
+            "Tienen esta y otras citas en la <a href=\"/agenda/\">agenda del barrio</a>."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "Ayuntamiento de Madrid: Madrid Distrito en Corto, programación de noviembre de 2026",
+          "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad/Actividades-y-eventos/Madrid-Distrito-en-Corto/?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=5248b6c423f11a10VgnVCM100000891ecb1aRCRD"
+        },
+        {
+          "name": "Ayuntamiento de Madrid: programa de Madrid Distrito en Corto, noviembre de 2026 (PDF)",
+          "url": "https://www.madrid.es/UnidadWeb/UGBBDD/Actividades/ficheros/MDEC_Nov_2026.pdf"
+        },
+        {
+          "name": "Junta Municipal de Distrito de Vicálvaro en X",
+          "url": "https://x.com/jmdvicalvaro"
+        }
+      ]
+    },
+    {
+      "slug": "cercanias-mejorada-del-campo-estudio-informativo-apeadero-la-marsala",
+      "title": "Cercanías a Mejorada del Campo: Transportes licita el estudio que incluye una alternativa con apeadero en La Marsala, junto a El Cañaveral",
+      "date": "2026-11-26",
+      "updated": "2026-11-26",
+      "excerpt": "El Ministerio de Transportes ha sacado a licitación la redacción del estudio informativo para llevar Cercanías a Mejorada del Campo. Una de las alternativas, la C, añade un apeadero en el polígono de La Marsala que acercaría el tren a El Cañaveral. Es un estudio, no una obra aprobada.",
+      "image": {
+        "src": "/images/actualidad/cercanias-mejorada-apeadero-la-marsala.webp",
+        "alt": "Andén de hormigón junto a una vía de cercanías con catenaria y bloques de vivienda de un PAU al fondo, al atardecer.",
+        "width": 864,
+        "height": 1080,
+        "credit": {
+          "note": "Ilustración generada con IA para elcanaveral.info. No es una fotografía del evento."
+        }
+      },
+      "tags": [
+        "Movilidad",
+        "Transporte"
+      ],
+      "lead": "El tren de Cercanías podría acercarse algún día a El Cañaveral, pero de momento lo que hay es un estudio. El Ministerio de Transportes y Movilidad Sostenible anunció el 25 de noviembre de 2026 que licita la redacción del estudio informativo para extender la red de Cercanías de Madrid hasta Mejorada del Campo. Una de las alternativas que se analizarán, la C, incluye un nuevo apeadero en el polígono de La Marsala.",
+      "datosClave": [
+        "Qué se licita: la redacción del estudio informativo de la extensión de Cercanías hasta Mejorada del Campo. No es una obra ni un proyecto de construcción.",
+        "Presupuesto de licitación del estudio: 1.089.000 euros (IVA incluido).",
+        "Plazo: 36 meses, que incluyen la tramitación hasta la declaración de impacto ambiental y la aprobación definitiva del estudio.",
+        "Alternativa C: suma un apeadero en el polígono de La Marsala, entre las estaciones de Coslada y Vicálvaro, que acercaría el tren a El Cañaveral.",
+        "Inversión estimada en infraestructura de la actuación: unos 140 millones de euros.",
+        "Fuente: Ministerio de Transportes y Movilidad Sostenible (25 nov 2026)."
+      ],
+      "secciones": [
+        {
+          "h2": "Qué ha anunciado Transportes",
+          "parrafos": [
+            "Según la nota del Ministerio, el contrato que sale a licitación sirve para redactar el estudio informativo de la prolongación de Cercanías hasta Mejorada del Campo. Tiene un presupuesto de 1.089.000 euros con IVA y un plazo de 36 meses, que cubre tanto la redacción como la asistencia técnica durante su tramitación, hasta la declaración de impacto ambiental y la aprobación definitiva.",
+            "Antes de este paso, el Ministerio terminó en 2026 un estudio de viabilidad que analizó tres alternativas (A, B y C). Las dos que superan el umbral de rentabilidad socioeconómica exigido, la B y la C, plantean una nueva conexión ferroviaria desde la cabecera este de la estación de San Fernando de Henares hasta una futura estación en Mejorada del Campo."
+          ]
+        },
+        {
+          "h2": "La alternativa C y el apeadero de La Marsala",
+          "parrafos": [
+            "La alternativa C añade a la B un apeadero de Cercanías en el polígono de La Marsala, entre las estaciones actuales de Coslada y Vicálvaro. El Ministerio dice que esa parada permitiría acercar el ferrocarril al desarrollo urbano de El Cañaveral y le atribuye un alto valor de rentabilidad.",
+            "La inversión aproximada en infraestructura de la actuación ronda los 140 millones de euros, según la misma nota."
+          ]
+        },
+        {
+          "h2": "Lo que todavía no hay",
+          "parrafos": [
+            "Conviene no adelantarse: lo licitado es un estudio. Su trabajo será definir y comparar las alternativas para elegir la más adecuada. Hoy no hay obra aprobada, ni alternativa elegida, ni fecha para un tren en La Marsala.",
+            "Mientras tanto, las opciones para moverse desde el barrio están en <a href=\"/transporte/\">Transporte en El Cañaveral</a>. Seguiremos la tramitación del estudio y la contaremos aquí."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "Ministerio de Transportes y Movilidad Sostenible (25 nov 2026): Transportes licita la redacción del Estudio Informativo de la extensión de la red de Cercanías de Madrid a Mejorada del Campo",
+          "url": "https://www.transportes.gob.es/ministerio/comunicacion/sala-prensa/mie-25112026-1204"
+        }
+      ]
+    },
+    {
+      "slug": "obramat-el-canaveral-100-empleos-apertura-2027",
+      "title": "Obramat busca 100 trabajadores para su almacén de El Cañaveral, que prevé abrir a finales de 2027",
+      "date": "2026-11-26",
+      "updated": "2026-11-26",
+      "excerpt": "Obramat ha abierto, con Randstad, el proceso de selección de los 100 empleos directos de su futuro almacén en el Omo Cañaveral Retail Park. La apertura está prevista para finales de 2027.",
+      "image": {
+        "src": "/images/actualidad/obramat-el-canaveral-empleo.webp",
+        "alt": "Nave comercial de bricolaje recién terminada, sin rotulación, con palés en el muelle de carga al atardecer.",
+        "width": 864,
+        "height": 1080,
+        "credit": {
+          "note": "Ilustración generada con IA para elcanaveral.info. No es una fotografía del evento."
+        }
+      },
+      "tags": [
+        "Comercio"
+      ],
+      "lead": "Obramat, la cadena de materiales de construcción y bricolaje del grupo Adeo, ha empezado a buscar plantilla para el almacén que levantará en El Cañaveral. La empresa ha abierto el proceso de selección de 100 empleos directos, que gestiona Randstad, para un centro cuya apertura se prevé a finales de 2027. Todavía no está abierto.",
+      "datosClave": [
+        "Empleo: 100 puestos directos. La selección la gestiona Randstad.",
+        "Perfiles: experiencia en atención al cliente o conocimiento de producto del sector de la reforma y la construcción.",
+        "Dónde: futuro parque comercial Omo Cañaveral Retail Park, en El Cañaveral (Vicálvaro).",
+        "Tamaño: parcela de 12.000 m² y más de 8.100 m² de superficie comercial.",
+        "Apertura prevista: finales de 2027.",
+        "Será el séptimo almacén de Obramat en la Comunidad de Madrid."
+      ],
+      "secciones": [
+        {
+          "h2": "El proceso de selección",
+          "parrafos": [
+            "Según la nota de prensa de Obramat del 24 de noviembre, el nuevo centro permitirá crear 100 empleos directos. Randstad se encarga de la selección y busca perfiles con experiencia en atención al cliente o con conocimiento de producto del sector de la reforma y la construcción.",
+            "Si les interesa alguno de esos puestos, la referencia es Randstad, que es quien gestiona el proceso."
+          ]
+        },
+        {
+          "h2": "Cómo será el almacén y cuándo abrirá",
+          "parrafos": [
+            "Alimarket publicó el 25 de noviembre que Obramat ocupará 12.000 m² dentro del futuro Omo Cañaveral Retail Park, donde levantará un almacén de unos 8.100 m² de superficie comercial. La previsión es inaugurarlo a finales de 2027.",
+            "Será el séptimo almacén de la marca en la Comunidad de Madrid. El parque comercial donde se instalará lo explicamos en <a href=\"/actualidad/parque-comercial-el-canaveral-mayor-de-madrid/\">el parque comercial de El Cañaveral</a>."
+          ]
+        },
+        {
+          "h2": "La ficha del directorio",
+          "parrafos": [
+            "Tienen la <a href=\"/hogar/obramat-canaveral/\">ficha de Obramat El Cañaveral</a> en el directorio. Recuerden que la tienda aún no está abierta: la actualizaremos con horario y datos de contacto cuando la empresa los confirme."
+          ]
+        }
+      ],
+      "fuentes": [
+        {
+          "name": "Obramat en CanalDis (24 nov 2026): Obramat abre el proceso de selección para su nuevo almacén de El Cañaveral",
+          "url": "https://canaldis.com/mediahubs/obramat/notas-de-prensa/obramat-abre-el-proceso-de-seleccion-para-su-nuevo-almacen-de-el-canaveral"
+        },
+        {
+          "name": "Alimarket (25 nov 2026): Obramat reforzará su presencia en Madrid con la apertura de su séptimo almacén",
+          "url": "https://www.alimarket.es/construccion/noticia/435060/"
+        }
+      ]
+    },
+    {
       "slug": "centro-salud-el-canaveral-licitacion-2027",
       "title": "Centro de salud de El Cañaveral: la Comunidad prevé licitarlo en 2027, pero la obra pasa a la siguiente legislatura",
       "date": "2026-11-19",

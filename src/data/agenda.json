@@ -1,6 +1,48 @@
 {
   "items": [
     {
+      "id": "madrid-distrito-en-corto-vicalvaro-28-nov-2026",
+      "nombre": "Madrid Distrito en Corto: cinco cortometrajes en Vicálvaro",
+      "estado": "confirmado",
+      "inicio": "2026-11-28T18:00:00+01:00",
+      "fin": "2026-11-28T18:00:00+01:00",
+      "sinHora": false,
+      "lugar": {
+        "nombre": "Centro Cultural Fuente de San Pedro-Valderrivas",
+        "direccion": "Calle Titanio, 5, Vicálvaro, Madrid",
+        "zona": "vicalvaro"
+      },
+      "organizador": {
+        "nombre": "Ayuntamiento de Madrid (Madrid Distrito en Corto)",
+        "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad/Actividades-y-eventos/Madrid-Distrito-en-Corto/?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=5248b6c423f11a10VgnVCM100000891ecb1aRCRD"
+      },
+      "gratis": true,
+      "precio": null,
+      "entradasUrl": null,
+      "categoria": "cultura",
+      "resumen": "Proyección de cinco cortometrajes («Una cabeza en la pared», «La fuerza», «El relevo», «Cosas de chicos» y «Teo va al espacio») el sábado 28 de noviembre de 2026 en el Centro Cultural Fuente de San Pedro-Valderrivas (calle Titanio, 5). Entrada libre. El programa oficial de madrid.es fija la sesión a las 18:00; la Junta Municipal de Vicálvaro la anunció a las 19:00. Las fuentes no indican hora de fin.",
+      "fichasRelacionadas": [],
+      "fiestaSlug": null,
+      "fuentes": [
+        {
+          "nombre": "Ayuntamiento de Madrid — programación de Madrid Distrito en Corto, noviembre de 2026",
+          "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad/Actividades-y-eventos/Madrid-Distrito-en-Corto/?vgnextchannel=ca9671ee4a9eb410VgnVCM100000171f5a0aRCRD&vgnextfmt=default&vgnextoid=5248b6c423f11a10VgnVCM100000891ecb1aRCRD",
+          "tipo": "web"
+        },
+        {
+          "nombre": "Ayuntamiento de Madrid — programa en PDF con los cinco cortos",
+          "url": "https://www.madrid.es/UnidadWeb/UGBBDD/Actividades/ficheros/MDEC_Nov_2026.pdf",
+          "tipo": "web"
+        },
+        {
+          "nombre": "Junta Municipal de Distrito de Vicálvaro (X)",
+          "url": "https://x.com/jmdvicalvaro",
+          "tipo": "red-social"
+        }
+      ],
+      "verificadoEn": "2026-11-26"
+    },
+    {
       "id": "cine-los-domingos-el-madrono-20-nov-2026",
       "nombre": "Cine: «Los domingos» (ciclo Nosotras contamos)",
       "estado": "confirmado",
